@@ -1,4 +1,6 @@
-stanza==1.11.0
+stanza
 pandas
-scikit-learn
 numpy
+scikit-learn
+NlpToolkit-SentiNet
+setuptools==80.9.0
