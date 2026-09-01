@@ -1,89 +1,104 @@
-import re
-
 from SentiNet.SentiLiteralNet import SentiLiteralNet
+
+from src.common.morphology import MorphologicalRootExtractor
 
 
 class HisNetClassifier:
 
     def __init__(self):
         self.sentinet = SentiLiteralNet()
+        self.root_extractor = MorphologicalRootExtractor()
 
-    @staticmethod
-    def _turkish_lower(text):
+    def _lookup_root(self, root):
         """
-        Turkish-aware lowercase conversion.
-        """
-        text = text.replace("I", "ı").replace("İ", "i")
-        return text.lower()
+        Looks up a disambiguated morphological root in HisNet.
 
-    def tokenize(self, text):
-        """
-        Simple tokenizer for the initial HisNet-only baseline.
-
-        Dependency parsing is NOT used here.
+        Returns None if the root does not exist in HisNet.
         """
 
-        text = self._turkish_lower(text)
+        try:
+            senti_literal = self.sentinet.getSentiLiteral(root)
 
-        return re.findall(
-            r"[abcçdefgğhıijklmnoöprsştuüvyz]+",
-            text
-        )
+            positive = float(
+                senti_literal.getPositiveScore()
+            )
+
+            negative = float(
+                senti_literal.getNegativeScore()
+            )
+
+            return {
+                "root": root,
+                "positive": positive,
+                "negative": negative
+            }
+
+        except KeyError:
+            return None
 
     def classify(self, text):
         """
-        Classifies a Turkish text using only HisNet lexical scores.
+        HisNet-only sentiment classification.
 
-        Returns:
-            - final prediction
-            - total positive and negative scores
-            - all words found in HisNet
-            - sentiment-bearing words
-            - coverage statistics
+        Pipeline:
+            Text
+              -> Morphological analysis
+              -> LongestRootFirstDisambiguation
+              -> Selected morphological roots
+              -> HisNet lookup
+              -> Score aggregation
+              -> Positive / Negative / Neutral
+
+        Dependency information is NOT used here.
         """
 
-        words = self.tokenize(text)
+        morphological_analyses = (
+            self.root_extractor.analyze_sentence(text)
+        )
 
         positive_score = 0.0
         negative_score = 0.0
 
         matched_words = []
         sentiment_words = []
+        unmatched_words = []
 
-        for word in words:
+        for item in morphological_analyses:
 
-            try:
-                senti_literal = self.sentinet.getSentiLiteral(word)
+            word = item["word"]
+            root = item["root"]
+            analysis = item["analysis"]
 
-                positive = float(
-                    senti_literal.getPositiveScore()
-                )
+            senti_result = self._lookup_root(root)
 
-                negative = float(
-                    senti_literal.getNegativeScore()
-                )
+            if senti_result is None:
 
-                positive_score += positive
-                negative_score += negative
-
-                # Word exists in HisNet, even if its scores are 0 / 0.
-                matched_words.append({
+                unmatched_words.append({
                     "word": word,
-                    "positive": positive,
-                    "negative": negative
+                    "root": root,
+                    "analysis": analysis
                 })
 
-                # Only words carrying actual sentiment information.
-                if positive > 0.0 or negative > 0.0:
-                    sentiment_words.append({
-                        "word": word,
-                        "positive": positive,
-                        "negative": negative
-                    })
-
-            except KeyError:
-                # Word does not exist in HisNet.
                 continue
+
+            positive = senti_result["positive"]
+            negative = senti_result["negative"]
+
+            positive_score += positive
+            negative_score += negative
+
+            matched_entry = {
+                "word": word,
+                "root": root,
+                "analysis": analysis,
+                "positive": positive,
+                "negative": negative
+            }
+
+            matched_words.append(matched_entry)
+
+            if positive > 0.0 or negative > 0.0:
+                sentiment_words.append(matched_entry)
 
         if positive_score > negative_score:
             prediction = "positive"
@@ -94,7 +109,7 @@ class HisNetClassifier:
         else:
             prediction = "neutral"
 
-        token_count = len(words)
+        token_count = len(morphological_analyses)
         matched_word_count = len(matched_words)
         sentiment_word_count = len(sentiment_words)
 
@@ -117,8 +132,11 @@ class HisNetClassifier:
             "positive_score": positive_score,
             "negative_score": negative_score,
 
+            "morphological_analyses": morphological_analyses,
+
             "matched_words": matched_words,
             "sentiment_words": sentiment_words,
+            "unmatched_words": unmatched_words,
 
             "token_count": token_count,
             "matched_word_count": matched_word_count,

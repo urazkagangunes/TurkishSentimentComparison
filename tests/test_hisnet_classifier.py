@@ -9,7 +9,10 @@ sentences = [
     "Otel mükemmel.",
     "Bu ürün berbat.",
     "Film güzel değildi.",
-    "Otel güzeldi ama odalar kötüydü."
+    "Film kötü değildi.",
+    "Otel güzeldi ama odalar kötüydü.",
+    "Filmi beğenmedim.",
+    "Bu ürünü kesinlikle tavsiye etmiyorum."
 ]
 
 
@@ -17,7 +20,8 @@ for sentence in sentences:
 
     result = classifier.classify(sentence)
 
-    print("\n" + "=" * 80)
+    print("\n" + "=" * 100)
+
     print("Sentence:", result["text"])
     print("Prediction:", result["prediction"])
 
@@ -38,10 +42,21 @@ for sentence in sentences:
         round(result["sentiment_coverage"], 4)
     )
 
-    print("Matched:")
-    for word in result["matched_words"]:
-        print("  ", word)
+    print("\nMorphological analyses:")
 
-    print("Sentiment-bearing:")
+    for item in result["morphological_analyses"]:
+        print(
+            f"  {item['word']:<15}"
+            f" -> {item['root']:<15}"
+            f" {item['analysis']}"
+        )
+
+    print("\nSentiment-bearing words:")
+
     for word in result["sentiment_words"]:
-        print("  ", word)
+        print(
+            f"  {word['word']:<15}"
+            f"ROOT={word['root']:<15}"
+            f"POS={word['positive']:<8}"
+            f"NEG={word['negative']}"
+        )
