@@ -6,62 +6,178 @@ from src.hisnet.hisnet_dependency_classifier import (
 
 
 hisnet = HisNetClassifier()
-hisnet_dependency = HisNetDependencyClassifier()
+
+hisnet_dependency = (
+    HisNetDependencyClassifier()
+)
 
 
 sentences = [
+
+    # Basic
     "Film güzel.",
     "Film kötü.",
+
+    # Negation
     "Film güzel değildi.",
     "Film kötü değildi.",
-    "Otel güzeldi ama odalar kötüydü.",
+
+    # Target + negation
+    "Bu ürünü tavsiye etmiyorum.",
+
+    # Missing lexical sentiment
     "Filmi beğenmedim.",
-    "Bu ürünü kesinlikle tavsiye etmiyorum."
+
+    # Multiple targets
+    "Otel güzeldi ama odalar kötüydü.",
+
+    # HisNet target ambiguity
+    "Personel iyiydi fakat yemekler kötüydü.",
+
+    # Modifier
+    "Otel çok güzeldi.",
+    "Personel biraz kötüydü.",
+
+    # Known Stanza / lexical limitation
+    "Otel aşırı güzel."
 ]
 
 
 for sentence in sentences:
 
-    baseline = hisnet.classify(sentence)
+    baseline = hisnet.classify(
+        sentence
+    )
 
-    dependency = hisnet_dependency.classify(sentence)
+    dependency = (
+        hisnet_dependency.classify(
+            sentence
+        )
+    )
 
-    print("\n" + "=" * 100)
+    print(
+        "\n"
+        + "=" * 110
+    )
 
-    print("Sentence:", sentence)
+    print(
+        "Sentence:",
+        sentence
+    )
 
     print(
         "HisNet:",
-        baseline["prediction"]
+        baseline["prediction"],
+        f"({baseline['positive_score']:.4f}, "
+        f"{baseline['negative_score']:.4f})"
     )
 
     print(
         "HisNet + Dependency:",
-        dependency["prediction"]
+        dependency["prediction"],
+        f"({dependency['positive_score']:.4f}, "
+        f"{dependency['negative_score']:.4f})"
     )
 
-    print(
-        "HisNet Score:",
-        baseline["positive_score"],
-        "/",
-        baseline["negative_score"]
-    )
+    for sentence_result in dependency[
+        "sentences"
+    ]:
 
-    print(
-        "Dependency Score:",
-        dependency["positive_score"],
-        "/",
-        dependency["negative_score"]
-    )
+        print(
+            "\nResolved sentiment scopes:"
+        )
 
-    for sent_result in dependency["sentences"]:
+        for scope in sentence_result[
+            "scopes"
+        ]:
 
-        print("\nAdjustments:")
+            target = (
+                scope["target"].get("root")
+                if scope.get("target")
+                else None
+            )
 
-        for adjustment in sent_result["adjustments"]:
-            print(" ", adjustment)
+            modifiers = [
+                modifier.get("lemma")
+                or modifier.get("word")
 
-        print("\nUnresolved negations:")
+                for modifier
+                in scope.get(
+                    "modifiers",
+                    []
+                )
+            ]
 
-        for negation in sent_result["unresolved_negations"]:
-            print(" ", negation)
+            negations = [
+                negation.get("lemma")
+                or negation.get("word")
+
+                for negation
+                in scope.get(
+                    "negations",
+                    []
+                )
+            ]
+
+            contrast = (
+                scope["contrast"].get(
+                    "lemma"
+                )
+
+                if scope.get("contrast")
+                else None
+            )
+
+            print(
+                {
+                    "opinion":
+                        scope["root"],
+
+                    "target":
+                        target,
+
+                    "role":
+                        scope.get(
+                            "contextual_role"
+                        ),
+
+                    "active":
+                        scope.get(
+                            "active_sentiment"
+                        ),
+
+                    "modifiers":
+                        modifiers,
+
+                    "negations":
+                        negations,
+
+                    "contrast":
+                        contrast,
+
+                    "original":
+                        (
+                            scope[
+                                "original_positive"
+                            ],
+                            scope[
+                                "original_negative"
+                            ]
+                        ),
+
+                    "adjusted":
+                        (
+                            scope[
+                                "adjusted_positive"
+                            ],
+                            scope[
+                                "adjusted_negative"
+                            ]
+                        ),
+
+                    "operations":
+                        scope[
+                            "operations"
+                        ]
+                }
+            )

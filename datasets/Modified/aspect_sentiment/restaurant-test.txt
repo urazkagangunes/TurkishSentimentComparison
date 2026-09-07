@@ -1,0 +1,676 @@
+en_BlueRibbonSushi_478218171:0 ###yum!### ###positive--FOOD--QUALITY--NULL
+en_BlueRibbonSushi_478218171:1 ###gerçekten iyi suşi servis.### ###positive--FOOD--QUALITY--Suşi
+en_BlueRibbonSushi_478218171:2 ###en büyük bölümler değil ama yeterli.### ###neutral--FOOD--STYLE_OPTIONS--bölümler
+en_BlueRibbonSushi_478218171:3 ###yeşil çay krem brulee bir zorunluluktur!### green tea creme brulee ###positive--FOOD--QUALITY--Yeşil Çay Krem brulee
+en_BlueRibbonSushi_478218171:4 ###onsuz restorandan ayrılmayın.### ###positive--FOOD--QUALITY--NULL
+en_BlueRibbonSushi_478218345:0 ###karşılaştırma yok### ###positive--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218345:1 ###bu yer hakkında yeterince söyleyemem.### ###positive--RESTAURANT--GENERAL--yer
+en_BlueRibbonSushi_478218345:2 ###büyük suşi ve hatta daha iyi hizmet vardır.### ### positive--FOOD--QUALITY--Suşi###positive--SERVICE--GENERAL--hizmet
+en_BlueRibbonSushi_478218345:3 ###tüm personel son derece konaklama ve benim her ihtiyaç eğilim.### ###positive--SERVICE--GENERAL--Personel
+en_BlueRibbonSushi_478218345:4 ###şikayet tarihi olmadan bir düzine kez bu restorana gittim.### ###positive--RESTAURANT--GENERAL--restorana
+en_SchoonerOrLater_477965690:0 ###sümük tutumu### ###negative--SERVICE--GENERAL--NULL
+en_SchoonerOrLater_477965690:1 ###biz burada bir kez kahvaltı için çok kaba tedavi.### ###negative--SERVICE--GENERAL--NULL
+en_SchoonerOrLater_477965690:2 ###sahibi, şikayeti olan konuklar için savaşan.### ###negative--SERVICE--GENERAL--sahibi
+en_SchoonerOrLater_477965849:0 ###iyi yemek !### ###positive--FOOD--QUALITY--yemek
+en_SchoonerOrLater_477965849:1 ###Kahvaltı yemeklerini seviyoruz.###
+en_SchoonerOrLater_477965849:2 ###bu lezzetli yemek almak için harika bir yer.### ###positive--FOOD--QUALITY--yemek
+en_SchoonerOrLater_477965849:3 ###asla 5 dakikadan fazla beklemek zorunda kalmadık.### ###positive--SERVICE--GENERAL--NULL
+en_SchoonerOrLater_477965849:4 ###personel oldukça kolay.### ###positive--SERVICE--GENERAL--Personel
+en_SchoonerOrLater_477965849:5 ###soğan halkaları harika!### onion rings ###positive--FOOD--QUALITY--soğan halkaları
+en_SchoonerOrLater_477965849:6 ###yağlı falan değiller.### ###positive--FOOD--QUALITY--NULL
+en_PagodaRestaurant_478006817:0 ###abartılmış### ###negative--RESTAURANT--GENERAL--NULL
+en_PagodaRestaurant_478006817:1 ###pagoda gıda çok hayal kırıklığına uğradım.### ###negative--FOOD--QUALITY--Gıda
+en_PagodaRestaurant_478006817:2 ###limon tavuk yapışkan tatlı çörek ve bal ceviz karides gibi tadı, gerçekten çok az.iyi değildi.### lemon chicken honey walnut prawns ### negative--FOOD--QUALITY--limon tavuk###negative--FOOD--QUALITY--bal ceviz karides###negative--FOOD--STYLE_OPTIONS--bal ceviz karides
+en_PagodaRestaurant_478006817:3 ###Fiyatlar çirkin, özellikle gıda aslında çoğu mahalle Çin kuruluşundan daha az tatmin edici olduğu için.###
+en_PagodaRestaurant_478006817:4 ###güzel ambiyans, ama çok abartılı bir yer.### ### positive--AMBIENCE--GENERAL--ambiyans###negative--RESTAURANT--GENERAL--yer
+en_PagodaRestaurant_478006817:5 ###geri dönmeyeceğim.### ###negative--RESTAURANT--GENERAL--NULL
+en_ParkChaletGardenRestaurant_477778282:0 ###sahip olduğum en kötü hizmet### ###positive--SERVICE--GENERAL--hizmet
+en_ParkChaletGardenRestaurant_477778282:1 ###5 ABD'li bir grup Pazar brunch için oraya gitti ve dışarıda oturdu.###
+en_ParkChaletGardenRestaurant_477778282:2 ###dışarıda oturan herkes, şimdiye kadar aldığımız en kötü hizmet olduğunu kabul etti.### ###negative--SERVICE--GENERAL--hizmet
+en_ParkChaletGardenRestaurant_477778282:3 ###bizim garson yoktu ve gıda nihayet bir saatten fazla geldi, biz herhangi bir su veya mutfak eşyaları verilmedi.### ###negative--SERVICE--GENERAL--garson
+en_ParkChaletGardenRestaurant_477778282:4 ###yöneticiye şikayet ettim, ama o özür dilemedi.### ###negative--SERVICE--GENERAL--yöneticiye
+en_ParkChaletGardenRestaurant_477778282:5 ###bir daha asla geri dönmeyeceğim.### ###negative--RESTAURANT--GENERAL--NULL
+en_MiopostoCaffe_478543071:0 ###muhteşem italyan yemekleri!### italian food ###positive--FOOD--QUALITY--italyan yemekleri
+en_MiopostoCaffe_478543071:1 ###mioposto tavsiye ederim.### ###positive--RESTAURANT--GENERAL--mioposto
+en_MiopostoCaffe_478543071:2 ###mahallemde harika bir italyan restoranı olduğum için çok mutluyum.### italian restaurant ###positive--RESTAURANT--GENERAL--İtalyan restoranı
+en_MiopostoCaffe_478543071:3 ###şarap listesi harika ve yemek bana italya'ya son seyahatimi hatırlatıyor.### wine list ### positive--FOOD--QUALITY--yemek###positive--DRINKS--STYLE_OPTIONS--şarap listesi
+en_Murphy's_478075040:0 ###bu restoranı seviyorum### ###positive--RESTAURANT--GENERAL--restoranı
+en_Murphy's_478075040:1 ###bu restoranda inanılmaz yemek, hizmet ve ambiyans deneyimini asla unutmayacağım.### ### positive--FOOD--QUALITY--yemek### positive--SERVICE--GENERAL--hizmet###positive--AMBIENCE--GENERAL--ambiyans
+en_Murphy's_478075040:2 ###kesinlikle şaşırtıcıydı.### ###positive--RESTAURANT--GENERAL--NULL
+en_Murphy's_478075040:3 ###şarap listesi inanılmaz ve geniş çeşitli, gıda tüm personel işlerinde çok güzel oldu.### wine list ### positive--FOOD--QUALITY--Gıda### positive--SERVICE--GENERAL--Personel###positive--DRINKS--STYLE_OPTIONS--şarap listesi
+en_Murphy's_478075040:4 ###bu yer hakkında söyleyecek kötü bir şey yok.### ###positive--RESTAURANT--GENERAL--yer
+en_Murphy's_478075040:5 ###harika .### ###positive--RESTAURANT--GENERAL--NULL
+en_Murphy's_478075040:6 ###önümüzdeki hafta sonu tekrar geri dönmek için sabırsızlanıyorum!### ###positive--RESTAURANT--GENERAL--NULL
+en_OpenSesame_477970939:0 ###mmm.iyi !### ###positive--RESTAURANT--GENERAL--NULL
+en_OpenSesame_477970939:1 ###Dün gece bir arkadaşımla oraya gittim.###
+en_OpenSesame_477970939:2 ###Bir iş arkadaşından bu yer hakkında duymuştu.###
+en_OpenSesame_477970939:3 ###yemek harikaydı !### ###positive--FOOD--QUALITY--yemek
+en_OpenSesame_477970939:4 ###çok makul fiyatlı, esp yemek kalitesi için.### ###positive--FOOD--PRICES--yemek###positive--FOOD--QUALITY--yemek
+en_OpenSesame_477970939:5 ###kafta plakası vardı ve mükemmeldi.### kafta plate ###positive--FOOD--QUALITY--kafta plakası
+en_OpenSesame_477970939:6 ###geri dönüyoruz.: d### ###positive--RESTAURANT--GENERAL--NULL
+en_Sage_480875505:0 ###sonunda uzun süre hatırlayacağınız bir yemek!### ###positive--FOOD--QUALITY--yemek
+en_Sage_480875505:1 ###artımlı maliyet kesme restoranları çağında, eğilim ve sadece düz, yüksek kaliteli gıda iyi hizmet dönemi sunan yer görmek güzel.### ### positive--FOOD--QUALITY--Gıda###positive--SERVICE--GENERAL--hizmet
+en_Sage_480875505:2 ###burası dinlenebilecek ve en kaliteli yemeğin sunabileceği en iyi yer.### ### positive--AMBIENCE--GENERAL--yer###positive--FOOD--QUALITY--yemeğin
+en_Sage_480875505:3 ###dikkat - en iyisini seven insanlar için gerçek yemek.### ###positive--FOOD--QUALITY--yemek
+en_Sage_480875505:4 ###Bazı yiyecekler açıkça foodies (benim gibi) yönlendirilmiş bu yüzden bir foodie değilse yanlış bir şey değil - McDonalds veya Ruby Salı günü var!###
+en_Sage_480875505:5 ###Gerçek kalite arıyorsanız (Yelp derecelendirmesinde görülen BS değil - son zamanlarda Ayarlama olarak adlandırıldığı iddia edilir), buraya gelmeniz gerekir!###
+en_BlueRibbonSushi_478218900:0 ###çok hayal kırıklığı yaratan### ###negative--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218900:1 ###ailemi yıl dönümü için buraya getirerek çok hayal kırıklığına uğrattım!### ###negative--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218900:2 ###atmosferi çok beğendim ama yemek bu fiyata değmezdi.### ### positive--AMBIENCE--GENERAL--atmosferi###negative--FOOD--QUALITY--yemek###negative--FOOD--PRICES--yemek
+en_BlueRibbonSushi_478218900:3 ###bir suşi gurusu olmayabilirim ama size buradaki yiyeceklerin sadece iyi olmadığını söyleyebilirim.### ###negative--FOOD--QUALITY--yiyeceklerin
+en_BlueRibbonSushi_478218900:4 ###pilav çok kuru, ton balığı da çok taze değildi.### ### negative--FOOD--QUALITY--pilav###negative--FOOD--QUALITY--ton balığı
+en_BlueRibbonSushi_478218900:5 ###hiçbir şey gerçekten olağanüstü bir şekilde karşılaşmadı.### ###negative--FOOD--QUALITY--NULL
+en_BlueRibbonSushi_478218900:6 ###çok hayal kırıklığına uğramış .### ###negative--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478219453:0 ###burada üç kez yedim ve mükemmel balık kaliteli çeşitliliği buldum.### ###positive--FOOD--QUALITY--balık###positive--FOOD--STYLE_OPTIONS--balık
+en_BlueRibbonSushi_478219453:1 ###ancak, değer ve hizmet her ikisi de ciddi şekilde eksiktir.### ### negative--SERVICE--GENERAL--hizmet###negative--RESTAURANT--PRICES--NULL
+en_BlueRibbonSushi_478219453:2 ###Porsiyonlar, özellikle fiyatlar NYC (MASA elbette hariç) en iyi suşi yerleri ile uyumlu olduğu için beklenenden daha az balık içerir.###
+en_BlueRibbonSushi_478219453:3 ###ayrıca, balık tartışmasız taze, rulolar açıklanamayacak şekilde sıradan olma eğilimindedir.### ### positive--FOOD--QUALITY--balık###negative--FOOD--QUALITY--rulolar
+en_BlueRibbonSushi_478219453:4 ###hizmet vasattan saldırıya kadar değişir.### ###negative--SERVICE--GENERAL--hizmet
+en_BlueRibbonSushi_478219453:5 ###son gidişimizde, bizim garson son derece kabaydı ve en az üç çalışan yandaki masada oturan japon kızları bekledi.### staff members ### negative--SERVICE--GENERAL--garson###negative--SERVICE--GENERAL--çalışan
+en_BlueRibbonSushi_478219453:6 ###daha sonra aslında bu fiyatın yarısından daha az içtiğinde onların en pahalı uğruna (porsiyon başına 20 $+) suçlandı.### ###negative--SERVICE--GENERAL--NULL
+en_BlueRibbonSushi_478219453:7 ###Ama eminim bu sadece dürüst bir hataydı.###
+en_BlueRibbonSushi_479929856:0 ###en taze suşi bu restoranı seviyorum.### ### positive--FOOD--QUALITY--Suşi###positive--RESTAURANT--GENERAL--restoranı
+en_BlueRibbonSushi_479929856:1 ###miso çorbasından kompleks rulolara kadar her türlü detaya dikkat ediyorlar.### miso soup ### positive--FOOD--QUALITY--rulolara###positive--FOOD--QUALITY--miso çorbasından
+en_BlueRibbonSushi_479929856:2 ###sashimi en taze ve şimdiye kadar tatmış en hassas.### ###positive--FOOD--QUALITY--Sashimi
+en_BlueRibbonSushi_479929856:3 ###uygulamalarının hepsi lezzetli.### ###positive--FOOD--QUALITY--uygulamalarının
+en_BlueRibbonSushi_479929856:4 ###tek dezavantajı burası gerçekten pahalı bir yer ve porsiyonlar küçük.### ### negative--RESTAURANT--PRICES--yer###negative--FOOD--STYLE_OPTIONS--porsiyonlar
+en_BlueRibbonSushi_479929856:5 ###ama alan küçük ve güzel, hizmet yararlı.### ### positive--AMBIENCE--GENERAL--alan###positive--SERVICE--GENERAL--hizmet
+en_BlueRibbonSushi_479929856:6 ###çok büyüleyici bir zamana sahip olmanız gerekiyor.### ###positive--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218901:0 ###tavsiye edilmez !### ###negative--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218901:1 ### yemekler büyük değildi ve garsonlar kaba.### ### negative--FOOD--QUALITY--yemekler###negative--SERVICE--GENERAL--garsonlar
+en_BlueRibbonSushi_478218901:2 ###hiç gitmeye değmez ve paranızı orada geçirir!### ###negative--RESTAURANT--GENERAL--NULL
+en_MercedesRestaurant_478010605:0 ###harika hizmet.### ###positive--SERVICE--GENERAL--hizmet
+en_MercedesRestaurant_478010605:1 ###meksika ve şehir merkezinde oturmak için oldukça ucuz.### ###positive--RESTAURANT--PRICES--NULL###positive--LOCATION--GENERAL--NULL
+en_MercedesRestaurant_478010605:2 ###hizmetim yıldızdı!### ###positive--SERVICE--GENERAL--hizmetim
+en_MercedesRestaurant_478010605:3 ###otobüs çocuğu bile masamın benim için stabilize olmuş bir salladığını fark etti.### bus boy ###positive--SERVICE--GENERAL--otobüs çocuğu
+en_MercedesRestaurant_478010605:4 ###gıda iyiydi, biraz daha kötü bir salsa ile.### ### positive--FOOD--QUALITY--Gıda###positive--FOOD--QUALITY--Salsa
+en_MercedesRestaurant_478010605:5 ###eğer bölgedeki hayal kırıklığına uğramamalı.### ###positive--RESTAURANT--GENERAL--NULL
+en_MercedesRestaurant_480852899:0 ###tamam .belki birinin kötü gününe girdim### ###negative--RESTAURANT--GENERAL--NULL
+en_MercedesRestaurant_480852899:1 ###gıda harikaydı, margarita da ama garson, diğer büyük partiye iyi olmakla meşgul arkadaşım ve bana daha iyi bakıyor.### ### positive--FOOD--QUALITY--Gıda### positive--DRINKS--QUALITY--margarita###negative--SERVICE--GENERAL--garson
+en_MercedesRestaurant_480852899:2 ###bizim sipariş almak için sonsuza kadar aldı, su dolumları çok fazla istedi ve biz bill dikkatini sormak istedi biz hızlı oldu tek zaman.### ###negative--SERVICE--GENERAL--NULL
+en_MercedesRestaurant_480852899:3 ###geri dönmeyecek mi bilmiyorum.### ###negative--RESTAURANT--GENERAL--NULL
+en_Patsy'sPizzeria_478231878:0 ###mama mia mahallede yaşıyorum ve böylesine harika bir pizza yeri olduğu için şanslı hissediyorum.### pizza place ###positive--RESTAURANT--GENERAL--Pizza yeri
+en_Patsy'sPizzeria_478231878:1 ###tek sorun, önümüzdeki sipariş olsa bile, yenilebilir olmadan önce pizzayı ısıtmak zorunda olduğunuzdur.### ###negative--FOOD--QUALITY--pizzayı
+en_Patsy'sPizzeria_478231878:2 ###ama bir kez bittiğinde, çok fazla hamur peyniri sosu değil.### ###positive--FOOD--QUALITY--NULL
+en_BlueRibbonSushi_478218519:0 ###şehirdeki en iyi suşi.### ###positive--FOOD--QUALITY--Suşi
+en_BlueRibbonSushi_478218519:1 ###tüm en iyi yerlere gitti.###
+en_BlueRibbonSushi_478218519:2 ###istediğiniz her şey ve daha fazlası, çok taze.### ###positive--FOOD--QUALITY--NULL###positive--FOOD--STYLE_OPTIONS--NULL
+en_BlueRibbonSushi_478218519:3 ###beklemeye değer, özellikle de masa hazır olduğunda sizi aradıklarında.### ###positive--RESTAURANT--GENERAL--NULL###positive--SERVICE--GENERAL--NULL
+en_Ray'sBoathouse_477775919:0 ###seattle'daki en iyi kalamar!### ###positive--FOOD--QUALITY--kalamar
+en_Ray'sBoathouse_477775919:1 ###.ve en iyi yaz güverte deneyimi - seattle akşam havasında soğursa size bir battaniye bile getirecekler.### ### positive--AMBIENCE--GENERAL--güverte###positive--SERVICE--GENERAL--NULL
+en_Ray'sBoathouse_477775919:2 ###yıl her zaman şehir misafirleri çıkarmak için mükemmel bir yer.### ###positive--RESTAURANT--GENERAL--yer
+en_ProfessorThom's_478606540:0 ###sonsuz eğlenceli, harika müzik harika personel!### ### positive--AMBIENCE--GENERAL--müzik### positive--SERVICE--GENERAL--Personel###positive--RESTAURANT--GENERAL--NULL
+en_ProfessorThom's_478606540:1 ###east village'deki en iyi bar.### ###positive--RESTAURANT--GENERAL--bar
+en_ProfessorThom's_478606540:2 ###oraya bir gece bingo oynamak ve sox oyununu izlemek için bir patlama oldu!### ###positive--RESTAURANT--GENERAL--NULL
+en_ProfessorThom's_478606540:3 ###her zaman sıfırdan altmış dokuza denir barmen herkes herkes içiyor!### ###positive--SERVICE--GENERAL--barmen
+en_ProfessorThom's_478606540:4 ###o zamandan beri çok şey vardı ve her zaman iyi bir zaman.### ###positive--RESTAURANT--GENERAL--NULL
+en_ProfessorThom's_478606540:5 ###büyük taslak ve şişe seçimi pizza kayaları.### draft and bottle selection ### positive--FOOD--QUALITY--Pizza###positive--DRINKS--STYLE_OPTIONS--taslak ve şişe seçimi
+en_ProfessorThom's_478606540:6 ###kesinlikle uzun zamandır görülen en iyi müzik kutularından birine sahiptir.### jukebox's ###positive--AMBIENCE--GENERAL--müzik kutularından
+en_ProfessorThom's_478606538:0 ###ikinci cadde'de yeni bir ev buldum!### ###positive--RESTAURANT--GENERAL--NULL
+en_ProfessorThom's_478606538:1 ###Nereden başlayabilirim.###
+en_ProfessorThom's_478606538:2 ###yapamam !###
+en_ProfessorThom's_478606538:3 ###sadece oraya git ve kendin görün.### ###positive--RESTAURANT--GENERAL--NULL
+en_ProfessorThom's_478606538:4 ###gıda harika, barmenler o ekstra mil gidiyor.### ### positive--FOOD--QUALITY--Gıda###positive--SERVICE--GENERAL--barmenler
+en_ProfessorThom's_478606538:5 ###oyununuzu izlemeniz gerekiyor, onlar için alacaklar.### ###positive--SERVICE--GENERAL--NULL
+en_ProfessorThom's_478606538:6 ###sahipleri çok eğlenceli ve bira seçimi için kalmaya değer.### beer selection ### positive--SERVICE--GENERAL--sahipleri###positive--DRINKS--STYLE_OPTIONS--bira seçimi
+en_ProfessorThom's_478606538:7 ###ve üst katta takılmak için harika bir yer.### ###positive--AMBIENCE--GENERAL--üst katta
+en_ProfessorThom's_478606538:8 ###new york'ta çok fazla sigara içme yeri kalmadı, ama en sevdiğim balkonu buldum.### ###positive--RESTAURANT--MISCELLANEOUS--balkonu
+en_ProfessorThom's_478606538:9 ###bu adamlara kudos.### ###positive--RESTAURANT--GENERAL--NULL
+en_ProfessorThom's_478606538:10 ###yeni bir ev buldum ve uzun süreli kira ile hareket ettim.### ###positive--RESTAURANT--GENERAL--NULL
+en_ProfessorThom's_478606538:11 ###Teşekkürler###
+en_BlueRibbonSushi_478218520:0 ###Kaliforniya rulolarının ötesine geçin.###
+en_BlueRibbonSushi_478218520:1 ###buradaki suşi lezzetli!### ###positive--FOOD--QUALITY--Suşi
+en_BlueRibbonSushi_478218520:2 ###çok çeşitli balıklar ve hatta okyanusların geldiği listeye sahiptirler;atlantik veya pasifik.### ###positive--FOOD--STYLE_OPTIONS--balıklar
+en_BlueRibbonSushi_478218520:3 ###denizanası, istavrit orkinoz vardı ve diğerleri arasında sake ikura roll hepsinden iyiydi### horse mackerel blue fin tuna sake ikura roll ### positive--FOOD--QUALITY--denizanası### positive--FOOD--QUALITY--istavrit### positive--FOOD--QUALITY--Orkinoz###positive--FOOD--QUALITY--sake ikura roll
+en_BlueRibbonSushi_478218520:4 ###tek olumsuz yorumum, keşke parçalar biraz daha büyük olsaydı.### ###negative--FOOD--STYLE_OPTIONS--parçalar
+en_BlueRibbonSushi_478218520:5 ###dekor rustik, geleneksel japon.### ###neutral--AMBIENCE--GENERAL--dekor
+en_BlueRibbonSushi_478218520:6 ###kalabalık karışık yuppies, genç ve yaşlı.### ###neutral--RESTAURANT--MISCELLANEOUS--kalabalık
+en_BlueRibbonSushi_478218520:7 ###hizmet, nazik ve özenli.### ###positive--SERVICE--GENERAL--hizmet
+en_CatalRestaurant__UvaBar_477861889:0 ###vasat yiyecek### ###neutral--FOOD--QUALITY--yiyecek
+en_CatalRestaurant__UvaBar_477861889:1 ###Cumartesi gecesi akşam yemeği için dış veranda alanında yedik.###
+en_CatalRestaurant__UvaBar_477861889:2 ###dış veranda alanında kısaltılmış bir menü vardır.### ###neutral--FOOD--STYLE_OPTIONS--Menü
+en_CatalRestaurant__UvaBar_477861889:3 ###Biz marine edilmiş üzüm, manda tarzı tavuk kanatları ve hindi sandviç sipariş.###
+en_CatalRestaurant__UvaBar_477861889:4 ###Kız arkadaşım ve ben özellikle fiyat göz önüne alındığında yemeğin çok vasat olduğunu kabul etmeliyiz.### ###negative--FOOD--QUALITY--yemeğin###negative--FOOD--PRICES--yemeğin
+en_CatalRestaurant__UvaBar_477861889:5 ###biz yerliler ve bu yerin böyle ortalama gıdalarla hayatta kalmasının tek bir yolunu elde edin, çoğu müşteri muhtemelen bir kerelik müşteri turistleridir.### ### negative--RESTAURANT--GENERAL--yerin###negative--FOOD--QUALITY--gıdalarla
+en_CatalRestaurant__UvaBar_477861889:6 ###hizmet iyi.### ###neutral--SERVICE--GENERAL--hizmet
+en_CatalRestaurant__UvaBar_477861889:7 ###içecekler iyiydi.### ###positive--DRINKS--QUALITY--içecekler
+en_CatalRestaurant__UvaBar_477861889:8 ###sadece birkaç içecek için duruyorsanız, buraya gitmenizi tavsiye etmem.### ### positive--DRINKS--QUALITY--içecek###negative--RESTAURANT--GENERAL--NULL
+en_CatalRestaurant__UvaBar_477861889:9 ###muhtemelen hayal kırıklığına uğrayacaksınız.### ###negative--RESTAURANT--GENERAL--NULL
+en_CatalRestaurant__UvaBar_477861893:0 ###mükemmel yemek, güzel ambiyans oldukça pahalı### ### positive--FOOD--QUALITY--yemek### positive--AMBIENCE--GENERAL--ambiyans###negative--RESTAURANT--PRICES--NULL
+en_CatalRestaurant__UvaBar_477861893:1 ###Ben kabak mantısını ve keçi peyniri gnocchiyi (20 ya da 20 yerine bir tabağa 5 büyük olan) sevdim, kız kardeşim ıspanak ve patates püresi üzerine fileto mignonu sevdi.### pumpkin ravioli goat cheese gnocchi filet mignon on top of spinach and mashed potatoes ### positive--FOOD--QUALITY--kabak mantısını### positive--FOOD--QUALITY--Keçi peyniri gnocchiyi### positive--FOOD--STYLE_OPTIONS--Keçi peyniri gnocchiyi###positive--FOOD--QUALITY--ıspanak ve patates püresi üzerine fileto mignonu
+en_CatalRestaurant__UvaBar_477861893:2 ###ambiyans, disney şehir merkezinde koşan tüm çocuklar arasında huzurlu ve rahatlatıcı bir mola oldu.### ###positive--AMBIENCE--GENERAL--ambiyans
+en_CatalRestaurant__UvaBar_477861893:3 ###romantikti - ve kız kardeşimle bile güzeldi, bana italya'nın bir akdeniz kasabasında olma hissini sürdüren sanat eseri ve müziği olduğunu hatırlattı.### ### positive--AMBIENCE--GENERAL--sanat eseri### positive--AMBIENCE--GENERAL--müziği###positive--AMBIENCE--GENERAL--NULL
+en_CatalRestaurant__UvaBar_477861893:4 ###splurge yapmak istediğin bir gece için tavsiye ederim!(biraz pahalıydı)### ###negative--RESTAURANT--PRICES--NULL###positive--RESTAURANT--GENERAL--NULL
+en_India'sGrill_477960693:0 ###l.a en iyi hint yemekleri.### indian food ###positive--FOOD--QUALITY--hint yemekleri
+en_India'sGrill_477960693:1 ###L.A.'da bir düzineden fazla Hint yerine geldim.ve bu hala benim favorim.###
+en_India'sGrill_477960693:2 ###en iyi şey, fiyatlar da oldukça makul.### ###positive--RESTAURANT--PRICES--NULL
+en_India'sGrill_477960693:3 ###tavuk köri ve tikka masala benim en sevdiğim et yemekleri.### chicken curry chicken tikka masala ### positive--FOOD--QUALITY--Tavuk köri###positive--FOOD--QUALITY--tikka masala
+en_India'sGrill_477960693:4 ###chana masala (garbanzo fasulyesi) de mükemmel.### chana masala (garbanzo beans) ###positive--FOOD--QUALITY--Chana Masala (Garbanzo fasulyesi)
+en_India'sGrill_477960693:5 ###beverly center yakınındaki bir şerit alışveriş merkezinde, en büyük yer değil ama yemek beni daha fazla için geri geliyor.### ### neutral--LOCATION--GENERAL--yer###positive--FOOD--QUALITY--yemek
+en_India'sGrill_477960694:0 ###gizli küçük jem### ###positive--RESTAURANT--GENERAL--NULL
+en_India'sGrill_477960694:1 ###beverly merkezi tarafından sıkışmış.### ###neutral--LOCATION--GENERAL--NULL
+en_India'sGrill_477960694:2 ###asla çok kalabalık ve her zaman büyük hizmet.### ### positive--SERVICE--GENERAL--hizmet###positive--RESTAURANT--MISCELLANEOUS--NULL
+en_India'sGrill_477960694:3 ###sanırım muhtemelen en az bir kez menüsündeki her öğeyi denedim.### ###positive--FOOD--QUALITY--menüsündeki
+en_India'sGrill_477960694:4 ###onların çeşitli saag, paneer ve kormalarını tavsiye ederim### ### positive--FOOD--QUALITY--saag### positive--FOOD--QUALITY--Paneer###positive--FOOD--QUALITY--kormalarını
+en_India'sGrill_477960694:5 ###her zaman iyi bir işaret olan hintli aileleri ve arkadaşlarının orada yemek yediğini görüyorsunuz.### ###positive--RESTAURANT--MISCELLANEOUS--NULL
+en_India'sGrill_477960694:6 ###ben de teslimatlarını takdir ediyorum.### ###positive--SERVICE--GENERAL--teslimatlarını
+en_India'sGrill_477960698:0 ###güzel yemek ama baharat yok!### ###positive--FOOD--QUALITY--yemek###negative--FOOD--QUALITY--yemek
+en_India'sGrill_477960698:1 ###burada yemekten gerçekten keyif aldım.### ###positive--FOOD--QUALITY--yemekten
+en_India'sGrill_477960698:2 ###nefis kuzu korma, saag paneer, samosas, naan vb. yedim.### lamb korma saag paneer ### positive--FOOD--QUALITY--Samosas### positive--FOOD--QUALITY--naan### positive--FOOD--QUALITY--kuzu Korma###positive--FOOD--QUALITY--saag paneer
+en_India'sGrill_477960698:3 ###yemek hepsi iyi ama çok hafif.### ###positive--FOOD--QUALITY--yemek###negative--FOOD--QUALITY--yemek
+en_India'sGrill_477960698:4 ###normalde, yerler ne kadar sıcak istediğinizi soruyor ama istemediler.### ###negative--SERVICE--GENERAL--NULL
+en_India'sGrill_477960698:5 ###onu büyütmeyi düşünmeliydim ama hiç yemeğin o kadar hafif olmasını beklemiyordum.### ###negative--FOOD--QUALITY--yemeğin
+en_India'sGrill_477960698:6 ###Onlara başka bir şans vereceğim ve birkaç çentik atmaya söylediğinden emin olacağım.###
+en_India'sGrill_477960698:7 ###naan en iyisiydi ve gerçekten bhartha, çok domates değil.### ### positive--FOOD--QUALITY--naan###positive--FOOD--QUALITY--bhartha
+en_India'sGrill_477960698:8 ###normalde çok kuru bulduğum nohut bile iyiydi.### ###positive--FOOD--QUALITY--nohut
+en_India'sGrill_477960698:9 ###ve dökülmemesi için her şeyi güzel bir şekilde paketlediler.### ###positive--SERVICE--GENERAL--NULL
+en_MercedesRestaurant_478010599:0 ###harika bul### ###positive--RESTAURANT--GENERAL--NULL
+en_MercedesRestaurant_478010599:1 ###bu yere bu kadar uzun süre neden yabancı kaldığımı anlamıyorum. fajita salatası, colorado, fajita - her şey lezzetli.### fajita salad ### positive--RESTAURANT--GENERAL--yere### positive--FOOD--QUALITY--Colorado### positive--FOOD--QUALITY--fajita### positive--FOOD--QUALITY--fajita salatası###positive--FOOD--QUALITY--NULL
+en_MercedesRestaurant_478010599:2 ###sıcak ve rahat ortamı seviyorum.### ###positive--AMBIENCE--GENERAL--ortamı
+en_MercedesRestaurant_478010599:3 ###sadece özel bir parti için gece ve hafta sonları kendinize bir yer olabileceğini öğrendim - ca beklemeyin bir sonraki doğum günümü kutlayın.### ###positive--RESTAURANT--MISCELLANEOUS--yer
+en_OpenSesame_477970770:0 ###dünyanın en iyi restoranı, harika dekor ve müşteri hizmetleri, müşteri dostu yönetici.### customer service ### positive--RESTAURANT--GENERAL--restoranı### positive--AMBIENCE--GENERAL--dekor### positive--SERVICE--GENERAL--yönetici###positive--SERVICE--GENERAL--müşteri hizmetleri
+en_OpenSesame_477970770:1 ###Öncelikle Henrymillionare Orta Doğu yemekleri hakkında bir şey bilmiyorsunuz, bu yüzden konuşun.###
+en_OpenSesame_477970770:2 ###ağla bana bir nehir, şikayet etmeyi bırak, açıkçası yiyecek tadı yok.###
+en_OpenSesame_477970770:3 ###orada yemekten asla hayal kırıklığına uğramadım.### ###positive--FOOD--QUALITY--yemekten
+en_OpenSesame_477970770:4 ###atmosfer harika.### ###positive--AMBIENCE--GENERAL--atmosfer
+en_OpenSesame_477970770:5 ###Ve sorunları olan diğer tüm insanlar yardım alıyor###
+en_MercedesRestaurant_478010601:0 ###harika öğle yemeği yeri### lunch spot ###positive--RESTAURANT--GENERAL--öğle yemeği
+en_MercedesRestaurant_478010601:1 ###büyük finans bölgesi meksika yeri.### mexican spot ###positive--RESTAURANT--GENERAL--meksika yeri
+en_MercedesRestaurant_478010601:2 ###her zaman meşgul, ama derhal oturma konusunda iyidirler ve hızlı bir hizmet var.### ### positive--SERVICE--GENERAL--hizmet###positive--SERVICE--GENERAL--NULL
+en_MercedesRestaurant_478010601:3 ###burada sahip olduğum her şey iyi, taco salataları börek enchiladas bu yeri seviyorum.### taco salads ### positive--FOOD--QUALITY--börek### positive--FOOD--QUALITY--enchiladas### positive--RESTAURANT--GENERAL--yeri### positive--FOOD--QUALITY--taco salataları###positive--FOOD--QUALITY--NULL
+en_MercedesRestaurant_478010601:4 ###ayrıca büyük margaritalar var!### ###positive--DRINKS--QUALITY--margaritalar
+en_MercedesRestaurant_478010601:5 ###office de geri döndüyse gitmek için sipariş verebilirsiniz!### ###positive--SERVICE--GENERAL--NULL
+en_OpenSesame_477970938:0 ###lübnan yemekleri!yum### lebanese food ###positive--FOOD--QUALITY--Lübnan yemekleri
+en_OpenSesame_477970938:1 ###sadece bir kez açık susam yedim, ama hala deneyimin etkisindeyim!### open sesame ###positive--RESTAURANT--GENERAL--açık susam
+en_OpenSesame_477970938:2 ###gıda sadece unutulmaz!### ###positive--FOOD--QUALITY--Gıda
+en_OpenSesame_477970938:3 ###Salatalık yoğurt bir tarafı ile sığır kabobs vardı.###
+en_OpenSesame_477970938:4 ###yemek sunumu ek bir bonus oldu, tıpkı büyük tadı gibi görünüyordu!### ###positive--FOOD--STYLE_OPTIONS--yemek###positive--FOOD--QUALITY--yemek
+en_OpenSesame_477970938:5 ###en iyi arkadaşım tavuk çevirme yedi ve o hala her yer hakkında övgüyle bahseder!### chicken shawarma ###positive--FOOD--QUALITY--Tavuk Çevirme
+en_OpenSesame_477970938:6 ###Kız kardeşi tatlı için baklava vardı!###
+en_OpenSesame_477970938:7 ###ne kadar lezzetli, lapa!### ###positive--FOOD--QUALITY--NULL
+en_OpenSesame_477970938:8 ###personel dostu ve dekor etik renkli.### ### positive--SERVICE--GENERAL--Personel###positive--AMBIENCE--GENERAL--dekor
+en_OpenSesame_477970938:9 ###açık susam yemeye git!### open sesame ###positive--RESTAURANT--GENERAL--açık susam
+en_OpenSesame_477970940:0 ###kutsal humus!### ###positive--FOOD--QUALITY--Humus
+en_OpenSesame_477970940:1 ###öğle yemeği sırasında kalite tutarsız olsa da, yemek inanılmaz.### ### positive--FOOD--QUALITY--yemek###negative--FOOD--QUALITY--öğle yemeği
+en_OpenSesame_477970940:2 ###yemekler her zaman gıda kalitesi açısından mükemmel olmuştur.### ###positive--FOOD--QUALITY--yemekler
+en_OpenSesame_477970940:3 ###açık susam kombo plakası, verilen yiyecek yığını için bir pazarlıktır.### open sesame combo plate ###positive--FOOD--PRICES--açık susam kombo plakası###positive--FOOD--STYLE_OPTIONS--açık susam kombo plakası
+en_OpenSesame_477970940:4 ###patateslerin tarafı, labne (yoğurt daldırma) olarak ölmektir.### side of potatoes labne (yogurt dip) ### positive--FOOD--QUALITY--patateslerin tarafı###positive--FOOD--QUALITY--yoğurt daldırma
+en_OpenSesame_477970940:5 ###ayrıca, kokulu zeytinyağı çiselemesi (geleneksel yol olduğuna inanıyorum) ile amerika'daki en iyi humusla hizmet ediyorlar!### ###positive--FOOD--QUALITY--humusla###positive--FOOD--STYLE_OPTIONS--humusla
+en_OpenSesame_477970940:6 ###tek dezavantaj kalabalık oturma ve yavaş hizmet.### ### negative--RESTAURANT--MISCELLANEOUS--oturma###negative--SERVICE--GENERAL--hizmet
+en_OpenSesame_477970940:7 ###biz sadece bazı yan yemekler sipariş almak için birkaç durum oldu.### ###negative--SERVICE--GENERAL--NULL
+en_OpenSesame_477970940:8 ###ancak, bu yer bir mücevher ve ben tekrar gitmeden duramam.### ###positive--RESTAURANT--GENERAL--yer
+en_ParkChaletGardenRestaurant_477778171:0 ###büyük bira### ###positive--DRINKS--QUALITY--bira
+en_ParkChaletGardenRestaurant_477778171:1 ###bu restoranda yemek için ilk kez oğul ile oldu ve kesinlikle korkunç!### ###negative--RESTAURANT--GENERAL--restoranda
+en_ParkChaletGardenRestaurant_477778171:2 ###biz bizim içecekler ve 1 1/2 saat yemek için 30 dakikadan fazla bekledi.### ###negative--SERVICE--GENERAL--NULL
+en_ParkChaletGardenRestaurant_477778171:3 ###asla sıcak bir bira ve vasat yemek için geri dönmeye yemin ettim.### ### negative--DRINKS--QUALITY--bira###negative--FOOD--QUALITY--yemek
+en_ParkChaletGardenRestaurant_477778171:4 ###ancak, bir pazar öğleden sonra kocam ve ben (yüksek protestolarla) hoş bir sürpriz oldu.### ###positive--RESTAURANT--GENERAL--NULL
+en_ParkChaletGardenRestaurant_477778171:5 ###grup çok iyi ve hizmet özenli.### ### positive--AMBIENCE--GENERAL--grup###positive--SERVICE--GENERAL--hizmet
+en_ParkChaletGardenRestaurant_477778171:6 ###Restoran ve park arasındaki bölgede dışarıda, ebeveynleri şarap yudumlarken çocuklar koşuyordu.###
+en_ParkChaletGardenRestaurant_477778171:7 ###biz ayakkabı telli soğan, keçi peynirli pizza, izgara kuşkonmaz ve meyve ile kızarmış brie sipariş verdik ve hepsi de çok iyiydi.### shoe string onions goat cheese pizza grilled asparagus fried brie with fruit ### positive--FOOD--QUALITY--ayakkabı telli soğan### positive--FOOD--QUALITY--keçi peynirli pizza### positive--FOOD--QUALITY--izgara kuşkonmaz###positive--FOOD--QUALITY--meyve ile kızarmış brie
+en_ParkChaletGardenRestaurant_477778171:8 ###tamamen farklı bir restoranda yemek gibiydi.### ###positive--RESTAURANT--GENERAL--NULL
+en_ParkChaletGardenRestaurant_477778171:9 ###o zamandan beri geri döndük ve aynı zamanda harika bir deneyim, bira (soğuk iyi) daha küçük tabaklar örnekleme.### ### positive--DRINKS--QUALITY--bira###positive--RESTAURANT--GENERAL--NULL
+en_ParkChaletGardenRestaurant_477778171:10 ###biz aynı garson ikinci kez vardı, bu yüzden hizmet sivilceli ve bizim şans iyi.### ###positive--SERVICE--GENERAL--garson
+en_ParkChaletGardenRestaurant_477778171:11 ###pazar öğleden sonraları bir grup çalıyor ve çok eğlenceli.### ###positive--AMBIENCE--GENERAL--grup
+en_Ray'sBoathouse_477775917:0 ###seattle'ın en iyi şarap listesi### ###positive--DRINKS--STYLE_OPTIONS--şarap listesi
+en_Ray'sBoathouse_477775917:1 ###ray'in (şaşırtıcı bir şekilde) şehrin en iyi ve en çeşitli şarap listesine sahip.### wine list ###positive--DRINKS--STYLE_OPTIONS--şarap listesine
+en_Ray'sBoathouse_477775917:2 ###sommelier fantastik, yeryüzüne ve son derece bilgili.### ###positive--SERVICE--GENERAL--sommelier
+en_Ray'sBoathouse_477775917:3 ###sadece şarap deneyimi için geri giderdim.### ###positive--DRINKS--QUALITY--şarap
+en_Ray'sBoathouse_477775917:4 ###iyi iş !### ###positive--RESTAURANT--GENERAL--NULL
+en_SchoonerOrLater_477965848:0 ###bir zamanlar olduğu yer değil### ###negative--RESTAURANT--GENERAL--yer
+en_SchoonerOrLater_477965848:1 ###bir zamanlar `` '' kahvaltı veya öğle yemeği için buluşup yemek yiyen bir yer görmek üzücü.### ###negative--RESTAURANT--GENERAL--yer
+en_SchoonerOrLater_477965848:2 ###yemek bir zamanlar ne değildi (iksir ciddi bir küçülme gördü) fiyatlar yükseldi ve en kötü hizmeti anakara avrupa da dahil olmak üzere deneyimledim..### ### negative--FOOD--QUALITY--yemek### negative--FOOD--PRICES--yemek### negative--FOOD--STYLE_OPTIONS--iksir###negative--SERVICE--GENERAL--hizmeti
+en_SchoonerOrLater_477965848:3 ###çoğu ilginç olabilecek şey, en kötü sevice/tutum bu kuruluşun sahiplerinden geliyor.### ###negative--SERVICE--GENERAL--sahiplerinden
+en_SchoonerOrLater_477965848:4 ###bu kuruluş, gıda televizyonlarının 'lokantalara arabalı dalışlar' ın yayınlanmasından sonra gerçekten belirgin bir düşüş yarattı (ve tekrarlayan hikaye) ateşli adam tarafından barındırıldı.### ###negative--RESTAURANT--GENERAL--kuruluş
+en_SchoonerOrLater_477965848:5 ###belki şimdi, scooner or later `` dalış '' kategorisine girer.### scooner or later ###negative--RESTAURANT--GENERAL--NULL
+en_SchoonerOrLater_477965848:6 ###bu, bir zamanlar yiyebileceğiniz en iyi yerlerden biri için üzücü.### ###negative--RESTAURANT--GENERAL--NULL
+en_SchoonerOrLater_477965848:7 ####umarım bir gün bu yer bir zamanlar olduğu konuma geri döner.### scooner or later ###negative--RESTAURANT--GENERAL--yer
+en_SchoonerOrLater_477965848:8 ###bu gerçekleşene kadar tavsiyem uzak durmak.### ###negative--RESTAURANT--GENERAL--NULL
+en_MiopostoCaffe_478542920:0 ###en iyi pizza ve kahve ile açık ve havalı yer### ### positive--AMBIENCE--GENERAL--yer### positive--FOOD--QUALITY--Pizza###positive--DRINKS--QUALITY--Kahve
+en_MiopostoCaffe_478542920:1 ###mioposto çok yaratıcı ve lezzetli bir pizza menüsüne sahiptir.### pizza menu ###positive--FOOD--QUALITY--pizza menüsüne###positive--FOOD--STYLE_OPTIONS--pizza menüsüne
+en_MiopostoCaffe_478542920:2 ###kahve de çok iyi.### ###positive--DRINKS--QUALITY--Kahve
+en_MiopostoCaffe_478542920:3 ###büyük açık ve dost canlısı ambiyans.### ###positive--AMBIENCE--GENERAL--ambiyans
+en_MiopostoCaffe_478542920:4 ###bu yer büyüleyici ve rahatlatıcı.### ###positive--AMBIENCE--GENERAL--yer
+en_MiopostoCaffe_478542920:5 ###tezgahın arkasında çalışanlar her zaman arkadaş canlısı ve yararlıdır.### servers behind the counter ###positive--SERVICE--GENERAL--Tezgahın arkasında çalışanlar
+en_MiopostoCaffe_478542920:6 ###Bana San Francisco'daki harika küçük restoranları hatırlatıyor.###
+en_MiopostoCaffe_478542920:7 ###yemeklerin tadını çıkarmak ve arkadaşlarla tanışmak için harika bir yer.### ### positive--RESTAURANT--MISCELLANEOUS--yer###positive--FOOD--QUALITY--yemeklerin
+en_Ray'sBoathouse_477775916:0 ###eski güvenilir### ###positive--RESTAURANT--GENERAL--NULL
+en_Ray'sBoathouse_477775916:1 ###seattle'da 12 yıldan sonra rayin yerini her zaman geri döndüğümüz yer olarak belirtebilirim.### ray's ###positive--RESTAURANT--GENERAL--rayin yerini
+en_Ray'sBoathouse_477775916:2 ###büyük yemek, muhteşem konum ve güler yüzlü hizmet bize geri gelecek yıl sonra devam.### ### positive--FOOD--QUALITY--yemek### positive--LOCATION--GENERAL--konum###positive--SERVICE--GENERAL--hizmet
+en_OpenSesame_477970937:0 ###yemekten zevk aldım### ###positive--FOOD--QUALITY--yemekten
+en_OpenSesame_477970937:1 ###Her şeyden önce, Long Beach'ten değilim.###
+en_OpenSesame_477970937:2 ###Birkaç ay önce arkadaşım beni bu restoranı almaya karar verdiğinde Socal'ı ziyaret ediyordum.###
+en_OpenSesame_477970937:3 ###(Aslında beni caddenin karşısında başka bir Akdeniz restoranı alacaktı ama açılış saatlerinden birkaç dakika geçmesine rağmen henüz açık değildi.)###
+en_OpenSesame_477970937:4 ###bunu sevdim .### ###positive--RESTAURANT--GENERAL--NULL
+en_OpenSesame_477970937:5 ###yemek iyi ve ucuz.### ###positive--FOOD--QUALITY--yemek###positive--FOOD--PRICES--yemek
+en_OpenSesame_477970937:6 ###kafta plakası vardı ve zevk aldım.### kafta plate ###positive--FOOD--QUALITY--kafta plakası
+en_OpenSesame_477970937:7 ###o kadar ki zar zor bitirebildim ama yaptım, çünkü lezzetliydi.### ###positive--FOOD--STYLE_OPTIONS--NULL###positive--FOOD--QUALITY--NULL
+en_OpenSesame_477970937:8 ###atmosfer güzeldi.### ###positive--AMBIENCE--GENERAL--atmosfer
+en_OpenSesame_477970937:9 ###hizmet bir miktar yavaştı, bizim garsonun meşgul olmasa da fişimizi vermesi sonsuza kadar sürdü.### ### negative--SERVICE--GENERAL--hizmet###negative--SERVICE--GENERAL--garsonun
+en_OpenSesame_477970937:10 ###hala bu yeri tavsiye ederim.### ###positive--RESTAURANT--GENERAL--yeri
+en_OpenSesame_477970937:11 ###BTW, Long Beach'i gerçekten seviyorum.###
+en_OpenSesame_477970937:12 ###Socal'da gerçekten dolaşacağınız ve bir araba almak zorunda kalmayacağınız birkaç yerden biriydi.###
+en_PizzeriaBianco_477908895:0 ###vay !### ###positive--RESTAURANT--GENERAL--NULL
+en_PizzeriaBianco_477908895:1 ###daha iyi olamaz!### ###positive--RESTAURANT--GENERAL--NULL
+en_PizzeriaBianco_477908895:2 ###başka ne diyebilirsin güzel insanlara inanılmaz yemek vay canına### ### positive--SERVICE--GENERAL--insanlara### positive--FOOD--QUALITY--yemek###positive--RESTAURANT--GENERAL--NULL
+en_SchoonerOrLater_477965689:0 ###harika bir atmosfer ile harika yemek!### ### positive--FOOD--QUALITY--yemek###positive--AMBIENCE--GENERAL--atmosfer
+en_SchoonerOrLater_477965689:1 ###yumurta, krep patates taze meyve ve yoğurt - servis ettikleri her şey lezzetli.### fresh fruit ### positive--FOOD--QUALITY--yumurta### positive--FOOD--QUALITY--krep### positive--FOOD--QUALITY--patates### positive--FOOD--QUALITY--yoğurt### positive--FOOD--QUALITY--taze meyve###positive--FOOD--QUALITY--NULL
+en_SchoonerOrLater_477965689:2 ###yatların ortasında boş bir pazar kahvaltısı için en iyi yer, daha sonra yakındaki farmer pazarında geziniyor.### ###positive--RESTAURANT--MISCELLANEOUS--yer
+en_BlueRibbonSushi_478218333:0 ###omikase tabağında balık büyük yemek kesinlikle harikaydı.### fish on the omikase platter ### positive--FOOD--QUALITY--yemek###positive--FOOD--QUALITY--Omikase tabağında balık
+en_BlueRibbonSushi_478218333:1 ###artı, pirinç alerjim var ve bekleyen personel ile inanılmaz bir konaklama - bir göz bile yoktu!### ###positive--SERVICE--GENERAL--bekleyen personel
+en_BlueRibbonSushi_478218333:2 ###ve garson mükemmel bir uğruna önerdi!### ### positive--SERVICE--GENERAL--garson###positive--DRINKS--QUALITY--uğruna
+en_BlueRibbonSushi_478218333:3 ###kesinlikle muhteşem !### ###positive--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218340:0 ###rakipsiz suşi!### ###positive--FOOD--QUALITY--Suşi
+en_BlueRibbonSushi_478218340:1 ###çift ​​beğeni !### ###positive--FOOD--QUALITY--NULL
+en_BlueRibbonSushi_478218340:2 ###Suşi'yi seviyorum ve dünyanın her yerinde yedim.###
+en_BlueRibbonSushi_478218340:3 ###bu, tokyo'daki tazelikle ilgili yerlerle tam orada.### ###positive--FOOD--QUALITY--NULL
+en_BlueRibbonSushi_478218340:4 ###ağzınızda nigiri ve sashimiyi eritin, çok lezzetli rulolar da.### ### positive--FOOD--QUALITY--Nigiri### positive--FOOD--QUALITY--sashimiyi###positive--FOOD--QUALITY--rulolar
+en_BlueRibbonSushi_478218340:5 ###istiridye rulosunu denediğinizden emin olun.### oyster roll ###positive--FOOD--QUALITY--i̇stiridye rulosunu
+en_BlueRibbonSushi_478218715:0 ###görkemli### ###positive--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218715:1 ###nyc'deki en iyi suşi nasıl tanımlanır: hmmm, lezzetli inanılmaz fantastik etli mükemmel nah yukarıda.### ###positive--FOOD--QUALITY--Suşi
+en_BlueRibbonSushi_478218715:2 ###bu restoran hakkında yeterince iyi şeyler söyleyemem ve bir sonraki ziyaretlerimi bekleyemem.### ###positive--RESTAURANT--GENERAL--restoran
+en_BlueRibbonSushi_478218715:3 ###şimdiye kadar yediğim en iyi chuwam mushi.### chuwam mushi ###positive--FOOD--QUALITY--chuwam mushi
+en_BlueRibbonSushi_478218715:4 ###soğuk bir günde mükemmel.### ###positive--FOOD--QUALITY--NULL
+en_BlueRibbonSushi_478218715:5 ###6 $ ipucu ile.### ###positive--RESTAURANT--PRICES--NULL
+en_BlueRibbonSushi_478218715:6 ###mükemmellik.### ###positive--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218518:0 ###iyi suşi, yüksek fiyat### ###positive--FOOD--QUALITY--Suşi###negative--FOOD--PRICES--Suşi
+en_BlueRibbonSushi_478218518:1 ###şehirdeki en iyi suşi yerlerinden biri.### sushi place ###positive--RESTAURANT--GENERAL--suşi yerlerinden
+en_BlueRibbonSushi_478218518:2 ###ev özel rulosu gerçekten iyi.### house special roll ###positive--FOOD--QUALITY--ev özel rulosu
+en_BlueRibbonSushi_478218518:3 ###hafta sonları, birkaç saat beklemeniz gerekebilir.### ###neutral--SERVICE--GENERAL--NULL
+en_BlueRibbonSushi_478218518:4 ###ancak, cep telefonu numaralarınızı alırlar, böylece arayana kadar başka bir yere takılabilirsiniz.### ###positive--SERVICE--GENERAL--NULL
+en_Murphy's_478075041:0 ###2 için rahat bir yer### ###positive--AMBIENCE--GENERAL--yer
+en_Murphy's_478075041:1 ###murphy'nin 25 yılı aşkın bir süredir inanılmaz olduğuna inanamıyorum.### murphy's ###positive--RESTAURANT--MISCELLANEOUS--murphy'nin
+en_Murphy's_478075041:2 ###bu, özellikle kararsız restoran işinde büyük bir iltifat.zaten yeterli !### ###positive--RESTAURANT--GENERAL--NULL
+en_Murphy's_478075041:3 ###murphy'deki brunch, benim uzmanlığım için harika.yumurta beyaz omlet her zaman taze hazırlanmış yiyecek.### egg white omelet ### positive--FOOD--QUALITY--brunch### positive--FOOD--QUALITY--yiyecek###positive--FOOD--QUALITY--Yumurta Beyaz Omlet
+en_Murphy's_478075041:4 ###romantik bir tarih 2 veya gizli buluşma için mükemmel bir yer!### ###positive--RESTAURANT--MISCELLANEOUS--yer###positive--AMBIENCE--GENERAL--yer
+en_Murphy's_478075041:5 ###harika tatlılar için yerden tasarruf edin.### ###positive--FOOD--QUALITY--Tatlılar
+en_Murphy's_478075041:6 ###restoran, unutmadığınız geniş bir şarap listesi ve ambiyans sunuyor!### wine list ### positive--AMBIENCE--GENERAL--ambiyans###positive--DRINKS--STYLE_OPTIONS--şarap listesi
+en_Murphy's_478075041:7 ###hayal kırıklığına uğramayacağınızı garanti ediyorum, ayrıca vale park yeri var.### ###positive--RESTAURANT--GENERAL--NULL###positive--RESTAURANT--MISCELLANEOUS--NULL
+en_MercedesRestaurant_478010603:0 ###bağımlı!### ###positive--RESTAURANT--GENERAL--NULL
+en_MercedesRestaurant_478010603:1 ###finans bölgesinde öğle yemeği için en iyi meksika yer.### mexican place ###positive--RESTAURANT--GENERAL--Meksika yer
+en_MercedesRestaurant_478010603:2 ###enchiladas ve tavuk çorbasını seviyorum - spesiyallerini kontrol ettiğinizden emin olun.### chicken soup ### positive--FOOD--QUALITY--enchiladas### positive--FOOD--QUALITY--spesiyallerini###positive--FOOD--QUALITY--tavuk çorbasını
+en_MercedesRestaurant_478010603:3 ###aşçılar yıllardır restoranda ve aşçı aile tarifleri.### ###positive--FOOD--QUALITY--Aşçılar
+en_MercedesRestaurant_478010603:4 ###cuma günleri bir masa için meşgul olabilir ama bir kez oturmuş, hizmet çok etkili o kadar verimli.### ###positive--SERVICE--GENERAL--hizmet
+en_BlueRibbonSushi_478218513:0 ###oraya şehir dışından bir arkadaşımla gittim.ve ikimiz de çok etkilendik!### ###positive--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218513:1 ###Pazartesi gecesi gittim, bu yüzden masa için beklemek yoktu.###
+en_BlueRibbonSushi_478218513:2 ###suşi mükemmel ve hızlı personel.### wait staff ### positive--FOOD--QUALITY--Suşi###positive--SERVICE--GENERAL--personel
+en_BlueRibbonSushi_478218513:3 ###fiyat da haklıydı.### ###positive--RESTAURANT--PRICES--NULL
+en_BlueRibbonSushi_478218513:4 ###atmosfer sadece iyiydi.### ###neutral--AMBIENCE--GENERAL--atmosfer
+en_BlueRibbonSushi_478218513:5 ###alan sınırlıydı, ancak yiyecekler için yapılmış.### ### negative--RESTAURANT--MISCELLANEOUS--alan###positive--FOOD--QUALITY--yiyecekler
+en_BlueRibbonSushi_478218513:6 ###oraya bir kalp atışı içinde geri dönüyorum.### ###positive--RESTAURANT--GENERAL--NULL
+en_MiopostoCaffe_478542919:0 ###Tüccar Joe's'a gitmiş olmalı ve dondurulmuş pizza vardı: (###
+en_MiopostoCaffe_478542919:1 ###Ailem akşam yemeği yemek için hafta ortası bir akşam gitti.###
+en_MiopostoCaffe_478542919:2 ###Restoran % 80 doluydu ve orada bir işaret `` Oturmak için bekleyin.''###
+en_MiopostoCaffe_478542919:3 ###sanırım personel görünmez olduğunda oturmak zor.### ###negative--SERVICE--GENERAL--Personel
+en_MiopostoCaffe_478542919:4 ###çalışanlar bizi görmezden gelerek ileri geri yürürken orada 10 dakika durduk.### ###negative--SERVICE--GENERAL--çalışanlar
+en_MiopostoCaffe_478542919:5 ###sonunda, eşim bir personelin önünde yüz yüze durdu ve `` bir masa mı bekliyorsunuz?''### ###negative--SERVICE--GENERAL--personelin
+en_MiopostoCaffe_478542919:6 ###oturduktan sonra nihayet yemek almak yaklaşık 30 dakika sürdü.### ###negative--SERVICE--GENERAL--NULL
+en_MiopostoCaffe_478542919:7 ###önceki incelemeler çocuk dostu dedi. ışık yılı olan iki küçük çocukla bana bir mola ver.### ###negative--RESTAURANT--MISCELLANEOUS--NULL
+en_MiopostoCaffe_478542919:8 ###sezar salatası çok fazla limon yiyemedi.### caesar salad ###negative--FOOD--QUALITY--Sezar salatası
+en_MiopostoCaffe_478542919:9 ###Pizza, yıllar önce (uzak bir saniye) alanı işgal eden Baker'ın plajını biraz anımsattı.###
+en_MiopostoCaffe_478542919:10 ###i̇yi ama olağanüstü bir şey değildi.### ###neutral--FOOD--QUALITY--NULL
+en_MiopostoCaffe_478542919:11 ###Bu kuruluş, geri kalan Chow Foods Grubu duygularımla tutarlıdır.###
+en_MiopostoCaffe_478542919:12 ###Restoranlarının çoğunu sık sık kullanıyorduk, ancak yıllar boyunca her biri gerçekten hayal kırıklığına uğruyor.###
+en_MiopostoCaffe_478542919:13 ###Ben doğdu ve yetiştirilmiş Southend sakini bu restoranın açılışını duymaktan heyecan duyuyordu.###
+en_MiopostoCaffe_478542919:14 ###Sanırım belki de yönetimin Columbia City'deki Tutta Bella'yı bazı ipuçlarını ziyaret etmesi faydalı olabilir.###
+en_MercedesRestaurant_478010602:0 ###harika yemekler, daha iyi margaritalar!### ### positive--FOOD--QUALITY--yemekler###positive--DRINKS--QUALITY--margaritalar
+en_MercedesRestaurant_478010602:1 ###bu benim en iyi öğle yemeği, büyük porsiyon hızlı hizmet ve şaşırtıcı bir margarita!### ### positive--FOOD--STYLE_OPTIONS--porsiyon### positive--SERVICE--GENERAL--hizmet### positive--DRINKS--QUALITY--margarita###positive--RESTAURANT--GENERAL--NULL
+en_MercedesRestaurant_478010602:2 ###gerçekten meşgul oluyor, bu yüzden oraya erken tarafında bir koltuk alabilirsiniz, hizmet kötü değil ama beklemek zorunda kalırsanız bir koltuk alabilirsiniz!### ###positive--SERVICE--GENERAL--hizmet
+en_MercedesRestaurant_478010602:3 ###çok renkli, duvarlardaki sanata göz atın!### art on the walls ###positive--AMBIENCE--GENERAL--duvarlardaki sanata
+en_India'sGrill_477960696:0 ###bu yeri seviyorum !### ###positive--RESTAURANT--GENERAL--yeri
+en_India'sGrill_477960696:1 ###8 yılı aşkın bir süredir bu yerde yemek yiyorum ve hiç kötü bir yemek yapmadım.### ###positive--FOOD--QUALITY--yemek
+en_India'sGrill_477960696:2 ###bu yeri ilk kez hint yemeği denemek isteyenler için tavsiye ederim.### indain food ###positive--FOOD--QUALITY--hint yemeği
+en_India'sGrill_477960696:3 ###öğle yemeği menüsü harika bir anlaşma!### lunch menu ###positive--FOOD--PRICES--öğle yemeği menüsü
+en_India'sGrill_477960696:4 ###bol yiyecek, güven bana.### ###positive--FOOD--STYLE_OPTIONS--yiyecek
+en_India'sGrill_477960696:5 ###taze malzemeler ve süper lezzetli.### ### positive--FOOD--QUALITY--malzemeler###positive--FOOD--QUALITY--NULL
+en_India'sGrill_477960696:6 ###bir sonraki en iyi şey, annelerim yemek için en iyi şeydir.### ###positive--FOOD--QUALITY--NULL
+en_BlueRibbonSushi_478218517:0 ###en iyi yemek, fenominal hizmet### ### positive--FOOD--QUALITY--yemek###positive--SERVICE--GENERAL--hizmet
+en_BlueRibbonSushi_478218517:1 ###finicky sushi eater ve nyc'nin sunduğu örnekleri örnekleyenler için, balık en taze ve hizmet mükemmeldir.### ### positive--FOOD--QUALITY--balık###positive--SERVICE--GENERAL--hizmet
+en_BlueRibbonSushi_478218517:2 ###seçim sadece yenilikçi olmakla kalmaz, aynı zamanda geleneksel suşi de güzel bir denge vardır.### ### positive--FOOD--STYLE_OPTIONS--seçim###positive--FOOD--STYLE_OPTIONS--Suşi
+en_BlueRibbonSushi_478218517:3 ###şehirdeki en güzel garsonlar.### ###positive--SERVICE--GENERAL--garsonlar
+en_Murphy's_478075037:0 ###çok fazla puan!### ###negative--RESTAURANT--GENERAL--NULL
+en_Murphy's_478075037:1 ###bu yer olması gerekenden aşırı derecelendirilmiş.### ###negative--RESTAURANT--GENERAL--yer
+en_Murphy's_478075037:2 ###pazar günü bir saat boyunca sıraya girmek istersem ortalama brunch yemekleri almak istesen, o zaman murphy'i listenin üstüne koyacaktım.### brunch food ### neutral--FOOD--QUALITY--brunch yemekleri###negative--SERVICE--GENERAL--NULL
+en_Murphy's_478075037:3 ###buradaki normal menü, aldığınız sümük tutumu değmez ortalamanın biraz üzerinde.### regular menu ### neutral--FOOD--QUALITY--Normal Menü###negative--SERVICE--GENERAL--NULL
+en_BlueRibbonSushi_478218509:0 ###10!### ###positive--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218509:1 ###suşiye hayranınım, ustaca balık büyük sake katil soho konumu ve tabii ki: somon orkinos alabalık morina mackeral deniz anası deniz kestanesi karides ıstakoz karaca süt balığı yüzeyli yılan bağı yengeç sardalya keşiş balığı tarak kabuğu istiridye tuna.### soho location yellow tail sea urchin sea bream milk fish blue fin tuna monk fish ### positive--FOOD--QUALITY--Suşiye### positive--FOOD--STYLE_OPTIONS--balık### positive--DRINKS--QUALITY--sake### positive--FOOD--QUALITY--Somon### positive--FOOD--QUALITY--Tuna### positive--FOOD--QUALITY--sake### positive--FOOD--QUALITY--Morina### positive--FOOD--QUALITY--orkinos### positive--FOOD--QUALITY--Deniz anası### positive--FOOD--QUALITY--karides### positive--FOOD--QUALITY--Istakoz### positive--FOOD--QUALITY--alabalık### positive--FOOD--QUALITY--yılan balığı### positive--FOOD--QUALITY--Yengeç### positive--FOOD--QUALITY--sardalya### positive--FOOD--QUALITY--karaca### positive--FOOD--QUALITY--tarak kabuğu### positive--FOOD--QUALITY--İstiridyeler### positive--FOOD--STYLE_OPTIONS--ziyaret etmek### positive--LOCATION--GENERAL--Soho Konumu### positive--FOOD--QUALITY--sarı kuyruk### positive--FOOD--QUALITY--Deniz kestanesi### positive--FOOD--QUALITY--deniz çipi### positive--FOOD--QUALITY--süt balığı### positive--FOOD--QUALITY--Orkinoz###positive--FOOD--QUALITY--keşiş balığı
+en_BlueRibbonSushi_478218509:2 ###doğu kıyısında her şeye sahip tek bir yer, artı çok daha fazlası var.### ###positive--RESTAURANT--GENERAL--yer
+en_BlueRibbonSushi_478218509:3 ###Nobu'dan daha iyi, Tomoe Taka Yama Sugiyama ve geri kalanı.###
+en_BlueRibbonSushi_478218509:4 ###cep telefonunuzu getirin çünkü world'deki en i̇yi sushi restaurant: mavi şerit suşi görmeniz gerek.### blue ribbon sushi ###positive--RESTAURANT--GENERAL--mavi şerit suşi
+en_BlueRibbonSushi_478218509:5 ###İnanın bebeğim!###
+en_BlueRibbonSushi_478218342:0 ###chase'e kesin - bu inanılmaz!### ###positive--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218342:1 ###iddiasız ve yeraltı.### ###positive--AMBIENCE--GENERAL--NULL
+en_BlueRibbonSushi_478218342:2 ###taze, misafirperver lezzetli ve rahatlatıcı.### ###positive--FOOD--QUALITY--NULL###positive--AMBIENCE--GENERAL--NULL
+en_BlueRibbonSushi_478218342:3 ###eller aşağı, şimdiye kadar sahip olduğum en iyi ton balığı.### ###positive--FOOD--QUALITY--ton balığı
+en_BlueRibbonSushi_478218342:4 ###mavi şerit harika bir üne sahip.### blue ribbon ###positive--RESTAURANT--GENERAL--mavi şerit
+en_BlueRibbonSushi_478218342:5 ###buraya bir öneri üzerinde gittim ve kesinlikle tekrar zaman dönecek.### ###positive--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218342:6 ###ne bul!### ###positive--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218512:0 ###buna değer### ###positive--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218512:1 ###yüksek kaliteli ve güzel ayarlama ile büyük değer suşi.### ### positive--FOOD--QUALITY--Suşi### positive--FOOD--PRICES--Suşi###positive--AMBIENCE--GENERAL--ayarlama
+en_BlueRibbonSushi_478218512:2 ###rezervasyon olmadan gece geç yemek (son dakika planlama) için iyi.### ###positive--RESTAURANT--MISCELLANEOUS--NULL
+en_BlueRibbonSushi_478218512:3 ###füme sarı kuyruk inanılmaz ve rulo da lezzetli olduğu gibi şefin suşi seçimini deneyin.### smoked yellowtail chef's choice for sushi ### positive--FOOD--QUALITY--Rulo### positive--FOOD--QUALITY--füme sarı kuyruk###positive--FOOD--QUALITY--Şefin Suşi Seçimini
+en_MiopostoCaffe_478542921:0 ###kötü müşteri hizmetleri pizza.### customer service ### negative--FOOD--QUALITY--Pizza###negative--SERVICE--GENERAL--müşteri hizmetleri
+en_MiopostoCaffe_478542921:1 ###seattle'daki çoğu restoranda olduğu gibi, mioposto'nun hizmeti kötü ve yemekler çok pahalı.### ### negative--SERVICE--GENERAL--hizmeti###negative--FOOD--PRICES--yemekler
+en_MiopostoCaffe_478542921:2 ###birçok insanın en sevdikleri pizza ve yer türleri olduğunu biliyorum, ancak mioposto'nun kaliteli iyi bir tadı yok.### ###negative--FOOD--QUALITY--Pizza
+en_MiopostoCaffe_478542921:3 ###dürüst olmak gerekirse, daha iyi donmuş pizza vardı.### ###negative--FOOD--QUALITY--Pizza
+en_MiopostoCaffe_478542921:4 ###şaka yapmıyorum .###
+en_MiopostoCaffe_478542921:5 ###mioposto hakkında tek olumlu şey güzel bir yer.### ### negative--RESTAURANT--GENERAL--mioposto###positive--LOCATION--GENERAL--yer
+en_BlueRibbonSushi_478218339:0 ###her seferinde seviyorum### ###positive--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218339:1 ###kötü değerlendirmeleri okurken açıkçası şok oldum - bu yer harika;bizi hiçbir şekilde hayal kırıklığına uğratmadı ve bu yerde 10 kezden daha fazla yedik.### ###positive--RESTAURANT--GENERAL--yer
+en_BlueRibbonSushi_478218339:2 ###İnsanlar loş aydınlatma hakkında şikayet ediyor, ama bu yeri sevdiğim bir şey - parlak ışıkla yemeğinize bakmak istiyorsanız.###
+en_BlueRibbonSushi_478218339:3 ###gıda harika ve bekleyen personel her seferinde her seferinde mükemmel oldu.### waiting staff ### positive--FOOD--QUALITY--Gıda###positive--SERVICE--GENERAL--Bekleyen personel
+en_BlueRibbonSushi_478218339:4 ###tek sorun beklemek olurdu, ama genellikle beklerken önünde bir içki içiyoruz.### ###neutral--SERVICE--GENERAL--beklemek
+en_BlueRibbonSushi_478218339:5 ###orada hiç bir sorun yaşamadım.### ###positive--RESTAURANT--GENERAL--NULL
+en_StackRestaurant__Bar_478538242:0 ###deniz ürünleri plus### ###positive--FOOD--QUALITY--Deniz ürünleri
+en_StackRestaurant__Bar_478538242:1 ###bu harika bir yemek deneyimi oldu.### ###positive--RESTAURANT--GENERAL--NULL
+en_StackRestaurant__Bar_478538242:2 ###danny gans'ı görecekseniz veya sadece mirage'da kalacaksanız, bunu kaçırmayın.### ###positive--RESTAURANT--GENERAL--NULL
+en_StackRestaurant__Bar_478538242:3 ###istiridye, ıstakoz, yengeç (küçük boyut) meze eşim için mükemmel bir girişti.### appetizer of oysters, lobster, crab (small size) ###positive--FOOD--QUALITY--istiridye, ıstakoz, yengeç (küçük boyut) meze
+en_StackRestaurant__Bar_478538242:4 ###istakoz risotto deniz tabanı en iyisiydi.### seabass on lobster risotto ###positive--FOOD--QUALITY--istakoz risotto deniz tabanı
+en_StackRestaurant__Bar_478538242:5 ###sezar salatası mükemmeldi.### caesar salad ###positive--FOOD--QUALITY--Sezar salatası
+en_StackRestaurant__Bar_478538242:6 ###harika bir şişe şarap.### bottle of wine ###positive--DRINKS--QUALITY--bir şişe şarap
+en_StackRestaurant__Bar_478538242:7 ###tatlı için yer bırakın.### ###positive--FOOD--QUALITY--tatlı
+en_SchoonerOrLater_479842021:0 ###tamamen aşırı derecelendirildi!### ###negative--RESTAURANT--GENERAL--NULL
+en_SchoonerOrLater_479842021:1 ###Diners, sürücü ve dalış incelemelerine dayalı yeni yerlere bakmadan önce daha fazla araştırma yapmam gerekecek.###
+en_SchoonerOrLater_479842021:2 ###Ben en çok yorum kötü hizmet söz.###
+en_SchoonerOrLater_479842021:3 ###gıda iyiydi, ama hizmet o kadar fakir ki, soğuk alana kadar partimde herkes hizmet etti.### ### neutral--FOOD--QUALITY--Gıda###negative--SERVICE--GENERAL--hizmet
+en_SchoonerOrLater_479842021:4 ###o zaman bile, sipariş doğru değildi ve hala birkaç öğe bekliyorduk.### ###negative--SERVICE--GENERAL--NULL
+en_SchoonerOrLater_479842021:5 ###garsonun dikkat çekmek ve nihayet başını kaldırıp konuşmasını beklemek bizim için çok zor zamanlardı.### ###negative--SERVICE--GENERAL--garsonun
+en_SchoonerOrLater_479842021:6 ###görünüşe göre sahibi hemen yanımıza oturdu ve o bizim sorunlarımızı kontrol etmek geldi çok küçümseyen bir şekilde % 20 indirim faturası sundu.### ###negative--SERVICE--GENERAL--sahibi
+en_SchoonerOrLater_479842021:7 ###fatura geldiğinde, sadece içecekleri değil, yemekten indirim aldı.### ###negative--SERVICE--GENERAL--NULL
+en_SchoonerOrLater_479842021:8 ###gerçekten umursamadığı açıktı.### ###negative--SERVICE--GENERAL--NULL
+en_SchoonerOrLater_479842021:9 ###Cal çok büyük kahvaltı/öğle yemeği yerleri ile, bu beklemek veya ziyaret etmek için herhangi bir ekstra çaba değmez.###
+en_ParkChaletGardenRestaurant_477778210:0 ###yerden kaçının### ###negative--RESTAURANT--GENERAL--yerden
+en_ParkChaletGardenRestaurant_477778210:1 ###kendinizi zaman kaybından kurtarın ve ziyaret etmeyin.### ###negative--RESTAURANT--GENERAL--NULL
+en_ParkChaletGardenRestaurant_477778210:2 ###Online web sayfası bulduktan sonra restorana ilk gezimi yaptım.###
+en_ParkChaletGardenRestaurant_477778210:3 ###oraya gittiğinde merdivenlere oturdum, atmosfer rahattı ama hizmet korkunçtu### ### positive--AMBIENCE--GENERAL--atmosfer###negative--SERVICE--GENERAL--hizmet
+en_ParkChaletGardenRestaurant_477778210:4 ###10-15 dakika bir bira istedim ve bir daha asla hizmet edilmedi.### ###negative--SERVICE--GENERAL--hizmet
+en_ParkChaletGardenRestaurant_477778210:5 ###orada boş camımla 20 dakikadan fazla oturduktan sonra ayrıldım.### ###negative--SERVICE--GENERAL--NULL
+en_ParkChaletGardenRestaurant_477778210:6 ###eve gittim ve onları tekrar çevrimiçi aradım, bu yüzden işe yaramayan bir bağlantı olduğunu keşfetti, bu yüzden var olmayan hizmet aldatıcı hakkında restoran e -posta gönderdi.### ###negative--RESTAURANT--MISCELLANEOUS--restoran
+en_ParkChaletGardenRestaurant_477778210:7 ###bir aydan daha uzun bir süre önce hiç kimseden duymadım.### ###negative--RESTAURANT--MISCELLANEOUS--NULL
+en_ParkChaletGardenRestaurant_477778210:8 ###Arkadaşıma durumu anlattıktan sonra tekrar deneyelim ama Lower Bar'ı ziyaret edeceğiz.###
+en_ParkChaletGardenRestaurant_477778210:9 ###20 dakikadan fazla barda oturduktan sonra sadece 2 içecek yapmıştı ve bize o doğru olmasını söyledi.### bar keep ###negative--SERVICE--GENERAL--barda
+en_ParkChaletGardenRestaurant_477778210:10 ###hiç hizmet almadan ayrıldık.### ###negative--SERVICE--GENERAL--hizmet
+en_ParkChaletGardenRestaurant_477778210:11 ###bunu yazarken, tekrar bir bağlantı vermeyi denedim ve hala işe yaramıyor.### ###negative--RESTAURANT--MISCELLANEOUS--NULL
+en_ParkChaletGardenRestaurant_477778210:12 ###Ziyaret etmek için çok daha iyi yerler var!###
+en_Ray'sBoathouse_477775920:0 ###şehirdeki en iyi yengeç kekleri### crab cakes ###positive--FOOD--QUALITY--Yengeç kekleri
+en_Ray'sBoathouse_477775920:1 ###bu, yengeç tuzaklarını çektiğimi ve kekleri yedi yaşından beri kendim yapmamı düşünerek büyük bir ifade - ama bu küçük şeytanlar her seferinde daha iyi hale geliyor.### ###positive--FOOD--QUALITY--kekleri
+en_Ray'sBoathouse_477775920:2 ###mümkünse, bu yere tekne ile gelin ve bütün bir akşam yapın.### ###positive--RESTAURANT--MISCELLANEOUS--yere
+en_Ray'sBoathouse_477775920:3 ###şık bir sahil ayarı ile büyük mevsimlik balık ve deniz ürünleri.### seasonal fish waterfront setting ### positive--FOOD--QUALITY--Deniz ürünleri### positive--FOOD--QUALITY--mevsimlik balık###positive--AMBIENCE--GENERAL--sahil ayarı
+en_Ray'sBoathouse_477775920:4 ###her zaman bir kazanan.### ###positive--RESTAURANT--GENERAL--NULL
+en_MiopostoCaffe_478542922:0 ###harika pizza, kötü hizmet### ### positive--FOOD--QUALITY--Pizza###negative--SERVICE--GENERAL--hizmet
+en_MiopostoCaffe_478542922:1 ###pizzalarını, özellikle mantarlı pizzalarını seviyorum.### mushroom pizza ### positive--FOOD--QUALITY--mantarlı pizzalarını###positive--FOOD--QUALITY--pizzalarını
+en_MiopostoCaffe_478542922:2 ###ayrıca sezar salatasını seviyorum.### caeser salad ###positive--FOOD--QUALITY--sezar salatasını
+en_MiopostoCaffe_478542922:3 ###sipariş vermeyi ve almayı tercih et, çünkü sunucuları sevmiyorum, özellikle bir genç kadın.### young woman ### negative--SERVICE--GENERAL--sunucuları###negative--SERVICE--GENERAL--genç kadın
+en_MiopostoCaffe_478542922:4 ###sizi hoş hissettirmez ve bir sıkıntı gibi davranır.### ###negative--SERVICE--GENERAL--NULL
+en_MiopostoCaffe_478542922:5 ###ama bazı insanlarla çok arkadaş canlısı, daha da sinir bozucu.### ###negative--SERVICE--GENERAL--NULL
+en_MiopostoCaffe_478542922:6 ###yönetim gerçekten dikkat çekmeli ve eğitmeli, personele bazı uygun tavırlar öğretmeliler.### ### negative--SERVICE--GENERAL--yönetim###negative--SERVICE--GENERAL--personele
+en_MiopostoCaffe_478542922:7 ###birçok insan büyük pizza ve kötü hizmet hakkında konuşur, bu yüzden sadece birkaç memnun olmayan müşterinin sıralaması olamaz.### ### positive--FOOD--QUALITY--Pizza###negative--SERVICE--GENERAL--hizmet
+en_MiopostoCaffe_478542922:8 ###hizmet çok kişiliksiz ve kurumsal benzeri olmasaydı, mahalle ortak olmak için tonlarca potansiyele sahip harika bir küçük yer.### ### positive--RESTAURANT--GENERAL--yer###negative--SERVICE--GENERAL--hizmet
+en_SchoonerOrLater_479615721:0 ###harika kahvaltı### ###positive--FOOD--QUALITY--kahvaltı
+en_SchoonerOrLater_479615721:1 ###burası kahvaltı ile ünlüdür.### ###positive--FOOD--QUALITY--kahvaltı
+en_SchoonerOrLater_479615721:2 ###gıda ağında yer aldı ve hak ediyorlar.### ###positive--RESTAURANT--MISCELLANEOUS--NULL
+en_SchoonerOrLater_479615721:3 ###yemek harika ve harika bloody mary yapıyorlar.### bloody mary ### positive--FOOD--QUALITY--yemek###positive--DRINKS--QUALITY--Bloody Mary
+en_SchoonerOrLater_481226185:0 ###burada kahvaltıyı seviyorum.### ###positive--FOOD--QUALITY--kahvaltıyı
+en_SchoonerOrLater_481226185:1 ###onların yengeç yumurtaları benedict bağımlılık yapıyor.### crab eggs benedict ###positive--FOOD--QUALITY--yengeç yumurtaları benedict
+en_SchoonerOrLater_481226185:2 ###tüm menü öğeleri bir hit ve mimoza hizmet ediyorlar.### menu items ### positive--FOOD--QUALITY--menü öğeleri###positive--DRINKS--STYLE_OPTIONS--NULL
+en_SchoonerOrLater_481226185:3 ###bundan daha iyi olamaz.### ###positive--RESTAURANT--GENERAL--NULL
+en_PagodaRestaurant_479983203:0 ###uzun zamandır tattığım en iyi çin yemeği### chinese food ###positive--FOOD--QUALITY--Çin yemeği
+en_PagodaRestaurant_479983203:1 ###Pagoda için bir Groupon var ve Perşembe gecesi denemeye karar verdik.###
+en_PagodaRestaurant_479983203:2 ###Piyano oynayan ve yemekten ayrılan bar alanında şarkı söyleyen bir adam vardı.###
+en_PagodaRestaurant_479983203:3 ###onu kolayca duyabilirsiniz, bu yüzden hoş bir ses ve zorlayıcı değil.### ###positive--AMBIENCE--GENERAL--NULL
+en_PagodaRestaurant_479983203:4 ###restoranın ambiyansı güzel ve kaliteli yemek için iyiydi.### ###positive--AMBIENCE--GENERAL--ambiyansı
+en_PagodaRestaurant_479983203:5 ###çok iyi değil, rahatsız hissettiğinizi ve giyinmek zorunda olduğunuzu düşündüm.### ###positive--AMBIENCE--GENERAL--NULL
+en_PagodaRestaurant_479983203:6 ###personel, çok güzel ve nazikçe çince.### ###positive--SERVICE--GENERAL--Personel
+en_PagodaRestaurant_479983203:7 ###Biz her zaman her Çin restoranında gıda kalitesini belirlemek için sipariş bal ceviz karides emretti.###
+en_PagodaRestaurant_479983203:8 ###öncelikle, yemek hızlı geldi ve hep birlikte :) bunu beğendim.birbirine gelen şeylerin iddialılığından nefret edin.### ###positive--SERVICE--GENERAL--NULL
+en_PagodaRestaurant_479983203:9 ####yani karides hakkında, taze ve hafif bir gevreklik meyilli vardı.soooo iyi ceviz daha küçük parçalar kesilmiş çok gevrek lezzetli.### ### positive--FOOD--QUALITY--karides### positive--FOOD--QUALITY--meyilli###positive--FOOD--QUALITY--ceviz
+en_PagodaRestaurant_479983203:10 ###lezzetli .### ###positive--FOOD--QUALITY--NULL
+en_PagodaRestaurant_479983203:11 ###şimdiye kadar tattığımız en iyi bal ceviz karides.### honey walnyt prawns ###positive--FOOD--QUALITY--bal ceviz karides
+en_PagodaRestaurant_479983203:12 ###Sonraki biz sipariş karides ve tarak brokoli vardı.###
+en_PagodaRestaurant_479983203:13 ###brocollis çok taze ve lezzetli.### ###positive--FOOD--QUALITY--Brocollis
+en_PagodaRestaurant_479983203:14 ###bu tür yiyecekleri sipariş ettiğinde normalde brokoliyi bitirmezdim ama ilk kez, her parça olaylı bir şeydi.deniz tarağı ve karides çok taze güzel pişmiş.### ### positive--FOOD--QUALITY--brokoliyi### positive--FOOD--QUALITY--Deniz tarağı###positive--FOOD--QUALITY--karides
+en_PagodaRestaurant_479983203:15 ###hiç çiğnenmez.### ###positive--FOOD--QUALITY--NULL
+en_PagodaRestaurant_479983203:16 ###çöl için mango ginger creme brulee vardı.oh la nefis!### mango ginger creme brulee ###positive--FOOD--QUALITY--Mango Ginger Creme Brulee
+en_PagodaRestaurant_479983203:17 ###ağzınızda eritin.### ###positive--FOOD--QUALITY--NULL
+en_PagodaRestaurant_479983203:18 ###kesinlikle bu restorana geri dönüyoruz.### ###positive--RESTAURANT--GENERAL--restorana
+en_PagodaRestaurant_479983203:19 ###Mümkünse her ay.###
+en_PagodaRestaurant_479983203:20 ###otel oldukları için pahalı görünen bu gibi yerlerde sık sık yemek yemeyen pek çok insan üzücü.ama kesinlikle bir kaçırmak istemediğiniz bir, santında şehir merkezinde iseniz esp.### ###positive--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478219459:0 ###tombul kısımlar### ###negative--FOOD--STYLE_OPTIONS--kısımlar
+en_BlueRibbonSushi_478219459:1 ###buradaki suşi mükemmel iyi, ama 5 $ için bir parça balık daha büyük olmalı veya bu orta fiyatlı restoran (hatta nyc) olduğu iddiası yok.### ### positive--FOOD--QUALITY--Suşi###negative--RESTAURANT--PRICES--restoran### negative--FOOD--STYLE_OPTIONS--Suşi### negative--FOOD--PRICES--Suşi
+en_BlueRibbonSushi_478219459:2 ###biz kolayca kişi başı 40 $ (alkol dahil değil) harcadık ve hala açız.### ###negative--RESTAURANT--PRICES--NULL###negative--FOOD--STYLE_OPTIONS--NULL
+en_BlueRibbonSushi_478219459:3 ###bu restoranın $ yerine $ olarak kategorize olduğunu şaşırttı.### ###negative--RESTAURANT--PRICES--restoranın
+en_ParkChaletGardenRestaurant_477778211:0 ###korkunç hizmet, yemek tamam pahalı### ### negative--SERVICE--GENERAL--hizmet### neutral--FOOD--QUALITY--yemek###negative--RESTAURANT--PRICES--NULL
+en_ParkChaletGardenRestaurant_477778211:1 ###Geçtiğimiz hafta sonu San Francisco standartları için harika bir hava vardı.###
+en_ParkChaletGardenRestaurant_477778211:2 ###Bu yüzden 'Plaj Gezisi'nden sonra', günde yüksek bir notla sona ereceğini ve sokakta park dağ evine yolculuk yapacağını düşündük.###
+en_ParkChaletGardenRestaurant_477778211:3 ###Restoran meşgul, ancak açık birkaç masa açık.###
+en_ParkChaletGardenRestaurant_477778211:4 ###biz adını çıkardık ve açık tablolar olmasına rağmen 30 dakikalık bir bekleme olduğunu söyledi.### ###negative--SERVICE--GENERAL--NULL
+en_ParkChaletGardenRestaurant_477778211:5 ###İşte buradayız, eşim 3 yaşındaki kızım ve ben binanın önünde (duvar resimleri eserleri) takarak zaman geçirmeye çalışıyoruz.###
+en_ParkChaletGardenRestaurant_477778211:6 ###30 dakika geçti ve çağrı cihazı buzzerinden yeterince emin.###
+en_ParkChaletGardenRestaurant_477778211:7 ###restorana geri döndük ve düşük bir şey, 30 dakika önce mevcut olan masalardan birinde oturduk!### ###negative--SERVICE--GENERAL--NULL
+en_ParkChaletGardenRestaurant_477778211:8 ###Bunun arkasında mantık mı?###
+en_ParkChaletGardenRestaurant_477778211:9 ###düşünebileceğim hiçbiri.### ###negative--SERVICE--GENERAL--NULL
+en_ParkChaletGardenRestaurant_477778211:10 ###biz bizim sipariş koydu ve dört meze sipariş olsa, gıda 45 dakika sonra gelmedi.ana ders ile.### ###negative--SERVICE--GENERAL--NULL
+en_ParkChaletGardenRestaurant_477778211:11 ###um şimdi mezeler ne için?### ###negative--SERVICE--GENERAL--NULL
+en_ParkChaletGardenRestaurant_477778211:12 ###oh, ekmek servisi olmadığını söylemeyi unuttum.### ###negative--SERVICE--GENERAL--NULL
+en_ParkChaletGardenRestaurant_477778211:13 ###Kızımın öğle çantasında bazı atıştırmalıklar vardı iyi bir şey.###
+en_ParkChaletGardenRestaurant_477778211:14 ###eşim de sıcak su (boğaz ağrısı vardı) bir çaydanlık emretti ve sanırım çünkü sadece onlar için öncelik değil.### ###negative--SERVICE--GENERAL--NULL
+en_ParkChaletGardenRestaurant_477778211:15 ###başka bir deyişle, eğer sizden $ 'ı yapmıyorlarsa, hizmet ölçeğinde yüksek oran yapın.### ###negative--SERVICE--GENERAL--hizmet
+en_ParkChaletGardenRestaurant_477778211:16 ###yemek fena değil tamam ama biraz pahalı restoran güzel bir yer olmadığını düşünürsek.### ### neutral--FOOD--QUALITY--yemek###neutral--RESTAURANT--PRICES--restoran###neutral--AMBIENCE--GENERAL--restoran
+en_ParkChaletGardenRestaurant_477778211:17 ###Restoranın tersi mi?###
+en_ParkChaletGardenRestaurant_477778211:18 ###bazılarını isimlendirmem gerekiyorsa, konum plajı veya golden gate park'ı dahil ederler.### ###positive--LOCATION--GENERAL--konum
+en_ParkChaletGardenRestaurant_477778211:19 ###eğer günü orada geçirdiyseniz ve yemek yemek istemediyseniz harika.### ###positive--LOCATION--GENERAL--NULL
+en_ParkChaletGardenRestaurant_477778211:20 ###otopark oldukça iyi, onlar kendi çok var ve yakınlarda park edebilirsiniz.### ###positive--RESTAURANT--MISCELLANEOUS--NULL
+en_ParkChaletGardenRestaurant_477778211:21 ###başka bir artı, her tarafta cam duvarları restoranın açık hissidir.### glass walls ### positive--AMBIENCE--GENERAL--hissidir###positive--AMBIENCE--GENERAL--cam duvarları
+en_ParkChaletGardenRestaurant_477778211:22 ###Turistlerin park dağ evine gitmesinden nefret ediyorum ve tüm San Francisco restoranlarının böyle olduğunu düşünüyorum.###
+en_BlueRibbonSushi_478218524:0 ###her zaman iyi .### ###positive--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218524:1 ###Yakın zamanda bir suşi arkadaş arkadaşı ziyaret etti ve üç grubumuz sadece akşam yemeğine gelmek zorunda kaldı.###
+en_BlueRibbonSushi_478218524:2 ###6:00 broadway oyundan önce oturdu ve biz hızla servis servis.### ###positive--SERVICE--GENERAL--NULL
+en_BlueRibbonSushi_478218524:3 ###şaşırtıcı ispanyol uskumru özel meze ve mükemmel kutu suşi (avokado ile o yılan balığı - um).### spanish mackeral special appetizer box sushi eel with avodcao ### positive--FOOD--QUALITY--İspanyol uskumru özel meze### positive--FOOD--QUALITY--suşi###positive--FOOD--QUALITY--avokado ile o yılan balığı
+en_BlueRibbonSushi_478218524:4 ###her zamanki gibi omikase, yaratıcılık ve seçim konusunda düşük puan almasına rağmen tazeliği hayal kırıklığına uğratmadı.### ###positive--FOOD--QUALITY--omikase###negative--FOOD--STYLE_OPTIONS--omikase
+en_BlueRibbonSushi_478218524:5 ###onların özel ruloları etkileyici, ancak sahip olduğumuzu hatırlayamıyorum.### specialty rolls ###positive--FOOD--QUALITY--özel ruloları
+en_BlueRibbonSushi_478218524:6 ###sakes seçimi harika.### selection of sakes ###positive--DRINKS--STYLE_OPTIONS--Sakes seçimi
+en_BlueRibbonSushi_478218524:7 ###yeşil çay krem brulee her seferinde daha iyi olur.### green tea creme brulee ###positive--FOOD--QUALITY--yeşil çay krem brulee
+en_BlueRibbonSushi_478218524:8 ###en ucuz suşi değil ama her zaman değer.### ###neutral--FOOD--PRICES--Suşi###positive--FOOD--QUALITY--Suşi
+en_SchoonerOrLater_477965850:0 ###çok zayıf müşteri hizmeti.### customer service ###negative--SERVICE--GENERAL--müşteri hizmeti
+en_SchoonerOrLater_477965850:1 ###long beach'teki marina boyunca yer ve ortalama yiyecekleri, maalesef çok zayıf müşteri hizmetlerini telafi etmiyor.### location along the marina in long beach customer service ### neutral--FOOD--QUALITY--n### positive--LOCATION--GENERAL--Long Beach'teki Marina boyunca yer###negative--SERVICE--GENERAL--müşteri servisi
+en_SchoonerOrLater_477965850:2 ###bu lokanta makul iyi yemek vardı, restoran personeli tamamen bizim varlığına kayıtsız görünüyordu ve tutum hizmet eksikliği yansıtıldı.### restaurant staff ### positive--FOOD--QUALITY--yemek###negative--SERVICE--GENERAL--restoran personeli
+en_SchoonerOrLater_477965850:3 ###dörtlü küçük bir partinin bir parçası olarak, yemeğimiz yorum yapmadan bırakıldı.### ###negative--SERVICE--GENERAL--NULL
+en_SchoonerOrLater_477965850:4 ###kimse masanın durdurulmadığı için almış olabileceğimiz başka ihtiyaçlar karşılanamadı.### ###negative--SERVICE--GENERAL--NULL
+en_SchoonerOrLater_477965850:5 ###sonunda birini işaretleyebildiğimizde, yiyecekleri bırakan kişiden tamamen farklıydı, aynı zamanda aynı sipariş almadı.### ###negative--SERVICE--GENERAL--NULL
+en_SchoonerOrLater_477965850:6 ###partimizin bir üyesi tekrar tekrar bir garsonla çarpıldıktan sonra, onun küfürlü bir rant haline getirilmemesi için kibar istek.### ###negative--SERVICE--GENERAL--garsonla
+en_SchoonerOrLater_477965850:7 ###yemek sonunda yönetici ile kısa bir konuşma en büyük hayal kırıklığı oldu - `` `` `` `` `` `` `` `` `` `` `` ``### ###negative--SERVICE--GENERAL--yönetici
+en_SchoonerOrLater_477965850:8 ###yönetici, `` sizin için yapabileceğim başka bir şey var mı?, garip bir yorum çünkü neredeyse hiç dinlememişti, deneyimde hayal kırıklığı ifademize cevap verdi.### ###negative--SERVICE--GENERAL--yönetici
+en_SchoonerOrLater_477965850:9 ###bir öfke içinde uçmuş garson konuşmaya söz verdi, ama biz neredeyse hiç sözünü ciddi olarak görme sözünü alamazdı.### ###negative--SERVICE--GENERAL--NULL
+en_SchoonerOrLater_477965850:10 ###kısacası, schooner veya daha sonra, kuruluşundaki varlığımızı daha az önemsemedi.### ###negative--SERVICE--GENERAL--NULL
+en_SchoonerOrLater_477965850:11 ###Bir dahaki sefere başka bir yere gideceğiz ya da Mimi'nin kafesi gibi yakın diğer restoranları deneyeceğiz ve jumper iddia ediyoruz.###
+en_BlueRibbonSushi_478219447:0 ###Sabah 1.###
+en_BlueRibbonSushi_478219447:1 ###sıcak bir tarihtiniz ve suşi için bir dürtü var.o zaman bu yer olabilir.### ###positive--FOOD--QUALITY--Suşi
+en_BlueRibbonSushi_478219447:2 ###çok ince kesilmiş olsa da balık taze.### ###positive--FOOD--QUALITY--balık###negative--FOOD--STYLE_OPTIONS--balık
+en_BlueRibbonSushi_478219447:3 ###harika hizmet.### ###positive--SERVICE--GENERAL--hizmet
+en_BlueRibbonSushi_478219447:4 ###̇iyi sake seçimi.### sake selection ###positive--DRINKS--STYLE_OPTIONS--sake seçimi
+en_Ray'sBoathouse_477775915:0 ###dungeness yengeçleri burada!### dungeness crabs ###positive--FOOD--QUALITY--Dungeness yengeçleri
+en_Ray'sBoathouse_477775915:1 ###ray's, yüksek kaliteli deniz ürünleri yemekleri için gidecek bir yerdir.### seafood dinners ###positive--FOOD--QUALITY--deniz ürünleri yemekleri
+en_Ray'sBoathouse_477775915:2 ###ve fiyat için iyi bir miktar veriyorlar.### ###positive--FOOD--STYLE_OPTIONS--NULL###neutral--FOOD--PRICES--NULL
+en_Ray'sBoathouse_477775915:3 ###biz sadece bir gece seattle vardı ve ben çok sevindim rays'deki akşam yemeğine.### ###positive--RESTAURANT--GENERAL--rays'deki
+en_Ray'sBoathouse_477775915:4 ###dungeness yengeçleri seviyorum ve ray'de onlara yaklaşık 6 farklı şekilde servis yapabilirsiniz!### dungeness crabs ###positive--FOOD--STYLE_OPTIONS--Dungeness yengeçleri
+en_Ray'sBoathouse_477775915:5 ###biz aile tabağı paylaştık ve ben özellikle sake kasuda kara coddan zevk aldım.### black cod in sake kasu ###positive--FOOD--QUALITY--Sake Kasuda Kara Coddan
+en_Ray'sBoathouse_477775915:6 ###bir liman ve çikolata tatlısı olağan dışı tatlı ile yemek sonlandı.lezzetli !### dessert of a port and chocolate tasting ###positive--FOOD--QUALITY--bir liman ve çikolata tatlısı
+en_Ray'sBoathouse_477775915:7 ###ve hizmet sadece harcama - oldukça zevk.### ###positive--SERVICE--GENERAL--hizmet
+en_SnoozeanAMEatery_479991844:0 ###harika kahvaltı### ###positive--FOOD--QUALITY--kahvaltı
+en_SnoozeanAMEatery_479991844:1 ###harika içecekler, mısır sığır eti karma kahve hızlı börek gluten ücretsiz menü.### corn beef hash b fast burritos ### positive--DRINKS--QUALITY--içecekler### positive--DRINKS--QUALITY--Kahve### positive--FOOD--STYLE_OPTIONS--Menü### positive--FOOD--QUALITY--mısır sığır eti###positive--FOOD--QUALITY--hızlı börek
+en_SnoozeanAMEatery_479991844:2 ###hizmet bu eğlenceli yerde harika.### ### positive--SERVICE--GENERAL--hizmet###positive--RESTAURANT--GENERAL--yerde
+en_SnoozeanAMEatery_479991844:3 ###tüm zaman boyunca haftanın çok günü açık bir yer varsa, harika biliyorsunuz### ###positive--RESTAURANT--GENERAL--yer
+en_SnoozeanAMEatery_479991844:4 ###gem'de durum böyledir.### ###positive--RESTAURANT--GENERAL--NULL
+en_ProfessorThom's_478606543:0 ###en iyi mahalle bekleme.### ###positive--RESTAURANT--GENERAL--bekleme
+en_ProfessorThom's_478606543:1 ###burada yanlış gidemezsin.### ###positive--RESTAURANT--GENERAL--NULL
+en_ProfessorThom's_478606543:2 ###Her mahalle en iyi sırlar olan birkaç harika yerel bar vardır.###
+en_ProfessorThom's_478606543:3 ###grammercy/union square/east village'da bu benim komşularım ve favori yerim.### ###positive--RESTAURANT--GENERAL--yerim
+en_ProfessorThom's_478606543:4 ###müzik harika, gece daha iyi ya da daha kötü çubuk ihaleleri dökülme ile cömerttir ve hafif kalpli atmosfer ruhları kaldırır.### bar tenders ### positive--AMBIENCE--GENERAL--müzik### positive--AMBIENCE--GENERAL--atmosfer###positive--DRINKS--STYLE_OPTIONS--çubuk ihaleleri
+en_ProfessorThom's_478606543:5 ###cidden, iddiasız yerel eğlence arayışı ise yanlış gidemezsiniz.### ###positive--AMBIENCE--GENERAL--NULL
+en_ProfessorThom's_478606543:6 ###oh, ve peynir kızartması harika!### cheese fries ###positive--FOOD--QUALITY--peynir kızartması
+en_StackRestaurant__Bar_478538239:0 ###iyi yemek, harika hizmet ortalama fiyatları (şerit için)### ### positive--FOOD--QUALITY--yemek### positive--SERVICE--GENERAL--hizmet###neutral--RESTAURANT--PRICES--NULL
+en_StackRestaurant__Bar_478538239:1 ###fiyat sabit şov öncesi akşam yemeği nedeniyle stack'te yemeye karar verdim.### price fixed pre-show dinner ###neutral--FOOD--PRICES--Fiyat sabit şov öncesi akşam yemeği
+en_StackRestaurant__Bar_478538239:2 ###içeri girdiğimde, inanılmaz ahşap dekorlarıyla beni şaşırttı.### wood decor ###positive--AMBIENCE--GENERAL--ahşap dekorlarıyla
+en_StackRestaurant__Bar_478538239:3 ###müzik çalma çok kalça, 20-30 bir şeydi ama koltuğumun altında bulunan ses sistemine subwoofer, akşam yemeğinde ortada can sıkıcı hale geldi.### subwoofer to the sound system ### positive--AMBIENCE--GENERAL--müzik###negative--AMBIENCE--GENERAL--ses sistemine subwoofer
+en_StackRestaurant__Bar_478538239:4 ###Biz hızlı oturmuş ve şunlar ile birlikte gelen özel akşam yemeği istedi: kabuklu deniz karides meze veya Sezar salatası 2 9 oz biftek (tek bir patates çip üç ev yapımı çörek delikleri.###
+en_StackRestaurant__Bar_478538239:5 ###kabuklu deniz ürünleri ve karides mezesi var, iyi oldu.### shellfish and shrimp appetizer ###neutral--FOOD--QUALITY--kabuklu deniz ürünleri ve karides mezesi
+en_StackRestaurant__Bar_478538239:6 ###şimdiye kadar en taze deniz ürünleri değildi, ama tadı ve sunumu tamam.### ###neutral--FOOD--STYLE_OPTIONS--Deniz ürünleri###neutral--FOOD--QUALITY--Deniz ürünleri
+en_StackRestaurant__Bar_478538239:7 ###Biftek gelmeden önce Server bize herhangi bir tarafla gelmediğini ve menüden bir şey seçmem önerdi.###
+en_StackRestaurant__Bar_478538239:8 ###inanılmaz ve mükemmel bir şekilde hazırlanan kuşkonmaz seçtim.### ###positive--FOOD--QUALITY--Kuşkonmaz
+en_StackRestaurant__Bar_478538239:9 ###Buharda pişirildi ve sarımsakla fırlatıldı.###
+en_StackRestaurant__Bar_478538239:10 ###9 oz biftek daha sonra geldi ve en azından başlangıçta harika tadı.### 9 oz steak ###positive--FOOD--QUALITY--9 oz biftek
+en_StackRestaurant__Bar_478538239:11 ###biftek benim tam beğenme (orta nadir) ve güzel sulu yapıldı.### ###positive--FOOD--QUALITY--Biftek
+en_StackRestaurant__Bar_478538239:12 ###bt ?s, biber sosu veya kırmızı şarap azaltma ile servis edilmiştir, ancak her ikisi de tadı ayırt edilemez.### peppercorn sauce red wine reduction ### neutral--FOOD--QUALITY--biber sosu###neutral--FOOD--QUALITY--Kırmızı Şarap Azaltma
+en_StackRestaurant__Bar_478538239:13 ###yine de, daha sonra fark ettiğim bir şey, restoranın msg veya bir et ihale biftek kullanmasıydı.### ###negative--FOOD--QUALITY--Biftek
+en_StackRestaurant__Bar_478538239:14 ###daha sonra ağzım çok kuru hissetti ve bu imzam oldu mu?msg tadı restorandan ayrıldıktan sonra boğazda kalıyor.### ###negative--FOOD--QUALITY--NULL
+en_StackRestaurant__Bar_478538239:15 ###Son olarak, çöl için ev yapımı çörek delikleri servis edildi.###
+en_StackRestaurant__Bar_478538239:16 ###kendi şık alım kutusuna ve bazı ev yapımı buzlanma ile geldiler; çok tatlı değil çok hafif.### ###positive--FOOD--QUALITY--NULL
+en_StackRestaurant__Bar_478538239:17 ###çöl neredeyse bir akşam yemeğine mükemmel bir son verdi.### ### positive--FOOD--QUALITY--çöl###positive--FOOD--QUALITY--akşam yemeğine
+en_StackRestaurant__Bar_478538239:18 ###akşam yemeği sadece bizi yaklaşık bir saat aldı ve fiyatlar, vergi ipucu (ortalama) sonrasında neredeyse 50 $/pp için iyi oldu.### ###neutral--RESTAURANT--PRICES--NULL###positive--SERVICE--GENERAL--NULL
+en_StackRestaurant__Bar_478538239:19 ###ancak sunucular son derece özenli ve çok dostu.### ###positive--SERVICE--GENERAL--sunucular
+en_StackRestaurant__Bar_478538239:20 ###genel olarak, geri dönüp tekrar restoranda yemek.### ###positive--RESTAURANT--GENERAL--restoranda
+en_StackRestaurant__Bar_478538239:21 ###sadece biraz kentsel şık giymeyi unutmayın, böylece yapmaz mısın?t çok uzak görünümlü görünün.### ###neutral--RESTAURANT--MISCELLANEOUS--NULL
+en_BlueRibbonSushi_478218337:0 ###güzel sake, yemek dürüstçe japonca hakkında çok fazla şey bilmiyorum.### ### positive--DRINKS--QUALITY--sake###positive--FOOD--QUALITY--yemek
+en_BlueRibbonSushi_478218337:1 ###Geçmişte genellikle bana tuzlu su gibi tattı.###
+en_BlueRibbonSushi_478218337:2 ###sunucu çok iyi olan birkaç sake önerdi.### ### positive--SERVICE--GENERAL--sunucu###positive--DRINKS--QUALITY--sake
+en_BlueRibbonSushi_478218337:3 ###birçok yemek vardı ama en iyisi ıstakoz üç yol oldu.### lobster 3 ways ###positive--FOOD--QUALITY--ıstakoz 3 yol
+en_BlueRibbonSushi_478218337:4 ###çok güzel !### ###positive--RESTAURANT--GENERAL--NULL
+en_SnoozeanAMEatery_480412257:0 ###yüksek fiyatlı### ###negative--RESTAURANT--PRICES--NULL
+en_SnoozeanAMEatery_480412257:1 ###Bugün Colorado konumunda yemek yedik.###
+en_SnoozeanAMEatery_480412257:2 ###böyle büyük bir kalabalık olan bir tablo 8 için 35 dakika bekledi.### ###neutral--SERVICE--GENERAL--NULL
+en_SnoozeanAMEatery_480412257:3 ###garson biraz düşmanca ve restoran kalabalık hissediyorum.### ### negative--SERVICE--GENERAL--garson###negative--AMBIENCE--GENERAL--hissediyorum
+en_SnoozeanAMEatery_480412257:4 ###ayrıca, muhtemelen böyle büyük kalabalıklar için daha fazlasına ihtiyaç duyulan sadece bir tuvalet kabini vardı.### bathroom stall ###negative--RESTAURANT--MISCELLANEOUS--tuvalet kabini
+en_SnoozeanAMEatery_480412257:5 ###en önemlisi, çok yaratıcı menü gördükten sonra yemek hakkında çok heyecanlandık.### ###positive--FOOD--STYLE_OPTIONS--Menü
+en_SnoozeanAMEatery_480412257:6 ###en iyi ihtimalle, yemek iyi ve kesinlikle fazla pahalı.### ###neutral--FOOD--QUALITY--yemek###negative--FOOD--PRICES--yemek
+en_SnoozeanAMEatery_480412257:7 ###yemek miktarı için fiyatlarımız daha düşük olmalı.### ###neutral--FOOD--STYLE_OPTIONS--yemek###negative--FOOD--PRICES--yemek
+en_SnoozeanAMEatery_480412257:8 ###geri dönüp dönmeyeceğimden emin değilim.### ###negative--RESTAURANT--GENERAL--NULL
+en_MiopostoCaffe_478543072:0 ###seattle'daki en sevdiğim pizza eklemi### pizza joint ###positive--RESTAURANT--GENERAL--pizza eklemi
+en_MiopostoCaffe_478543072:1 ###bu benim `` şehirden konukları çıkarmalı '' restoranına ve her zaman bu konuda övgüyle hoşlanıyorlar.### ###positive--RESTAURANT--GENERAL--restoranına
+en_MiopostoCaffe_478543072:2 ###aslında, birçoğu ziyaretleri sırasında ikinci kez geri dönmek istiyor.### ###positive--RESTAURANT--GENERAL--NULL
+en_MiopostoCaffe_478543072:3 ###pizza lezzetli ve salatalar harika.### ### positive--FOOD--QUALITY--Pizza###positive--FOOD--QUALITY--salatalar
+en_MiopostoCaffe_478543072:4 ###her zaman personeli ve aşçıları çok samimi buldum.### wait staff ### positive--SERVICE--GENERAL--aşçıları###positive--SERVICE--GENERAL--personeli
+en_MiopostoCaffe_478543072:5 ###onlar en konuşkan değiller, ama her zaman ben çok meşgulüm var, bu da muhtemelen konuşma eksikliğinden dolayı.### ###neutral--SERVICE--GENERAL--NULL
+en_MiopostoCaffe_478543072:6 ###ben de gerçekten dekor ve samimi duygu küçük bir restoran sadelik zevk.### ### positive--AMBIENCE--GENERAL--dekor###positive--AMBIENCE--GENERAL--duygu
+en_MiopostoCaffe_478543072:7 ###menü için sadece doğru boyutta.### ###positive--RESTAURANT--MISCELLANEOUS--NULL
+en_MiopostoCaffe_479702043:0 ###harika### ###positive--RESTAURANT--GENERAL--NULL
+en_MiopostoCaffe_479702043:1 ###kocam ve ben mioposto cafede yemek yemeyi seviyorum### mioposto café ###positive--RESTAURANT--GENERAL--mioposto cafede
+en_MiopostoCaffe_479702043:2 ###onların lezzetli gurme pizzaları hakkında yeterince söyleyemiyoruz!### pizza’s ###positive--FOOD--QUALITY--pizzaları
+en_MiopostoCaffe_479702043:3 ###menüleri tarafından hayal kırıklığına uğratılmayacaksınız.### ###positive--FOOD--STYLE_OPTIONS--menüleri
+en_MiopostoCaffe_479702043:4 ###pizzaları ince kabuklu ve menü çok yaratıcı kombinasyonlar sunar.### pizza’s ### positive--FOOD--STYLE_OPTIONS--Menü###positive--FOOD--STYLE_OPTIONS--pizzaları
+en_MiopostoCaffe_479702043:5 ###orada yemek yedikten sonra asla kendilerini çok ve doldurulmuş hissetmezsin.### ###positive--FOOD--QUALITY--NULL
+en_MiopostoCaffe_479702043:6 ###pizzalar hafif ve şahane.### pizza’s ###positive--FOOD--QUALITY--pizzalar
+en_MiopostoCaffe_479702043:7 ###pizza ensalatayı deneyin!### pizza ensalata ###positive--FOOD--QUALITY--pizza ensalatayı
+en_MiopostoCaffe_479702043:8 ###Pizza kabuğunun üstünde bir salata.###
+en_MiopostoCaffe_479702043:9 ###kesinlikle lezzetli .### ###positive--FOOD--QUALITY--NULL
+en_MiopostoCaffe_479702043:10 ###pizzaların çok büyük değil ve kabuk ince, sipariş verirken bunu aklınızda bulundurun.### pizza’s ### neutral--FOOD--STYLE_OPTIONS--kabuk###neutral--FOOD--STYLE_OPTIONS--pizzaların
+en_SnoozeanAMEatery_480032670:0 ###beklemeye değer### ###positive--RESTAURANT--GENERAL--NULL
+en_SnoozeanAMEatery_480032670:1 ###bir salı sabahı kapıda otuz dakika beklemek zorunda kaldık, ama çok deydi.### ###negative--RESTAURANT--MISCELLANEOUS--NULL###positive--RESTAURANT--GENERAL--NULL
+en_SnoozeanAMEatery_480032670:2 ###gıda günahkar.### ###positive--FOOD--QUALITY--Gıda
+en_SnoozeanAMEatery_480032670:3 ###personel gerçekten kolay.### ###positive--SERVICE--GENERAL--Personel
+en_SnoozeanAMEatery_480032670:4 ###atmosfer harikaydı.### ###positive--AMBIENCE--GENERAL--atmosfer
+en_SnoozeanAMEatery_480032670:5 ###buradaki uzmanlık çökmekte olan krepler, ama şimdi dört kez geri döndüm ve her seferinde büyülenmiştim.### ###positive--FOOD--QUALITY--krepler
+en_SnoozeanAMEatery_480032670:6 ###menüde her şey şaşırtıcı.### ###positive--FOOD--QUALITY--menüde
+en_SnoozeanAMEatery_480032670:7 ###bazı arkadaşlarla gidin, yarım saat kadar bekleyin joe ve ortalama kahvaltınızın tadını çıkarın.### ### positive--FOOD--QUALITY--kahvaltınızın###positive--RESTAURANT--GENERAL--NULL
+en_SnoozeanAMEatery_480032670:8 ###iyi yemekler .### ###positive--FOOD--QUALITY--yemekler
+en_BlueRibbonSushi_478218334:0 ###Kimin tüm harika değerlendirmeleri yazıyor?###
+en_BlueRibbonSushi_478218334:1 ###Neden (neredeyse) anonim tarafından her iyi inceleme?''###
+en_BlueRibbonSushi_478218334:2 ###neden kimsenin bu yer hakkında harika bir inceleme yazmak isteyeceğini bilmiyorum.### ###negative--RESTAURANT--GENERAL--yer
+en_BlueRibbonSushi_478218334:3 ###bu yere gittim, millet ve kötü.### ###negative--RESTAURANT--GENERAL--yere
+en_BlueRibbonSushi_478218334:4 ###belki de şefler balıkların yarı yolunu kullanmaya karar verdiğinde, bir gece mavi ayda bir gece için iyidir.### ###negative--FOOD--QUALITY--balıkların
+en_BlueRibbonSushi_478218334:5 ###burada bulundum, bir şef özel akşam yemeğine tonlarca para verdim ve büyük hayal kırıklığı oldu.### chef special dinner ###negative--FOOD--QUALITY--şef özel akşam yemeğine###negative--FOOD--PRICES--şef özel akşam yemeğine
+en_BlueRibbonSushi_478218334:6 ###100 dolarlık bir tabak üzerinde süslü egzotik balık parçaları ve biri yenilebilir değildi.### exotic fish ### negative--FOOD--PRICES--tabak###negative--FOOD--QUALITY--egzotik balıkk###negative--FOOD--STYLE_OPTIONS--egzotik balık
+en_BlueRibbonSushi_478218334:7 ###gitme!### ###negative--RESTAURANT--GENERAL--NULL
+en_PagodaRestaurant_478006816:0 ###lezzetli### ###positive--FOOD--QUALITY--NULL
+en_PagodaRestaurant_478006816:1 ###atmosfer, kutlamak isteyebileceğiniz herhangi bir özel durum için harika.### ###positive--AMBIENCE--GENERAL--atmosfer
+en_PagodaRestaurant_478006816:2 ###en iyi yemek bal ceviz karides sadece olağanüstü.### honwy walnut prawns ###positive--FOOD--QUALITY--bal ceviz karides
+en_PagodaRestaurant_478006816:3 ###hizmet gerçekten özenli ve çekici.### ###positive--SERVICE--GENERAL--hizmet
+en_SnoozeanAMEatery_480133929:0 ###dört yer###
+en_SnoozeanAMEatery_480133929:1 ###dört yerleri var.###
+en_SnoozeanAMEatery_480133929:2 ###2 listelenen ve daha sonra burada FT Collins gözden geçirilen Southglenn Mall otopark.###
+en_SnoozeanAMEatery_480133929:3 ###biz bir saat oturmak için bekledi.### ###negative--SERVICE--GENERAL--NULL
+en_SnoozeanAMEatery_480133929:4 ###hizmet mükemmel, kahve iyi starbucks standartları ve gıda olağanüstü.### ### positive--SERVICE--GENERAL--hizmet### positive--DRINKS--QUALITY--Kahve###positive--FOOD--QUALITY--Gıda
+en_SnoozeanAMEatery_480133929:5 ###beklemeye değerdi.### ###positive--RESTAURANT--GENERAL--NULL
+en_SnoozeanAMEatery_480133929:6 ###30-70 dakika beklemeyi planlayın.### ###neutral--SERVICE--GENERAL--NULL
+en_SnoozeanAMEatery_480133929:7 ###kesinlikle geri olacak.### ###positive--RESTAURANT--GENERAL--NULL
+en_SnoozeanAMEatery_480133929:8 ###Southglenn en büyük konumdur.###
+en_OpenSesame_477970936:0 ###lezzetli .!### ###positive--FOOD--QUALITY--NULL
+en_OpenSesame_477970936:1 ###son zamanlarda 2. cadde bu keyifli restoran olarak yemek zevk vardı ve wow ne harika bir akşam biz.### ###positive--RESTAURANT--GENERAL--restoran
+en_OpenSesame_477970936:2 ###fantastik, otantik lezzetli ve çok uygun fiyatlı yemek.### ###positive--FOOD--QUALITY--yemek###positive--FOOD--PRICES--yemek
+en_OpenSesame_477970936:3 ###dekor güzel ve benzersiz.### ###positive--AMBIENCE--GENERAL--dekor
+en_OpenSesame_477970936:4 ###yer hakkında gerçekten güzel bir his vardı. iyi müzik, atmosfer ve mutlu görünümlü insanlar.### ### positive--AMBIENCE--GENERAL--his### positive--AMBIENCE--GENERAL--müzik### positive--AMBIENCE--GENERAL--atmosfer###positive--RESTAURANT--MISCELLANEOUS--insanlar
+en_OpenSesame_477970936:5 ###sunucumuz çok profesyonel ve dostu.### ###positive--SERVICE--GENERAL--sunucumuz
+en_OpenSesame_477970936:6 ###açık susam sahiplerine.bravo restoranda geri gelmeni bekleyemem!### open sesame ###positive--RESTAURANT--GENERAL--Susam Açık
+en_BlueRibbonSushi_478218341:0 ###nefis### ###positive--FOOD--QUALITY--NULL
+en_BlueRibbonSushi_478218341:1 ###hafta sonu saat 20.00'den önce oraya varırsanız (perşembe? sun) suşi barda masa veya oturmak daha kolay bulursanız, küçük bir yer.### ###neutral--RESTAURANT--MISCELLANEOUS--yer
+en_BlueRibbonSushi_478218341:2 ###içeri girdikten sonra gerçek deneyim başlar.### ###positive--RESTAURANT--GENERAL--NULL
+en_BlueRibbonSushi_478218341:3 ###her şey ve demek istediğim menüde nefis.### ###positive--FOOD--QUALITY--menüde
+en_BlueRibbonSushi_478218341:4 ###garsonlar çok deneyimli ve içecek seçiminizi yemek zevklerine veya tam tersine eşleştirme konusunda yararlıdır.### ###positive--SERVICE--GENERAL--garsonlar
+en_BlueRibbonSushi_478218341:5 ###suşi taze geliyor mu? okyanusun arka bahçesinde olduğunu düşünüyorum, şaka yok!### ###positive--FOOD--QUALITY--Suşi
+en_BlueRibbonSushi_478218341:6 ###iyi tatma (balık tadı veya kokusu olmadan), büyük porsiyonlar ve yaratıcı suşi yemekleri ile ilgileniyorsanız, bu sizin yer.### sushi dishes ### positive--FOOD--STYLE_OPTIONS--bölümler### positive--FOOD--QUALITY--NULL###positive--FOOD--STYLE_OPTIONS--suşi yemekleri
+en_Patsy'sPizzeria_478232062:0 ###büyük kalın pepperoni### ###positive--FOOD--STYLE_OPTIONS--pepperoni
+en_Patsy'sPizzeria_478232062:1 ###pepperoni'nin gerçek kalın kesimi - yum.### pepperoni's ###positive--FOOD--STYLE_OPTIONS--Pepperoni's
+en_Patsy'sPizzeria_478232062:2 ###pizza kendisi en iyi değil, ama yine de oldukça iyi.### ###positive--FOOD--QUALITY--Pizza
+en_Patsy'sPizzeria_478232062:3 ###muhtemelen geri dönmezdim, ancak değerinin olup olmadığını biliyordu.### ###negative--RESTAURANT--GENERAL--NULL
+en_Patsy'sPizzeria_478232062:4 ###belki de bir kez daha uzun yıllar sonra oraya gittiğinde bir kez daha geri döneceğim.### ###negative--RESTAURANT--GENERAL--NULL
+en_CatalRestaurant__UvaBar_477862052:0 ###balkonda oturmak### ###positive--AMBIENCE--GENERAL--balkonda
+en_CatalRestaurant__UvaBar_477862052:1 ###fena değil .### ###neutral--RESTAURANT--GENERAL--NULL
+en_CatalRestaurant__UvaBar_477862052:2 ###yemek iyi ve iştah açtı.### ###positive--FOOD--QUALITY--yemek
+en_CatalRestaurant__UvaBar_477862052:3 ###porsiyonlar benim için yeterliydi, ama büyük bir yiyen olmayabilir.### ###neutral--FOOD--STYLE_OPTIONS--porsiyonlar
+en_CatalRestaurant__UvaBar_477862052:4 ###adil menü seçimi.### menu selection ###neutral--FOOD--STYLE_OPTIONS--menü seçimi
+en_CatalRestaurant__UvaBar_477862052:5 ###meze ilginç, ama creme brulee çok tuzlu ve lezzetli.### creme brulee ### positive--FOOD--QUALITY--meze###positive--FOOD--QUALITY--Creme Brulee
+en_CatalRestaurant__UvaBar_477862052:6 ###iç mekan ambiyansı moderndi.### indoor ambience ###positive--AMBIENCE--GENERAL--iç mekan
+en_CatalRestaurant__UvaBar_477862052:7 ###eğer dışarıda güzelse, balkonda bir masa isteyin.### ###positive--AMBIENCE--GENERAL--balkonda
+en_CatalRestaurant__UvaBar_477862052:8 ###insanların izlemesi için harika bir yer.### ###positive--RESTAURANT--MISCELLANEOUS--yer
+en_CatalRestaurant__UvaBar_477862052:9 ###her ne kadar hizmet verdiğiniz para göz önüne alındığında iyileştirilebilir.### ### negative--SERVICE--GENERAL--hizmet###negative--RESTAURANT--PRICES--NULL
+en_CatalRestaurant__UvaBar_477862052:10 ###bizim içecekler gelmeye devam etti ama sunucu birkaç kez geldi.### ### negative--SERVICE--GENERAL--sunucu###positive--SERVICE--GENERAL--NULL
+en_CatalRestaurant__UvaBar_477862052:11 ###bizi daha sık kontrol etmeli mi?### ###negative--SERVICE--GENERAL--NULL
+en_StackRestaurant__Bar_478538111:0 ###olağanüstü yiyeceklerle gece geç yemek.### ###positive--FOOD--QUALITY--yiyeceklerle
+en_StackRestaurant__Bar_478538111:1 ###İnternette görülen incelemeler ve fiyatlar nedeniyle oraya gitmek istemedim.###
+en_StackRestaurant__Bar_478538111:2 ###Bu vegas son gece oldu ve çok geç restoran kapanıyordu - bu yüzden biz kontrol yeri yürüdü.###
+en_StackRestaurant__Bar_478538111:3 ###biz hemen oturmuş, masa özel ve güzel.### ### positive--AMBIENCE--GENERAL--masa###positive--SERVICE--GENERAL--NULL
+en_StackRestaurant__Bar_478538111:4 ###hizmet olağanüstü - bazen dostça garsonlar ordusu tarafından hizmet edildi bir his.### ### positive--SERVICE--GENERAL--hizmet###positive--SERVICE--GENERAL--garsonlar
+en_StackRestaurant__Bar_478538111:5 ###yemek çok iyiydi, fileto mignon muhtemelen en iyisi deniyorum.### filet mignon ### positive--FOOD--QUALITY--yemek###positive--FOOD--QUALITY--filet mignon
+en_StackRestaurant__Bar_478538111:6 ###porsiyonlar büyük olsa da, çok fazla sipariş vermeyin.### ###neutral--FOOD--STYLE_OPTIONS--porsiyonlar
+en_StackRestaurant__Bar_478538111:7 ###groovy müzik akşam yemeğini gündelik yaptı.### ###positive--AMBIENCE--GENERAL--müzik
+en_StackRestaurant__Bar_478538111:8 ###en hoş sürpriz, her zaman yerlerde olduğu için beklentilerimi aşmayan kontrol oldu.### ###positive--RESTAURANT--PRICES--NULL
+en_StackRestaurant__Bar_478538111:9 ###Burada bir ama var - tuvalette garip olan bir tuvalet görevlisi vardı.### ###negative--RESTAURANT--MISCELLANEOUS--tuvalette
+en_StackRestaurant__Bar_478538111:10 ###banyo kendisi iki tuvalet ve sadece bir lavabo ile çok küçük, kız tamamen dağıtıcı kağıt havlu asmak yolda kalıyordu.### ###negative--RESTAURANT--MISCELLANEOUS--banyo
+en_StackRestaurant__Bar_478538111:11 ###Lavabo ve hat kızları kullanmaya çalışan 3 şişe parfüm vardı.###
+en_StackRestaurant__Bar_478538111:12 ###ackward hissettim ve bir dahaki sefere casino banyosuna gitti.### ###negative--RESTAURANT--MISCELLANEOUS--NULL
+en_MercedesRestaurant_478010600:0 ###bu yer çok iyi!### ###positive--RESTAURANT--GENERAL--yer
+en_MercedesRestaurant_478010600:1 ###mercedes restaurant çok lezzetli, hizmet inkar edilemez harika!### ### positive--SERVICE--GENERAL--hizmet###positive--FOOD--QUALITY--NULL
+en_MercedesRestaurant_478010600:2 ###cips ve salsa çok nefis, fiyatlar muhteşem.### chips and salsa ### positive--FOOD--QUALITY--cips ve salsa###positive--RESTAURANT--PRICES--NULL
+en_MercedesRestaurant_478010600:3 ###ortam hevesli, dekor şenlikli ve inanılmaz.### ### positive--AMBIENCE--GENERAL--ortam###positive--AMBIENCE--GENERAL--dekor
+en_MercedesRestaurant_478010600:4 ###yemek servisi bu dünyadan çıktı ve raouls tavuk sebze çorbası sallıyor!### raouls chicken vegetable soup ### positive--FOOD--QUALITY--yemek servisi###positive--FOOD--QUALITY--Raouls Tavuk Sebze Çorbası
+en_MercedesRestaurant_478010600:5 ###içecekler banliyö ve kapıda yürürken üçüncü bir dünya ülkesinde olduğumu hissediyorum.### ### positive--DRINKS--QUALITY--içecekler###positive--AMBIENCE--GENERAL--NULL
+en_SnoozeanAMEatery_480171723:0 ###hakaretle aşırı pahalı### ###negative--RESTAURANT--PRICES--NULL
+en_SnoozeanAMEatery_480171723:1 ###- vasat hizmet kalitesi### ###neutral--SERVICE--GENERAL--hizmet
+en_SnoozeanAMEatery_480171723:2 ###Bu inceleme, CitySearch'te listelenmeyen Southglen konumu içindir, keşke yönetim tarafından ele alınacak kadar fark yaratırdı, ancak erteleme, vasat yiyecek ve hizmeti ile overpriced restoranda yemek yiyen insanların üzerine tırmanıyor, bu nedenle negatif olanların Larimer'leri ilave edilmeyecek.###
+en_SnoozeanAMEatery_480171723:3 ###Snooze'un sunumu mükemmel ve sadece orada olduğunuz için kendinizi daha sofistike hissettiğiniz yerlerden biri; ancak katmanları soyun ve yüksek kaş menüsüne sahip aşırı fiyatlı bir IHOP'unuz var.### ### positive--AMBIENCE--GENERAL--Snooze'un### negative--RESTAURANT--PRICES--Snooze'un###negative--FOOD--STYLE_OPTIONS--Menüsüne
+en_SnoozeanAMEatery_480171723:4 ###başlamak için yaklaşık 8-10 oz portakal suyu size üç dolara mal olacak.### orange juice ###negative--DRINKS--PRICES--Portakal suyu
+en_SnoozeanAMEatery_480171723:5 ###yarım galon süpermarket fiyatında küçük meyve suyu aldığınız gerçeğini gizlemek için uzun, sıska saatlik bir cam şekilli bir camda hizmet ediyorlar.### ###negative--DRINKS--STYLE_OPTIONS--Meyve suyu###negative--DRINKS--PRICES--Meyve suyu
+en_SnoozeanAMEatery_480171723:6 ###sadece gördüğünde çek istemeliydim, ama menüleri çok benzersizdi.### ###positive--FOOD--STYLE_OPTIONS--Menüleri
+en_SnoozeanAMEatery_480171723:7 ###Krepler kesinlikle yaratıcıydı ama 8 dolardı. gözleme uçuşunda (üç farklı krep örneği) krep (bunlardan biri daha çok 5 "gibiydi) çok pahalı.### ###positive--FOOD--STYLE_OPTIONS--krepler###negative--FOOD--PRICES--krepler###negative--FOOD--STYLE_OPTIONS--krepler
+en_SnoozeanAMEatery_480171723:8 ###benzersiz tekliflerle bile masrafları haklı çıkarmak için krepler daha büyük olmalıdır (en az 8 '').### ###negative--FOOD--STYLE_OPTIONS--krepler###negative--FOOD--PRICES--krepler
+en_SnoozeanAMEatery_480171723:9 ###Tatlar iyiydi ama bir Alman krep özel restoranında çok daha ucuz önemli ölçüde daha büyük bir krep vardı.###
+en_SnoozeanAMEatery_480171723:10 ###yemeğimde, yemek pişirmeden önce sarıları kırmak için basit bir istekte bulunarak yumurtaları göndermek zorunda kaldım ve tüm yemeği reddetmezsem yemeği tekrar getirmek zorunda olduklarını belirtiler.### ### negative--FOOD--QUALITY--yemeği###negative--FOOD--QUALITY--yumurtaları
+en_SnoozeanAMEatery_480171723:11 ###bunu reddettim çünkü yumurtaları düzeltmeye çalışma sürecinde tabaktaki başka bir şeyi kırdılar ve devam edemeyecek kadar sinirlendim.### ###negative--FOOD--QUALITY--tabaktaki
+en_SnoozeanAMEatery_480171723:12 ###kredilerine, çanaktan çekten çıkardılar, ancak hiçbir yönetici sorunun ne olduğunu sormadı.### ### negative--SERVICE--GENERAL--yönetici###positive--SERVICE--GENERAL--NULL
+en_SnoozeanAMEatery_480171723:13 ###sonunda faturamız dört küçük krep, bir kahvaltılık börek, bir portakal suyu ve bir buzlu çay (su vardı) için 27 $ geldi.### breakfast burrito orange juice iced tea ### negative--FOOD--STYLE_OPTIONS--krep### negative--FOOD--PRICES--krep### negative--FOOD--PRICES--kahvaltılık börek### negative--DRINKS--PRICES--Portakal suyu###negative--DRINKS--PRICES--buzlu çay
+en_SnoozeanAMEatery_480171723:14 ###Bu aynı yemek Le Peep maliyeti 2 kat oldu.###
+en_SnoozeanAMEatery_480171723:15 ###Snooze yaratıcı bir gözleme teklifi sağladı, ancak Le Peep daha iyi hizmet ve kaliteye sahip olacaktı.###
+en_Ray'sBoathouse_477775918:0 ###harika bir manzaradan çok daha fazlası!### ### positive--LOCATION--GENERAL--manzaradan###positive--RESTAURANT--GENERAL--NULL
+en_Ray'sBoathouse_477775918:1 ###geçen cuma günü ray'in kayıkhanesindeki akşam yemeğimin beklentileri tamamen aştığını bildirmekten mutluluk duyuyorum.### ray's boathouse ###positive--RESTAURANT--GENERAL--Ray'in kayıkhanesindeki
+en_Ray'sBoathouse_477775918:2 ###ray'in, bir seattle kurumudur, ancak muhteşem ses Görünümleri göz önüne alındığında, övgülerin manzara nedeniyle yiyecek ve hizmetten daha fazla olduğundan şüphelenmiştim.### sound views ###positive--LOCATION--GENERAL--Ses Görünümleri
+en_Ray'sBoathouse_477775918:3 ###manzaranın ray'in en iyi üçüncü şeyi olduğunu bulduktan sonra bu süprizin beni nasıl mutlu ettiğini hayal edin!### ray's ### positive--LOCATION--GENERAL--manzaranın###positive--RESTAURANT--GENERAL--Ray'in
+en_Ray'sBoathouse_477775918:4 ###bir şeyleri başlatmak için, güzel sunucumuz brooke hızla elimden içecek siparişimi aldı.### ###positive--SERVICE--GENERAL--brooke
+en_Ray'sBoathouse_477775918:5 ###İki kişilik grubum kendini özellikle iddialı hissediyordu ve şilshole örnekleyicide savurganlık yaptık... muazzam beyaz körfez karidesleri, tütsülenmiş albacore ton balığı, Ray'in dereotu ile tatlandırılmış fantastik manila istiridyeleri, lezzetli bir soya sosu içinde deniz tarağı ve küçük bir yüce bir tereyağı sosu üzerine Dungeness yengeci yığını..### white gulf prawns manila clams soy dressing butter sauce shilshole sampler ### positive--FOOD--STYLE_OPTIONS--Beyaz Körfez karidesleri### positive--FOOD--QUALITY--Manila istiridyeleri### positive--FOOD--QUALITY--soya sosu### positive--FOOD--QUALITY--tereyağı sosu###positive--FOOD--QUALITY--şilshole örnekleyicide###positive--FOOD--STYLE_OPTIONS--şilshole örnekleyicide
+en_Ray'sBoathouse_477775918:6 ###Giriş yemeğim için pazı, enginar göbeği, rezene ve pecorino toscano ile tamamlanan kavrulmuş Alaska deniz tarağının tadını çıkardım.### seared alaskan sea scallops ###positive--FOOD--QUALITY--Alaska deniz tarağının###positive--FOOD--STYLE_OPTIONS--Alaska deniz tarağının
+en_Ray'sBoathouse_477775918:7 ###Deniz tarağı, görünüşe göre onları gerçekten eşsiz kılan (lezzetinden bahsetmiyorum bile) siyah zeytinyağında pişirilmiş### ###positive--FOOD--QUALITY--Deniz tarağı###positive--FOOD--STYLE_OPTIONS--Deniz tarağı
+en_Ray'sBoathouse_477775918:8 ###arkadaşım nefis kremalı washington russet patates ve gevrek yeşil fasulye ile ızgara alaska kral somondan zevk aldı.### ızgara alaskan king salmon creamed washington russet potatoes green beans ### positive--FOOD--QUALITY--Izgara Alaska Kral Somondan### positive--FOOD--QUALITY--Kremalı Washington Russet Patates###positive--FOOD--QUALITY--yeşil fasulye
+en_Ray'sBoathouse_477775918:9 ###onun tabağında her üç öğenin bir tadı vardı ve onlar mükemmel.### ###positive--FOOD--QUALITY--tabağında
+en_Ray'sBoathouse_477775918:10 ###sunucumuz gece boyunca özenli olmaya devam etti, ancak bir sorunla şaşkın kaldım, ray'in uygun bir yer olduğunu kim düşünüyor küçük çocukları akşam yemeğine götürüyor?### ray's ### positive--SERVICE--GENERAL--sunucu###neutral--RESTAURANT--MISCELLANEOUS--Ray'in
+en_Ray'sBoathouse_477775918:11 ###iki ahlaksız çocuk akşam yemeğimizin ilk kısmı için yanımızda oturmuştu.masasında deniz ürünleri her bahsedildiğinde gag gibi davranan keyifli bir preteen ile değiştirdiler.### ###negative--RESTAURANT--MISCELLANEOUS--NULL
+en_Ray'sBoathouse_477775918:12 ###Ray'in bir deniz ürünleri restoranı olduğu göz önüne alındığında.Peki, fikri anladın###
+en_Ray'sBoathouse_477775918:13 ###hepsi düşünüldüğünde, ray'in kayıkhanesinin bir seattle kurumu olarak unvanını hak ettiğini söylemeliyim.### ray's boathouse ###positive--RESTAURANT--GENERAL--Ray'in kayıkhanesinin
+en_Ray'sBoathouse_477775918:14 ###bizimle akşam paylaşan gençler olmadan yapmış olsaydı, harika sunucumuz ve yemek yapmış deneyim çok olumlu bir deneyim.### ### positive--SERVICE--GENERAL--sunucumuz### positive--FOOD--QUALITY--Gıda###negative--RESTAURANT--MISCELLANEOUS--NULL
+en_Ray'sBoathouse_477775918:15 ###ah evet, manzara da iyiydi.### ###positive--LOCATION--GENERAL--manzara

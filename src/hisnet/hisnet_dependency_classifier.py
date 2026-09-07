@@ -1,5 +1,6 @@
 from src.hisnet.hisnet_classifier import HisNetClassifier
 from src.dependency.stanza_parser import TurkishDependencyParser
+from src.dependency.sentiment_scope_resolver import SentimentScopeResolver
 
 
 class HisNetDependencyClassifier:
@@ -8,315 +9,264 @@ class HisNetDependencyClassifier:
 
     Pipeline:
         Text
-          -> HisNet + morphological preprocessing
-          -> lexical sentiment scores
+            -> Morphological Analysis
+            -> LongestRootFirstDisambiguation
+            -> HisNet lexical sentiment candidates
 
         Text
-          -> Stanford Stanza
-          -> dependency parse
+            -> Stanford Stanza
+            -> Dependency parse
 
-        Lexical sentiment + dependency-based negation scope
-          -> final sentiment
+        HisNet candidates + Dependency structure
+            -> SentimentScopeResolver
+            -> target / opinion / modifier / negation / contrast
+            -> dependency-aware sentiment aggregation
+
+    IMPORTANT:
+        This classifier does not modify HisNet or Stanza outputs.
+
+        HisNet provides lexical sentiment information.
+        Stanza provides dependency information.
+
+        This class combines the outputs of both systems.
     """
 
     def __init__(self):
         self.hisnet = HisNetClassifier()
-        self.dependency_parser = TurkishDependencyParser()
+        self.parser = TurkishDependencyParser()
+        self.scope_resolver = SentimentScopeResolver()
 
     @staticmethod
-    def _turkish_lower(text):
-        return text.replace("I", "ı").replace("İ", "i").lower()
+    def _prediction_from_scores(
+        positive_score,
+        negative_score
+    ):
+        if positive_score > negative_score:
+            return "positive"
 
-    def _is_negation_token(self, token):
-        """
-        Detect grammatical negation.
+        if negative_score > positive_score:
+            return "negative"
 
-        IMPORTANT:
-        Stanza's Polarity=Neg is morphological negation,
-        NOT sentiment polarity.
-        """
+        return "neutral"
 
-        feats = token.get("feats") or ""
-        lemma = self._turkish_lower(token.get("lemma") or "")
-        deprel = token.get("deprel") or ""
-
-        return (
-            "Polarity=Neg" in feats
-            or lemma == "değil"
-            or deprel == "neg"
-        )
-
-    def _match_sentiment_word_to_token(
+    def _apply_dependency_scope(
         self,
-        sentiment_word,
-        dependency_tokens,
-        used_token_ids
+        scope
     ):
         """
-        Align a HisNet sentiment-bearing word with
-        the corresponding Stanza dependency token.
+        Applies dependency-based information to one
+        HisNet sentiment candidate.
+
+        Current composition rules:
+
+        1. If dependency structure shows that a HisNet
+           sentiment candidate is functioning as a target
+           rather than an opinion, its lexical sentiment
+           contribution is suppressed.
+
+        2. If grammatical negation affects the opinion,
+           positive and negative scores are swapped.
+
+        Modifier and contrast relations are currently
+        detected and reported, but their numeric weights
+        are not yet applied here.
         """
 
-        word = self._turkish_lower(sentiment_word["word"])
-        root = self._turkish_lower(sentiment_word["root"])
-
-        candidates = []
-
-        for token in dependency_tokens:
-
-            token_id = token["id"]
-
-            if token_id in used_token_ids:
-                continue
-
-            token_text = self._turkish_lower(
-                token.get("text") or ""
-            )
-
-            token_lemma = self._turkish_lower(
-                token.get("lemma") or ""
-            )
-
-            score = 0
-
-            # Strongest match: same surface form
-            if token_text == word:
-                score = 100
-
-            # Root equals dependency token
-            elif token_text == root:
-                score = 90
-
-            # Root equals Stanza lemma
-            elif token_lemma == root:
-                score = 80
-
-            # Useful for cases where Stanza splits
-            # copular forms such as kötüydü -> kötü + ydü
-            elif word.startswith(root) and token_text == root:
-                score = 70
-
-            if score > 0:
-                candidates.append((score, token))
-
-        if not candidates:
-            return None
-
-        candidates.sort(
-            key=lambda item: item[0],
-            reverse=True
+        original_positive = float(
+            scope.get("positive", 0.0)
         )
 
-        best_token = candidates[0][1]
+        original_negative = float(
+            scope.get("negative", 0.0)
+        )
 
-        used_token_ids.add(best_token["id"])
+        adjusted_positive = original_positive
+        adjusted_negative = original_negative
 
-        return best_token
+        operations = []
 
-    def _find_negation_target(
+        # =====================================================
+        # 1. CONTEXTUAL ROLE
+        # =====================================================
+
+        if not scope.get(
+            "active_sentiment",
+            True
+        ):
+            adjusted_positive = 0.0
+            adjusted_negative = 0.0
+
+            operations.append(
+                "suppressed_as_target"
+            )
+
+            return {
+                **scope,
+
+                "original_positive":
+                    original_positive,
+
+                "original_negative":
+                    original_negative,
+
+                "adjusted_positive":
+                    adjusted_positive,
+
+                "adjusted_negative":
+                    adjusted_negative,
+
+                "operations":
+                    operations
+            }
+
+        # =====================================================
+        # 2. NEGATION
+        # =====================================================
+
+        negations = scope.get(
+            "negations",
+            []
+        )
+
+        # Odd number of negations reverses polarity.
+        # Even number restores the original polarity.
+        if len(negations) % 2 == 1:
+
+            adjusted_positive, adjusted_negative = (
+                adjusted_negative,
+                adjusted_positive
+            )
+
+            operations.append(
+                "negation_flip"
+            )
+
+        # =====================================================
+        # NOTE:
+        #
+        # Modifier and contrast information is intentionally
+        # preserved without assigning numeric weights yet.
+        #
+        # This prevents us from tuning the classifier to the
+        # development examples before the composition scheme
+        # is explicitly fixed.
+        # =====================================================
+
+        if scope.get("modifiers"):
+            operations.append(
+                "modifier_detected"
+            )
+
+        if scope.get("contrast"):
+            operations.append(
+                "contrast_detected"
+            )
+
+        return {
+            **scope,
+
+            "original_positive":
+                original_positive,
+
+            "original_negative":
+                original_negative,
+
+            "adjusted_positive":
+                adjusted_positive,
+
+            "adjusted_negative":
+                adjusted_negative,
+
+            "operations":
+                operations
+        }
+
+    def _classify_sentence(
         self,
-        negation_token,
-        sentiment_by_token,
+        sentence_text,
         dependency_tokens
     ):
         """
-        Finds which sentiment-bearing token is directly
-        affected by a negation token.
-
-        Initial conservative strategy:
-            1. Negated token itself is sentiment-bearing
-            2. Negation token's HEAD is sentiment-bearing
-            3. A direct child of the negation token is sentiment-bearing
-
-        No long-distance guessing is performed yet.
+        Classifies a single sentence.
         """
 
-        negation_id = negation_token["id"]
-        head_id = negation_token["head"]
+        # =====================================================
+        # HISNET BASELINE
+        # =====================================================
 
-        # Case 1:
-        # sevmedim / beğenmedim etc.
-        if negation_id in sentiment_by_token:
-            return negation_id
+        hisnet_result = self.hisnet.classify(
+            sentence_text
+        )
 
-        # Case 2:
-        # güzel <- değildi
-        # tavsiye <- etmiyorum
-        if head_id in sentiment_by_token:
-            return head_id
+        # =====================================================
+        # DEPENDENCY SCOPE RESOLUTION
+        # =====================================================
 
-        # Case 3:
-        # Parser may make the negated auxiliary the parent.
-        for token in dependency_tokens:
+        scopes = self.scope_resolver.resolve(
+            hisnet_result["sentiment_words"],
+            dependency_tokens,
+            hisnet_result["morphological_analyses"]
+        )
 
-            if token["head"] == negation_id:
+        # =====================================================
+        # APPLY DEPENDENCY INFORMATION
+        # =====================================================
 
-                child_id = token["id"]
+        resolved_scopes = []
 
-                if child_id in sentiment_by_token:
-                    return child_id
+        for scope in scopes:
 
-        return None
-
-    def _classify_sentence(self, sentence_text, dependency_tokens):
-        """
-        Classifies one sentence using HisNet + dependency-based
-        negation correction.
-        """
-
-        hisnet_result = self.hisnet.classify(sentence_text)
-
-        sentiment_states = []
-        sentiment_by_token = {}
-
-        used_token_ids = set()
-
-        # -----------------------------------------------------
-        # ALIGN HISNET SENTIMENT WORDS WITH STANZA TOKENS
-        # -----------------------------------------------------
-
-        for sentiment_word in hisnet_result["sentiment_words"]:
-
-            dependency_token = (
-                self._match_sentiment_word_to_token(
-                    sentiment_word,
-                    dependency_tokens,
-                    used_token_ids
+            resolved = (
+                self._apply_dependency_scope(
+                    scope
                 )
             )
 
-            state = {
-                "word": sentiment_word["word"],
-                "root": sentiment_word["root"],
-
-                "original_positive":
-                    sentiment_word["positive"],
-
-                "original_negative":
-                    sentiment_word["negative"],
-
-                "adjusted_positive":
-                    sentiment_word["positive"],
-
-                "adjusted_negative":
-                    sentiment_word["negative"],
-
-                "dependency_token_id": None,
-                "negated": False,
-                "negated_by": []
-            }
-
-            if dependency_token is not None:
-
-                token_id = dependency_token["id"]
-
-                state["dependency_token_id"] = token_id
-
-                sentiment_by_token[token_id] = state
-
-            sentiment_states.append(state)
-
-        # -----------------------------------------------------
-        # FIND NEGATION TOKENS
-        # -----------------------------------------------------
-
-        negation_tokens = [
-            token
-            for token in dependency_tokens
-            if self._is_negation_token(token)
-        ]
-
-        adjustments = []
-        unresolved_negations = []
-
-        # -----------------------------------------------------
-        # APPLY NEGATION TO LOCAL SENTIMENT TARGET
-        # -----------------------------------------------------
-
-        for negation_token in negation_tokens:
-
-            target_token_id = self._find_negation_target(
-                negation_token,
-                sentiment_by_token,
-                dependency_tokens
+            resolved_scopes.append(
+                resolved
             )
 
-            if target_token_id is None:
-
-                unresolved_negations.append({
-                    "word": negation_token["text"],
-                    "lemma": negation_token["lemma"],
-                    "id": negation_token["id"],
-                    "head": negation_token["head"],
-                    "deprel": negation_token["deprel"]
-                })
-
-                continue
-
-            target = sentiment_by_token[target_token_id]
-
-            # Negation reverses lexical polarity.
-            #
-            # Instead of simply multiplying by -1,
-            # swap positive and negative scores.
-            old_positive = target["adjusted_positive"]
-            old_negative = target["adjusted_negative"]
-
-            target["adjusted_positive"] = old_negative
-            target["adjusted_negative"] = old_positive
-
-            target["negated"] = not target["negated"]
-
-            target["negated_by"].append(
-                negation_token["text"]
-            )
-
-            adjustments.append({
-                "negation_word": negation_token["text"],
-                "negation_id": negation_token["id"],
-
-                "target_word": target["word"],
-                "target_root": target["root"],
-                "target_token_id": target_token_id,
-
-                "before_positive": old_positive,
-                "before_negative": old_negative,
-
-                "after_positive":
-                    target["adjusted_positive"],
-
-                "after_negative":
-                    target["adjusted_negative"]
-            })
-
-        # -----------------------------------------------------
+        # =====================================================
         # FINAL SCORE
-        # -----------------------------------------------------
+        # =====================================================
 
         positive_score = sum(
-            item["adjusted_positive"]
-            for item in sentiment_states
+            scope["adjusted_positive"]
+            for scope in resolved_scopes
         )
 
         negative_score = sum(
-            item["adjusted_negative"]
-            for item in sentiment_states
+            scope["adjusted_negative"]
+            for scope in resolved_scopes
         )
 
-        if positive_score > negative_score:
-            prediction = "positive"
-
-        elif negative_score > positive_score:
-            prediction = "negative"
-
-        else:
-            prediction = "neutral"
+        prediction = (
+            self._prediction_from_scores(
+                positive_score,
+                negative_score
+            )
+        )
 
         return {
-            "text": sentence_text,
+            "text":
+                sentence_text,
+
+            # ---------------------------
+            # Baseline
+            # ---------------------------
 
             "hisnet_prediction":
                 hisnet_result["prediction"],
+
+            "hisnet_positive_score":
+                hisnet_result["positive_score"],
+
+            "hisnet_negative_score":
+                hisnet_result["negative_score"],
+
+            # ---------------------------
+            # HisNet + Dependency
+            # ---------------------------
 
             "prediction":
                 prediction,
@@ -327,28 +277,43 @@ class HisNetDependencyClassifier:
             "negative_score":
                 negative_score,
 
-            "sentiment_words":
-                sentiment_states,
+            # ---------------------------
+            # Linguistic analysis
+            # ---------------------------
 
-            "negation_tokens":
-                negation_tokens,
-
-            "adjustments":
-                adjustments,
-
-            "unresolved_negations":
-                unresolved_negations,
+            "scopes":
+                resolved_scopes,
 
             "dependency_tokens":
-                dependency_tokens
+                dependency_tokens,
+
+            "morphological_analyses":
+                hisnet_result[
+                    "morphological_analyses"
+                ],
+
+            "lexicon_coverage":
+                hisnet_result[
+                    "lexicon_coverage"
+                ],
+
+            "sentiment_coverage":
+                hisnet_result[
+                    "sentiment_coverage"
+                ]
         }
 
     def classify(self, text):
         """
-        Supports one or multiple sentences.
+        Classifies a complete text.
+
+        Multiple sentences are processed separately and
+        their resulting sentiment scores are aggregated.
         """
 
-        parsed_sentences = self.dependency_parser.parse(text)
+        parsed_sentences = (
+            self.parser.parse(text)
+        )
 
         sentence_results = []
 
@@ -357,29 +322,51 @@ class HisNetDependencyClassifier:
 
         for parsed_sentence in parsed_sentences:
 
-            result = self._classify_sentence(
-                parsed_sentence["text"],
+            sentence_text = (
+                parsed_sentence["text"]
+            )
+
+            dependency_tokens = (
                 parsed_sentence["tokens"]
             )
 
-            sentence_results.append(result)
+            result = self._classify_sentence(
+                sentence_text,
+                dependency_tokens
+            )
 
-            total_positive += result["positive_score"]
-            total_negative += result["negative_score"]
+            sentence_results.append(
+                result
+            )
 
-        if total_positive > total_negative:
-            prediction = "positive"
+            total_positive += (
+                result["positive_score"]
+            )
 
-        elif total_negative > total_positive:
-            prediction = "negative"
+            total_negative += (
+                result["negative_score"]
+            )
 
-        else:
-            prediction = "neutral"
+        prediction = (
+            self._prediction_from_scores(
+                total_positive,
+                total_negative
+            )
+        )
 
         return {
-            "text": text,
-            "prediction": prediction,
-            "positive_score": total_positive,
-            "negative_score": total_negative,
-            "sentences": sentence_results
+            "text":
+                text,
+
+            "prediction":
+                prediction,
+
+            "positive_score":
+                total_positive,
+
+            "negative_score":
+                total_negative,
+
+            "sentences":
+                sentence_results
         }

@@ -1,0 +1,48 @@
+﻿1090587:0 ###23. doğum günü için buraya gittim.###
+1090587:1 ###weehawken'de nehir boyunca bulunduysanız, house'un sunduğu en iyi görüş fikriniz varsa.### ###positive--LOCATION--GENERAL--görüş
+1090587:2 ###bu harika hizmet ve harika yiyecekleri makul bir fiyata ekleyin, harika akşamın başlangıcında var.### ### positive--SERVICE--GENERAL--hizmet###positive--FOOD--QUALITY--yiyecekleri###positive--FOOD--PRICES--yiyecekleri
+1090587:3 ###lava kek tatlısı inanılmaz ve tavsiye ederim.### lava cake dessert ###positive--FOOD--QUALITY--lava kek tatlısı
+1661043:0 ###burada pizza sürekli olarak iyidir.### ###positive--FOOD--QUALITY--Pizza
+1661043:1 ###salatalar yemeğe başlamak için lezzetli bir yoldur.### ###positive--FOOD--QUALITY--salatalar
+1661043:2 ###kalamardan geçmelisiniz.### ###negative--FOOD--QUALITY--kalamardan
+1661043:3 ###kalın ve biraz hantal.### ###negative--FOOD--QUALITY--NULL
+1661043:4 ###dekor büyüleyici.### ###positive--AMBIENCE--GENERAL--dekor
+1661043:5 ###hizmet ortalama.### ###neutral--SERVICE--GENERAL--hizmet
+1349391:0 ###bazen iyi yemek ve iyi hizmet alıyorum.### ### positive--FOOD--QUALITY--yemek###neutral--SERVICE--GENERAL--hizmet
+1349391:1 ###bazen kötü yemek ve kötü hizmet alıyorum, bazen iyi ürün ve kötü hizmet alıyorum.### ### negative--FOOD--QUALITY--yemek###negative--SERVICE--GENERAL--hizmet###negative--SERVICE--GENERAL--hizmet### positive--FOOD--QUALITY--ürün
+1349391:2 ###tutarlı değil.### ###negative--RESTAURANT--GENERAL--NULL
+1349391:3 ###Gerçekten şansınıza bağlı!###
+1357554:0 ###içki olarak yeterince büyük bir bombay birası ile başladım.### bombay beer ###positive--DRINKS--STYLE_OPTIONS--bombay Birası
+1357554:1 ###Akşam yemeği için tavuk tikka-masala ve biraz sarımsak naan vardı.###
+1357554:2 ###mmmmm.çok lezzetliydi .### ###positive--FOOD--QUALITY--NULL
+1357554:3 ###hizmet yavaş, ama insanlar dostça.### ### negative--SERVICE--GENERAL--hizmet###positive--SERVICE--GENERAL--insanlar
+1357554:4 ###rahatlamak ve sohbet etmek için güzel bir yer.### ###positive--AMBIENCE--GENERAL--yer
+1357554:5 ###geri dönmek için sabırsızlanıyorum.### ###positive--RESTAURANT--GENERAL--NULL
+1730014:0 ###Buraya hevesle bir arkadaşımla gittim, önce başka bir yere gittik ve masa alamadık.###
+1730014:1 ###burada hizmet harika, gıda fantastik.### ### positive--SERVICE--GENERAL--hizmet###positive--FOOD--QUALITY--Gıda
+1730014:2 ###guacamole+karides meze gerçekten harikaydı, ikimiz de fileto çok iyi vardı kızartma gibi değil, ama ikimiz de umurumda değil.### guacamole+karides meze ### positive--FOOD--QUALITY--fileto### negative--FOOD--QUALITY--kızartma###positive--FOOD--QUALITY--guacamole+karides meze
+1730014:3 ###kesinlikle tekrar ziyaret edecek.### ###positive--RESTAURANT--GENERAL--NULL
+1730014:4 ###belki yarın ;-)###
+1500453:0 ###çok güzel !###
+1500453:1 ###bu şirin ve romantik trattoria, manhattan restoran listemin en üstünde.### ###positive--AMBIENCE--GENERAL--trattoria###positive--RESTAURANT--GENERAL--trattoria
+1500453:2 ###yemek lezzetli - özeller normal menü ücretli, yemekler asla bir hayal kırıklığı değil.### normal menü ücretli ### positive--FOOD--QUALITY--yemek### positive--FOOD--QUALITY--özeller### positive--FOOD--QUALITY--yemekler###positive--FOOD--QUALITY--Normal menü ücretli
+1500453:3 ###parmesan porcini sufle ya da balsamik sirke ile sırlı kuzu olsun, kesinlikle kuzey italya'ya bir ısırık alacaksınız.### parmesean porcini souffle lamb glazed with balsamic vinegar ### positive--FOOD--QUALITY--Parmesan porcini sufle###positive--FOOD--QUALITY--Balsamik sirke ile sırlı kuzu
+1500453:4 ###masalar yakından yerleştirilmiş olsa da, mum ışığı yemek kalitesi ve hizmet aşırı iyi.### ### negative--AMBIENCE--GENERAL--masalar### positive--AMBIENCE--GENERAL--mum ışığı### positive--FOOD--QUALITY--yemek###positive--SERVICE--GENERAL--hizmet
+1500453:5 ###garantili bir zevk!### ###positive--RESTAURANT--GENERAL--NULL
+505535:0 ###bu küçük yer sevimli bir iç dekor ve uygun fiyatlı şehir fiyatları vardır.### interior decor ### positive--RESTAURANT--PRICES--yer###positive--AMBIENCE--GENERAL--iç dekor
+505535:1 ###pad thai çok fazla yağlı, ancak pad se ew tavuk lezzetli idi.### pad se ew chicken pad thai ### positive--FOOD--QUALITY--pad se ew tavuk###negative--FOOD--QUALITY--Pad Thai
+505535:2 ###Bir dahaki sefere yağ istemem.###
+1016296:0 ###bu restoran ile çok hayal kırıklığına uğradım.### ###negative--RESTAURANT--GENERAL--restoran
+1016296:1 ###lotus leaf sarılı pirinç için bir araba görevlisine sordum ve geri döndü.### cart attendant ###negative--SERVICE--GENERAL--araba görevlisine
+1016296:2 ###sonunda talep ettiğim yemeğe geri dönmeden önce ona üç kez sormak zorunda kaldım.### ###negative--SERVICE--GENERAL--NULL
+1016296:3 ###yemek iyiydi, harika bir şey yok.### ###neutral--FOOD--QUALITY--yemek
+1016296:4 ###chow eğlencesi kuruydu; domuz shu mai genellikle fazla yağlı ve yüksek sesle konuşan kaba bir aile ile bir masayı paylaşmak zorunda kaldım.### chow fun pork shu mai ### negative--FOOD--QUALITY--Chow eğlencesi### negative--FOOD--QUALITY--Domuz shu mai###negative--RESTAURANT--MISCELLANEOUS--NULL
+1016296:5 ###biz alsa bir daha bu yere geri dönmeyeceğiz.### ###negative--RESTAURANT--GENERAL--yere
+Z#3:0 ###yemekler harika, ancak iç mekan için yardım alınabilir.### ### positive--FOOD--QUALITY--yemekler###negative--AMBIENCE--GENERAL--iç mekan
+Z#3:1 ###uzay, harikalar diyarı ortamında bir alice gibi hissediyor. bu olmaya çalışmadan.### ###negative--AMBIENCE--GENERAL--Uzay
+Z#3:2 ###yine de iyi bir yemek için sadece 60 dolar ödedim :)### ###positive--FOOD--QUALITY--yemek###positive--FOOD--PRICES--yemek
+Z#3:3 ###harika içecek### ###positive--DRINKS--QUALITY--içecek
+PP#9:0 ###ortalamanın altında### ###negative--RESTAURANT--GENERAL--NULL
+PP#9:1 ###pizza çok abartılı ve pişmiş olduğunu düşünüyorum.### ###negative--FOOD--QUALITY--Pizza
+PP#9:2 ###hiçbir lezzet yoktu ve personel özenli değil kaba.### ### negative--SERVICE--GENERAL--Personel###negative--FOOD--QUALITY--NULL
+PP#9:3 ###asla geri dönmem### ###negative--RESTAURANT--GENERAL--NULL
