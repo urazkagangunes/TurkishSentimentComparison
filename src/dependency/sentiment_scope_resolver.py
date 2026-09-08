@@ -795,13 +795,21 @@ class SentimentScopeResolver:
             )
 
             if sentiment_token is None:
-
                 results.append({
                     "word":
                         sentiment_word["word"],
 
                     "root":
                         sentiment_word["root"],
+
+                    # Preserve HisNet scores even when the
+                    # sentiment candidate cannot be aligned
+                    # with a Stanza token.
+                    "positive":
+                        sentiment_word["positive"],
+
+                    "negative":
+                        sentiment_word["negative"],
 
                     "sentiment_token":
                         None,
@@ -819,7 +827,10 @@ class SentimentScopeResolver:
                         [],
 
                     "contrast":
-                        None
+                        None,
+
+                    "alignment_status":
+                        "unmatched"
                 })
 
                 continue
@@ -916,7 +927,10 @@ class SentimentScopeResolver:
                     negations,
 
                 "contrast":
-                    contrast
+                    contrast,
+
+                "alignment_status":
+                    "matched"
             })
 
         return self._resolve_sentiment_roles(

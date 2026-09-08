@@ -1,0 +1,4 @@
+﻿,pred_negative,pred_neutral,pred_positive
+gold_negative,60,14,26
+gold_neutral,50,29,21
+gold_positive,27,20,53
