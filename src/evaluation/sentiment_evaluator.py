@@ -299,15 +299,27 @@ class SentimentEvaluator:
         active_opinion_count = 0
         suppressed_count = 0
 
-        for sentence_result in dependency_result.get(
-            "sentences",
-            []
-        ):
+        scopes = dependency_result.get(
+            "scopes"
+        )
 
-            for scope in sentence_result.get(
-                "scopes",
-                []
+        # Backward compatibility with older classifier outputs.
+        if scopes is None:
+
+            scopes = []
+
+            for sentence_result in dependency_result.get(
+                    "sentences",
+                    []
             ):
+                scopes.extend(
+                    sentence_result.get(
+                        "scopes",
+                        []
+                    )
+                )
+
+        for scope in scopes:
 
                 scope_count += 1
 
@@ -691,7 +703,8 @@ class SentimentEvaluator:
 
                 dependency_result = (
                     self.hisnet_dependency.classify(
-                        text
+                        text,
+                        hisnet_result=hisnet_result
                     )
                 )
 

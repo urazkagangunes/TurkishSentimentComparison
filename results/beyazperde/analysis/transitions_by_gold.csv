@@ -1,0 +1,14 @@
+﻿gold,hisnet_prediction,dependency_prediction,count
+negative,negative,positive,27
+negative,positive,negative,12
+negative,neutral,negative,1
+neutral,negative,positive,43
+neutral,positive,negative,23
+neutral,negative,neutral,4
+neutral,neutral,negative,1
+positive,negative,positive,57
+positive,positive,negative,42
+positive,negative,neutral,5
+positive,positive,neutral,2
+positive,neutral,negative,1
+positive,neutral,positive,1

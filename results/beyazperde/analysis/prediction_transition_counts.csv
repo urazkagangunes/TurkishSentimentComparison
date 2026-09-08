@@ -1,0 +1,7 @@
+﻿hisnet_prediction,dependency_prediction,count
+negative,positive,127
+positive,negative,77
+negative,neutral,9
+neutral,negative,3
+positive,neutral,2
+neutral,positive,1
