@@ -1,0 +1,4 @@
+﻿comparison,changed,unchanged,improved,degraded,wrong_to_wrong,net_correct_change
+HisNet vs HisNet -> Dependency,86,914,21,30,35,-9
+HisNet vs Dependency -> HisNet,180,820,57,64,59,-7
+HisNet -> Dependency vs Dependency -> HisNet,109,891,40,38,31,2

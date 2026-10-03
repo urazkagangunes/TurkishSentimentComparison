@@ -1,5 +1,6 @@
 import hashlib
 import json
+
 from collections import Counter
 from pathlib import Path
 
@@ -36,6 +37,7 @@ class SentimentEvaluator:
             "Initializing HisNet..."
         )
 
+        # ONE HisNet instance only.
         self.hisnet = (
             HisNetClassifier()
         )
@@ -44,12 +46,16 @@ class SentimentEvaluator:
             "Initializing HisNet + Dependency..."
         )
 
+        # Inject the SAME HisNet instance.
         self.hisnet_dependency = (
-            HisNetDependencyClassifier()
+            HisNetDependencyClassifier(
+                hisnet_classifier=
+                    self.hisnet
+            )
         )
 
     # =========================================================
-    # CHECKPOINT / RESUME
+    # CHECKPOINT
     # =========================================================
 
     @staticmethod
@@ -59,16 +65,20 @@ class SentimentEvaluator:
         """
         Creates a deterministic fingerprint from text + gold
         labels in their current order.
-
-        This prevents accidentally resuming a checkpoint from
-        another dataset or from the same dataset in a different
-        order.
         """
 
-        hasher = hashlib.sha256()
+        hasher = (
+            hashlib.sha256()
+        )
 
-        for text, gold in dataframe[
-            ["text", "gold"]
+        for (
+            text,
+            gold
+        ) in dataframe[
+            [
+                "text",
+                "gold"
+            ]
         ].itertuples(
             index=False,
             name=None
@@ -94,22 +104,26 @@ class SentimentEvaluator:
                 b"\x01"
             )
 
-        return hasher.hexdigest()
+        return (
+            hasher.hexdigest()
+        )
 
     @staticmethod
     def _json_default(
         value
     ):
         """
-        Converts NumPy/Pandas scalar values into native Python
-        values when writing checkpoint JSON.
+        Converts NumPy/Pandas scalar values to native values.
         """
 
         if hasattr(
             value,
             "item"
         ):
-            return value.item()
+
+            return (
+                value.item()
+            )
 
         raise TypeError(
             f"Object of type "
@@ -127,11 +141,7 @@ class SentimentEvaluator:
         rows
     ):
         """
-        Saves evaluation progress atomically.
-
-        A temporary file is written first. Only after the JSON
-        has been written successfully does it replace the
-        previous checkpoint.
+        Atomically saves evaluation progress.
         """
 
         checkpoint_data = {
@@ -154,9 +164,13 @@ class SentimentEvaluator:
                 rows
         }
 
-        temporary_path = Path(
-            str(checkpoint_path)
-            + ".tmp"
+        temporary_path = (
+            Path(
+                str(
+                    checkpoint_path
+                )
+                + ".tmp"
+            )
         )
 
         with open(
@@ -194,7 +208,9 @@ class SentimentEvaluator:
         ) as file:
 
             checkpoint = (
-                json.load(file)
+                json.load(
+                    file
+                )
             )
 
         if (
@@ -203,6 +219,7 @@ class SentimentEvaluator:
             )
             != 1
         ):
+
             raise ValueError(
                 "Unsupported checkpoint version."
             )
@@ -213,6 +230,7 @@ class SentimentEvaluator:
             )
             != dataset_name
         ):
+
             raise ValueError(
                 "Checkpoint dataset name does not "
                 "match the current dataset."
@@ -224,6 +242,7 @@ class SentimentEvaluator:
             )
             != total_examples
         ):
+
             raise ValueError(
                 "Checkpoint example count does not "
                 "match the current dataset."
@@ -235,14 +254,17 @@ class SentimentEvaluator:
             )
             != dataset_fingerprint
         ):
+
             raise ValueError(
                 "Checkpoint dataset fingerprint does "
                 "not match the current dataset/order."
             )
 
-        rows = checkpoint.get(
-            "rows",
-            []
+        rows = (
+            checkpoint.get(
+                "rows",
+                []
+            )
         )
 
         processed_examples = (
@@ -256,16 +278,18 @@ class SentimentEvaluator:
             processed_examples
             != len(rows)
         ):
+
             raise ValueError(
                 "Checkpoint is inconsistent: "
                 "processed_examples does not match "
-                "the number of stored rows."
+                "stored rows."
             )
 
         if (
             processed_examples
             > total_examples
         ):
+
             raise ValueError(
                 "Checkpoint contains more examples "
                 "than the current dataset."
@@ -274,7 +298,7 @@ class SentimentEvaluator:
         return rows
 
     # =========================================================
-    # DEPENDENCY DIAGNOSTICS
+    # DEPENDENCY ANALYSIS
     # =========================================================
 
     @staticmethod
@@ -284,8 +308,6 @@ class SentimentEvaluator:
         """
         Extracts compact linguistic information from
         HisNet + Dependency output.
-
-        This is stored for later error analysis.
         """
 
         opinions = []
@@ -299,19 +321,25 @@ class SentimentEvaluator:
         active_opinion_count = 0
         suppressed_count = 0
 
-        scopes = dependency_result.get(
-            "scopes"
+        # New canonical document-level scope list.
+        scopes = (
+            dependency_result.get(
+                "scopes"
+            )
         )
 
-        # Backward compatibility with older classifier outputs.
+        # Backward compatibility.
         if scopes is None:
 
             scopes = []
 
-            for sentence_result in dependency_result.get(
+            for sentence_result in (
+                dependency_result.get(
                     "sentences",
                     []
+                )
             ):
+
                 scopes.extend(
                     sentence_result.get(
                         "scopes",
@@ -321,97 +349,150 @@ class SentimentEvaluator:
 
         for scope in scopes:
 
-                scope_count += 1
+            scope_count += 1
 
-                root = scope.get(
+            root = (
+                scope.get(
                     "root"
                 )
+            )
 
-                if root is not None:
-                    opinions.append(
-                        root
-                    )
+            if root is not None:
 
-                target = scope.get(
+                opinions.append(
+                    root
+                )
+
+            # -------------------------------------------------
+            # TARGET
+            # -------------------------------------------------
+
+            target = (
+                scope.get(
                     "target"
                 )
+            )
 
-                if target is not None:
+            if target is not None:
 
-                    target_root = (
-                        target.get("root")
-                        or target.get("lemma")
-                        or target.get("word")
+                target_root = (
+                    target.get(
+                        "root"
+                    )
+                    or target.get(
+                        "lemma"
+                    )
+                    or target.get(
+                        "word"
+                    )
+                )
+
+                if target_root:
+
+                    targets.append(
+                        target_root
                     )
 
-                    if target_root:
-                        targets.append(
-                            target_root
-                        )
+            # -------------------------------------------------
+            # ACTIVE / SUPPRESSED
+            # -------------------------------------------------
 
-                if scope.get(
-                    "active_sentiment",
-                    True
-                ):
+            if scope.get(
+                "active_sentiment",
+                True
+            ):
 
-                    active_opinion_count += 1
+                active_opinion_count += 1
 
-                else:
+            else:
 
-                    suppressed_count += 1
+                suppressed_count += 1
 
-                for modifier in scope.get(
+            # -------------------------------------------------
+            # MODIFIERS
+            # -------------------------------------------------
+
+            for modifier in (
+                scope.get(
                     "modifiers",
                     []
-                ):
+                )
+            ):
 
-                    value = (
-                        modifier.get("lemma")
-                        or modifier.get("word")
+                value = (
+                    modifier.get(
+                        "lemma"
+                    )
+                    or modifier.get(
+                        "word"
+                    )
+                )
+
+                if value:
+
+                    modifiers.append(
+                        value
                     )
 
-                    if value:
-                        modifiers.append(
-                            value
-                        )
+            # -------------------------------------------------
+            # NEGATIONS
+            # -------------------------------------------------
 
-                for negation in scope.get(
+            for negation in (
+                scope.get(
                     "negations",
                     []
-                ):
+                )
+            ):
 
-                    value = (
-                        negation.get("lemma")
-                        or negation.get("word")
+                value = (
+                    negation.get(
+                        "lemma"
+                    )
+                    or negation.get(
+                        "word"
+                    )
+                )
+
+                if value:
+
+                    negations.append(
+                        value
                     )
 
-                    if value:
-                        negations.append(
-                            value
-                        )
+            # -------------------------------------------------
+            # CONTRAST
+            # -------------------------------------------------
 
-                contrast = scope.get(
+            contrast = (
+                scope.get(
                     "contrast"
                 )
+            )
 
-                if contrast:
+            if contrast:
 
-                    value = (
-                        contrast.get("lemma")
-                        or contrast.get("word")
+                value = (
+                    contrast.get(
+                        "lemma"
                     )
-
-                    if value:
-                        contrasts.append(
-                            value
-                        )
-
-                operations.extend(
-                    scope.get(
-                        "operations",
-                        []
+                    or contrast.get(
+                        "word"
                     )
                 )
+
+                if value:
+
+                    contrasts.append(
+                        value
+                    )
+
+            operations.extend(
+                scope.get(
+                    "operations",
+                    []
+                )
+            )
 
         return {
             "opinions":
@@ -464,12 +545,19 @@ class SentimentEvaluator:
         predictions
     ):
 
-        accuracy = accuracy_score(
-            gold,
-            predictions
+        accuracy = (
+            accuracy_score(
+                gold,
+                predictions
+            )
         )
 
-        precision_macro, recall_macro, f1_macro, _ = (
+        (
+            precision_macro,
+            recall_macro,
+            f1_macro,
+            _
+        ) = (
             precision_recall_fscore_support(
                 gold,
                 predictions,
@@ -479,7 +567,12 @@ class SentimentEvaluator:
             )
         )
 
-        precision_weighted, recall_weighted, f1_weighted, _ = (
+        (
+            precision_weighted,
+            recall_weighted,
+            f1_weighted,
+            _
+        ) = (
             precision_recall_fscore_support(
                 gold,
                 predictions,
@@ -489,41 +582,59 @@ class SentimentEvaluator:
             )
         )
 
-        report = classification_report(
-            gold,
-            predictions,
-            labels=LABELS,
-            output_dict=True,
-            zero_division=0
+        report = (
+            classification_report(
+                gold,
+                predictions,
+                labels=LABELS,
+                output_dict=True,
+                zero_division=0
+            )
         )
 
-        matrix = confusion_matrix(
-            gold,
-            predictions,
-            labels=LABELS
+        matrix = (
+            confusion_matrix(
+                gold,
+                predictions,
+                labels=LABELS
+            )
         )
 
         return {
             "accuracy":
-                float(accuracy),
+                float(
+                    accuracy
+                ),
 
             "macro_precision":
-                float(precision_macro),
+                float(
+                    precision_macro
+                ),
 
             "macro_recall":
-                float(recall_macro),
+                float(
+                    recall_macro
+                ),
 
             "macro_f1":
-                float(f1_macro),
+                float(
+                    f1_macro
+                ),
 
             "weighted_precision":
-                float(precision_weighted),
+                float(
+                    precision_weighted
+                ),
 
             "weighted_recall":
-                float(recall_weighted),
+                float(
+                    recall_weighted
+                ),
 
             "weighted_f1":
-                float(f1_weighted),
+                float(
+                    f1_weighted
+                ),
 
             "classification_report":
                 report,
@@ -545,8 +656,10 @@ class SentimentEvaluator:
         resume=True
     ):
 
-        output_directory = Path(
-            output_directory
+        output_directory = (
+            Path(
+                output_directory
+            )
         )
 
         output_directory.mkdir(
@@ -559,6 +672,7 @@ class SentimentEvaluator:
         )
 
         if total == 0:
+
             raise ValueError(
                 "Dataset is empty."
             )
@@ -580,9 +694,9 @@ class SentimentEvaluator:
 
         rows = []
 
-        # -----------------------------------------------------
-        # Resume existing evaluation
-        # -----------------------------------------------------
+        # =====================================================
+        # RESUME
+        # =====================================================
 
         if (
             resume
@@ -625,8 +739,6 @@ class SentimentEvaluator:
 
         else:
 
-            # If the user explicitly starts without resume,
-            # an old checkpoint must not remain in place.
             if (
                 not resume
                 and checkpoint_path.exists()
@@ -646,17 +758,23 @@ class SentimentEvaluator:
                 "Starting from the beginning."
             )
 
+        # =====================================================
+        # HEADER
+        # =====================================================
+
         print(
             "\n"
             + "=" * 90
         )
 
         print(
-            f"DATASET: {dataset_name}"
+            f"DATASET: "
+            f"{dataset_name}"
         )
 
         print(
-            f"Examples: {total}"
+            f"Examples: "
+            f"{total}"
         )
 
         print(
@@ -672,9 +790,11 @@ class SentimentEvaluator:
             total
         ):
 
-            row = dataframe.iloc[
-                position
-            ]
+            row = (
+                dataframe.iloc[
+                    position
+                ]
+            )
 
             original_index = (
                 dataframe.index[
@@ -682,8 +802,13 @@ class SentimentEvaluator:
                 ]
             )
 
-            text = row["text"]
-            gold = row["gold"]
+            text = (
+                row["text"]
+            )
+
+            gold = (
+                row["gold"]
+            )
 
             try:
 
@@ -691,6 +816,7 @@ class SentimentEvaluator:
                 # HISNET
                 # =============================================
 
+                # Morphology + HisNet run ONCE.
                 hisnet_result = (
                     self.hisnet.classify(
                         text
@@ -701,10 +827,13 @@ class SentimentEvaluator:
                 # HISNET + DEPENDENCY
                 # =============================================
 
+                # Reuse EXACT SAME HisNet result.
                 dependency_result = (
-                    self.hisnet_dependency.classify(
+                    self.hisnet_dependency
+                    .classify(
                         text,
-                        hisnet_result=hisnet_result
+                        hisnet_result=
+                            hisnet_result
                     )
                 )
 
@@ -756,7 +885,7 @@ class SentimentEvaluator:
                 )
 
                 # =============================================
-                # DEPENDENCY ANALYSIS
+                # LINGUISTIC ANALYSIS
                 # =============================================
 
                 linguistic = (
@@ -766,7 +895,7 @@ class SentimentEvaluator:
                 )
 
                 # =============================================
-                # STORE RESULT
+                # RESULT
                 # =============================================
 
                 rows.append({
@@ -884,8 +1013,6 @@ class SentimentEvaluator:
                             "suppressed_count"
                         ],
 
-                    # Lists are serialized so that the CSV
-                    # remains easy to inspect later.
                     "opinions":
                         json.dumps(
                             linguistic[
@@ -937,11 +1064,7 @@ class SentimentEvaluator:
 
             except Exception as error:
 
-                # ---------------------------------------------
-                # Save every successfully completed example
-                # before propagating the error.
-                # ---------------------------------------------
-
+                # Save everything completed before error.
                 self._save_checkpoint(
                     checkpoint_path=
                         checkpoint_path,
@@ -983,15 +1106,18 @@ class SentimentEvaluator:
                 )
 
                 print(
-                    f"Gold: {gold}"
+                    f"Gold: "
+                    f"{gold}"
                 )
 
                 print(
-                    f"Text: {text}"
+                    f"Text: "
+                    f"{text}"
                 )
 
                 print(
-                    f"Error: {repr(error)}"
+                    f"Error: "
+                    f"{repr(error)}"
                 )
 
                 print(
@@ -1008,15 +1134,17 @@ class SentimentEvaluator:
                 raise
 
             # =================================================
-            # PERIODIC CHECKPOINT
+            # CHECKPOINT
             # =================================================
 
             processed = (
-                position + 1
+                position
+                + 1
             )
 
             should_save_checkpoint = (
                 processed == total
+
                 or (
                     progress_every
                     and processed
@@ -1051,28 +1179,36 @@ class SentimentEvaluator:
                 )
 
         # =====================================================
-        # RESULT DATAFRAME
+        # DATAFRAME
         # =====================================================
 
-        result_df = pd.DataFrame(
-            rows
+        result_df = (
+            pd.DataFrame(
+                rows
+            )
         )
 
         # =====================================================
         # METRICS
         # =====================================================
 
-        gold = result_df[
-            "gold"
-        ].tolist()
+        gold = (
+            result_df[
+                "gold"
+            ].tolist()
+        )
 
-        hisnet_predictions = result_df[
-            "hisnet_prediction"
-        ].tolist()
+        hisnet_predictions = (
+            result_df[
+                "hisnet_prediction"
+            ].tolist()
+        )
 
-        dependency_predictions = result_df[
-            "dependency_prediction"
-        ].tolist()
+        dependency_predictions = (
+            result_df[
+                "dependency_prediction"
+            ].tolist()
+        )
 
         hisnet_metrics = (
             self._calculate_metrics(
@@ -1089,7 +1225,7 @@ class SentimentEvaluator:
         )
 
         # =====================================================
-        # COMPARISON STATISTICS
+        # COMPARISON
         # =====================================================
 
         comparison = {
@@ -1172,14 +1308,20 @@ class SentimentEvaluator:
         # OPERATION COUNTS
         # =====================================================
 
-        operation_counter = Counter()
+        operation_counter = (
+            Counter()
+        )
 
-        for operations_json in result_df[
-            "operations"
-        ]:
+        for operations_json in (
+            result_df[
+                "operations"
+            ]
+        ):
 
-            operations = json.loads(
-                operations_json
+            operations = (
+                json.loads(
+                    operations_json
+                )
             )
 
             operation_counter.update(
@@ -1193,7 +1335,7 @@ class SentimentEvaluator:
         )
 
         # =====================================================
-        # SAVE PER-EXAMPLE RESULTS
+        # SAVE PREDICTIONS
         # =====================================================
 
         result_path = (
@@ -1209,7 +1351,7 @@ class SentimentEvaluator:
         )
 
         # =====================================================
-        # SAVE SUMMARY
+        # SUMMARY
         # =====================================================
 
         summary = {
@@ -1251,32 +1393,40 @@ class SentimentEvaluator:
         # CONFUSION MATRICES
         # =====================================================
 
-        hisnet_cm = pd.DataFrame(
-            hisnet_metrics[
-                "confusion_matrix"
-            ],
-            index=[
-                f"gold_{label}"
-                for label in LABELS
-            ],
-            columns=[
-                f"pred_{label}"
-                for label in LABELS
-            ]
+        hisnet_cm = (
+            pd.DataFrame(
+                hisnet_metrics[
+                    "confusion_matrix"
+                ],
+
+                index=[
+                    f"gold_{label}"
+                    for label in LABELS
+                ],
+
+                columns=[
+                    f"pred_{label}"
+                    for label in LABELS
+                ]
+            )
         )
 
-        dependency_cm = pd.DataFrame(
-            dependency_metrics[
-                "confusion_matrix"
-            ],
-            index=[
-                f"gold_{label}"
-                for label in LABELS
-            ],
-            columns=[
-                f"pred_{label}"
-                for label in LABELS
-            ]
+        dependency_cm = (
+            pd.DataFrame(
+                dependency_metrics[
+                    "confusion_matrix"
+                ],
+
+                index=[
+                    f"gold_{label}"
+                    for label in LABELS
+                ],
+
+                columns=[
+                    f"pred_{label}"
+                    for label in LABELS
+                ]
+            )
         )
 
         hisnet_cm.to_csv(
@@ -1303,7 +1453,7 @@ class SentimentEvaluator:
         )
 
         # =====================================================
-        # REMOVE CHECKPOINT ONLY AFTER EVERYTHING SUCCEEDED
+        # REMOVE CHECKPOINT AFTER SUCCESS
         # =====================================================
 
         if checkpoint_path.exists():
@@ -1322,7 +1472,10 @@ class SentimentEvaluator:
                 checkpoint_path
             )
 
-        return result_df, summary
+        return (
+            result_df,
+            summary
+        )
 
     # =========================================================
     # PRINT SUMMARY
@@ -1342,7 +1495,8 @@ class SentimentEvaluator:
         )
 
         print(
-            f"EVALUATION SUMMARY: {dataset_name}"
+            f"EVALUATION SUMMARY: "
+            f"{dataset_name}"
         )
 
         print(

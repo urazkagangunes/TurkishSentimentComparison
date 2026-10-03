@@ -1,0 +1,4 @@
+﻿gold,examples,hisnet_accuracy,dependency_accuracy,changed,improved,degraded,net_gain
+negative,2000,0.612,0.494,513,131,367,-236
+neutral,2000,0.192,0.1905,398,26,29,-3
+positive,2000,0.697,0.7055,171,90,73,17

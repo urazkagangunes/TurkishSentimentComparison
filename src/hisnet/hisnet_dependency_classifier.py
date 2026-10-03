@@ -1,7 +1,8 @@
 import math
 
 from src.hisnet.hisnet_classifier import (
-    HisNetClassifier
+    HisNetClassifier,
+    NEUTRAL_THRESHOLD
 )
 
 from src.dependency.stanza_parser import (
@@ -17,38 +18,48 @@ class HisNetDependencyClassifier:
     """
     HisNet + Dependency Parsing sentiment classifier.
 
-    Fair comparison design:
+    Fair comparison:
 
-        Text
-            -> HisNet ONCE
-            -> morphological analyses
-            -> HisNet lexical sentiment candidates
+        text
+          -> HisNet ONCE
+          -> same HisNet result
+                |
+                +--> HisNet baseline
+                |
+                +--> Dependency composition
 
-        Same text
-            -> Stanza dependency parse
+    HisNet + Dependency therefore starts from exactly the
+    same lexical sentiment candidates and scores as HisNet.
 
-        SAME HisNet candidates
-            + dependency structure
-            -> target / modifier / negation / contrast
-            -> dependency-aware sentiment aggregation
+    Dependency information may then apply:
 
-    IMPORTANT:
-        HisNet + Dependency must start from exactly the same
-        HisNet result as the HisNet-only baseline.
+        - target suppression
+        - negation flip
 
-        The dependency classifier must NOT independently
-        recompute HisNet during evaluation.
+    Modifier and contrast information remain diagnostic only.
     """
 
-    def __init__(self):
+    def __init__(
+        self,
+        hisnet_classifier=None
+    ):
 
-        # Kept as a fallback so that classify(text) can still
-        # be used directly in unit tests or interactive use.
+        # -----------------------------------------------------
+        # SHARED HISNET
+        # -----------------------------------------------------
         #
-        # During fair evaluation, the already-computed
-        # hisnet_result is passed explicitly to classify().
+        # SentimentEvaluator injects its HisNetClassifier here.
+        #
+        # Therefore we do NOT create a second expensive
+        # HisNet / MorphologicalAnalyzer / SentiLiteralNet
+        # instance.
+        #
+        # If this class is used standalone, HisNet is created
+        # lazily only when necessary.
+        # -----------------------------------------------------
+
         self.hisnet = (
-            HisNetClassifier()
+            hisnet_classifier
         )
 
         self.parser = (
@@ -65,20 +76,27 @@ class HisNetDependencyClassifier:
 
     @staticmethod
     def _prediction_from_scores(
-        positive_score,
-        negative_score
+            positive_score,
+            negative_score
     ):
+        """
+        Uses exactly the same decision rule as the
+        HisNet-only baseline.
 
-        if positive_score > negative_score:
-            return "positive"
+        This keeps the HisNet vs HisNet+Dependency
+        comparison fair.
+        """
 
-        if negative_score > positive_score:
-            return "negative"
-
-        return "neutral"
+        return (
+            HisNetClassifier
+            ._prediction_from_scores(
+                positive_score,
+                negative_score
+            )
+        )
 
     # =========================================================
-    # DEPENDENCY TOKEN FLATTENING
+    # GLOBAL DEPENDENCY TOKEN IDS
     # =========================================================
 
     @staticmethod
@@ -86,31 +104,14 @@ class HisNetDependencyClassifier:
         parsed_sentences
     ):
         """
-        Stanza token IDs restart from 1 for every sentence.
+        Stanza token IDs restart from 1 in every sentence.
 
-        For document-level HisNet candidates we need one
-        globally unique dependency-token space.
+        For document-level HisNet candidates, dependency tokens
+        are converted to globally unique IDs.
 
-        Example:
+        Heads are shifted by the same sentence offset.
 
-            sentence 1:
-                1, 2, 3
-
-            sentence 2:
-                1, 2, 3, 4
-
-        becomes:
-
-            sentence 1:
-                1, 2, 3
-
-            sentence 2:
-                4, 5, 6, 7
-
-        Dependency heads are shifted by the same offset.
-
-        Root heads remain 0, therefore dependency relations
-        never cross sentence boundaries.
+        Root heads remain 0.
         """
 
         global_tokens = []
@@ -119,15 +120,20 @@ class HisNetDependencyClassifier:
 
         offset = 0
 
-        for sentence_index, parsed_sentence in enumerate(
+        for (
+            sentence_index,
+            parsed_sentence
+        ) in enumerate(
             parsed_sentences
         ):
 
             sentence_tokens = []
 
-            local_tokens = parsed_sentence.get(
-                "tokens",
-                []
+            local_tokens = (
+                parsed_sentence.get(
+                    "tokens",
+                    []
+                )
             )
 
             max_local_id = 0
@@ -152,9 +158,11 @@ class HisNetDependencyClassifier:
                 )
 
                 if local_head == 0:
+
                     global_head = 0
 
                 else:
+
                     global_head = (
                         offset
                         + local_head
@@ -169,7 +177,6 @@ class HisNetDependencyClassifier:
                     "head":
                         global_head,
 
-                    # Diagnostic metadata.
                     "sentence_index":
                         sentence_index,
 
@@ -190,7 +197,9 @@ class HisNetDependencyClassifier:
 
                 token_to_sentence[
                     global_id
-                ] = sentence_index
+                ] = (
+                    sentence_index
+                )
 
                 max_local_id = max(
                     max_local_id,
@@ -233,26 +242,11 @@ class HisNetDependencyClassifier:
         hisnet_result
     ):
         """
-        Verifies that dependency scope resolution has preserved
-        every HisNet sentiment candidate BEFORE dependency
-        operations are applied.
+        Ensures that dependency scope resolution preserves all
+        baseline HisNet sentiment scores BEFORE any dependency
+        operation is applied.
 
-        Therefore:
-
-            sum(scope positive)
-                ==
-            HisNet positive score
-
-        and:
-
-            sum(scope negative)
-                ==
-            HisNet negative score
-
-        must always hold.
-
-        If this fails, we have a pipeline/alignment bug rather
-        than a legitimate dependency effect.
+        If this fails, there is a pipeline/alignment bug.
         """
 
         scope_positive = sum(
@@ -262,6 +256,7 @@ class HisNetDependencyClassifier:
                     0.0
                 )
             )
+
             for scope in scopes
         )
 
@@ -272,6 +267,7 @@ class HisNetDependencyClassifier:
                     0.0
                 )
             )
+
             for scope in scopes
         )
 
@@ -311,36 +307,41 @@ class HisNetDependencyClassifier:
         ):
 
             raise RuntimeError(
-                "\nHisNet/Dependency fairness invariant "
+                "\n"
+                "HisNet/Dependency fairness invariant "
                 "failed.\n"
-                f"HisNet positive: {hisnet_positive}\n"
-                f"Scope positive:  {scope_positive}\n"
-                f"HisNet negative: {hisnet_negative}\n"
-                f"Scope negative:  {scope_negative}\n"
-                "\nDependency scope resolution must "
-                "preserve all baseline HisNet scores "
-                "before dependency operations."
+                f"HisNet positive: "
+                f"{hisnet_positive}\n"
+                f"Scope positive:  "
+                f"{scope_positive}\n"
+                f"HisNet negative: "
+                f"{hisnet_negative}\n"
+                f"Scope negative:  "
+                f"{scope_negative}\n"
+                "\n"
+                "Dependency scope resolution must preserve "
+                "all baseline HisNet scores before "
+                "dependency operations."
             )
 
     # =========================================================
-    # DEPENDENCY COMPOSITION
+    # APPLY DEPENDENCY RULES
     # =========================================================
 
+    @staticmethod
     def _apply_dependency_scope(
-        self,
-        scope
+            scope
     ):
         """
-        Applies dependency-based information to one
-        HisNet sentiment candidate.
+        Applies dependency-based composition to one HisNet
+        sentiment candidate.
 
-        Current rules:
+        Current numeric rules:
 
-        1. Contextual target suppression
-        2. Negation polarity flip
+            1. Target suppression
+            2. Negation polarity flip
 
-        Modifier and contrast information are diagnostic only.
-        They do not currently change numeric sentiment scores.
+        Modifier and contrast are diagnostic-only.
         """
 
         original_positive = float(
@@ -368,7 +369,7 @@ class HisNetDependencyClassifier:
         operations = []
 
         # =====================================================
-        # 1. CONTEXTUAL ROLE / SUPPRESSION
+        # 1. TARGET SUPPRESSION
         # =====================================================
 
         if not scope.get(
@@ -406,14 +407,19 @@ class HisNetDependencyClassifier:
         # 2. NEGATION
         # =====================================================
 
-        negations = scope.get(
-            "negations",
-            []
+        negations = (
+            scope.get(
+                "negations",
+                []
+            )
         )
 
         # Odd number of negations reverses polarity.
-        # Even number restores the original polarity.
-        if len(negations) % 2 == 1:
+        # Even number restores original polarity.
+        if (
+            len(negations) % 2
+            == 1
+        ):
 
             (
                 adjusted_positive,
@@ -428,7 +434,7 @@ class HisNetDependencyClassifier:
             )
 
         # =====================================================
-        # 3. DIAGNOSTIC-ONLY FEATURES
+        # 3. DIAGNOSTIC FEATURES
         # =====================================================
 
         if scope.get(
@@ -467,7 +473,7 @@ class HisNetDependencyClassifier:
         }
 
     # =========================================================
-    # SENTENCE-LEVEL DIAGNOSTIC OUTPUT
+    # SENTENCE-LEVEL DIAGNOSTICS
     # =========================================================
 
     def _build_sentence_results(
@@ -477,19 +483,14 @@ class HisNetDependencyClassifier:
         token_to_sentence
     ):
         """
-        Assigns matched dependency scopes back to their original
-        Stanza sentence for diagnostic inspection.
+        Assigns matched dependency scopes back to their Stanza
+        sentence.
 
-        Top-level document scoring does NOT depend on this
-        grouping.
+        This grouping is diagnostic only.
 
-        Unmatched scopes remain available in the top-level
-        'scopes' output so that they are never lost.
+        Document-level scoring uses the canonical top-level
+        scope list.
         """
-
-        # -----------------------------------------------------
-        # Assign matched scopes to their Stanza sentence.
-        # -----------------------------------------------------
 
         for scope in resolved_scopes:
 
@@ -501,11 +502,12 @@ class HisNetDependencyClassifier:
 
             if sentiment_token is None:
 
-                # If there is only one Stanza sentence, the
-                # unmatched candidate necessarily belongs there.
-                if len(
-                    sentence_results
-                ) == 1:
+                # If document contains only one Stanza sentence,
+                # unmatched item clearly belongs there.
+                if (
+                    len(sentence_results)
+                    == 1
+                ):
 
                     sentence_results[
                         0
@@ -541,22 +543,22 @@ class HisNetDependencyClassifier:
             )
 
         # -----------------------------------------------------
-        # Compute sentence-level diagnostic scores directly
-        # from the already-resolved scopes.
-        #
-        # HisNet is NOT rerun here.
+        # Sentence-level diagnostic scores
         # -----------------------------------------------------
 
         for sentence_result in sentence_results:
 
-            scopes = sentence_result[
-                "scopes"
-            ]
+            scopes = (
+                sentence_result[
+                    "scopes"
+                ]
+            )
 
             original_positive = sum(
                 scope[
                     "original_positive"
                 ]
+
                 for scope in scopes
             )
 
@@ -564,6 +566,7 @@ class HisNetDependencyClassifier:
                 scope[
                     "original_negative"
                 ]
+
                 for scope in scopes
             )
 
@@ -571,6 +574,7 @@ class HisNetDependencyClassifier:
                 scope[
                     "adjusted_positive"
                 ]
+
                 for scope in scopes
             )
 
@@ -578,16 +582,21 @@ class HisNetDependencyClassifier:
                 scope[
                     "adjusted_negative"
                 ]
+
                 for scope in scopes
             )
 
             sentence_result[
                 "hisnet_positive_score"
-            ] = original_positive
+            ] = (
+                original_positive
+            )
 
             sentence_result[
                 "hisnet_negative_score"
-            ] = original_negative
+            ] = (
+                original_negative
+            )
 
             sentence_result[
                 "hisnet_prediction"
@@ -600,11 +609,15 @@ class HisNetDependencyClassifier:
 
             sentence_result[
                 "positive_score"
-            ] = adjusted_positive
+            ] = (
+                adjusted_positive
+            )
 
             sentence_result[
                 "negative_score"
-            ] = adjusted_negative
+            ] = (
+                adjusted_negative
+            )
 
             sentence_result[
                 "prediction"
@@ -627,9 +640,9 @@ class HisNetDependencyClassifier:
         hisnet_result=None
     ):
         """
-        Classifies a complete text using HisNet + Dependency.
+        Classifies complete text using HisNet + Dependency.
 
-        Preferred fair-evaluation usage:
+        Preferred evaluation usage:
 
             hisnet_result = hisnet.classify(text)
 
@@ -638,12 +651,14 @@ class HisNetDependencyClassifier:
                 hisnet_result=hisnet_result
             )
 
-        If hisnet_result is not supplied, HisNet is computed
-        internally only for standalone/unit-test convenience.
+        Therefore HisNet is NOT recalculated.
+
+        For standalone usage, HisNet is lazily created only if
+        no precomputed result is supplied.
         """
 
         # =====================================================
-        # BASELINE
+        # HISNET BASELINE
         # =====================================================
 
         baseline_was_reused = (
@@ -652,14 +667,23 @@ class HisNetDependencyClassifier:
 
         if hisnet_result is None:
 
+            # Standalone fallback only.
+            if self.hisnet is None:
+
+                self.hisnet = (
+                    HisNetClassifier()
+                )
+
             hisnet_result = (
                 self.hisnet.classify(
                     text
                 )
             )
 
-        # Safety: prevent accidentally passing the baseline
-        # result of another text.
+        # -----------------------------------------------------
+        # Safety check
+        # -----------------------------------------------------
+
         if (
             hisnet_result.get(
                 "text"
@@ -673,7 +697,7 @@ class HisNetDependencyClassifier:
             )
 
         # =====================================================
-        # DEPENDENCY PARSE
+        # STANZA DEPENDENCY PARSE
         # =====================================================
 
         parsed_sentences = (
@@ -693,7 +717,7 @@ class HisNetDependencyClassifier:
         )
 
         # =====================================================
-        # DEPENDENCY SCOPE RESOLUTION
+        # SCOPE RESOLUTION
         # =====================================================
 
         scopes = (
@@ -711,7 +735,7 @@ class HisNetDependencyClassifier:
         )
 
         # =====================================================
-        # FAIRNESS CHECK BEFORE ANY SCORE MODIFICATION
+        # FAIRNESS CHECK
         # =====================================================
 
         self._validate_initial_scores(
@@ -745,6 +769,7 @@ class HisNetDependencyClassifier:
             scope[
                 "adjusted_positive"
             ]
+
             for scope in resolved_scopes
         )
 
@@ -752,6 +777,7 @@ class HisNetDependencyClassifier:
             scope[
                 "adjusted_negative"
             ]
+
             for scope in resolved_scopes
         )
 
@@ -776,10 +802,14 @@ class HisNetDependencyClassifier:
 
         unmatched_scopes = [
             scope
-            for scope in resolved_scopes
+
+            for scope
+            in resolved_scopes
+
             if scope.get(
                 "alignment_status"
-            ) == "unmatched"
+            )
+            == "unmatched"
         ]
 
         # =====================================================
@@ -791,7 +821,7 @@ class HisNetDependencyClassifier:
                 text,
 
             # ---------------------------------------------
-            # Exact HisNet baseline reused by H+Dependency
+            # Baseline
             # ---------------------------------------------
 
             "hisnet_prediction":
@@ -810,7 +840,7 @@ class HisNetDependencyClassifier:
                 ],
 
             # ---------------------------------------------
-            # HisNet + Dependency
+            # Dependency result
             # ---------------------------------------------
 
             "prediction":
@@ -839,7 +869,10 @@ class HisNetDependencyClassifier:
                     "negative_score"
                 ],
 
-            # Canonical document-level scopes.
+            # ---------------------------------------------
+            # Canonical scopes
+            # ---------------------------------------------
+
             "scopes":
                 resolved_scopes,
 
@@ -850,7 +883,10 @@ class HisNetDependencyClassifier:
             "sentences":
                 sentence_results,
 
-            # Full baseline data.
+            # ---------------------------------------------
+            # Shared HisNet data
+            # ---------------------------------------------
+
             "morphological_analyses":
                 hisnet_result[
                     "morphological_analyses"

@@ -1,0 +1,17 @@
+﻿operations,examples,changed,improved,degraded,wrong_to_wrong,net_gain
+none,57315,0,0,0,0,0
+modifier_detected,30050,0,0,0,0,0
+negation_flip,7881,5331,1209,2190,1932,-981
+modifier_detected + negation_flip,6837,3195,993,1085,1117,-92
+contrast_detected,5536,0,0,0,0,0
+contrast_detected + modifier_detected,5084,0,0,0,0,0
+suppressed_as_target,2713,541,260,132,149,128
+modifier_detected + suppressed_as_target,2583,349,164,93,92,71
+contrast_detected + modifier_detected + negation_flip,2259,1085,210,265,610,-55
+contrast_detected + negation_flip,1766,1086,148,274,664,-126
+modifier_detected + negation_flip + suppressed_as_target,1016,370,157,137,76,20
+contrast_detected + modifier_detected + suppressed_as_target,679,119,48,28,43,20
+negation_flip + suppressed_as_target,676,388,123,169,96,-46
+contrast_detected + suppressed_as_target,555,104,31,26,47,5
+contrast_detected + modifier_detected + negation_flip + suppressed_as_target,409,144,40,31,73,9
+contrast_detected + negation_flip + suppressed_as_target,202,97,19,27,51,-8

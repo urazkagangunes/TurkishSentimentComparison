@@ -29,6 +29,17 @@ class SentimentScopeResolver:
         "advmod"
     }
 
+    NEGATION_SUPPORT_RELATIONS = {
+        "cop",
+        "aux",
+        "aux:pass",
+        "compound:lvc"
+    }
+
+    PARENT_NEGATION_RELATIONS = {
+        "compound:lvc"
+    }
+
     ENTITY_POS = {
         "NOUN",
         "PROPN",
@@ -43,6 +54,45 @@ class SentimentScopeResolver:
         "lâkin",
         "oysa",
         "oysaki"
+    }
+
+    OPINION_POS = {
+        "ADJ",
+        "VERB",
+        "NOUN",
+        "ADV",
+        "INTJ"
+    }
+
+    # Relations that can reasonably represent an
+    # independent predicate/opinion expression.
+    OPINION_PREDICATE_RELATIONS = {
+        "root",
+        "conj",
+        "xcomp",
+        "ccomp",
+        "acl",
+        "acl:relcl"
+    }
+
+    # Relations that usually represent grammatical,
+    # supporting or modifying material rather than an
+    # independent opinion expression.
+    #
+    # These tokens can still be USED by dependency scope
+    # resolution, but they are not sent to HisNet as
+    # independent opinion candidates.
+    OPINION_EXCLUDED_RELATIONS = {
+        "aux",
+        "aux:pass",
+        "cop",
+        "compound:lvc",
+        "nmod",
+        "det",
+        "case",
+        "cc",
+        "mark",
+        "punct"
     }
 
     @staticmethod
@@ -77,6 +127,59 @@ class SentimentScopeResolver:
             "Polarity=Neg" in feats
             or lemma == "değil"
             or deprel == "neg"
+        )
+
+    @staticmethod
+    def _has_morphological_negation(token):
+        """
+        Returns True only when the token itself carries
+        Turkish grammatical/morphological negation.
+
+        Example:
+            sevmedim
+            etmiyorum
+            değildi
+        """
+
+        if token is None:
+            return False
+
+        feats = token.get("feats") or ""
+
+        return (
+            "Polarity=Neg"
+            in feats
+        )
+
+    def _is_explicit_degil(self, token):
+        """
+        Detects explicit Turkish copular negation based on 'değil'.
+
+        Stanza normally lemmatizes forms such as:
+            değildi
+            değildir
+            değilmiş
+            değilim
+
+        to 'değil', but surface-form fallback is retained.
+        """
+
+        if token is None:
+            return False
+
+        lemma = self._turkish_lower(
+            token.get("lemma")
+        )
+
+        surface = self._turkish_lower(
+            token.get("text")
+        )
+
+        return (
+            lemma == "değil"
+            or surface.startswith(
+                "değil"
+            )
         )
 
     @staticmethod
@@ -483,32 +586,70 @@ class SentimentScopeResolver:
         return modifiers
 
     def _find_negations(
-        self,
-        sentiment_token,
-        token_by_id,
-        children
+            self,
+            sentiment_token,
+            token_by_id,
+            children
     ):
         """
-        Finds negation markers that affect this sentiment token.
+        Finds grammatical negation that can be conservatively
+        considered to affect this sentiment expression.
+
+        IMPORTANT
+        ---------
+        Morphological Polarity=Neg does NOT automatically mean
+        that every syntactically related sentiment word should
+        have its sentiment polarity reversed.
+
+        The resolver therefore accepts only:
+
+        1. Negation morphologically encoded on the sentiment
+           expression itself.
+
+               sevmedim
+
+        2. Explicit / structurally licensed negation child.
+
+               güzel <- değildi
+               tavsiye <- etmiyorum
+
+        3. A negated parent only in highly restricted structures:
+
+               a) explicit 'değil'
+               b) reverse light-verb construction
+
+        Arbitrary negated parents are deliberately ignored.
         """
 
         negations = []
-
         seen = set()
 
-        sentiment_id = sentiment_token["id"]
+        sentiment_id = (
+            sentiment_token[
+                "id"
+            ]
+        )
 
-        # ---------------------------------------------
-        # Case 1:
-        # Sentiment itself contains morphological NEG.
+        # =====================================================
+        # CASE 1
         #
-        # sevmedim
-        # ---------------------------------------------
+        # The sentiment-bearing token itself is morphologically
+        # negated.
+        #
+        # Example:
+        #
+        #   sevmedim
+        #
+        # root = sev
+        # Polarity=Neg
+        #
+        # Since the lexical sentiment expression itself carries
+        # negation, flipping is justified.
+        # =====================================================
 
-        if self._is_negation(
-            sentiment_token
+        if self._has_morphological_negation(
+                sentiment_token
         ):
-
             negations.append(
                 sentiment_token
             )
@@ -517,39 +658,119 @@ class SentimentScopeResolver:
                 sentiment_id
             )
 
-        # ---------------------------------------------
-        # Case 2:
-        # Negation is a direct child.
+        # =====================================================
+        # CASE 2
         #
-        # güzel <- değildi
-        # tavsiye <- etmiyorum
-        # ---------------------------------------------
+        # Direct child negation.
+        #
+        # We DO NOT accept an arbitrary Polarity=Neg child.
+        #
+        # Accepted structures:
+        #
+        #   explicit değil
+        #   UD neg relation
+        #   negated copula
+        #   negated auxiliary
+        #   negated light verb
+        #
+        # Examples:
+        #
+        #   güzel <- değildi
+        #
+        #   tavsiye <- etmiyorum
+        #              compound:lvc
+        # =====================================================
 
         for child in children.get(
-            sentiment_id,
-            []
+                sentiment_id,
+                []
         ):
 
+            child_id = (
+                child[
+                    "id"
+                ]
+            )
+
+            if child_id in seen:
+                continue
+
+            deprel = (
+                    child.get(
+                        "deprel"
+                    )
+                    or ""
+            )
+
+            is_explicit_degil = (
+                self._is_explicit_degil(
+                    child
+                )
+            )
+
+            is_ud_negation = (
+                    deprel
+                    == "neg"
+            )
+
+            is_supported_morphological_negation = (
+                    self._has_morphological_negation(
+                        child
+                    )
+                    and deprel
+                    in self.NEGATION_SUPPORT_RELATIONS
+            )
+
             if (
-                self._is_negation(child)
-                and child["id"] not in seen
+                    is_explicit_degil
+                    or is_ud_negation
+                    or is_supported_morphological_negation
             ):
-
-                negations.append(child)
-
-                seen.add(
-                    child["id"]
+                negations.append(
+                    child
                 )
 
-        # ---------------------------------------------
-        # Case 3:
-        # Negated auxiliary/parser parent.
-        #
-        # kötü -> değildi
-        # ---------------------------------------------
+                seen.add(
+                    child_id
+                )
 
-        head_id = sentiment_token.get(
-            "head"
+        # =====================================================
+        # CASE 3
+        #
+        # Negated syntactic parent.
+        #
+        # OLD BEHAVIOUR:
+        #
+        #   any parent with Polarity=Neg
+        #       -> sentiment flip
+        #
+        # This is too broad.
+        #
+        # NEW BEHAVIOUR:
+        #
+        # Only accept:
+        #
+        #   A) explicit 'değil'
+        #
+        #      kötü -> değildi
+        #
+        #      This preserves known Stanza structures where the
+        #      copular negation becomes the parent/root.
+        #
+        #   B) reverse light-verb relation
+        #
+        #      tavsiye -> etme
+        #
+        #      if Stanza attaches the nominal sentiment component
+        #      underneath a morphologically negated light verb.
+        #
+        # Arbitrary negated verbal parents are NOT accepted.
+        # =====================================================
+
+        head_id = (
+            sentiment_token.get(
+                "head"
+            )
         )
 
         head = token_by_id.get(
@@ -557,26 +778,81 @@ class SentimentScopeResolver:
         )
 
         if (
-            head is not None
-            and self._is_negation(head)
-            and head["id"] not in seen
+                head is not None
+                and head["id"]
+                not in seen
         ):
 
-            negations.append(head)
-
-            seen.add(
-                head["id"]
+            sentiment_relation = (
+                    sentiment_token.get(
+                        "deprel"
+                    )
+                    or ""
             )
+
+            explicit_degil_parent = (
+                self._is_explicit_degil(
+                    head
+                )
+            )
+
+            reverse_light_verb_negation = (
+                    sentiment_relation
+                    in self.PARENT_NEGATION_RELATIONS
+
+                    and self._has_morphological_negation(
+                head
+            )
+            )
+
+            if (
+                    explicit_degil_parent
+                    or reverse_light_verb_negation
+            ):
+                negations.append(
+                    head
+                )
+
+                seen.add(
+                    head[
+                        "id"
+                    ]
+                )
+
+        # =====================================================
+        # SERIALIZE
+        # =====================================================
 
         return [
             {
-                "id": token["id"],
-                "word": token.get("text"),
-                "lemma": token.get("lemma"),
-                "deprel": token.get("deprel"),
-                "feats": token.get("feats")
+                "id":
+                    token[
+                        "id"
+                    ],
+
+                "word":
+                    token.get(
+                        "text"
+                    ),
+
+                "lemma":
+                    token.get(
+                        "lemma"
+                    ),
+
+                "deprel":
+                    token.get(
+                        "deprel"
+                    ),
+
+                "feats":
+                    token.get(
+                        "feats"
+                    )
             }
-            for token in negations
+
+            for token
+            in negations
         ]
 
     def _find_contrast_marker(
@@ -764,6 +1040,460 @@ class SentimentScopeResolver:
             or dependency_token.get("text")
         )
 
+    def _is_dependency_opinion_candidate(
+            self,
+            token,
+            target,
+            target_strategy
+    ):
+        """
+        Determines whether a dependency token should be sent
+        to HisNet as an opinion candidate.
+
+        IMPORTANT
+        ---------
+        This decision is made BEFORE any HisNet lookup.
+
+        Therefore this method may use only syntactic information:
+            - POS
+            - dependency relation
+            - resolved target
+            - target-resolution strategy
+
+        It must NOT use polarity or HisNet scores.
+
+        Main principle:
+
+            semantic/predicate token
+                    -> HisNet candidate
+
+            grammatical/support/modifier token
+                    -> scope information only
+
+        Examples
+        --------
+
+        Film güzel.
+            güzel -> candidate
+            Film  -> target
+
+        Bu ürünü tavsiye etmiyorum.
+            tavsiye   -> candidate
+            etmiyorum -> negation/light-verb support, NOT candidate
+            ürünü     -> target
+
+        Otel çok güzel.
+            güzel -> candidate
+            çok   -> modifier, NOT candidate
+
+        Yemekler kötüydü.
+            kötü     -> candidate
+            yemekler -> target, NOT candidate
+        """
+
+        if token is None:
+            return False, None
+
+        upos = (
+                token.get("upos")
+                or ""
+        )
+
+        deprel = (
+                token.get("deprel")
+                or ""
+        )
+
+        # =====================================================
+        # 1. POS FILTER
+        # =====================================================
+
+        if upos not in self.OPINION_POS:
+            return False, None
+
+        # =====================================================
+        # 2. HARD STRUCTURAL EXCLUSIONS
+        #
+        # These relations typically describe support,
+        # grammatical function, modification or coordination
+        # markers rather than independent opinion expressions.
+        #
+        # Examples:
+        #
+        #   etmiyorum -> compound:lvc
+        #   çok       -> advmod
+        #   kesinlikle -> nmod (possible Stanza analysis)
+        #   değildi   -> cop
+        #
+        # They remain available to:
+        #   negation detection
+        #   modifier detection
+        #   contrast detection
+        #
+        # but they are NOT sent independently to HisNet.
+        # =====================================================
+
+        if deprel in self.OPINION_EXCLUDED_RELATIONS:
+            return False, None
+
+        # =====================================================
+        # 3. DIRECT PREDICATE / CLAUSAL CANDIDATE
+        #
+        # Handles:
+        #
+        #   Harika!
+        #   Film güzel.
+        #   tavsiye ...
+        #   conjunction predicates
+        #
+        # Target is not mandatory here because one-word /
+        # targetless sentiment expressions must survive.
+        # =====================================================
+
+        if deprel in self.OPINION_PREDICATE_RELATIONS:
+
+            if target is not None:
+                return (
+                    True,
+                    "predicate_with_target"
+                )
+
+            return (
+                True,
+                "predicate_candidate"
+            )
+
+        # =====================================================
+        # 4. ADJECTIVAL MODIFIER
+        #
+        # güzel otel
+        #
+        # güzel --amod--> otel
+        #
+        # _find_target() should have resolved the modified noun.
+        # =====================================================
+
+        if (
+                deprel == "amod"
+                and target is not None
+                and target_strategy == "modified_head"
+        ):
+            return (
+                True,
+                "adjectival_modifier"
+            )
+
+        # =====================================================
+        # 5. STRONG DIRECT TARGET RELATION
+        #
+        # The token itself directly governs a subject/object.
+        #
+        # Examples:
+        #
+        #   Film güzel.
+        #   ürünü tavsiye ...
+        #
+        # This is stronger evidence than finding a target only
+        # through a shared syntactic head.
+        # =====================================================
+
+        if (
+                target is not None
+                and target_strategy in {
+            "direct_subject",
+            "direct_object",
+            "modified_head"
+        }
+        ):
+            return (
+                True,
+                "direct_target_relation"
+            )
+
+        # =====================================================
+        # 6. CONSERVATIVE SHARED-HEAD FALLBACK
+        #
+        # Needed because Stanza can produce structures such as:
+        #
+        #   Odalar kötü değildi.
+        #
+        # where:
+        #
+        #   kötü   -> değildi
+        #   Odalar -> değildi
+        #
+        # and the opinion/target therefore appear as siblings.
+        #
+        # We allow this fallback ONLY for ADJ or VERB.
+        #
+        # We deliberately do NOT allow NOUN/ADV here because
+        # this was the source of false candidates such as:
+        #
+        #   kesinlikle -> target=ürünü
+        #
+        # via a shared head.
+        # =====================================================
+
+        if (
+                target is not None
+                and target_strategy in {
+            "head_subject",
+            "head_object"
+        }
+                and upos in {
+            "ADJ",
+            "VERB"
+        }
+        ):
+            return (
+                True,
+                "shared_head_fallback"
+            )
+
+        # =====================================================
+        # OTHERWISE:
+        # Dependency does not provide sufficient syntactic
+        # evidence that this token is an opinion expression.
+        # =====================================================
+
+        # =====================================================
+        # 7. DESCRIPTIVE CONTENT FALLBACK
+        #
+        # Real-world Turkish reviews contain many constructions
+        # where Stanza attaches sentiment-bearing adjectives or
+        # adverbs with relations that are not covered by our
+        # stronger predicate/target rules.
+        #
+        # Examples observed in TRSAv1:
+        #
+        #   çok az
+        #   güzel sürülüyor
+        #   zor çıkıyor
+        #   hiç sevmedim
+        #
+        # Dependency is still used first:
+        #
+        #   - structural/support relations have already been
+        #     excluded,
+        #   - clear target roles have already been handled,
+        #
+        # but HisNet is allowed to decide whether a remaining
+        # descriptive token actually carries sentiment.
+        # =====================================================
+
+        if upos in {
+            "ADJ",
+            "ADV",
+            "INTJ"
+        }:
+            return (
+                True,
+                "descriptive_content_fallback"
+            )
+
+
+        return False, None
+
+
+    def resolve_dependency_candidates(
+        self,
+        dependency_tokens,
+        morphological_analyses=None
+    ):
+        """
+        DEPENDENCY-FIRST candidate extraction.
+
+        Unlike resolve(), this method does NOT receive HisNet
+        sentiment words.
+
+        Pipeline:
+
+            dependency tokens
+                ->
+            syntactic opinion candidates
+                ->
+            target / negation / modifier / contrast
+                ->
+            morphological root
+
+        HisNet lookup is intentionally performed AFTER this
+        method by DependencyHisNetClassifier.
+        """
+
+        token_by_id, children = (
+            self._build_indexes(
+                dependency_tokens
+            )
+        )
+
+        candidates = []
+
+        for token in dependency_tokens:
+
+            # ---------------------------------------------
+            # First resolve a possible target using syntax.
+            # ---------------------------------------------
+
+            target, target_strategy = (
+                self._find_target(
+                    token,
+                    token_by_id,
+                    children
+                )
+            )
+
+            # ---------------------------------------------
+            # Decide candidate status WITHOUT HisNet.
+            # ---------------------------------------------
+
+            (
+                is_candidate,
+                candidate_strategy
+            ) = (
+                self._is_dependency_opinion_candidate(
+                    token,
+                    target,
+                    target_strategy
+                )
+            )
+
+            if not is_candidate:
+                continue
+
+            # ---------------------------------------------
+            # Dependency scope information is resolved
+            # BEFORE lexicon lookup.
+            # ---------------------------------------------
+
+            modifiers = (
+                self._find_modifiers(
+                    token,
+                    children
+                )
+            )
+
+            negations = (
+                self._find_negations(
+                    token,
+                    token_by_id,
+                    children
+                )
+            )
+
+            contrast = (
+                self._find_contrast_marker(
+                    token,
+                    target,
+                    token_by_id,
+                    children
+                )
+            )
+
+            # ---------------------------------------------
+            # Morphological root.
+            #
+            # Stanza lemma is NOT used as our primary
+            # lexical normalization source.
+            # ---------------------------------------------
+
+            root = (
+                self._find_morphological_root(
+                    token,
+                    morphological_analyses
+                )
+            )
+
+            # ---------------------------------------------
+            # Target serialization
+            # ---------------------------------------------
+
+            if target is not None:
+
+                target_data = {
+                    "id":
+                        target["id"],
+
+                    "word":
+                        target.get("text"),
+
+                    "lemma":
+                        target.get("lemma"),
+
+                    "root":
+                        self._find_morphological_root(
+                            target,
+                            morphological_analyses
+                        ),
+
+                    "upos":
+                        target.get("upos"),
+
+                    "deprel":
+                        target.get("deprel")
+                }
+
+            else:
+
+                target_data = None
+
+            # ---------------------------------------------
+            # Candidate output.
+            #
+            # Notice:
+            # There are NO HisNet POS/NEG scores here.
+            # ---------------------------------------------
+
+            candidates.append({
+
+                "word":
+                    token.get("text"),
+
+                "root":
+                    root,
+
+                "sentiment_token": {
+                    "id":
+                        token["id"],
+
+                    "word":
+                        token.get("text"),
+
+                    "lemma":
+                        token.get("lemma"),
+
+                    "upos":
+                        token.get("upos"),
+
+                    "head":
+                        token.get("head"),
+
+                    "deprel":
+                        token.get("deprel")
+                },
+
+                "candidate_strategy":
+                    candidate_strategy,
+
+                "target":
+                    target_data,
+
+                "target_strategy":
+                    target_strategy,
+
+                "modifiers":
+                    modifiers,
+
+                "negations":
+                    negations,
+
+                "contrast":
+                    contrast,
+
+                "alignment_status":
+                    "matched"
+            })
+
+        return candidates
     def resolve(
         self,
         sentiment_words,
