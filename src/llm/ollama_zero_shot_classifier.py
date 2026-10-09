@@ -11,8 +11,8 @@ class OllamaZeroShotSentimentClassifier:
     """
     Zero-shot Turkish sentiment classifier using Ollama.
 
-    Main experimental configuration
-    --------------------------------
+    Experimental configuration
+    --------------------------
     Task:
         Turkish 3-class sentiment classification
 
@@ -44,6 +44,7 @@ class OllamaZeroShotSentimentClassifier:
     3. Technical failures are NEVER converted to "neutral".
     4. Failed batches do NOT stop the experiment.
     5. Failed reviews can be recovered individually.
+    6. A fixed random seed is used for reproducibility.
     """
 
     LABELS = {
@@ -61,7 +62,8 @@ class OllamaZeroShotSentimentClassifier:
         top_p: float = 1.0,
         num_ctx: int = 4096,
         keep_alive: str = "30m",
-        max_retries: int = 2
+        max_retries: int = 2,
+        seed: int = 42
     ):
 
         # =====================================================
@@ -93,6 +95,9 @@ class OllamaZeroShotSentimentClassifier:
         self.keep_alive = keep_alive
         self.max_retries = max_retries
 
+        # Fixed seed for experimental reproducibility.
+        self.seed = seed
+
         self.client = ollama.Client(
             host=host
         )
@@ -106,8 +111,8 @@ class OllamaZeroShotSentimentClassifier:
 
         self.total_retries = 0
 
-        # Number of batch/single calls that ultimately failed
-        # after all retries.
+        # Number of calls that ultimately failed
+        # after all retry attempts.
         self.total_failures = 0
 
         self.total_wall_seconds = 0.0
@@ -126,8 +131,8 @@ class OllamaZeroShotSentimentClassifier:
         """
         Build one zero-shot batch prompt.
 
-        There are intentionally NO labelled examples here.
-        Therefore this remains a zero-shot experiment.
+        No labelled examples are included.
+        Therefore the experiment remains zero-shot.
         """
 
         review_blocks = []
@@ -373,23 +378,6 @@ class OllamaZeroShotSentimentClassifier:
             - prediction is NOT changed to neutral
             - None predictions are returned
             - status="failed"
-
-        Successful result example:
-
-        {
-            "predictions": ["positive", "negative"],
-            "status": "success",
-            ...
-        }
-
-        Failed result example:
-
-        {
-            "predictions": [None, None],
-            "status": "failed",
-            "error": "...",
-            ...
-        }
         """
 
         # =====================================================
@@ -462,13 +450,13 @@ class OllamaZeroShotSentimentClassifier:
         # =====================================================
         # FIRST ATTEMPT + RETRIES
         #
-        # max_retries=2 means:
+        # max_retries=2:
         #
-        # attempt 1
-        # retry 1
-        # retry 2
+        # Attempt 1
+        # Retry 1
+        # Retry 2
         #
-        # total = 3 attempts
+        # Total = 3 attempts
         # =====================================================
 
         for attempt in range(
@@ -508,10 +496,16 @@ class OllamaZeroShotSentimentClassifier:
                             }
                         ],
 
+                        # -------------------------------------
                         # Qwen3 reasoning disabled.
+                        # -------------------------------------
+
                         think=False,
 
-                        # Ollama structured output.
+                        # -------------------------------------
+                        # Ollama structured JSON output.
+                        # -------------------------------------
+
                         format=
                             output_schema,
 
@@ -529,7 +523,11 @@ class OllamaZeroShotSentimentClassifier:
                                 self.top_p,
 
                             "num_ctx":
-                                self.num_ctx
+                                self.num_ctx,
+
+                            # Fixed seed for reproducibility.
+                            "seed":
+                                self.seed
                         }
                     )
                 )
@@ -539,17 +537,17 @@ class OllamaZeroShotSentimentClassifier:
                     - start_time
                 )
 
-                # -------------------------------------------------
-                # Extract content
-                # -------------------------------------------------
+                # =================================================
+                # RESPONSE CONTENT
+                # =================================================
 
                 content = (
                     response.message.content
                 )
 
-                # -------------------------------------------------
-                # JSON parse
-                # -------------------------------------------------
+                # =================================================
+                # JSON PARSE
+                # =================================================
 
                 parsed = (
                     json.loads(
@@ -557,9 +555,9 @@ class OllamaZeroShotSentimentClassifier:
                     )
                 )
 
-                # -------------------------------------------------
-                # Structural validation
-                # -------------------------------------------------
+                # =================================================
+                # STRUCTURAL VALIDATION
+                # =================================================
 
                 predictions = (
                     self._validate_predictions(
@@ -572,9 +570,9 @@ class OllamaZeroShotSentimentClassifier:
                     )
                 )
 
-                # -------------------------------------------------
-                # Token diagnostics
-                # -------------------------------------------------
+                # =================================================
+                # TOKEN DIAGNOSTICS
+                # =================================================
 
                 prompt_eval_count = (
                     getattr(
@@ -594,9 +592,9 @@ class OllamaZeroShotSentimentClassifier:
                     or 0
                 )
 
-                # -------------------------------------------------
-                # Runtime statistics
-                # -------------------------------------------------
+                # =================================================
+                # RUNTIME STATISTICS
+                # =================================================
 
                 self.total_wall_seconds += (
                     request_seconds
@@ -697,15 +695,15 @@ class OllamaZeroShotSentimentClassifier:
         #
         # IMPORTANT:
         #
-        # We do NOT:
+        # We DO NOT:
         #
-        #   prediction = "neutral"
+        # prediction = "neutral"
         #
-        # and we do NOT:
+        # and we DO NOT:
         #
-        #   raise RuntimeError(...)
+        # raise RuntimeError(...)
         #
-        # The experiment can continue safely.
+        # The experiment continues safely.
         # =====================================================
 
         self.total_failures += 1
@@ -784,12 +782,11 @@ class OllamaZeroShotSentimentClassifier:
         """
         Split reviews into batches.
 
-        Unlike the original version, technical failures do not
-        crash the entire experiment.
+        Technical failures do not crash the experiment.
 
         Failed reviews are returned as None.
 
-        For experiments, classify_many_safe() is preferred
+        For experiments, classify_many_safe() is preferred,
         because it also performs an individual recovery pass.
         """
 
@@ -839,15 +836,17 @@ class OllamaZeroShotSentimentClassifier:
         """
         Robust experiment-oriented inference.
 
-        PASS 1:
-            Classify normally in batches.
+        PASS 1
+        ------
+        Classify normally in batches.
 
         If a batch fails:
             mark its reviews as failed
             but continue the experiment.
 
-        PASS 2:
-            Retry each failed review individually.
+        PASS 2
+        ------
+        Retry each failed review individually.
 
         No technical error is ever converted to a sentiment
         label.
@@ -1021,9 +1020,9 @@ class OllamaZeroShotSentimentClassifier:
                         global_index
                     )
 
-            # -------------------------------------------------
-            # Progress
-            # -------------------------------------------------
+            # =================================================
+            # PROGRESS
+            # =================================================
 
             print(
                 "[LLM BATCH] "
@@ -1032,7 +1031,7 @@ class OllamaZeroShotSentimentClassifier:
             )
 
         # =====================================================
-        # RECOVERY PASS
+        # INDIVIDUAL RECOVERY PASS
         # =====================================================
 
         if failed_indices:
@@ -1065,11 +1064,6 @@ class OllamaZeroShotSentimentClassifier:
             text = texts[
                 index
             ]
-
-            # -------------------------------------------------
-            # classify_batch() accepts one review even though
-            # configured batch_size may be 8/16/etc.
-            # -------------------------------------------------
 
             result = (
                 self.classify_batch(
@@ -1116,11 +1110,9 @@ class OllamaZeroShotSentimentClassifier:
 
             else:
 
-                # ---------------------------------------------
-                # Even individual recovery failed.
+                # Individual recovery also failed.
                 #
                 # Still do NOT invent a label.
-                # ---------------------------------------------
 
                 records[
                     index
@@ -1234,12 +1226,12 @@ class OllamaZeroShotSentimentClassifier:
         """
         Convenience method for one review.
 
-        A technical failure returns:
+        Technical failure:
 
             prediction=None
             status="failed"
 
-        It does not crash the experiment.
+        The experiment does not crash.
         """
 
         result = (
@@ -1328,6 +1320,9 @@ class OllamaZeroShotSentimentClassifier:
 
             "num_ctx":
                 self.num_ctx,
+
+            "seed":
+                self.seed,
 
             "max_retries":
                 self.max_retries,
