@@ -1,0 +1,501 @@
+﻿sample_id,text,gold,hisnet_prediction,hisnet_positive,hisnet_negative,h_to_d_prediction,h_to_d_positive,h_to_d_negative,d_to_h_prediction,d_to_h_positive,d_to_h_negative,d_to_h_candidates,d_to_h_sentiment_words
+0,paketlemisi gayet güzeldi fakat ilk yıkamada rengi soldu,negative,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,4,1
+1,gerçekte daha garip duruyor,negative,negative,0.08333333333333333,0.3,negative,0.08333333333333333,0.3,negative,0.0,0.3,3,1
+2,Maviden kalan yeşiller vardı ve asla etki etmedi. Yorumlara bakarak aldım ümitliydim ama şu an hiçbir fark yok.,negative,negative,0.5,0.6309523809523809,negative,0.5,0.6309523809523809,positive,0.5,0.38095238095238093,7,3
+3,15 Gün Kadar kullandım gözle görülür bir fark göremedim,negative,negative,0.0,2.0,neutral,1.0,1.0,positive,1.0,0.0,3,1
+4,Güzeldi sadece tarağı biraz yamuktu,neutral,positive,0.45454545454545453,0.3333333333333333,positive,0.45454545454545453,0.3333333333333333,positive,0.45454545454545453,0.3333333333333333,4,2
+5,Ürün hep kullanıyorum fiyat süperdi kaçırmadım,positive,positive,0.5,0.0,positive,0.5,0.0,positive,0.5,0.0,5,1
+6,Gayet güzel ambalajlanıp gelmiş kırılma falan yoktu pigmentasyonu bir tık zayıf geldi,neutral,negative,0.45454545454545453,0.5198412698412699,negative,0.45454545454545453,0.5198412698412699,negative,0.45454545454545453,0.5198412698412699,7,3
+7,Memnun kalmadım kasıntı yaptı fakat arkadaşıma verdim o memnun kaldı sanırım benim cilt yapımdan kaynaklı,negative,neutral,0.5,0.5,neutral,0.5,0.5,neutral,0.0,0.0,6,0
+8,fiyatına göre idare eder ama yanındaki mavi şey ne anlamadım,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,5,0
+9,Aşırı derecede cildimi kuruttu tavsiye etmem,negative,positive,0.125,0.05,negative,0.0,0.175,negative,0.0,0.175,3,2
+10,durmuyor bile hemen düşüyor,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+11,Yorumlarda ki övgülere bakıp aldım umdugumu bulamadım suyu kestiriyor bulaşık bezine sabun sürsen daha güzel temizler,negative,negative,0.45454545454545453,0.9166666666666666,negative,0.45454545454545453,0.9166666666666666,positive,0.45454545454545453,0.16666666666666666,8,2
+12,jel olması büyük rahatlık,neutral,positive,0.125,0.0,positive,0.125,0.0,positive,0.125,0.0,3,1
+13,çok güzel bir ürün surdugunuzde direkt yumusatiyor tirnak etlerini✌️,positive,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,3,1
+14,Ürünü senelerdir severek kullanıyorum fakat dikkat edin normal 400ml siseler gibi gozukse de ufak boy bu ürün ve 300ml.,neutral,negative,0.0,0.08333333333333333,negative,0.0,0.08333333333333333,negative,0.0,0.0625,7,1
+15,Öncelikle ürün sorunsuz iyi paketlenmiş şekilde geldi ve kokusu çok güzel yıkadıktan sonra cilde aydınlık veriyor ama bakalım uzun süre kullanıldığında istenen sonucu vericek mi,neutral,positive,1.4656565656565657,0.25,positive,1.4656565656565657,0.25,positive,1.0656565656565657,0.0,13,2
+16,Kumaş pullari insanın vücuduna yapışiyor birde tene degdiginde batıyor rahatsız ediyor,negative,negative,0.0,0.6666666666666666,negative,0.0,0.6666666666666666,negative,0.0,0.6666666666666666,2,1
+17,çizgi çizgi oluyor renk vermiyor.,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+18,Güzel bence kullanabişdikten sonra ama çok hassas 1.gününde hemen kırıldı ben yanlış kullanmışta olabilirim ama çabuk kırıldı,neutral,neutral,0.45454545454545453,0.4375,neutral,0.45454545454545453,0.4375,neutral,0.45454545454545453,0.4375,11,2
+19,Koku gerçekten leş gözlerim yandı resmen bence evde kendinizin yapabileceği ve sonuç alabileceğiniz bir ürün değil ya bir arkadaşınızdan yardım alın yada kuaförde yaptırın sonuç işe gerçekten kabarıklık yok sadece kurutunca düz oluyor,neutral,negative,0.75,0.9226190476190476,negative,0.5,0.9226190476190476,negative,0.0,0.5476190476190476,14,3
+20,Pek etkili değil vakumlası az olduğu için beklentiyi karşılayamıyor üzgünüm 😒,negative,negative,0.125,1.25,negative,0.125,1.25,negative,0.125,0.25,5,2
+21,dermorollerla kullanildiginda daha da etkili olan bir urün,positive,neutral,0.0,0.022727272727272728,neutral,0.0,0.022727272727272728,neutral,0.0,0.0,5,0
+22,Zaten kullandığım ürün ben çok memnunum ürün anlatıldığı gibi etkili 👍,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,6,0
+23,çok güzel yuzume buhar tutup yapiyoeum.olu deriyi temizliyor titresim siddetide ayarlanabiliyor,positive,positive,0.4962121212121212,0.0,positive,0.4962121212121212,0.0,positive,0.4962121212121212,0.0,8,2
+24,Normalde pastel kullanıyorum onun kadar başarılı değil ne yazık ki,neutral,positive,1.0,0.75,positive,1.75,0.0,positive,1.75,0.0,4,2
+25,elime ulaştı kargolamasi iyi kullanmadim şimdilik fakat kullanipta fayda görürsem bu yorumu kesinlikle güncellerim. 👍,neutral,negative,0.6111111111111112,1.0,negative,0.6111111111111112,1.0,negative,0.6111111111111112,1.0,6,2
+26,saçıma ilk kullanımda çok etki etmedi. bu para fazla bence,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,4,0
+27,Siyah noktaları akıp almadığını anlayamadım ama burnunuz yumuşak oluyor duştan sonra uyguladığınızda. Fakat nemlendirip yapmanızda fayda var kuru kuru yapılmıyor.,positive,negative,0.43253968253968256,0.8012820512820512,positive,0.5992063492063493,0.38461538461538464,positive,0.5992063492063493,0.0,9,3
+28,Yeni başladım yakma hissi var ama dayanamayacak kadar değil,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,5,0
+29,Kurtarıcı güzel bir ürün,positive,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,3,1
+30,Beğendim fiyata göre çok iyi,neutral,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,3,1
+31,mükemmel bir fiyata aldım çok memnunum teşekkürler trendyol,positive,positive,2.0,0.16666666666666666,positive,2.0,0.16666666666666666,positive,2.0,0.16666666666666666,5,3
+32,Ürünler çok iyi özellikle tonik çok güzel kokuyor,neutral,positive,1.0656565656565657,0.0,positive,1.0656565656565657,0.0,positive,1.0656565656565657,0.0,6,2
+33,Özenli paketleme ve nazik hediyeniz için teşekkür ederim.,positive,positive,1.65,0.0,positive,1.65,0.0,positive,1.65,0.0,4,4
+34,Berbat! Şampuan ve kremin içerisine makina yağı koyuyorlar heralde! Saçımı yıkadığım ertesi gün yağlanıp ağırlaştı. Saç derim nefes alamayınca dolayısıyla saçım çok daha fazla döküldü. 1 ayda 3 senelik saç dökmüşümdür!,negative,negative,0.0,0.2375,positive,0.16666666666666666,0.07083333333333333,positive,0.16666666666666666,0.0,15,1
+35,BEŞ PARA ETMEZ KESİNLİKLE almayın ÇÜNKÜ GENİŞ EN KÜÇÜK BEDENİNİ ALDIM 55 KİLOYUM SANKİ ÇUVAL GİYMİŞ GİBİYİM BAŞKASINA HEDİYE ETTİM,negative,negative,0.125,0.375,positive,0.29166666666666663,0.20833333333333331,positive,0.29166666666666663,0.20833333333333331,8,4
+36,Ebati küçük fakat iş gorur,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+37,Eğer hassas bir ciltiniz varsa kesinlikle toniği ve yıkama jelini yüzünüzü itişe edebilir içeriği de gerçekten çok temiz değil,negative,positive,0.65,0.020833333333333332,positive,0.65,0.020833333333333332,positive,0.65,0.0,8,1
+38,Kiko markasını yıllardır kullanıyorum alternatif olarak alınabilir.,neutral,negative,0.0,0.16666666666666666,negative,0.0,0.16666666666666666,negative,0.0,0.16666666666666666,2,1
+39,çok güzel hiç kurutmuyor. cildim sivilceli ve iyi geldi.,positive,positive,1.0656565656565657,0.6923076923076923,positive,1.257964257964258,0.5,positive,1.257964257964258,0.5,6,4
+40,Biraz fazla can acıtsa da beklediğimden daha güzel alıyor tavsiye ederim,positive,neutral,0.8017676767676767,0.7608225108225107,neutral,0.8017676767676767,0.7608225108225107,positive,0.5795454545454546,0.0,5,2
+41,Kesinlikle göründüğü gibi değil sütyen kısmı berbat göğüslerinizi yapıştırıyor resmen,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,4,0
+42,fena değil işe yariyor sanirim 2 kez kullandik.,neutral,negative,0.35,0.4583333333333333,positive,0.8083333333333333,0.0,positive,0.8083333333333333,0.0,4,2
+43,Müthiş kesinlikle tavsiye ederim,positive,negative,0.125,0.375,negative,0.125,0.375,negative,0.125,0.375,3,2
+44,Güzel ürün yeni başladım kullanmaya fakat içimde parfüm olması beni biraz üzdü açıkcası,neutral,positive,0.5795454545454546,0.0,positive,0.5795454545454546,0.0,positive,0.45454545454545453,0.0,8,1
+45,parfüm kokusundan başı ağrıyanlar için pek uygun değil yani migreni olanlar için falan benim başımı ağrıtıyor ve midemi bulandırdı kokusu,neutral,negative,0.75,2.0,negative,0.25,2.5,negative,0.125,1.5,6,3
+46,yeni geldi el için ideal boyda firçası da yumuşak,neutral,positive,0.1111111111111111,0.022727272727272728,positive,0.1111111111111111,0.022727272727272728,positive,0.1111111111111111,0.0,4,1
+47,Benim cildime iyi gelmedi ama cildimden kaynaklı olduğunu düşünüyorum kızarıklık oldu :(,neutral,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,5,1
+48,Kapatıcılığı çok iyi ama çok koyu halkalarınız varsa tek başına yeterli değil.,positive,positive,0.8611111111111112,0.0625,positive,0.6111111111111112,0.3125,positive,0.6111111111111112,0.3125,7,3
+49,Çok memnun olduğum bir ürün çokta uyguna geldi.,positive,positive,0.5,0.0,positive,0.5,0.0,positive,0.5,0.0,5,1
+50,Eczaneden aldığımın etkisi daha fazlaydı..,neutral,negative,0.0,0.16666666666666666,negative,0.0,0.16666666666666666,neutral,0.0,0.0,2,0
+51,ASLA AMA ASLA tavsiye etmiyorum. Sivilcelerim için aldım tek bir kullanımda dört yeni sivilcem çıktı. Verdiğim paraya öyle üzülüyorum ki kesinlikle almayın.,negative,negative,0.125,1.3333333333333333,negative,0.16666666666666666,1.2916666666666665,negative,0.16666666666666666,0.29166666666666663,10,3
+52,Saçlarım kıvırcık çok zor açılıyor ama tararken dökülmesini biraz da olsa aza indirdi çok aman aman da bir fark olmadı 😐,neutral,negative,0.25,1.1787878787878787,negative,0.25,1.1787878787878787,negative,0.25,1.1333333333333333,10,5
+53,Kesinlikle 5 para etmez kaşındırma Yapıyor,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+54,Memnuniyetle kullandığım ürün indirime girmiş daha ne olsun...,positive,positive,1.0,0.0,positive,1.0,0.0,positive,0.25,0.0,5,1
+55,mükemmel bir ürün yorumlardan dolayı çok küçük olmasindan korkmuştum ama bana çok küçük gelmedi normal bir boyutu var.,positive,positive,1.0,0.0,positive,1.0,0.0,positive,1.0,0.0,8,1
+56,En sevdiğim parfümüm ama kalitesi biraz bozulmuş gibi . İndirimdeyken aldım lakin orijinal gibi gelmiyor kullanıyorum ama kokusu uçuyor . Rengi de değişmiş .,negative,positive,0.9375,0.1875,positive,0.9375,0.1875,positive,0.5625,0.0,10,2
+57,Elime çok hızlı ulaştı bakalım daha kullanmadım,neutral,negative,0.0,0.3,negative,0.0,0.3,neutral,0.0,0.05,6,1
+58,Annem için kullandık saçı beyaz hiç bir değişiklik olmadı,negative,negative,0.0,0.5,negative,0.0,0.5,negative,0.0,0.5,4,1
+59,tavsiye ederim,positive,positive,0.125,0.0,positive,0.125,0.0,positive,0.125,0.0,1,1
+60,Ürün beklediğimden büyük ancak paketleme çok kötü ucu açık kartonların bir eksi puandır bu insan bir kapalı yollar hiç hoşuma gitmedi,negative,negative,0.15625,1.5180555555555555,negative,0.15625,1.5180555555555555,negative,0.15625,1.4555555555555557,11,4
+61,400 ml olanini bekliyordum 200 ml lik geldi çok kücük ve pahali o yüzden iade ediyorum,negative,negative,0.0,0.125,negative,0.0,0.125,negative,0.0,0.125,7,1
+62,daha kullanmadım,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+63,1 ay olucak kullanmaya baslayali suan icin bisey yok,negative,negative,0.0,0.21428571428571427,negative,0.0,0.21428571428571427,negative,0.0,0.21428571428571427,4,1
+64,açıkçası ben hiçbir faydasını göremedim sadece kokusu güzel,negative,negative,0.45454545454545453,1.0,positive,1.4545454545454546,0.0,positive,1.4545454545454546,0.0,4,2
+65,Rengi çok mat değil ve fırçası küçük olduğundan kavramakta zorlanılıyor,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,5,0
+66,Askısı kopup geldi iade ettim,negative,negative,0.0,0.125,negative,0.0,0.125,neutral,0.0,0.0,2,0
+67,Kullanışlı gayet,neutral,positive,0.25,0.0,positive,0.25,0.0,positive,0.25,0.0,2,1
+68,her kızın mutlaka kullandığı bilindik ama mütiş koku. Her zaman favori,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,6,0
+69,Yüzüm yanmıştı Gece yatmadan önce sürdüm ve sabaha kizarikliklarim geçti Alabilirsiniz 👍,positive,negative,0.0,0.16666666666666666,negative,0.0,0.16666666666666666,negative,0.0,0.16666666666666666,4,1
+70,Abartıldığı kadar yok bence,neutral,negative,0.0,0.21428571428571427,negative,0.0,0.21428571428571427,negative,0.0,0.21428571428571427,1,1
+71,fiyatı gayet iyi kokusu da gzl,positive,positive,0.6111111111111112,0.022727272727272728,positive,0.6111111111111112,0.022727272727272728,positive,0.6111111111111112,0.0,4,1
+72,Henüz kullanmadım ama iyiye benziyor,neutral,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,4,1
+73,Çok kullanmıyorum ama yumuşacık ve kaliteli bir kontür.,neutral,positive,1.0,0.0,positive,1.0,0.0,positive,1.0,0.0,5,1
+74,Kalıcılığı uzun değil ama güzel bir koku 👍,neutral,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,3,1
+75,Çok beğendiğimi söyleyemeyeceğim henüz 3. Kullanımdayım uzun süreli kullanım sonrası netleşir inşallah,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,7,0
+76,çok kötü asla surulmuyor çok sert,negative,negative,0.0,1.288888888888889,negative,0.0,1.288888888888889,negative,0.0,0.9,5,1
+77,indiirimde takrar stoklayacagim kalitesini çok beğendim,positive,positive,0.5,0.0,positive,0.5,0.0,neutral,0.0,0.0,4,0
+78,bayağı iyi y türünculugu gitti resmen sacimin,positive,positive,0.6611111111111112,0.0,positive,0.6611111111111112,0.0,positive,0.6611111111111112,0.0,5,2
+79,Uygun fiyat harika..,positive,positive,1.5,0.0,positive,1.5,0.0,positive,1.5,0.0,2,2
+80,kutusu çatlamıştı ama cihaz sorunsuz çalışıyor rengi açık mavi geldi ilk kullanımda yüzde sivilce yapıyor ben yüz temizleme köpüğü ile kullanıyorum yumaşacık oluyır tek kullanmanızı önermem,neutral,negative,0.28125,0.5,negative,0.28125,0.5,positive,0.15625,0.0,14,1
+81,Basarılı her zaman kullanıyorum,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+82,Deodorant parfümünden daha kalıcı bilginize parfümü kalıcı değil,neutral,positive,0.25,0.0,positive,0.25,0.0,neutral,0.0,0.0,4,0
+83,Ürün hemen ertesi gün elime ulaştı ve gerçekten beklediğim gibi çok kaliteli.,positive,positive,1.0,0.0,positive,1.0,0.0,positive,1.0,0.0,7,1
+84,hiç beğenmedim çünkü gelmedi,negative,negative,0.0,0.5,negative,0.0,0.5,negative,0.0,0.5,3,1
+85,Ürün ağda kalitesi oldukça iyi çok iyi alıyor yanlız yüzümde kızarıklıklar ve sivilceler oldu bugün 3. Gün bayağı geçti sayılırlar,neutral,positive,1.7722222222222224,0.6666666666666666,positive,1.2722222222222224,0.6666666666666666,positive,1.2722222222222224,0.6666666666666666,10,5
+86,Beğendik güzel kokusu var.,positive,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,3,1
+87,Şampuandan hiç memnun kalmadık eşim için almıştık bunu kullandıktan sonra saç diplerinde yararlar çıktı. Boşu boşuna almış olduk,negative,negative,0.1875,1.6583333333333334,negative,0.1875,1.6583333333333334,negative,0.1875,1.6583333333333334,9,6
+88,Hafif bir koku değil kalıcı. Gayet başarılı,positive,positive,1.0,0.022727272727272728,positive,1.0,0.022727272727272728,positive,1.0,0.022727272727272728,4,2
+89,171 boyum var bilegimde bitti ispanyol paça diziminde üstünde başlıyordu çok kötüydü geri iade ediyorum,negative,negative,0.5,1.184090909090909,negative,0.5,1.059090909090909,negative,0.5,1.059090909090909,10,4
+90,Ürün paleti küçük ama renkler güzel paketlemese güzeldi,negative,positive,0.9090909090909091,0.0,positive,0.9090909090909091,0.0,positive,0.9090909090909091,0.0,5,2
+91,Ürün fena değil ama beklentimin altında çünkü beklentim ışıltı verici bir ürün olmasıydı kapatıcılık hafif diyebilirim ışıltı hiç yok genel olarakta fena değil,neutral,negative,0.0625,1.674512987012987,negative,0.5208333333333333,1.2161796536796536,negative,0.4583333333333333,1.2161796536796536,10,6
+92,güzel kullanışlı çok memnun kaldım teşekkür ederim,positive,positive,1.7045454545454546,0.0,positive,1.7045454545454546,0.0,positive,1.7045454545454546,0.0,5,3
+93,Her gün kullanabileceğim kokusu. Hemde uygun.,positive,positive,0.5,0.0,positive,0.5,0.0,positive,0.5,0.0,4,1
+94,sivilce icin işe yaramadi,negative,negative,0.0,0.5,negative,0.0,0.5,neutral,0.0,0.0,1,0
+95,Yıldız kısmı oldukça kalın onu bilerek alın,neutral,negative,0.0,0.16666666666666666,negative,0.0,0.16666666666666666,negative,0.0,0.16666666666666666,4,1
+96,kötü kokuyo,negative,negative,0.0,0.9,negative,0.0,0.9,negative,0.0,0.9,2,1
+97,XXL sipariş verdim. O kadar küçük ki taytı giyemedim malesef iade,negative,negative,0.0,0.125,negative,0.0,0.125,neutral,0.0,0.0,5,0
+98,Rengi çok koyu 1 numara olmasına rağmen. Tavsiye edebileceğim gibi değil,negative,negative,0.125,0.6875,negative,0.125,0.6875,positive,0.125,0.0625,4,2
+99,Çok kolay sürülüyor sadece kalıcı değil,neutral,positive,0.3333333333333333,0.0,positive,0.3333333333333333,0.0,positive,0.3333333333333333,0.0,4,1
+100,ilk kez kullandım cildime çok iyi geldi kuru bir cildim var hava degisimlerinde pul pul kuruyor suan icin çok memnunum tavsiye ediyorum.,positive,positive,0.8432539682539683,0.19230769230769232,positive,0.8432539682539683,0.19230769230769232,positive,0.7361111111111112,0.19230769230769232,12,3
+101,Uygun fiyata güzel bir ürün,neutral,positive,0.9545454545454546,0.0,positive,0.9545454545454546,0.0,positive,0.9545454545454546,0.0,3,2
+102,yanında hediye çorba gönderdiginiz icin tesekkürler 💕,positive,negative,0.125,0.25,negative,0.125,0.25,neutral,0.0,0.0,3,0
+103,Ürün kalıp olarak çok dar. 38 beden giymeme rağmen xl şort yapıştı. Alacaklar buna dikkat etsinler,negative,negative,0.0,0.75,negative,0.0,0.75,negative,0.0,0.25,6,1
+104,siyah nokta temizleme berbat bu kadar mi dandik olur,negative,negative,0.125,0.75,negative,0.125,0.75,negative,0.0,0.75,4,1
+105,Çok kalitesiz bir ürün tavsiye etmem,negative,negative,0.125,0.25,negative,0.0,0.375,negative,0.0,0.375,3,2
+106,Boyu çok küçük resimdeki gibi deyir ama güzel kalitesi,neutral,positive,0.9545454545454546,0.0,positive,0.9545454545454546,0.0,positive,0.9545454545454546,0.0,5,2
+107,Rengini hiç beğenmedim ama kaliciligina diyecek lafım yok,neutral,negative,0.0,0.8351190476190476,negative,0.0,0.7351190476190477,negative,0.0,0.7351190476190477,4,3
+108,Yaklaşık olarak 3 haftadır düzenli bir şekilde kullandım ve sivilce izlerimi gözle görülür bir şekilde azalttı,positive,negative,0.125,1.5,negative,0.125,1.5,negative,0.125,1.0,6,2
+109,Küçük ama çok Tatlı bana yeter,neutral,positive,0.5,0.0,positive,0.5,0.0,positive,0.25,0.0,3,1
+110,Çok kötü bir ğrün malesef kirpikleri olduğu yerden kırıyor,negative,negative,0.015625,0.9,negative,0.015625,0.9,negative,0.0,0.9,5,1
+111,İlk sürünce görüntü güzel ama çok kalıcı seğil yenilemek gerekli günde bir kaç kez,neutral,positive,0.45454545454545453,0.1875,positive,0.45454545454545453,0.1875,positive,0.45454545454545453,0.1875,8,2
+112,Saçımın kıvırcıkları sönüyor ne zaman kullansam kıvırcık saça önermiyorum ama uzatma konusunda biraz daha hızlı uzatıyor,neutral,neutral,0.0,0.05,neutral,0.0,0.05,neutral,0.0,0.05,8,1
+113,Ben sadece omo kullanıyorum fakat gelen OMO kullandığım la yakından uzaktan alakası yok Hiç iyi temizlemedi kokusu iğrenç hiç memnun kalmadım Bir daha da internetten almayacağım kimseye de tavsiye etmem,negative,negative,1.3611111111111112,2.4245129870129873,negative,0.9027777777777778,2.382846320346321,negative,0.7361111111111112,2.3392857142857144,16,7
+114,Sürdünüz aniden yıkamak lazım saçım bildiğiniz lila gri karışımı oldu dikkatli kullanın,neutral,positive,0.125,0.0,positive,0.125,0.0,positive,0.125,0.0,7,1
+115,Ciltte pamuksu bir his bırakıyor,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+116,Güzel özenli paket,neutral,positive,0.8295454545454546,0.0,positive,0.8295454545454546,0.0,positive,0.45454545454545453,0.0,3,1
+117,cildimin çok güzel oldu çok beğendim.,positive,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,5,1
+118,naylon kumaş güzel değil,negative,positive,0.45454545454545453,0.25,positive,0.45454545454545453,0.25,positive,0.45454545454545453,0.25,3,2
+119,Kuru ciltler için uygun değil pul pul dökülüyor. Ama dokusu hafif yağlandırma yapmıyor,neutral,positive,0.5,0.21503496503496505,negative,0.0,0.715034965034965,negative,0.0,0.715034965034965,6,3
+120,Abartıldığı kadar güzel değil bence,negative,positive,0.45454545454545453,0.0,negative,0.0,0.45454545454545453,negative,0.0,0.45454545454545453,1,1
+121,canımı epey acıttı beklentim çok daha yüksekti ama yine de kötü ve işe yaramayan bir ürün olduğunu söyleyemem işe yarıyor sadece beklentiyi yüksek tutmayın bihar sonrası kullandım ardından temizleme jeli ve tonikle günlük rutin temizliği yaptım tüm aile bireylerim cildine ne yaptın bugün bir güzel gözüküyorsun dedi,neutral,negative,1.5656565656565657,2.513095238095238,negative,1.8434343434343434,2.013095238095238,negative,0.8434343434343434,1.9922619047619048,22,7
+122,3 ay boyunca kullandım ama faydası olmadı,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+123,Hiçbir işe yaramıyor sivilce yapıyor sakın almayın,negative,negative,0.0,1.6666666666666667,negative,0.6666666666666666,1.0,neutral,0.0,0.0,1,0
+124,Daha önce neredeydin dediğim tek ürün yüzüm için kullanıyorum ilk olarak yoğun ıslak gibi duruyor fakat hızla emiliyor ve çok naif bir kokusu var cilt nem dengesi için ideal bir ürün,positive,negative,0.16666666666666666,0.28273809523809523,negative,0.16666666666666666,0.28273809523809523,negative,0.125,0.19940476190476192,15,3
+125,Severek kullandığım bir roll on,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+126,Yorum yapan arkadaşlara çok teşekkür ederim hak ediyormuş çok beğendim 5 gündür kullanıyorum renk açılması oldu bile cildimde. Fiyatı da çok uygun. Ayrıca pürüzsüz gösteriyor cildimi 🥰,positive,positive,2.15,0.022727272727272728,positive,1.15,0.022727272727272728,positive,0.65,0.0,14,3
+127,Bende egzamaya bağlı kuru kepek var. Benim sorunumu çözmedi malesef,negative,negative,0.0,1.6923076923076923,negative,0.0,1.6923076923076923,negative,0.0,0.19230769230769232,5,1
+128,acın temsilcisiyim o denemelere en çok satılan parfümcü çok güzel bir parfüm tavsiye ederim,positive,positive,0.7045454545454546,0.0,positive,0.7045454545454546,0.0,positive,0.5795454545454546,0.0,7,2
+129,Sanki kullandıktan belli bir süre sonra iğne dipleri paslandı o yüzden korkup kullanmayı bıraktım.,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,5,0
+130,Pentiden üç tane sütyen aldım inanın pazar mal gibi. Hele koyduklar metal kısım bundan daha adi olamazdı. Hiç kimse kullandıktan sonra yazmamış sanırım. Metal kısım soldu ve sürekli tenime mor bir leke bırakıyor. Kesinlikle alınmamalı. Şikayetimi mağazada bildirdim çok şaşırıp hiçbirşey yapmadılar🤔,negative,negative,0.0,2.533333333333333,negative,0.16666666666666666,2.3666666666666667,negative,0.16666666666666666,1.8166666666666667,23,5
+131,Gayet güzel bir fırça. Temizleme suyunndan sonra temizlediğini düşünenler bide fırçayla yıkayın göreceksiniz.,positive,negative,0.5795454545454546,1.0,negative,0.5795454545454546,1.0,negative,0.45454545454545453,1.0,5,2
+132,Ürünün fiyatı uygun ama kaliteli diyemicem o kadar çok ıslak bırakıyor ki sayfanın öbür tarafına taşıyor buna dikkat ederek kullanmanızı öneririm onun dışında renkleri güzel beğendim 👍,negative,positive,1.9545454545454546,0.0,positive,1.9545454545454546,0.0,positive,1.9545454545454546,0.0,9,3
+133,üründen memnun kaldım 👍,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+134,Ürün ve paketlemesi gayet iyiydi memnun kaldım ama kargo tam bir felaket,neutral,positive,0.8194444444444445,0.3333333333333333,positive,0.8194444444444445,0.3333333333333333,positive,0.8194444444444445,0.0,6,2
+135,Harika bir ğrün derinlemisine temizliyor cildimin nefes aldığını hissediyorum kesinlikle tavsiye ederim,positive,positive,1.125,0.41666666666666663,positive,1.125,0.41666666666666663,positive,1.125,0.41666666666666663,7,4
+136,Güzel ama henüz kullanmadım.,neutral,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,3,1
+137,36 beden almama rağmen sütyen gibi kısacık durdu 1.66 boyunda 53 kiloyum .deseni asla göründüğü gibi değil,negative,negative,0.0,0.7916666666666666,negative,0.0,0.7916666666666666,neutral,0.0,0.0,5,0
+138,çokçok geç geldi ilk denemem de yumuşaklik hissettim küçük birşey bu arada yıkamak çok zor şarj yerine gtmesin diye cabaladim bayağı büyük beklentiniz olmasın ama yüz temizliyor yani,neutral,negative,0.065625,0.8541666666666667,negative,0.065625,0.8541666666666667,negative,0.05,0.8333333333333334,14,3
+139,Gerçekten iyi temizliyor,positive,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,3,1
+140,ürünün başka bir rengi geldi dünya üzerinde hiç bir canlını kullanmamao gereken çok çirkin bir pembe..,negative,negative,0.0,0.6666666666666666,negative,0.0,0.6666666666666666,negative,0.0,0.6666666666666666,8,2
+141,Markete göre çok çok çok hesaplı,positive,positive,0.08333333333333333,0.0,positive,0.08333333333333333,0.0,neutral,0.0,0.0,4,0
+142,Rahat değil çok sert bir kumaşı var oturup kalkamıyor insan,negative,negative,0.041666666666666664,0.3888888888888889,negative,0.0,0.4305555555555556,negative,0.0,0.4305555555555556,5,2
+143,Yorumlara bakarak çok heveslenıp aldım ama pişman oldum kendı kendıne ısıgı yanıp sonuyo bırden kapanıyor acılmıyor sallıyorım calısması ıcın kapatıp bıraktıktan bırsure sonra kendısi çalışmaya baslıyor trendyol müşterı hızmetlerıyle konustum elektr ürün oldugundan ıade olmuyormus servıse gıdıcekmıs acıkcası sogudum üründen cop oldu,negative,negative,0.0,1.9166666666666665,negative,0.0,1.9166666666666665,negative,0.0,1.6666666666666667,14,3
+144,sürekli kullandigim bir marka severek kullaniyorum,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,5,0
+145,Kalite olarak çok çok iyi beklemeyin ama yine de iş görür.,neutral,positive,1.1111111111111112,1.0208333333333333,positive,1.1111111111111112,1.0208333333333333,negative,0.6111111111111112,1.0,6,2
+146,Memnun kaldım ben masaj yapıyorum her akşam çok güzel :),positive,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,4,1
+147,Olumlu yorumlara dayanarak aldım umarım işe yarar,neutral,positive,0.4375,0.16666666666666666,positive,0.4375,0.16666666666666666,positive,0.25,0.16666666666666666,4,2
+148,İi değil iade edeceğim,negative,negative,0.0,0.125,positive,0.125,0.0,neutral,0.0,0.0,1,0
+149,Dermatoloğumun tavsiyesi üzerine aldım derinlemesine temizliyor farkı ilk kullanımda göreceksini,positive,neutral,0.125,0.16666666666666666,neutral,0.125,0.16666666666666666,negative,0.0,1.1666666666666667,5,2
+150,Kargo hızlı geldi kullanmadım henüz ama yorumları iyi umarım bende de işe yarar,neutral,positive,0.7986111111111112,0.07083333333333333,positive,0.7986111111111112,0.07083333333333333,positive,0.6111111111111112,0.05,6,2
+151,Ürünü yeni aldım hızlıca kargo edildi ve paketlemesi güzeldi. Sürdükten sonra güneşe çıkmayın leke yapabiliyor c vitaminleri,positive,neutral,0.45454545454545453,0.4666666666666667,neutral,0.45454545454545453,0.4666666666666667,positive,0.45454545454545453,0.16666666666666666,10,2
+152,Süper bir ürün çok araştırdım almadan önce mütemadiyen zam geldiği için aldım iyi ki almışım küçücük yuzeyleriyle cildimi yumusatti renk geldi resmen hassas ciltli olmama rağmen kızarıklık vs olması alabilirsiniz arkadaşlar yüzeyi hemen temizleniyor aralarına dolmuyor oyle,positive,positive,1.6111111111111112,1.1666666666666667,positive,1.7777777777777777,0.9999999999999999,positive,1.1111111111111112,0.3333333333333333,20,4
+153,Tahminimden daha başarılı. Daha ilk yıkamada yüzüm yumuşacık ve pürüzsüz oldu..,positive,positive,1.125,0.0,positive,1.125,0.0,positive,1.125,0.0,7,2
+154,ürünü kullanıp memnun kalmayan yoktur sanıırm,positive,negative,0.0,0.21428571428571427,negative,0.0,0.21428571428571427,negative,0.0,0.21428571428571427,5,1
+155,Mükemmel bir ürün tek alıp da pişman olmadığım cilt bakımı ürünü,positive,negative,1.0,1.1893939393939394,positive,2.0,0.1893939393939394,positive,2.0,0.0,4,2
+156,Özellikle pembe kısım cildi gerçekten temizliyor kan dolaşımını hızlandırıyor kesinlikle tavsiye ederim,positive,positive,0.125,0.0,positive,0.125,0.0,positive,0.125,0.0,7,1
+157,Korkarak aldım ama zor ruj beğenen biri olarak favorim oldu 🥰,positive,negative,0.0,0.8333333333333334,negative,0.0,0.8333333333333334,negative,0.0,0.75,4,2
+158,Harika ötesi bir ürün tavsiye ediyorum,positive,positive,1.125,0.0,positive,1.125,0.0,positive,1.125,0.0,4,2
+159,Uygun fiyatlı hızlı teslimat,positive,positive,0.5,0.175,positive,0.5,0.05,positive,0.5,0.05,3,2
+160,Çok güzel tırnak etlerimi ve ellerimi yumuşacık yaptı.,positive,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,5,1
+161,yıllardir kullandigim mükemmel bir ürün,negative,positive,1.0,0.0,positive,1.0,0.0,positive,1.0,0.0,3,1
+162,dökülme durmadı ama fiyatına göre fena değil,neutral,negative,0.0,0.4583333333333333,negative,0.0,0.4583333333333333,negative,0.0,0.4583333333333333,2,1
+163,Ürünün fiyatı uygun,positive,positive,0.5,0.0,positive,0.5,0.0,positive,0.5,0.0,1,1
+164,Kumaşı harika duruşu mükemmel ama keske saglam bir sey yapsalardı ipleri lastik olmasi bu modellerde önemli oldugunu dusunerek aldim ama ipler giymeden yirtildi sonra diktim makineye attim yine yirtildi yani alicaginiz üründe mutlaka ipleri yırtılacak bunu bilerek alın,negative,positive,2.111111111111111,0.35416666666666663,positive,2.111111111111111,0.35416666666666663,positive,2.0,0.35416666666666663,20,4
+165,Güzel günlük kullanıma uygun beğendim,negative,positive,0.9545454545454546,0.0,positive,0.9545454545454546,0.0,positive,0.9545454545454546,0.0,5,2
+166,Boyutu biraz küçük,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+167,kargo başarılıydı daha önce de kullandigim bir ürün tavsiye ederim,neutral,positive,1.125,0.020833333333333332,positive,1.125,0.020833333333333332,positive,1.125,0.0,5,2
+168,Ürün boyutu çok küçük bir oje şişesi kadar ama kalitesi harika,neutral,positive,1.5,0.0,positive,1.5,0.0,neutral,0.0,0.0,5,0
+169,renkler birbirine çok yakin,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+170,Bence işe yaramıyor hem kokusuda çok ağır sevmedim,negative,negative,0.0,0.7205882352941176,positive,0.5,0.22058823529411764,negative,0.0,0.22058823529411764,4,1
+171,kardeşim tavsiye etmişti iyiki de almışım indirimden yakaladım 😊,positive,positive,0.375,0.1875,positive,0.375,0.1875,neutral,0.125,0.16666666666666666,3,2
+172,yıllardır kullandigim parfüm indirimde bulmuşken kaçırmak istemedim pakette ozenliydi teşekürler.,positive,positive,0.375,0.0,positive,0.375,0.0,neutral,0.0,0.0,4,0
+173,İndirim varken yedekledim harika bir ürün. Aloe veranın kendisini kullanmış gbi etkili,positive,positive,1.25,0.0,positive,1.25,0.0,positive,1.0,0.0,6,1
+174,faydası var,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,1,0
+175,elimde olsa keske 0 verebilsem yüzüm kizardı ve ne yapicagimi bilmiyorum.,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,5,0
+176,Ürün gerçekten çok güzel. Daha ilk kullanımda farkı gördüm. Yanlız cildinizin tipine göre temizleyiciler kullanmanız gerek. Yüzeyi yumuşacık ve yüzünüzü güzel temizliyor. Ayrıca hayatımın bir parçası olan TRENDYOL siparişimi 2günde elime ulaştırdı. Teşekkürler..,positive,positive,1.9090909090909092,1.1071428571428572,positive,1.9090909090909092,1.1071428571428572,positive,1.9090909090909092,1.0,17,4
+177,Korkunç kötü,negative,negative,0.0,1.9,negative,0.0,1.9,negative,0.0,1.9,2,2
+178,Çok güzel ürün rengi kalıcılığı,neutral,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,3,1
+179,Gereksiz bir ürün beğenmedim olmasada olur,negative,negative,0.0,0.25,negative,0.0,0.25,negative,0.0,0.25,3,1
+180,ürünün kumas kalitesi çok kötü rengi soluk fiyatına göre kalitesi bayağı kötü iade ettim maalesef 😒,negative,negative,1.05,2.716666666666667,negative,1.05,2.591666666666667,negative,1.05,2.591666666666667,9,8
+181,Yorumlari okuyrak aldim ancak bu kadar ovulecek bir yanini goremedim. Ustelik denildigi gibi organik elma sirkesi ile kullaniyorum. Oyle yuzde nabiz hissi falan da olmadi bende. Sivilceli bir cildim var o konuda da bir fayda goremedim siradan bir kil iste bence. Abartmaya gerek yok,neutral,negative,0.0,0.5722402597402597,negative,0.0,0.5722402597402597,negative,0.0,0.7142857142857143,15,2
+182,Memnun kalmadım bir daha almayı düşünmüyorum,negative,negative,0.0,0.16666666666666666,negative,0.0,0.16666666666666666,neutral,0.0,0.0,5,0
+183,en dipten almıyor açıkçası ama idare eder,neutral,negative,0.0,0.16666666666666666,positive,0.16666666666666666,0.0,positive,0.16666666666666666,0.0,5,1
+184,boyutu oldukça küçük ve renkleri belli etmiyo hiçbir sekilde,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+185,Daha yeni geldi paketleme güzel umarım faydası olur😇,negative,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,6,1
+186,hiç işe yaramiyor,negative,negative,0.0,0.5,negative,0.0,0.5,negative,0.0,0.5,2,1
+187,Ürünün son kullanma tarihi birkaç ay sonra bitiyor yani kısa bir dönem kullanabileceğim. kokusu da biraz garip fakat yüzümde özellikle ilk sürdüğümde parlak bir bitiş sağlıyor sonrasında hafif matlaşıyor,neutral,neutral,0.4375,0.47045454545454546,neutral,0.4375,0.47045454545454546,neutral,0.4375,0.4477272727272727,13,4
+188,Çok güzel paketlenmiş şekilde geldi kullanmaya başladım yorumlarda uygulamadan sonra çok yanma olduğunu okudum bende aşırı derecede bir yanma olmadı spora giderken sürüyorum etkisini görmeyi bekliyorum daha yeni başladım,positive,positive,0.45454545454545453,0.05,positive,0.45454545454545453,0.05,positive,0.45454545454545453,0.05,14,2
+189,Kalite fiyat açısından karşılaştırıldığında mükemmel bir ürün.,positive,positive,1.5,0.0,positive,1.5,0.0,positive,1.5,0.0,4,2
+190,Sürekli kullandığım bir ürün yoğun çatlaklar için muhteşem,positive,positive,0.5,0.17857142857142858,positive,0.5,0.17857142857142858,positive,0.5,0.17857142857142858,4,2
+191,Vakum gücü düşük,negative,negative,0.0,0.1845238095238095,negative,0.0,0.1845238095238095,negative,0.0,0.1845238095238095,2,2
+192,Şuan deneme aşamasındayım. Belki ileride sonuçları yazarım.ürün aynen geldi,neutral,neutral,0.025,0.0,neutral,0.025,0.0,neutral,0.0,0.0,6,0
+193,Trendyola tesekkür ederim. Kozmetik firmasına da tesekkür ederim. EDT olmasına rağmen kokusu 2 gün boyunca gitmiyor. Gayet kalıcı 👍🏻,positive,negative,0.0,0.5227272727272727,negative,0.0,0.5227272727272727,neutral,0.0,0.0,6,0
+194,Dış çanta parçalanmış fırçalardan birini deneyeyim dedim kafası hemen çıktı bu fiyata göre çok kalitesiz kesinlikle tavsiye etmem.Fiyat ucuz olsa bu kalitesizlik hoş görülür ama bu fiyata kesinlikle başka ürün bakın.,negative,negative,0.25,2.6041666666666665,negative,0.125,1.7291666666666665,negative,0.125,1.6458333333333333,16,6
+195,korkarak aldım ama çok kıl çıkartmadı,neutral,negative,0.0,0.3666666666666667,negative,0.0,0.3666666666666667,negative,0.0,0.3666666666666667,3,2
+196,bı faydasını görmedim,negative,negative,0.0,1.0,positive,1.0,0.0,positive,1.0,0.0,2,1
+197,Kokusu güzel ama saçı sert yapıyor yıkarken,neutral,positive,0.45454545454545453,0.3888888888888889,positive,0.45454545454545453,0.3888888888888889,positive,0.45454545454545453,0.3888888888888889,4,2
+198,kötü işe yaradigini soyliyemem gozleri yoruyor,negative,negative,0.0,0.9,negative,0.0,0.9,negative,0.0,0.9,4,1
+199,Henüz kullanmadım ama kalıteli görünmüyor,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,4,0
+200,2 şişe bitirdim kesinlikle çok işe yarıyor denemelisiniz:),positive,negative,0.0,0.5,negative,0.0,0.5,neutral,0.0,0.0,4,0
+201,paketlenmesi güzel saglam kirilmadan ulasti.Yorumlara bakarak sipariş verdim umarim işe yarar,neutral,positive,0.6420454545454546,0.25,positive,0.6420454545454546,0.25,positive,0.6420454545454546,0.0,5,2
+202,Sivilceleri kurutuyor,neutral,negative,0.0,0.6923076923076923,negative,0.0,0.19230769230769232,negative,0.0,0.19230769230769232,1,1
+203,Asla yumuşak değil.,negative,positive,0.1111111111111111,0.0,negative,0.0,0.1111111111111111,negative,0.0,0.1111111111111111,2,1
+204,Ağdaların kalitesi kötü,negative,negative,0.5,0.9,negative,0.5,0.9,negative,0.5,0.9,2,2
+205,rengi hoş ama kalıcılığı az,neutral,negative,0.0,0.25,negative,0.0,0.25,negative,0.0,0.25,3,1
+206,Çok memnunum manikür yaptıktan sonra tırnaklarıma uyguluyorum kokusu da güzel bence,positive,positive,0.45454545454545453,0.022727272727272728,positive,0.45454545454545453,0.022727272727272728,positive,0.45454545454545453,0.0,5,1
+207,İlk seferde nasıl bir sonuc olucagını bilemediğimden 1 dk beklettim. Saclarım acık sarı. Bir sonrakinde 1 bucuk 2 dk bekleteceğim,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,8,0
+208,Yapısı çok güzel,negative,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,2,1
+209,Çok kötü jel bir eyeliner. Kullanamadan çöpe attım. Yazık.,negative,negative,0.0,1.65,negative,0.0,1.65,negative,0.0,1.65,6,2
+210,Tavsiye üzerine aldım. Yağlı bir his bırakmıyor kesinlikle kullanıp gorucez,positive,neutral,0.1607142857142857,0.16666666666666666,neutral,0.1607142857142857,0.16666666666666666,negative,0.03571428571428571,0.16666666666666666,5,2
+211,beğenmedim güzel nemlendirmiyor,negative,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,2,1
+212,Ürünün fiyatı sürekli değişip durdu bunu sevmedim hoş değildi onun dışında ürünü beğendim,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,8,0
+213,Arkası çok kötü beğenmedim,negative,negative,0.0,0.9,negative,0.0,0.9,negative,0.0,0.9,5,1
+214,surekli kullaniyorum çok memnunum,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,4,0
+215,sürekli kullandığım ürün fiyatta fena değildi,neutral,negative,0.0,0.4583333333333333,positive,0.4583333333333333,0.0,positive,0.4583333333333333,0.0,3,1
+216,Cilt yapısı kuru olanlar için harika bir ürün.Üründen az miktarda aldığınızda bile cildi çok güzel nemlendiriyor.,positive,positive,1.4545454545454546,0.6089743589743589,positive,1.4545454545454546,0.6089743589743589,positive,1.4545454545454546,0.6089743589743589,9,5
+217,Gerçekten çok başarılı. Fiyatı da şu an en düşük de.,positive,positive,1.0,0.18641774891774893,positive,1.0,0.18641774891774893,positive,1.0,0.14285714285714285,5,2
+218,Şeker peelingi hiçbir işe yaramıyor ayrıca içinde azıcık ürün var hiç bereketli bir ürün değil. Daha uygun fiyata daha etkili onlarca peeling seçeneği varken bunu bir daha asla almam. Maske hatrına 3 yıldız veriyorum peelinge puanım sıfır,neutral,neutral,1.65,1.6166666666666667,positive,2.3166666666666664,0.95,positive,2.1666666666666665,0.8,16,6
+219,Kesinlikle tavsiye ediyorum. Birkaç kere kullandığım halde etkisini fazlasıyla gördüm. Boyuta da yüz kullanımı için gayet güzel 👏,positive,negative,0.5795454545454546,1.0977272727272727,negative,0.5795454545454546,1.0977272727272727,negative,0.5795454545454546,1.0,7,3
+220,Düzenli kullandığım ürün ortadan koyuya olan yüzde belli esmerler onu kullanabilir ama buğday tenli ıların rengi kesinlikle bu fondöten sürüp cildi nefessz bırakmaya gerek yok kapatıcılığı çok iyi,positive,positive,0.7361111111111112,0.2767857142857143,positive,0.7361111111111112,0.2767857142857143,positive,0.6111111111111112,0.21428571428571427,12,2
+221,daha önceden kullandığım parfum,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,4,0
+222,Acıtıyor ve yeteri kadar almıyor kalın tüyleri bunun yerine yüz ağdası aldım iki dakikada canım acımadan işim bitiyor biraz daha dayanıklı olanlar kullansın bunu.,neutral,neutral,1.4878472222222223,1.476190476190476,positive,2.003720238095238,0.738095238095238,positive,1.9880952380952381,0.738095238095238,10,6
+223,Tek kelimeyle mükemmel tam bir f/p ürünü boyutu küçük ama elinize ve yüze oturuşu ideal cildi çok güzel temizliyor ve yumuşatıyor temizleme jeli peeling veya nemlendiriciyi derinlemesine uyguluyor yaklaşık 1 ay önce aldım ilk kutu açılımında şarj ettim ve her gün kullanmama rağmen hala şarjı bitmedi kesinlikle tavsiye ederim,positive,positive,1.9128787878787878,0.6666666666666666,positive,1.9128787878787878,0.6666666666666666,positive,1.7878787878787878,0.16666666666666666,20,5
+224,Zaten kullanıyordum. Çok çok uygun olduğu için aldım 🌺,positive,positive,0.5,0.16666666666666666,positive,0.5,0.16666666666666666,positive,0.5,0.16666666666666666,6,2
+225,saçlarım acilma sonucu aşırı yıprandģi icin aldim henüz 1 defa denedim öyle mucizevi birşey olmadı. bir kaç yıkama sonrası tekrar paylaşım yaparım . umarım işe yarar.,neutral,positive,1.1875,0.05,positive,1.1875,0.05,positive,1.0,0.05,11,2
+226,Çok merak ederek aldım ama sivilcelere bir yararı olduğunu düşünmüyorum. Tavsiye ettiğim bir ürün değil. Kokusu da kötü. Alıp bir kenara koydum,negative,negative,0.3125,2.131060606060606,negative,0.3125,1.756060606060606,negative,0.3125,1.0666666666666667,10,4
+227,Diplerimi açtı ama uçları açmadı maalesef,neutral,negative,0.0,1.35,negative,0.3,1.05,negative,0.3,1.05,3,3
+228,Ürüm gerçekten çok kullanışsız tuyleri almıyor sadece kesiyor yani aldıgıma pişmanım,negative,negative,0.0,1.9166666666666665,negative,0.16666666666666666,1.75,negative,0.16666666666666666,1.75,9,3
+229,fırçalar beklediğimden küçük geldi .ama çantanızda taşiyabileceğiniz boyutta,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+230,baking yapmak için ucuz bir sünger alayım diyorsanız alın başka türlü asla kullanılacak bir sünger değil yüzünüzde duran en güzel fondöteni bile çok kötü gösteriyor,negative,negative,0.5795454545454546,1.2125,negative,0.5795454545454546,1.2125,negative,0.5795454545454546,1.2125,15,6
+231,saç diplerime de sürdüm korkunç yanma ve kepeklenme yaptı,neutral,negative,0.0,1.0208333333333333,negative,0.0,1.0208333333333333,negative,0.0,1.0,5,1
+232,aldim bozuldu almayın.,negative,negative,0.0,0.16666666666666666,positive,0.16666666666666666,0.0,neutral,0.0,0.0,1,0
+233,süper beklentimin ustunde çok az kullaniyorum sonuc mükemmel 👍,positive,positive,1.5,0.25,positive,1.5,0.25,positive,1.5,0.25,6,3
+234,lekeleri çıkarmıyor çok kötü,negative,negative,0.0,1.2,negative,0.0,1.2,negative,0.0,1.2,3,2
+235,Ince ve kalitesiz bir dokuya sahip.,negative,negative,0.0,0.25,negative,0.0,0.25,negative,0.0,0.25,3,1
+236,sevmedim yagli gibi,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+237,bu fiyata gayet güzel bir ürün kullandım memnun kaldım,positive,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,5,1
+238,Boyu çok kısa sweat kısmı çok basit,negative,positive,0.1,0.0,positive,0.1,0.0,neutral,0.0,0.0,4,0
+239,Gayet memnunum,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+240,büyük göğüsler almamalı iade etmedim ama 1 sefer kullanabildim,negative,negative,0.0,0.29166666666666663,positive,0.29166666666666663,0.0,positive,0.125,0.0,5,1
+241,hiçbir özelliği yok Boşuna almayın,negative,negative,0.0,0.8809523809523809,negative,0.16666666666666666,0.7142857142857143,negative,0.16666666666666666,0.7142857142857143,3,3
+242,igrenc bir ürün saclarimi kokunden döktü,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+243,yüz temizlemek icin çok sert bir fırça,negative,negative,0.0,0.3888888888888889,negative,0.0,0.3888888888888889,negative,0.0,0.3888888888888889,3,1
+244,Kötü kokusu güzel ama hemen sıkma kısmı bozuldu,negative,negative,0.45454545454545453,0.9,negative,0.45454545454545453,0.9,negative,0.45454545454545453,0.9,4,2
+245,Paramparça geldiği için direk çöpe attım,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,4,0
+246,çok olumlu yorum ve fazla sayıda kullanıcısı olduğu için kötü olamaz diye düşünerek aldım. bakalım şuan yeni başladım.duruma göre yorumumu güncelleyeceğim,positive,negative,0.25,1.3166666666666667,negative,0.25,1.3166666666666667,negative,0.25,1.0666666666666667,13,3
+247,Tam aksine yüzümü kuruttu. Pul pul oldu :(,negative,positive,0.20833333333333334,0.0,positive,0.20833333333333334,0.0,positive,0.20833333333333334,0.0,4,1
+248,Bende sivilce yaptı sevmedim,negative,negative,0.0,0.5,negative,0.0,0.5,neutral,0.0,0.0,3,0
+249,ürünü 2 gündür kullanıyorum c vitamini serumu da istedim beraber kullanıcam.ilk sürdüğümde parlaklık oldu cildim de ilerleyen zamanlarda etkisini detaylı sizinle paylaşıcam,neutral,positive,0.16666666666666666,0.043560606060606064,positive,0.16666666666666666,0.043560606060606064,neutral,0.0,0.0,11,0
+250,Kesinlikle berbat yapış yapış,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+251,Muhteşem ötesi bebeksi bir cilt sivilceyi kurutuyor ten tonunu açıyor yumuşacık oluyor yüzünüz tavsiye ederim,positive,negative,0.875,0.9923076923076923,positive,0.875,0.49230769230769234,positive,0.875,0.49230769230769234,7,5
+252,Dokusu ve rengi mükemmel. Her ten rengine uygun,positive,positive,1.5,0.0,positive,1.5,0.0,positive,1.5,0.0,3,2
+253,Çok kuruttu ve kepek yaptı :(,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+254,mükemmel bir ürün cildinizi tahriş etmeden temizliyor. tekrarda alacağım.,positive,positive,1.0,0.6666666666666666,positive,1.5,0.16666666666666666,positive,1.5,0.16666666666666666,4,3
+255,Missha Essence severler için biraz koyu kıvamlı ve yağlı gelecektir. Yüze parlaklık veriyor. Sanki kış için daha uygun bir ürün gibi. (Cildim karma. ),neutral,positive,0.7023809523809523,0.0625,positive,0.7023809523809523,0.0625,positive,0.5357142857142857,0.0625,11,3
+256,mükemmel bir parfüm teşekkürler,positive,positive,2.125,0.0,positive,2.0,0.0,positive,2.0,0.0,2,2
+257,Ürün maalesefki beklentimi karşılamadı. Biraz daha salaş olmalı ve boyu tunik gibi oldu.,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,8,0
+258,Güzel ve ideal,neutral,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,2,1
+259,Yeni kullanmaya başladım etkisini merak ediyorum.,neutral,negative,0.0,0.375,negative,0.0,0.375,negative,0.0,0.375,3,1
+260,muadil alınabilecek en kullanışlı ürün,positive,positive,0.25,0.16666666666666666,positive,0.25,0.16666666666666666,positive,0.25,0.16666666666666666,5,2
+261,ürünün hiç bir etkisi yok aldigima çok pismanin,negative,negative,0.0,0.7142857142857143,negative,0.0,0.7142857142857143,negative,0.0,0.7142857142857143,5,2
+262,Kokusunu beğenmedim ağır bir gül kokusu var kullanamadım,negative,negative,0.0,0.22058823529411764,negative,0.0,0.22058823529411764,negative,0.0,0.22058823529411764,5,1
+263,ürün çok hızlı elime ulastı düzleştiriyor aynı zamanda saçımı güçlendiriyor güzel bakım yapıyor çok memnunum,neutral,positive,0.45454545454545453,0.05,positive,0.45454545454545453,0.05,positive,0.45454545454545453,0.05,11,2
+264,Çok hafif,neutral,neutral,0.0,0.022727272727272728,neutral,0.0,0.022727272727272728,neutral,0.0,0.022727272727272728,2,1
+265,Bu güne kadar bir çok krem denedim hiç biri sonuç vermedi ...Bioderma en iyisi yüzüm artık pul pul dökülmüyor... az miktarda sürmek yeterli oluyor....,positive,neutral,0.8611111111111112,0.8333333333333334,neutral,0.8611111111111112,0.8333333333333334,positive,0.8611111111111112,0.75,13,4
+266,İlk günlerde severek kullandım sonradan yüzümde sivilcelenme yaptı,neutral,negative,0.0,0.5,negative,0.0,0.5,neutral,0.0,0.0,5,0
+267,Yorumların aksine ben o kadar beğenmedim. yağlı bir saçım var her gün yıkamak durumundayım şampuanı kullandım 2 gün sonra bile hala yağlanmamıştı fakat saçımı çok sert bir hale getirdi sprey sıkılmış gibi yinede güzel kullanılır.,neutral,neutral,0.49025974025974023,0.4638888888888889,neutral,0.49025974025974023,0.4638888888888889,positive,0.49025974025974023,0.3888888888888889,15,3
+268,Günlük kullanım için ideal tavsiye ederim.,neutral,positive,0.125,0.0,positive,0.125,0.0,positive,0.125,0.0,3,1
+269,Yağlı bir cildim var gözeneklerimi sıkılaştırdı ve fazla sebumu aldı haftada 2 kere uyguluyorum çok memnunun,positive,negative,0.03571428571428571,0.16666666666666666,negative,0.03571428571428571,0.16666666666666666,negative,0.03571428571428571,0.16666666666666666,7,2
+270,Güzeldi iyi paketleme,neutral,positive,1.0656565656565657,0.0,positive,1.0656565656565657,0.0,positive,1.0656565656565657,0.0,2,2
+271,geldiğinde kenarlarında küçük küçük açılmalar vardı önemsemedim ama bir kere kullandım neredeyse her yeri yırtıldı şaka gibi verdiğim paraya yazık 👎🏻,negative,negative,0.015625,0.75,negative,0.015625,0.75,negative,0.0,0.75,9,1
+272,Geç teslimat yapıldı çokta kaliteli bir ürün değilmiş beklediğime değmedi,negative,positive,1.0,0.0,positive,1.0,0.0,positive,1.0,0.0,5,1
+273,Beklediğimden kötü çıktı..,negative,negative,0.0,0.9,negative,0.0,0.9,negative,0.0,0.9,2,1
+274,Ürünü yüz yıkama jeliyle kullanıyorum ve cildimin derinlemesine temizlendiğini hissediyorum. Benzer ürünler içerisinde fiyat performans açısından kıyasladığımda oldukça başarılı.,positive,positive,1.0,0.25,positive,1.0,0.25,positive,1.0,0.25,5,2
+275,Çok dandik,negative,negative,0.0,0.75,negative,0.0,0.75,neutral,0.0,0.0,3,0
+276,Gerçekten dandik bir ürün ve şuan aldığım fiyattan çok daha düşük. Bir de 2 tane almıştım,negative,negative,0.0,1.2470238095238095,negative,0.0,1.2470238095238095,negative,0.0,1.2261904761904763,9,4
+277,Markasına güvenerek aldığım güzel bir ürün,neutral,positive,0.45454545454545453,0.16666666666666666,positive,0.45454545454545453,0.16666666666666666,positive,0.45454545454545453,0.16666666666666666,3,2
+278,Kargo bedava olsun diye aldım iyiydi,neutral,positive,0.6111111111111112,0.16666666666666666,positive,0.6111111111111112,0.16666666666666666,positive,0.6111111111111112,0.0,3,1
+279,Ürünün kumaşı çok güzeldi sıcak tutar fakat kolları bedenine göre çok dar ve kısa. Ayrıca D toka bağlama kısmı da kaba duruyor. Beğenmedim iade edeceğim.,negative,negative,0.45454545454545453,0.8143939393939394,negative,0.45454545454545453,0.8143939393939394,positive,0.45454545454545453,0.375,11,3
+280,Ürünün yeri adeta naylon gibi,negative,negative,0.015625,0.25,negative,0.015625,0.25,negative,0.0,0.25,2,1
+281,Çok keskin kokusu var.Profosyonellerin kullanması gereken bir ürün gibi.,negative,neutral,0.0,0.041666666666666664,neutral,0.0,0.041666666666666664,neutral,0.0,0.041666666666666664,6,1
+282,Ürün 3gün içinde elime ulaştı. Titreşiminin seviyesini artırıp azaltabiliyor olmak hoşuma gitti. Yüzümdeki hissi beğendim umarım uzun ömürlü olur,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,9,0
+283,ürünün orjinal olduğunu düşünmüyorum.,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+284,Çizgilere dolmuyor ıslak bir görüntüsü var ama kapatıcılık az,neutral,negative,0.0,0.25,negative,0.0,0.25,negative,0.0,0.25,4,1
+285,Yıllardır severek kullanıyorum hoş bir kokusu var hafifte aynı zamanda fiyatıda uygun.,positive,positive,0.5,0.022727272727272728,positive,0.5,0.022727272727272728,positive,0.5,0.0,6,1
+286,Yorumlara aldanıp ürünü aldık ama ekstra bir faydası olmadı. Kısa süreli etkisi var maalesef.,negative,negative,0.0,0.9166666666666666,negative,0.0,0.9166666666666666,negative,0.0,0.9166666666666666,7,2
+287,İyi yorumlara güvenerek aldım ve çok pişman oldum buhar uyguladım ve duracel pil kullandım hatta pil bitene kadar uyguladım yine de hiç bir işe yaramadı yüz temizleyici jel maske vs bu ürüne göre daha yararlı kesinlikle tavsiye etmiyorum,negative,negative,1.7361111111111112,2.3375,positive,2.111111111111111,1.9625,positive,2.111111111111111,1.7916666666666667,15,7
+288,cildimi inanılmaz kuruttu nem dengesini sağlayamadı yinede bitene kadar kullanacağım,neutral,positive,1.0416666666666667,0.08333333333333333,negative,0.041666666666666664,1.0833333333333333,negative,0.0,1.0,6,1
+289,Senelerdir severek kullanıyorum kargo çok hızlı teşekkürler trendyol alalı 12 saat olmadan ürün bana ulaştı☺️,positive,positive,1.0,0.05,positive,1.0,0.05,positive,1.0,0.05,7,2
+290,En uygun fiyata almıştım indirimdeyken. Piyasa araştırması yapıp öyle satın alın. Kargo da hızlı geldi,neutral,positive,0.75,0.406060606060606,positive,0.75,0.406060606060606,positive,0.5,0.21666666666666667,7,3
+291,Uzun süre kullandım saçı yumuşatıyor ama beklediğim performansı alamadım,neutral,negative,0.0,0.16666666666666666,positive,0.16666666666666666,0.0,positive,0.16666666666666666,0.0,6,1
+292,İndirimini bekledim ve aldım çok memnunum şimdilik 2. Kullanısım daha,positive,positive,0.25,0.16666666666666666,negative,0.0,0.16666666666666666,negative,0.0,0.16666666666666666,7,1
+293,çok küçük verilen paraya deymez bence,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+294,Güzel bir ruj nemlendirici gibi,neutral,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,2,1
+295,kenarları bir şekilde pirtlatıyor. kilo problemi olan biri de değilim modelinde bir gariplik var bence,negative,negative,0.1111111111111111,0.43749999999999994,negative,0.19444444444444442,0.35416666666666663,neutral,0.0,0.0,5,0
+296,Ürünü 1 saat tutmama rağmen saçımın uçları yandı,neutral,negative,0.0,0.5,negative,0.0,0.5,neutral,0.0,0.0,1,0
+297,İndirimden aldığım için mutluyum,positive,positive,1.25,0.16666666666666666,positive,0.25,0.16666666666666666,negative,0.0,0.16666666666666666,2,1
+298,Ortalama kalitede dokusu var. Fiyatı ucuz.,neutral,positive,0.625,0.0,positive,0.625,0.0,positive,0.125,0.0,3,1
+299,Harika bir ürün performans açısından gayet başarılı,positive,positive,2.0,0.0,positive,2.0,0.0,positive,2.0,0.0,3,2
+300,Çok başarılı bir ürün. Yanma hissi de kişinin acı eşiğine bağlı bence beni çok rahatsız etmedi,positive,negative,1.0,1.2589285714285714,positive,1.6666666666666665,0.5922619047619048,positive,1.6666666666666665,0.5714285714285714,7,3
+301,Çok iyi bir ürün saçı yumuşacık yapıyor,positive,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,4,1
+302,Aynı parfüm yıllardır gayetl,positive,positive,0.125,0.0,positive,0.125,0.0,neutral,0.0,0.0,3,0
+303,Ürün çok inanılmaz kötü kokuyor çok pişman oldum aldığıma 😑,negative,negative,1.0,2.0666666666666664,negative,0.0,3.0666666666666664,negative,0.0,3.0666666666666664,7,4
+304,küçük ama renkler harika ve kaliteli gayet güzel,neutral,positive,2.4545454545454546,0.0,positive,2.4545454545454546,0.0,positive,2.4545454545454546,0.0,5,3
+305,Ne yazık ki hiç iyi gelmedi saçıma sadece kokusu güzeldi başka da bir artısı yok,negative,negative,1.0656565656565657,1.487012987012987,negative,1.0656565656565657,1.487012987012987,negative,0.6111111111111112,0.7142857142857143,6,3
+306,Çok güzel bir fırça. Uzun yıllar kullanabileceğiniz bir ürün. Ancak fiyatı bana olduğundan çok pahalı geldi. Gittiğim mağazalarda topuz fırçası satılmadığından buradan aldım.,neutral,neutral,0.45454545454545453,0.47916666666666663,neutral,0.45454545454545453,0.47916666666666663,neutral,0.45454545454545453,0.41666666666666663,13,3
+307,1 defa kullandım.kremimsi bir yapısı var.cildi yumuşatıyor,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,4,0
+308,hissiyatı güzel,neutral,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,1,1
+309,Ben pek beğenmedim kullandığım için de iade edemedim,positive,neutral,0.125,0.14583333333333334,positive,0.25,0.020833333333333332,positive,0.25,0.0,4,2
+310,Yanlış ürün Bu ne ya çorap gibi kücücük ve diz altı hiç memnun kalmadım.,negative,negative,0.0,0.9375,negative,0.0,0.9375,negative,0.0,0.9375,7,2
+311,Ürünü beğendim gözenekleri gayet iyi temizliyor,positive,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,4,1
+312,Kutu streçli fakat kapsülleri zorlanarak koparılmış olarak geldi ilk kez kullanıcam fiyat makul,neutral,positive,0.375,0.0,positive,0.375,0.0,positive,0.375,0.0,7,1
+313,Benim saç dökülmesine hiçbir etkisi olmadı. Hiç beğenmedim,negative,negative,0.0,0.5,negative,0.0,0.5,negative,0.0,0.5,4,1
+314,Çok beğendim kokusu çok güzel kullanışlı,positive,positive,0.7045454545454546,0.0,positive,0.7045454545454546,0.0,positive,0.7045454545454546,0.0,5,2
+315,Hem fiyatı uygun hemde çok iyi bir rimel,positive,positive,1.1111111111111112,0.0,positive,1.1111111111111112,0.0,positive,1.1111111111111112,0.0,4,2
+316,kokusunu beğenmedim ağır kokuyor,negative,negative,0.0,0.22058823529411764,negative,0.0,0.22058823529411764,negative,0.0,0.22058823529411764,3,1
+317,Beklediğimden büyük ve uzun süre gidecek bir ürün,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,6,0
+318,Sleepy ürünlerine bayılıyorum indirimden çok uyguna almıştım trendyola teşekkürler ❤️,positive,positive,1.75,0.16666666666666666,positive,1.75,0.16666666666666666,positive,1.5,0.16666666666666666,5,3
+319,Ürün gerçekten çok iyi yumuşacık yapıyor suratı tavsiye ederim,positive,positive,0.7361111111111112,0.3333333333333333,positive,0.7361111111111112,0.0,positive,0.7361111111111112,0.0,6,2
+320,Henüz kullanamdım ama güzel old. Düşünüyorum paketleme güzeldi teşekkürler,positive,positive,1.9090909090909092,0.0,positive,0.9090909090909091,0.0,positive,0.9090909090909091,0.0,6,2
+321,75b dolgusuzum aynı beden küçük geldi,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+322,elimde egzama vardı çok iyi geld başka sitede daha uygun fiyatlı bulduk arkadaşlarımda denemişti onlarda 6 tane daha sipariş verdi,positive,positive,1.1111111111111112,0.875,positive,1.1111111111111112,0.875,positive,1.1111111111111112,0.125,11,3
+323,Kesinlikle öneriyorum o meşhur markadan farkı yok boşuna para vermeyin,positive,negative,0.0,0.7142857142857143,negative,0.0,0.7142857142857143,negative,0.0,0.7142857142857143,6,2
+324,Deli yakıyor ama işe yarıyor mu zaman göstercek. . Ama Kargo hızı ve paketlemeye bayıldım 😍,positive,negative,0.0,0.6875,negative,0.0,0.6875,negative,0.0,0.1875,4,1
+325,Kesinlikle fiyatına değmeyecek bir ürün. Bir daha asla almam. Gözleri yakıyor ve makyaj çıkartmada yetersiz. Daha uygun fiyata daha etkili makyaj çıkartıcılar var paranızı boşuna buna harcamayın.,negative,negative,0.5,0.9791666666666666,negative,0.6666666666666666,0.8125,negative,0.6666666666666666,0.8125,15,4
+326,Çok güzel bir koku tavsiye ederim,positive,positive,0.5795454545454546,0.0,positive,0.5795454545454546,0.0,positive,0.5795454545454546,0.0,3,2
+327,Kalitesiz duruyor,negative,negative,0.0,0.25,negative,0.0,0.25,negative,0.0,0.25,2,1
+328,Yüzde gri tonlamalar bırakıyor,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+329,ucu kalın ona dikkat edilmeli,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+330,Çok kaliteli sayılmaz ama fiyatına göre iyi,neutral,positive,1.6111111111111112,0.0,positive,1.6111111111111112,0.0,positive,1.6111111111111112,0.0,4,2
+331,ellime yeni ulaştı bir kere kullandim gayet başarılı ama dikkatli olmak gerekir morartabiliyor,positive,positive,1.125,0.0,positive,1.125,0.0,positive,1.125,0.0,7,2
+332,Bana olmadı renk tonu yakıştıramadım malesef,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+333,Ebatı bayağı büyük ferahlatıyor ve nemlendiriyor sadece kapağı kırılmıştı özenli pakatleseniz iyi olur,neutral,positive,1.0361111111111112,0.0,positive,1.0361111111111112,0.0,positive,0.6611111111111112,0.0,9,2
+334,O kadar ince ve kalitesi kötü ki asla bu fiyatı hak etmiyor,negative,negative,0.6361111111111112,0.9,negative,0.6111111111111112,0.925,negative,0.6111111111111112,0.925,5,4
+335,kullanışlı beklediğimden çok işe yaradı kargo da gayet hızlı teşekkürler,positive,positive,1.25,0.5727272727272728,positive,1.25,0.5727272727272728,positive,1.25,0.05,6,3
+336,Harika paketleme ürünu kullandikca ter kokum daha çok agirlasti onermiyorum.bu fiyati haketmiyor,positive,positive,1.0,0.0,positive,1.0,0.0,positive,1.0,0.0,6,1
+337,Kullandığım en iyi bazlardan,neutral,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,4,1
+338,Çok kısa kumaşı çok kötü iade ediyorum,negative,negative,0.0,1.025,negative,0.0,1.025,negative,0.0,1.025,6,2
+339,güzel ama sert biraz ve istediğim rengi gelemdi,neutral,positive,0.45454545454545453,0.3888888888888889,positive,0.45454545454545453,0.3888888888888889,positive,0.45454545454545453,0.3888888888888889,5,2
+340,Kumaşi çok kalitesiz ve elimde kaldı .iyade kodlarında olan sorun yüzünde,negative,negative,0.0,1.0,negative,0.0,1.0,negative,0.0,0.25,5,1
+341,yaklasik iki aydir kullaniyorum büyük bir etki beklemeyin iyi nemlendiriyor ama söylendiği kadar leke onardigi renk esitledigine sahit olmadim,neutral,positive,0.6111111111111112,0.3,positive,0.6111111111111112,0.3,positive,0.6111111111111112,0.0,10,1
+342,Ciltte kadifemsi bir yumuşaklık sağlıyor ancak üstüne bb krem sürdüğüm zaman pütür pütür toplanıyor,neutral,positive,0.5,0.0625,positive,0.5,0.0625,neutral,0.0,0.0,7,0
+343,Müthiş bir ürün. Ben de yorumlara ve puanına bakarak aldım. Özellikle fiyat performans bakımından değerlendirdiğimde de harika bir ürün. İlk kullanımda verdiği aydınlık ve yatışmış cilt hissi beni şaşırttı. Bundan sonra sürekli kullanacağım bir ürün. Zatem c vitamini düzenli bir ihtiyaç cilt için. Kullanımdan sonraki görüntüyle bakılırsa bu ihtiyacı karşılıyor bu serum. Mutlak almalısınız.,positive,negative,1.525,1.75,positive,1.6916666666666667,1.5833333333333333,positive,1.6916666666666667,1.0416666666666665,21,8
+344,Güzel fakat bende fazla işe yaramadi,negative,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,3,1
+345,kokusu güzel kullanmadim daha,neutral,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,3,1
+346,İğrenç hiç beğenmedim çok can yakıyor,negative,negative,0.2222222222222222,1.5,negative,0.2222222222222222,1.5,negative,0.0,1.5,5,2
+347,ürünü kullandım ama çamaşır suyu lekelerini çıkartmıyor arkadaşlar beğenmedim pek,negative,positive,0.625,0.3,negative,0.125,0.3,positive,0.125,0.0,4,1
+348,Fazla hoşuma gitmedi her kullanımdan sonra temizleyin,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+349,maalesef iyi değil,negative,negative,0.6111111111111112,0.75,negative,0.6111111111111112,0.75,negative,0.6111111111111112,0.75,2,2
+350,ÜRÜNÜ RESİMDE GÖRÜLDÜĞÜ GİBİ BASMALI OLDUĞUNU SANARAK SİPARİŞ ETTİM AMA NORMAL TÜP ŞEKLİNDE GELDİ. BENCE BU GİBİ DURUMLAR ÇOK RAHATSIZ EDİCİ MARKADAN SOĞUDUM RESMEN.,negative,negative,0.0,1.6666666666666665,negative,0.0,1.6666666666666665,negative,0.0,1.6666666666666665,11,2
+351,Henüz bir faydasını göremedim fakat kullanmaya devam ediyorum uzun vadede yararlı olabilceğini düşünüorm.,neutral,neutral,1.0,1.0,positive,2.0,0.0,positive,2.0,0.0,6,2
+352,çok kalitesiz ama bu fiyata anca bu,negative,negative,0.0,0.25,negative,0.0,0.25,negative,0.0,0.25,3,1
+353,Fiyatına göre bayağı güzel fakat suya girdiğinde pembe pembe akıyor,neutral,positive,0.825974025974026,0.0,positive,0.825974025974026,0.0,positive,0.825974025974026,0.0,5,3
+354,Zaten kullandığım bir ürün memnunum,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,4,0
+355,Orta halli bir keratin şampunı kötü değil,neutral,negative,0.0,0.975,negative,0.0,0.975,negative,0.0,0.975,3,2
+356,harika kokan yıllardır vazgeçemediğim bir parfüm,positive,positive,1.125,0.0,positive,1.125,0.0,positive,1.125,0.0,4,2
+357,Yüzü çok kurutuyor,neutral,negative,0.0,0.19230769230769232,negative,0.0,0.19230769230769232,negative,0.0,0.19230769230769232,2,1
+358,İşe yaramaz paranıza yazık,negative,negative,0.0,1.25,negative,0.5,0.75,neutral,0.0,0.0,1,0
+359,Ürünü beğenmedim göründüğü kadar kaliteli değil,negative,positive,1.0,0.0,positive,1.0,0.0,positive,1.0,0.0,2,1
+360,inanilmaz güzel çok beğendim,positive,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,4,1
+361,Rengini ve baskısını hiç beğenmedim. İade,negative,negative,0.0,0.6875,negative,0.0,0.6875,negative,0.0,0.6875,4,3
+362,Hiçbir etkisi olmadi. Eşim icin almıştık islem sonrasi kulağına baktigimda ayni sekilde duruyordu kirler,negative,negative,0.0,0.6666666666666666,negative,0.0,0.6666666666666666,negative,0.0,0.16666666666666666,5,1
+363,Açıkcası çok beklentiniz olmasın. Fondöteni hemen tutuyor yani fondöteni dağıtırken pütür pütür oluyor. İyi mi kötü mü halâ emin değilim bu defa bir diğer örneğini sipariş ettim bakalım.,neutral,negative,1.0069444444444444,1.15,negative,0.6111111111111112,1.3375,negative,0.6111111111111112,1.3375,15,4
+364,Küllü sarılarla karıştırıp boyadık güzel bir gri oldu 3 yıkamada saç çiğ sarıya döndü ama,neutral,positive,0.45454545454545453,0.225,positive,0.45454545454545453,0.225,positive,0.45454545454545453,0.0,7,1
+365,paketleme güzel zaten kokusunu sevdigim bir parfüm tavsiye ederim,positive,positive,0.7045454545454546,0.0,positive,0.5795454545454546,0.0,positive,0.5795454545454546,0.0,4,2
+366,bir aylık kullanıma göre tam olarak olmasa da dökülmeler azaldı,neutral,positive,0.20833333333333334,0.022727272727272728,positive,0.20833333333333334,0.022727272727272728,positive,0.20833333333333334,0.0,3,1
+367,Kremini tercih ederim kesinlikle. Yapı bende sivilce yaptı kullanamadım,negative,negative,0.0,0.5,negative,0.0,0.5,neutral,0.0,0.0,4,0
+368,Kokusu kötü biraz ama etkisi güzel,neutral,negative,0.45454545454545453,0.9,negative,0.45454545454545453,0.9,negative,0.45454545454545453,0.9,3,2
+369,Ürünü tavsiye üzerine aldım boyut olarak büyük ve kullanalı 1 ay oldu saçlarım kendine geldi kırıklar gitti ve saç güçlendi ilk günden itibaren etkisini gösteriyor güvenle alabilirsiniz,positive,negative,0.125,0.4696969696969696,negative,0.125,0.4696969696969696,negative,0.125,0.3333333333333333,11,3
+370,yillardir aynı markayı kullandım çok memnunum ama buradan aldığım ürünler bozuk cıktı. sonradan fark ettiğim için de geri iade edemiyorum.bu ürünü buradan sakın almayın. Parama yazık oldu.,negative,negative,0.0,2.554924242424242,negative,0.16666666666666666,2.2632575757575757,negative,0.16666666666666666,2.242424242424242,13,7
+371,küçük geldi,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+372,Hiç beğenmedim yapısı kötü,negative,negative,0.0,1.4,negative,0.0,1.4,negative,0.0,1.4,3,2
+373,Ağır bir koku memnun kalmadım.,negative,negative,0.0,0.22058823529411764,negative,0.0,0.22058823529411764,negative,0.0,0.22058823529411764,3,1
+374,Şimdilik kullanmadım umarım faydasını görürüm,neutral,negative,0.0,1.0,negative,0.0,1.0,negative,0.0,1.0,4,1
+375,ürün bekledigimden küçük geldi ama renk tonlamalari güzel kolayca taşınabilir,neutral,positive,0.5795454545454546,0.0,positive,0.5795454545454546,0.0,positive,0.5795454545454546,0.0,6,2
+376,Ben beyaz istemiştim. Fakat siyah geldi. Bu alış veriş den hiç memnun kalmadım. Kesinlikle kimseye tavsiye etmiyorum.,negative,negative,0.125,0.5208333333333334,negative,0.0,0.6458333333333334,negative,0.0,0.625,8,2
+377,Çok güzel yüzünüzü yıkayınca pürüzsüz bir hal alıyor... kargoda çok hızlıydı... ürün her yönüyle tavsiye edilir...,positive,positive,0.7045454545454546,0.29166666666666663,positive,0.7045454545454546,0.21666666666666667,positive,0.7045454545454546,0.21666666666666667,8,5
+378,Çok kötğydü hemen kurudu ve makyajı tam çıkarmıyor onun yerine normal ıslak mendil alın daha iyi en azından kurumuyor,negative,neutral,0.8350694444444445,0.8012820512820513,neutral,0.8350694444444445,0.8012820512820513,neutral,0.8194444444444445,0.8012820512820513,14,6
+379,Fena diğil,neutral,negative,0.0,0.4583333333333333,negative,0.0,0.4583333333333333,negative,0.0,0.4583333333333333,1,1
+380,2. Giymede demiri çıktı...,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,1,0
+381,50 ml olduğuna dikkat etmedim. Gelince farkettim daha büyük birşey aradığım için iade ettim,negative,negative,0.0,0.125,negative,0.0,0.125,negative,0.0,0.125,7,1
+382,Çok severek kullanıyorum alırken tereddütte kaldım ama göründüğünden de iyi,positive,positive,0.6111111111111112,0.1875,positive,0.6111111111111112,0.1875,positive,0.6111111111111112,0.0,5,1
+383,Kötü ürün kalitesiz,negative,negative,0.0,1.15,negative,0.0,1.15,negative,0.5,0.9,2,2
+384,lukasi marka alakasız bir fırça geldi yanlış ürün göndermişler yorumlarda gördüğüm kadarıyla başkalarının başına da gelmiş. Bu satıcıdan kesinlikle bir şey alınmaz,negative,negative,0.0,1.4602272727272727,negative,0.0,1.4602272727272727,negative,0.0,1.4375,8,2
+385,Hızlı kargosu ve ürünün büyüklüğü titreşim hızı güzel geldi. Henüz kullanmadım ama beklentimi karşılayacak gibi duruyor. Iki yıldızı kurmamın nedeni saklama kabı kırılmış paketlemeden memnun kalmadım daha dikkatli olmanızı istiyorum.,neutral,positive,1.0795454545454546,0.55,positive,1.0795454545454546,0.55,positive,1.0795454545454546,0.55,16,5
+386,güzel bir kokusu var ve benim tenimde gün boyu kalıcı.,positive,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,3,1
+387,Süper herkese tavsiye ederim teşekkürler,positive,positive,1.625,0.0,positive,1.625,0.0,positive,0.625,0.0,2,2
+388,Ağda bandı çok kötü,negative,negative,0.0,0.9,negative,0.0,0.9,negative,0.0,0.9,2,1
+389,İlk kullanımdan itibaren etkisini gösterdi. Saçları yumuşacık yapıyor ve harika kokuyor,positive,positive,1.0,0.0,positive,1.0,0.0,positive,1.0,0.0,6,1
+390,Yapış yapış değil güzel rengi de günlüğe uygun,positive,positive,0.9545454545454546,0.020833333333333332,positive,0.9545454545454546,0.020833333333333332,positive,0.9545454545454546,0.0,4,2
+391,Çok beğendim saçlarımı hafifleştirdi ve yumuşacık oldu,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,5,0
+392,Zaten ürünü uzun zamandır takip ediyordum. İndirime girince de kaçırmak istemedim ve direkt aldım.,positive,positive,0.25,0.1875,positive,0.25,0.1875,negative,0.0,0.16666666666666666,5,1
+393,Yeni kullanmaya başladım ama etkili,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+394,Bu ruja bayiliyorumm ve tam aynisini sorunsuz gonderdiler teşekkürler :),positive,positive,1.2083333333333333,0.0,positive,1.2083333333333333,0.0,positive,1.2083333333333333,0.0,5,2
+395,Uzun yıllar depoda beklemiş ürünler sanırım,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,4,0
+396,malesef cildimi morartmasına rağmen yeterli derece de temizlemedi,neutral,negative,0.25,0.5208333333333334,negative,0.25,0.5208333333333334,positive,0.25,0.0,4,1
+397,ürün elime ulaştı ama bayağı küçük yani öyle normal allık boyutunda beklemeyin.,neutral,neutral,0.05,0.0,neutral,0.05,0.0,neutral,0.05,0.0,6,1
+398,Kargo firmasıyla ilgili sorunlar yaşadım ürünümü dağıtıma çıkarmadılar çıkardı gösterdiler vs kendim gidip aldım ptt kargoya şu pandemi sürecinde bu ürünü alabilmek için Sıra bekledim bayağı. Ürüne gelince yağlı bir cildim var sivilce tedavisi gördüm lekeler kalmıştı cildimde. Ürünü kullanmaya başladığım ilk 2 gün sorun yoktu sonrasında sivilcelerim çıkmaya başladı ve alnım çenem ve yanağımın çok az bir kısmında sivilceler çıktı alnımdaki sivilceler cidden moralimi çok bozdu çünkü çok sivilce vardı ve kızarık kızarıktı her neyse kremleri kullanmayı bırakmayı düşündüm eczane kremi almaya karar verdim araya bayram vs girdiği için eczane kremlerini alamadım ve bu kremleri gündüz gece yüzümü temizleyiciyle yıkadıktan sonra kullanmaya devam ettim ve yüzümdeki sivilceleri söndürdü yani çıkardığı yerlerdeki sivilceleri söndürdü. Sonra eczane kremlerini aldım ve bu kremleri kullanmayı bıraktım faydasını görürmüydüm bilemiyorum. Gece kremi kokusu dayanılmayacak kadar kötü değil yorumlarda abartılmış biraz gündüz kreminin yapısı gece kremine göre daha sert. Bu arada gece kremini elime ilk aldığımda bana biraz içi boş gibi geldi kremin yapısından mıdır bilmiyorum hafif ve boş geldi bana eğer kullanılmış ürünü gönderdilerse hakkımı helal etmem söyleyeceklerim bu kadar 🤚,neutral,negative,1.8721726190476193,10.775901875901875,negative,2.765228174603175,7.507846320346321,negative,2.5568948412698416,4.374512987012987,71,20
+399,Başlayalım bakalım bitince haber veririm size,neutral,negative,0.0,0.25,negative,0.0,0.25,neutral,0.0,0.0,3,0
+400,çok düzenli kullandım hiç bir faydası olmadı belki 2 üç kutu bitirmek gerekir ben bir kutu kullandım faydasını göremedim,negative,negative,0.125,1.5,positive,1.125,0.5,positive,1.125,0.5,10,3
+401,kargo ve paketleme gayet iyi kullandıktan sonra yorumu güncelleyeceğim,neutral,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,6,1
+402,uygun fiyatlı ve güzel bir ürün. benim cildim bazen çooook yağlanır bazen de çok kurur sanırım sivilce ilaçları kullandığım için bu dengesizlik. yüzümün yağ dengesini ayarlayamadı cildim bu aralar fazla yağlanıyor engelleyemiyor malesef. başka bir marka daha deneyip kıyaslama yapabilirim.,neutral,positive,1.1212121212121213,0.8881410256410257,positive,1.1212121212121213,0.8881410256410257,positive,0.9545454545454546,0.5673076923076923,21,5
+403,Severek kullandığım bir koku pişman olmazsınız,positive,negative,0.0,1.125,positive,1.125,0.0,positive,1.0,0.0,3,1
+404,Şampuan saçı çok sert yapıyor ama krem sürünce yumuşuyor boyutları büyük,positive,negative,0.0,0.5763888888888888,negative,0.0,0.5763888888888888,negative,0.0,0.5763888888888888,6,2
+405,yıkandıktan sonra dokuz yaşında kızım giyiyor:(,negative,negative,0.0,0.125,negative,0.0,0.125,negative,0.0,0.125,3,1
+406,ürün ilk kullanımdan itibaren işe yaradı mükemmel 🥰,positive,positive,1.0,0.5,positive,1.0,0.5,positive,1.0,0.5,3,2
+407,Fiyatına göre gayet iyi ancak yeterince ürünü köpürtmüyor gibi geldi,positive,positive,0.6111111111111112,0.0625,positive,0.6111111111111112,0.0625,positive,0.6111111111111112,0.0,5,1
+408,Ciltteki yağı dengeliyor kesinlikle başırılı bir ürün düzenli kullanımda etkisini gördüm cildimdeki pürüzler artık olmuyor yumuşacık yaptı,positive,negative,0.125,1.3,negative,0.125,1.3,negative,0.125,1.0,11,2
+409,1 yıldız bile fazla kırmızısı boyuyor.penye kalitesi kötü.3×l aldım sanki L beden gibi.daracik.,negative,negative,0.5,1.1666666666666667,negative,0.5,1.1666666666666667,negative,0.0,0.26666666666666666,8,2
+410,Fene değil ama hediyesi yoktu bidaha tercih etmem,negative,negative,0.125,0.21428571428571427,negative,0.0,0.21428571428571427,negative,0.0,0.21428571428571427,4,1
+411,boyutu çok büyük boyuta göre iyi fiyat bence. kullanmaya yeni başladım henüz yorumlamıyorum performasını,positive,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,8,1
+412,İş görür bu fiyata göre bir kaliteye sahip aşırı kaliteli bir şey beklemeyin,neutral,positive,1.5,1.05,positive,1.5,1.05,negative,1.0,1.05,4,3
+413,Fiyatına göre fena bir ürün sayılmaz,neutral,negative,0.0,0.4583333333333333,negative,0.0,0.4583333333333333,negative,0.0,0.4583333333333333,2,1
+414,İnce çatlaklarımın gittiğini çok rahat gözlemliyorum,neutral,positive,0.15277777777777776,0.0,positive,0.15277777777777776,0.0,positive,0.15277777777777776,0.0,6,2
+415,Çok belirgin bir dolgunlaştırıcı etkisini görmedim ve beklediğim kadar kalıcı değil ama parlatıcı gibi kullanıyorum,neutral,negative,0.0,1.0,positive,1.0,0.0,positive,1.0,0.0,8,1
+416,2 kere kullandım henüz.. cildimi yumuşacık yaptı.. şuanlık iyi anlaşıyoruz.. 🌸🥳,positive,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,6,1
+417,Şeffaf kısmı çok rahatsız ayrıca hemen koptu. Beğenmedim.,negative,negative,0.0,0.6666666666666666,negative,0.0,0.6666666666666666,negative,0.0,0.6666666666666666,7,1
+418,Saçımda kepek yaptı. Köpürmüyor ve sönük yapıyor saçı. Sadece kabarıklık yapmamasını beğendim,neutral,negative,0.0,0.3333333333333333,negative,0.0,0.3333333333333333,negative,0.0,0.3333333333333333,8,1
+419,Ürün çok güzel ikisi de ama benim cildimde anlamadığım bir şekilde alerji yaptı. Kullandığım süre boyunca çok kırmızı oldu yüzüm,neutral,negative,0.45454545454545453,0.5208333333333334,negative,0.45454545454545453,0.5208333333333334,positive,0.45454545454545453,0.0,9,1
+420,Karma ciltliyim alerji yaptı.,neutral,negative,0.0,0.5,negative,0.0,0.5,neutral,0.0,0.0,2,0
+421,daha etkisini goremedim yeni actim 3 gundur kullaniyoruz bakalim,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,5,0
+422,Bunu kullanınca fondötene bile gerek kalmıyor bayıldım,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,4,0
+423,kullanisli bir ürun,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+424,Henüz kullanmadım ama kokusu çok güzel kullanınca yararı olup olmadığını yazarım mutlaka,neutral,positive,0.6420454545454546,0.0,positive,0.6420454545454546,0.0,positive,0.6420454545454546,0.0,8,2
+425,İndirimde iken almıştım. Fiyatına göre iyi bir ürün memnun kaldım ilk defa denemiştim artık bunu kullanacağım.,positive,positive,0.8611111111111112,0.16666666666666666,positive,0.8611111111111112,0.16666666666666666,positive,0.6111111111111112,0.16666666666666666,8,2
+426,Fiyatına göre iyi ama akma yapıyor,neutral,positive,0.6111111111111112,0.5,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,2,1
+427,oda spreyinden hallice. oyle kullaniyorum ben.,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+428,Oje bitti fayda etmekten çok tırnaklarımı iyiye kötü yaptı,negative,negative,0.6111111111111112,0.9,negative,0.6111111111111112,0.9,negative,0.6111111111111112,0.9,3,2
+429,deniyoruz bakalim,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+430,çok uygun kullandım. kullanmaya devam ediyorum. çok memnunum.,positive,positive,0.5,0.0,positive,0.5,0.0,positive,0.5,0.0,6,1
+431,etkili bir sprey kullandıkça yüzü görülür bir renk tonu gözüküyor,positive,negative,0.0,1.0,negative,0.0,1.0,neutral,0.0,0.0,3,0
+432,bir gelişme görmedim ama ciltteki hücreleri uyandıracağını düşünüyorum fiyata göre iyi bir sonuç,neutral,negative,0.6111111111111112,1.125,positive,1.6111111111111112,0.125,positive,1.6111111111111112,0.0,6,2
+433,Sürekli kullandığım güzel bir güneş kremi,positive,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,4,1
+434,ben yıllardır kullanıyorum bu parfümü ilk defa burdan sipariş ettim alakasız bir koku acı acı ağır bir koku yayıyor kesinlikle tavsiye etmiyorum.,negative,negative,0.25,1.3634453781512605,negative,0.125,1.4884453781512605,negative,0.0,1.4884453781512605,10,4
+435,giymeden yıkadım ve sonuç hüsran...renginde solma ve kumaşında tiftiklenmeler olustu,negative,negative,0.0,1.0,negative,0.0,1.0,neutral,0.0,0.0,4,0
+436,Çok kötüüü. Kolonya ondan çok daha güzel kimse almasın. Parfüm satma trendyol. İade de biraz zorlandım ama personel çok yardımcı oldu. Hepinize teşekkürleeerrr...,negative,positive,0.5795454545454546,0.31249999999999994,positive,0.7462121212121212,0.14583333333333334,positive,0.6212121212121212,0.0,13,2
+437,Hiç renk vermiyor renksiz resmen,negative,negative,0.0,0.5,negative,0.0,0.5,negative,0.0,0.5,4,1
+438,fiyatı çok ama çok uygun ve aynen göründüğü gibi tüm Her şeyi kusursuz teşekkürler trendyol hızlı ve güvenilir,positive,positive,3.75,0.05,positive,3.75,0.05,positive,3.5,0.05,9,5
+439,blistex performansı olarak çok iyi ben roaccutane kullanıyorum yeterli geldi ama çok cabuk tükendi ve çok sert yani biraz sıcakta kalıp eriyince daha kolay sürülüyor o zaman da cabuk bitiyor :) daha uygun fiyatlı nemlendiriciler kesfettim,neutral,positive,1.6944444444444444,0.5366161616161615,positive,1.6944444444444444,0.5366161616161615,positive,1.6944444444444444,0.5138888888888888,19,6
+440,Ben çok beğeniyorum kullanmaya başladım herkesin övdüğü kadar var ❤️❤️,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,6,0
+441,Kapatıcılığı iyi sürekli kullandığım bir ürün,neutral,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,positive,0.6111111111111112,0.0,4,1
+442,Paketleme çok iyiydi kullanmaya yeni başladım ileride deneyimlerimi tekrar paylaşacağım,positive,positive,0.6361111111111112,0.0,positive,0.6361111111111112,0.0,positive,0.6111111111111112,0.0,7,1
+443,güzel kulaniyodum zaten ayni hafif,positive,positive,0.45454545454545453,0.022727272727272728,positive,0.45454545454545453,0.022727272727272728,positive,0.45454545454545453,0.022727272727272728,5,2
+444,Çok abartıldığı gibi bir etki görmedim saçım yağlı biraz söndürdü saçımı cansız gösterdi anlamadım . Ambalajı da fotoğrafa pek benzemiyor ya tereddüt ettim,neutral,negative,0.1607142857142857,1.2227272727272727,positive,1.1607142857142858,0.22272727272727275,positive,1.1607142857142858,0.2,11,4
+445,ürünü 50 ml olarak sipariş verdim 40 ml olarak geldi şekli farklı,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+446,Ürünü yeni kullanmaya başladım hiyalünork asidin üstüne c vitamini sürmeyin çok yakıyor zamanla değişim görecez,neutral,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,7,0
+447,Daha çnce kullandım böyle değildi sanki içine limon kolanyası basmışlar gibi bir ürün kesinlikle almanızı tavsiye etmem,negative,neutral,0.125,0.16666666666666666,neutral,0.125,0.16666666666666666,neutral,0.125,0.16666666666666666,7,2
+448,Ben bir haftadır kullanıyorum ama saç dökülmemde veya saçımın herhangi bir bölümü için bir değişiklik yaptığını söylemem doğru olmaz. Biraz daha kullanıp mı fayda edecek bilemiyorum ama sarımsak kokar diye endişelenen olursa kokmuyor.,neutral,positive,0.25,0.0,positive,0.25,0.0,positive,0.25,0.0,10,1
+449,Çok beğenerek kullandığım üründü. Yanında gönderilen ufak hediye için de teşekkür ederim :),positive,positive,1.125,0.08333333333333333,positive,1.0,0.08333333333333333,positive,1.0,0.0625,7,2
+450,ilk yikamada bile kuaforden cikmis gibi duruyor parlak ve çok yumusak ayrica kopurmuyo diyenler nasil yikiyo acaba gayette kopuruyo haftada 1 yapilmasi gerek bence çok iyi ve çok büyük 💜💜💜,positive,positive,1.0486111111111112,0.020833333333333332,positive,1.0486111111111112,0.020833333333333332,positive,1.0486111111111112,0.0,19,2
+451,ürünün markası yok naylon gibi dandik bir şey,negative,negative,0.0,1.2142857142857144,negative,0.0,1.2142857142857144,negative,0.0,0.9642857142857143,2,2
+452,karma ciltliyim bira t bölgemi kuruttu ama nemlendirince hiçbir sorun kalmıyor makyajı bile çok güzel cıkarıyor tavsiye ederim,positive,negative,0.5795454545454546,0.75,negative,0.5795454545454546,0.75,positive,0.5795454545454546,0.0,7,2
+453,Kargo hızlı bir şekilde elime ulaştı.,neutral,neutral,0.0,0.05,neutral,0.0,0.05,neutral,0.0,0.05,3,1
+454,biraz uzun surdu gelmesi ama çok güzel,positive,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,5,1
+455,Kesinlikle tavsiye etmiyorum omo activeyle hiç alakası yok en kolay lekeleri bile asla cıkarmıyor fiyatına aldanıp almayın,negative,negative,0.9583333333333333,1.180952380952381,negative,0.5,0.8392857142857143,negative,0.5,0.8392857142857143,9,5
+456,ürünü hiç beğenmedim güzel bir etkisi yok,negative,negative,0.45454545454545453,0.7142857142857143,negative,0.45454545454545453,0.7142857142857143,negative,0.45454545454545453,0.7142857142857143,3,3
+457,Ağda bezi gönderilmedi hiç beğenmedim çok büyük fazla yer kaplıyor ayrıca ürünün kartuş ağda yeri ısıtmıyor kötü bir ürün beğenmedim,negative,negative,0.03125,1.4,negative,0.03125,1.4,negative,0.0,1.4,13,2
+458,Kalıcılığı pek yok,neutral,negative,0.125,0.21428571428571427,negative,0.125,0.21428571428571427,negative,0.125,0.21428571428571427,2,2
+459,bunu şiddetle tavsiye ederim yıllardır aradığım ürün bu imiş meğer harika,positive,positive,1.125,0.16666666666666666,positive,1.125,0.16666666666666666,positive,0.125,0.0,4,1
+460,Cildi yağlandırıyor biraz yağlı ciltlere uygun değil gibi,neutral,positive,0.5357142857142857,0.0,negative,0.03571428571428571,0.5,negative,0.03571428571428571,0.5,4,2
+461,Fiyatı uygun ve çok güzel,positive,positive,0.9545454545454546,0.0,positive,0.9545454545454546,0.0,positive,0.9545454545454546,0.0,3,2
+462,Büyük hayallerle Aldim ama maalesef. Donmus pompasi calismiyor:( sevmedim,negative,negative,0.0,0.75,negative,0.0,0.75,negative,0.0,0.75,7,1
+463,Çok büyük hiç göründüğü gibi değil,negative,negative,0.0,0.5,negative,0.0,0.5,negative,0.0,0.5,4,1
+464,Çok kullanışlı deriye zararını görmedim fakat benimki bozuldu ara tıpası çıkmış sakın düşürmeyin,positive,negative,0.2916666666666667,2.5,positive,1.25,0.5,positive,1.25,0.0,7,2
+465,bugün elime geçti gıcırdama falan yok demedim yüzünde çok hoş bir rahatlama oldu inşallah zamanla işe yarıyacak.,positive,neutral,0.25,0.23511904761904762,negative,0.020833333333333332,0.21428571428571427,negative,0.020833333333333332,0.21428571428571427,9,2
+466,makyaji harika cikartiyor tavsiye ederim paketlemede gayet iyiydi.,positive,positive,1.7361111111111112,0.0,positive,1.7361111111111112,0.0,positive,1.7361111111111112,0.0,5,3
+467,saclara çok güzel gelen bır ürün,neutral,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,4,1
+468,Ürünü alalı dört gün oldu henüz bir etki görmek için erken sanırım bakalm bekliyorum☺️,positive,negative,0.0,1.0,negative,0.0,1.0,negative,0.0,1.0,8,1
+469,Ürün kaliteli değil kullanışsız,negative,positive,1.0,0.75,negative,0.0,1.75,negative,0.0,1.0,2,1
+470,Övüldüğü kadar bir etkisinin olduğunu düşünmüyorum çok da bir etki beklemeyin,neutral,neutral,0.0,0.022727272727272728,neutral,0.0,0.022727272727272728,neutral,0.0,0.0,5,0
+471,İçeriği son derece temiz. alüminyum yok. Tavsiye ederim.,positive,positive,0.775,0.3392857142857143,positive,0.775,0.3392857142857143,positive,0.775,0.3392857142857143,5,4
+472,Mükemmel bir ürün yanmış saçlar için alın,positive,positive,1.0,0.16666666666666666,positive,1.0,0.16666666666666666,positive,1.0,0.16666666666666666,3,2
+473,Güzel sayılır,neutral,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,2,1
+474,Hafifce uygulandığında hassas ciltler içinde uygun ben memnun kaldım fiyatına gore gayet uygun ve etkili,positive,positive,1.0,0.0,positive,1.0,0.0,positive,1.0,0.0,8,2
+475,Harika bir krem saçlarıma çok iyi geldi tavsiye ediyorum 👍,positive,positive,1.7361111111111112,0.0,positive,1.7361111111111112,0.0,positive,1.7361111111111112,0.0,4,3
+476,Düzenli kullanımda kedini gösteriyor,neutral,positive,0.125,0.0,positive,0.125,0.0,positive,0.125,0.0,2,1
+477,kesinlikle almayın pütür pütür ediyor. hiç memnun kalmadım. dolaplarım için almıştım mahvoldu. şimdi dolap masrafı çıktı.biz beceremedik belki ama boya kalitesi de çok kötüydü kapatmıyor.,negative,negative,0.5,2.1875,negative,0.16666666666666666,2.020833333333333,negative,0.16666666666666666,1.5666666666666667,15,4
+478,Fotoğraftaki gibi cıkmadı ince gözüküyor ama ipleri kalın kaba,negative,negative,0.1111111111111111,0.4166666666666667,negative,0.1111111111111111,0.4166666666666667,negative,0.1111111111111111,0.4166666666666667,5,2
+479,çok memnun kaldım ..yumuşak tertemiz bir cilt ..derinlemesine temizlik👍🏻👍🏻,positive,positive,1.2361111111111112,0.0,positive,1.2361111111111112,0.0,positive,1.0,0.0,6,1
+480,güzel ve kaliteli,neutral,positive,1.4545454545454546,0.0,positive,1.4545454545454546,0.0,positive,1.4545454545454546,0.0,2,2
+481,Harika ilk kullanımda bile cildin yumuşacık pamuk gibi oldun iyi ki almışım:),positive,positive,1.6111111111111112,0.16666666666666666,positive,1.6111111111111112,0.16666666666666666,positive,1.6111111111111112,0.16666666666666666,6,3
+482,Fiyatına göre çokkkk iyi bir ürün saatlerce nemli kalıyor cildiniz düşünmeden alabileceğiniz bir ürün,positive,positive,0.6111111111111112,0.16666666666666666,positive,0.6111111111111112,0.16666666666666666,positive,0.6111111111111112,0.16666666666666666,9,2
+483,Yağlı ciltler için yapılan güneş kremlerinin genel sorunu yüzde beyaz beyaz kalıp yüzle bütünleşmemeleri. Bu kremde de o sorun var çok çok iyi dağıtmak gerekiyor. Koruması fena değil. Ellerime ve kollarımın açık yerlerine sürüyorum artık.,neutral,negative,0.8187003968253969,1.9791666666666667,negative,1.2614087301587302,1.5208333333333335,positive,1.2614087301587302,0.0,15,4
+484,Her yıkama sonrası kullanıyorum yumuşacık yapıyor,positive,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,2,0
+485,Cidden dudağı çok yakıyor uygun fiyatlı olduğu için denenebilir,neutral,positive,0.5,0.125,positive,0.5,0.125,positive,0.5,0.0,5,1
+486,3 gündür kullanıyorum yuzumde alerji vs yapmadi güzel sürülüyor,neutral,neutral,0.45454545454545453,0.5,neutral,0.45454545454545453,0.5,positive,0.45454545454545453,0.0,3,1
+487,üründen plastik kokusu geliyor prize takınca,negative,neutral,0.0,0.0,neutral,0.0,0.0,neutral,0.0,0.0,3,0
+488,Çok güzel nemlendiriyor gerçekten uzun süre nemli kalıyor cildim.,positive,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,positive,0.45454545454545453,0.0,7,1
+489,iki tane aldık çok memnunuz,positive,negative,0.0,0.16666666666666666,negative,0.0,0.16666666666666666,negative,0.0,0.16666666666666666,3,1
+490,1 haftadır kullanıyorum bayağı fark etti tırnak etlerimde düzelmelere oldu,positive,neutral,0.05,0.0,neutral,0.05,0.0,neutral,0.05,0.0,3,1
+491,Yüzdeki ödemi alan ferahlatan bir ürün buzdolabında bekletin mutlaka. Çok güzel.,positive,neutral,0.45454545454545453,0.5,neutral,0.45454545454545453,0.5,positive,0.45454545454545453,0.0,6,1
+492,Beğendim çok da uyguna geldi,positive,positive,0.5,0.022727272727272728,positive,0.5,0.022727272727272728,positive,0.5,0.0,2,1
+493,Fiyatı görünce aldım hemen. Henüz bı etkisini görmedim bakalım iyi gelir umarım,neutral,negative,0.6111111111111112,2.416666666666667,positive,1.6111111111111112,1.4166666666666667,positive,1.6111111111111112,1.4166666666666667,10,5
+494,Üründen çok memnunum özellikle pembe tarafı gözenekleri güzel temizliyor yüzümü daha canlı ve pürüzsüz gösteriyor,positive,positive,0.5795454545454546,0.0,positive,0.5795454545454546,0.0,positive,0.5795454545454546,0.0,10,2
+495,Dudak parlatıcısı fakat dolgunlastirma etkisi yok denecek kadar azzzzz bu fiyata değer mi değmez ama parlatıcı olarak kalıcı güzel.,neutral,positive,0.45454545454545453,0.23511904761904762,positive,0.45454545454545453,0.23511904761904762,positive,0.45454545454545453,0.23511904761904762,6,3
+496,ben bir faydasını görmedim. ürünü 2 haftadır kullanıyorum. ıslakken yumuşatıyor fakat sonra bir değişiklik yok. kokusu güzel. paketlenmesi çok sıradan. üzerine etiket yapıştırılmış. hemen soyuldu.,neutral,negative,0.6420454545454546,1.2142857142857142,positive,1.6420454545454546,0.21428571428571427,positive,1.6420454545454546,0.21428571428571427,11,4
+497,ilk kez denedim.yorumlara guvenip aldim.kokusu biraz orta yaş gibi ve agir.. ama tabi herkese hitap etmeyebiliyor kokular. bide şisesi küçük 😐,neutral,negative,0.0,0.125,negative,0.0,0.125,negative,0.0,0.125,11,1
+498,Yıllardır kullandığım kokusuna bayıldığım bir parfüm tek sıkıntısı çok kalıcı değil.,positive,negative,0.125,0.625,negative,0.125,0.625,neutral,0.0,0.0,5,0
+499,Çok kötü hemen kokutuyor koltuk altınızı,negative,negative,0.0,0.9454545454545454,negative,0.0,0.9454545454545454,negative,0.0,0.9,4,1

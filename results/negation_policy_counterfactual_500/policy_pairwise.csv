@@ -1,0 +1,3 @@
+﻿current_vs,changed_predictions,current_only_correct,policy_only_correct,net_correct_gain,mcnemar_exact_p
+NO_SELF,22,3,10,7,0.09228515625
+POSITIVE_LEXICON_ONLY,21,3,10,7,0.09228515625

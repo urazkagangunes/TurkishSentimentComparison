@@ -1,0 +1,17 @@
+﻿sample_id,text,gold,old_H,old_H_to_D,new_H,new_H_to_D,old_unmatched_scope_count,new_unmatched_scope_count,fallback_matched_scope_count,prediction_changed
+76,çok kötü asla surulmuyor çok sert,negative,negative,negative,negative,negative,1,1,0,False
+91,Ürün fena değil ama beklentimin altında çünkü beklentim ışıltı verici bir ürün olmasıydı kapatıcılık hafif diyebilirim ışıltı hiç yok genel olarakta fena değil,neutral,negative,negative,negative,negative,1,0,1,False
+116,Güzel özenli paket,neutral,positive,positive,positive,positive,1,0,1,False
+134,Ürün ve paketlemesi gayet iyiydi memnun kaldım ama kargo tam bir felaket,neutral,positive,positive,positive,positive,1,1,0,False
+141,Markete göre çok çok çok hesaplı,positive,positive,positive,positive,positive,1,0,1,False
+168,Ürün boyutu çok küçük bir oje şişesi kadar ama kalitesi harika,neutral,positive,positive,positive,positive,1,1,0,False
+220,Düzenli kullandığım ürün ortadan koyuya olan yüzde belli esmerler onu kullanabilir ama buğday tenli ıların rengi kesinlikle bu fondöten sürüp cildi nefessz bırakmaya gerek yok kapatıcılığı çok iyi,positive,positive,positive,positive,positive,1,0,1,False
+238,Boyu çok kısa sweat kısmı çok basit,negative,positive,positive,positive,positive,1,1,0,False
+275,Çok dandik,negative,negative,negative,negative,negative,1,1,0,False
+333,Ebatı bayağı büyük ferahlatıyor ve nemlendiriyor sadece kapağı kırılmıştı özenli pakatleseniz iyi olur,neutral,positive,positive,positive,positive,1,0,1,False
+383,Kötü ürün kalitesiz,negative,negative,negative,negative,negative,1,0,1,False
+409,1 yıldız bile fazla kırmızısı boyuyor.penye kalitesi kötü.3×l aldım sanki L beden gibi.daracik.,negative,negative,negative,negative,negative,1,0,1,False
+459,bunu şiddetle tavsiye ederim yıllardır aradığım ürün bu imiş meğer harika,positive,positive,positive,positive,positive,1,1,0,False
+469,Ürün kaliteli değil kullanışsız,negative,positive,negative,positive,negative,1,1,0,False
+479,çok memnun kaldım ..yumuşak tertemiz bir cilt ..derinlemesine temizlik👍🏻👍🏻,positive,positive,positive,positive,positive,2,0,2,False
+485,Cidden dudağı çok yakıyor uygun fiyatlı olduğu için denenebilir,neutral,positive,positive,positive,positive,1,0,1,False

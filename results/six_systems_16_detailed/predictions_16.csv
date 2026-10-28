@@ -1,0 +1,17 @@
+﻿id,text,focus,gold,H,H_correct,H->D,H->D_correct,D->H,D->H_correct,L,L_correct,D->L,D->L_correct,H->D-LW,H->D-LW_correct,correct_system_count,wrong_systems
+1,Otel çok güzel.,single-word intensifier,positive,positive,True,positive,True,positive,True,positive,True,positive,True,positive,True,6,
+2,Otel biraz kötü.,mitigator,negative,negative,True,negative,True,negative,True,negative,True,negative,True,negative,True,6,
+3,Otel güzel ama odalar kötü.,contrast: negative second clause,negative,negative,True,negative,True,negative,True,neutral,False,neutral,False,negative,True,4,"L, D->L"
+4,Otel kötü ama odalar güzel.,contrast: positive second clause,positive,negative,False,negative,False,negative,False,neutral,False,neutral,False,positive,True,1,"H, H->D, D->H, L, D->L"
+5,Bu ürün son derece güzel.,multiword intensifier + modifier component suppression,positive,positive,True,positive,True,positive,True,positive,True,positive,True,positive,True,6,
+6,Bu ürün çok ama çok güzel.,multiword modifier containing contrast word,positive,positive,True,positive,True,positive,True,positive,True,positive,True,positive,True,6,
+7,Film güzel değildi.,negation,negative,positive,False,negative,True,negative,True,negative,True,negative,True,negative,True,5,H
+8,Bu ürün çok daha kötü.,multiword modifier coverage,negative,negative,True,negative,True,negative,True,negative,True,negative,True,negative,True,6,
+9,Bu ürün daha da çok güzel.,multiword intensifier,positive,positive,True,positive,True,positive,True,positive,True,positive,True,positive,True,6,
+10,Bu ürün azıcık kötü.,strong mitigation,negative,negative,True,negative,True,negative,True,negative,True,negative,True,negative,True,6,
+11,Büyük ekran güzel.,modifier false-positive guard,positive,positive,True,positive,True,positive,True,positive,True,positive,True,positive,True,6,
+12,Küçük oda çok güzel.,modifier attachment guard,positive,positive,True,positive,True,positive,True,positive,True,positive,True,positive,True,6,
+13,Otel güzel fakat odalar kötü.,fakat contrast,negative,negative,True,negative,True,negative,True,neutral,False,neutral,False,negative,True,4,"L, D->L"
+14,Otel kötü ancak odalar güzel.,ancak contrast + marker suppression,positive,negative,False,negative,False,negative,False,neutral,False,neutral,False,positive,True,1,"H, H->D, D->H, L, D->L"
+15,Otel güzel ama odalar kötü değildi.,contrast + negation interaction,positive,negative,False,positive,True,positive,True,positive,True,neutral,False,positive,True,4,"H, D->L"
+16,Ürün güzel ama pahalı fakat kaliteli.,multiple contrast,positive,positive,True,positive,True,positive,True,positive,True,neutral,False,positive,True,5,D->L

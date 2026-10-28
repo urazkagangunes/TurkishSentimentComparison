@@ -1,0 +1,988 @@
+========================================================================================================================
+FOUR CLASSICAL SYSTEMS — STRUCTURAL DIAGNOSTIC TEST
+========================================================================================================================
+Systems: H, H->D, D->H, H->D-LW
+Cases: 36
+IMPORTANT: This is a structural sanity set, not a benchmark or tuning set.
+
+========================================================================================================================
+CASE 1: Film güzel.
+Gold: positive
+Focus: basic positive predicate
+========================================================================================================================
+H        pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+H->D     pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+D->H     pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+H->D-LW  pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+
+H sentiment words:
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+
+H->D scopes:
+  güzel | target= Film | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.45454545454545453, 0.0)
+
+D->H dependency candidates:
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Film | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.45454545454545453, 0.0) | ops= []
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 2: Film kötü.
+Gold: negative
+Focus: basic negative predicate
+========================================================================================================================
+H        pred=negative POS=0.000000 NEG=0.900000 NET=-0.900000 ✓
+H->D     pred=negative POS=0.000000 NEG=0.900000 NET=-0.900000 ✓
+D->H     pred=negative POS=0.000000 NEG=0.900000 NET=-0.900000 ✓
+H->D-LW  pred=negative POS=0.000000 NEG=0.900000 NET=-0.900000 ✓
+
+H sentiment words:
+  kötü | root= kötü | POS= 0.0 | NEG= 0.9
+
+H->D scopes:
+  kötü | target= Film | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.0, 0.9)
+
+D->H dependency candidates:
+  kötü | root= kötü | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Film | lexicon= sentiment | scores= (0.0, 0.9) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+  kötü | active= True | dep= (0.0, 0.9) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.9) | ops= []
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 3: Harika!
+Gold: positive
+Focus: targetless sentiment
+========================================================================================================================
+H        pred=positive POS=1.000000 NEG=0.000000 NET=1.000000 ✓
+H->D     pred=positive POS=1.000000 NEG=0.000000 NET=1.000000 ✓
+D->H     pred=positive POS=1.000000 NEG=0.000000 NET=1.000000 ✓
+H->D-LW  pred=positive POS=1.000000 NEG=0.000000 NET=1.000000 ✓
+
+H sentiment words:
+  harika | root= harika | POS= 1.0 | NEG= 0.0
+
+H->D scopes:
+  harika | target= None | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (1.0, 0.0)
+
+D->H dependency candidates:
+  Harika | root= harika | POS= ADJ | deprel= root | strategy= predicate_candidate | target= None | lexicon= sentiment | scores= (1.0, 0.0) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+  harika | active= True | dep= (1.0, 0.0) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (1.0, 0.0) | ops= []
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 4: Bugün pazartesi.
+Gold: neutral
+Focus: neutral control
+========================================================================================================================
+H        pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+H->D     pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+D->H     pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+H->D-LW  pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+
+H sentiment words:
+  []
+
+H->D scopes:
+
+D->H dependency candidates:
+  pazartesi | root= pazartesi | POS= NOUN | deprel= root | strategy= predicate_candidate | target= None | lexicon= neutral_lexicon_entry | scores= (0.0, 0.0) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 5: Masa odada.
+Gold: neutral
+Focus: neutral control
+========================================================================================================================
+H        pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+H->D     pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+D->H     pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+H->D-LW  pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+
+H sentiment words:
+  []
+
+H->D scopes:
+
+D->H dependency candidates:
+  odada | root= oda | POS= NOUN | deprel= root | strategy= predicate_with_target | target= Masa | lexicon= neutral_lexicon_entry | scores= (0.0, 0.0) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 6: Yemekler kötüydü.
+Gold: negative
+Focus: target filtering
+========================================================================================================================
+H        pred=negative POS=0.000000 NEG=1.223529 NET=-1.223529 ✓
+H->D     pred=negative POS=0.000000 NEG=0.900000 NET=-0.900000 ✓
+D->H     pred=negative POS=0.000000 NEG=0.900000 NET=-0.900000 ✓
+H->D-LW  pred=negative POS=0.000000 NEG=0.900000 NET=-0.900000 ✓
+
+H sentiment words:
+  yemekler | root= yemek | POS= 0.0 | NEG= 0.3235294117647059
+  kötüydü | root= kötü | POS= 0.0 | NEG= 0.9
+
+H->D scopes:
+  yemekler | target= None | neg= [] | mod= [] | contrast= None | active= False | ops= ['suppressed_as_target'] | adj= (0.0, 0.0)
+  kötüydü | target= Yemekler | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.0, 0.9)
+
+D->H dependency candidates:
+  kötü | root= kötü | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Yemekler | lexicon= sentiment | scores= (0.0, 0.9) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+  yemekler | active= False | dep= (0.0, 0.0) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.0) | ops= ['suppressed_as_target']
+  kötüydü | active= True | dep= (0.0, 0.9) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.9) | ops= []
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 7: Yemekler güzel.
+Gold: positive
+Focus: target filtering with potentially sentiment-bearing noun
+========================================================================================================================
+H        pred=positive POS=0.454545 NEG=0.323529 NET=0.131016 ✓
+H->D     pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+D->H     pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+H->D-LW  pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+
+H sentiment words:
+  yemekler | root= yemek | POS= 0.0 | NEG= 0.3235294117647059
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+
+H->D scopes:
+  yemekler | target= None | neg= [] | mod= [] | contrast= None | active= False | ops= ['suppressed_as_target'] | adj= (0.0, 0.0)
+  güzel | target= Yemekler | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.45454545454545453, 0.0)
+
+D->H dependency candidates:
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Yemekler | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+  yemekler | active= False | dep= (0.0, 0.0) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.0) | ops= ['suppressed_as_target']
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.45454545454545453, 0.0) | ops= []
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 8: Bu ürünü tavsiye ediyorum.
+Gold: positive
+Focus: light-verb positive recommendation
+========================================================================================================================
+H        pred=positive POS=0.125000 NEG=0.000000 NET=0.125000 ✓
+H->D     pred=positive POS=0.125000 NEG=0.000000 NET=0.125000 ✓
+D->H     pred=positive POS=0.125000 NEG=0.000000 NET=0.125000 ✓
+H->D-LW  pred=positive POS=0.125000 NEG=0.000000 NET=0.125000 ✓
+
+H sentiment words:
+  tavsiye | root= tavsiye | POS= 0.125 | NEG= 0.0
+
+H->D scopes:
+  tavsiye | target= ürünü | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.125, 0.0)
+
+D->H dependency candidates:
+  tavsiye | root= tavsiye | POS= NOUN | deprel= root | strategy= predicate_with_target | target= ürünü | lexicon= sentiment | scores= (0.125, 0.0) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+  tavsiye | active= True | dep= (0.125, 0.0) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.125, 0.0) | ops= []
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 9: Bu ürünü kesinlikle tavsiye etmiyorum.
+Gold: negative
+Focus: light-verb negation
+========================================================================================================================
+H        pred=positive POS=0.125000 NEG=0.000000 NET=0.125000 ✗
+H->D     pred=negative POS=0.000000 NEG=0.125000 NET=-0.125000 ✓
+D->H     pred=negative POS=0.000000 NEG=0.125000 NET=-0.125000 ✓
+H->D-LW  pred=negative POS=0.000000 NEG=0.125000 NET=-0.125000 ✓
+
+H sentiment words:
+  tavsiye | root= tavsiye | POS= 0.125 | NEG= 0.0
+
+H->D scopes:
+  tavsiye | target= ürünü | neg= ['etmiyorum'] | mod= [] | contrast= None | active= True | ops= ['negation_flip'] | adj= (0.0, 0.125)
+
+D->H dependency candidates:
+  tavsiye | root= tavsiye | POS= NOUN | deprel= root | strategy= predicate_with_target | target= ürünü | lexicon= sentiment | scores= (0.125, 0.0) | neg= ['etmiyorum'] | mod= []
+
+H->D-LW weighted scopes:
+  tavsiye | active= True | dep= (0.0, 0.125) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.125) | ops= ['negation_flip']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 10: Film güzel değildi.
+Gold: negative
+Focus: explicit copular negation
+========================================================================================================================
+H        pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✗
+H->D     pred=negative POS=0.000000 NEG=0.454545 NET=-0.454545 ✓
+D->H     pred=negative POS=0.000000 NEG=0.454545 NET=-0.454545 ✓
+H->D-LW  pred=negative POS=0.000000 NEG=0.454545 NET=-0.454545 ✓
+
+H sentiment words:
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+
+H->D scopes:
+  güzel | target= Film | neg= ['değildi'] | mod= [] | contrast= None | active= True | ops= ['negation_flip'] | adj= (0.0, 0.45454545454545453)
+
+D->H dependency candidates:
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Film | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= ['değildi'] | mod= []
+
+H->D-LW weighted scopes:
+  güzel | active= True | dep= (0.0, 0.45454545454545453) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.45454545454545453) | ops= ['negation_flip']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 11: Odalar kötü değildi.
+Gold: positive
+Focus: negated negative adjective
+========================================================================================================================
+H        pred=negative POS=0.000000 NEG=0.900000 NET=-0.900000 ✗
+H->D     pred=positive POS=0.900000 NEG=0.000000 NET=0.900000 ✓
+D->H     pred=positive POS=0.900000 NEG=0.000000 NET=0.900000 ✓
+H->D-LW  pred=positive POS=0.900000 NEG=0.000000 NET=0.900000 ✓
+
+H sentiment words:
+  kötü | root= kötü | POS= 0.0 | NEG= 0.9
+
+H->D scopes:
+  kötü | target= Odalar | neg= ['değildi'] | mod= [] | contrast= None | active= True | ops= ['negation_flip'] | adj= (0.9, 0.0)
+
+D->H dependency candidates:
+  kötü | root= kötü | POS= ADJ | deprel= amod | strategy= shared_head_fallback | target= Odalar | lexicon= sentiment | scores= (0.0, 0.9) | neg= ['değildi'] | mod= []
+
+H->D-LW weighted scopes:
+  kötü | active= True | dep= (0.9, 0.0) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.9, 0.0) | ops= ['negation_flip']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 12: Bu ürün iyi değil.
+Gold: negative
+Focus: explicit değil
+========================================================================================================================
+H        pred=positive POS=0.611111 NEG=0.000000 NET=0.611111 ✗
+H->D     pred=negative POS=0.000000 NEG=0.611111 NET=-0.611111 ✓
+D->H     pred=negative POS=0.000000 NEG=0.611111 NET=-0.611111 ✓
+H->D-LW  pred=negative POS=0.000000 NEG=0.611111 NET=-0.611111 ✓
+
+H sentiment words:
+  iyi | root= iyi | POS= 0.6111111111111112 | NEG= 0.0
+
+H->D scopes:
+  iyi | target= ürün | neg= ['değil'] | mod= [] | contrast= None | active= True | ops= ['negation_flip'] | adj= (0.0, 0.6111111111111112)
+
+D->H dependency candidates:
+  iyi | root= iyi | POS= ADJ | deprel= amod | strategy= shared_head_fallback | target= ürün | lexicon= sentiment | scores= (0.6111111111111112, 0.0) | neg= ['değil'] | mod= []
+
+H->D-LW weighted scopes:
+  iyi | active= True | dep= (0.0, 0.6111111111111112) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.6111111111111112) | ops= ['negation_flip']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 13: Bu ürün kötü değil.
+Gold: positive
+Focus: explicit değil on negative adjective
+========================================================================================================================
+H        pred=negative POS=0.000000 NEG=0.900000 NET=-0.900000 ✗
+H->D     pred=positive POS=0.900000 NEG=0.000000 NET=0.900000 ✓
+D->H     pred=positive POS=0.900000 NEG=0.000000 NET=0.900000 ✓
+H->D-LW  pred=positive POS=0.900000 NEG=0.000000 NET=0.900000 ✓
+
+H sentiment words:
+  kötü | root= kötü | POS= 0.0 | NEG= 0.9
+
+H->D scopes:
+  kötü | target= ürün | neg= ['değil'] | mod= [] | contrast= None | active= True | ops= ['negation_flip'] | adj= (0.9, 0.0)
+
+D->H dependency candidates:
+  kötü | root= kötü | POS= ADJ | deprel= amod | strategy= shared_head_fallback | target= ürün | lexicon= sentiment | scores= (0.0, 0.9) | neg= ['değil'] | mod= []
+
+H->D-LW weighted scopes:
+  kötü | active= True | dep= (0.9, 0.0) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.9, 0.0) | ops= ['negation_flip']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 14: Bu ürün çok kötü değil.
+Gold: positive
+Focus: modifier + explicit negation
+========================================================================================================================
+H        pred=negative POS=0.000000 NEG=0.900000 NET=-0.900000 ✗
+H->D     pred=positive POS=0.900000 NEG=0.000000 NET=0.900000 ✓
+D->H     pred=positive POS=0.900000 NEG=0.000000 NET=0.900000 ✓
+H->D-LW  pred=positive POS=1.080000 NEG=0.000000 NET=1.080000 ✓
+
+H sentiment words:
+  kötü | root= kötü | POS= 0.0 | NEG= 0.9
+
+H->D scopes:
+  kötü | target= ürün | neg= ['değil'] | mod= ['çok'] | contrast= None | active= True | ops= ['negation_flip', 'modifier_detected'] | adj= (0.9, 0.0)
+
+D->H dependency candidates:
+  çok | root= çok | POS= ADV | deprel= advmod | strategy= descriptive_content_fallback | target= None | lexicon= neutral_lexicon_entry | scores= (0.0, 0.0) | neg= [] | mod= []
+  kötü | root= kötü | POS= ADJ | deprel= amod | strategy= shared_head_fallback | target= ürün | lexicon= sentiment | scores= (0.0, 0.9) | neg= ['değil'] | mod= ['çok']
+
+H->D-LW weighted scopes:
+  kötü | active= True | dep= (0.9, 0.0) | modifier= ('çok', 1.2) | contrast= (None, None, 1.0) | final_mult= 1.2 | final= (1.08, 0.0) | ops= ['negation_flip', 'modifier_detected', 'literature_modifier_weight:1.2']
+LW counts: modifier_weighted= 1 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 15: Otel çok güzel.
+Gold: positive
+Focus: single-word intensifier
+========================================================================================================================
+H        pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+H->D     pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+D->H     pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+H->D-LW  pred=positive POS=0.545455 NEG=0.000000 NET=0.545455 ✓
+
+H sentiment words:
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+
+H->D scopes:
+  güzel | target= Otel | neg= [] | mod= ['çok'] | contrast= None | active= True | ops= ['modifier_detected'] | adj= (0.45454545454545453, 0.0)
+
+D->H dependency candidates:
+  çok | root= çok | POS= ADV | deprel= advmod | strategy= descriptive_content_fallback | target= Otel | lexicon= neutral_lexicon_entry | scores= (0.0, 0.0) | neg= [] | mod= []
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Otel | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= ['çok']
+
+H->D-LW weighted scopes:
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= ('çok', 1.2) | contrast= (None, None, 1.0) | final_mult= 1.2 | final= (0.5454545454545454, 0.0) | ops= ['modifier_detected', 'literature_modifier_weight:1.2']
+LW counts: modifier_weighted= 1 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 16: Otel biraz kötü.
+Gold: negative
+Focus: mitigator
+========================================================================================================================
+H        pred=negative POS=0.000000 NEG=0.900000 NET=-0.900000 ✓
+H->D     pred=negative POS=0.000000 NEG=0.900000 NET=-0.900000 ✓
+D->H     pred=negative POS=0.000000 NEG=0.900000 NET=-0.900000 ✓
+H->D-LW  pred=negative POS=0.000000 NEG=0.720000 NET=-0.720000 ✓
+
+H sentiment words:
+  kötü | root= kötü | POS= 0.0 | NEG= 0.9
+
+H->D scopes:
+  kötü | target= Otel | neg= [] | mod= ['biraz'] | contrast= None | active= True | ops= ['modifier_detected'] | adj= (0.0, 0.9)
+
+D->H dependency candidates:
+  biraz | root= biraz | POS= ADV | deprel= advmod | strategy= descriptive_content_fallback | target= Otel | lexicon= neutral_lexicon_entry | scores= (0.0, 0.0) | neg= [] | mod= []
+  kötü | root= kötü | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Otel | lexicon= sentiment | scores= (0.0, 0.9) | neg= [] | mod= ['biraz']
+
+H->D-LW weighted scopes:
+  kötü | active= True | dep= (0.0, 0.9) | modifier= ('biraz', 0.8) | contrast= (None, None, 1.0) | final_mult= 0.8 | final= (0.0, 0.7200000000000001) | ops= ['modifier_detected', 'literature_modifier_weight:0.8']
+LW counts: modifier_weighted= 1 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 17: Bu ürün son derece güzel.
+Gold: positive
+Focus: multiword intensifier + component suppression
+========================================================================================================================
+H        pred=positive POS=0.454545 NEG=0.125000 NET=0.329545 ✓
+H->D     pred=positive POS=0.454545 NEG=0.125000 NET=0.329545 ✓
+D->H     pred=positive POS=0.454545 NEG=0.125000 NET=0.329545 ✓
+H->D-LW  pred=positive POS=0.818182 NEG=0.000000 NET=0.818182 ✓
+
+H sentiment words:
+  son | root= son | POS= 0.0 | NEG= 0.125
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+
+H->D scopes:
+  son | target= derece | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.0, 0.125)
+  güzel | target= ürün | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.45454545454545453, 0.0)
+
+D->H dependency candidates:
+  son | root= son | POS= ADJ | deprel= amod | strategy= adjectival_modifier | target= derece | lexicon= sentiment | scores= (0.0, 0.125) | neg= [] | mod= []
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= ürün | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+  son | active= False | dep= (0.0, 0.0) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.0) | ops= ['suppressed_as_modifier_component']
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= ('son derece', 1.8) | contrast= (None, None, 1.0) | final_mult= 1.8 | final= (0.8181818181818181, 0.0) | ops= ['literature_modifier_weight:1.8']
+LW counts: modifier_weighted= 1 | modifier_components_suppressed= 1 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 18: Bu ürün çok ama çok güzel.
+Gold: positive
+Focus: modifier phrase containing contrast word
+========================================================================================================================
+H        pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+H->D     pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+D->H     pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+H->D-LW  pred=positive POS=0.636364 NEG=0.000000 NET=0.636364 ✓
+
+H sentiment words:
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+
+H->D scopes:
+  güzel | target= ürün | neg= [] | mod= ['çok', 'çok'] | contrast= {'id': 4, 'word': 'ama', 'lemma': 'ama', 'anchor_id': 6} | active= True | ops= ['modifier_detected', 'contrast_detected'] | adj= (0.45454545454545453, 0.0)
+
+D->H dependency candidates:
+  çok | root= çok | POS= ADV | deprel= advmod | strategy= descriptive_content_fallback | target= ürün | lexicon= neutral_lexicon_entry | scores= (0.0, 0.0) | neg= [] | mod= []
+  çok | root= çok | POS= ADV | deprel= advmod | strategy= descriptive_content_fallback | target= ürün | lexicon= neutral_lexicon_entry | scores= (0.0, 0.0) | neg= [] | mod= []
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= ürün | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= ['çok', 'çok']
+
+H->D-LW weighted scopes:
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= ('çok ama çok', 1.4) | contrast= (None, None, 1.0) | final_mult= 1.4 | final= (0.6363636363636364, 0.0) | ops= ['modifier_detected', 'contrast_detected', 'contrast_excluded_as_modifier_component', 'literature_modifier_weight:1.4']
+LW counts: modifier_weighted= 1 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 19: Bu ürün aşırı kötü.
+Gold: negative
+Focus: single-word intensifier + ADV candidate leakage probe
+========================================================================================================================
+H        pred=negative POS=0.000000 NEG=0.950000 NET=-0.950000 ✓
+H->D     pred=negative POS=0.000000 NEG=0.950000 NET=-0.950000 ✓
+D->H     pred=negative POS=0.000000 NEG=0.950000 NET=-0.950000 ✓
+H->D-LW  pred=negative POS=0.000000 NEG=0.950000 NET=-0.950000 ✓
+
+H sentiment words:
+  aşırı | root= aşırı | POS= 0.0 | NEG= 0.05
+  kötü | root= kötü | POS= 0.0 | NEG= 0.9
+
+H->D scopes:
+  aşırı | target= ürün | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.0, 0.05)
+  kötü | target= ürün | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.0, 0.9)
+
+D->H dependency candidates:
+  aşırı | root= aşırı | POS= ADJ | deprel= amod | strategy= shared_head_fallback | target= ürün | lexicon= sentiment | scores= (0.0, 0.05) | neg= [] | mod= []
+  kötü | root= kötü | POS= ADJ | deprel= root | strategy= predicate_with_target | target= ürün | lexicon= sentiment | scores= (0.0, 0.9) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+  aşırı | active= True | dep= (0.0, 0.05) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.05) | ops= []
+  kötü | active= True | dep= (0.0, 0.9) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.9) | ops= []
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 20: Büyük ekran güzel.
+Gold: positive
+Focus: modifier false-positive guard
+========================================================================================================================
+H        pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+H->D     pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+D->H     pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+H->D-LW  pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+
+H sentiment words:
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+
+H->D scopes:
+  güzel | target= ekran | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.45454545454545453, 0.0)
+
+D->H dependency candidates:
+  Büyük | root= büyük | POS= ADJ | deprel= amod | strategy= adjectival_modifier | target= ekran | lexicon= neutral_lexicon_entry | scores= (0.0, 0.0) | neg= [] | mod= []
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= ekran | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.45454545454545453, 0.0) | ops= []
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 21: Küçük oda çok güzel.
+Gold: positive
+Focus: modifier attachment guard
+========================================================================================================================
+H        pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+H->D     pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+D->H     pred=positive POS=0.454545 NEG=0.000000 NET=0.454545 ✓
+H->D-LW  pred=positive POS=0.545455 NEG=0.000000 NET=0.545455 ✓
+
+H sentiment words:
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+
+H->D scopes:
+  güzel | target= oda | neg= [] | mod= ['çok'] | contrast= None | active= True | ops= ['modifier_detected'] | adj= (0.45454545454545453, 0.0)
+
+D->H dependency candidates:
+  Küçük | root= küçük | POS= ADJ | deprel= amod | strategy= adjectival_modifier | target= oda | lexicon= neutral_lexicon_entry | scores= (0.0, 0.0) | neg= [] | mod= []
+  çok | root= çok | POS= ADV | deprel= advmod | strategy= descriptive_content_fallback | target= oda | lexicon= neutral_lexicon_entry | scores= (0.0, 0.0) | neg= [] | mod= []
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= oda | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= ['çok']
+
+H->D-LW weighted scopes:
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= ('çok', 1.2) | contrast= (None, None, 1.0) | final_mult= 1.2 | final= (0.5454545454545454, 0.0) | ops= ['modifier_detected', 'literature_modifier_weight:1.2']
+LW counts: modifier_weighted= 1 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 22: Otel güzel ama odalar kötü.
+Gold: negative
+Focus: ama contrast / negative second clause
+========================================================================================================================
+H        pred=negative POS=0.454545 NEG=0.900000 NET=-0.445455 ✓
+H->D     pred=negative POS=0.454545 NEG=0.900000 NET=-0.445455 ✓
+D->H     pred=negative POS=0.454545 NEG=0.900000 NET=-0.445455 ✓
+H->D-LW  pred=negative POS=0.386364 NEG=1.665000 NET=-1.278636 ✓
+
+H sentiment words:
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+  kötü | root= kötü | POS= 0.0 | NEG= 0.9
+
+H->D scopes:
+  güzel | target= Otel | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.45454545454545453, 0.0)
+  kötü | target= odalar | neg= [] | mod= [] | contrast= {'id': 3, 'word': 'ama', 'lemma': 'ama', 'anchor_id': 4} | active= True | ops= ['contrast_detected'] | adj= (0.0, 0.9)
+
+D->H dependency candidates:
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Otel | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= []
+  kötü | root= kötü | POS= ADJ | deprel= conj | strategy= predicate_with_target | target= odalar | lexicon= sentiment | scores= (0.0, 0.9) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= (None, 1.0) | contrast= ('ama', 'pre_contrast', 0.85) | final_mult= 0.85 | final= (0.38636363636363635, 0.0) | ops= ['literature_contrast_weight:0.85']
+  kötü | active= True | dep= (0.0, 0.9) | modifier= (None, 1.0) | contrast= ('ama', 'post_contrast', 1.85) | final_mult= 1.85 | final= (0.0, 1.665) | ops= ['contrast_detected', 'literature_contrast_weight:1.85']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 2
+LW contrast relations: {0: [{'marker_id': 3, 'marker': 'ama', 'marker_deprel': 'cc', 'pre_head_id': 2, 'post_head_id': 5}]}
+
+========================================================================================================================
+CASE 23: Otel kötü ama odalar güzel.
+Gold: positive
+Focus: ama contrast / positive second clause
+========================================================================================================================
+H        pred=negative POS=0.454545 NEG=0.900000 NET=-0.445455 ✗
+H->D     pred=negative POS=0.454545 NEG=0.900000 NET=-0.445455 ✗
+D->H     pred=negative POS=0.454545 NEG=0.900000 NET=-0.445455 ✗
+H->D-LW  pred=positive POS=0.840909 NEG=0.765000 NET=0.075909 ✓
+
+H sentiment words:
+  kötü | root= kötü | POS= 0.0 | NEG= 0.9
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+
+H->D scopes:
+  kötü | target= Otel | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.0, 0.9)
+  güzel | target= odalar | neg= [] | mod= [] | contrast= {'id': 3, 'word': 'ama', 'lemma': 'ama', 'anchor_id': 4} | active= True | ops= ['contrast_detected'] | adj= (0.45454545454545453, 0.0)
+
+D->H dependency candidates:
+  kötü | root= kötü | POS= ADJ | deprel= amod | strategy= direct_target_relation | target= Otel | lexicon= sentiment | scores= (0.0, 0.9) | neg= [] | mod= []
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= odalar | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+  kötü | active= True | dep= (0.0, 0.9) | modifier= (None, 1.0) | contrast= ('ama', 'pre_contrast_fallback', 0.85) | final_mult= 0.85 | final= (0.0, 0.765) | ops= ['literature_contrast_weight:0.85']
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= (None, 1.0) | contrast= ('ama', 'post_contrast_resolver', 1.85) | final_mult= 1.85 | final= (0.8409090909090909, 0.0) | ops= ['contrast_detected', 'literature_contrast_weight:1.85']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 2
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 24: Otel güzel fakat odalar kötü.
+Gold: negative
+Focus: fakat contrast
+========================================================================================================================
+H        pred=negative POS=0.454545 NEG=0.900000 NET=-0.445455 ✓
+H->D     pred=negative POS=0.454545 NEG=0.900000 NET=-0.445455 ✓
+D->H     pred=negative POS=0.454545 NEG=0.900000 NET=-0.445455 ✓
+H->D-LW  pred=negative POS=0.386364 NEG=1.665000 NET=-1.278636 ✓
+
+H sentiment words:
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+  kötü | root= kötü | POS= 0.0 | NEG= 0.9
+
+H->D scopes:
+  güzel | target= Otel | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.45454545454545453, 0.0)
+  kötü | target= odalar | neg= [] | mod= [] | contrast= {'id': 3, 'word': 'fakat', 'lemma': 'fakat', 'anchor_id': 5} | active= True | ops= ['contrast_detected'] | adj= (0.0, 0.9)
+
+D->H dependency candidates:
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Otel | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= []
+  kötü | root= kötü | POS= ADJ | deprel= conj | strategy= predicate_with_target | target= odalar | lexicon= sentiment | scores= (0.0, 0.9) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= (None, 1.0) | contrast= ('fakat', 'pre_contrast', 0.85) | final_mult= 0.85 | final= (0.38636363636363635, 0.0) | ops= ['literature_contrast_weight:0.85']
+  kötü | active= True | dep= (0.0, 0.9) | modifier= (None, 1.0) | contrast= ('fakat', 'post_contrast', 1.85) | final_mult= 1.85 | final= (0.0, 1.665) | ops= ['contrast_detected', 'literature_contrast_weight:1.85']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 2
+LW contrast relations: {0: [{'marker_id': 3, 'marker': 'fakat', 'marker_deprel': 'cc', 'pre_head_id': 2, 'post_head_id': 5}]}
+
+========================================================================================================================
+CASE 25: Otel kötü ancak odalar güzel.
+Gold: positive
+Focus: ancak contrast + lexical marker suppression
+========================================================================================================================
+H        pred=negative POS=0.454545 NEG=0.962500 NET=-0.507955 ✗
+H->D     pred=negative POS=0.454545 NEG=0.962500 NET=-0.507955 ✗
+D->H     pred=negative POS=0.454545 NEG=0.900000 NET=-0.445455 ✗
+H->D-LW  pred=positive POS=0.840909 NEG=0.765000 NET=0.075909 ✓
+
+H sentiment words:
+  kötü | root= kötü | POS= 0.0 | NEG= 0.9
+  ancak | root= ancak | POS= 0.0 | NEG= 0.0625
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+
+H->D scopes:
+  kötü | target= Otel | neg= [] | mod= [] | contrast= {'id': 3, 'word': 'ancak', 'lemma': 'ancak', 'anchor_id': 5} | active= True | ops= ['contrast_detected'] | adj= (0.0, 0.9)
+  ancak | target= odalar | neg= [] | mod= [] | contrast= {'id': 3, 'word': 'ancak', 'lemma': 'ancak', 'anchor_id': 5} | active= True | ops= ['contrast_detected'] | adj= (0.0, 0.0625)
+  güzel | target= odalar | neg= [] | mod= [] | contrast= {'id': 3, 'word': 'ancak', 'lemma': 'ancak', 'anchor_id': 5} | active= True | ops= ['contrast_detected'] | adj= (0.45454545454545453, 0.0)
+
+D->H dependency candidates:
+  kötü | root= kötü | POS= ADJ | deprel= amod | strategy= direct_target_relation | target= Otel | lexicon= sentiment | scores= (0.0, 0.9) | neg= [] | mod= []
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= odalar | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+  kötü | active= True | dep= (0.0, 0.9) | modifier= (None, 1.0) | contrast= ('ancak', 'pre_contrast_resolver', 0.85) | final_mult= 0.85 | final= (0.0, 0.765) | ops= ['contrast_detected', 'literature_contrast_weight:0.85']
+  ancak | active= False | dep= (0.0, 0.0) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.0) | ops= ['contrast_detected', 'suppressed_as_contrast_marker']
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= (None, 1.0) | contrast= ('ancak', 'post_contrast_resolver', 1.85) | final_mult= 1.85 | final= (0.8409090909090909, 0.0) | ops= ['contrast_detected', 'literature_contrast_weight:1.85']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 1 | contrast_weighted= 2
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 26: Otel güzel ama odalar kötü değildi.
+Gold: positive
+Focus: contrast + negation; negation should stay in second clause
+========================================================================================================================
+H        pred=negative POS=0.454545 NEG=0.900000 NET=-0.445455 ✗
+H->D     pred=positive POS=1.354545 NEG=0.000000 NET=1.354545 ✓
+D->H     pred=positive POS=1.354545 NEG=0.000000 NET=1.354545 ✓
+H->D-LW  pred=positive POS=2.051364 NEG=0.000000 NET=2.051364 ✓
+
+H sentiment words:
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+  kötü | root= kötü | POS= 0.0 | NEG= 0.9
+
+H->D scopes:
+  güzel | target= Otel | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.45454545454545453, 0.0)
+  kötü | target= odalar | neg= ['değildi'] | mod= [] | contrast= {'id': 3, 'word': 'ama', 'lemma': 'ama', 'anchor_id': 4} | active= True | ops= ['negation_flip', 'contrast_detected'] | adj= (0.9, 0.0)
+
+D->H dependency candidates:
+  güzel | root= güzel | POS= ADJ | deprel= amod | strategy= direct_target_relation | target= Otel | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= []
+  kötü | root= kötü | POS= ADJ | deprel= amod | strategy= shared_head_fallback | target= odalar | lexicon= sentiment | scores= (0.0, 0.9) | neg= ['değildi'] | mod= []
+
+H->D-LW weighted scopes:
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= (None, 1.0) | contrast= ('ama', 'pre_contrast_fallback', 0.85) | final_mult= 0.85 | final= (0.38636363636363635, 0.0) | ops= ['literature_contrast_weight:0.85']
+  kötü | active= True | dep= (0.9, 0.0) | modifier= (None, 1.0) | contrast= ('ama', 'post_contrast_resolver', 1.85) | final_mult= 1.85 | final= (1.665, 0.0) | ops= ['negation_flip', 'contrast_detected', 'literature_contrast_weight:1.85']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 2
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 27: Otel kötü ama odalar güzel değildi.
+Gold: negative
+Focus: contrast + negation; negation should stay in second clause
+========================================================================================================================
+H        pred=negative POS=0.454545 NEG=0.900000 NET=-0.445455 ✓
+H->D     pred=negative POS=0.000000 NEG=1.354545 NET=-1.354545 ✓
+D->H     pred=negative POS=0.000000 NEG=1.354545 NET=-1.354545 ✓
+H->D-LW  pred=negative POS=0.000000 NEG=1.605909 NET=-1.605909 ✓
+
+H sentiment words:
+  kötü | root= kötü | POS= 0.0 | NEG= 0.9
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+
+H->D scopes:
+  kötü | target= Otel | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.0, 0.9)
+  güzel | target= odalar | neg= ['değildi'] | mod= [] | contrast= {'id': 3, 'word': 'ama', 'lemma': 'ama', 'anchor_id': 5} | active= True | ops= ['negation_flip', 'contrast_detected'] | adj= (0.0, 0.45454545454545453)
+
+D->H dependency candidates:
+  kötü | root= kötü | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Otel | lexicon= sentiment | scores= (0.0, 0.9) | neg= [] | mod= []
+  güzel | root= güzel | POS= ADJ | deprel= conj | strategy= predicate_with_target | target= odalar | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= ['değildi'] | mod= []
+
+H->D-LW weighted scopes:
+  kötü | active= True | dep= (0.0, 0.9) | modifier= (None, 1.0) | contrast= ('ama', 'pre_contrast', 0.85) | final_mult= 0.85 | final= (0.0, 0.765) | ops= ['literature_contrast_weight:0.85']
+  güzel | active= True | dep= (0.0, 0.45454545454545453) | modifier= (None, 1.0) | contrast= ('ama', 'post_contrast', 1.85) | final_mult= 1.85 | final= (0.0, 0.8409090909090909) | ops= ['negation_flip', 'contrast_detected', 'literature_contrast_weight:1.85']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 2
+LW contrast relations: {0: [{'marker_id': 3, 'marker': 'ama', 'marker_deprel': 'cc', 'pre_head_id': 2, 'post_head_id': 5}]}
+
+========================================================================================================================
+CASE 28: Ürün güzel ama pahalı fakat kaliteli.
+Gold: positive
+Focus: multiple contrast markers
+========================================================================================================================
+H        pred=positive POS=1.454545 NEG=0.250000 NET=1.204545 ✓
+H->D     pred=positive POS=1.454545 NEG=0.250000 NET=1.204545 ✓
+D->H     pred=positive POS=1.454545 NEG=0.250000 NET=1.204545 ✓
+H->D-LW  pred=positive POS=2.236364 NEG=0.212500 NET=2.023864 ✓
+
+H sentiment words:
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+  pahalı | root= pahalı | POS= 0.0 | NEG= 0.25
+  kaliteli | root= kaliteli | POS= 1.0 | NEG= 0.0
+
+H->D scopes:
+  güzel | target= Ürün | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.45454545454545453, 0.0)
+  pahalı | target= Ürün | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.0, 0.25)
+  kaliteli | target= Ürün | neg= [] | mod= [] | contrast= {'id': 3, 'word': 'ama', 'lemma': 'ama', 'anchor_id': 6} | active= True | ops= ['contrast_detected'] | adj= (1.0, 0.0)
+
+D->H dependency candidates:
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Ürün | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= []
+  pahalı | root= pahalı | POS= ADJ | deprel= conj | strategy= predicate_with_target | target= Ürün | lexicon= sentiment | scores= (0.0, 0.25) | neg= [] | mod= []
+  kaliteli | root= kaliteli | POS= ADJ | deprel= conj | strategy= predicate_with_target | target= Ürün | lexicon= sentiment | scores= (1.0, 0.0) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= (None, 1.0) | contrast= ('ama', 'pre_contrast', 0.85) | final_mult= 0.85 | final= (0.38636363636363635, 0.0) | ops= ['literature_contrast_weight:0.85']
+  pahalı | active= True | dep= (0.0, 0.25) | modifier= (None, 1.0) | contrast= ('ama', 'pre_contrast', 0.85) | final_mult= 0.85 | final= (0.0, 0.2125) | ops= ['literature_contrast_weight:0.85']
+  kaliteli | active= True | dep= (1.0, 0.0) | modifier= (None, 1.0) | contrast= ('fakat', 'post_contrast', 1.85) | final_mult= 1.85 | final= (1.85, 0.0) | ops= ['contrast_detected', 'literature_contrast_weight:1.85']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 3
+LW contrast relations: {0: [{'marker_id': 3, 'marker': 'ama', 'marker_deprel': 'cc', 'pre_head_id': 2, 'post_head_id': 6}, {'marker_id': 5, 'marker': 'fakat', 'marker_deprel': 'cc', 'pre_head_id': 2, 'post_head_id': 6}]}
+
+========================================================================================================================
+CASE 29: Film güzel. Oda kötü değil.
+Gold: positive
+Focus: multi-sentence positive + negated negative
+========================================================================================================================
+H        pred=negative POS=0.454545 NEG=0.900000 NET=-0.445455 ✗
+H->D     pred=positive POS=1.354545 NEG=0.000000 NET=1.354545 ✓
+D->H     pred=positive POS=1.354545 NEG=0.000000 NET=1.354545 ✓
+H->D-LW  pred=positive POS=1.354545 NEG=0.000000 NET=1.354545 ✓
+
+H sentiment words:
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+  kötü | root= kötü | POS= 0.0 | NEG= 0.9
+
+H->D scopes:
+  güzel | target= Film | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.45454545454545453, 0.0)
+  kötü | target= Oda | neg= ['değil'] | mod= [] | contrast= None | active= True | ops= ['negation_flip'] | adj= (0.9, 0.0)
+
+D->H dependency candidates:
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Film | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= []
+  kötü | root= kötü | POS= ADJ | deprel= obj | strategy= shared_head_fallback | target= Oda | lexicon= sentiment | scores= (0.0, 0.9) | neg= ['değil'] | mod= []
+
+H->D-LW weighted scopes:
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.45454545454545453, 0.0) | ops= []
+  kötü | active= True | dep= (0.9, 0.0) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.9, 0.0) | ops= ['negation_flip']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: [], 1: []}
+
+========================================================================================================================
+CASE 30: Film kötü. Oda güzel değil.
+Gold: negative
+Focus: multi-sentence negative + negated positive
+========================================================================================================================
+H        pred=negative POS=0.454545 NEG=0.900000 NET=-0.445455 ✓
+H->D     pred=negative POS=0.000000 NEG=1.354545 NET=-1.354545 ✓
+D->H     pred=negative POS=0.000000 NEG=1.354545 NET=-1.354545 ✓
+H->D-LW  pred=negative POS=0.000000 NEG=1.354545 NET=-1.354545 ✓
+
+H sentiment words:
+  kötü | root= kötü | POS= 0.0 | NEG= 0.9
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+
+H->D scopes:
+  kötü | target= Film | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.0, 0.9)
+  güzel | target= Oda | neg= ['değil'] | mod= [] | contrast= None | active= True | ops= ['negation_flip'] | adj= (0.0, 0.45454545454545453)
+
+D->H dependency candidates:
+  kötü | root= kötü | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Film | lexicon= sentiment | scores= (0.0, 0.9) | neg= [] | mod= []
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Oda | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= ['değil'] | mod= []
+
+H->D-LW weighted scopes:
+  kötü | active= True | dep= (0.0, 0.9) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.9) | ops= []
+  güzel | active= True | dep= (0.0, 0.45454545454545453) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.45454545454545453) | ops= ['negation_flip']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: [], 1: []}
+
+========================================================================================================================
+CASE 31: Otel İstanbul'da.
+Gold: neutral
+Focus: neutral entity/location control
+========================================================================================================================
+H        pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+H->D     pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+D->H     pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+H->D-LW  pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+
+H sentiment words:
+  []
+
+H->D scopes:
+
+D->H dependency candidates:
+
+H->D-LW weighted scopes:
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 32: Bu bir ürün.
+Gold: neutral
+Focus: neutral product statement
+========================================================================================================================
+H        pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+H->D     pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+D->H     pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+H->D-LW  pred=neutral  POS=0.000000 NEG=0.000000 NET=0.000000 ✓
+
+H sentiment words:
+  []
+
+H->D scopes:
+
+D->H dependency candidates:
+  ürün | root= ürün | POS= NOUN | deprel= root | strategy= predicate_candidate | target= None | lexicon= neutral_lexicon_entry | scores= (0.0, 0.0) | neg= [] | mod= []
+
+H->D-LW weighted scopes:
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 33: Film iyi ve güzel değildi.
+Gold: negative
+Focus: shared negation over coordinated positive predicates
+========================================================================================================================
+H        pred=positive POS=1.065657 NEG=0.000000 NET=1.065657 ✗
+H->D     pred=negative POS=0.000000 NEG=1.065657 NET=-1.065657 ✓
+D->H     pred=negative POS=0.000000 NEG=1.065657 NET=-1.065657 ✓
+H->D-LW  pred=negative POS=0.000000 NEG=1.065657 NET=-1.065657 ✓
+
+H sentiment words:
+  iyi | root= iyi | POS= 0.6111111111111112 | NEG= 0.0
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+
+H->D scopes:
+  iyi | target= Film | neg= ['değildi'] | mod= [] | contrast= None | active= True | ops= ['negation_flip'] | adj= (0.0, 0.6111111111111112)
+  güzel | target= None | neg= ['değildi'] | mod= [] | contrast= None | active= True | ops= ['negation_flip'] | adj= (0.0, 0.45454545454545453)
+
+D->H dependency candidates:
+  iyi | root= iyi | POS= ADJ | deprel= amod | strategy= shared_head_fallback | target= Film | lexicon= sentiment | scores= (0.6111111111111112, 0.0) | neg= ['değildi'] | mod= []
+  güzel | root= güzel | POS= ADJ | deprel= conj | strategy= predicate_candidate | target= None | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= ['değildi'] | mod= []
+
+H->D-LW weighted scopes:
+  iyi | active= True | dep= (0.0, 0.6111111111111112) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.6111111111111112) | ops= ['negation_flip']
+  güzel | active= True | dep= (0.0, 0.45454545454545453) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.45454545454545453) | ops= ['negation_flip']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 34: Film güzel ama iyi değildi.
+Gold: negative
+Focus: negation must not cross adversative contrast boundary
+========================================================================================================================
+H        pred=positive POS=1.065657 NEG=0.000000 NET=1.065657 ✗
+H->D     pred=negative POS=0.454545 NEG=0.611111 NET=-0.156566 ✓
+D->H     pred=negative POS=0.454545 NEG=0.611111 NET=-0.156566 ✓
+H->D-LW  pred=negative POS=0.386364 NEG=1.130556 NET=-0.744192 ✓
+
+H sentiment words:
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+  iyi | root= iyi | POS= 0.6111111111111112 | NEG= 0.0
+
+H->D scopes:
+  güzel | target= Film | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.45454545454545453, 0.0)
+  iyi | target= Film | neg= ['değildi'] | mod= [] | contrast= {'id': 3, 'word': 'ama', 'lemma': 'ama', 'anchor_id': 4} | active= True | ops= ['negation_flip', 'contrast_detected'] | adj= (0.0, 0.6111111111111112)
+
+D->H dependency candidates:
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Film | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= []
+  iyi | root= iyi | POS= ADJ | deprel= conj | strategy= predicate_with_target | target= Film | lexicon= sentiment | scores= (0.6111111111111112, 0.0) | neg= ['değildi'] | mod= []
+
+H->D-LW weighted scopes:
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= (None, 1.0) | contrast= ('ama', 'pre_contrast', 0.85) | final_mult= 0.85 | final= (0.38636363636363635, 0.0) | ops= ['literature_contrast_weight:0.85']
+  iyi | active= True | dep= (0.0, 0.6111111111111112) | modifier= (None, 1.0) | contrast= ('ama', 'post_contrast', 1.85) | final_mult= 1.85 | final= (0.0, 1.1305555555555558) | ops= ['negation_flip', 'contrast_detected', 'literature_contrast_weight:1.85']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 2
+LW contrast relations: {0: [{'marker_id': 3, 'marker': 'ama', 'marker_deprel': 'cc', 'pre_head_id': 2, 'post_head_id': 4}]}
+
+========================================================================================================================
+CASE 35: Otel güzel ve harika değildi.
+Gold: negative
+Focus: shared explicit negation over coordination
+========================================================================================================================
+H        pred=positive POS=1.454545 NEG=0.000000 NET=1.454545 ✗
+H->D     pred=negative POS=0.000000 NEG=1.454545 NET=-1.454545 ✓
+D->H     pred=negative POS=0.000000 NEG=1.454545 NET=-1.454545 ✓
+H->D-LW  pred=negative POS=0.000000 NEG=1.454545 NET=-1.454545 ✓
+
+H sentiment words:
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+  harika | root= harika | POS= 1.0 | NEG= 0.0
+
+H->D scopes:
+  güzel | target= Otel | neg= ['değildi'] | mod= [] | contrast= None | active= True | ops= ['negation_flip'] | adj= (0.0, 0.45454545454545453)
+  harika | target= None | neg= ['değildi'] | mod= [] | contrast= None | active= True | ops= ['negation_flip'] | adj= (0.0, 1.0)
+
+D->H dependency candidates:
+  güzel | root= güzel | POS= ADJ | deprel= amod | strategy= shared_head_fallback | target= Otel | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= ['değildi'] | mod= []
+  harika | root= harika | POS= ADJ | deprel= conj | strategy= predicate_candidate | target= None | lexicon= sentiment | scores= (1.0, 0.0) | neg= ['değildi'] | mod= []
+
+H->D-LW weighted scopes:
+  güzel | active= True | dep= (0.0, 0.45454545454545453) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.45454545454545453) | ops= ['negation_flip']
+  harika | active= True | dep= (0.0, 1.0) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 1.0) | ops= ['negation_flip']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 0
+LW contrast relations: {0: []}
+
+========================================================================================================================
+CASE 36: Otel güzel fakat harika değildi.
+Gold: negative
+Focus: explicit negation restricted to post-contrast predicate
+========================================================================================================================
+H        pred=positive POS=1.454545 NEG=0.000000 NET=1.454545 ✗
+H->D     pred=negative POS=0.454545 NEG=1.000000 NET=-0.545455 ✓
+D->H     pred=negative POS=0.454545 NEG=1.000000 NET=-0.545455 ✓
+H->D-LW  pred=negative POS=0.386364 NEG=1.850000 NET=-1.463636 ✓
+
+H sentiment words:
+  güzel | root= güzel | POS= 0.45454545454545453 | NEG= 0.0
+  harika | root= harika | POS= 1.0 | NEG= 0.0
+
+H->D scopes:
+  güzel | target= Otel | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.45454545454545453, 0.0)
+  harika | target= Otel | neg= ['değildi'] | mod= [] | contrast= {'id': 3, 'word': 'fakat', 'lemma': 'fakat', 'anchor_id': 4} | active= True | ops= ['negation_flip', 'contrast_detected'] | adj= (0.0, 1.0)
+
+D->H dependency candidates:
+  güzel | root= güzel | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Otel | lexicon= sentiment | scores= (0.45454545454545453, 0.0) | neg= [] | mod= []
+  harika | root= harika | POS= ADJ | deprel= conj | strategy= predicate_with_target | target= Otel | lexicon= sentiment | scores= (1.0, 0.0) | neg= ['değildi'] | mod= []
+
+H->D-LW weighted scopes:
+  güzel | active= True | dep= (0.45454545454545453, 0.0) | modifier= (None, 1.0) | contrast= ('fakat', 'pre_contrast', 0.85) | final_mult= 0.85 | final= (0.38636363636363635, 0.0) | ops= ['literature_contrast_weight:0.85']
+  harika | active= True | dep= (0.0, 1.0) | modifier= (None, 1.0) | contrast= ('fakat', 'post_contrast', 1.85) | final_mult= 1.85 | final= (0.0, 1.85) | ops= ['negation_flip', 'contrast_detected', 'literature_contrast_weight:1.85']
+LW counts: modifier_weighted= 0 | modifier_components_suppressed= 0 | contrast_markers_suppressed= 0 | contrast_weighted= 2
+LW contrast relations: {0: [{'marker_id': 3, 'marker': 'fakat', 'marker_deprel': 'cc', 'pre_head_id': 2, 'post_head_id': 4}]}
+
+========================================================================================================================
+SANITY-LABEL SUMMARY
+========================================================================================================================
+H        22/36 (0.611)
+H->D     34/36 (0.944)
+D->H     34/36 (0.944)
+H->D-LW  36/36 (1.000)
+
+========================================================================================================================
+WARNING SUMMARY
+========================================================================================================================
+EXPECTED_LABEL_MISMATCH: 18
+LW_EXPECTED_MODIFIER_NOT_WEIGHTED: 1
+LW_DUPLICATE_CONTRAST_PAIR: 1
+
+DETAILED WARNINGS
+------------------------------------------------------------------------------------------------------------------------
+Case 09 [H] EXPECTED_LABEL_MISMATCH -> H predicted positive; sanity label is negative.
+Case 10 [H] EXPECTED_LABEL_MISMATCH -> H predicted positive; sanity label is negative.
+Case 11 [H] EXPECTED_LABEL_MISMATCH -> H predicted negative; sanity label is positive.
+Case 12 [H] EXPECTED_LABEL_MISMATCH -> H predicted positive; sanity label is negative.
+Case 13 [H] EXPECTED_LABEL_MISMATCH -> H predicted negative; sanity label is positive.
+Case 14 [H] EXPECTED_LABEL_MISMATCH -> H predicted negative; sanity label is positive.
+Case 19 [H->D-LW] LW_EXPECTED_MODIFIER_NOT_WEIGHTED -> This stress case expected a literature modifier, but no scope was weighted.
+Case 23 [H] EXPECTED_LABEL_MISMATCH -> H predicted negative; sanity label is positive.
+Case 23 [H->D] EXPECTED_LABEL_MISMATCH -> H->D predicted negative; sanity label is positive.
+Case 23 [D->H] EXPECTED_LABEL_MISMATCH -> D->H predicted negative; sanity label is positive.
+Case 25 [H] EXPECTED_LABEL_MISMATCH -> H predicted negative; sanity label is positive.
+Case 25 [H->D] EXPECTED_LABEL_MISMATCH -> H->D predicted negative; sanity label is positive.
+Case 25 [D->H] EXPECTED_LABEL_MISMATCH -> D->H predicted negative; sanity label is positive.
+Case 26 [H] EXPECTED_LABEL_MISMATCH -> H predicted negative; sanity label is positive.
+Case 28 [H->D-LW] LW_DUPLICATE_CONTRAST_PAIR -> Multiple contrast markers were reconstructed as the same pre/post dependency pair: [{'sentence_index': 0, 'pair': (2, 6), 'markers': ['ama', 'fakat']}]
+Case 29 [H] EXPECTED_LABEL_MISMATCH -> H predicted negative; sanity label is positive.
+Case 33 [H] EXPECTED_LABEL_MISMATCH -> H predicted positive; sanity label is negative.
+Case 34 [H] EXPECTED_LABEL_MISMATCH -> H predicted positive; sanity label is negative.
+Case 35 [H] EXPECTED_LABEL_MISMATCH -> H predicted positive; sanity label is negative.
+Case 36 [H] EXPECTED_LABEL_MISMATCH -> H predicted positive; sanity label is negative.
+
+========================================================================================================================
+OUTPUT FILES
+========================================================================================================================
+Console report: results\four_classical_diagnostic\console_report.txt
+Predictions: results\four_classical_diagnostic\predictions.csv
+Warnings: results\four_classical_diagnostic\warnings.csv
+Full details: results\four_classical_diagnostic\details.json

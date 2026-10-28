@@ -64,8 +64,6 @@ class SentimentScopeResolver:
         "INTJ"
     }
 
-    # Relations that can reasonably represent an
-    # independent predicate/opinion expression.
     OPINION_PREDICATE_RELATIONS = {
         "root",
         "conj",
@@ -75,13 +73,6 @@ class SentimentScopeResolver:
         "acl:relcl"
     }
 
-    # Relations that usually represent grammatical,
-    # supporting or modifying material rather than an
-    # independent opinion expression.
-    #
-    # These tokens can still be USED by dependency scope
-    # resolution, but they are not sent to HisNet as
-    # independent opinion candidates.
     OPINION_EXCLUDED_RELATIONS = {
         "aux",
         "aux:pass",
@@ -131,16 +122,6 @@ class SentimentScopeResolver:
 
     @staticmethod
     def _has_morphological_negation(token):
-        """
-        Returns True only when the token itself carries
-        Turkish grammatical/morphological negation.
-
-        Example:
-            sevmedim
-            etmiyorum
-            değildi
-        """
-
         if token is None:
             return False
 
@@ -152,18 +133,6 @@ class SentimentScopeResolver:
         )
 
     def _is_explicit_degil(self, token):
-        """
-        Detects explicit Turkish copular negation based on 'değil'.
-
-        Stanza normally lemmatizes forms such as:
-            değildi
-            değildir
-            değilmiş
-            değilim
-
-        to 'değil', but surface-form fallback is retained.
-        """
-
         if token is None:
             return False
 
@@ -184,10 +153,6 @@ class SentimentScopeResolver:
 
     @staticmethod
     def _build_indexes(tokens):
-        """
-        Creates token lookup and parent -> children mapping.
-        """
-
         token_by_id = {}
         children = {}
 
@@ -212,6 +177,122 @@ class SentimentScopeResolver:
             and token.get("upos") in self.ENTITY_POS
         )
 
+    # =========================================================
+    # ALIGNMENT HELPERS
+    # =========================================================
+
+    @classmethod
+    def _normalize_alignment_piece(
+        cls,
+        text
+    ):
+        """
+        Normalization used ONLY for fallback alignment.
+
+        Examples:
+
+            ..yumuşak  -> yumuşak
+            temizlik👍 -> temizlik
+
+        Normal exact alignment is always attempted before this.
+        """
+
+        value = cls._turkish_lower(
+            text
+        )
+
+        start = 0
+        end = len(value)
+
+        while (
+            start < end
+            and not value[start].isalnum()
+        ):
+            start += 1
+
+        while (
+            end > start
+            and not value[end - 1].isalnum()
+        ):
+            end -= 1
+
+        return value[start:end]
+
+    @classmethod
+    def _fragment_anchor_token(
+        cls,
+        fragment_tokens
+    ):
+        """
+        Selects the dependency-bearing token from a reconstructed
+        fragmented word.
+
+        Examples:
+
+            özen + li
+            hesap + lı
+            harik + a
+
+        Usually the first/content token should remain the dependency
+        anchor rather than the suffix-like ADP token.
+        """
+
+        fragment_ids = {
+            int(token["id"])
+            for token in fragment_tokens
+        }
+
+        pos_priority = {
+            "ADJ": 6,
+            "VERB": 6,
+            "NOUN": 5,
+            "ADV": 5,
+            "INTJ": 4,
+            "PROPN": 4,
+            "PRON": 3,
+            "NUM": 2,
+            "DET": 1,
+            "ADP": 0,
+            "AUX": 0,
+            "CCONJ": 0,
+            "SCONJ": 0,
+            "PART": 0,
+            "PUNCT": -1
+        }
+
+        def ranking(token):
+            head = token.get("head")
+
+            try:
+                head = int(
+                    head or 0
+                )
+            except (
+                TypeError,
+                ValueError
+            ):
+                head = 0
+
+            outside_head = (
+                1
+                if head not in fragment_ids
+                else 0
+            )
+
+            return (
+                pos_priority.get(
+                    token.get("upos"),
+                    0
+                ),
+                outside_head,
+                -int(token["id"])
+            )
+
+        return max(
+            fragment_tokens,
+            key=ranking
+        )
+
     def _match_sentiment_token(
         self,
         sentiment_word,
@@ -221,8 +302,16 @@ class SentimentScopeResolver:
         """
         Aligns a HisNet sentiment word with a Stanza token.
 
-        Morphological analyzer and Stanza may produce slightly
-        different lemmas, so surface form receives highest priority.
+        Priority:
+
+            1. exact surface
+            2. token surface == morphology root
+            3. Stanza lemma == morphology root
+            4. edge-noise fallback
+            5. adjacent fragment reconstruction
+
+        Fragment/fuzzy fallback is used ONLY when ordinary alignment
+        completely fails.
         """
 
         surface = self._turkish_lower(
@@ -233,11 +322,17 @@ class SentimentScopeResolver:
             sentiment_word["root"]
         )
 
+        # =====================================================
+        # 1-3. NORMAL ALIGNMENT
+        # =====================================================
+
         candidates = []
 
         for token in tokens:
 
-            token_id = token["id"]
+            token_id = int(
+                token["id"]
+            )
 
             if token_id in used_token_ids:
                 continue
@@ -251,55 +346,437 @@ class SentimentScopeResolver:
             )
 
             score = 0
+            strategy = None
 
-            # Exact surface-form match.
             if token_text == surface:
+
                 score = 100
+                strategy = "exact_surface"
 
-            # Token itself equals the morphological root.
             elif token_text == root:
+
                 score = 90
-
-            # Stanza lemma equals morphological root.
-            elif token_lemma == root:
-                score = 80
-
-            if score > 0:
-                candidates.append(
-                    (score, token)
+                strategy = (
+                    "token_surface_equals_root"
                 )
 
-        if not candidates:
+            elif token_lemma == root:
+
+                score = 80
+                strategy = (
+                    "stanza_lemma_equals_root"
+                )
+
+            if score > 0:
+
+                candidates.append(
+                    (
+                        score,
+                        token_id,
+                        strategy,
+                        token
+                    )
+                )
+
+        if candidates:
+
+            candidates.sort(
+                key=lambda item: (
+                    -item[0],
+                    item[1]
+                )
+            )
+
+            (
+                _,
+                _,
+                strategy,
+                best_token
+            ) = candidates[0]
+
+            used_token_ids.add(
+                int(best_token["id"])
+            )
+
+            matched_token = dict(
+                best_token
+            )
+
+            matched_token[
+                "_alignment_strategy"
+            ] = strategy
+
+            matched_token[
+                "_fragment_token_ids"
+            ] = [
+                int(best_token["id"])
+            ]
+
+            return matched_token
+
+        # =====================================================
+        # 4. EDGE-NOISE FALLBACK
+        # =====================================================
+
+        decorated_candidates = []
+
+        for token in tokens:
+
+            token_id = int(
+                token["id"]
+            )
+
+            if token_id in used_token_ids:
+                continue
+
+            raw_text = self._turkish_lower(
+                token.get("text")
+            )
+
+            clean_text = (
+                self._normalize_alignment_piece(
+                    raw_text
+                )
+            )
+
+            score = 0
+            strategy = None
+
+            if clean_text == surface:
+
+                score = 75
+                strategy = (
+                    "edge_noise_surface"
+                )
+
+            elif clean_text == root:
+
+                score = 72
+                strategy = (
+                    "edge_noise_root"
+                )
+
+            elif (
+                surface
+                and raw_text.startswith(
+                    surface
+                )
+                and len(raw_text)
+                > len(surface)
+                and not raw_text[
+                    len(surface)
+                ].isalnum()
+            ):
+
+                score = 70
+                strategy = (
+                    "decorated_surface_prefix"
+                )
+
+            elif (
+                surface
+                and raw_text.endswith(
+                    surface
+                )
+                and len(raw_text)
+                > len(surface)
+                and not raw_text[
+                    -len(surface) - 1
+                ].isalnum()
+            ):
+
+                score = 70
+                strategy = (
+                    "decorated_surface_suffix"
+                )
+
+            elif (
+                root
+                and raw_text.startswith(
+                    root
+                )
+                and len(raw_text)
+                > len(root)
+                and not raw_text[
+                    len(root)
+                ].isalnum()
+            ):
+
+                score = 68
+                strategy = (
+                    "decorated_root_prefix"
+                )
+
+            elif (
+                root
+                and raw_text.endswith(
+                    root
+                )
+                and len(raw_text)
+                > len(root)
+                and not raw_text[
+                    -len(root) - 1
+                ].isalnum()
+            ):
+
+                score = 68
+                strategy = (
+                    "decorated_root_suffix"
+                )
+
+            if score > 0:
+
+                decorated_candidates.append(
+                    (
+                        score,
+                        token_id,
+                        strategy,
+                        token
+                    )
+                )
+
+        if decorated_candidates:
+
+            decorated_candidates.sort(
+                key=lambda item: (
+                    -item[0],
+                    item[1]
+                )
+            )
+
+            (
+                _,
+                _,
+                strategy,
+                best_token
+            ) = decorated_candidates[0]
+
+            used_token_ids.add(
+                int(best_token["id"])
+            )
+
+            matched_token = dict(
+                best_token
+            )
+
+            matched_token[
+                "_alignment_strategy"
+            ] = strategy
+
+            matched_token[
+                "_fragment_token_ids"
+            ] = [
+                int(best_token["id"])
+            ]
+
+            return matched_token
+
+        # =====================================================
+        # 5. ADJACENT TOKEN FRAGMENT RECONSTRUCTION
+        # =====================================================
+
+        ordered_tokens = sorted(
+            tokens,
+            key=lambda token: int(
+                token["id"]
+            )
+        )
+
+        fragment_candidates = []
+
+        for group_size in (
+            2,
+            3
+        ):
+
+            for start in range(
+                0,
+                len(ordered_tokens)
+                - group_size
+                + 1
+            ):
+
+                group = ordered_tokens[
+                    start:
+                    start + group_size
+                ]
+
+                group_ids = [
+                    int(token["id"])
+                    for token in group
+                ]
+
+                if any(
+                    token_id
+                    in used_token_ids
+                    for token_id
+                    in group_ids
+                ):
+                    continue
+
+                # Must be consecutive tokens.
+                if any(
+                    right != left + 1
+                    for left, right
+                    in zip(
+                        group_ids,
+                        group_ids[1:]
+                    )
+                ):
+                    continue
+
+                # Never combine tokens from two sentences.
+                sentence_indexes = {
+                    token.get(
+                        "sentence_index"
+                    )
+                    for token in group
+                    if token.get(
+                        "sentence_index"
+                    ) is not None
+                }
+
+                if (
+                    len(
+                        sentence_indexes
+                    )
+                    > 1
+                ):
+                    continue
+
+                pieces = [
+                    self._normalize_alignment_piece(
+                        token.get("text")
+                    )
+                    for token
+                    in group
+                ]
+
+                if any(
+                    not piece
+                    for piece in pieces
+                ):
+                    continue
+
+                reconstructed = "".join(
+                    pieces
+                )
+
+                score = 0
+                strategy = None
+
+                if (
+                    reconstructed
+                    == surface
+                ):
+
+                    score = (
+                        66
+                        if group_size == 2
+                        else 64
+                    )
+
+                    strategy = (
+                        f"fragmented_surface_"
+                        f"{group_size}"
+                    )
+
+                elif (
+                    reconstructed
+                    == root
+                ):
+
+                    score = (
+                        62
+                        if group_size == 2
+                        else 60
+                    )
+
+                    strategy = (
+                        f"fragmented_root_"
+                        f"{group_size}"
+                    )
+
+                if score == 0:
+                    continue
+
+                anchor = (
+                    self._fragment_anchor_token(
+                        group
+                    )
+                )
+
+                fragment_candidates.append(
+                    (
+                        score,
+                        group_ids[0],
+                        strategy,
+                        group,
+                        anchor,
+                        reconstructed
+                    )
+                )
+
+        if not fragment_candidates:
             return None
 
-        candidates.sort(
-            key=lambda item: item[0],
-            reverse=True
+        fragment_candidates.sort(
+            key=lambda item: (
+                -item[0],
+                item[1]
+            )
         )
 
-        best_token = candidates[0][1]
+        (
+            _,
+            _,
+            strategy,
+            best_group,
+            best_anchor,
+            reconstructed
+        ) = fragment_candidates[0]
 
-        used_token_ids.add(
-            best_token["id"]
+        fragment_ids = [
+            int(token["id"])
+            for token
+            in best_group
+        ]
+
+        used_token_ids.update(
+            fragment_ids
         )
 
-        return best_token
+        matched_token = dict(
+            best_anchor
+        )
+
+        matched_token[
+            "_alignment_strategy"
+        ] = strategy
+
+        matched_token[
+            "_fragment_token_ids"
+        ] = fragment_ids
+
+        matched_token[
+            "_reconstructed_surface"
+        ] = reconstructed
+
+        return matched_token
+
+    # =========================================================
+    # TARGET RESOLUTION
+    # =========================================================
 
     def _find_direct_subject(
         self,
         sentiment_token,
         children
     ):
-        """
-        Example:
 
-            Film güzel.
-            Film --nsubj--> güzel
-
-        Returns Film.
-        """
-
-        token_id = sentiment_token["id"]
+        token_id = sentiment_token[
+            "id"
+        ]
 
         for child in children.get(
             token_id,
@@ -309,7 +786,9 @@ class SentimentScopeResolver:
             if (
                 child.get("deprel")
                 in self.SUBJECT_RELATIONS
-                and self._is_entity_candidate(child)
+                and self._is_entity_candidate(
+                    child
+                )
             ):
                 return child
 
@@ -320,18 +799,11 @@ class SentimentScopeResolver:
         sentiment_token,
         token_by_id
     ):
-        """
-        Example:
-
-            güzel otel
-
-            güzel --amod--> otel
-
-        The head noun is the target.
-        """
 
         if (
-            sentiment_token.get("deprel")
+            sentiment_token.get(
+                "deprel"
+            )
             != "amod"
         ):
             return None
@@ -344,7 +816,9 @@ class SentimentScopeResolver:
             head_id
         )
 
-        if self._is_entity_candidate(head):
+        if self._is_entity_candidate(
+            head
+        ):
             return head
 
         return None
@@ -354,17 +828,10 @@ class SentimentScopeResolver:
         sentiment_token,
         children
     ):
-        """
-        Useful especially for sentiment-bearing verbs/nouns.
 
-        Example:
-
-            ürünü tavsiye ettim
-
-        The object can be the sentiment target.
-        """
-
-        token_id = sentiment_token["id"]
+        token_id = sentiment_token[
+            "id"
+        ]
 
         for child in children.get(
             token_id,
@@ -374,7 +841,9 @@ class SentimentScopeResolver:
             if (
                 child.get("deprel")
                 in self.OBJECT_RELATIONS
-                and self._is_entity_candidate(child)
+                and self._is_entity_candidate(
+                    child
+                )
             ):
                 return child
 
@@ -386,18 +855,6 @@ class SentimentScopeResolver:
         token_by_id,
         children
     ):
-        """
-        Handles parser structures such as:
-
-            Otel kötü değildi.
-
-        where Stanza may produce something similar to:
-
-            kötü  -> değildi
-            Otel  -> değildi
-
-        Sentiment word and target become siblings.
-        """
 
         head_id = sentiment_token.get(
             "head"
@@ -406,7 +863,10 @@ class SentimentScopeResolver:
         if not head_id:
             return None
 
-        if head_id not in token_by_id:
+        if (
+            head_id
+            not in token_by_id
+        ):
             return None
 
         for sibling in children.get(
@@ -414,13 +874,19 @@ class SentimentScopeResolver:
             []
         ):
 
-            if sibling["id"] == sentiment_token["id"]:
+            if (
+                sibling["id"]
+                ==
+                sentiment_token["id"]
+            ):
                 continue
 
             if (
                 sibling.get("deprel")
                 in self.SUBJECT_RELATIONS
-                and self._is_entity_candidate(sibling)
+                and self._is_entity_candidate(
+                    sibling
+                )
             ):
                 return sibling
 
@@ -432,9 +898,6 @@ class SentimentScopeResolver:
         token_by_id,
         children
     ):
-        """
-        Fallback for light-verb / auxiliary structures.
-        """
 
         head_id = sentiment_token.get(
             "head"
@@ -443,7 +906,10 @@ class SentimentScopeResolver:
         if not head_id:
             return None
 
-        if head_id not in token_by_id:
+        if (
+            head_id
+            not in token_by_id
+        ):
             return None
 
         for sibling in children.get(
@@ -451,13 +917,19 @@ class SentimentScopeResolver:
             []
         ):
 
-            if sibling["id"] == sentiment_token["id"]:
+            if (
+                sibling["id"]
+                ==
+                sentiment_token["id"]
+            ):
                 continue
 
             if (
                 sibling.get("deprel")
                 in self.OBJECT_RELATIONS
-                and self._is_entity_candidate(sibling)
+                and self._is_entity_candidate(
+                    sibling
+                )
             ):
                 return sibling
 
@@ -469,101 +941,96 @@ class SentimentScopeResolver:
         token_by_id,
         children
     ):
-        """
-        Finds the entity affected by the sentiment expression.
 
-        The order is intentionally conservative.
-        """
-
-        # -------------------------------------------------
-        # 1. Adjectival modifier:
-        #
-        #    güzel otel
-        # -------------------------------------------------
-
-        target = self._find_modified_noun(
-            sentiment_token,
-            token_by_id
+        target = (
+            self._find_modified_noun(
+                sentiment_token,
+                token_by_id
+            )
         )
 
         if target is not None:
-            return target, "modified_head"
 
-        # -------------------------------------------------
-        # 2. Predicate subject:
-        #
-        #    Otel güzel.
-        # -------------------------------------------------
+            return (
+                target,
+                "modified_head"
+            )
 
-        target = self._find_direct_subject(
-            sentiment_token,
-            children
+        target = (
+            self._find_direct_subject(
+                sentiment_token,
+                children
+            )
         )
 
         if target is not None:
-            return target, "direct_subject"
 
-        # -------------------------------------------------
-        # 3. Object of sentiment expression:
-        #
-        #    Ürünü tavsiye ettim.
-        # -------------------------------------------------
+            return (
+                target,
+                "direct_subject"
+            )
 
-        target = self._find_direct_object(
-            sentiment_token,
-            children
+        target = (
+            self._find_direct_object(
+                sentiment_token,
+                children
+            )
         )
 
         if target is not None:
-            return target, "direct_object"
 
-        # -------------------------------------------------
-        # 4. Subject attached to common parent.
-        #
-        #    Otel kötü değildi.
-        # -------------------------------------------------
+            return (
+                target,
+                "direct_object"
+            )
 
-        target = self._find_subject_via_head(
-            sentiment_token,
-            token_by_id,
-            children
+        target = (
+            self._find_subject_via_head(
+                sentiment_token,
+                token_by_id,
+                children
+            )
         )
 
         if target is not None:
-            return target, "head_subject"
 
-        # -------------------------------------------------
-        # 5. Object attached to common parent.
-        # -------------------------------------------------
+            return (
+                target,
+                "head_subject"
+            )
 
-        target = self._find_object_via_head(
-            sentiment_token,
-            token_by_id,
-            children
+        target = (
+            self._find_object_via_head(
+                sentiment_token,
+                token_by_id,
+                children
+            )
         )
 
         if target is not None:
-            return target, "head_object"
+
+            return (
+                target,
+                "head_object"
+            )
 
         return None, None
+
+    # =========================================================
+    # MODIFIER RESOLUTION
+    # =========================================================
 
     def _find_modifiers(
         self,
         sentiment_token,
         children
     ):
-        """
-        Finds modifiers directly affecting the sentiment token.
-
-        Examples:
-            çok güzel
-            biraz kötü
-            oldukça iyi
-        """
 
         modifiers = []
 
-        token_id = sentiment_token["id"]
+        token_id = sentiment_token[
+            "id"
+        ]
 
         for child in children.get(
             token_id,
@@ -573,52 +1040,67 @@ class SentimentScopeResolver:
             if (
                 child.get("deprel")
                 in self.MODIFIER_RELATIONS
-                and not self._is_negation(child)
+                and not self._is_negation(
+                    child
+                )
             ):
 
                 modifiers.append({
-                    "id": child["id"],
-                    "word": child.get("text"),
-                    "lemma": child.get("lemma"),
-                    "deprel": child.get("deprel")
+                    "id":
+                        child["id"],
+
+                    "word":
+                        child.get(
+                            "text"
+                        ),
+
+                    "lemma":
+                        child.get(
+                            "lemma"
+                        ),
+
+                    "deprel":
+                        child.get(
+                            "deprel"
+                        )
                 })
 
         return modifiers
 
+    # =========================================================
+    # NEGATION RESOLUTION
+    # =========================================================
+
     def _find_negations(
-            self,
-            sentiment_token,
-            token_by_id,
-            children
+        self,
+        sentiment_token,
+        token_by_id,
+        children
     ):
         """
-        Finds grammatical negation that can be conservatively
-        considered to affect this sentiment expression.
+        Finds syntactically licensed negation.
 
         IMPORTANT
         ---------
-        Morphological Polarity=Neg does NOT automatically mean
-        that every syntactically related sentiment word should
-        have its sentiment polarity reversed.
 
-        The resolver therefore accepts only:
+        Self morphological negation no longer causes a score swap.
 
-        1. Negation morphologically encoded on the sentiment
-           expression itself.
+        Therefore:
 
-               sevmedim
+            göremedim
+            yaramıyor
+            almayın
+            alamadım
 
-        2. Explicit / structurally licensed negation child.
+        do NOT become positive merely because Stanza marks the token
+        itself with Polarity=Neg.
 
-               güzel <- değildi
-               tavsiye <- etmiyorum
+        Still retained:
 
-        3. A negated parent only in highly restricted structures:
-
-               a) explicit 'değil'
-               b) reverse light-verb construction
-
-        Arbitrary negated parents are deliberately ignored.
+            güzel değil
+            tavsiye etmem
+            pişman olmadım
+            rahatsız etmedi
         """
 
         negations = []
@@ -630,76 +1112,32 @@ class SentimentScopeResolver:
             ]
         )
 
-        # =====================================================
-        # CASE 1
-        #
-        # The sentiment-bearing token itself is morphologically
-        # negated.
-        #
-        # Example:
-        #
-        #   sevmedim
-        #
-        # root = sev
-        # Polarity=Neg
-        #
-        # Since the lexical sentiment expression itself carries
-        # negation, flipping is justified.
-        # =====================================================
-
-        if self._has_morphological_negation(
-                sentiment_token
-        ):
-            negations.append(
-                sentiment_token
-            )
-
-            seen.add(
-                sentiment_id
-            )
+        # -----------------------------------------------------
+        # DO NOT ADD sentiment_token itself merely because
+        # Polarity=Neg exists on the same token.
+        # -----------------------------------------------------
 
         # =====================================================
-        # CASE 2
-        #
-        # Direct child negation.
-        #
-        # We DO NOT accept an arbitrary Polarity=Neg child.
-        #
-        # Accepted structures:
-        #
-        #   explicit değil
-        #   UD neg relation
-        #   negated copula
-        #   negated auxiliary
-        #   negated light verb
-        #
-        # Examples:
-        #
-        #   güzel <- değildi
-        #
-        #   tavsiye <- etmiyorum
-        #              compound:lvc
+        # DIRECT CHILD NEGATION
         # =====================================================
 
         for child in children.get(
-                sentiment_id,
-                []
+            sentiment_id,
+            []
         ):
 
-            child_id = (
-                child[
-                    "id"
-                ]
-            )
+            child_id = child[
+                "id"
+            ]
 
             if child_id in seen:
                 continue
 
             deprel = (
-                    child.get(
-                        "deprel"
-                    )
-                    or ""
+                child.get(
+                    "deprel"
+                )
+                or ""
             )
 
             is_explicit_degil = (
@@ -709,23 +1147,24 @@ class SentimentScopeResolver:
             )
 
             is_ud_negation = (
-                    deprel
-                    == "neg"
+                deprel
+                == "neg"
             )
 
             is_supported_morphological_negation = (
-                    self._has_morphological_negation(
-                        child
-                    )
-                    and deprel
-                    in self.NEGATION_SUPPORT_RELATIONS
+                self._has_morphological_negation(
+                    child
+                )
+                and deprel
+                in self.NEGATION_SUPPORT_RELATIONS
             )
 
             if (
-                    is_explicit_degil
-                    or is_ud_negation
-                    or is_supported_morphological_negation
+                is_explicit_degil
+                or is_ud_negation
+                or is_supported_morphological_negation
             ):
+
                 negations.append(
                     child
                 )
@@ -735,42 +1174,11 @@ class SentimentScopeResolver:
                 )
 
         # =====================================================
-        # CASE 3
-        #
-        # Negated syntactic parent.
-        #
-        # OLD BEHAVIOUR:
-        #
-        #   any parent with Polarity=Neg
-        #       -> sentiment flip
-        #
-        # This is too broad.
-        #
-        # NEW BEHAVIOUR:
-        #
-        # Only accept:
-        #
-        #   A) explicit 'değil'
-        #
-        #      kötü -> değildi
-        #
-        #      This preserves known Stanza structures where the
-        #      copular negation becomes the parent/root.
-        #
-        #   B) reverse light-verb relation
-        #
-        #      tavsiye -> etme
-        #
-        #      if Stanza attaches the nominal sentiment component
-        #      underneath a morphologically negated light verb.
-        #
-        # Arbitrary negated verbal parents are NOT accepted.
+        # NEGATED PARENT
         # =====================================================
 
-        head_id = (
-            sentiment_token.get(
-                "head"
-            )
+        head_id = sentiment_token.get(
+            "head"
         )
 
         head = token_by_id.get(
@@ -778,16 +1186,16 @@ class SentimentScopeResolver:
         )
 
         if (
-                head is not None
-                and head["id"]
-                not in seen
+            head is not None
+            and head["id"]
+            not in seen
         ):
 
             sentiment_relation = (
-                    sentiment_token.get(
-                        "deprel"
-                    )
-                    or ""
+                sentiment_token.get(
+                    "deprel"
+                )
+                or ""
             )
 
             explicit_degil_parent = (
@@ -797,38 +1205,32 @@ class SentimentScopeResolver:
             )
 
             reverse_light_verb_negation = (
-                    sentiment_relation
-                    in self.PARENT_NEGATION_RELATIONS
-
-                    and self._has_morphological_negation(
-                head
-            )
+                sentiment_relation
+                in self.PARENT_NEGATION_RELATIONS
+                and
+                self._has_morphological_negation(
+                    head
+                )
             )
 
             if (
-                    explicit_degil_parent
-                    or reverse_light_verb_negation
+                explicit_degil_parent
+                or
+                reverse_light_verb_negation
             ):
+
                 negations.append(
                     head
                 )
 
                 seen.add(
-                    head[
-                        "id"
-                    ]
+                    head["id"]
                 )
-
-        # =====================================================
-        # SERIALIZE
-        # =====================================================
 
         return [
             {
                 "id":
-                    token[
-                        "id"
-                    ],
+                    token["id"],
 
                 "word":
                     token.get(
@@ -855,304 +1257,830 @@ class SentimentScopeResolver:
             in negations
         ]
 
-    def _find_contrast_marker(
-            self,
-            sentiment_token,
-            target,
-            token_by_id,
-            children
+    # =========================================================
+    # EXPLICIT DEĞİL SCOPE CORRECTION
+    # =========================================================
+
+    def _disambiguate_shared_explicit_negations(
+        self,
+        scopes,
+        dependency_tokens
     ):
         """
-        Detects whether a sentiment expression belongs to
-        a contrastive/adversative clause.
+        Corrects explicit 'değil' scope after initial dependency
+        extraction.
 
-        The conjunction marker may attach to:
-            1. the sentiment predicate itself,
-            2. its syntactic head,
-            3. the resolved target/entity of the sentiment predicate.
+        Handles:
 
-        Example:
+            iyi ve güzel değildi
+                -> both negated
 
-            Otel güzel ama odalar kötü.
+            güzel ama iyi değildi
+                -> only iyi negated
 
-            Stanza may produce:
-
-                kötü -> güzel     (conj)
-                odalar -> kötü    (nsubj)
-                ama -> odalar     (cc)
-
-        Therefore, looking only at the sentiment token is
-        insufficient.
+            Otel güzel ama odalar kötü değildi
+                -> only kötü negated
         """
 
-        candidate_ids = {
-            sentiment_token["id"]
+        if (
+            not scopes
+            or not dependency_tokens
+        ):
+            return scopes
+
+        token_by_id = {
+            int(token["id"]):
+                token
+
+            for token
+            in dependency_tokens
+
+            if token.get(
+                "id"
+            ) is not None
         }
 
-        # -------------------------------------------------
-        # 1. Sentiment token's syntactic head
-        # -------------------------------------------------
+        aligned_scopes = []
 
-        head_id = sentiment_token.get("head")
+        for scope in scopes:
 
-        if head_id:
-            candidate_ids.add(head_id)
-
-        # -------------------------------------------------
-        # 2. Resolved target/entity
-        # -------------------------------------------------
-
-        if target is not None:
-            candidate_ids.add(
-                target["id"]
+            sentiment_token = (
+                scope.get(
+                    "sentiment_token"
+                )
             )
 
-        # -------------------------------------------------
-        # Look for a contrast conjunction attached to any
-        # of these structurally related nodes.
-        # -------------------------------------------------
+            if sentiment_token is None:
+                continue
 
-        for candidate_id in candidate_ids:
+            sentiment_id = (
+                sentiment_token.get(
+                    "id"
+                )
+            )
 
-            for child in children.get(
-                    candidate_id,
-                    []
+            if sentiment_id is None:
+                continue
+
+            aligned_scopes.append(
+                scope
+            )
+
+        if not aligned_scopes:
+            return scopes
+
+        # -----------------------------------------------------
+        # CONTRAST BOUNDARIES
+        # -----------------------------------------------------
+
+        contrast_marker_ids = []
+
+        for token in dependency_tokens:
+
+            token_id = token.get(
+                "id"
+            )
+
+            if token_id is None:
+                continue
+
+            lemma = self._turkish_lower(
+                token.get(
+                    "lemma"
+                )
+                or
+                token.get(
+                    "text"
+                )
+            )
+
+            deprel = (
+                token.get(
+                    "deprel"
+                )
+                or ""
+            )
+
+            if (
+                lemma
+                in self.CONTRAST_WORDS
+                and deprel in {
+                    "cc",
+                    "mark",
+                    "case"
+                }
             ):
 
-                lemma = self._turkish_lower(
-                    child.get("lemma")
-                    or child.get("text")
+                contrast_marker_ids.append(
+                    int(token_id)
+                )
+
+        explicit_degil_tokens = [
+            token
+
+            for token
+            in dependency_tokens
+
+            if (
+                token.get(
+                    "id"
+                ) is not None
+                and
+                self._is_explicit_degil(
+                    token
+                )
+            )
+        ]
+
+        for negation_token in (
+            explicit_degil_tokens
+        ):
+
+            negation_id = int(
+                negation_token[
+                    "id"
+                ]
+            )
+
+            preceding_scopes = [
+                scope
+
+                for scope
+                in aligned_scopes
+
+                if int(
+                    scope[
+                        "sentiment_token"
+                    ][
+                        "id"
+                    ]
+                )
+                < negation_id
+            ]
+
+            if not preceding_scopes:
+                continue
+
+            min_sentiment_id = min(
+                int(
+                    scope[
+                        "sentiment_token"
+                    ][
+                        "id"
+                    ]
+                )
+
+                for scope
+                in preceding_scopes
+            )
+
+            # =================================================
+            # CONTRAST BOUNDARY
+            # =================================================
+
+            relevant_boundaries = [
+                marker_id
+
+                for marker_id
+                in contrast_marker_ids
+
+                if (
+                    min_sentiment_id
+                    < marker_id
+                    < negation_id
+                )
+            ]
+
+            boundary_id = (
+                max(
+                    relevant_boundaries
+                )
+                if relevant_boundaries
+                else None
+            )
+
+            if boundary_id is not None:
+
+                segment_scopes = [
+                    scope
+
+                    for scope
+                    in preceding_scopes
+
+                    if int(
+                        scope[
+                            "sentiment_token"
+                        ][
+                            "id"
+                        ]
+                    )
+                    > boundary_id
+                ]
+
+                strategy_prefix = (
+                    "explicit_degil_"
+                    "post_contrast"
+                )
+
+            else:
+
+                segment_scopes = (
+                    preceding_scopes
+                )
+
+                strategy_prefix = (
+                    "explicit_degil_"
+                    "preceding_segment"
+                )
+
+            if not segment_scopes:
+                continue
+
+            nearest_scope = max(
+                segment_scopes,
+                key=lambda scope:
+                    int(
+                        scope[
+                            "sentiment_token"
+                        ][
+                            "id"
+                        ]
+                    )
+            )
+
+            nearest_id = int(
+                nearest_scope[
+                    "sentiment_token"
+                ][
+                    "id"
+                ]
+            )
+
+            segment_scope_by_id = {
+                int(
+                    scope[
+                        "sentiment_token"
+                    ][
+                        "id"
+                    ]):
+                    scope
+
+                for scope
+                in segment_scopes
+            }
+
+            segment_sentiment_ids = set(
+                segment_scope_by_id.keys()
+            )
+
+            # =================================================
+            # COORDINATION COMPONENT
+            # =================================================
+
+            adjacency = {
+                sentiment_id:
+                    set()
+
+                for sentiment_id
+                in segment_sentiment_ids
+            }
+
+            for sentiment_id in (
+                segment_sentiment_ids
+            ):
+
+                token = token_by_id.get(
+                    sentiment_id
+                )
+
+                if token is None:
+                    continue
+
+                if (
+                    token.get(
+                        "deprel"
+                    )
+                    == "conj"
+                ):
+
+                    head_id = token.get(
+                        "head"
+                    )
+
+                    if head_id is None:
+                        continue
+
+                    head_id = int(
+                        head_id
+                    )
+
+                    if (
+                        head_id
+                        in segment_sentiment_ids
+                    ):
+
+                        adjacency[
+                            sentiment_id
+                        ].add(
+                            head_id
+                        )
+
+                        adjacency[
+                            head_id
+                        ].add(
+                            sentiment_id
+                        )
+
+            component_ids = set()
+
+            stack = [
+                nearest_id
+            ]
+
+            while stack:
+
+                current_id = (
+                    stack.pop()
                 )
 
                 if (
-                        child.get("deprel") == "cc"
-                        and lemma in self.CONTRAST_WORDS
+                    current_id
+                    in component_ids
                 ):
+                    continue
+
+                component_ids.add(
+                    current_id
+                )
+
+                stack.extend(
+                    adjacency.get(
+                        current_id,
+                        set()
+                    )
+                    - component_ids
+                )
+
+            if (
+                len(
+                    component_ids
+                )
+                > 1
+            ):
+
+                selected_scopes = [
+                    segment_scope_by_id[
+                        sentiment_id
+                    ]
+
+                    for sentiment_id
+                    in sorted(
+                        component_ids
+                    )
+                ]
+
+                strategy = (
+                    strategy_prefix
+                    +
+                    "_shared_coordination"
+                )
+
+            else:
+
+                selected_scopes = [
+                    nearest_scope
+                ]
+
+                strategy = (
+                    strategy_prefix
+                    +
+                    "_nearest"
+                )
+
+            selected_scope_ids = {
+                id(scope)
+
+                for scope
+                in selected_scopes
+            }
+
+            serialized_negation = {
+                "id":
+                    negation_id,
+
+                "word":
+                    negation_token.get(
+                        "text"
+                    ),
+
+                "lemma":
+                    negation_token.get(
+                        "lemma"
+                    ),
+
+                "deprel":
+                    negation_token.get(
+                        "deprel"
+                    ),
+
+                "feats":
+                    negation_token.get(
+                        "feats"
+                    )
+            }
+
+            # =================================================
+            # REASSIGN DEĞİL
+            # =================================================
+
+            for scope in (
+                aligned_scopes
+            ):
+
+                current_negations = (
+                    scope.get(
+                        "negations",
+                        []
+                    )
+                    or []
+                )
+
+                other_negations = [
+                    negation
+
+                    for negation
+                    in current_negations
+
+                    if not (
+                        self._is_explicit_degil(
+                            negation
+                        )
+                        and int(
+                            negation.get(
+                                "id",
+                                -1
+                            )
+                        )
+                        == negation_id
+                    )
+                ]
+
+                if (
+                    id(scope)
+                    in selected_scope_ids
+                ):
+
+                    other_negations.append(
+                        serialized_negation.copy()
+                    )
+
+                    scope[
+                        "negation_scope_strategy"
+                    ] = strategy
+
+                else:
+
+                    had_this_negation = any(
+                        self._is_explicit_degil(
+                            negation
+                        )
+                        and int(
+                            negation.get(
+                                "id",
+                                -1
+                            )
+                        )
+                        == negation_id
+
+                        for negation
+                        in current_negations
+                    )
+
+                    if had_this_negation:
+
+                        scope[
+                            "negation_scope_strategy"
+                        ] = (
+                            "explicit_degil_"
+                            "removed_by_scope"
+                        )
+
+                deduplicated = []
+                seen_ids = set()
+
+                for negation in (
+                    other_negations
+                ):
+
+                    neg_id = (
+                        negation.get(
+                            "id"
+                        )
+                    )
+
+                    if neg_id is None:
+
+                        deduplicated.append(
+                            negation
+                        )
+
+                        continue
+
+                    neg_id = int(
+                        neg_id
+                    )
+
+                    if (
+                        neg_id
+                        in seen_ids
+                    ):
+                        continue
+
+                    seen_ids.add(
+                        neg_id
+                    )
+
+                    deduplicated.append(
+                        negation
+                    )
+
+                scope[
+                    "negations"
+                ] = deduplicated
+
+        return scopes
+
+    # =========================================================
+    # CONTRAST
+    # =========================================================
+
+    def _find_contrast_marker(
+        self,
+        sentiment_token,
+        target,
+        token_by_id,
+        children
+    ):
+
+        candidate_ids = {
+            sentiment_token[
+                "id"
+            ]
+        }
+
+        head_id = sentiment_token.get(
+            "head"
+        )
+
+        if head_id:
+
+            candidate_ids.add(
+                head_id
+            )
+
+        if target is not None:
+
+            candidate_ids.add(
+                target[
+                    "id"
+                ]
+            )
+
+        for candidate_id in (
+            candidate_ids
+        ):
+
+            for child in children.get(
+                candidate_id,
+                []
+            ):
+
+                lemma = self._turkish_lower(
+                    child.get(
+                        "lemma"
+                    )
+                    or
+                    child.get(
+                        "text"
+                    )
+                )
+
+                if (
+                    child.get(
+                        "deprel"
+                    )
+                    == "cc"
+                    and lemma
+                    in self.CONTRAST_WORDS
+                ):
+
                     return {
-                        "id": child["id"],
-                        "word": child.get("text"),
-                        "lemma": lemma,
-                        "anchor_id": candidate_id
+                        "id":
+                            child["id"],
+
+                        "word":
+                            child.get(
+                                "text"
+                            ),
+
+                        "lemma":
+                            lemma,
+
+                        "anchor_id":
+                            candidate_id
                     }
 
         return None
 
-    def _resolve_sentiment_roles(self, results):
-        """
-        Uses dependency-resolved targets to distinguish opinion
-        expressions from entities/targets.
+    # =========================================================
+    # SENTIMENT ROLE RESOLUTION
+    # =========================================================
 
-        If a HisNet sentiment candidate is itself the resolved target
-        of another sentiment expression and does not have its own target,
-        it is treated as an entity in this context rather than as an
-        independent opinion expression.
-
-        Example:
-            "yemekler kötüydü"
-
-            HisNet may assign sentiment to both:
-                yemek
-                kötü
-
-            Dependency structure shows:
-                yemekler = target of kötü
-
-            Therefore:
-                yemekler -> TARGET
-                kötü     -> OPINION
-        """
+    def _resolve_sentiment_roles(
+        self,
+        results
+    ):
 
         target_token_ids = set()
 
         for result in results:
 
-            target = result.get("target")
+            target = result.get(
+                "target"
+            )
 
             if target is not None:
+
                 target_token_ids.add(
                     target["id"]
                 )
 
         for result in results:
 
-            sentiment_token = result.get(
-                "sentiment_token"
+            sentiment_token = (
+                result.get(
+                    "sentiment_token"
+                )
             )
 
-            result["active_sentiment"] = True
-            result["contextual_role"] = "opinion"
-            result["suppression_reason"] = None
+            result[
+                "active_sentiment"
+            ] = True
+
+            result[
+                "contextual_role"
+            ] = "opinion"
+
+            result[
+                "suppression_reason"
+            ] = None
 
             if sentiment_token is None:
                 continue
 
-            token_id = sentiment_token["id"]
+            token_id = (
+                sentiment_token[
+                    "id"
+                ]
+            )
 
-            # Conservative suppression:
-            # suppress only when this token is used as somebody
-            # else's target and it has no target of its own.
             if (
-                    token_id in target_token_ids
-                    and result.get("target") is None
+                token_id
+                in target_token_ids
+                and result.get(
+                    "target"
+                ) is None
             ):
-                result["active_sentiment"] = False
-                result["contextual_role"] = "target"
 
-                result["suppression_reason"] = (
-                    "used_as_target_of_another_sentiment"
+                result[
+                    "active_sentiment"
+                ] = False
+
+                result[
+                    "contextual_role"
+                ] = "target"
+
+                result[
+                    "suppression_reason"
+                ] = (
+                    "used_as_target_of_"
+                    "another_sentiment"
                 )
 
         return results
 
-    def _find_morphological_root(
-            self,
-            dependency_token,
-            morphological_analyses
-    ):
-        """
-        Returns the canonical morphological root of a dependency token.
+    # =========================================================
+    # MORPHOLOGICAL ROOT
+    # =========================================================
 
-        Dependency structure comes from Stanza, but lexical normalization
-        comes from the Starlang morphological analyzer used by our
-        HisNet pipeline.
-        """
+    def _find_morphological_root(
+        self,
+        dependency_token,
+        morphological_analyses
+    ):
 
         surface = self._turkish_lower(
-            dependency_token.get("text")
+            dependency_token.get(
+                "text"
+            )
         )
 
         if morphological_analyses:
 
-            for analysis in morphological_analyses:
+            for analysis in (
+                morphological_analyses
+            ):
 
-                analysis_surface = self._turkish_lower(
-                    analysis.get("word")
+                analysis_surface = (
+                    self._turkish_lower(
+                        analysis.get(
+                            "word"
+                        )
+                    )
                 )
 
-                if analysis_surface == surface:
-                    return self._turkish_lower(
-                        analysis.get("root")
+                if (
+                    analysis_surface
+                    == surface
+                ):
+
+                    return (
+                        self._turkish_lower(
+                            analysis.get(
+                                "root"
+                            )
+                        )
                     )
 
-        # Fallback only if morphological analysis cannot be aligned.
         return self._turkish_lower(
-            dependency_token.get("lemma")
-            or dependency_token.get("text")
+            dependency_token.get(
+                "lemma"
+            )
+            or
+            dependency_token.get(
+                "text"
+            )
         )
 
+    # =========================================================
+    # DEPENDENCY-FIRST CANDIDATE FILTER
+    # =========================================================
+
     def _is_dependency_opinion_candidate(
-            self,
-            token,
-            target,
-            target_strategy
+        self,
+        token,
+        target,
+        target_strategy
     ):
-        """
-        Determines whether a dependency token should be sent
-        to HisNet as an opinion candidate.
-
-        IMPORTANT
-        ---------
-        This decision is made BEFORE any HisNet lookup.
-
-        Therefore this method may use only syntactic information:
-            - POS
-            - dependency relation
-            - resolved target
-            - target-resolution strategy
-
-        It must NOT use polarity or HisNet scores.
-
-        Main principle:
-
-            semantic/predicate token
-                    -> HisNet candidate
-
-            grammatical/support/modifier token
-                    -> scope information only
-
-        Examples
-        --------
-
-        Film güzel.
-            güzel -> candidate
-            Film  -> target
-
-        Bu ürünü tavsiye etmiyorum.
-            tavsiye   -> candidate
-            etmiyorum -> negation/light-verb support, NOT candidate
-            ürünü     -> target
-
-        Otel çok güzel.
-            güzel -> candidate
-            çok   -> modifier, NOT candidate
-
-        Yemekler kötüydü.
-            kötü     -> candidate
-            yemekler -> target, NOT candidate
-        """
 
         if token is None:
-            return False, None
+
+            return (
+                False,
+                None
+            )
 
         upos = (
-                token.get("upos")
-                or ""
+            token.get(
+                "upos"
+            )
+            or ""
         )
 
         deprel = (
-                token.get("deprel")
-                or ""
+            token.get(
+                "deprel"
+            )
+            or ""
         )
 
-        # =====================================================
-        # 1. POS FILTER
-        # =====================================================
+        if (
+            upos
+            not in self.OPINION_POS
+        ):
 
-        if upos not in self.OPINION_POS:
-            return False, None
+            return (
+                False,
+                None
+            )
 
-        # =====================================================
-        # 2. HARD STRUCTURAL EXCLUSIONS
-        #
-        # These relations typically describe support,
-        # grammatical function, modification or coordination
-        # markers rather than independent opinion expressions.
-        #
-        # Examples:
-        #
-        #   etmiyorum -> compound:lvc
-        #   çok       -> advmod
-        #   kesinlikle -> nmod (possible Stanza analysis)
-        #   değildi   -> cop
-        #
-        # They remain available to:
-        #   negation detection
-        #   modifier detection
-        #   contrast detection
-        #
-        # but they are NOT sent independently to HisNet.
-        # =====================================================
+        if (
+            deprel
+            in self.OPINION_EXCLUDED_RELATIONS
+        ):
 
-        if deprel in self.OPINION_EXCLUDED_RELATIONS:
-            return False, None
+            return (
+                False,
+                None
+            )
 
-        # =====================================================
-        # 3. DIRECT PREDICATE / CLAUSAL CANDIDATE
-        #
-        # Handles:
-        #
-        #   Harika!
-        #   Film güzel.
-        #   tavsiye ...
-        #   conjunction predicates
-        #
-        # Target is not mandatory here because one-word /
-        # targetless sentiment expressions must survive.
-        # =====================================================
-
-        if deprel in self.OPINION_PREDICATE_RELATIONS:
+        if (
+            deprel
+            in self.OPINION_PREDICATE_RELATIONS
+        ):
 
             if target is not None:
+
                 return (
                     True,
                     "predicate_with_target"
@@ -1163,137 +2091,68 @@ class SentimentScopeResolver:
                 "predicate_candidate"
             )
 
-        # =====================================================
-        # 4. ADJECTIVAL MODIFIER
-        #
-        # güzel otel
-        #
-        # güzel --amod--> otel
-        #
-        # _find_target() should have resolved the modified noun.
-        # =====================================================
-
         if (
-                deprel == "amod"
-                and target is not None
-                and target_strategy == "modified_head"
+            deprel == "amod"
+            and target is not None
+            and target_strategy
+            == "modified_head"
         ):
+
             return (
                 True,
                 "adjectival_modifier"
             )
 
-        # =====================================================
-        # 5. STRONG DIRECT TARGET RELATION
-        #
-        # The token itself directly governs a subject/object.
-        #
-        # Examples:
-        #
-        #   Film güzel.
-        #   ürünü tavsiye ...
-        #
-        # This is stronger evidence than finding a target only
-        # through a shared syntactic head.
-        # =====================================================
-
         if (
-                target is not None
-                and target_strategy in {
-            "direct_subject",
-            "direct_object",
-            "modified_head"
-        }
+            target is not None
+            and target_strategy in {
+                "direct_subject",
+                "direct_object",
+                "modified_head"
+            }
         ):
+
             return (
                 True,
                 "direct_target_relation"
             )
 
-        # =====================================================
-        # 6. CONSERVATIVE SHARED-HEAD FALLBACK
-        #
-        # Needed because Stanza can produce structures such as:
-        #
-        #   Odalar kötü değildi.
-        #
-        # where:
-        #
-        #   kötü   -> değildi
-        #   Odalar -> değildi
-        #
-        # and the opinion/target therefore appear as siblings.
-        #
-        # We allow this fallback ONLY for ADJ or VERB.
-        #
-        # We deliberately do NOT allow NOUN/ADV here because
-        # this was the source of false candidates such as:
-        #
-        #   kesinlikle -> target=ürünü
-        #
-        # via a shared head.
-        # =====================================================
-
         if (
-                target is not None
-                and target_strategy in {
-            "head_subject",
-            "head_object"
-        }
-                and upos in {
-            "ADJ",
-            "VERB"
-        }
+            target is not None
+            and target_strategy in {
+                "head_subject",
+                "head_object"
+            }
+            and upos in {
+                "ADJ",
+                "VERB"
+            }
         ):
+
             return (
                 True,
                 "shared_head_fallback"
             )
-
-        # =====================================================
-        # OTHERWISE:
-        # Dependency does not provide sufficient syntactic
-        # evidence that this token is an opinion expression.
-        # =====================================================
-
-        # =====================================================
-        # 7. DESCRIPTIVE CONTENT FALLBACK
-        #
-        # Real-world Turkish reviews contain many constructions
-        # where Stanza attaches sentiment-bearing adjectives or
-        # adverbs with relations that are not covered by our
-        # stronger predicate/target rules.
-        #
-        # Examples observed in TRSAv1:
-        #
-        #   çok az
-        #   güzel sürülüyor
-        #   zor çıkıyor
-        #   hiç sevmedim
-        #
-        # Dependency is still used first:
-        #
-        #   - structural/support relations have already been
-        #     excluded,
-        #   - clear target roles have already been handled,
-        #
-        # but HisNet is allowed to decide whether a remaining
-        # descriptive token actually carries sentiment.
-        # =====================================================
 
         if upos in {
             "ADJ",
             "ADV",
             "INTJ"
         }:
+
             return (
                 True,
                 "descriptive_content_fallback"
             )
 
+        return (
+            False,
+            None
+        )
 
-        return False, None
-
+    # =========================================================
+    # D -> H
+    # =========================================================
 
     def resolve_dependency_candidates(
         self,
@@ -1303,48 +2162,28 @@ class SentimentScopeResolver:
         """
         DEPENDENCY-FIRST candidate extraction.
 
-        Unlike resolve(), this method does NOT receive HisNet
-        sentiment words.
-
-        Pipeline:
-
-            dependency tokens
-                ->
-            syntactic opinion candidates
-                ->
-            target / negation / modifier / contrast
-                ->
-            morphological root
-
-        HisNet lookup is intentionally performed AFTER this
-        method by DependencyHisNetClassifier.
+        No HisNet scores are used here.
         """
 
-        token_by_id, children = (
-            self._build_indexes(
-                dependency_tokens
-            )
+        (
+            token_by_id,
+            children
+        ) = self._build_indexes(
+            dependency_tokens
         )
 
         candidates = []
 
         for token in dependency_tokens:
 
-            # ---------------------------------------------
-            # First resolve a possible target using syntax.
-            # ---------------------------------------------
-
-            target, target_strategy = (
-                self._find_target(
-                    token,
-                    token_by_id,
-                    children
-                )
+            (
+                target,
+                target_strategy
+            ) = self._find_target(
+                token,
+                token_by_id,
+                children
             )
-
-            # ---------------------------------------------
-            # Decide candidate status WITHOUT HisNet.
-            # ---------------------------------------------
 
             (
                 is_candidate,
@@ -1359,11 +2198,6 @@ class SentimentScopeResolver:
 
             if not is_candidate:
                 continue
-
-            # ---------------------------------------------
-            # Dependency scope information is resolved
-            # BEFORE lexicon lookup.
-            # ---------------------------------------------
 
             modifiers = (
                 self._find_modifiers(
@@ -1389,23 +2223,12 @@ class SentimentScopeResolver:
                 )
             )
 
-            # ---------------------------------------------
-            # Morphological root.
-            #
-            # Stanza lemma is NOT used as our primary
-            # lexical normalization source.
-            # ---------------------------------------------
-
             root = (
                 self._find_morphological_root(
                     token,
                     morphological_analyses
                 )
             )
-
-            # ---------------------------------------------
-            # Target serialization
-            # ---------------------------------------------
 
             if target is not None:
 
@@ -1414,10 +2237,14 @@ class SentimentScopeResolver:
                         target["id"],
 
                     "word":
-                        target.get("text"),
+                        target.get(
+                            "text"
+                        ),
 
                     "lemma":
-                        target.get("lemma"),
+                        target.get(
+                            "lemma"
+                        ),
 
                     "root":
                         self._find_morphological_root(
@@ -1426,27 +2253,26 @@ class SentimentScopeResolver:
                         ),
 
                     "upos":
-                        target.get("upos"),
+                        target.get(
+                            "upos"
+                        ),
 
                     "deprel":
-                        target.get("deprel")
+                        target.get(
+                            "deprel"
+                        )
                 }
 
             else:
 
                 target_data = None
 
-            # ---------------------------------------------
-            # Candidate output.
-            #
-            # Notice:
-            # There are NO HisNet POS/NEG scores here.
-            # ---------------------------------------------
-
             candidates.append({
 
                 "word":
-                    token.get("text"),
+                    token.get(
+                        "text"
+                    ),
 
                 "root":
                     root,
@@ -1456,19 +2282,29 @@ class SentimentScopeResolver:
                         token["id"],
 
                     "word":
-                        token.get("text"),
+                        token.get(
+                            "text"
+                        ),
 
                     "lemma":
-                        token.get("lemma"),
+                        token.get(
+                            "lemma"
+                        ),
 
                     "upos":
-                        token.get("upos"),
+                        token.get(
+                            "upos"
+                        ),
 
                     "head":
-                        token.get("head"),
+                        token.get(
+                            "head"
+                        ),
 
                     "deprel":
-                        token.get("deprel")
+                        token.get(
+                            "deprel"
+                        )
                 },
 
                 "candidate_strategy":
@@ -1493,28 +2329,41 @@ class SentimentScopeResolver:
                     "matched"
             })
 
-        return candidates
+        return (
+            self._disambiguate_shared_explicit_negations(
+                candidates,
+                dependency_tokens
+            )
+        )
+
+    # =========================================================
+    # H -> D
+    # =========================================================
+
     def resolve(
         self,
         sentiment_words,
         dependency_tokens,
-        morphological_analyses = None
+        morphological_analyses=None
     ):
         """
-        Resolves scope for all HisNet sentiment-bearing words.
+        Resolves dependency scope for all HisNet sentiment words.
         """
 
-        token_by_id, children = (
-            self._build_indexes(
-                dependency_tokens
-            )
+        (
+            token_by_id,
+            children
+        ) = self._build_indexes(
+            dependency_tokens
         )
 
         used_token_ids = set()
 
         results = []
 
-        for sentiment_word in sentiment_words:
+        for sentiment_word in (
+            sentiment_words
+        ):
 
             sentiment_token = (
                 self._match_sentiment_token(
@@ -1524,22 +2373,33 @@ class SentimentScopeResolver:
                 )
             )
 
+            # =================================================
+            # UNMATCHED
+            # =================================================
+
             if sentiment_token is None:
+
                 results.append({
+
                     "word":
-                        sentiment_word["word"],
+                        sentiment_word[
+                            "word"
+                        ],
 
                     "root":
-                        sentiment_word["root"],
+                        sentiment_word[
+                            "root"
+                        ],
 
-                    # Preserve HisNet scores even when the
-                    # sentiment candidate cannot be aligned
-                    # with a Stanza token.
                     "positive":
-                        sentiment_word["positive"],
+                        sentiment_word[
+                            "positive"
+                        ],
 
                     "negative":
-                        sentiment_word["negative"],
+                        sentiment_word[
+                            "negative"
+                        ],
 
                     "sentiment_token":
                         None,
@@ -1560,51 +2420,91 @@ class SentimentScopeResolver:
                         None,
 
                     "alignment_status":
-                        "unmatched"
+                        "unmatched",
+
+                    "alignment_strategy":
+                        None,
+
+                    "fragment_token_ids":
+                        [],
+
+                    "reconstructed_surface":
+                        None
                 })
 
                 continue
 
-            target, target_strategy = (
-                self._find_target(
+            # =================================================
+            # DEPENDENCY SCOPE
+            # =================================================
+
+            (
+                target,
+                target_strategy
+            ) = self._find_target(
+                sentiment_token,
+                token_by_id,
+                children
+            )
+
+            modifiers = (
+                self._find_modifiers(
+                    sentiment_token,
+                    children
+                )
+            )
+
+            negations = (
+                self._find_negations(
                     sentiment_token,
                     token_by_id,
                     children
                 )
             )
 
-            modifiers = self._find_modifiers(
-                sentiment_token,
-                children
-            )
-
-            negations = self._find_negations(
-                sentiment_token,
-                token_by_id,
-                children
-            )
-
-            contrast = self._find_contrast_marker(
-                sentiment_token,
-                target,
-                token_by_id,
-                children
+            contrast = (
+                self._find_contrast_marker(
+                    sentiment_token,
+                    target,
+                    token_by_id,
+                    children
+                )
             )
 
             if target is not None:
 
                 target_data = {
-                    "id": target["id"],
-                    "word": target.get("text"),
-                    "lemma": target.get("lemma"),
 
-                    "root": self._find_morphological_root(
-                        target,
-                        morphological_analyses
-                    ),
+                    "id":
+                        target[
+                            "id"
+                        ],
 
-                    "upos": target.get("upos"),
-                    "deprel": target.get("deprel")
+                    "word":
+                        target.get(
+                            "text"
+                        ),
+
+                    "lemma":
+                        target.get(
+                            "lemma"
+                        ),
+
+                    "root":
+                        self._find_morphological_root(
+                            target,
+                            morphological_analyses
+                        ),
+
+                    "upos":
+                        target.get(
+                            "upos"
+                        ),
+
+                    "deprel":
+                        target.get(
+                            "deprel"
+                        )
                 }
 
             else:
@@ -1612,36 +2512,78 @@ class SentimentScopeResolver:
                 target_data = None
 
             results.append({
+
                 "word":
-                    sentiment_word["word"],
+                    sentiment_word[
+                        "word"
+                    ],
 
                 "root":
-                    sentiment_word["root"],
+                    sentiment_word[
+                        "root"
+                    ],
 
                 "positive":
-                    sentiment_word["positive"],
+                    sentiment_word[
+                        "positive"
+                    ],
 
                 "negative":
-                    sentiment_word["negative"],
+                    sentiment_word[
+                        "negative"
+                    ],
 
                 "sentiment_token": {
+
                     "id":
-                        sentiment_token["id"],
+                        sentiment_token[
+                            "id"
+                        ],
 
                     "word":
-                        sentiment_token.get("text"),
+                        sentiment_token.get(
+                            "text"
+                        ),
 
                     "lemma":
-                        sentiment_token.get("lemma"),
+                        sentiment_token.get(
+                            "lemma"
+                        ),
 
                     "upos":
-                        sentiment_token.get("upos"),
+                        sentiment_token.get(
+                            "upos"
+                        ),
 
                     "head":
-                        sentiment_token.get("head"),
+                        sentiment_token.get(
+                            "head"
+                        ),
 
                     "deprel":
-                        sentiment_token.get("deprel")
+                        sentiment_token.get(
+                            "deprel"
+                        ),
+
+                    "alignment_strategy":
+                        sentiment_token.get(
+                            "_alignment_strategy"
+                        ),
+
+                    "fragment_token_ids":
+                        sentiment_token.get(
+                            "_fragment_token_ids",
+                            [
+                                sentiment_token[
+                                    "id"
+                                ]
+                            ]
+                        ),
+
+                    "reconstructed_surface":
+                        sentiment_token.get(
+                            "_reconstructed_surface"
+                        )
                 },
 
                 "target":
@@ -1660,9 +2602,38 @@ class SentimentScopeResolver:
                     contrast,
 
                 "alignment_status":
-                    "matched"
+                    "matched",
+
+                "alignment_strategy":
+                    sentiment_token.get(
+                        "_alignment_strategy"
+                    ),
+
+                "fragment_token_ids":
+                    sentiment_token.get(
+                        "_fragment_token_ids",
+                        [
+                            sentiment_token[
+                                "id"
+                            ]
+                        ]
+                    ),
+
+                "reconstructed_surface":
+                    sentiment_token.get(
+                        "_reconstructed_surface"
+                    )
             })
 
-        return self._resolve_sentiment_roles(
-            results
+        results = (
+            self._disambiguate_shared_explicit_negations(
+                results,
+                dependency_tokens
+            )
+        )
+
+        return (
+            self._resolve_sentiment_roles(
+                results
+            )
         )

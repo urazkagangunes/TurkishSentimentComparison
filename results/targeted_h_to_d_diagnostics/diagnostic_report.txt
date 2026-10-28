@@ -1,0 +1,1980 @@
+TARGETED H->D DIAGNOSTIC REPORT
+========================================================================================================================
+
+                        category  reviews
+                 UNMATCHED_SCOPE       16
+             H_TO_D_DEGRADED_ANY       15
+        H_TO_D_DEGRADED_NEGATION       14
+             H_TO_D_IMPROVED_ANY       15
+H_TO_D_IMPROVED_NEGATION_CONTROL       13
+          UNION_TARGETED_REVIEWS       43
+
+========================================================================================================================
+sample_id=3 | H_TO_D_DEGRADED_NEGATION
+Gold=negative | H=negative | H->D=neutral | D->H=positive
+TEXT: 15 Gün Kadar kullandım gözle görülür bir fark göremedim
+H scores: +0.0 -2.0 | H->D scores: +1.0 -1.0
+
+HISNET SENTIMENT WORDS
+  görülür | root=gör | POS=0.0 | NEG=1.0
+  göremedim | root=gör | POS=0.0 | NEG=1.0
+
+STANZA TOKENS
+  1 15 | lemma=15 | UPOS=NUM | HEAD=2:Gün | DEPREL=nummod | FEATS=NumType=Card
+  2 Gün | lemma=gün | UPOS=NOUN | HEAD=4:kullandım | DEPREL=obl | FEATS=Case=Nom|Number=Sing|Person=3
+  3 Kadar | lemma=kadar | UPOS=ADP | HEAD=2:Gün | DEPREL=case | FEATS=None
+  4 kullandım | lemma=kullan | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  5 gözle | lemma=göz | UPOS=NOUN | HEAD=8:fark | DEPREL=nmod | FEATS=Case=Ins|Number=Sing|Person=3
+  6 görülür | lemma=gör | UPOS=VERB | HEAD=5:gözle | DEPREL=compound | FEATS=Aspect=Hab|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part|Voice=Pass
+  7 bir | lemma=bir | UPOS=DET | HEAD=8:fark | DEPREL=det | FEATS=None
+  8 fark | lemma=fark | UPOS=NOUN | HEAD=9:göremedi | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Person=3
+  9 göremedi | lemma=gör | UPOS=VERB | HEAD=4:kullandım | DEPREL=conj | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past
+  10 m | lemma=m | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+
+H->D SCOPES
+  görülür root=gör | align=matched | token=görülür#6 | target=None | neg=[] | ops=[] | after=(0.0,1.0)
+  göremedim root=gör | align=matched | token=göremedi#9 | target=fark | neg=['göremedi'] | ops=['negation_flip'] | after=(1.0,0.0)
+
+NEGATION FLIPS
+  scope=göremedim root=gör | token=göremedi | types=self_morphological_negation | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past | neg=[{"id": 9, "text": "göremedi", "lemma": "gör", "upos": "VERB", "head": 4, "deprel": "conj", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past", "type": "self_morphological_negation"}] | before=(0.0,1.0) -> after=(1.0,0.0)
+
+D->H CANDIDATES
+  kullandım root=kullan | VERB/root | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+  göremedi root=gör | VERB/conj | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=1.0
+  m root=m | NOUN/root | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=9 | H_TO_D_IMPROVED_NEGATION_CONTROL
+Gold=negative | H=positive | H->D=negative | D->H=negative
+TEXT: Aşırı derecede cildimi kuruttu tavsiye etmem
+H scores: +0.125 -0.05 | H->D scores: +0.0 -0.175
+
+HISNET SENTIMENT WORDS
+  aşırı | root=aşırı | POS=0.0 | NEG=0.05
+  tavsiye | root=tavsiye | POS=0.125 | NEG=0.0
+
+STANZA TOKENS
+  1 Aşırı | lemma=aşırı | UPOS=ADJ | HEAD=2:derecede | DEPREL=amod | FEATS=None
+  2 derecede | lemma=derece | UPOS=NOUN | HEAD=4:kuruttu | DEPREL=obl | FEATS=Case=Loc|Number=Sing|Person=3
+  3 cildimi | lemma=cildim | UPOS=NOUN | HEAD=4:kuruttu | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=1
+  4 kuruttu | lemma=kurut | UPOS=VERB | HEAD=5:tavsiye | DEPREL=obj | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past
+  5 tavsiye | lemma=tavsiye | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+  6 etmem | lemma=et | UPOS=VERB | HEAD=5:tavsiye | DEPREL=compound:lvc | FEATS=Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres
+
+H->D SCOPES
+  aşırı root=aşırı | align=matched | token=Aşırı#1 | target=derecede | neg=[] | ops=[] | after=(0.0,0.05)
+  tavsiye root=tavsiye | align=matched | token=tavsiye#5 | target=None | neg=['etmem'] | ops=['negation_flip'] | after=(0.0,0.125)
+
+NEGATION FLIPS
+  scope=tavsiye root=tavsiye | token=tavsiye | types=support_or_other_negation | FEATS=Case=Nom|Number=Sing|Person=3 | neg=[{"id": 6, "text": "etmem", "lemma": "et", "upos": "VERB", "head": 5, "deprel": "compound:lvc", "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres", "type": "support_or_other_negation"}] | before=(0.125,0.0) -> after=(0.0,0.125)
+
+D->H CANDIDATES
+  Aşırı root=aşırı | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=0.0 NEG=0.05
+  kuruttu root=kurut | VERB/obj | strategy=direct_target_relation | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  tavsiye root=tavsiye | NOUN/root | strategy=predicate_candidate | lexicon=sentiment | POS=0.125 NEG=0.0
+
+
+========================================================================================================================
+sample_id=27 | H_TO_D_IMPROVED_NEGATION_CONTROL
+Gold=positive | H=negative | H->D=positive | D->H=positive
+TEXT: Siyah noktaları akıp almadığını anlayamadım ama burnunuz yumuşak oluyor duştan sonra uyguladığınızda. Fakat nemlendirip yapmanızda fayda var kuru kuru yapılmıyor.
+H scores: +0.43253968253968256 -0.8012820512820512 | H->D scores: +0.5992063492063493 -0.38461538461538464
+
+HISNET SENTIMENT WORDS
+  akıp | root=ak | POS=0.32142857142857145 | NEG=0.0
+  almadığını | root=al | POS=0.0 | NEG=0.16666666666666666
+  burnunuz | root=burun | POS=0.0 | NEG=0.25
+  yumuşak | root=yumuşak | POS=0.1111111111111111 | NEG=0.0
+  kuru | root=kuru | POS=0.0 | NEG=0.19230769230769232
+  kuru | root=kuru | POS=0.0 | NEG=0.19230769230769232
+
+STANZA TOKENS
+  1 Siyah | lemma=siyah | UPOS=ADJ | HEAD=2:noktaları | DEPREL=amod | FEATS=None
+  2 noktaları | lemma=nokta | UPOS=NOUN | HEAD=3:akıp | DEPREL=obj | FEATS=Case=Acc|Number=Plur|Person=3
+  3 akıp | lemma=ak | UPOS=VERB | HEAD=5:anlayamadım | DEPREL=advcl | FEATS=Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Conv
+  4 almadığını | lemma=al | UPOS=VERB | HEAD=3:akıp | DEPREL=compound:redup | FEATS=Aspect=Perf|Case=Acc|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Neg|Tense=Past|VerbForm=Part
+  5 anlayamadım | lemma=anla | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past
+  6 ama | lemma=ama | UPOS=CCONJ | HEAD=9:oluyor | DEPREL=cc | FEATS=None
+  7 burnunuz | lemma=burun | UPOS=NOUN | HEAD=9:oluyor | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Plur|Person=3|Person[psor]=2
+  8 yumuşak | lemma=yumuşak | UPOS=ADJ | HEAD=9:oluyor | DEPREL=obj | FEATS=None
+  9 oluyor | lemma=ol | UPOS=VERB | HEAD=5:anlayamadım | DEPREL=conj | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres
+  10 duştan | lemma=duş | UPOS=NOUN | HEAD=12:uyguladığınızda | DEPREL=obl | FEATS=Case=Abl|Number=Sing|Person=3
+  11 sonra | lemma=sonra | UPOS=ADV | HEAD=12:uyguladığınızda | DEPREL=advmod | FEATS=None
+  12 uyguladığınızda | lemma=uygula | UPOS=VERB | HEAD=5:anlayamadım | DEPREL=advcl | FEATS=Aspect=Perf|Case=Loc|Mood=Ind|Number[psor]=Plur|Person[psor]=2|Polarity=Pos|Tense=Past|VerbForm=Part
+  13 . | lemma=. | UPOS=PUNCT | HEAD=12:uyguladığınızda | DEPREL=punct | FEATS=None
+  14 Fakat | lemma=fakat | UPOS=CCONJ | HEAD=21:yapılmıyor | DEPREL=cc | FEATS=None
+  15 nemlendirip | lemma=nemle | UPOS=VERB | HEAD=16:yapmanızda | DEPREL=obj | FEATS=Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Conv|Voice=Cau
+  16 yapmanızda | lemma=yap | UPOS=VERB | HEAD=17:fayda | DEPREL=nmod | FEATS=Aspect=Perf|Case=Loc|Mood=Ind|Number[psor]=Plur|Person[psor]=1|Polarity=Pos|Tense=Pres|VerbForm=Vnoun
+  17 fayda | lemma=fayda | UPOS=NOUN | HEAD=18:var | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  18 var | lemma=var | UPOS=ADJ | HEAD=21:yapılmıyor | DEPREL=amod | FEATS=None
+  19 kuru | lemma=kur | UPOS=NOUN | HEAD=21:yapılmıyor | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  20 kuru | lemma=kur | UPOS=NOUN | HEAD=19:kuru | DEPREL=compound | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  21 yapılmıyor | lemma=yap | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Polite=Infm|Tense=Pres|Voice=Pass
+  22 . | lemma=. | UPOS=PUNCT | HEAD=21:yapılmıyor | DEPREL=punct | FEATS=None
+
+H->D SCOPES
+  akıp root=ak | align=matched | token=akıp#3 | target=noktaları | neg=[] | ops=[] | after=(0.32142857142857145,0.0)
+  almadığını root=al | align=matched | token=almadığını#4 | target=noktaları | neg=['almadığını'] | ops=['negation_flip'] | after=(0.16666666666666666,0.0)
+  burnunuz root=burun | align=matched | token=burnunuz#7 | target=None | neg=[] | ops=['suppressed_as_target'] | after=(0.0,0.0)
+  yumuşak root=yumuşak | align=matched | token=yumuşak#8 | target=burnunuz | neg=[] | ops=['contrast_detected'] | after=(0.1111111111111111,0.0)
+  kuru root=kuru | align=matched | token=kuru#19 | target=None | neg=[] | ops=['contrast_detected'] | after=(0.0,0.19230769230769232)
+  kuru root=kuru | align=matched | token=kuru#20 | target=None | neg=[] | ops=[] | after=(0.0,0.19230769230769232)
+
+NEGATION FLIPS
+  scope=almadığını root=al | token=almadığını | types=self_morphological_negation | FEATS=Aspect=Perf|Case=Acc|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Neg|Tense=Past|VerbForm=Part | neg=[{"id": 4, "text": "almadığını", "lemma": "al", "upos": "VERB", "head": 3, "deprel": "compound:redup", "feats": "Aspect=Perf|Case=Acc|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Neg|Tense=Past|VerbForm=Part", "type": "self_morphological_negation"}] | before=(0.0,0.16666666666666666) -> after=(0.16666666666666666,0.0)
+
+D->H CANDIDATES
+  Siyah root=siyah | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  akıp root=ak | VERB/advcl | strategy=direct_target_relation | lexicon=sentiment | POS=0.32142857142857145 NEG=0.0
+  almadığını root=al | VERB/compound:redup | strategy=shared_head_fallback | lexicon=sentiment | POS=0.0 NEG=0.16666666666666666
+  anlayamadım root=anla | VERB/root | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+  yumuşak root=yumuşak | ADJ/obj | strategy=shared_head_fallback | lexicon=sentiment | POS=0.1111111111111111 NEG=0.0
+  oluyor root=ol | VERB/conj | strategy=predicate_with_target | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  sonra root=sonra | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  var root=var | ADJ/amod | strategy=direct_target_relation | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  yapılmıyor root=yap | VERB/root | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=34 | H_TO_D_DEGRADED_NEGATION
+Gold=negative | H=negative | H->D=positive | D->H=positive
+TEXT: Berbat! Şampuan ve kremin içerisine makina yağı koyuyorlar heralde! Saçımı yıkadığım ertesi gün yağlanıp ağırlaştı. Saç derim nefes alamayınca dolayısıyla saçım çok daha fazla döküldü. 1 ayda 3 senelik saç dökmüşümdür!
+H scores: +0.0 -0.2375 | H->D scores: +0.16666666666666666 -0.07083333333333333
+
+HISNET SENTIMENT WORDS
+  yağı | root=yağ | POS=0.0 | NEG=0.05
+  derim | root=de | POS=0.0 | NEG=0.020833333333333332
+  alamayınca | root=al | POS=0.0 | NEG=0.16666666666666666
+
+STANZA TOKENS
+  1 Berbat | lemma=berbat | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=None
+  2 ! | lemma=! | UPOS=PUNCT | HEAD=1:Berbat | DEPREL=punct | FEATS=None
+  3 Şampuan | lemma=şamup | UPOS=NOUN | HEAD=1:Berbat | DEPREL=conj | FEATS=Case=Nom|Number=Sing|Person=3
+  4 ve | lemma=ve | UPOS=CCONJ | HEAD=5:kremin | DEPREL=cc | FEATS=None
+  5 kremin | lemma=krem | UPOS=NOUN | HEAD=6:içerisine | DEPREL=nmod:poss | FEATS=Case=Gen|Number=Sing|Person=3
+  6 içerisine | lemma=içeri | UPOS=NOUN | HEAD=9:koyuyorlar | DEPREL=obl | FEATS=Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  7 makina | lemma=makina | UPOS=NOUN | HEAD=8:yağı | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  8 yağı | lemma=yağ | UPOS=NOUN | HEAD=9:koyuyorlar | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  9 koyuyorlar | lemma=koy | UPOS=VERB | HEAD=1:Berbat | DEPREL=conj | FEATS=Aspect=Prog|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres
+  10 heralde | lemma=heralde | UPOS=ADV | HEAD=9:koyuyorlar | DEPREL=advmod | FEATS=None
+  11 ! | lemma=! | UPOS=PUNCT | HEAD=9:koyuyorlar | DEPREL=punct | FEATS=None
+  12 Saçımı | lemma=saçım | UPOS=NOUN | HEAD=13:yıkadığım | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=1
+  13 yıkadığım | lemma=yıka | UPOS=VERB | HEAD=15:gün | DEPREL=acl | FEATS=Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Pos|Tense=Past|VerbForm=Part
+  14 ertesi | lemma=ertesi | UPOS=ADJ | HEAD=15:gün | DEPREL=amod | FEATS=None
+  15 gün | lemma=gün | UPOS=NOUN | HEAD=16:yağlanıp | DEPREL=obl | FEATS=Case=Nom|Number=Sing|Person=3
+  16 yağlanıp | lemma=yağla | UPOS=VERB | HEAD=17:ağırlaştı | DEPREL=advcl | FEATS=Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Conv|Voice=Pass
+  17 ağırlaştı | lemma=ağırla | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past
+  18 . | lemma=. | UPOS=PUNCT | HEAD=17:ağırlaştı | DEPREL=punct | FEATS=None
+  19 Saç | lemma=saç | UPOS=NOUN | HEAD=21:nefes | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  20 derim | lemma=de | UPOS=NOUN | HEAD=19:Saç | DEPREL=compound | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=1
+  21 nefes | lemma=nefes | UPOS=NOUN | HEAD=28:döküldü | DEPREL=advcl | FEATS=Case=Nom|Number=Sing|Person=3
+  22 alamayınca | lemma=al | UPOS=VERB | HEAD=21:nefes | DEPREL=compound | FEATS=Aspect=Perf|Mood=Ind|Polarity=Neg|Tense=Pres|VerbForm=Conv
+  23 dolayısıyla | lemma=dolayısıyla | UPOS=ADV | HEAD=28:döküldü | DEPREL=advmod | FEATS=None
+  24 saçım | lemma=saçım | UPOS=NOUN | HEAD=28:döküldü | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=1
+  25 çok | lemma=çok | UPOS=ADV | HEAD=27:fazla | DEPREL=advmod | FEATS=None
+  26 daha | lemma=daha | UPOS=ADV | HEAD=27:fazla | DEPREL=advmod | FEATS=None
+  27 fazla | lemma=fazla | UPOS=ADV | HEAD=28:döküldü | DEPREL=advmod | FEATS=None
+  28 döküldü | lemma=dök | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past
+  29 . | lemma=. | UPOS=PUNCT | HEAD=28:döküldü | DEPREL=punct | FEATS=None
+  30 1 | lemma=1 | UPOS=NUM | HEAD=31:ayda | DEPREL=nummod | FEATS=NumType=Card
+  31 ayda | lemma=ay | UPOS=NOUN | HEAD=35:dökmüşüm | DEPREL=obl | FEATS=Case=Loc|Number=Sing|Person=3
+  32 3 | lemma=19.Ağu | UPOS=NUM | HEAD=33:senelik | DEPREL=nummod | FEATS=NumType=Card
+  33 senelik | lemma=senelik | UPOS=NOUN | HEAD=34:saç | DEPREL=nmod | FEATS=Case=Nom|Number=Sing|Person=3
+  34 saç | lemma=saç | UPOS=NOUN | HEAD=35:dökmüşüm | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  35 dökmüşüm | lemma=dök | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Case=Nom|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Pos|Tense=Pres|VerbForm=Vnoun
+  36 dür | lemma=i | UPOS=AUX | HEAD=35:dökmüşüm | DEPREL=cop | FEATS=Aspect=Perf|Mood=Gen|Number=Sing|Person=3|Tense=Pres
+  37 ! | lemma=! | UPOS=PUNCT | HEAD=35:dökmüşüm | DEPREL=punct | FEATS=None
+
+H->D SCOPES
+  yağı root=yağ | align=matched | token=yağı#8 | target=None | neg=[] | ops=[] | after=(0.0,0.05)
+  derim root=de | align=matched | token=derim#20 | target=None | neg=[] | ops=[] | after=(0.0,0.020833333333333332)
+  alamayınca root=al | align=matched | token=alamayınca#22 | target=Saç | neg=['alamayınca'] | ops=['negation_flip'] | after=(0.16666666666666666,0.0)
+
+NEGATION FLIPS
+  scope=alamayınca root=al | token=alamayınca | types=self_morphological_negation | FEATS=Aspect=Perf|Mood=Ind|Polarity=Neg|Tense=Pres|VerbForm=Conv | neg=[{"id": 22, "text": "alamayınca", "lemma": "al", "upos": "VERB", "head": 21, "deprel": "compound", "feats": "Aspect=Perf|Mood=Ind|Polarity=Neg|Tense=Pres|VerbForm=Conv", "type": "self_morphological_negation"}] | before=(0.0,0.16666666666666666) -> after=(0.16666666666666666,0.0)
+
+D->H CANDIDATES
+  Berbat root=berbat | ADJ/root | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  Şampuan root=şampuan | NOUN/conj | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  koyuyorlar root=koy | VERB/conj | strategy=predicate_with_target | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  heralde root=heralde | ADV/advmod | strategy=descriptive_content_fallback | lexicon=not_found | POS=None NEG=None
+  yıkadığım root=yıka | VERB/acl | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  ertesi root=ertesi | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  ağırlaştı root=ağırlaş | VERB/root | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+  nefes root=nefes | NOUN/advcl | strategy=direct_target_relation | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  alamayınca root=al | VERB/compound | strategy=shared_head_fallback | lexicon=sentiment | POS=0.0 NEG=0.16666666666666666
+  dolayısıyla root=dolayısıyla | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  daha root=daha | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  fazla root=fazla | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  döküldü root=dökül | VERB/root | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  dökmüşüm root=dök | VERB/root | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=35 | H_TO_D_DEGRADED_NEGATION
+Gold=negative | H=negative | H->D=positive | D->H=positive
+TEXT: BEŞ PARA ETMEZ KESİNLİKLE almayın ÇÜNKÜ GENİŞ EN KÜÇÜK BEDENİNİ ALDIM 55 KİLOYUM SANKİ ÇUVAL GİYMİŞ GİBİYİM BAŞKASINA HEDİYE ETTİM
+H scores: +0.125 -0.375 | H->D scores: +0.29166666666666663 -0.20833333333333331
+
+HISNET SENTIMENT WORDS
+  almayın | root=al | POS=0.0 | NEG=0.16666666666666666
+  geniş | root=geniş | POS=0.0 | NEG=0.041666666666666664
+  aldım | root=al | POS=0.0 | NEG=0.16666666666666666
+  hediye | root=hediye | POS=0.125 | NEG=0.0
+
+STANZA TOKENS
+  1 BEŞ | lemma=beş | UPOS=NUM | HEAD=5:almayın | DEPREL=obj | FEATS=NumType=Card
+  2 PARA | lemma=PARA | UPOS=NOUN | HEAD=1:BEŞ | DEPREL=compound | FEATS=Case=Nom|Number=Sing|Person=3
+  3 ETMEZ | lemma=Etmer | UPOS=VERB | HEAD=1:BEŞ | DEPREL=compound | FEATS=Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres
+  4 KESİNLİKLE | lemma=keskgi | UPOS=NOUN | HEAD=5:almayın | DEPREL=obl | FEATS=Case=Ins|Number=Sing|Number[psor]=Plur|Person=3
+  5 almayın | lemma=al | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Imp|Number=Plur|Person=2|Polarity=Neg|Tense=Pres
+  6 ÇÜNKÜ | lemma=çünkü | UPOS=CCONJ | HEAD=11:ALDIM | DEPREL=cc | FEATS=None
+  7 GENİŞ | lemma=geniş | UPOS=ADJ | HEAD=10:BEDENİNİ | DEPREL=amod | FEATS=None
+  8 EN | lemma=en | UPOS=ADV | HEAD=9:KÜÇÜK | DEPREL=advmod | FEATS=None
+  9 KÜÇÜK | lemma=küçük | UPOS=ADJ | HEAD=10:BEDENİNİ | DEPREL=amod | FEATS=None
+  10 BEDENİNİ | lemma=bedek | UPOS=NOUN | HEAD=11:ALDIM | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  11 ALDIM | lemma=al | UPOS=VERB | HEAD=5:almayın | DEPREL=conj | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  12 55 | lemma=55 | UPOS=NUM | HEAD=11:ALDIM | DEPREL=nummod | FEATS=NumType=Card
+  13 KİLOYUM | lemma=kiluş | UPOS=NOUN | HEAD=12:55 | DEPREL=compound | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=1
+  14 SANKİ | lemma=sanki̇ | UPOS=ADV | HEAD=16:GİYMİŞ | DEPREL=advmod | FEATS=None
+  15 ÇUVAL | lemma=çuval | UPOS=NOUN | HEAD=16:GİYMİŞ | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Person=3
+  16 GİYMİŞ | lemma=giygi | UPOS=VERB | HEAD=17:GİBİYİM | DEPREL=obj | FEATS=Aspect=Perf|Evident=Nfh|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past
+  17 GİBİYİM | lemma=gibi | UPOS=VERB | HEAD=19:HEDİYE | DEPREL=nmod | FEATS=Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Pres
+  18 BAŞKASINA | lemma=başkacın | UPOS=NOUN | HEAD=19:HEDİYE | DEPREL=iobj | FEATS=Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  19 HEDİYE | lemma=Hediş | UPOS=NOUN | HEAD=5:almayın | DEPREL=conj | FEATS=Case=Nom|Number=Sing|Person=3
+  20 ETTİM | lemma=et | UPOS=VERB | HEAD=19:HEDİYE | DEPREL=compound:lvc | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+
+H->D SCOPES
+  almayın root=al | align=matched | token=almayın#5 | target=None | neg=['almayın'] | ops=['negation_flip'] | after=(0.16666666666666666,0.0)
+  geniş root=geniş | align=matched | token=GENİŞ#7 | target=BEDENİNİ | neg=[] | ops=[] | after=(0.0,0.041666666666666664)
+  aldım root=al | align=matched | token=ALDIM#11 | target=BEDENİNİ | neg=[] | ops=[] | after=(0.0,0.16666666666666666)
+  hediye root=hediye | align=matched | token=HEDİYE#19 | target=BAŞKASINA | neg=[] | ops=[] | after=(0.125,0.0)
+
+NEGATION FLIPS
+  scope=almayın root=al | token=almayın | types=self_morphological_negation | FEATS=Aspect=Perf|Mood=Imp|Number=Plur|Person=2|Polarity=Neg|Tense=Pres | neg=[{"id": 5, "text": "almayın", "lemma": "al", "upos": "VERB", "head": 0, "deprel": "root", "feats": "Aspect=Perf|Mood=Imp|Number=Plur|Person=2|Polarity=Neg|Tense=Pres", "type": "self_morphological_negation"}] | before=(0.0,0.16666666666666666) -> after=(0.16666666666666666,0.0)
+
+D->H CANDIDATES
+  almayın root=al | VERB/root | strategy=predicate_candidate | lexicon=sentiment | POS=0.0 NEG=0.16666666666666666
+  GENİŞ root=geniş | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=0.0 NEG=0.041666666666666664
+  EN root=en | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  KÜÇÜK root=küçük | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  ALDIM root=al | VERB/conj | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=0.16666666666666666
+  SANKİ root=sanki | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  GİYMİŞ root=giy | VERB/obj | strategy=direct_target_relation | lexicon=not_found | POS=None NEG=None
+  HEDİYE root=hediye | NOUN/conj | strategy=predicate_with_target | lexicon=sentiment | POS=0.125 NEG=0.0
+
+
+========================================================================================================================
+sample_id=64 | H_TO_D_DEGRADED_NEGATION
+Gold=negative | H=negative | H->D=positive | D->H=positive
+TEXT: açıkçası ben hiçbir faydasını göremedim sadece kokusu güzel
+H scores: +0.45454545454545453 -1.0 | H->D scores: +1.4545454545454546 -0.0
+
+HISNET SENTIMENT WORDS
+  göremedim | root=gör | POS=0.0 | NEG=1.0
+  güzel | root=güzel | POS=0.45454545454545453 | NEG=0.0
+
+STANZA TOKENS
+  1 açıkçası | lemma=açıkça | UPOS=ADV | HEAD=5:göremedim | DEPREL=advmod | FEATS=None
+  2 ben | lemma=ben | UPOS=PRON | HEAD=5:göremedim | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=1|PronType=Prs
+  3 hiçbir | lemma=hiçbir | UPOS=DET | HEAD=4:faydasını | DEPREL=det | FEATS=None
+  4 faydasını | lemma=fayda | UPOS=NOUN | HEAD=5:göremedim | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  5 göremedim | lemma=gör | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past
+  6 sadece | lemma=sadece | UPOS=ADV | HEAD=8:güzel | DEPREL=advmod | FEATS=None
+  7 kokusu | lemma=koku | UPOS=NOUN | HEAD=8:güzel | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  8 güzel | lemma=güzel | UPOS=ADJ | HEAD=5:göremedim | DEPREL=advmod | FEATS=None
+
+H->D SCOPES
+  göremedim root=gör | align=matched | token=göremedim#5 | target=ben | neg=['göremedim'] | ops=['negation_flip', 'modifier_detected'] | after=(1.0,0.0)
+  güzel root=güzel | align=matched | token=güzel#8 | target=kokusu | neg=[] | ops=['modifier_detected'] | after=(0.45454545454545453,0.0)
+
+NEGATION FLIPS
+  scope=göremedim root=gör | token=göremedim | types=self_morphological_negation | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past | neg=[{"id": 5, "text": "göremedim", "lemma": "gör", "upos": "VERB", "head": 0, "deprel": "root", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past", "type": "self_morphological_negation"}] | before=(0.0,1.0) -> after=(1.0,0.0)
+
+D->H CANDIDATES
+  açıkçası root=açıkçası | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  göremedim root=gör | VERB/root | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=1.0
+  sadece root=sadece | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  güzel root=güzel | ADJ/advmod | strategy=direct_target_relation | lexicon=sentiment | POS=0.45454545454545453 NEG=0.0
+
+
+========================================================================================================================
+sample_id=76 | UNMATCHED_SCOPE
+Gold=negative | H=negative | H->D=negative | D->H=negative
+TEXT: çok kötü asla surulmuyor çok sert
+H scores: +0.0 -1.288888888888889 | H->D scores: +0.0 -1.288888888888889
+
+HISNET SENTIMENT WORDS
+  kötü | root=kötü | POS=0.0 | NEG=0.9
+  sert | root=sert | POS=0.0 | NEG=0.3888888888888889
+
+STANZA TOKENS
+  1 çok | lemma=çok | UPOS=ADV | HEAD=2:kötü | DEPREL=advmod | FEATS=None
+  2 kötü | lemma=kötü | UPOS=ADJ | HEAD=4:surulmuyor | DEPREL=amod | FEATS=None
+  3 asla | lemma=asla | UPOS=ADJ | HEAD=4:surulmuyor | DEPREL=amod | FEATS=None
+  4 surulmuyor | lemma=sur | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Polite=Infm|Tense=Pres
+  5 çok | lemma=çok | UPOS=ADJ | HEAD=6:ser | DEPREL=amod | FEATS=None
+  6 ser | lemma=ser | UPOS=NOUN | HEAD=4:surulmuyor | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  7 t | lemma=i | UPOS=AUX | HEAD=0:ROOT | DEPREL=cop | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past
+
+H->D SCOPES
+  kötü root=kötü | align=matched | token=kötü#2 | target=ser | neg=[] | ops=['modifier_detected'] | after=(0.0,0.9)
+  sert root=sert | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(0.0,0.3888888888888889)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=sert root=sert -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+
+D->H CANDIDATES
+  çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  kötü root=kötü | ADJ/amod | strategy=shared_head_fallback | lexicon=sentiment | POS=0.0 NEG=0.9
+  asla root=asla | ADJ/amod | strategy=shared_head_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  surulmuyor root=surulmuyor | VERB/root | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  çok root=çok | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+
+
+========================================================================================================================
+sample_id=91 | UNMATCHED_SCOPE
+Gold=neutral | H=negative | H->D=negative | D->H=negative
+TEXT: Ürün fena değil ama beklentimin altında çünkü beklentim ışıltı verici bir ürün olmasıydı kapatıcılık hafif diyebilirim ışıltı hiç yok genel olarakta fena değil
+H scores: +0.0625 -1.674512987012987 | H->D scores: +0.5208333333333333 -1.2161796536796536
+
+HISNET SENTIMENT WORDS
+  fena | root=fena | POS=0.0 | NEG=0.4583333333333333
+  verici | root=verici | POS=0.0625 | NEG=0.0
+  hafif | root=hafif | POS=0.0 | NEG=0.022727272727272728
+  diyebilirim | root=de | POS=0.0 | NEG=0.020833333333333332
+  hiç | root=hiç | POS=0.0 | NEG=0.5
+  yok | root=yok | POS=0.0 | NEG=0.21428571428571427
+  fena | root=fena | POS=0.0 | NEG=0.4583333333333333
+
+STANZA TOKENS
+  1 Ürün | lemma=ürün | UPOS=NOUN | HEAD=2:fena | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  2 fena | lemma=fena | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=None
+  3 değil | lemma=değil | UPOS=AUX | HEAD=2:fena | DEPREL=cop | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres
+  4 ama | lemma=ama | UPOS=CCONJ | HEAD=6:altında | DEPREL=cc | FEATS=None
+  5 beklentimin | lemma=beklenti | UPOS=NOUN | HEAD=6:altında | DEPREL=nmod:poss | FEATS=Case=Gen|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=1
+  6 altında | lemma=alt | UPOS=ADJ | HEAD=2:fena | DEPREL=conj | FEATS=Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  7 çünkü | lemma=çünkü | UPOS=CCONJ | HEAD=14:olması | DEPREL=cc | FEATS=None
+  8 beklentim | lemma=beklenti | UPOS=NOUN | HEAD=10:ver | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=1
+  9 ışıltı | lemma=ışıltı | UPOS=NOUN | HEAD=10:ver | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Person=3
+  10 ver | lemma=ver | UPOS=VERB | HEAD=13:ürün | DEPREL=amod | FEATS=Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres
+  11 ici | lemma=ci | UPOS=ADP | HEAD=10:ver | DEPREL=case | FEATS=None
+  12 bir | lemma=bir | UPOS=DET | HEAD=13:ürün | DEPREL=det | FEATS=None
+  13 ürün | lemma=ürün | UPOS=NOUN | HEAD=14:olması | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  14 olması | lemma=ol | UPOS=VERB | HEAD=2:fena | DEPREL=conj | FEATS=Aspect=Perf|Case=Nom|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Pres|VerbForm=Vnoun
+  15 ydı | lemma=i | UPOS=AUX | HEAD=14:olması | DEPREL=cop | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past
+  16 kapatıcılık | lemma=kapatıcılık | UPOS=NOUN | HEAD=18:diyebilirim | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  17 hafif | lemma=hafif | UPOS=ADJ | HEAD=18:diyebilirim | DEPREL=amod | FEATS=None
+  18 diyebilirim | lemma=de | UPOS=VERB | HEAD=2:fena | DEPREL=conj | FEATS=Aspect=Hab|Mood=Pot|Number=Sing|Person=1|Polarity=Pos|Tense=Pres
+  19 ışıltı | lemma=ışıltı | UPOS=NOUN | HEAD=21:yok | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  20 hiç | lemma=hiç | UPOS=ADV | HEAD=21:yok | DEPREL=advmod | FEATS=None
+  21 yok | lemma=yok | UPOS=ADV | HEAD=24:fena | DEPREL=advmod | FEATS=None
+  22 genel | lemma=genel | UPOS=ADJ | HEAD=23:olarakta | DEPREL=amod | FEATS=None
+  23 olarakta | lemma=olarak | UPOS=NOUN | HEAD=24:fena | DEPREL=obl | FEATS=Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  24 fena | lemma=fena | UPOS=ADJ | HEAD=2:fena | DEPREL=conj | FEATS=None
+  25 deği | lemma=deği | UPOS=ADP | HEAD=24:fena | DEPREL=case | FEATS=None
+  26 l | lemma=" | UPOS=PUNCT | HEAD=0:ROOT | DEPREL=root | FEATS=None
+
+H->D SCOPES
+  fena root=fena | align=matched | token=fena#2 | target=Ürün | neg=['değil'] | ops=['negation_flip'] | after=(0.4583333333333333,0.0)
+  verici root=verici | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(0.0625,0.0)
+  hafif root=hafif | align=matched | token=hafif#17 | target=kapatıcılık | neg=[] | ops=[] | after=(0.0,0.022727272727272728)
+  diyebilirim root=de | align=matched | token=diyebilirim#18 | target=kapatıcılık | neg=[] | ops=[] | after=(0.0,0.020833333333333332)
+  hiç root=hiç | align=matched | token=hiç#20 | target=ışıltı | neg=[] | ops=[] | after=(0.0,0.5)
+  yok root=yok | align=matched | token=yok#21 | target=ışıltı | neg=[] | ops=['modifier_detected'] | after=(0.0,0.21428571428571427)
+  fena root=fena | align=matched | token=fena#24 | target=Ürün | neg=[] | ops=['modifier_detected'] | after=(0.0,0.4583333333333333)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=verici root=verici -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+  scope=fena root=fena | token=fena | types=explicit_degil | FEATS= | neg=[{"id": 3, "text": "değil", "lemma": "değil", "upos": "AUX", "head": 2, "deprel": "cop", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres", "type": "explicit_degil"}] | before=(0.0,0.4583333333333333) -> after=(0.4583333333333333,0.0)
+
+D->H CANDIDATES
+  fena root=fena | ADJ/root | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=0.4583333333333333
+  altında root=alt | ADJ/conj | strategy=predicate_with_target | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  ver root=ver | VERB/amod | strategy=adjectival_modifier | lexicon=not_found | POS=None NEG=None
+  olması root=ol | VERB/conj | strategy=predicate_with_target | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  hafif root=hafif | ADJ/amod | strategy=shared_head_fallback | lexicon=sentiment | POS=0.0 NEG=0.022727272727272728
+  diyebilirim root=de | VERB/conj | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=0.020833333333333332
+  hiç root=hiç | ADV/advmod | strategy=descriptive_content_fallback | lexicon=sentiment | POS=0.0 NEG=0.5
+  yok root=yok | ADV/advmod | strategy=direct_target_relation | lexicon=sentiment | POS=0.0 NEG=0.21428571428571427
+  genel root=genel | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  fena root=fena | ADJ/conj | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=0.4583333333333333
+
+
+========================================================================================================================
+sample_id=116 | UNMATCHED_SCOPE
+Gold=neutral | H=positive | H->D=positive | D->H=positive
+TEXT: Güzel özenli paket
+H scores: +0.8295454545454546 -0.0 | H->D scores: +0.8295454545454546 -0.0
+
+HISNET SENTIMENT WORDS
+  güzel | root=güzel | POS=0.45454545454545453 | NEG=0.0
+  özenli | root=özenli | POS=0.375 | NEG=0.0
+
+STANZA TOKENS
+  1 Güzel | lemma=güzel | UPOS=ADJ | HEAD=2:özen | DEPREL=amod | FEATS=None
+  2 özen | lemma=özen | UPOS=NOUN | HEAD=4:paket | DEPREL=amod | FEATS=Case=Nom|Number=Sing|Person=3
+  3 li | lemma=li | UPOS=ADP | HEAD=2:özen | DEPREL=case | FEATS=None
+  4 paket | lemma=paket | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+
+H->D SCOPES
+  güzel root=güzel | align=matched | token=Güzel#1 | target=özen | neg=[] | ops=[] | after=(0.45454545454545453,0.0)
+  özenli root=özenli | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(0.375,0.0)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=özenli root=özenli -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+
+D->H CANDIDATES
+  Güzel root=güzel | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=0.45454545454545453 NEG=0.0
+  özen root=özen | NOUN/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  paket root=paket | NOUN/root | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+
+
+========================================================================================================================
+sample_id=120 | H_TO_D_IMPROVED_NEGATION_CONTROL
+Gold=negative | H=positive | H->D=negative | D->H=negative
+TEXT: Abartıldığı kadar güzel değil bence
+H scores: +0.45454545454545453 -0.0 | H->D scores: +0.0 -0.45454545454545453
+
+HISNET SENTIMENT WORDS
+  güzel | root=güzel | POS=0.45454545454545453 | NEG=0.0
+
+STANZA TOKENS
+  1 Abartıldığı | lemma=abar | UPOS=VERB | HEAD=3:güzel | DEPREL=advcl | FEATS=Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Neg|Tense=Past|VerbForm=Part
+  2 kadar | lemma=kadar | UPOS=ADP | HEAD=1:Abartıldığı | DEPREL=case | FEATS=None
+  3 güzel | lemma=güzel | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=None
+  4 değil | lemma=değil | UPOS=AUX | HEAD=3:güzel | DEPREL=cop | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres
+  5 bence | lemma=ben | UPOS=PRON | HEAD=3:güzel | DEPREL=obl | FEATS=Case=Equ|Number=Sing|Person=1|PronType=Prs
+
+H->D SCOPES
+  güzel root=güzel | align=matched | token=güzel#3 | target=None | neg=['değil'] | ops=['negation_flip'] | after=(0.0,0.45454545454545453)
+
+NEGATION FLIPS
+  scope=güzel root=güzel | token=güzel | types=explicit_degil | FEATS= | neg=[{"id": 4, "text": "değil", "lemma": "değil", "upos": "AUX", "head": 3, "deprel": "cop", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres", "type": "explicit_degil"}] | before=(0.45454545454545453,0.0) -> after=(0.0,0.45454545454545453)
+
+D->H CANDIDATES
+  güzel root=güzel | ADJ/root | strategy=predicate_candidate | lexicon=sentiment | POS=0.45454545454545453 NEG=0.0
+
+
+========================================================================================================================
+sample_id=134 | UNMATCHED_SCOPE
+Gold=neutral | H=positive | H->D=positive | D->H=positive
+TEXT: Ürün ve paketlemesi gayet iyiydi memnun kaldım ama kargo tam bir felaket
+H scores: +0.8194444444444445 -0.3333333333333333 | H->D scores: +0.8194444444444445 -0.3333333333333333
+
+HISNET SENTIMENT WORDS
+  iyiydi | root=iyi | POS=0.6111111111111112 | NEG=0.0
+  tam | root=tam | POS=0.20833333333333334 | NEG=0.0
+  felaket | root=felaket | POS=0.0 | NEG=0.3333333333333333
+
+STANZA TOKENS
+  1 Ürün | lemma=ürün | UPOS=NOUN | HEAD=5:iyi | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  2 ve | lemma=ve | UPOS=CCONJ | HEAD=3:paketlemesi | DEPREL=cc | FEATS=None
+  3 paketlemesi | lemma=paketleme | UPOS=NOUN | HEAD=1:Ürün | DEPREL=conj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  4 gayet | lemma=gayet | UPOS=ADV | HEAD=5:iyi | DEPREL=advmod | FEATS=None
+  5 iyi | lemma=iyi | UPOS=ADV | HEAD=0:ROOT | DEPREL=root | FEATS=None
+  6 ydi | lemma=i | UPOS=AUX | HEAD=5:iyi | DEPREL=cop | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past
+  7 memnun | lemma=memnun | UPOS=ADJ | HEAD=5:iyi | DEPREL=amod | FEATS=None
+  8 kaldım | lemma=kal | UPOS=VERB | HEAD=7:memnun | DEPREL=compound | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  9 ama | lemma=ama | UPOS=CCONJ | HEAD=13:felake | DEPREL=cc | FEATS=None
+  10 kargo | lemma=kargo | UPOS=NOUN | HEAD=13:felake | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  11 tam | lemma=tam | UPOS=ADV | HEAD=13:felake | DEPREL=advmod | FEATS=None
+  12 bir | lemma=bir | UPOS=DET | HEAD=13:felake | DEPREL=det | FEATS=None
+  13 felake | lemma=felake | UPOS=NOUN | HEAD=5:iyi | DEPREL=conj | FEATS=Case=Nom|Number=Sing|Person=3
+  14 t | lemma=i | UPOS=AUX | HEAD=0:ROOT | DEPREL=cop | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past
+
+H->D SCOPES
+  iyiydi root=iyi | align=matched | token=iyi#5 | target=Ürün | neg=[] | ops=['modifier_detected'] | after=(0.6111111111111112,0.0)
+  tam root=tam | align=matched | token=tam#11 | target=kargo | neg=[] | ops=['contrast_detected'] | after=(0.20833333333333334,0.0)
+  felaket root=felaket | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(0.0,0.3333333333333333)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=felaket root=felaket -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+
+D->H CANDIDATES
+  paketlemesi root=paketle | NOUN/conj | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+  gayet root=gayet | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  iyi root=iyi | ADV/root | strategy=predicate_with_target | lexicon=sentiment | POS=0.6111111111111112 NEG=0.0
+  memnun root=memnun | ADJ/amod | strategy=shared_head_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  tam root=tam | ADV/advmod | strategy=descriptive_content_fallback | lexicon=sentiment | POS=0.20833333333333334 NEG=0.0
+  felake root=felake | NOUN/conj | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=141 | UNMATCHED_SCOPE
+Gold=positive | H=positive | H->D=positive | D->H=neutral
+TEXT: Markete göre çok çok çok hesaplı
+H scores: +0.08333333333333333 -0.0 | H->D scores: +0.08333333333333333 -0.0
+
+HISNET SENTIMENT WORDS
+  hesaplı | root=hesaplı | POS=0.08333333333333333 | NEG=0.0
+
+STANZA TOKENS
+  1 Markete | lemma=market | UPOS=NOUN | HEAD=6:hesap | DEPREL=obl | FEATS=Case=Dat|Number=Sing|Person=3
+  2 göre | lemma=göre | UPOS=ADP | HEAD=1:Markete | DEPREL=case | FEATS=None
+  3 çok | lemma=çok | UPOS=ADV | HEAD=4:çok | DEPREL=advmod:emph | FEATS=None
+  4 çok | lemma=çok | UPOS=ADV | HEAD=5:çok | DEPREL=advmod | FEATS=None
+  5 çok | lemma=çok | UPOS=ADV | HEAD=6:hesap | DEPREL=advmod | FEATS=None
+  6 hesap | lemma=hesap | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+  7 lı | lemma=li | UPOS=ADP | HEAD=6:hesap | DEPREL=case | FEATS=None
+
+H->D SCOPES
+  hesaplı root=hesaplı | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(0.08333333333333333,0.0)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=hesaplı root=hesaplı -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+
+D->H CANDIDATES
+  çok root=çok | ADV/advmod:emph | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  hesap root=hesap | NOUN/root | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+
+
+========================================================================================================================
+sample_id=148 | H_TO_D_DEGRADED_NEGATION
+Gold=negative | H=negative | H->D=positive | D->H=neutral
+TEXT: İi değil iade edeceğim
+H scores: +0.0 -0.125 | H->D scores: +0.125 -0.0
+
+HISNET SENTIMENT WORDS
+  iade | root=iade | POS=0.0 | NEG=0.125
+
+STANZA TOKENS
+  1 İi | lemma=İi | UPOS=ADP | HEAD=2:değil | DEPREL=case | FEATS=None
+  2 değil | lemma=değil | UPOS=CCONJ | HEAD=0:ROOT | DEPREL=root | FEATS=None
+  3 iade | lemma=iade | UPOS=NOUN | HEAD=2:değil | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Person=3
+  4 edeceği | lemma=et | UPOS=VERB | HEAD=3:iade | DEPREL=compound:lvc | FEATS=Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Fut|VerbForm=Part
+  5 m | lemma=m | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+
+H->D SCOPES
+  iade root=iade | align=matched | token=iade#3 | target=None | neg=['değil'] | ops=['negation_flip'] | after=(0.125,0.0)
+
+NEGATION FLIPS
+  scope=iade root=iade | token=iade | types=explicit_degil | FEATS=Case=Nom|Number=Sing|Person=3 | neg=[{"id": 2, "text": "değil", "lemma": "değil", "upos": "CCONJ", "head": 0, "deprel": "root", "feats": null, "type": "explicit_degil"}] | before=(0.0,0.125) -> after=(0.125,0.0)
+
+D->H CANDIDATES
+  m root=m | NOUN/root | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=155 | H_TO_D_IMPROVED_NEGATION_CONTROL
+Gold=positive | H=negative | H->D=positive | D->H=positive
+TEXT: Mükemmel bir ürün tek alıp da pişman olmadığım cilt bakımı ürünü
+H scores: +1.0 -1.1893939393939394 | H->D scores: +2.0 -0.1893939393939394
+
+HISNET SENTIMENT WORDS
+  mükemmel | root=mükemmel | POS=1.0 | NEG=0.0
+  alıp | root=al | POS=0.0 | NEG=0.16666666666666666
+  da | root=da | POS=0.0 | NEG=0.022727272727272728
+  pişman | root=pişman | POS=0.0 | NEG=1.0
+
+STANZA TOKENS
+  1 Mükemmel | lemma=mükemmel | UPOS=ADJ | HEAD=3:ürün | DEPREL=amod | FEATS=None
+  2 bir | lemma=bir | UPOS=DET | HEAD=3:ürün | DEPREL=det | FEATS=None
+  3 ürün | lemma=ürün | UPOS=NOUN | HEAD=11:ürünü | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  4 tek | lemma=tek | UPOS=ADJ | HEAD=5:alıp | DEPREL=amod | FEATS=None
+  5 alıp | lemma=al | UPOS=VERB | HEAD=7:pişman | DEPREL=advcl | FEATS=Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Conv
+  6 da | lemma=da | UPOS=CCONJ | HEAD=5:alıp | DEPREL=advmod:emph | FEATS=None
+  7 pişman | lemma=pişman | UPOS=ADJ | HEAD=10:bakımı | DEPREL=nmod:poss | FEATS=None
+  8 olmadığım | lemma=ol | UPOS=VERB | HEAD=7:pişman | DEPREL=compound:lvc | FEATS=Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Neg|Tense=Past|VerbForm=Part
+  9 cilt | lemma=cilt | UPOS=NOUN | HEAD=10:bakımı | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  10 bakımı | lemma=bakım | UPOS=NOUN | HEAD=11:ürünü | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  11 ürünü | lemma=ürün | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+
+H->D SCOPES
+  mükemmel root=mükemmel | align=matched | token=Mükemmel#1 | target=ürün | neg=[] | ops=[] | after=(1.0,0.0)
+  alıp root=al | align=matched | token=alıp#5 | target=None | neg=[] | ops=[] | after=(0.0,0.16666666666666666)
+  da root=da | align=matched | token=da#6 | target=None | neg=[] | ops=[] | after=(0.0,0.022727272727272728)
+  pişman root=pişman | align=matched | token=pişman#7 | target=None | neg=['olmadığım'] | ops=['negation_flip'] | after=(1.0,0.0)
+
+NEGATION FLIPS
+  scope=pişman root=pişman | token=pişman | types=support_or_other_negation | FEATS= | neg=[{"id": 8, "text": "olmadığım", "lemma": "ol", "upos": "VERB", "head": 7, "deprel": "compound:lvc", "feats": "Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Neg|Tense=Past|VerbForm=Part", "type": "support_or_other_negation"}] | before=(0.0,1.0) -> after=(1.0,0.0)
+
+D->H CANDIDATES
+  Mükemmel root=mükemmel | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=1.0 NEG=0.0
+  tek root=tek | ADJ/amod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  pişman root=pişman | ADJ/nmod:poss | strategy=descriptive_content_fallback | lexicon=sentiment | POS=0.0 NEG=1.0
+  ürünü root=ürün | NOUN/root | strategy=predicate_with_target | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+
+
+========================================================================================================================
+sample_id=168 | UNMATCHED_SCOPE
+Gold=neutral | H=positive | H->D=positive | D->H=neutral
+TEXT: Ürün boyutu çok küçük bir oje şişesi kadar ama kalitesi harika
+H scores: +1.5 -0.0 | H->D scores: +1.5 -0.0
+
+HISNET SENTIMENT WORDS
+  kalitesi | root=kalite | POS=0.5 | NEG=0.0
+  harika | root=harika | POS=1.0 | NEG=0.0
+
+STANZA TOKENS
+  1 Ürün | lemma=ürün | UPOS=NOUN | HEAD=2:boyutu | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  2 boyutu | lemma=boyut | UPOS=NOUN | HEAD=7:şişesi | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  3 çok | lemma=çok | UPOS=ADV | HEAD=4:küçük | DEPREL=advmod | FEATS=None
+  4 küçük | lemma=küçük | UPOS=ADJ | HEAD=6:oje | DEPREL=amod | FEATS=None
+  5 bir | lemma=bir | UPOS=DET | HEAD=6:oje | DEPREL=det | FEATS=None
+  6 oje | lemma=oje | UPOS=NOUN | HEAD=7:şişesi | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  7 şişesi | lemma=şişe | UPOS=NOUN | HEAD=11:harik | DEPREL=obl | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  8 kadar | lemma=kadar | UPOS=ADP | HEAD=7:şişesi | DEPREL=case | FEATS=None
+  9 ama | lemma=ama | UPOS=CCONJ | HEAD=10:kalitesi | DEPREL=cc | FEATS=None
+  10 kalitesi | lemma=kalite | UPOS=NOUN | HEAD=11:harik | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  11 harik | lemma=harik | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=None
+  12 a | lemma=a | UPOS=INTJ | HEAD=0:ROOT | DEPREL=root | FEATS=None
+
+H->D SCOPES
+  kalitesi root=kalite | align=matched | token=kalitesi#10 | target=None | neg=[] | ops=['contrast_detected'] | after=(0.5,0.0)
+  harika root=harika | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(1.0,0.0)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=harika root=harika -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+
+D->H CANDIDATES
+  çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  küçük root=küçük | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  şişesi root=şişe | NOUN/obl | strategy=direct_target_relation | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  harik root=harik | ADJ/root | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  a root=a | INTJ/root | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+
+
+========================================================================================================================
+sample_id=170 | H_TO_D_DEGRADED_NEGATION
+Gold=negative | H=negative | H->D=positive | D->H=negative
+TEXT: Bence işe yaramıyor hem kokusuda çok ağır sevmedim
+H scores: +0.0 -0.7205882352941176 | H->D scores: +0.5 -0.22058823529411764
+
+HISNET SENTIMENT WORDS
+  yaramıyor | root=yara | POS=0.0 | NEG=0.5
+  ağır | root=ağır | POS=0.0 | NEG=0.22058823529411764
+
+STANZA TOKENS
+  1 Bence | lemma=ben | UPOS=PRON | HEAD=2:işe | DEPREL=obl | FEATS=Case=Equ|Number=Sing|Person=1|PronType=Prs
+  2 işe | lemma=iş | UPOS=NOUN | HEAD=8:sevmedi | DEPREL=obj | FEATS=Case=Dat|Number=Sing|Person=3
+  3 yaramıyor | lemma=yar | UPOS=VERB | HEAD=2:işe | DEPREL=compound | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Polite=Infm|Tense=Pres
+  4 hem | lemma=hem | UPOS=CCONJ | HEAD=8:sevmedi | DEPREL=cc | FEATS=None
+  5 kokusuda | lemma=kokus | UPOS=NOUN | HEAD=8:sevmedi | DEPREL=obl | FEATS=Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  6 çok | lemma=çok | UPOS=ADJ | HEAD=7:ağır | DEPREL=amod | FEATS=None
+  7 ağır | lemma=ağır | UPOS=ADJ | HEAD=8:sevmedi | DEPREL=advmod | FEATS=None
+  8 sevmedi | lemma=sev | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past
+  9 m | lemma=m | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+
+H->D SCOPES
+  yaramıyor root=yara | align=matched | token=yaramıyor#3 | target=None | neg=['yaramıyor'] | ops=['negation_flip'] | after=(0.5,0.0)
+  ağır root=ağır | align=matched | token=ağır#7 | target=işe | neg=[] | ops=[] | after=(0.0,0.22058823529411764)
+
+NEGATION FLIPS
+  scope=yaramıyor root=yara | token=yaramıyor | types=self_morphological_negation | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Polite=Infm|Tense=Pres | neg=[{"id": 3, "text": "yaramıyor", "lemma": "yar", "upos": "VERB", "head": 2, "deprel": "compound", "feats": "Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Polite=Infm|Tense=Pres", "type": "self_morphological_negation"}] | before=(0.0,0.5) -> after=(0.5,0.0)
+
+D->H CANDIDATES
+  çok root=çok | ADJ/amod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  ağır root=ağır | ADJ/advmod | strategy=shared_head_fallback | lexicon=sentiment | POS=0.0 NEG=0.22058823529411764
+  sevmedi root=sev | VERB/root | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  m root=m | NOUN/root | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=196 | H_TO_D_DEGRADED_NEGATION
+Gold=negative | H=negative | H->D=positive | D->H=positive
+TEXT: bı faydasını görmedim
+H scores: +0.0 -1.0 | H->D scores: +1.0 -0.0
+
+HISNET SENTIMENT WORDS
+  görmedim | root=gör | POS=0.0 | NEG=1.0
+
+STANZA TOKENS
+  1 bı | lemma=bı | UPOS=PRON | HEAD=3:görmedi | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=1|PronType=Prs
+  2 faydasını | lemma=fayda | UPOS=NOUN | HEAD=3:görmedi | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  3 görmedi | lemma=gör | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past
+  4 m | lemma=m | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+
+H->D SCOPES
+  görmedim root=gör | align=matched | token=görmedi#3 | target=bı | neg=['görmedi'] | ops=['negation_flip'] | after=(1.0,0.0)
+
+NEGATION FLIPS
+  scope=görmedim root=gör | token=görmedi | types=self_morphological_negation | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past | neg=[{"id": 3, "text": "görmedi", "lemma": "gör", "upos": "VERB", "head": 0, "deprel": "root", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past", "type": "self_morphological_negation"}] | before=(0.0,1.0) -> after=(1.0,0.0)
+
+D->H CANDIDATES
+  görmedi root=gör | VERB/root | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=1.0
+  m root=m | NOUN/root | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=203 | H_TO_D_IMPROVED_NEGATION_CONTROL
+Gold=negative | H=positive | H->D=negative | D->H=negative
+TEXT: Asla yumuşak değil.
+H scores: +0.1111111111111111 -0.0 | H->D scores: +0.0 -0.1111111111111111
+
+HISNET SENTIMENT WORDS
+  yumuşak | root=yumuşak | POS=0.1111111111111111 | NEG=0.0
+
+STANZA TOKENS
+  1 Asla | lemma=asla | UPOS=ADV | HEAD=2:yumuşak | DEPREL=advmod | FEATS=None
+  2 yumuşak | lemma=yumuşak | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=None
+  3 değil | lemma=değil | UPOS=AUX | HEAD=2:yumuşak | DEPREL=cop | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres
+  4 . | lemma=. | UPOS=PUNCT | HEAD=2:yumuşak | DEPREL=punct | FEATS=None
+
+H->D SCOPES
+  yumuşak root=yumuşak | align=matched | token=yumuşak#2 | target=None | neg=['değil'] | ops=['negation_flip', 'modifier_detected'] | after=(0.0,0.1111111111111111)
+
+NEGATION FLIPS
+  scope=yumuşak root=yumuşak | token=yumuşak | types=explicit_degil | FEATS= | neg=[{"id": 3, "text": "değil", "lemma": "değil", "upos": "AUX", "head": 2, "deprel": "cop", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres", "type": "explicit_degil"}] | before=(0.1111111111111111,0.0) -> after=(0.0,0.1111111111111111)
+
+D->H CANDIDATES
+  Asla root=asla | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  yumuşak root=yumuşak | ADJ/root | strategy=predicate_candidate | lexicon=sentiment | POS=0.1111111111111111 NEG=0.0
+
+
+========================================================================================================================
+sample_id=218 | H_TO_D_DEGRADED_NEGATION
+Gold=neutral | H=neutral | H->D=negative | D->H=negative
+TEXT: Şeker peelingi hiçbir işe yaramıyor ayrıca içinde azıcık ürün var hiç bereketli bir ürün değil. Daha uygun fiyata daha etkili onlarca peeling seçeneği varken bunu bir daha asla almam. Maske hatrına 3 yıldız veriyorum peelinge puanım sıfır
+H scores: +1.65 -1.6166666666666667 | H->D scores: +1.3166666666666667 -1.95
+
+HISNET SENTIMENT WORDS
+  şeker | root=şeker | POS=0.15 | NEG=0.0
+  yaramıyor | root=yara | POS=0.0 | NEG=0.5
+  hiç | root=hiç | POS=0.0 | NEG=0.5
+  bereketli | root=bereketli | POS=1.0 | NEG=0.0
+  uygun | root=uygun | POS=0.5 | NEG=0.0
+  almam | root=al | POS=0.0 | NEG=0.16666666666666666
+  maske | root=maske | POS=0.0 | NEG=0.15
+  sıfır | root=sıfır | POS=0.0 | NEG=0.3
+
+STANZA TOKENS
+  1 Şeker | lemma=şeker | UPOS=NOUN | HEAD=2:peelingi | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  2 peelingi | lemma=peelingi | UPOS=NOUN | HEAD=3:hiçbir | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  3 hiçbir | lemma=hiçbir | UPOS=DET | HEAD=9:ürün | DEPREL=det | FEATS=None
+  4 işe | lemma=iş | UPOS=NOUN | HEAD=3:hiçbir | DEPREL=compound | FEATS=Case=Dat|Number=Sing|Person=3
+  5 yaramıyor | lemma=yar | UPOS=VERB | HEAD=3:hiçbir | DEPREL=compound | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Polite=Infm|Tense=Pres
+  6 ayrıca | lemma=ayrıca | UPOS=ADV | HEAD=10:var | DEPREL=advmod | FEATS=None
+  7 içinde | lemma=iç | UPOS=ADJ | HEAD=9:ürün | DEPREL=amod | FEATS=Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  8 azıcık | lemma=azıcık | UPOS=ADJ | HEAD=9:ürün | DEPREL=amod | FEATS=None
+  9 ürün | lemma=ürün | UPOS=NOUN | HEAD=10:var | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  10 var | lemma=var | UPOS=ADJ | HEAD=15:değil | DEPREL=nmod | FEATS=None
+  11 hiç | lemma=hiç | UPOS=ADV | HEAD=12:bereketli | DEPREL=advmod | FEATS=None
+  12 bereketli | lemma=bereketli | UPOS=ADJ | HEAD=14:ürün | DEPREL=amod | FEATS=None
+  13 bir | lemma=bir | UPOS=DET | HEAD=14:ürün | DEPREL=det | FEATS=None
+  14 ürün | lemma=ürün | UPOS=NOUN | HEAD=15:değil | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  15 değil | lemma=değil | UPOS=AUX | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres
+  16 . | lemma=. | UPOS=PUNCT | HEAD=15:değil | DEPREL=punct | FEATS=None
+  17 Daha | lemma=daha | UPOS=ADV | HEAD=18:uygun | DEPREL=advmod | FEATS=None
+  18 uygun | lemma=uygun | UPOS=ADJ | HEAD=19:fiyata | DEPREL=amod | FEATS=None
+  19 fiyata | lemma=fiyata | UPOS=NOUN | HEAD=25:varken | DEPREL=obl | FEATS=Case=Dat|Number=Sing|Person=3
+  20 daha | lemma=daha | UPOS=ADV | HEAD=21:etkili | DEPREL=advmod | FEATS=None
+  21 etkili | lemma=etkili | UPOS=ADJ | HEAD=23:peeling | DEPREL=amod | FEATS=None
+  22 onlarca | lemma=onlarca | UPOS=DET | HEAD=23:peeling | DEPREL=det | FEATS=None
+  23 peeling | lemma=peeling | UPOS=NOUN | HEAD=24:seçeneği | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  24 seçeneği | lemma=seçenek | UPOS=NOUN | HEAD=25:varken | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  25 varken | lemma=vark | UPOS=VERB | HEAD=30:almam | DEPREL=advcl | FEATS=Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|VerbForm=Conv
+  26 bunu | lemma=bu | UPOS=PRON | HEAD=30:almam | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Person=3|PronType=Dem
+  27 bir | lemma=bir | UPOS=ADV | HEAD=29:asla | DEPREL=advmod | FEATS=None
+  28 daha | lemma=daha | UPOS=ADV | HEAD=27:bir | DEPREL=advmod | FEATS=None
+  29 asla | lemma=as | UPOS=NOUN | HEAD=30:almam | DEPREL=obl | FEATS=Case=Dat|Number=Sing|Person=3
+  30 almam | lemma=al | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres
+  31 . | lemma=. | UPOS=PUNCT | HEAD=30:almam | DEPREL=punct | FEATS=None
+  32 Maske | lemma=maske | UPOS=NOUN | HEAD=33:hatrına | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  33 hatrına | lemma=hat | UPOS=NOUN | HEAD=36:veriyorum | DEPREL=obl | FEATS=Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  34 3 | lemma=19.Ağu | UPOS=NUM | HEAD=35:yıldız | DEPREL=nummod | FEATS=NumType=Card
+  35 yıldız | lemma=yıldız | UPOS=NOUN | HEAD=36:veriyorum | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Person=3
+  36 veriyorum | lemma=ver | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Polite=Infm|Tense=Pres
+  37 peelinge | lemma=peelinge | UPOS=NOUN | HEAD=39:sıfır | DEPREL=obl | FEATS=Case=Dat|Number=Sing|Person=3
+  38 puanım | lemma=puanım | UPOS=NOUN | HEAD=39:sıfır | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=1
+  39 sıfır | lemma=sıfır | UPOS=ADJ | HEAD=36:veriyorum | DEPREL=conj | FEATS=None
+
+H->D SCOPES
+  şeker root=şeker | align=matched | token=Şeker#1 | target=None | neg=[] | ops=[] | after=(0.15,0.0)
+  yaramıyor root=yara | align=matched | token=yaramıyor#5 | target=peelingi | neg=['yaramıyor'] | ops=['negation_flip'] | after=(0.5,0.0)
+  hiç root=hiç | align=matched | token=hiç#11 | target=None | neg=[] | ops=[] | after=(0.0,0.5)
+  bereketli root=bereketli | align=matched | token=bereketli#12 | target=ürün | neg=['değil'] | ops=['negation_flip', 'modifier_detected'] | after=(0.0,1.0)
+  uygun root=uygun | align=matched | token=uygun#18 | target=fiyata | neg=[] | ops=['modifier_detected'] | after=(0.5,0.0)
+  almam root=al | align=matched | token=almam#30 | target=bunu | neg=['almam'] | ops=['negation_flip'] | after=(0.16666666666666666,0.0)
+  maske root=maske | align=matched | token=Maske#32 | target=None | neg=[] | ops=[] | after=(0.0,0.15)
+  sıfır root=sıfır | align=matched | token=sıfır#39 | target=puanım | neg=[] | ops=[] | after=(0.0,0.3)
+
+NEGATION FLIPS
+  scope=yaramıyor root=yara | token=yaramıyor | types=self_morphological_negation | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Polite=Infm|Tense=Pres | neg=[{"id": 5, "text": "yaramıyor", "lemma": "yar", "upos": "VERB", "head": 3, "deprel": "compound", "feats": "Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Polite=Infm|Tense=Pres", "type": "self_morphological_negation"}] | before=(0.0,0.5) -> after=(0.5,0.0)
+  scope=bereketli root=bereketli | token=bereketli | types=explicit_degil | FEATS= | neg=[{"id": 15, "text": "değil", "lemma": "değil", "upos": "AUX", "head": 0, "deprel": "root", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres", "type": "explicit_degil"}] | before=(1.0,0.0) -> after=(0.0,1.0)
+  scope=almam root=al | token=almam | types=self_morphological_negation | FEATS=Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres | neg=[{"id": 30, "text": "almam", "lemma": "al", "upos": "VERB", "head": 0, "deprel": "root", "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres", "type": "self_morphological_negation"}] | before=(0.0,0.16666666666666666) -> after=(0.16666666666666666,0.0)
+
+D->H CANDIDATES
+  yaramıyor root=yara | VERB/compound | strategy=shared_head_fallback | lexicon=sentiment | POS=0.0 NEG=0.5
+  ayrıca root=ayrıca | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  içinde root=iç | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  azıcık root=azıcık | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  hiç root=hiç | ADV/advmod | strategy=descriptive_content_fallback | lexicon=sentiment | POS=0.0 NEG=0.5
+  bereketli root=bereketli | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=1.0 NEG=0.0
+  Daha root=daha | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  uygun root=uygun | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=0.5 NEG=0.0
+  daha root=daha | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  etkili root=etkili | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  varken root=var | VERB/advcl | strategy=direct_target_relation | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  bir root=bir | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  daha root=daha | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  almam root=al | VERB/root | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=0.16666666666666666
+  veriyorum root=ver | VERB/root | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  sıfır root=sıfır | ADJ/conj | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=0.3
+
+
+========================================================================================================================
+sample_id=220 | UNMATCHED_SCOPE
+Gold=positive | H=positive | H->D=positive | D->H=positive
+TEXT: Düzenli kullandığım ürün ortadan koyuya olan yüzde belli esmerler onu kullanabilir ama buğday tenli ıların rengi kesinlikle bu fondöten sürüp cildi nefessz bırakmaya gerek yok kapatıcılığı çok iyi
+H scores: +0.7361111111111112 -0.2767857142857143 | H->D scores: +0.7361111111111112 -0.2767857142857143
+
+HISNET SENTIMENT WORDS
+  düzenli | root=düzenli | POS=0.125 | NEG=0.0
+  koyuya | root=koyu | POS=0.0 | NEG=0.0625
+  yok | root=yok | POS=0.0 | NEG=0.21428571428571427
+  iyi | root=iyi | POS=0.6111111111111112 | NEG=0.0
+
+STANZA TOKENS
+  1 Düzen | lemma=düzen | UPOS=NOUN | HEAD=3:kullandığım | DEPREL=amod | FEATS=Case=Nom|Number=Sing|Person=3
+  2 li | lemma=li | UPOS=ADP | HEAD=1:Düzen | DEPREL=case | FEATS=None
+  3 kullandığım | lemma=kullan | UPOS=VERB | HEAD=4:ürün | DEPREL=acl | FEATS=Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Pos|Tense=Past|VerbForm=Part
+  4 ürün | lemma=ürün | UPOS=NOUN | HEAD=7:olan | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  5 ortadan | lemma=orta | UPOS=ADJ | HEAD=7:olan | DEPREL=amod | FEATS=Case=Abl|Number=Sing|Person=3
+  6 koyuya | lemma=koyu | UPOS=NOUN | HEAD=7:olan | DEPREL=obl | FEATS=Case=Dat|Number=Sing|Person=3
+  7 olan | lemma=ol | UPOS=VERB | HEAD=8:yüzde | DEPREL=acl | FEATS=Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part
+  8 yüzde | lemma=yüz | UPOS=NUM | HEAD=10:esmerler | DEPREL=nummod | FEATS=Case=Loc|NumType=Card|Number=Sing|Person=3
+  9 belli | lemma=belli | UPOS=ADJ | HEAD=8:yüzde | DEPREL=compound | FEATS=None
+  10 esmerler | lemma=esmer | UPOS=ADJ | HEAD=12:kullanabilir | DEPREL=nsubj | FEATS=Case=Nom|Number=Plur|Person=3
+  11 onu | lemma=o | UPOS=PRON | HEAD=12:kullanabilir | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Person=3|PronType=Dem
+  12 kullanabilir | lemma=kullan | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Hab|Mood=Pot|Number=Sing|Person=3|Polarity=Pos|Tense=Pres
+  13 ama | lemma=ama | UPOS=CCONJ | HEAD=29:iyi | DEPREL=cc | FEATS=None
+  14 buğday | lemma=buğday | UPOS=NOUN | HEAD=17:rengi | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  15 tenli | lemma=tenli | UPOS=ADP | HEAD=14:buğday | DEPREL=case | FEATS=None
+  16 ıların | lemma=ıların | UPOS=ADP | HEAD=14:buğday | DEPREL=case | FEATS=Case=Gen|Number=Plur|Person=3
+  17 rengi | lemma=renk | UPOS=NOUN | HEAD=21:sürüp | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  18 kesinlikle | lemma=kesinlik | UPOS=ADV | HEAD=21:sürüp | DEPREL=advmod | FEATS=None
+  19 bu | lemma=bu | UPOS=DET | HEAD=20:fondöten | DEPREL=det | FEATS=None
+  20 fondöten | lemma=fondöten | UPOS=NOUN | HEAD=21:sürüp | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Person=3
+  21 sürüp | lemma=sür | UPOS=VERB | HEAD=25:gerek | DEPREL=advcl | FEATS=Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Conv
+  22 cildi | lemma=cildi | UPOS=NOUN | HEAD=24:bırakmaya | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Person=3
+  23 nefessz | lemma=nefessz | UPOS=ADJ | HEAD=24:bırakmaya | DEPREL=amod | FEATS=None
+  24 bırakmaya | lemma=bırak | UPOS=VERB | HEAD=25:gerek | DEPREL=nmod | FEATS=Aspect=Perf|Case=Dat|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Vnoun
+  25 gerek | lemma=gerek | UPOS=NOUN | HEAD=27:kapatıcılığı | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  26 yok | lemma=yok | UPOS=ADJ | HEAD=25:gerek | DEPREL=compound | FEATS=None
+  27 kapatıcılığı | lemma=kapatıcılık | UPOS=NOUN | HEAD=29:iyi | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  28 çok | lemma=çok | UPOS=ADJ | HEAD=29:iyi | DEPREL=amod | FEATS=None
+  29 iyi | lemma=iyi | UPOS=ADJ | HEAD=12:kullanabilir | DEPREL=conj | FEATS=None
+
+H->D SCOPES
+  düzenli root=düzenli | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(0.125,0.0)
+  koyuya root=koyu | align=matched | token=koyuya#6 | target=ürün | neg=[] | ops=[] | after=(0.0,0.0625)
+  yok root=yok | align=matched | token=yok#26 | target=None | neg=[] | ops=[] | after=(0.0,0.21428571428571427)
+  iyi root=iyi | align=matched | token=iyi#29 | target=kapatıcılığı | neg=[] | ops=['contrast_detected'] | after=(0.6111111111111112,0.0)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=düzenli root=düzenli -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+
+D->H CANDIDATES
+  kullandığım root=kullan | VERB/acl | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+  ortadan root=orta | ADJ/amod | strategy=shared_head_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  olan root=ol | VERB/acl | strategy=predicate_with_target | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  belli root=belli | ADJ/compound | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  esmerler root=esmer | ADJ/nsubj | strategy=shared_head_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  kullanabilir root=kullan | VERB/root | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  kesinlikle root=kesinlikle | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  sürüp root=sür | VERB/advcl | strategy=direct_target_relation | lexicon=not_found | POS=None NEG=None
+  nefessz root=nefessz | ADJ/amod | strategy=shared_head_fallback | lexicon=not_found | POS=None NEG=None
+  yok root=yok | ADJ/compound | strategy=descriptive_content_fallback | lexicon=sentiment | POS=0.0 NEG=0.21428571428571427
+  çok root=çok | ADJ/amod | strategy=shared_head_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  iyi root=iyi | ADJ/conj | strategy=predicate_with_target | lexicon=sentiment | POS=0.6111111111111112 NEG=0.0
+
+
+========================================================================================================================
+sample_id=222 | H_TO_D_DEGRADED_NEGATION
+Gold=neutral | H=neutral | H->D=positive | D->H=positive
+TEXT: Acıtıyor ve yeteri kadar almıyor kalın tüyleri bunun yerine yüz ağdası aldım iki dakikada canım acımadan işim bitiyor biraz daha dayanıklı olanlar kullansın bunu.
+H scores: +1.4878472222222223 -1.476190476190476 | H->D scores: +2.003720238095238 -0.738095238095238
+
+HISNET SENTIMENT WORDS
+  acıtıyor | root=acı | POS=0.0 | NEG=0.5714285714285714
+  yeteri | root=yeter | POS=0.25 | NEG=0.0
+  almıyor | root=al | POS=0.0 | NEG=0.16666666666666666
+  yerine | root=yer | POS=0.015625 | NEG=0.0
+  aldım | root=al | POS=0.0 | NEG=0.16666666666666666
+  canım | root=can | POS=0.2222222222222222 | NEG=0.0
+  acımadan | root=acı | POS=0.0 | NEG=0.5714285714285714
+  dayanıklı | root=dayanıklı | POS=1.0 | NEG=0.0
+
+STANZA TOKENS
+  1 Acıtıyor | lemma=acıt | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres
+  2 ve | lemma=ve | UPOS=CCONJ | HEAD=5:almıyor | DEPREL=cc | FEATS=None
+  3 yeteri | lemma=yeteri | UPOS=ADJ | HEAD=5:almıyor | DEPREL=advmod | FEATS=None
+  4 kadar | lemma=kadar | UPOS=ADP | HEAD=3:yeteri | DEPREL=case | FEATS=None
+  5 almıyor | lemma=al | UPOS=VERB | HEAD=1:Acıtıyor | DEPREL=conj | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Polite=Infm|Tense=Pres
+  6 kalın | lemma=kalın | UPOS=ADJ | HEAD=7:tüyleri | DEPREL=amod | FEATS=None
+  7 tüyleri | lemma=tüy | UPOS=NOUN | HEAD=12:aldım | DEPREL=obj | FEATS=Case=Acc|Number=Plur|Person=3
+  8 bunun | lemma=bu | UPOS=PRON | HEAD=9:yerine | DEPREL=nmod:poss | FEATS=Case=Gen|Number=Sing|Person=3|PronType=Dem
+  9 yerine | lemma=yer | UPOS=NOUN | HEAD=12:aldım | DEPREL=obl | FEATS=Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  10 yüz | lemma=yüz | UPOS=NOUN | HEAD=11:ağdası | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  11 ağdası | lemma=ağda | UPOS=NOUN | HEAD=12:aldım | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  12 aldım | lemma=al | UPOS=VERB | HEAD=1:Acıtıyor | DEPREL=conj | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  13 iki | lemma=iki | UPOS=NUM | HEAD=14:dakikada | DEPREL=nummod | FEATS=NumType=Card
+  14 dakikada | lemma=dakika | UPOS=NOUN | HEAD=16:acımadan | DEPREL=obl | FEATS=Case=Loc|Number=Sing|Person=3
+  15 canım | lemma=can | UPOS=NOUN | HEAD=16:acımadan | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=1
+  16 acımadan | lemma=acı | UPOS=VERB | HEAD=17:işim | DEPREL=advcl | FEATS=Aspect=Perf|Mood=Ind|Polarity=Neg|Tense=Pres|VerbForm=Conv
+  17 işim | lemma=işim | UPOS=NOUN | HEAD=18:bitiyor | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=1
+  18 bitiyor | lemma=bit | UPOS=VERB | HEAD=23:kullansın | DEPREL=nmod | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres
+  19 biraz | lemma=biraz | UPOS=ADV | HEAD=21:dayanıklı | DEPREL=advmod | FEATS=None
+  20 daha | lemma=daha | UPOS=ADV | HEAD=21:dayanıklı | DEPREL=advmod | FEATS=None
+  21 dayanıklı | lemma=dayanıklı | UPOS=ADJ | HEAD=22:olanlar | DEPREL=amod | FEATS=None
+  22 olanlar | lemma=olan | UPOS=NOUN | HEAD=23:kullansın | DEPREL=obl | FEATS=Case=Nom|Number=Plur|Person=3
+  23 kullansın | lemma=kullan | UPOS=VERB | HEAD=1:Acıtıyor | DEPREL=conj | FEATS=Aspect=Perf|Mood=Imp|Number=Sing|Person=3|Polarity=Pos|Tense=Pres
+  24 bunu | lemma=bu | UPOS=PRON | HEAD=23:kullansın | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Person=3|PronType=Dem
+  25 . | lemma=. | UPOS=PUNCT | HEAD=23:kullansın | DEPREL=punct | FEATS=None
+
+H->D SCOPES
+  acıtıyor root=acı | align=matched | token=Acıtıyor#1 | target=None | neg=[] | ops=[] | after=(0.0,0.5714285714285714)
+  yeteri root=yeter | align=matched | token=yeteri#3 | target=None | neg=[] | ops=[] | after=(0.25,0.0)
+  almıyor root=al | align=matched | token=almıyor#5 | target=None | neg=['almıyor'] | ops=['negation_flip', 'modifier_detected'] | after=(0.16666666666666666,0.0)
+  yerine root=yer | align=matched | token=yerine#9 | target=ağdası | neg=[] | ops=[] | after=(0.015625,0.0)
+  aldım root=al | align=matched | token=aldım#12 | target=ağdası | neg=[] | ops=[] | after=(0.0,0.16666666666666666)
+  canım root=can | align=matched | token=canım#15 | target=None | neg=[] | ops=['suppressed_as_target'] | after=(0.0,0.0)
+  acımadan root=acı | align=matched | token=acımadan#16 | target=canım | neg=['acımadan'] | ops=['negation_flip'] | after=(0.5714285714285714,0.0)
+  dayanıklı root=dayanıklı | align=matched | token=dayanıklı#21 | target=olanlar | neg=[] | ops=['modifier_detected'] | after=(1.0,0.0)
+
+NEGATION FLIPS
+  scope=almıyor root=al | token=almıyor | types=self_morphological_negation | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Polite=Infm|Tense=Pres | neg=[{"id": 5, "text": "almıyor", "lemma": "al", "upos": "VERB", "head": 1, "deprel": "conj", "feats": "Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Polite=Infm|Tense=Pres", "type": "self_morphological_negation"}] | before=(0.0,0.16666666666666666) -> after=(0.16666666666666666,0.0)
+  scope=acımadan root=acı | token=acımadan | types=self_morphological_negation | FEATS=Aspect=Perf|Mood=Ind|Polarity=Neg|Tense=Pres|VerbForm=Conv | neg=[{"id": 16, "text": "acımadan", "lemma": "acı", "upos": "VERB", "head": 17, "deprel": "advcl", "feats": "Aspect=Perf|Mood=Ind|Polarity=Neg|Tense=Pres|VerbForm=Conv", "type": "self_morphological_negation"}] | before=(0.0,0.5714285714285714) -> after=(0.5714285714285714,0.0)
+
+D->H CANDIDATES
+  Acıtıyor root=acı | VERB/root | strategy=predicate_candidate | lexicon=sentiment | POS=0.0 NEG=0.5714285714285714
+  yeteri root=yeter | ADJ/advmod | strategy=descriptive_content_fallback | lexicon=sentiment | POS=0.25 NEG=0.0
+  almıyor root=al | VERB/conj | strategy=predicate_candidate | lexicon=sentiment | POS=0.0 NEG=0.16666666666666666
+  kalın root=kalın | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  aldım root=al | VERB/conj | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=0.16666666666666666
+  acımadan root=acı | VERB/advcl | strategy=direct_target_relation | lexicon=sentiment | POS=0.0 NEG=0.5714285714285714
+  biraz root=biraz | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  daha root=daha | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  dayanıklı root=dayanıklı | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=1.0 NEG=0.0
+  kullansın root=kullan | VERB/conj | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=232 | H_TO_D_DEGRADED_NEGATION
+Gold=negative | H=negative | H->D=positive | D->H=neutral
+TEXT: aldim bozuldu almayın.
+H scores: +0.0 -0.16666666666666666 | H->D scores: +0.16666666666666666 -0.0
+
+HISNET SENTIMENT WORDS
+  almayın | root=al | POS=0.0 | NEG=0.16666666666666666
+
+STANZA TOKENS
+  1 aldim | lemma=al | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  2 bozuldu | lemma=boz | UPOS=VERB | HEAD=1:aldim | DEPREL=compound | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|Voice=Pass
+  3 almayın | lemma=al | UPOS=VERB | HEAD=1:aldim | DEPREL=compound | FEATS=Aspect=Perf|Mood=Imp|Number=Plur|Person=2|Polarity=Neg|Tense=Pres
+  4 . | lemma=. | UPOS=PUNCT | HEAD=1:aldim | DEPREL=punct | FEATS=None
+
+H->D SCOPES
+  almayın root=al | align=matched | token=almayın#3 | target=None | neg=['almayın'] | ops=['negation_flip'] | after=(0.16666666666666666,0.0)
+
+NEGATION FLIPS
+  scope=almayın root=al | token=almayın | types=self_morphological_negation | FEATS=Aspect=Perf|Mood=Imp|Number=Plur|Person=2|Polarity=Neg|Tense=Pres | neg=[{"id": 3, "text": "almayın", "lemma": "al", "upos": "VERB", "head": 1, "deprel": "compound", "feats": "Aspect=Perf|Mood=Imp|Number=Plur|Person=2|Polarity=Neg|Tense=Pres", "type": "self_morphological_negation"}] | before=(0.0,0.16666666666666666) -> after=(0.16666666666666666,0.0)
+
+D->H CANDIDATES
+  aldim root=aldim | VERB/root | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=238 | UNMATCHED_SCOPE
+Gold=negative | H=positive | H->D=positive | D->H=neutral
+TEXT: Boyu çok kısa sweat kısmı çok basit
+H scores: +0.1 -0.0 | H->D scores: +0.1 -0.0
+
+HISNET SENTIMENT WORDS
+  basit | root=basit | POS=0.1 | NEG=0.0
+
+STANZA TOKENS
+  1 Boyu | lemma=boy | UPOS=NOUN | HEAD=3:kısa | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  2 çok | lemma=çok | UPOS=ADV | HEAD=3:kısa | DEPREL=advmod | FEATS=None
+  3 kısa | lemma=kısa | UPOS=ADJ | HEAD=5:kısmı | DEPREL=amod | FEATS=None
+  4 sweat | lemma=sweat | UPOS=NOUN | HEAD=5:kısmı | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  5 kısmı | lemma=kısım | UPOS=NOUN | HEAD=7:basi | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  6 çok | lemma=çok | UPOS=ADV | HEAD=7:basi | DEPREL=advmod | FEATS=None
+  7 basi | lemma=basi | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+  8 t | lemma=i | UPOS=AUX | HEAD=0:ROOT | DEPREL=cop | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past
+
+H->D SCOPES
+  basit root=basit | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(0.1,0.0)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=basit root=basit -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+
+D->H CANDIDATES
+  çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  kısa root=kısa | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  basi root=basi | NOUN/root | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=240 | H_TO_D_DEGRADED_NEGATION
+Gold=negative | H=negative | H->D=positive | D->H=positive
+TEXT: büyük göğüsler almamalı iade etmedim ama 1 sefer kullanabildim
+H scores: +0.0 -0.29166666666666663 | H->D scores: +0.29166666666666663 -0.0
+
+HISNET SENTIMENT WORDS
+  almamalı | root=al | POS=0.0 | NEG=0.16666666666666666
+  iade | root=iade | POS=0.0 | NEG=0.125
+
+STANZA TOKENS
+  1 büyük | lemma=büyük | UPOS=ADJ | HEAD=2:göğüsler | DEPREL=amod | FEATS=None
+  2 göğüsler | lemma=göğüs | UPOS=ADJ | HEAD=3:almamalı | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Person=3
+  3 almamalı | lemma=al | UPOS=VERB | HEAD=4:iade | DEPREL=advcl | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres
+  4 iade | lemma=iade | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+  5 etmedim | lemma=et | UPOS=VERB | HEAD=4:iade | DEPREL=compound:lvc | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past
+  6 ama | lemma=ama | UPOS=CCONJ | HEAD=9:kullanabildi | DEPREL=cc | FEATS=None
+  7 1 | lemma=1 | UPOS=NUM | HEAD=8:sefer | DEPREL=nummod | FEATS=NumType=Card
+  8 sefer | lemma=sefer | UPOS=NOUN | HEAD=9:kullanabildi | DEPREL=obl | FEATS=Case=Nom|Number=Sing|Person=3
+  9 kullanabildi | lemma=kullan | UPOS=VERB | HEAD=4:iade | DEPREL=conj | FEATS=Aspect=Perf|Mood=Pot|Number=Sing|Person=3|Polarity=Pos|Tense=Past
+  10 m | lemma=m | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+
+H->D SCOPES
+  almamalı root=al | align=matched | token=almamalı#3 | target=None | neg=['almamalı'] | ops=['negation_flip'] | after=(0.16666666666666666,0.0)
+  iade root=iade | align=matched | token=iade#4 | target=None | neg=['etmedim'] | ops=['negation_flip'] | after=(0.125,0.0)
+
+NEGATION FLIPS
+  scope=almamalı root=al | token=almamalı | types=self_morphological_negation | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres | neg=[{"id": 3, "text": "almamalı", "lemma": "al", "upos": "VERB", "head": 4, "deprel": "advcl", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres", "type": "self_morphological_negation"}] | before=(0.0,0.16666666666666666) -> after=(0.16666666666666666,0.0)
+  scope=iade root=iade | token=iade | types=support_or_other_negation | FEATS=Case=Nom|Number=Sing|Person=3 | neg=[{"id": 5, "text": "etmedim", "lemma": "et", "upos": "VERB", "head": 4, "deprel": "compound:lvc", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past", "type": "support_or_other_negation"}] | before=(0.0,0.125) -> after=(0.125,0.0)
+
+D->H CANDIDATES
+  büyük root=büyük | ADJ/amod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  göğüsler root=göğüs | ADJ/obj | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  iade root=iade | NOUN/root | strategy=predicate_candidate | lexicon=sentiment | POS=0.0 NEG=0.125
+  kullanabildi root=kullan | VERB/conj | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+  m root=m | NOUN/root | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=272 | H_TO_D_IMPROVED_NEGATION_CONTROL
+Gold=negative | H=positive | H->D=negative | D->H=negative
+TEXT: Geç teslimat yapıldı çokta kaliteli bir ürün değilmiş beklediğime değmedi
+H scores: +1.0 -0.0 | H->D scores: +0.0 -1.0
+
+HISNET SENTIMENT WORDS
+  kaliteli | root=kaliteli | POS=1.0 | NEG=0.0
+
+STANZA TOKENS
+  1 Geç | lemma=geç | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres
+  2 teslimat | lemma=teslimat | UPOS=NOUN | HEAD=3:yapıldı | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  3 yapıldı | lemma=yap | UPOS=VERB | HEAD=1:Geç | DEPREL=conj | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|Voice=Pass
+  4 çokta | lemma=çokta | UPOS=ADV | HEAD=5:kaliteli | DEPREL=advmod | FEATS=None
+  5 kaliteli | lemma=kaliteli | UPOS=ADJ | HEAD=7:ürün | DEPREL=amod | FEATS=None
+  6 bir | lemma=bir | UPOS=DET | HEAD=7:ürün | DEPREL=det | FEATS=None
+  7 ürün | lemma=ürün | UPOS=NOUN | HEAD=8:değilmiş | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  8 değilmiş | lemma=değil | UPOS=AUX | HEAD=10:değmedi | DEPREL=nmod | FEATS=Aspect=Perf|Evident=Nfh|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past
+  9 beklediğime | lemma=bekle | UPOS=VERB | HEAD=10:değmedi | DEPREL=obj | FEATS=Aspect=Perf|Case=Dat|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Pos|Tense=Past|VerbForm=Part
+  10 değmedi | lemma=değ | UPOS=VERB | HEAD=3:yapıldı | DEPREL=conj | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past
+
+H->D SCOPES
+  kaliteli root=kaliteli | align=matched | token=kaliteli#5 | target=ürün | neg=['değilmiş'] | ops=['negation_flip', 'modifier_detected'] | after=(0.0,1.0)
+
+NEGATION FLIPS
+  scope=kaliteli root=kaliteli | token=kaliteli | types=explicit_degil | FEATS= | neg=[{"id": 8, "text": "değilmiş", "lemma": "değil", "upos": "AUX", "head": 10, "deprel": "nmod", "feats": "Aspect=Perf|Evident=Nfh|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past", "type": "explicit_degil"}] | before=(1.0,0.0) -> after=(0.0,1.0)
+
+D->H CANDIDATES
+  Geç root=geç | VERB/root | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  yapıldı root=yap | VERB/conj | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  çokta root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  kaliteli root=kaliteli | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=1.0 NEG=0.0
+  değmedi root=değ | VERB/conj | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=275 | UNMATCHED_SCOPE
+Gold=negative | H=negative | H->D=negative | D->H=neutral
+TEXT: Çok dandik
+H scores: +0.0 -0.75 | H->D scores: +0.0 -0.75
+
+HISNET SENTIMENT WORDS
+  dandik | root=dandik | POS=0.0 | NEG=0.75
+
+STANZA TOKENS
+  1 Çok | lemma=çok | UPOS=ADV | HEAD=2:dandi | DEPREL=advmod | FEATS=None
+  2 dandi | lemma=dan | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past
+  3 k | lemma=k | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+
+H->D SCOPES
+  dandik root=dandik | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(0.0,0.75)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=dandik root=dandik -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+
+D->H CANDIDATES
+  Çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  dandi root=dan | VERB/root | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+  k root=k | NOUN/root | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+
+
+========================================================================================================================
+sample_id=287 | H_TO_D_DEGRADED_NEGATION
+Gold=negative | H=negative | H->D=positive | D->H=positive
+TEXT: İyi yorumlara güvenerek aldım ve çok pişman oldum buhar uyguladım ve duracel pil kullandım hatta pil bitene kadar uyguladım yine de hiç bir işe yaramadı yüz temizleyici jel maske vs bu ürüne göre daha yararlı kesinlikle tavsiye etmiyorum
+H scores: +1.7361111111111112 -2.3375 | H->D scores: +2.111111111111111 -1.9625
+
+HISNET SENTIMENT WORDS
+  iyi | root=iyi | POS=0.6111111111111112 | NEG=0.0
+  aldım | root=al | POS=0.0 | NEG=0.16666666666666666
+  pişman | root=pişman | POS=0.0 | NEG=1.0
+  de | root=de | POS=0.0 | NEG=0.020833333333333332
+  hiç | root=hiç | POS=0.0 | NEG=0.5
+  yaramadı | root=yara | POS=0.0 | NEG=0.5
+  maske | root=maske | POS=0.0 | NEG=0.15
+  yararlı | root=yararlı | POS=1.0 | NEG=0.0
+  tavsiye | root=tavsiye | POS=0.125 | NEG=0.0
+
+STANZA TOKENS
+  1 İyi | lemma=iyi | UPOS=ADJ | HEAD=2:yorumlara | DEPREL=amod | FEATS=None
+  2 yorumlara | lemma=yorum | UPOS=NOUN | HEAD=3:güvenerek | DEPREL=obl | FEATS=Case=Dat|Number=Plur|Person=3
+  3 güvenerek | lemma=güven | UPOS=VERB | HEAD=4:aldım | DEPREL=advcl | FEATS=Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Conv
+  4 aldım | lemma=al | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  5 ve | lemma=ve | UPOS=CCONJ | HEAD=10:uyguladım | DEPREL=cc | FEATS=None
+  6 çok | lemma=çok | UPOS=ADV | HEAD=7:pişman | DEPREL=advmod | FEATS=None
+  7 pişman | lemma=pişman | UPOS=ADJ | HEAD=10:uyguladım | DEPREL=amod | FEATS=None
+  8 oldum | lemma=ol | UPOS=VERB | HEAD=7:pişman | DEPREL=compound:lvc | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  9 buhar | lemma=buhar | UPOS=NOUN | HEAD=10:uyguladım | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  10 uyguladım | lemma=uygula | UPOS=VERB | HEAD=4:aldım | DEPREL=conj | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  11 ve | lemma=ve | UPOS=CCONJ | HEAD=14:kullandım | DEPREL=cc | FEATS=None
+  12 duracel | lemma=duracel | UPOS=ADJ | HEAD=13:pil | DEPREL=amod | FEATS=None
+  13 pil | lemma=pil | UPOS=NOUN | HEAD=14:kullandım | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Person=3
+  14 kullandım | lemma=kullan | UPOS=VERB | HEAD=10:uyguladım | DEPREL=conj | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  15 hatta | lemma=hatta | UPOS=CCONJ | HEAD=14:kullandım | DEPREL=cc | FEATS=None
+  16 pil | lemma=pil | UPOS=NOUN | HEAD=17:bitene | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  17 bitene | lemma=biten | UPOS=NOUN | HEAD=19:uyguladım | DEPREL=obl | FEATS=Case=Dat|Number=Sing|Person=3
+  18 kadar | lemma=kadar | UPOS=ADP | HEAD=17:bitene | DEPREL=case | FEATS=None
+  19 uyguladım | lemma=uygula | UPOS=VERB | HEAD=25:yaramadı | DEPREL=nmod | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  20 yine | lemma=yine | UPOS=ADV | HEAD=19:uyguladım | DEPREL=advmod | FEATS=None
+  21 de | lemma=de | UPOS=CCONJ | HEAD=20:yine | DEPREL=advmod:emph | FEATS=None
+  22 hiç | lemma=hiç | UPOS=ADV | HEAD=24:işe | DEPREL=advmod | FEATS=None
+  23 bir | lemma=bir | UPOS=DET | HEAD=24:işe | DEPREL=det | FEATS=None
+  24 işe | lemma=iş | UPOS=NOUN | HEAD=25:yaramadı | DEPREL=obj | FEATS=Case=Dat|Number=Sing|Person=3
+  25 yaramadı | lemma=yar | UPOS=VERB | HEAD=26:yüz | DEPREL=compound | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past
+  26 yüz | lemma=yüz | UPOS=NOUN | HEAD=27:temizle | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  27 temizle | lemma=te | UPOS=VERB | HEAD=31:vs | DEPREL=nmod:poss | FEATS=Aspect=Perf|Mood=Imp|Number=Sing|Person=2|Polarity=Pos|Tense=Pres
+  28 yici | lemma=yici | UPOS=ADP | HEAD=27:temizle | DEPREL=case | FEATS=None
+  29 jel | lemma=jel | UPOS=NOUN | HEAD=30:maske | DEPREL=nmod | FEATS=Case=Nom|Number=Sing|Person=3
+  30 maske | lemma=maske | UPOS=NOUN | HEAD=31:vs | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  31 vs | lemma=vs | UPOS=NOUN | HEAD=38:tavsiye | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  32 bu | lemma=bu | UPOS=DET | HEAD=33:ürüne | DEPREL=det | FEATS=None
+  33 ürüne | lemma=ürün | UPOS=NOUN | HEAD=38:tavsiye | DEPREL=obl | FEATS=Case=Dat|Number=Sing|Person=3
+  34 göre | lemma=göre | UPOS=ADP | HEAD=33:ürüne | DEPREL=case | FEATS=None
+  35 daha | lemma=daha | UPOS=ADV | HEAD=36:yararlı | DEPREL=advmod | FEATS=None
+  36 yararlı | lemma=yararlı | UPOS=ADJ | HEAD=37:kesinlikle | DEPREL=amod | FEATS=None
+  37 kesinlikle | lemma=kesinlik | UPOS=NOUN | HEAD=38:tavsiye | DEPREL=nmod | FEATS=Case=Ins|Number=Sing|Person=3
+  38 tavsiye | lemma=tavsiye | UPOS=NOUN | HEAD=4:aldım | DEPREL=conj | FEATS=Case=Nom|Number=Sing|Person=3
+  39 etmiyoru | lemma=et | UPOS=VERB | HEAD=38:tavsiye | DEPREL=compound:lvc | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Polite=Infm|Tense=Pres
+  40 m | lemma=m | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+
+H->D SCOPES
+  iyi root=iyi | align=matched | token=İyi#1 | target=yorumlara | neg=[] | ops=[] | after=(0.6111111111111112,0.0)
+  aldım root=al | align=matched | token=aldım#4 | target=None | neg=[] | ops=[] | after=(0.0,0.16666666666666666)
+  pişman root=pişman | align=matched | token=pişman#7 | target=buhar | neg=[] | ops=['modifier_detected'] | after=(0.0,1.0)
+  de root=de | align=matched | token=de#21 | target=None | neg=[] | ops=[] | after=(0.0,0.020833333333333332)
+  hiç root=hiç | align=matched | token=hiç#22 | target=None | neg=[] | ops=[] | after=(0.0,0.5)
+  yaramadı root=yara | align=matched | token=yaramadı#25 | target=işe | neg=['yaramadı'] | ops=['negation_flip'] | after=(0.5,0.0)
+  maske root=maske | align=matched | token=maske#30 | target=None | neg=[] | ops=[] | after=(0.0,0.15)
+  yararlı root=yararlı | align=matched | token=yararlı#36 | target=kesinlikle | neg=[] | ops=['modifier_detected'] | after=(1.0,0.0)
+  tavsiye root=tavsiye | align=matched | token=tavsiye#38 | target=vs | neg=['etmiyoru'] | ops=['negation_flip'] | after=(0.0,0.125)
+
+NEGATION FLIPS
+  scope=yaramadı root=yara | token=yaramadı | types=self_morphological_negation | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past | neg=[{"id": 25, "text": "yaramadı", "lemma": "yar", "upos": "VERB", "head": 26, "deprel": "compound", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past", "type": "self_morphological_negation"}] | before=(0.0,0.5) -> after=(0.5,0.0)
+  scope=tavsiye root=tavsiye | token=tavsiye | types=support_or_other_negation | FEATS=Case=Nom|Number=Sing|Person=3 | neg=[{"id": 39, "text": "etmiyoru", "lemma": "et", "upos": "VERB", "head": 38, "deprel": "compound:lvc", "feats": "Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Polite=Infm|Tense=Pres", "type": "support_or_other_negation"}] | before=(0.125,0.0) -> after=(0.0,0.125)
+
+D->H CANDIDATES
+  İyi root=iyi | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=0.6111111111111112 NEG=0.0
+  aldım root=al | VERB/root | strategy=predicate_candidate | lexicon=sentiment | POS=0.0 NEG=0.16666666666666666
+  çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  pişman root=pişman | ADJ/amod | strategy=shared_head_fallback | lexicon=sentiment | POS=0.0 NEG=1.0
+  uyguladım root=uygula | VERB/conj | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  duracel root=duracel | ADJ/amod | strategy=adjectival_modifier | lexicon=not_found | POS=None NEG=None
+  kullandım root=kullan | VERB/conj | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  yine root=yine | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  hiç root=hiç | ADV/advmod | strategy=descriptive_content_fallback | lexicon=sentiment | POS=0.0 NEG=0.5
+  yaramadı root=yara | VERB/compound | strategy=direct_target_relation | lexicon=sentiment | POS=0.0 NEG=0.5
+  temizle root=te | VERB/nmod:poss | strategy=direct_target_relation | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  daha root=daha | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  yararlı root=yararlı | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=1.0 NEG=0.0
+  tavsiye root=tavsiye | NOUN/conj | strategy=predicate_with_target | lexicon=sentiment | POS=0.125 NEG=0.0
+  m root=m | NOUN/root | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=292 | H_TO_D_DEGRADED_NONNEGATION
+Gold=positive | H=positive | H->D=negative | D->H=negative
+TEXT: İndirimini bekledim ve aldım çok memnunum şimdilik 2. Kullanısım daha
+H scores: +0.25 -0.16666666666666666 | H->D scores: +0.0 -0.16666666666666666
+
+HISNET SENTIMENT WORDS
+  indirimini | root=indirim | POS=0.25 | NEG=0.0
+  aldım | root=al | POS=0.0 | NEG=0.16666666666666666
+
+STANZA TOKENS
+  1 İndirimini | lemma=indirim | UPOS=NOUN | HEAD=2:bekledim | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  2 bekledim | lemma=bekle | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  3 ve | lemma=ve | UPOS=CCONJ | HEAD=6:memnunum | DEPREL=cc | FEATS=None
+  4 aldım | lemma=al | UPOS=VERB | HEAD=2:bekledim | DEPREL=conj | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  5 çok | lemma=çok | UPOS=ADV | HEAD=6:memnunum | DEPREL=advmod | FEATS=None
+  6 memnunum | lemma=memnu | UPOS=VERB | HEAD=2:bekledim | DEPREL=conj | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Polite=Infm|Tense=Pres
+  7 şimdilik | lemma=şimdilik | UPOS=ADV | HEAD=8:2 | DEPREL=advmod | FEATS=None
+  8 2 | lemma=2 | UPOS=NUM | HEAD=2:bekledim | DEPREL=conj | FEATS=Case=Nom|NumType=Card|Number=Sing|Person=3
+  9 . | lemma=. | UPOS=PUNCT | HEAD=8:2 | DEPREL=punct | FEATS=None
+  10 Kullanısım | lemma=kullanıs | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=1
+  11 daha | lemma=daha | UPOS=ADV | HEAD=10:Kullanısım | DEPREL=advmod | FEATS=None
+
+H->D SCOPES
+  indirimini root=indirim | align=matched | token=İndirimini#1 | target=None | neg=[] | ops=['suppressed_as_target'] | after=(0.0,0.0)
+  aldım root=al | align=matched | token=aldım#4 | target=İndirimini | neg=[] | ops=[] | after=(0.0,0.16666666666666666)
+
+NEGATION FLIPS
+
+D->H CANDIDATES
+  bekledim root=bekle | VERB/root | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  aldım root=al | VERB/conj | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=0.16666666666666666
+  çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  memnunum root=memnun | VERB/conj | strategy=predicate_with_target | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  şimdilik root=şimdilik | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  Kullanısım root=kullanısım | NOUN/root | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+  daha root=daha | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+
+
+========================================================================================================================
+sample_id=300 | H_TO_D_IMPROVED_NEGATION_CONTROL
+Gold=positive | H=negative | H->D=positive | D->H=positive
+TEXT: Çok başarılı bir ürün. Yanma hissi de kişinin acı eşiğine bağlı bence beni çok rahatsız etmedi
+H scores: +1.0 -1.2589285714285714 | H->D scores: +1.6666666666666665 -0.5922619047619048
+
+HISNET SENTIMENT WORDS
+  başarılı | root=başarılı | POS=1.0 | NEG=0.0
+  de | root=de | POS=0.0 | NEG=0.020833333333333332
+  acı | root=acı | POS=0.0 | NEG=0.5714285714285714
+  rahatsız | root=rahatsız | POS=0.0 | NEG=0.6666666666666666
+
+STANZA TOKENS
+  1 Çok | lemma=çok | UPOS=ADV | HEAD=2:başarılı | DEPREL=advmod | FEATS=None
+  2 başarılı | lemma=başarılı | UPOS=ADJ | HEAD=4:ürün | DEPREL=amod | FEATS=None
+  3 bir | lemma=bir | UPOS=DET | HEAD=4:ürün | DEPREL=det | FEATS=None
+  4 ürün | lemma=ürün | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+  5 . | lemma=. | UPOS=PUNCT | HEAD=4:ürün | DEPREL=punct | FEATS=None
+  6 Yanma | lemma=yan | UPOS=VERB | HEAD=7:hissi | DEPREL=nmod:poss | FEATS=Aspect=Perf|Case=Nom|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Vnoun
+  7 hissi | lemma=hissi | UPOS=NOUN | HEAD=12:bağlı | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  8 de | lemma=de | UPOS=CCONJ | HEAD=7:hissi | DEPREL=advmod:emph | FEATS=None
+  9 kişinin | lemma=kişi | UPOS=NOUN | HEAD=11:eşiğine | DEPREL=nmod:poss | FEATS=Case=Gen|Number=Sing|Person=3
+  10 acı | lemma=acı | UPOS=ADJ | HEAD=11:eşiğine | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  11 eşiğine | lemma=eşik | UPOS=NOUN | HEAD=12:bağlı | DEPREL=obl | FEATS=Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  12 bağlı | lemma=bağlı | UPOS=ADJ | HEAD=16:rahatsız | DEPREL=amod | FEATS=None
+  13 bence | lemma=ben | UPOS=PRON | HEAD=16:rahatsız | DEPREL=obl | FEATS=Case=Equ|Number=Sing|Person=1|PronType=Prs
+  14 beni | lemma=ben | UPOS=PRON | HEAD=16:rahatsız | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Person=1|PronType=Prs
+  15 çok | lemma=çok | UPOS=ADV | HEAD=16:rahatsız | DEPREL=advmod | FEATS=None
+  16 rahatsız | lemma=rahatsız | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=None
+  17 etmedi | lemma=et | UPOS=VERB | HEAD=16:rahatsız | DEPREL=compound:lvc | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past
+
+H->D SCOPES
+  başarılı root=başarılı | align=matched | token=başarılı#2 | target=ürün | neg=[] | ops=['modifier_detected'] | after=(1.0,0.0)
+  de root=de | align=matched | token=de#8 | target=None | neg=[] | ops=[] | after=(0.0,0.020833333333333332)
+  acı root=acı | align=matched | token=acı#10 | target=None | neg=[] | ops=[] | after=(0.0,0.5714285714285714)
+  rahatsız root=rahatsız | align=matched | token=rahatsız#16 | target=beni | neg=['etmedi'] | ops=['negation_flip', 'modifier_detected'] | after=(0.6666666666666666,0.0)
+
+NEGATION FLIPS
+  scope=rahatsız root=rahatsız | token=rahatsız | types=support_or_other_negation | FEATS= | neg=[{"id": 17, "text": "etmedi", "lemma": "et", "upos": "VERB", "head": 16, "deprel": "compound:lvc", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past", "type": "support_or_other_negation"}] | before=(0.0,0.6666666666666666) -> after=(0.6666666666666666,0.0)
+
+D->H CANDIDATES
+  Çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  başarılı root=başarılı | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=1.0 NEG=0.0
+  ürün root=ürün | NOUN/root | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  acı root=acı | ADJ/nmod:poss | strategy=descriptive_content_fallback | lexicon=sentiment | POS=0.0 NEG=0.5714285714285714
+  bağlı root=bağlı | ADJ/amod | strategy=direct_target_relation | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  rahatsız root=rahatsız | ADJ/root | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=0.6666666666666666
+
+
+========================================================================================================================
+sample_id=309 | H_TO_D_IMPROVED_NEGATION_CONTROL
+Gold=positive | H=neutral | H->D=positive | D->H=positive
+TEXT: Ben pek beğenmedim kullandığım için de iade edemedim
+H scores: +0.125 -0.14583333333333334 | H->D scores: +0.25 -0.020833333333333332
+
+HISNET SENTIMENT WORDS
+  pek | root=pek | POS=0.125 | NEG=0.0
+  de | root=de | POS=0.0 | NEG=0.020833333333333332
+  iade | root=iade | POS=0.0 | NEG=0.125
+
+STANZA TOKENS
+  1 Ben | lemma=ben | UPOS=PRON | HEAD=7:iade | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=1|PronType=Prs
+  2 pek | lemma=pek | UPOS=ADV | HEAD=3:beğenmedim | DEPREL=advmod | FEATS=None
+  3 beğenmedim | lemma=beğen | UPOS=VERB | HEAD=4:kullandığım | DEPREL=obj | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past
+  4 kullandığım | lemma=kullan | UPOS=VERB | HEAD=7:iade | DEPREL=acl | FEATS=Aspect=Perf|Case=Nom|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Pos|Tense=Past|VerbForm=Part
+  5 için | lemma=için | UPOS=ADP | HEAD=4:kullandığım | DEPREL=case | FEATS=None
+  6 de | lemma=de | UPOS=CCONJ | HEAD=4:kullandığım | DEPREL=advmod:emph | FEATS=None
+  7 iade | lemma=iade | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+  8 edemedi | lemma=et | UPOS=VERB | HEAD=7:iade | DEPREL=compound:lvc | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past
+  9 m | lemma=m | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+
+H->D SCOPES
+  pek root=pek | align=matched | token=pek#2 | target=None | neg=[] | ops=[] | after=(0.125,0.0)
+  de root=de | align=matched | token=de#6 | target=None | neg=[] | ops=[] | after=(0.0,0.020833333333333332)
+  iade root=iade | align=matched | token=iade#7 | target=Ben | neg=['edemedi'] | ops=['negation_flip'] | after=(0.125,0.0)
+
+NEGATION FLIPS
+  scope=iade root=iade | token=iade | types=support_or_other_negation | FEATS=Case=Nom|Number=Sing|Person=3 | neg=[{"id": 8, "text": "edemedi", "lemma": "et", "upos": "VERB", "head": 7, "deprel": "compound:lvc", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past", "type": "support_or_other_negation"}] | before=(0.0,0.125) -> after=(0.125,0.0)
+
+D->H CANDIDATES
+  pek root=pek | ADV/advmod | strategy=descriptive_content_fallback | lexicon=sentiment | POS=0.125 NEG=0.0
+  kullandığım root=kullan | VERB/acl | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  iade root=iade | NOUN/root | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=0.125
+  m root=m | NOUN/root | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=333 | UNMATCHED_SCOPE
+Gold=neutral | H=positive | H->D=positive | D->H=positive
+TEXT: Ebatı bayağı büyük ferahlatıyor ve nemlendiriyor sadece kapağı kırılmıştı özenli pakatleseniz iyi olur
+H scores: +1.0361111111111112 -0.0 | H->D scores: +1.0361111111111112 -0.0
+
+HISNET SENTIMENT WORDS
+  bayağı | root=bayağı | POS=0.05 | NEG=0.0
+  özenli | root=özenli | POS=0.375 | NEG=0.0
+  iyi | root=iyi | POS=0.6111111111111112 | NEG=0.0
+
+STANZA TOKENS
+  1 Ebatı | lemma=ebat | UPOS=NOUN | HEAD=4:ferahlatıyor | DEPREL=nsubj | FEATS=Case=Acc|Number=Sing|Person=3
+  2 bayağı | lemma=bayağı | UPOS=ADJ | HEAD=3:büyük | DEPREL=amod | FEATS=None
+  3 büyük | lemma=büyük | UPOS=ADJ | HEAD=4:ferahlatıyor | DEPREL=amod | FEATS=None
+  4 ferahlatıyor | lemma=ferahla | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres|Voice=Cau
+  5 ve | lemma=ve | UPOS=CCONJ | HEAD=14:olur | DEPREL=cc | FEATS=None
+  6 nemlendiriyor | lemma=nemle | UPOS=VERB | HEAD=4:ferahlatıyor | DEPREL=conj | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres|Voice=Cau
+  7 sadece | lemma=sadece | UPOS=ADV | HEAD=8:kapağı | DEPREL=advmod | FEATS=None
+  8 kapağı | lemma=kapak | UPOS=NOUN | HEAD=9:kırılmıştı | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  9 kırılmıştı | lemma=kır | UPOS=VERB | HEAD=14:olur | DEPREL=advcl | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pqp|Voice=Pass
+  10 özen | lemma=özen | UPOS=NOUN | HEAD=12:pakatleseniz | DEPREL=amod | FEATS=Case=Nom|Number=Sing|Person=3
+  11 li | lemma=li | UPOS=ADP | HEAD=10:özen | DEPREL=case | FEATS=None
+  12 pakatleseniz | lemma=pakatle | UPOS=NOUN | HEAD=14:olur | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  13 iyi | lemma=iyi | UPOS=ADJ | HEAD=14:olur | DEPREL=amod | FEATS=None
+  14 olur | lemma=ol | UPOS=VERB | HEAD=4:ferahlatıyor | DEPREL=conj | FEATS=Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres
+
+H->D SCOPES
+  bayağı root=bayağı | align=matched | token=bayağı#2 | target=None | neg=[] | ops=[] | after=(0.05,0.0)
+  özenli root=özenli | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(0.375,0.0)
+  iyi root=iyi | align=matched | token=iyi#13 | target=pakatleseniz | neg=[] | ops=[] | after=(0.6111111111111112,0.0)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=özenli root=özenli -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+
+D->H CANDIDATES
+  bayağı root=bayağı | ADJ/amod | strategy=descriptive_content_fallback | lexicon=sentiment | POS=0.05 NEG=0.0
+  büyük root=büyük | ADJ/amod | strategy=shared_head_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  ferahlatıyor root=ferahlat | VERB/root | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  nemlendiriyor root=nemlen | VERB/conj | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  sadece root=sadece | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  kırılmıştı root=kırıl | VERB/advcl | strategy=direct_target_relation | lexicon=not_found | POS=None NEG=None
+  özen root=özen | NOUN/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  iyi root=iyi | ADJ/amod | strategy=shared_head_fallback | lexicon=sentiment | POS=0.6111111111111112 NEG=0.0
+  olur root=ol | VERB/conj | strategy=predicate_with_target | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+
+
+========================================================================================================================
+sample_id=343 | H_TO_D_IMPROVED_NEGATION_CONTROL
+Gold=positive | H=negative | H->D=positive | D->H=positive
+TEXT: Müthiş bir ürün. Ben de yorumlara ve puanına bakarak aldım. Özellikle fiyat performans bakımından değerlendirdiğimde de harika bir ürün. İlk kullanımda verdiği aydınlık ve yatışmış cilt hissi beni şaşırttı. Bundan sonra sürekli kullanacağım bir ürün. Zatem c vitamini düzenli bir ihtiyaç cilt için. Kullanımdan sonraki görüntüyle bakılırsa bu ihtiyacı karşılıyor bu serum. Mutlak almalısınız.
+H scores: +1.525 -1.75 | H->D scores: +1.6916666666666667 -1.5833333333333333
+
+HISNET SENTIMENT WORDS
+  müthiş | root=müthiş | POS=0.0 | NEG=0.375
+  de | root=de | POS=0.0 | NEG=0.020833333333333332
+  bakarak | root=bak | POS=0.0 | NEG=0.25
+  aldım | root=al | POS=0.0 | NEG=0.16666666666666666
+  de | root=de | POS=0.0 | NEG=0.020833333333333332
+  harika | root=harika | POS=1.0 | NEG=0.0
+  aydınlık | root=aydınlık | POS=0.4 | NEG=0.0
+  düzenli | root=düzenli | POS=0.125 | NEG=0.0
+  ihtiyaç | root=ihtiyaç | POS=0.0 | NEG=0.25
+  bakılırsa | root=bak | POS=0.0 | NEG=0.25
+  ihtiyacı | root=ihtiyaç | POS=0.0 | NEG=0.25
+  almalısınız | root=al | POS=0.0 | NEG=0.16666666666666666
+
+STANZA TOKENS
+  1 Müthiş | lemma=müthiş | UPOS=ADJ | HEAD=3:ürün | DEPREL=amod | FEATS=None
+  2 bir | lemma=bir | UPOS=DET | HEAD=3:ürün | DEPREL=det | FEATS=None
+  3 ürün | lemma=ürün | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+  4 . | lemma=. | UPOS=PUNCT | HEAD=3:ürün | DEPREL=punct | FEATS=None
+  5 Ben | lemma=ben | UPOS=PRON | HEAD=11:aldım | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=1|PronType=Prs
+  6 de | lemma=de | UPOS=CCONJ | HEAD=5:Ben | DEPREL=advmod:emph | FEATS=None
+  7 yorumlara | lemma=yorum | UPOS=NOUN | HEAD=10:bakarak | DEPREL=obl | FEATS=Case=Dat|Number=Plur|Person=3
+  8 ve | lemma=ve | UPOS=CCONJ | HEAD=9:puanına | DEPREL=cc | FEATS=None
+  9 puanına | lemma=puan | UPOS=NOUN | HEAD=7:yorumlara | DEPREL=conj | FEATS=Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  10 bakarak | lemma=bak | UPOS=VERB | HEAD=11:aldım | DEPREL=advcl | FEATS=Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Conv
+  11 aldım | lemma=al | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  12 . | lemma=. | UPOS=PUNCT | HEAD=11:aldım | DEPREL=punct | FEATS=None
+  13 Özellikle | lemma=özellikle | UPOS=ADV | HEAD=21:ürün | DEPREL=discourse | FEATS=None
+  14 fiyat | lemma=fiyat | UPOS=NOUN | HEAD=15:performans | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  15 performans | lemma=performans | UPOS=NOUN | HEAD=16:bakımından | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  16 bakımından | lemma=bakım | UPOS=NOUN | HEAD=17:değerlendirdiğimde | DEPREL=obl | FEATS=Case=Abl|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  17 değerlendirdiğimde | lemma=değerlen | UPOS=VERB | HEAD=21:ürün | DEPREL=nmod | FEATS=Aspect=Perf|Case=Loc|Mood=Ind|Number[psor]=Plur|Person[psor]=1|Polarity=Pos|Tense=Past|VerbForm=Part
+  18 de | lemma=de | UPOS=CCONJ | HEAD=17:değerlendirdiğimde | DEPREL=advmod:emph | FEATS=None
+  19 harika | lemma=harika | UPOS=ADJ | HEAD=21:ürün | DEPREL=amod | FEATS=None
+  20 bir | lemma=bir | UPOS=DET | HEAD=21:ürün | DEPREL=det | FEATS=None
+  21 ürün | lemma=ürün | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+  22 . | lemma=. | UPOS=PUNCT | HEAD=21:ürün | DEPREL=punct | FEATS=None
+  23 İlk | lemma=ilk | UPOS=ADJ | HEAD=24:kullanımda | DEPREL=amod | FEATS=None
+  24 kullanımda | lemma=kullanım | UPOS=NOUN | HEAD=25:verdiği | DEPREL=obl | FEATS=Case=Loc|Number=Sing|Person=3
+  25 verdiği | lemma=ver | UPOS=VERB | HEAD=30:hissi | DEPREL=acl | FEATS=Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Past|VerbForm=Part
+  26 aydınlık | lemma=aydınlık | UPOS=ADJ | HEAD=30:hissi | DEPREL=amod | FEATS=None
+  27 ve | lemma=ve | UPOS=CCONJ | HEAD=28:yatışmış | DEPREL=cc | FEATS=None
+  28 yatışmış | lemma=yatış | UPOS=VERB | HEAD=26:aydınlık | DEPREL=conj | FEATS=Aspect=Perf|Evident=Nfh|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Part
+  29 cilt | lemma=cilt | UPOS=NOUN | HEAD=30:hissi | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  30 hissi | lemma=hissi | UPOS=NOUN | HEAD=32:şaşırttı | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  31 beni | lemma=ben | UPOS=PRON | HEAD=32:şaşırttı | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Person=1|PronType=Prs
+  32 şaşırttı | lemma=şaşır | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|Voice=Cau
+  33 . | lemma=. | UPOS=PUNCT | HEAD=32:şaşırttı | DEPREL=punct | FEATS=None
+  34 Bundan | lemma=bu | UPOS=PRON | HEAD=37:kullanacağım | DEPREL=obl | FEATS=Case=Abl|Number=Sing|Person=3|PronType=Dem
+  35 sonra | lemma=sonra | UPOS=ADP | HEAD=34:Bundan | DEPREL=case | FEATS=None
+  36 sürekli | lemma=sürekli | UPOS=ADV | HEAD=37:kullanacağım | DEPREL=advmod | FEATS=None
+  37 kullanacağım | lemma=kullan | UPOS=VERB | HEAD=39:ürün | DEPREL=acl | FEATS=Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Pos|Tense=Fut|VerbForm=Part
+  38 bir | lemma=bir | UPOS=DET | HEAD=39:ürün | DEPREL=det | FEATS=None
+  39 ürün | lemma=ürün | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+  40 . | lemma=. | UPOS=PUNCT | HEAD=39:ürün | DEPREL=punct | FEATS=None
+  41 Zatem | lemma=zatem | UPOS=NOUN | HEAD=43:vitamini | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  42 c | lemma=c | UPOS=NOUN | HEAD=43:vitamini | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  43 vitamini | lemma=vitam | UPOS=NOUN | HEAD=47:cilt | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  44 düzenli | lemma=düzenli | UPOS=ADJ | HEAD=46:ihtiyaç | DEPREL=amod | FEATS=None
+  45 bir | lemma=bir | UPOS=DET | HEAD=46:ihtiyaç | DEPREL=det | FEATS=None
+  46 ihtiyaç | lemma=ihtiyaç | UPOS=NOUN | HEAD=47:cilt | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Person=3
+  47 cilt | lemma=cilt | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+  48 için | lemma=için | UPOS=ADP | HEAD=47:cilt | DEPREL=case | FEATS=None
+  49 . | lemma=. | UPOS=PUNCT | HEAD=47:cilt | DEPREL=punct | FEATS=None
+  50 Kullanımdan | lemma=kullanım | UPOS=NOUN | HEAD=54:bakılırsa | DEPREL=obl | FEATS=Case=Abl|Number=Sing|Person=3
+  51 sonra | lemma=sonra | UPOS=ADP | HEAD=50:Kullanımdan | DEPREL=case | FEATS=None
+  52 ki | lemma=ki | UPOS=ADP | HEAD=50:Kullanımdan | DEPREL=case | FEATS=None
+  53 görüntüyle | lemma=görüntü | UPOS=NOUN | HEAD=54:bakılırsa | DEPREL=obl | FEATS=Case=Ins|Number=Sing|Person=3
+  54 bakılırsa | lemma=bak | UPOS=VERB | HEAD=57:karşılıyor | DEPREL=advcl | FEATS=Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|Voice=Pass
+  55 bu | lemma=bu | UPOS=DET | HEAD=56:ihtiyacı | DEPREL=det | FEATS=None
+  56 ihtiyacı | lemma=ihtiyaç | UPOS=NOUN | HEAD=57:karşılıyor | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Person=3
+  57 karşılıyor | lemma=karşıl | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres|Voice=Cau
+  58 bu | lemma=bu | UPOS=DET | HEAD=59:serum | DEPREL=det | FEATS=None
+  59 serum | lemma=serum | UPOS=NOUN | HEAD=57:karşılıyor | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  60 . | lemma=. | UPOS=PUNCT | HEAD=57:karşılıyor | DEPREL=punct | FEATS=None
+  61 Mutlak | lemma=mutlak | UPOS=NOUN | HEAD=62:almalısınız | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Person=3
+  62 almalısınız | lemma=al | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Imp|Number=Plur|Person=2|Polarity=Neg|Tense=Pres
+  63 . | lemma=. | UPOS=PUNCT | HEAD=62:almalısınız | DEPREL=punct | FEATS=None
+
+H->D SCOPES
+  müthiş root=müthiş | align=matched | token=Müthiş#1 | target=ürün | neg=[] | ops=[] | after=(0.0,0.375)
+  de root=de | align=matched | token=de#6 | target=None | neg=[] | ops=[] | after=(0.0,0.020833333333333332)
+  bakarak root=bak | align=matched | token=bakarak#10 | target=Ben | neg=[] | ops=[] | after=(0.0,0.25)
+  aldım root=al | align=matched | token=aldım#11 | target=Ben | neg=[] | ops=[] | after=(0.0,0.16666666666666666)
+  de root=de | align=matched | token=de#18 | target=None | neg=[] | ops=[] | after=(0.0,0.020833333333333332)
+  harika root=harika | align=matched | token=harika#19 | target=ürün | neg=[] | ops=[] | after=(1.0,0.0)
+  aydınlık root=aydınlık | align=matched | token=aydınlık#26 | target=hissi | neg=[] | ops=[] | after=(0.4,0.0)
+  düzenli root=düzenli | align=matched | token=düzenli#44 | target=ihtiyaç | neg=[] | ops=[] | after=(0.125,0.0)
+  ihtiyaç root=ihtiyaç | align=matched | token=ihtiyaç#46 | target=vitamini | neg=[] | ops=[] | after=(0.0,0.25)
+  bakılırsa root=bak | align=matched | token=bakılırsa#54 | target=serum | neg=[] | ops=[] | after=(0.0,0.25)
+  ihtiyacı root=ihtiyaç | align=matched | token=ihtiyacı#56 | target=serum | neg=[] | ops=[] | after=(0.0,0.25)
+  almalısınız root=al | align=matched | token=almalısınız#62 | target=Mutlak | neg=['almalısınız'] | ops=['negation_flip'] | after=(0.16666666666666666,0.0)
+
+NEGATION FLIPS
+  scope=almalısınız root=al | token=almalısınız | types=self_morphological_negation | FEATS=Aspect=Perf|Mood=Imp|Number=Plur|Person=2|Polarity=Neg|Tense=Pres | neg=[{"id": 62, "text": "almalısınız", "lemma": "al", "upos": "VERB", "head": 0, "deprel": "root", "feats": "Aspect=Perf|Mood=Imp|Number=Plur|Person=2|Polarity=Neg|Tense=Pres", "type": "self_morphological_negation"}] | before=(0.0,0.16666666666666666) -> after=(0.16666666666666666,0.0)
+
+D->H CANDIDATES
+  Müthiş root=müthiş | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=0.0 NEG=0.375
+  ürün root=ürün | NOUN/root | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  puanına root=puan | NOUN/conj | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  bakarak root=bak | VERB/advcl | strategy=shared_head_fallback | lexicon=sentiment | POS=0.0 NEG=0.25
+  aldım root=al | VERB/root | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=0.16666666666666666
+  Özellikle root=özellikle | ADV/discourse | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  harika root=harika | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=1.0 NEG=0.0
+  ürün root=ürün | NOUN/root | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  İlk root=ilk | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  verdiği root=ver | VERB/acl | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+  aydınlık root=aydınlık | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=0.4 NEG=0.0
+  yatışmış root=yatış | VERB/conj | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+  şaşırttı root=şaşırt | VERB/root | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  sürekli root=sürekli | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  kullanacağım root=kullan | VERB/acl | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+  ürün root=ürün | NOUN/root | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  düzenli root=düzenli | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=0.125 NEG=0.0
+  cilt root=cilt | NOUN/root | strategy=predicate_with_target | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  bakılırsa root=bak | VERB/advcl | strategy=shared_head_fallback | lexicon=sentiment | POS=0.0 NEG=0.25
+  karşılıyor root=karşıla | VERB/root | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  almalısınız root=al | VERB/root | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=0.16666666666666666
+
+
+========================================================================================================================
+sample_id=351 | H_TO_D_DEGRADED_NEGATION
+Gold=neutral | H=neutral | H->D=positive | D->H=positive
+TEXT: Henüz bir faydasını göremedim fakat kullanmaya devam ediyorum uzun vadede yararlı olabilceğini düşünüorm.
+H scores: +1.0 -1.0 | H->D scores: +2.0 -0.0
+
+HISNET SENTIMENT WORDS
+  göremedim | root=gör | POS=0.0 | NEG=1.0
+  yararlı | root=yararlı | POS=1.0 | NEG=0.0
+
+STANZA TOKENS
+  1 Henüz | lemma=henüz | UPOS=ADV | HEAD=4:göremedim | DEPREL=advmod | FEATS=None
+  2 bir | lemma=bir | UPOS=DET | HEAD=3:faydasını | DEPREL=det | FEATS=None
+  3 faydasını | lemma=fayda | UPOS=NOUN | HEAD=4:göremedim | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  4 göremedim | lemma=gör | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past
+  5 fakat | lemma=fakat | UPOS=CCONJ | HEAD=7:devam | DEPREL=cc | FEATS=None
+  6 kullanmaya | lemma=kullan | UPOS=VERB | HEAD=7:devam | DEPREL=obj | FEATS=Aspect=Perf|Case=Dat|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Vnoun
+  7 devam | lemma=devam | UPOS=NOUN | HEAD=4:göremedim | DEPREL=conj | FEATS=Case=Nom|Number=Sing|Person=3
+  8 ediyorum | lemma=et | UPOS=VERB | HEAD=7:devam | DEPREL=compound:lvc | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Polite=Infm|Tense=Pres
+  9 uzun | lemma=uzun | UPOS=ADJ | HEAD=10:vadede | DEPREL=amod | FEATS=None
+  10 vadede | lemma=vade | UPOS=NOUN | HEAD=12:olabilceğini | DEPREL=obl | FEATS=Case=Loc|Number=Sing|Person=3
+  11 yararlı | lemma=yararlı | UPOS=ADJ | HEAD=12:olabilceğini | DEPREL=amod | FEATS=None
+  12 olabilceğini | lemma=ol | UPOS=VERB | HEAD=13:düşünüorm | DEPREL=obj | FEATS=Aspect=Perf|Case=Acc|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Fut|VerbForm=Part
+  13 düşünüorm | lemma=düşün | UPOS=VERB | HEAD=4:göremedim | DEPREL=conj | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Polite=Infm|Tense=Pres
+  14 . | lemma=. | UPOS=PUNCT | HEAD=13:düşünüorm | DEPREL=punct | FEATS=None
+
+H->D SCOPES
+  göremedim root=gör | align=matched | token=göremedim#4 | target=faydasını | neg=['göremedim'] | ops=['negation_flip', 'modifier_detected'] | after=(1.0,0.0)
+  yararlı root=yararlı | align=matched | token=yararlı#11 | target=None | neg=[] | ops=[] | after=(1.0,0.0)
+
+NEGATION FLIPS
+  scope=göremedim root=gör | token=göremedim | types=self_morphological_negation | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past | neg=[{"id": 4, "text": "göremedim", "lemma": "gör", "upos": "VERB", "head": 0, "deprel": "root", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past", "type": "self_morphological_negation"}] | before=(0.0,1.0) -> after=(1.0,0.0)
+
+D->H CANDIDATES
+  Henüz root=henüz | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  göremedim root=gör | VERB/root | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=1.0
+  devam root=devam | NOUN/conj | strategy=predicate_with_target | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  uzun root=uzun | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  yararlı root=yararlı | ADJ/amod | strategy=descriptive_content_fallback | lexicon=sentiment | POS=1.0 NEG=0.0
+  düşünüorm root=düşünüorm | VERB/conj | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=383 | UNMATCHED_SCOPE
+Gold=negative | H=negative | H->D=negative | D->H=negative
+TEXT: Kötü ürün kalitesiz
+H scores: +0.0 -1.15 | H->D scores: +0.0 -1.15
+
+HISNET SENTIMENT WORDS
+  kötü | root=kötü | POS=0.0 | NEG=0.9
+  kalitesiz | root=kalitesiz | POS=0.0 | NEG=0.25
+
+STANZA TOKENS
+  1 Kötü | lemma=kötü | UPOS=ADJ | HEAD=2:ürün | DEPREL=amod | FEATS=None
+  2 ürün | lemma=ürün | UPOS=NOUN | HEAD=3:kalitesi | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  3 kalitesi | lemma=kalite | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  4 z | lemma=i | UPOS=AUX | HEAD=3:kalitesi | DEPREL=cop | FEATS=Aspect=Perf|Mood=Ind|Number=Plur|Person=2|Tense=Pres
+
+H->D SCOPES
+  kötü root=kötü | align=matched | token=Kötü#1 | target=ürün | neg=[] | ops=[] | after=(0.0,0.9)
+  kalitesiz root=kalitesiz | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(0.0,0.25)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=kalitesiz root=kalitesiz -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+
+D->H CANDIDATES
+  Kötü root=kötü | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=0.0 NEG=0.9
+  kalitesi root=kalite | NOUN/root | strategy=predicate_candidate | lexicon=sentiment | POS=0.5 NEG=0.0
+
+
+========================================================================================================================
+sample_id=400 | H_TO_D_DEGRADED_NEGATION
+Gold=negative | H=negative | H->D=positive | D->H=positive
+TEXT: çok düzenli kullandım hiç bir faydası olmadı belki 2 üç kutu bitirmek gerekir ben bir kutu kullandım faydasını göremedim
+H scores: +0.125 -1.5 | H->D scores: +1.125 -0.5
+
+HISNET SENTIMENT WORDS
+  düzenli | root=düzenli | POS=0.125 | NEG=0.0
+  hiç | root=hiç | POS=0.0 | NEG=0.5
+  göremedim | root=gör | POS=0.0 | NEG=1.0
+
+STANZA TOKENS
+  1 çok | lemma=çok | UPOS=ADV | HEAD=2:düzenli | DEPREL=advmod | FEATS=None
+  2 düzenli | lemma=düzenli | UPOS=ADJ | HEAD=3:kullandım | DEPREL=amod | FEATS=None
+  3 kullandım | lemma=kullan | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  4 hiç | lemma=hiç | UPOS=ADV | HEAD=7:olmadı | DEPREL=advmod | FEATS=None
+  5 bir | lemma=bir | UPOS=DET | HEAD=6:faydası | DEPREL=det | FEATS=None
+  6 faydası | lemma=fayda | UPOS=NOUN | HEAD=7:olmadı | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  7 olmadı | lemma=ol | UPOS=VERB | HEAD=3:kullandım | DEPREL=conj | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past
+  8 belki | lemma=belki | UPOS=ADV | HEAD=12:bitirmek | DEPREL=advmod | FEATS=None
+  9 2 | lemma=2 | UPOS=NUM | HEAD=11:kutu | DEPREL=nummod | FEATS=NumType=Card
+  10 üç | lemma=üç | UPOS=NUM | HEAD=9:2 | DEPREL=flat | FEATS=NumType=Card
+  11 kutu | lemma=kut | UPOS=NOUN | HEAD=12:bitirmek | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Person=3
+  12 bitirmek | lemma=bitir | UPOS=VERB | HEAD=13:gerekir | DEPREL=nsubj | FEATS=Aspect=Perf|Case=Nom|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Vnoun
+  13 gerekir | lemma=gerek | UPOS=VERB | HEAD=19:göremedi | DEPREL=nmod | FEATS=Aspect=Hab|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pres
+  14 ben | lemma=ben | UPOS=PRON | HEAD=19:göremedi | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=1|PronType=Prs
+  15 bir | lemma=bir | UPOS=DET | HEAD=16:kutu | DEPREL=det | FEATS=None
+  16 kutu | lemma=kut | UPOS=NOUN | HEAD=17:kullandım | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Person=3
+  17 kullandım | lemma=kullan | UPOS=VERB | HEAD=19:göremedi | DEPREL=advcl | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  18 faydasını | lemma=fayda | UPOS=NOUN | HEAD=19:göremedi | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  19 göremedi | lemma=gör | UPOS=VERB | HEAD=3:kullandım | DEPREL=conj | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past
+  20 m | lemma=m | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+
+H->D SCOPES
+  düzenli root=düzenli | align=matched | token=düzenli#2 | target=None | neg=[] | ops=['modifier_detected'] | after=(0.125,0.0)
+  hiç root=hiç | align=matched | token=hiç#4 | target=faydası | neg=[] | ops=[] | after=(0.0,0.5)
+  göremedim root=gör | align=matched | token=göremedi#19 | target=ben | neg=['göremedi'] | ops=['negation_flip'] | after=(1.0,0.0)
+
+NEGATION FLIPS
+  scope=göremedim root=gör | token=göremedi | types=self_morphological_negation | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past | neg=[{"id": 19, "text": "göremedi", "lemma": "gör", "upos": "VERB", "head": 3, "deprel": "conj", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past", "type": "self_morphological_negation"}] | before=(0.0,1.0) -> after=(1.0,0.0)
+
+D->H CANDIDATES
+  çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  düzenli root=düzenli | ADJ/amod | strategy=descriptive_content_fallback | lexicon=sentiment | POS=0.125 NEG=0.0
+  kullandım root=kullan | VERB/root | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+  hiç root=hiç | ADV/advmod | strategy=descriptive_content_fallback | lexicon=sentiment | POS=0.0 NEG=0.5
+  olmadı root=ol | VERB/conj | strategy=predicate_with_target | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  belki root=belki | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  bitirmek root=bitir | VERB/nsubj | strategy=direct_target_relation | lexicon=not_found | POS=None NEG=None
+  kullandım root=kullan | VERB/advcl | strategy=direct_target_relation | lexicon=not_found | POS=None NEG=None
+  göremedi root=gör | VERB/conj | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=1.0
+  m root=m | NOUN/root | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=403 | H_TO_D_IMPROVED_NEGATION_CONTROL
+Gold=positive | H=negative | H->D=positive | D->H=positive
+TEXT: Severek kullandığım bir koku pişman olmazsınız
+H scores: +0.0 -1.125 | H->D scores: +1.125 -0.0
+
+HISNET SENTIMENT WORDS
+  pişman | root=pişman | POS=0.0 | NEG=1.0
+  olmazsınız | root=olmaz | POS=0.0 | NEG=0.125
+
+STANZA TOKENS
+  1 Severek | lemma=severek | UPOS=ADV | HEAD=2:kullandığım | DEPREL=advmod | FEATS=None
+  2 kullandığım | lemma=kullan | UPOS=VERB | HEAD=4:koku | DEPREL=acl | FEATS=Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Pos|Tense=Past|VerbForm=Part
+  3 bir | lemma=bir | UPOS=DET | HEAD=4:koku | DEPREL=det | FEATS=None
+  4 koku | lemma=koku | UPOS=NOUN | HEAD=5:pişman | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Person=3
+  5 pişman | lemma=pişman | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=None
+  6 olmazsınız | lemma=ol | UPOS=VERB | HEAD=5:pişman | DEPREL=compound:lvc | FEATS=Aspect=Hab|Mood=Pot|Number=Plur|Person=2|Polarity=Neg|Tense=Pres
+
+H->D SCOPES
+  pişman root=pişman | align=matched | token=pişman#5 | target=koku | neg=['olmazsınız'] | ops=['negation_flip'] | after=(1.0,0.0)
+  olmazsınız root=olmaz | align=matched | token=olmazsınız#6 | target=koku | neg=['olmazsınız'] | ops=['negation_flip'] | after=(0.125,0.0)
+
+NEGATION FLIPS
+  scope=pişman root=pişman | token=pişman | types=support_or_other_negation | FEATS= | neg=[{"id": 6, "text": "olmazsınız", "lemma": "ol", "upos": "VERB", "head": 5, "deprel": "compound:lvc", "feats": "Aspect=Hab|Mood=Pot|Number=Plur|Person=2|Polarity=Neg|Tense=Pres", "type": "support_or_other_negation"}] | before=(0.0,1.0) -> after=(1.0,0.0)
+  scope=olmazsınız root=olmaz | token=olmazsınız | types=self_morphological_negation | FEATS=Aspect=Hab|Mood=Pot|Number=Plur|Person=2|Polarity=Neg|Tense=Pres | neg=[{"id": 6, "text": "olmazsınız", "lemma": "ol", "upos": "VERB", "head": 5, "deprel": "compound:lvc", "feats": "Aspect=Hab|Mood=Pot|Number=Plur|Person=2|Polarity=Neg|Tense=Pres", "type": "self_morphological_negation"}] | before=(0.0,0.125) -> after=(0.125,0.0)
+
+D->H CANDIDATES
+  Severek root=sev | ADV/advmod | strategy=descriptive_content_fallback | lexicon=not_found | POS=None NEG=None
+  kullandığım root=kullan | VERB/acl | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+  pişman root=pişman | ADJ/root | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=1.0
+
+
+========================================================================================================================
+sample_id=409 | UNMATCHED_SCOPE
+Gold=negative | H=negative | H->D=negative | D->H=negative
+TEXT: 1 yıldız bile fazla kırmızısı boyuyor.penye kalitesi kötü.3×l aldım sanki L beden gibi.daracik.
+H scores: +0.5 -1.1666666666666667 | H->D scores: +0.5 -1.1666666666666667
+
+HISNET SENTIMENT WORDS
+  boyuyor | root=boya | POS=0.0 | NEG=0.1
+  kalitesi | root=kalite | POS=0.5 | NEG=0.0
+  kötü | root=kötü | POS=0.0 | NEG=0.9
+  aldım | root=al | POS=0.0 | NEG=0.16666666666666666
+
+STANZA TOKENS
+  1 1 | lemma=1 | UPOS=NUM | HEAD=2:yıldız | DEPREL=nummod | FEATS=NumType=Card
+  2 yıldız | lemma=yıldız | UPOS=NOUN | HEAD=6:boyuyor | DEPREL=obl | FEATS=Case=Nom|Number=Sing|Person=3
+  3 bile | lemma=bile | UPOS=ADV | HEAD=2:yıldız | DEPREL=advmod:emph | FEATS=None
+  4 fazla | lemma=fazla | UPOS=ADJ | HEAD=5:kırmızısı | DEPREL=amod | FEATS=None
+  5 kırmızısı | lemma=kırmızı | UPOS=NOUN | HEAD=6:boyuyor | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  6 boyuyor | lemma=boy | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres
+  7 . | lemma=. | UPOS=PUNCT | HEAD=6:boyuyor | DEPREL=punct | FEATS=None
+  8 penye | lemma=penye | UPOS=ADJ | HEAD=9:kalitesi | DEPREL=amod | FEATS=None
+  9 kalitesi | lemma=kalite | UPOS=NOUN | HEAD=11:aldım | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  10 kötü.3×l | lemma=kötü.3×l | UPOS=NOUN | HEAD=11:aldım | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Person=3
+  11 aldım | lemma=al | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  12 sanki | lemma=sanki | UPOS=ADV | HEAD=16:.daracik | DEPREL=advmod | FEATS=None
+  13 L | lemma=lira | UPOS=NOUN | HEAD=14:beden | DEPREL=amod | FEATS=Case=Nom|Number=Sing|Person=3
+  14 beden | lemma=beden | UPOS=NOUN | HEAD=16:.daracik | DEPREL=obl | FEATS=Case=Nom|Number=Sing|Person=3
+  15 gibi | lemma=gibi | UPOS=ADP | HEAD=14:beden | DEPREL=case | FEATS=None
+  16 .daracik | lemma=.daracik | UPOS=ADJ | HEAD=11:aldım | DEPREL=conj | FEATS=None
+  17 . | lemma=. | UPOS=PUNCT | HEAD=16:.daracik | DEPREL=punct | FEATS=None
+
+H->D SCOPES
+  boyuyor root=boya | align=matched | token=boyuyor#6 | target=kırmızısı | neg=[] | ops=[] | after=(0.0,0.1)
+  kalitesi root=kalite | align=matched | token=kalitesi#9 | target=kötü.3×l | neg=[] | ops=[] | after=(0.5,0.0)
+  kötü root=kötü | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(0.0,0.9)
+  aldım root=al | align=matched | token=aldım#11 | target=kalitesi | neg=[] | ops=[] | after=(0.0,0.16666666666666666)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=kötü root=kötü -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+
+D->H CANDIDATES
+  bile root=bile | ADV/advmod:emph | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  fazla root=fazla | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  boyuyor root=boya | VERB/root | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=0.1
+  penye root=penye | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  aldım root=al | VERB/root | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=0.16666666666666666
+  sanki root=sanki | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  L root=l | NOUN/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  .daracik root=.daracik | ADJ/conj | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=459 | UNMATCHED_SCOPE
+Gold=positive | H=positive | H->D=positive | D->H=positive
+TEXT: bunu şiddetle tavsiye ederim yıllardır aradığım ürün bu imiş meğer harika
+H scores: +1.125 -0.16666666666666666 | H->D scores: +1.125 -0.16666666666666666
+
+HISNET SENTIMENT WORDS
+  şiddetle | root=şiddet | POS=0.0 | NEG=0.16666666666666666
+  tavsiye | root=tavsiye | POS=0.125 | NEG=0.0
+  harika | root=harika | POS=1.0 | NEG=0.0
+
+STANZA TOKENS
+  1 bunu | lemma=bu | UPOS=PRON | HEAD=3:tavsiye | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Person=3|PronType=Dem
+  2 şiddetle | lemma=şiddet | UPOS=NOUN | HEAD=3:tavsiye | DEPREL=nmod | FEATS=Case=Ins|Number=Sing|Person=3
+  3 tavsiye | lemma=tavsiye | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3
+  4 ederim | lemma=et | UPOS=VERB | HEAD=3:tavsiye | DEPREL=compound:lvc | FEATS=Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Pres
+  5 yıllar | lemma=yıl | UPOS=NOUN | HEAD=8:ürün | DEPREL=amod | FEATS=Case=Nom|Number=Plur|Person=3
+  6 dır | lemma=dir | UPOS=ADP | HEAD=5:yıllar | DEPREL=case | FEATS=None
+  7 aradığım | lemma=ara | UPOS=VERB | HEAD=8:ürün | DEPREL=acl | FEATS=Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Pos|Tense=Past|VerbForm=Part
+  8 ürün | lemma=ürün | UPOS=NOUN | HEAD=9:bu | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  9 bu | lemma=bu | UPOS=PRON | HEAD=3:tavsiye | DEPREL=conj | FEATS=Case=Nom|Number=Sing|Person=3|PronType=Dem
+  10 imiş | lemma=i | UPOS=AUX | HEAD=9:bu | DEPREL=cop | FEATS=Aspect=Perf|Evident=Nfh|Mood=Ind|Number=Sing|Person=3|Tense=Past
+  11 meğer | lemma=meğer | UPOS=CCONJ | HEAD=9:bu | DEPREL=advmod:emph | FEATS=None
+  12 harik | lemma=harik | UPOS=NOUN | HEAD=11:meğer | DEPREL=punct | FEATS=Case=Nom|Number=Sing|Person=3
+  13 a | lemma=a | UPOS=INTJ | HEAD=0:ROOT | DEPREL=root | FEATS=None
+
+H->D SCOPES
+  şiddetle root=şiddet | align=matched | token=şiddetle#2 | target=bunu | neg=[] | ops=[] | after=(0.0,0.16666666666666666)
+  tavsiye root=tavsiye | align=matched | token=tavsiye#3 | target=bunu | neg=[] | ops=[] | after=(0.125,0.0)
+  harika root=harika | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(1.0,0.0)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=harika root=harika -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+
+D->H CANDIDATES
+  tavsiye root=tavsiye | NOUN/root | strategy=predicate_with_target | lexicon=sentiment | POS=0.125 NEG=0.0
+  yıllar root=yıl | NOUN/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  aradığım root=ara | VERB/acl | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  a root=a | INTJ/root | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+
+
+========================================================================================================================
+sample_id=464 | H_TO_D_IMPROVED_NEGATION_CONTROL
+Gold=positive | H=negative | H->D=positive | D->H=positive
+TEXT: Çok kullanışlı deriye zararını görmedim fakat benimki bozuldu ara tıpası çıkmış sakın düşürmeyin
+H scores: +0.2916666666666667 -2.5 | H->D scores: +1.25 -0.5
+
+HISNET SENTIMENT WORDS
+  kullanışlı | root=kullanışlı | POS=0.25 | NEG=0.0
+  deriye | root=deri | POS=0.041666666666666664 | NEG=0.0
+  zararını | root=zarar | POS=0.0 | NEG=1.0
+  görmedim | root=gör | POS=0.0 | NEG=1.0
+  sakın | root=sakın | POS=0.0 | NEG=0.5
+
+STANZA TOKENS
+  1 Çok | lemma=çok | UPOS=ADV | HEAD=2:kullanışlı | DEPREL=advmod | FEATS=None
+  2 kullanışlı | lemma=kullanışlı | UPOS=ADJ | HEAD=3:deriye | DEPREL=amod | FEATS=None
+  3 deriye | lemma=deri | UPOS=NOUN | HEAD=4:zararını | DEPREL=obl | FEATS=Case=Dat|Number=Sing|Person=3
+  4 zararını | lemma=zarar | UPOS=NOUN | HEAD=5:görmedim | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  5 görmedim | lemma=gör | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past
+  6 fakat | lemma=fakat | UPOS=CCONJ | HEAD=9:bozuldu | DEPREL=cc | FEATS=None
+  7 benim | lemma=ben | UPOS=PRON | HEAD=9:bozuldu | DEPREL=nmod:poss | FEATS=Case=Gen|Number=Sing|Person=1|PronType=Prs
+  8 ki | lemma=ki | UPOS=ADP | HEAD=7:benim | DEPREL=case | FEATS=Case=Nom|Number=Sing|Person=3
+  9 bozuldu | lemma=boz | UPOS=VERB | HEAD=5:görmedim | DEPREL=conj | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|Voice=Pass
+  10 ara | lemma=ara | UPOS=ADJ | HEAD=11:tıpası | DEPREL=amod | FEATS=None
+  11 tıpası | lemma=tıpa | UPOS=NOUN | HEAD=12:çıkmış | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  12 çıkmış | lemma=çık | UPOS=VERB | HEAD=13:sakın | DEPREL=compound | FEATS=Aspect=Perf|Evident=Nfh|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past
+  13 sakın | lemma=sak | UPOS=VERB | HEAD=14:düşürmeyin | DEPREL=advcl | FEATS=Aspect=Perf|Mood=Imp|Number=Plur|Person=2|Polarity=Pos|Tense=Pres
+  14 düşürmeyin | lemma=düşür | UPOS=VERB | HEAD=5:görmedim | DEPREL=conj | FEATS=Aspect=Perf|Mood=Imp|Number=Plur|Person=2|Polarity=Neg|Tense=Pres
+
+H->D SCOPES
+  kullanışlı root=kullanışlı | align=matched | token=kullanışlı#2 | target=deriye | neg=[] | ops=['modifier_detected'] | after=(0.25,0.0)
+  deriye root=deri | align=matched | token=deriye#3 | target=None | neg=[] | ops=['suppressed_as_target'] | after=(0.0,0.0)
+  zararını root=zarar | align=matched | token=zararını#4 | target=None | neg=[] | ops=['suppressed_as_target'] | after=(0.0,0.0)
+  görmedim root=gör | align=matched | token=görmedim#5 | target=zararını | neg=['görmedim'] | ops=['negation_flip'] | after=(1.0,0.0)
+  sakın root=sakın | align=matched | token=sakın#13 | target=None | neg=[] | ops=[] | after=(0.0,0.5)
+
+NEGATION FLIPS
+  scope=görmedim root=gör | token=görmedim | types=self_morphological_negation | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past | neg=[{"id": 5, "text": "görmedim", "lemma": "gör", "upos": "VERB", "head": 0, "deprel": "root", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past", "type": "self_morphological_negation"}] | before=(0.0,1.0) -> after=(1.0,0.0)
+
+D->H CANDIDATES
+  Çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  kullanışlı root=kullanışlı | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=0.25 NEG=0.0
+  görmedim root=gör | VERB/root | strategy=predicate_with_target | lexicon=sentiment | POS=0.0 NEG=1.0
+  bozuldu root=bozul | VERB/conj | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+  ara root=ara | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  çıkmış root=çık | VERB/compound | strategy=direct_target_relation | lexicon=not_found | POS=None NEG=None
+  düşürmeyin root=düşür | VERB/conj | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=469 | UNMATCHED_SCOPE;H_TO_D_IMPROVED_NEGATION_CONTROL
+Gold=negative | H=positive | H->D=negative | D->H=negative
+TEXT: Ürün kaliteli değil kullanışsız
+H scores: +1.0 -0.75 | H->D scores: +0.0 -1.75
+
+HISNET SENTIMENT WORDS
+  kaliteli | root=kaliteli | POS=1.0 | NEG=0.0
+  kullanışsız | root=kullanışsız | POS=0.0 | NEG=0.75
+
+STANZA TOKENS
+  1 Ürün | lemma=ürün | UPOS=NOUN | HEAD=3:değil | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3
+  2 kaliteli | lemma=kaliteli | UPOS=ADJ | HEAD=3:değil | DEPREL=amod | FEATS=None
+  3 değil | lemma=değil | UPOS=AUX | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres
+  4 kullanışsı | lemma=kullanışsı | UPOS=NOUN | HEAD=3:değil | DEPREL=conj | FEATS=Case=Nom|Number=Sing|Person=3
+  5 z | lemma=i | UPOS=AUX | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Plur|Person=1|Tense=Pres
+
+H->D SCOPES
+  kaliteli root=kaliteli | align=matched | token=kaliteli#2 | target=Ürün | neg=['değil'] | ops=['negation_flip'] | after=(0.0,1.0)
+  kullanışsız root=kullanışsız | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(0.0,0.75)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=kullanışsız root=kullanışsız -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+  scope=kaliteli root=kaliteli | token=kaliteli | types=explicit_degil | FEATS= | neg=[{"id": 3, "text": "değil", "lemma": "değil", "upos": "AUX", "head": 0, "deprel": "root", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres", "type": "explicit_degil"}] | before=(1.0,0.0) -> after=(0.0,1.0)
+
+D->H CANDIDATES
+  kaliteli root=kaliteli | ADJ/amod | strategy=shared_head_fallback | lexicon=sentiment | POS=1.0 NEG=0.0
+  kullanışsı root=kullanışsı | NOUN/conj | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=479 | UNMATCHED_SCOPE
+Gold=positive | H=positive | H->D=positive | D->H=positive
+TEXT: çok memnun kaldım ..yumuşak tertemiz bir cilt ..derinlemesine temizlik👍🏻👍🏻
+H scores: +1.2361111111111112 -0.0 | H->D scores: +1.2361111111111112 -0.0
+
+HISNET SENTIMENT WORDS
+  yumuşak | root=yumuşak | POS=0.1111111111111111 | NEG=0.0
+  tertemiz | root=tertemiz | POS=1.0 | NEG=0.0
+  temizlik | root=temizlik | POS=0.125 | NEG=0.0
+
+STANZA TOKENS
+  1 çok | lemma=çok | UPOS=ADV | HEAD=2:memnun | DEPREL=advmod | FEATS=None
+  2 memnun | lemma=memnun | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=None
+  3 kaldım | lemma=kal | UPOS=VERB | HEAD=2:memnun | DEPREL=compound | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past
+  4 ..yumuşak | lemma=..yumuşak | UPOS=ADJ | HEAD=7:cilt | DEPREL=amod | FEATS=None
+  5 tertemiz | lemma=tertemiz | UPOS=ADJ | HEAD=7:cilt | DEPREL=amod | FEATS=None
+  6 bir | lemma=bir | UPOS=DET | HEAD=7:cilt | DEPREL=det | FEATS=None
+  7 cilt | lemma=cilt | UPOS=NOUN | HEAD=2:memnun | DEPREL=conj | FEATS=Case=Nom|Number=Sing|Person=3
+  8 ..derinlemesine | lemma=..derinle | UPOS=PUNCT | HEAD=7:cilt | DEPREL=punct | FEATS=None
+  9 temizlik👍🏻👍 | lemma=temizlik👍🏻👍 | UPOS=NOUN | HEAD=2:memnun | DEPREL=conj | FEATS=Case=Ins|Number=Sing|Person=3
+  10 🏻 | lemma=🏻 | UPOS=PUNCT | HEAD=2:memnun | DEPREL=punct | FEATS=None
+
+H->D SCOPES
+  yumuşak root=yumuşak | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(0.1111111111111111,0.0)
+  tertemiz root=tertemiz | align=matched | token=tertemiz#5 | target=cilt | neg=[] | ops=[] | after=(1.0,0.0)
+  temizlik root=temizlik | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(0.125,0.0)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=yumuşak root=yumuşak -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+  unmatched=temizlik root=temizlik -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+
+D->H CANDIDATES
+  çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  memnun root=memnun | ADJ/root | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  ..yumuşak root=..yumuşak | ADJ/amod | strategy=adjectival_modifier | lexicon=not_found | POS=None NEG=None
+  tertemiz root=tertemiz | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=1.0 NEG=0.0
+  cilt root=cilt | NOUN/conj | strategy=predicate_candidate | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  temizlik👍🏻👍 root=temizlik👍🏻👍 | NOUN/conj | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=485 | UNMATCHED_SCOPE
+Gold=neutral | H=positive | H->D=positive | D->H=positive
+TEXT: Cidden dudağı çok yakıyor uygun fiyatlı olduğu için denenebilir
+H scores: +0.5 -0.125 | H->D scores: +0.5 -0.125
+
+HISNET SENTIMENT WORDS
+  uygun | root=uygun | POS=0.5 | NEG=0.0
+  fiyatlı | root=fiyatlı | POS=0.0 | NEG=0.125
+
+STANZA TOKENS
+  1 Cidden | lemma=cidden | UPOS=ADV | HEAD=4:yakıyor | DEPREL=advmod | FEATS=None
+  2 dudağı | lemma=dudak | UPOS=NOUN | HEAD=4:yakıyor | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3|Person[psor]=3
+  3 çok | lemma=çok | UPOS=ADV | HEAD=4:yakıyor | DEPREL=advmod | FEATS=None
+  4 yakıyor | lemma=yak | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres
+  5 uygun | lemma=uygun | UPOS=ADJ | HEAD=6:fiyat | DEPREL=amod | FEATS=None
+  6 fiyat | lemma=fiyat | UPOS=NOUN | HEAD=8:olduğu | DEPREL=obl | FEATS=Case=Nom|Number=Sing|Person=3
+  7 lı | lemma=li | UPOS=ADP | HEAD=6:fiyat | DEPREL=case | FEATS=None
+  8 olduğu | lemma=ol | UPOS=VERB | HEAD=10:denenebilir | DEPREL=advcl | FEATS=Aspect=Perf|Case=Nom|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Past|VerbForm=Part
+  9 için | lemma=için | UPOS=ADP | HEAD=8:olduğu | DEPREL=case | FEATS=None
+  10 denenebilir | lemma=dene | UPOS=VERB | HEAD=4:yakıyor | DEPREL=conj | FEATS=Aspect=Hab|Mood=Pot|Number=Sing|Person=3|Polarity=Pos|Tense=Pres|Voice=Pass
+
+H->D SCOPES
+  uygun root=uygun | align=matched | token=uygun#5 | target=fiyat | neg=[] | ops=[] | after=(0.5,0.0)
+  fiyatlı root=fiyatlı | align=unmatched | token=None#None | target=None | neg=[] | ops=[] | after=(0.0,0.125)
+
+UNMATCHED ALIGNMENT CANDIDATES
+  unmatched=fiyatlı root=fiyatlı -> token=None#None lemma=None | score=0 NO_SURFACE_ROOT_OR_LEMMA_MATCH | used=False by= | NO_POTENTIAL_MATCH
+
+NEGATION FLIPS
+
+D->H CANDIDATES
+  Cidden root=cidden | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  yakıyor root=yak | VERB/root | strategy=predicate_with_target | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  uygun root=uygun | ADJ/amod | strategy=adjectival_modifier | lexicon=sentiment | POS=0.5 NEG=0.0
+  denenebilir root=dene | VERB/conj | strategy=predicate_with_target | lexicon=not_found | POS=None NEG=None
+
+
+========================================================================================================================
+sample_id=498 | H_TO_D_IMPROVED_NEGATION_CONTROL
+Gold=positive | H=negative | H->D=positive | D->H=neutral
+TEXT: Yıllardır kullandığım kokusuna bayıldığım bir parfüm tek sıkıntısı çok kalıcı değil.
+H scores: +0.125 -0.625 | H->D scores: +0.75 -0.0
+
+HISNET SENTIMENT WORDS
+  parfüm | root=parfüm | POS=0.125 | NEG=0.0
+  sıkıntısı | root=sıkıntı | POS=0.0 | NEG=0.625
+
+STANZA TOKENS
+  1 Yıllar | lemma=yıl | UPOS=NOUN | HEAD=3:kullandığım | DEPREL=obl | FEATS=Case=Nom|Number=Plur|Person=3
+  2 dır | lemma=dir | UPOS=ADP | HEAD=1:Yıllar | DEPREL=case | FEATS=None
+  3 kullandığım | lemma=kullan | UPOS=VERB | HEAD=4:kokusuna | DEPREL=acl | FEATS=Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Pos|Tense=Past|VerbForm=Part
+  4 kokusuna | lemma=koku | UPOS=NOUN | HEAD=5:bayıldığım | DEPREL=obl | FEATS=Case=Dat|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3
+  5 bayıldığım | lemma=bayıl | UPOS=VERB | HEAD=7:parfüm | DEPREL=acl | FEATS=Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Pos|Tense=Past|VerbForm=Part
+  6 bir | lemma=bir | UPOS=DET | HEAD=7:parfüm | DEPREL=det | FEATS=None
+  7 parfüm | lemma=parf | UPOS=NOUN | HEAD=9:sıkıntısı | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3
+  8 tek | lemma=tek | UPOS=ADJ | HEAD=9:sıkıntısı | DEPREL=amod | FEATS=None
+  9 sıkıntısı | lemma=sıkıntı | UPOS=NOUN | HEAD=11:kalıcı | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3
+  10 çok | lemma=çok | UPOS=ADV | HEAD=11:kalıcı | DEPREL=advmod | FEATS=None
+  11 kalıcı | lemma=kalıcı | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=None
+  12 değil | lemma=değil | UPOS=AUX | HEAD=11:kalıcı | DEPREL=cop | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres
+  13 . | lemma=. | UPOS=PUNCT | HEAD=11:kalıcı | DEPREL=punct | FEATS=None
+
+H->D SCOPES
+  parfüm root=parfüm | align=matched | token=parfüm#7 | target=None | neg=[] | ops=[] | after=(0.125,0.0)
+  sıkıntısı root=sıkıntı | align=matched | token=sıkıntısı#9 | target=None | neg=['değil'] | ops=['negation_flip'] | after=(0.625,0.0)
+
+NEGATION FLIPS
+  scope=sıkıntısı root=sıkıntı | token=sıkıntısı | types=explicit_degil | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3 | neg=[{"id": 12, "text": "değil", "lemma": "değil", "upos": "AUX", "head": 11, "deprel": "cop", "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres", "type": "explicit_degil"}] | before=(0.0,0.625) -> after=(0.625,0.0)
+
+D->H CANDIDATES
+  kullandığım root=kullan | VERB/acl | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+  bayıldığım root=bayıl | VERB/acl | strategy=predicate_candidate | lexicon=not_found | POS=None NEG=None
+  tek root=tek | ADJ/amod | strategy=adjectival_modifier | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  çok root=çok | ADV/advmod | strategy=descriptive_content_fallback | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+  kalıcı root=kalıcı | ADJ/root | strategy=predicate_with_target | lexicon=neutral_lexicon_entry | POS=0.0 NEG=0.0
+
+

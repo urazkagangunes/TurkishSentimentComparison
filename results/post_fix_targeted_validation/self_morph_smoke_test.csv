@@ -1,0 +1,7 @@
+﻿text,H,H_to_D,scope_word,scope_root,dependency_token,negations,operations
+Hiçbir faydasını göremedim.,negative,negative,göremedim,gör,göremedim,[],[]
+Sivilce için işe yaramıyor.,negative,negative,sivilce,sivilce,Sivilce,[],[]
+Sivilce için işe yaramıyor.,negative,negative,yaramıyor,yara,yaramıyor,[],[]
+Bu ürünü almayın.,negative,negative,almayın,al,almayın,[],[]
+Bende sivilce yaptı sevmedim.,negative,negative,sivilce,sivilce,sivilce,[],[]
+Ürünü alamadım.,negative,negative,alamadım,al,alamadım,[],[]

@@ -1,0 +1,145 @@
+id,text,gold,focus,system,prediction,positive_score,negative_score,net_score,correct
+1,Film güzel.,positive,basic positive predicate,H,positive,0.45454545454545453,0.0,0.45454545454545453,True
+1,Film güzel.,positive,basic positive predicate,H->D,positive,0.45454545454545453,0.0,0.45454545454545453,True
+1,Film güzel.,positive,basic positive predicate,D->H,positive,0.45454545454545453,0.0,0.45454545454545453,True
+1,Film güzel.,positive,basic positive predicate,H->D-LW,positive,0.45454545454545453,0.0,0.45454545454545453,True
+2,Film kötü.,negative,basic negative predicate,H,negative,0.0,0.9,-0.9,True
+2,Film kötü.,negative,basic negative predicate,H->D,negative,0.0,0.9,-0.9,True
+2,Film kötü.,negative,basic negative predicate,D->H,negative,0.0,0.9,-0.9,True
+2,Film kötü.,negative,basic negative predicate,H->D-LW,negative,0.0,0.9,-0.9,True
+3,Harika!,positive,targetless sentiment,H,positive,1.0,0.0,1.0,True
+3,Harika!,positive,targetless sentiment,H->D,positive,1.0,0.0,1.0,True
+3,Harika!,positive,targetless sentiment,D->H,positive,1.0,0.0,1.0,True
+3,Harika!,positive,targetless sentiment,H->D-LW,positive,1.0,0.0,1.0,True
+4,Bugün pazartesi.,neutral,neutral control,H,neutral,0.0,0.0,0.0,True
+4,Bugün pazartesi.,neutral,neutral control,H->D,neutral,0.0,0.0,0.0,True
+4,Bugün pazartesi.,neutral,neutral control,D->H,neutral,0.0,0.0,0.0,True
+4,Bugün pazartesi.,neutral,neutral control,H->D-LW,neutral,0.0,0.0,0.0,True
+5,Masa odada.,neutral,neutral control,H,neutral,0.0,0.0,0.0,True
+5,Masa odada.,neutral,neutral control,H->D,neutral,0.0,0.0,0.0,True
+5,Masa odada.,neutral,neutral control,D->H,neutral,0.0,0.0,0.0,True
+5,Masa odada.,neutral,neutral control,H->D-LW,neutral,0.0,0.0,0.0,True
+6,Yemekler kötüydü.,negative,target filtering,H,negative,0.0,1.223529411764706,-1.223529411764706,True
+6,Yemekler kötüydü.,negative,target filtering,H->D,negative,0.0,0.9,-0.9,True
+6,Yemekler kötüydü.,negative,target filtering,D->H,negative,0.0,0.9,-0.9,True
+6,Yemekler kötüydü.,negative,target filtering,H->D-LW,negative,0.0,0.9,-0.9,True
+7,Yemekler güzel.,positive,target filtering with potentially sentiment-bearing noun,H,positive,0.45454545454545453,0.3235294117647059,0.13101604278074863,True
+7,Yemekler güzel.,positive,target filtering with potentially sentiment-bearing noun,H->D,positive,0.45454545454545453,0.0,0.45454545454545453,True
+7,Yemekler güzel.,positive,target filtering with potentially sentiment-bearing noun,D->H,positive,0.45454545454545453,0.0,0.45454545454545453,True
+7,Yemekler güzel.,positive,target filtering with potentially sentiment-bearing noun,H->D-LW,positive,0.45454545454545453,0.0,0.45454545454545453,True
+8,Bu ürünü tavsiye ediyorum.,positive,light-verb positive recommendation,H,positive,0.125,0.0,0.125,True
+8,Bu ürünü tavsiye ediyorum.,positive,light-verb positive recommendation,H->D,positive,0.125,0.0,0.125,True
+8,Bu ürünü tavsiye ediyorum.,positive,light-verb positive recommendation,D->H,positive,0.125,0.0,0.125,True
+8,Bu ürünü tavsiye ediyorum.,positive,light-verb positive recommendation,H->D-LW,positive,0.125,0.0,0.125,True
+9,Bu ürünü kesinlikle tavsiye etmiyorum.,negative,light-verb negation,H,positive,0.125,0.0,0.125,False
+9,Bu ürünü kesinlikle tavsiye etmiyorum.,negative,light-verb negation,H->D,negative,0.0,0.125,-0.125,True
+9,Bu ürünü kesinlikle tavsiye etmiyorum.,negative,light-verb negation,D->H,negative,0.0,0.125,-0.125,True
+9,Bu ürünü kesinlikle tavsiye etmiyorum.,negative,light-verb negation,H->D-LW,negative,0.0,0.125,-0.125,True
+10,Film güzel değildi.,negative,explicit copular negation,H,positive,0.45454545454545453,0.0,0.45454545454545453,False
+10,Film güzel değildi.,negative,explicit copular negation,H->D,negative,0.0,0.45454545454545453,-0.45454545454545453,True
+10,Film güzel değildi.,negative,explicit copular negation,D->H,negative,0.0,0.45454545454545453,-0.45454545454545453,True
+10,Film güzel değildi.,negative,explicit copular negation,H->D-LW,negative,0.0,0.45454545454545453,-0.45454545454545453,True
+11,Odalar kötü değildi.,positive,negated negative adjective,H,negative,0.0,0.9,-0.9,False
+11,Odalar kötü değildi.,positive,negated negative adjective,H->D,positive,0.9,0.0,0.9,True
+11,Odalar kötü değildi.,positive,negated negative adjective,D->H,positive,0.9,0.0,0.9,True
+11,Odalar kötü değildi.,positive,negated negative adjective,H->D-LW,positive,0.9,0.0,0.9,True
+12,Bu ürün iyi değil.,negative,explicit değil,H,positive,0.6111111111111112,0.0,0.6111111111111112,False
+12,Bu ürün iyi değil.,negative,explicit değil,H->D,negative,0.0,0.6111111111111112,-0.6111111111111112,True
+12,Bu ürün iyi değil.,negative,explicit değil,D->H,negative,0.0,0.6111111111111112,-0.6111111111111112,True
+12,Bu ürün iyi değil.,negative,explicit değil,H->D-LW,negative,0.0,0.6111111111111112,-0.6111111111111112,True
+13,Bu ürün kötü değil.,positive,explicit değil on negative adjective,H,negative,0.0,0.9,-0.9,False
+13,Bu ürün kötü değil.,positive,explicit değil on negative adjective,H->D,positive,0.9,0.0,0.9,True
+13,Bu ürün kötü değil.,positive,explicit değil on negative adjective,D->H,positive,0.9,0.0,0.9,True
+13,Bu ürün kötü değil.,positive,explicit değil on negative adjective,H->D-LW,positive,0.9,0.0,0.9,True
+14,Bu ürün çok kötü değil.,positive,modifier + explicit negation,H,negative,0.0,0.9,-0.9,False
+14,Bu ürün çok kötü değil.,positive,modifier + explicit negation,H->D,positive,0.9,0.0,0.9,True
+14,Bu ürün çok kötü değil.,positive,modifier + explicit negation,D->H,positive,0.9,0.0,0.9,True
+14,Bu ürün çok kötü değil.,positive,modifier + explicit negation,H->D-LW,positive,1.08,0.0,1.08,True
+15,Otel çok güzel.,positive,single-word intensifier,H,positive,0.45454545454545453,0.0,0.45454545454545453,True
+15,Otel çok güzel.,positive,single-word intensifier,H->D,positive,0.45454545454545453,0.0,0.45454545454545453,True
+15,Otel çok güzel.,positive,single-word intensifier,D->H,positive,0.45454545454545453,0.0,0.45454545454545453,True
+15,Otel çok güzel.,positive,single-word intensifier,H->D-LW,positive,0.5454545454545454,0.0,0.5454545454545454,True
+16,Otel biraz kötü.,negative,mitigator,H,negative,0.0,0.9,-0.9,True
+16,Otel biraz kötü.,negative,mitigator,H->D,negative,0.0,0.9,-0.9,True
+16,Otel biraz kötü.,negative,mitigator,D->H,negative,0.0,0.9,-0.9,True
+16,Otel biraz kötü.,negative,mitigator,H->D-LW,negative,0.0,0.7200000000000001,-0.7200000000000001,True
+17,Bu ürün son derece güzel.,positive,multiword intensifier + component suppression,H,positive,0.45454545454545453,0.125,0.32954545454545453,True
+17,Bu ürün son derece güzel.,positive,multiword intensifier + component suppression,H->D,positive,0.45454545454545453,0.125,0.32954545454545453,True
+17,Bu ürün son derece güzel.,positive,multiword intensifier + component suppression,D->H,positive,0.45454545454545453,0.125,0.32954545454545453,True
+17,Bu ürün son derece güzel.,positive,multiword intensifier + component suppression,H->D-LW,positive,0.8181818181818181,0.0,0.8181818181818181,True
+18,Bu ürün çok ama çok güzel.,positive,modifier phrase containing contrast word,H,positive,0.45454545454545453,0.0,0.45454545454545453,True
+18,Bu ürün çok ama çok güzel.,positive,modifier phrase containing contrast word,H->D,positive,0.45454545454545453,0.0,0.45454545454545453,True
+18,Bu ürün çok ama çok güzel.,positive,modifier phrase containing contrast word,D->H,positive,0.45454545454545453,0.0,0.45454545454545453,True
+18,Bu ürün çok ama çok güzel.,positive,modifier phrase containing contrast word,H->D-LW,positive,0.6363636363636364,0.0,0.6363636363636364,True
+19,Bu ürün aşırı kötü.,negative,single-word intensifier + ADV candidate leakage probe,H,negative,0.0,0.9500000000000001,-0.9500000000000001,True
+19,Bu ürün aşırı kötü.,negative,single-word intensifier + ADV candidate leakage probe,H->D,negative,0.0,0.9500000000000001,-0.9500000000000001,True
+19,Bu ürün aşırı kötü.,negative,single-word intensifier + ADV candidate leakage probe,D->H,negative,0.0,0.9500000000000001,-0.9500000000000001,True
+19,Bu ürün aşırı kötü.,negative,single-word intensifier + ADV candidate leakage probe,H->D-LW,negative,0.0,0.9500000000000001,-0.9500000000000001,True
+20,Büyük ekran güzel.,positive,modifier false-positive guard,H,positive,0.45454545454545453,0.0,0.45454545454545453,True
+20,Büyük ekran güzel.,positive,modifier false-positive guard,H->D,positive,0.45454545454545453,0.0,0.45454545454545453,True
+20,Büyük ekran güzel.,positive,modifier false-positive guard,D->H,positive,0.45454545454545453,0.0,0.45454545454545453,True
+20,Büyük ekran güzel.,positive,modifier false-positive guard,H->D-LW,positive,0.45454545454545453,0.0,0.45454545454545453,True
+21,Küçük oda çok güzel.,positive,modifier attachment guard,H,positive,0.45454545454545453,0.0,0.45454545454545453,True
+21,Küçük oda çok güzel.,positive,modifier attachment guard,H->D,positive,0.45454545454545453,0.0,0.45454545454545453,True
+21,Küçük oda çok güzel.,positive,modifier attachment guard,D->H,positive,0.45454545454545453,0.0,0.45454545454545453,True
+21,Küçük oda çok güzel.,positive,modifier attachment guard,H->D-LW,positive,0.5454545454545454,0.0,0.5454545454545454,True
+22,Otel güzel ama odalar kötü.,negative,ama contrast / negative second clause,H,negative,0.45454545454545453,0.9,-0.4454545454545455,True
+22,Otel güzel ama odalar kötü.,negative,ama contrast / negative second clause,H->D,negative,0.45454545454545453,0.9,-0.4454545454545455,True
+22,Otel güzel ama odalar kötü.,negative,ama contrast / negative second clause,D->H,negative,0.45454545454545453,0.9,-0.4454545454545455,True
+22,Otel güzel ama odalar kötü.,negative,ama contrast / negative second clause,H->D-LW,negative,0.38636363636363635,1.665,-1.2786363636363638,True
+23,Otel kötü ama odalar güzel.,positive,ama contrast / positive second clause,H,negative,0.45454545454545453,0.9,-0.4454545454545455,False
+23,Otel kötü ama odalar güzel.,positive,ama contrast / positive second clause,H->D,negative,0.45454545454545453,0.9,-0.4454545454545455,False
+23,Otel kötü ama odalar güzel.,positive,ama contrast / positive second clause,D->H,negative,0.45454545454545453,0.9,-0.4454545454545455,False
+23,Otel kötü ama odalar güzel.,positive,ama contrast / positive second clause,H->D-LW,positive,0.8409090909090909,0.765,0.07590909090909093,True
+24,Otel güzel fakat odalar kötü.,negative,fakat contrast,H,negative,0.45454545454545453,0.9,-0.4454545454545455,True
+24,Otel güzel fakat odalar kötü.,negative,fakat contrast,H->D,negative,0.45454545454545453,0.9,-0.4454545454545455,True
+24,Otel güzel fakat odalar kötü.,negative,fakat contrast,D->H,negative,0.45454545454545453,0.9,-0.4454545454545455,True
+24,Otel güzel fakat odalar kötü.,negative,fakat contrast,H->D-LW,negative,0.38636363636363635,1.665,-1.2786363636363638,True
+25,Otel kötü ancak odalar güzel.,positive,ancak contrast + lexical marker suppression,H,negative,0.45454545454545453,0.9625,-0.5079545454545455,False
+25,Otel kötü ancak odalar güzel.,positive,ancak contrast + lexical marker suppression,H->D,negative,0.45454545454545453,0.9625,-0.5079545454545455,False
+25,Otel kötü ancak odalar güzel.,positive,ancak contrast + lexical marker suppression,D->H,negative,0.45454545454545453,0.9,-0.4454545454545455,False
+25,Otel kötü ancak odalar güzel.,positive,ancak contrast + lexical marker suppression,H->D-LW,positive,0.8409090909090909,0.765,0.07590909090909093,True
+26,Otel güzel ama odalar kötü değildi.,positive,contrast + negation; negation should stay in second clause,H,negative,0.45454545454545453,0.9,-0.4454545454545455,False
+26,Otel güzel ama odalar kötü değildi.,positive,contrast + negation; negation should stay in second clause,H->D,positive,1.3545454545454545,0.0,1.3545454545454545,True
+26,Otel güzel ama odalar kötü değildi.,positive,contrast + negation; negation should stay in second clause,D->H,positive,1.3545454545454545,0.0,1.3545454545454545,True
+26,Otel güzel ama odalar kötü değildi.,positive,contrast + negation; negation should stay in second clause,H->D-LW,positive,2.0513636363636363,0.0,2.0513636363636363,True
+27,Otel kötü ama odalar güzel değildi.,negative,contrast + negation; negation should stay in second clause,H,negative,0.45454545454545453,0.9,-0.4454545454545455,True
+27,Otel kötü ama odalar güzel değildi.,negative,contrast + negation; negation should stay in second clause,H->D,negative,0.0,1.3545454545454545,-1.3545454545454545,True
+27,Otel kötü ama odalar güzel değildi.,negative,contrast + negation; negation should stay in second clause,D->H,negative,0.0,1.3545454545454545,-1.3545454545454545,True
+27,Otel kötü ama odalar güzel değildi.,negative,contrast + negation; negation should stay in second clause,H->D-LW,negative,0.0,1.605909090909091,-1.605909090909091,True
+28,Ürün güzel ama pahalı fakat kaliteli.,positive,multiple contrast markers,H,positive,1.4545454545454546,0.25,1.2045454545454546,True
+28,Ürün güzel ama pahalı fakat kaliteli.,positive,multiple contrast markers,H->D,positive,1.4545454545454546,0.25,1.2045454545454546,True
+28,Ürün güzel ama pahalı fakat kaliteli.,positive,multiple contrast markers,D->H,positive,1.4545454545454546,0.25,1.2045454545454546,True
+28,Ürün güzel ama pahalı fakat kaliteli.,positive,multiple contrast markers,H->D-LW,positive,2.2363636363636363,0.2125,2.0238636363636364,True
+29,Film güzel. Oda kötü değil.,positive,multi-sentence positive + negated negative,H,negative,0.45454545454545453,0.9,-0.4454545454545455,False
+29,Film güzel. Oda kötü değil.,positive,multi-sentence positive + negated negative,H->D,positive,1.3545454545454545,0.0,1.3545454545454545,True
+29,Film güzel. Oda kötü değil.,positive,multi-sentence positive + negated negative,D->H,positive,1.3545454545454545,0.0,1.3545454545454545,True
+29,Film güzel. Oda kötü değil.,positive,multi-sentence positive + negated negative,H->D-LW,positive,1.3545454545454545,0.0,1.3545454545454545,True
+30,Film kötü. Oda güzel değil.,negative,multi-sentence negative + negated positive,H,negative,0.45454545454545453,0.9,-0.4454545454545455,True
+30,Film kötü. Oda güzel değil.,negative,multi-sentence negative + negated positive,H->D,negative,0.0,1.3545454545454545,-1.3545454545454545,True
+30,Film kötü. Oda güzel değil.,negative,multi-sentence negative + negated positive,D->H,negative,0.0,1.3545454545454545,-1.3545454545454545,True
+30,Film kötü. Oda güzel değil.,negative,multi-sentence negative + negated positive,H->D-LW,negative,0.0,1.3545454545454545,-1.3545454545454545,True
+31,Otel İstanbul'da.,neutral,neutral entity/location control,H,neutral,0.0,0.0,0.0,True
+31,Otel İstanbul'da.,neutral,neutral entity/location control,H->D,neutral,0.0,0.0,0.0,True
+31,Otel İstanbul'da.,neutral,neutral entity/location control,D->H,neutral,0.0,0.0,0.0,True
+31,Otel İstanbul'da.,neutral,neutral entity/location control,H->D-LW,neutral,0.0,0.0,0.0,True
+32,Bu bir ürün.,neutral,neutral product statement,H,neutral,0.0,0.0,0.0,True
+32,Bu bir ürün.,neutral,neutral product statement,H->D,neutral,0.0,0.0,0.0,True
+32,Bu bir ürün.,neutral,neutral product statement,D->H,neutral,0.0,0.0,0.0,True
+32,Bu bir ürün.,neutral,neutral product statement,H->D-LW,neutral,0.0,0.0,0.0,True
+33,Film iyi ve güzel değildi.,negative,shared negation over coordinated positive predicates,H,positive,1.0656565656565657,0.0,1.0656565656565657,False
+33,Film iyi ve güzel değildi.,negative,shared negation over coordinated positive predicates,H->D,negative,0.0,1.0656565656565657,-1.0656565656565657,True
+33,Film iyi ve güzel değildi.,negative,shared negation over coordinated positive predicates,D->H,negative,0.0,1.0656565656565657,-1.0656565656565657,True
+33,Film iyi ve güzel değildi.,negative,shared negation over coordinated positive predicates,H->D-LW,negative,0.0,1.0656565656565657,-1.0656565656565657,True
+34,Film güzel ama iyi değildi.,negative,negation must not cross adversative contrast boundary,H,positive,1.0656565656565657,0.0,1.0656565656565657,False
+34,Film güzel ama iyi değildi.,negative,negation must not cross adversative contrast boundary,H->D,negative,0.45454545454545453,0.6111111111111112,-0.15656565656565663,True
+34,Film güzel ama iyi değildi.,negative,negation must not cross adversative contrast boundary,D->H,negative,0.45454545454545453,0.6111111111111112,-0.15656565656565663,True
+34,Film güzel ama iyi değildi.,negative,negation must not cross adversative contrast boundary,H->D-LW,negative,0.38636363636363635,1.1305555555555558,-0.7441919191919194,True
+35,Otel güzel ve harika değildi.,negative,shared explicit negation over coordination,H,positive,1.4545454545454546,0.0,1.4545454545454546,False
+35,Otel güzel ve harika değildi.,negative,shared explicit negation over coordination,H->D,negative,0.0,1.4545454545454546,-1.4545454545454546,True
+35,Otel güzel ve harika değildi.,negative,shared explicit negation over coordination,D->H,negative,0.0,1.4545454545454546,-1.4545454545454546,True
+35,Otel güzel ve harika değildi.,negative,shared explicit negation over coordination,H->D-LW,negative,0.0,1.4545454545454546,-1.4545454545454546,True
+36,Otel güzel fakat harika değildi.,negative,explicit negation restricted to post-contrast predicate,H,positive,1.4545454545454546,0.0,1.4545454545454546,False
+36,Otel güzel fakat harika değildi.,negative,explicit negation restricted to post-contrast predicate,H->D,negative,0.45454545454545453,1.0,-0.5454545454545454,True
+36,Otel güzel fakat harika değildi.,negative,explicit negation restricted to post-contrast predicate,D->H,negative,0.45454545454545453,1.0,-0.5454545454545454,True
+36,Otel güzel fakat harika değildi.,negative,explicit negation restricted to post-contrast predicate,H->D-LW,negative,0.38636363636363635,1.85,-1.4636363636363638,True

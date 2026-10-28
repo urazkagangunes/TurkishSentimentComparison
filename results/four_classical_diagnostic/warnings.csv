@@ -1,0 +1,21 @@
+case_id,system,code,message
+9,H,EXPECTED_LABEL_MISMATCH,H predicted positive; sanity label is negative.
+10,H,EXPECTED_LABEL_MISMATCH,H predicted positive; sanity label is negative.
+11,H,EXPECTED_LABEL_MISMATCH,H predicted negative; sanity label is positive.
+12,H,EXPECTED_LABEL_MISMATCH,H predicted positive; sanity label is negative.
+13,H,EXPECTED_LABEL_MISMATCH,H predicted negative; sanity label is positive.
+14,H,EXPECTED_LABEL_MISMATCH,H predicted negative; sanity label is positive.
+19,H->D-LW,LW_EXPECTED_MODIFIER_NOT_WEIGHTED,"This stress case expected a literature modifier, but no scope was weighted."
+23,H,EXPECTED_LABEL_MISMATCH,H predicted negative; sanity label is positive.
+23,H->D,EXPECTED_LABEL_MISMATCH,H->D predicted negative; sanity label is positive.
+23,D->H,EXPECTED_LABEL_MISMATCH,D->H predicted negative; sanity label is positive.
+25,H,EXPECTED_LABEL_MISMATCH,H predicted negative; sanity label is positive.
+25,H->D,EXPECTED_LABEL_MISMATCH,H->D predicted negative; sanity label is positive.
+25,D->H,EXPECTED_LABEL_MISMATCH,D->H predicted negative; sanity label is positive.
+26,H,EXPECTED_LABEL_MISMATCH,H predicted negative; sanity label is positive.
+28,H->D-LW,LW_DUPLICATE_CONTRAST_PAIR,"Multiple contrast markers were reconstructed as the same pre/post dependency pair: [{'sentence_index': 0, 'pair': (2, 6), 'markers': ['ama', 'fakat']}]"
+29,H,EXPECTED_LABEL_MISMATCH,H predicted negative; sanity label is positive.
+33,H,EXPECTED_LABEL_MISMATCH,H predicted positive; sanity label is negative.
+34,H,EXPECTED_LABEL_MISMATCH,H predicted positive; sanity label is negative.
+35,H,EXPECTED_LABEL_MISMATCH,H predicted positive; sanity label is negative.
+36,H,EXPECTED_LABEL_MISMATCH,H predicted positive; sanity label is negative.
