@@ -625,25 +625,6 @@ class SentimentScopeResolver:
                 ):
                     continue
 
-                # Never combine tokens from two sentences.
-                sentence_indexes = {
-                    token.get(
-                        "sentence_index"
-                    )
-                    for token in group
-                    if token.get(
-                        "sentence_index"
-                    ) is not None
-                }
-
-                if (
-                    len(
-                        sentence_indexes
-                    )
-                    > 1
-                ):
-                    continue
-
                 pieces = [
                     self._normalize_alignment_piece(
                         token.get("text")
@@ -665,25 +646,99 @@ class SentimentScopeResolver:
                 score = 0
                 strategy = None
 
+                # =========================================================
+                # SENTENCE-BOUNDARY SAFETY
+                # =========================================================
+                #
+                # Stanza occasionally splits a single Turkish word into two
+                # dependency tokens and incorrectly places the second fragment
+                # into a new sentence:
+                #
+                #     ser + t        -> sert
+                #     harik + a      -> harika
+                #     basi + t       -> basit
+                #     kullanışsı + z -> kullanışsız
+                #
+                # Cross-sentence reconstruction is therefore allowed only under
+                # very strong evidence:
+                #
+                #   - exactly two fragments
+                #   - reconstructed form exactly equals the HisNet SURFACE form
+                #   - at least one fragment is very short (<= 2 chars)
+                #
+                # Root-only cross-sentence reconstruction is intentionally
+                # forbidden because it would be less reliable.
+                # =========================================================
+
+                sentence_indexes = {
+                    token.get(
+                        "sentence_index"
+                    )
+                    for token in group
+                    if token.get(
+                        "sentence_index"
+                    ) is not None
+                }
+
+                cross_sentence = (
+                        len(
+                            sentence_indexes
+                        )
+                        > 1
+                )
+
+                if cross_sentence:
+
+                    short_fragment_exists = any(
+                        len(piece) <= 2
+                        for piece in pieces
+                    )
+
+                    safe_cross_sentence_surface_match = (
+                            group_size == 2
+                            and reconstructed == surface
+                            and short_fragment_exists
+                    )
+
+                    if not safe_cross_sentence_surface_match:
+                        continue
+
+                # =========================================================
+                # ORDINARY / SAME-SENTENCE FRAGMENT MATCH
+                # =========================================================
+
                 if (
-                    reconstructed
-                    == surface
+                        reconstructed
+                        == surface
                 ):
 
-                    score = (
-                        66
-                        if group_size == 2
-                        else 64
-                    )
+                    if cross_sentence:
 
-                    strategy = (
-                        f"fragmented_surface_"
-                        f"{group_size}"
-                    )
+                        score = 65
+
+                        strategy = (
+                            "fragmented_surface_2_"
+                            "cross_sentence_tokenizer_split"
+                        )
+
+                    else:
+
+                        score = (
+                            66
+                            if group_size == 2
+                            else 64
+                        )
+
+                        strategy = (
+                            f"fragmented_surface_"
+                            f"{group_size}"
+                        )
+
 
                 elif (
-                    reconstructed
-                    == root
+                        not cross_sentence
+                        and reconstructed
+                        == root
                 ):
 
                     score = (
@@ -2026,6 +2081,553 @@ class SentimentScopeResolver:
     # DEPENDENCY-FIRST CANDIDATE FILTER
     # =========================================================
 
+    def _morphology_pos(
+            self,
+            analysis_record
+    ):
+        """
+        Extracts coarse POS from Starlang morphological analysis.
+
+        No HisNet information is used here.
+        """
+
+        if analysis_record is None:
+            return None
+
+        analysis = str(
+            analysis_record.get(
+                "analysis"
+            )
+            or ""
+        )
+
+        for pos in [
+            "ADJ",
+            "VERB",
+            "NOUN",
+            "ADV",
+            "INTJ",
+            "PROPN",
+            "PRON"
+        ]:
+
+            if (
+                    f"+{pos}"
+                    in analysis
+            ):
+                return pos
+
+        return None
+
+    def _find_morphology_record_for_surface(
+            self,
+            surface,
+            morphological_analyses
+    ):
+        """
+        Finds a Starlang morphology record using normalized surface.
+
+        This is intentionally independent of HisNet.
+        """
+
+        normalized_surface = (
+            self._normalize_alignment_piece(
+                surface
+            )
+        )
+
+        if not normalized_surface:
+            return None
+
+        for record in (
+                morphological_analyses
+                or []
+        ):
+
+            record_word = (
+                self._normalize_alignment_piece(
+                    record.get(
+                        "word"
+                    )
+                )
+            )
+
+            if (
+                    record_word
+                    ==
+                    normalized_surface
+            ):
+                return record
+
+        return None
+
+    def _build_dependency_repair_units(
+            self,
+            dependency_tokens,
+            morphological_analyses
+    ):
+        """
+        Creates morphology-guided virtual dependency tokens for parser
+        fragmentation/noise.
+
+        IMPORTANT:
+        - HisNet is NOT consulted.
+        - Original dependency tokens are not mutated.
+        - Ordinary tokens remain unchanged.
+        - Repair is conservative and morphology-licensed.
+
+        Examples:
+
+            harik + a       -> harika
+            dandi + k       -> dandik
+            özen + li       -> özenli
+            hesap + lı      -> hesaplı
+            kullanışsı + z  -> kullanışsız
+
+            ..yumuşak       -> yumuşak
+            temizlik👍🏻👍   -> temizlik
+            kötü.3×l        -> kötü
+        """
+
+        tokens = sorted(
+            dependency_tokens,
+            key=lambda token:
+            int(
+                token["id"]
+            )
+        )
+
+        morphology_records = (
+                morphological_analyses
+                or []
+        )
+
+        repair_units = []
+
+        consumed_ids = set()
+
+        # ========================================================
+        # 1. TWO-TOKEN FRAGMENT RECONSTRUCTION
+        # ========================================================
+
+        for i in range(
+                len(tokens) - 1
+        ):
+
+            first = tokens[i]
+            second = tokens[i + 1]
+
+            first_id = int(
+                first["id"]
+            )
+
+            second_id = int(
+                second["id"]
+            )
+
+            if (
+                    second_id
+                    !=
+                    first_id + 1
+            ):
+                continue
+
+            if (
+                    first_id
+                    in consumed_ids
+                    or
+                    second_id
+                    in consumed_ids
+            ):
+                continue
+
+            first_piece = (
+                self._normalize_alignment_piece(
+                    first.get(
+                        "text"
+                    )
+                )
+            )
+
+            second_piece = (
+                self._normalize_alignment_piece(
+                    second.get(
+                        "text"
+                    )
+                )
+            )
+
+            if (
+                    not first_piece
+                    or not second_piece
+            ):
+                continue
+
+            reconstructed = (
+                    first_piece
+                    + second_piece
+            )
+
+            morphology_record = (
+                self._find_morphology_record_for_surface(
+                    reconstructed,
+                    morphology_records
+                )
+            )
+
+            if morphology_record is None:
+                continue
+
+            morph_pos = (
+                self._morphology_pos(
+                    morphology_record
+                )
+            )
+
+            # We only need repair units that could potentially
+            # participate in sentiment candidate selection.
+            if (
+                    morph_pos
+                    not in self.OPINION_POS
+            ):
+                continue
+
+            sentence_indexes = {
+                token.get(
+                    "sentence_index"
+                )
+                for token in [
+                    first,
+                    second
+                ]
+                if token.get(
+                    "sentence_index"
+                )
+                   is not None
+            }
+
+            cross_sentence = (
+                    len(
+                        sentence_indexes
+                    )
+                    > 1
+            )
+
+            # Same conservative safety rule used by H->D.
+            #
+            # Cross-sentence reconstruction is allowed only when
+            # one of the pieces is suffix-like.
+            if cross_sentence:
+
+                if not (
+                        len(first_piece) <= 2
+                        or len(second_piece) <= 2
+                ):
+                    continue
+
+            anchor = (
+                self._fragment_anchor_token(
+                    [
+                        first,
+                        second
+                    ]
+                )
+            )
+
+            repaired = dict(
+                anchor
+            )
+
+            repaired[
+                "text"
+            ] = reconstructed
+
+            repaired[
+                "lemma"
+            ] = (
+                    morphology_record.get(
+                        "root"
+                    )
+                    or reconstructed
+            )
+
+            repaired[
+                "upos"
+            ] = (
+                    morph_pos
+                    or anchor.get(
+                "upos"
+            )
+            )
+
+            repaired[
+                "_dependency_repair"
+            ] = True
+
+            repaired[
+                "_repair_strategy"
+            ] = (
+                "morphology_fragment_2_"
+                "cross_sentence"
+                if cross_sentence
+                else
+                "morphology_fragment_2"
+            )
+
+            repaired[
+                "_fragment_token_ids"
+            ] = [
+                first_id,
+                second_id
+            ]
+
+            repaired[
+                "_original_anchor_text"
+            ] = anchor.get(
+                "text"
+            )
+
+            repaired[
+                "_morphology_record"
+            ] = morphology_record
+
+            repair_units.append(
+                repaired
+            )
+
+            consumed_ids.update(
+                [
+                    first_id,
+                    second_id
+                ]
+            )
+
+        # ========================================================
+        # 2. SINGLE-TOKEN EDGE / DECORATION REPAIR
+        # ========================================================
+
+        for token in tokens:
+
+            token_id = int(
+                token["id"]
+            )
+
+            if (
+                    token_id
+                    in consumed_ids
+            ):
+                continue
+
+            raw_surface = (
+                self._turkish_lower(
+                    token.get(
+                        "text"
+                    )
+                )
+            )
+
+            clean_surface = (
+                self._normalize_alignment_piece(
+                    raw_surface
+                )
+            )
+
+            matched_record = None
+            repaired_surface = None
+
+            # ----------------------------------------------------
+            # Simple edge noise:
+            #
+            #   ..yumuşak
+            #   temizlik👍🏻👍
+            # ----------------------------------------------------
+
+            if (
+                    clean_surface
+                    and clean_surface
+                    != raw_surface
+            ):
+
+                record = (
+                    self._find_morphology_record_for_surface(
+                        clean_surface,
+                        morphology_records
+                    )
+                )
+
+                if record is not None:
+                    matched_record = record
+                    repaired_surface = (
+                        clean_surface
+                    )
+
+            # ----------------------------------------------------
+            # Embedded trailing noise:
+            #
+            #   kötü.3×l
+            #
+            # Try morphology words as an exact prefix/suffix when
+            # separated by non-alphanumeric noise.
+            # ----------------------------------------------------
+
+            if matched_record is None:
+
+                for record in (
+                        morphology_records
+                ):
+
+                    candidate = (
+                        self._normalize_alignment_piece(
+                            record.get(
+                                "word"
+                            )
+                        )
+                    )
+
+                    if not candidate:
+                        continue
+
+                    if (
+                            raw_surface.startswith(
+                                candidate
+                            )
+                            and
+                            len(raw_surface)
+                            > len(candidate)
+                    ):
+
+                        boundary = (
+                            raw_surface[
+                                len(candidate)
+                            ]
+                        )
+
+                        if not boundary.isalnum():
+                            matched_record = (
+                                record
+                            )
+
+                            repaired_surface = (
+                                candidate
+                            )
+
+                            break
+
+                    if (
+                            raw_surface.endswith(
+                                candidate
+                            )
+                            and
+                            len(raw_surface)
+                            > len(candidate)
+                    ):
+
+                        boundary_index = (
+                                len(raw_surface)
+                                - len(candidate)
+                                - 1
+                        )
+
+                        if (
+                                boundary_index >= 0
+                                and
+                                not raw_surface[
+                                    boundary_index
+                                ].isalnum()
+                        ):
+                            matched_record = (
+                                record
+                            )
+
+                            repaired_surface = (
+                                candidate
+                            )
+
+                            break
+
+            if (
+                    matched_record
+                    is None
+            ):
+                continue
+
+            morph_pos = (
+                self._morphology_pos(
+                    matched_record
+                )
+            )
+
+            if (
+                    morph_pos
+                    not in self.OPINION_POS
+            ):
+                continue
+
+            repaired = dict(
+                token
+            )
+
+            repaired[
+                "text"
+            ] = repaired_surface
+
+            repaired[
+                "lemma"
+            ] = (
+                    matched_record.get(
+                        "root"
+                    )
+                    or repaired_surface
+            )
+
+            repaired[
+                "upos"
+            ] = (
+                    morph_pos
+                    or token.get(
+                "upos"
+            )
+            )
+
+            repaired[
+                "_dependency_repair"
+            ] = True
+
+            repaired[
+                "_repair_strategy"
+            ] = (
+                "morphology_edge_noise"
+            )
+
+            repaired[
+                "_fragment_token_ids"
+            ] = [
+                token_id
+            ]
+
+            repaired[
+                "_original_anchor_text"
+            ] = token.get(
+                "text"
+            )
+
+            repaired[
+                "_morphology_record"
+            ] = matched_record
+
+            repair_units.append(
+                repaired
+            )
+
+            consumed_ids.add(
+                token_id
+            )
+
+        return (
+            repair_units,
+            consumed_ids
+        )
+
     def _is_dependency_opinion_candidate(
         self,
         token,
@@ -2155,14 +2757,29 @@ class SentimentScopeResolver:
     # =========================================================
 
     def resolve_dependency_candidates(
-        self,
-        dependency_tokens,
-        morphological_analyses=None
+            self,
+            dependency_tokens,
+            morphological_analyses=None
     ):
         """
         DEPENDENCY-FIRST candidate extraction.
 
-        No HisNet scores are used here.
+        Pipeline:
+
+            Stanza dependency tokens
+                ->
+            morphology-guided parser repair
+                ->
+            syntactic opinion candidate selection
+                ->
+            target / negation / modifier / contrast
+                ->
+            Starlang morphological root
+                ->
+            HisNet lookup happens later
+
+        IMPORTANT:
+        HisNet scores/entries are NEVER consulted in this method.
         """
 
         (
@@ -2172,9 +2789,77 @@ class SentimentScopeResolver:
             dependency_tokens
         )
 
+        # ========================================================
+        # MORPHOLOGY-GUIDED PARSER REPAIR
+        # ========================================================
+
+        (
+            repaired_units,
+            repaired_original_ids
+        ) = (
+            self._build_dependency_repair_units(
+                dependency_tokens,
+                morphological_analyses
+            )
+        )
+
+        # ========================================================
+        # CANDIDATE UNITS
+        #
+        # A repaired unit replaces its original fragmented/noisy
+        # dependency token(s) for candidate selection only.
+        #
+        # The original dependency graph/indexes remain untouched.
+        # ========================================================
+
+        candidate_units = []
+
+        for token in (
+                dependency_tokens
+        ):
+
+            token_id = int(
+                token["id"]
+            )
+
+            if (
+                    token_id
+                    in repaired_original_ids
+            ):
+                continue
+
+            candidate_units.append(
+                token
+            )
+
+        candidate_units.extend(
+            repaired_units
+        )
+
+        candidate_units.sort(
+            key=lambda token:
+            int(
+                token["id"]
+            )
+        )
+
         candidates = []
 
-        for token in dependency_tokens:
+        for token in (
+                candidate_units
+        ):
+
+            token_id = int(
+                token["id"]
+            )
+
+            # ====================================================
+            # TARGET
+            #
+            # The repaired token keeps the ID/head/deprel of its
+            # dependency anchor, therefore target resolution remains
+            # dependency-based.
+            # ====================================================
 
             (
                 target,
@@ -2184,6 +2869,10 @@ class SentimentScopeResolver:
                 token_by_id,
                 children
             )
+
+            # ====================================================
+            # CANDIDATE STATUS — STILL BEFORE HISNET
+            # ====================================================
 
             (
                 is_candidate,
@@ -2198,6 +2887,10 @@ class SentimentScopeResolver:
 
             if not is_candidate:
                 continue
+
+            # ====================================================
+            # DEPENDENCY SCOPE
+            # ====================================================
 
             modifiers = (
                 self._find_modifiers(
@@ -2223,16 +2916,46 @@ class SentimentScopeResolver:
                 )
             )
 
-            root = (
-                self._find_morphological_root(
-                    token,
-                    morphological_analyses
+            # ====================================================
+            # ROOT
+            # ====================================================
+
+            repair_record = (
+                token.get(
+                    "_morphology_record"
                 )
             )
+
+            if repair_record is not None:
+
+                root = (
+                    self._turkish_lower(
+                        repair_record.get(
+                            "root"
+                        )
+                        or token.get(
+                            "text"
+                        )
+                    )
+                )
+
+            else:
+
+                root = (
+                    self._find_morphological_root(
+                        token,
+                        morphological_analyses
+                    )
+                )
+
+            # ====================================================
+            # TARGET SERIALIZATION
+            # ====================================================
 
             if target is not None:
 
                 target_data = {
+
                     "id":
                         target["id"],
 
@@ -2267,6 +2990,10 @@ class SentimentScopeResolver:
 
                 target_data = None
 
+            # ====================================================
+            # CANDIDATE
+            # ====================================================
+
             candidates.append({
 
                 "word":
@@ -2278,8 +3005,9 @@ class SentimentScopeResolver:
                     root,
 
                 "sentiment_token": {
+
                     "id":
-                        token["id"],
+                        token_id,
 
                     "word":
                         token.get(
@@ -2308,7 +3036,24 @@ class SentimentScopeResolver:
                 },
 
                 "candidate_strategy":
-                    candidate_strategy,
+                    (
+                        "morphology_repaired:"
+                        + str(
+                            token.get(
+                                "_repair_strategy"
+                            )
+                        )
+                        + ":"
+                        + str(
+                            candidate_strategy
+                        )
+
+                        if token.get(
+                            "_dependency_repair"
+                        )
+
+                        else candidate_strategy
+                    ),
 
                 "target":
                     target_data,
@@ -2326,7 +3071,37 @@ class SentimentScopeResolver:
                     contrast,
 
                 "alignment_status":
-                    "matched"
+                    "matched",
+
+                # -----------------------------------------------
+                # Diagnostics
+                # -----------------------------------------------
+
+                "dependency_repaired":
+                    bool(
+                        token.get(
+                            "_dependency_repair",
+                            False
+                        )
+                    ),
+
+                "repair_strategy":
+                    token.get(
+                        "_repair_strategy"
+                    ),
+
+                "fragment_token_ids":
+                    token.get(
+                        "_fragment_token_ids",
+                        [
+                            token_id
+                        ]
+                    ),
+
+                "original_anchor_text":
+                    token.get(
+                        "_original_anchor_text"
+                    )
             })
 
         return (

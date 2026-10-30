@@ -1,0 +1,17 @@
+﻿sample_id,gold,text,H,H_to_D,D_to_H,recovered_h_to_d_scopes,d_to_h_found,d_to_h_fragmentation_miss,d_to_h_other_miss
+76,negative,çok kötü asla surulmuyor çok sert,negative,negative,negative,1,1,0,0
+91,neutral,Ürün fena değil ama beklentimin altında çünkü beklentim ışıltı verici bir ürün olmasıydı kapatıcılık hafif diyebilirim ışıltı hiç yok genel olarakta fena değil,negative,negative,negative,1,1,0,0
+116,neutral,Güzel özenli paket,positive,positive,positive,1,1,0,0
+134,neutral,Ürün ve paketlemesi gayet iyiydi memnun kaldım ama kargo tam bir felaket,positive,positive,positive,1,1,0,0
+141,positive,Markete göre çok çok çok hesaplı,positive,positive,positive,1,1,0,0
+168,neutral,Ürün boyutu çok küçük bir oje şişesi kadar ama kalitesi harika,positive,positive,positive,1,1,0,0
+220,positive,Düzenli kullandığım ürün ortadan koyuya olan yüzde belli esmerler onu kullanabilir ama buğday tenli ıların rengi kesinlikle bu fondöten sürüp cildi nefessz bırakmaya gerek yok kapatıcılığı çok iyi,positive,positive,positive,1,1,0,0
+238,negative,Boyu çok kısa sweat kısmı çok basit,positive,positive,positive,1,1,0,0
+275,negative,Çok dandik,negative,negative,negative,1,1,0,0
+333,neutral,Ebatı bayağı büyük ferahlatıyor ve nemlendiriyor sadece kapağı kırılmıştı özenli pakatleseniz iyi olur,positive,positive,positive,1,1,0,0
+383,negative,Kötü ürün kalitesiz,negative,negative,negative,1,1,0,0
+409,negative,1 yıldız bile fazla kırmızısı boyuyor.penye kalitesi kötü.3×l aldım sanki L beden gibi.daracik.,negative,negative,negative,1,1,0,0
+459,positive,bunu şiddetle tavsiye ederim yıllardır aradığım ürün bu imiş meğer harika,positive,positive,positive,1,0,1,0
+469,negative,Ürün kaliteli değil kullanışsız,positive,negative,negative,1,1,0,0
+479,positive,çok memnun kaldım ..yumuşak tertemiz bir cilt ..derinlemesine temizlik👍🏻👍🏻,positive,positive,positive,2,2,0,0
+485,neutral,Cidden dudağı çok yakıyor uygun fiyatlı olduğu için denenebilir,positive,positive,positive,1,1,0,0

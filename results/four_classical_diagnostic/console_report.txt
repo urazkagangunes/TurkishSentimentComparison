@@ -140,7 +140,7 @@ H->D scopes:
   kötüydü | target= Yemekler | neg= [] | mod= [] | contrast= None | active= True | ops= [] | adj= (0.0, 0.9)
 
 D->H dependency candidates:
-  kötü | root= kötü | POS= ADJ | deprel= root | strategy= predicate_with_target | target= Yemekler | lexicon= sentiment | scores= (0.0, 0.9) | neg= [] | mod= []
+  kötüydü | root= kötü | POS= ADJ | deprel= root | strategy= morphology_repaired:morphology_fragment_2:predicate_with_target | target= Yemekler | lexicon= sentiment | scores= (0.0, 0.9) | neg= [] | mod= []
 
 H->D-LW weighted scopes:
   yemekler | active= False | dep= (0.0, 0.0) | modifier= (None, 1.0) | contrast= (None, None, 1.0) | final_mult= 1.0 | final= (0.0, 0.0) | ops= ['suppressed_as_target']

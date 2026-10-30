@@ -589,7 +589,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -618,6 +624,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
               "negative": 0.0
@@ -649,6 +661,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -687,6 +705,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -1313,7 +1337,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -1342,6 +1372,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.0,
               "negative": 0.9
@@ -1373,6 +1409,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -1411,6 +1453,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -1962,7 +2010,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                1
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -1984,6 +2038,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                1
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 1.0,
               "negative": 0.0
@@ -2008,6 +2068,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                1
+              ],
+              "original_anchor_text": null,
               "positive": 1.0,
               "negative": 0.0,
               "active_sentiment": true,
@@ -2039,6 +2105,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                1
+              ],
+              "original_anchor_text": null,
               "positive": 1.0,
               "negative": 0.0,
               "active_sentiment": true,
@@ -2510,7 +2582,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -2532,6 +2610,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "neutral_lexicon_entry",
               "positive": 0.0,
               "negative": 0.0
@@ -2917,7 +3001,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -2946,6 +3036,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "neutral_lexicon_entry",
               "positive": 0.0,
               "negative": 0.0
@@ -3543,45 +3639,17 @@
           ],
           "dependency_candidates": [
             {
-              "word": "kötü",
+              "word": "kötüydü",
               "root": "kötü",
               "sentiment_token": {
                 "id": 2,
-                "word": "kötü",
+                "word": "kötüydü",
                 "lemma": "kötü",
                 "upos": "ADJ",
                 "head": 0,
                 "deprel": "root"
               },
-              "candidate_strategy": "predicate_with_target",
-              "target": {
-                "id": 1,
-                "word": "Yemekler",
-                "lemma": "yemek",
-                "root": "yemek",
-                "upos": "NOUN",
-                "deprel": "nsubj"
-              },
-              "target_strategy": "direct_subject",
-              "modifiers": [],
-              "negations": [],
-              "contrast": null,
-              "alignment_status": "matched"
-            }
-          ],
-          "candidate_diagnostics": [
-            {
-              "word": "kötü",
-              "root": "kötü",
-              "sentiment_token": {
-                "id": 2,
-                "word": "kötü",
-                "lemma": "kötü",
-                "upos": "ADJ",
-                "head": 0,
-                "deprel": "root"
-              },
-              "candidate_strategy": "predicate_with_target",
+              "candidate_strategy": "morphology_repaired:morphology_fragment_2:predicate_with_target",
               "target": {
                 "id": 1,
                 "word": "Yemekler",
@@ -3595,6 +3663,48 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": true,
+              "repair_strategy": "morphology_fragment_2",
+              "fragment_token_ids": [
+                2,
+                3
+              ],
+              "original_anchor_text": "kötü"
+            }
+          ],
+          "candidate_diagnostics": [
+            {
+              "word": "kötüydü",
+              "root": "kötü",
+              "sentiment_token": {
+                "id": 2,
+                "word": "kötüydü",
+                "lemma": "kötü",
+                "upos": "ADJ",
+                "head": 0,
+                "deprel": "root"
+              },
+              "candidate_strategy": "morphology_repaired:morphology_fragment_2:predicate_with_target",
+              "target": {
+                "id": 1,
+                "word": "Yemekler",
+                "lemma": "yemek",
+                "root": "yemek",
+                "upos": "NOUN",
+                "deprel": "nsubj"
+              },
+              "target_strategy": "direct_subject",
+              "modifiers": [],
+              "negations": [],
+              "contrast": null,
+              "alignment_status": "matched",
+              "dependency_repaired": true,
+              "repair_strategy": "morphology_fragment_2",
+              "fragment_token_ids": [
+                2,
+                3
+              ],
+              "original_anchor_text": "kötü",
               "lexicon_status": "sentiment",
               "positive": 0.0,
               "negative": 0.9
@@ -3602,17 +3712,17 @@
           ],
           "scopes": [
             {
-              "word": "kötü",
+              "word": "kötüydü",
               "root": "kötü",
               "sentiment_token": {
                 "id": 2,
-                "word": "kötü",
+                "word": "kötüydü",
                 "lemma": "kötü",
                 "upos": "ADJ",
                 "head": 0,
                 "deprel": "root"
               },
-              "candidate_strategy": "predicate_with_target",
+              "candidate_strategy": "morphology_repaired:morphology_fragment_2:predicate_with_target",
               "target": {
                 "id": 1,
                 "word": "Yemekler",
@@ -3626,6 +3736,13 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": true,
+              "repair_strategy": "morphology_fragment_2",
+              "fragment_token_ids": [
+                2,
+                3
+              ],
+              "original_anchor_text": "kötü",
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -3640,17 +3757,17 @@
           ],
           "sentiment_words": [
             {
-              "word": "kötü",
+              "word": "kötüydü",
               "root": "kötü",
               "sentiment_token": {
                 "id": 2,
-                "word": "kötü",
+                "word": "kötüydü",
                 "lemma": "kötü",
                 "upos": "ADJ",
                 "head": 0,
                 "deprel": "root"
               },
-              "candidate_strategy": "predicate_with_target",
+              "candidate_strategy": "morphology_repaired:morphology_fragment_2:predicate_with_target",
               "target": {
                 "id": 1,
                 "word": "Yemekler",
@@ -3664,6 +3781,13 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": true,
+              "repair_strategy": "morphology_fragment_2",
+              "fragment_token_ids": [
+                2,
+                3
+              ],
+              "original_anchor_text": "kötü",
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -4511,7 +4635,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -4540,6 +4670,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
               "negative": 0.0
@@ -4571,6 +4707,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -4609,6 +4751,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -5458,7 +5606,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -5487,6 +5641,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.125,
               "negative": 0.0
@@ -5518,6 +5678,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "positive": 0.125,
               "negative": 0.0,
               "active_sentiment": true,
@@ -5556,6 +5722,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "positive": 0.125,
               "negative": 0.0,
               "active_sentiment": true,
@@ -6424,7 +6596,13 @@
                 }
               ],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -6461,6 +6639,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.125,
               "negative": 0.0
@@ -6500,6 +6684,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "positive": 0.125,
               "negative": 0.0,
               "active_sentiment": true,
@@ -6548,6 +6738,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "positive": 0.125,
               "negative": 0.0,
               "active_sentiment": true,
@@ -7361,6 +7557,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest"
             }
           ],
@@ -7398,6 +7600,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
@@ -7438,6 +7646,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -7487,6 +7701,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -8251,6 +8471,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest"
             }
           ],
@@ -8288,6 +8514,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "lexicon_status": "sentiment",
               "positive": 0.0,
@@ -8328,6 +8560,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "positive": 0.0,
               "negative": 0.9,
@@ -8377,6 +8615,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "positive": 0.0,
               "negative": 0.9,
@@ -9195,6 +9439,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest"
             }
           ],
@@ -9232,6 +9482,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "lexicon_status": "sentiment",
               "positive": 0.6111111111111112,
@@ -9272,6 +9528,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "positive": 0.6111111111111112,
               "negative": 0.0,
@@ -9321,6 +9583,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "positive": 0.6111111111111112,
               "negative": 0.0,
@@ -10165,6 +10433,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest"
             }
           ],
@@ -10202,6 +10476,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "lexicon_status": "sentiment",
               "positive": 0.0,
@@ -10242,6 +10522,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "positive": 0.0,
               "negative": 0.9,
@@ -10291,6 +10577,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "positive": 0.0,
               "negative": 0.9,
@@ -11190,7 +11482,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "kötü",
@@ -11232,6 +11530,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest"
             }
           ],
@@ -11254,6 +11558,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "neutral_lexicon_entry",
               "positive": 0.0,
               "negative": 0.0
@@ -11298,6 +11608,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "lexicon_status": "sentiment",
               "positive": 0.0,
@@ -11345,6 +11661,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "positive": 0.0,
               "negative": 0.9,
@@ -11402,6 +11724,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "positive": 0.0,
               "negative": 0.9,
@@ -12232,7 +12560,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "güzel",
@@ -12265,7 +12599,13 @@
               ],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -12294,6 +12634,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "neutral_lexicon_entry",
               "positive": 0.0,
               "negative": 0.0
@@ -12330,6 +12676,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
               "negative": 0.0
@@ -12368,6 +12720,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -12415,6 +12773,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -13170,7 +13534,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "kötü",
@@ -13203,7 +13573,13 @@
               ],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -13232,6 +13608,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "neutral_lexicon_entry",
               "positive": 0.0,
               "negative": 0.0
@@ -13268,6 +13650,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.0,
               "negative": 0.9
@@ -13306,6 +13694,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -13353,6 +13747,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -14302,7 +14702,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "güzel",
@@ -14328,7 +14734,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -14357,6 +14769,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.0,
               "negative": 0.125
@@ -14386,6 +14804,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
               "negative": 0.0
@@ -14417,6 +14841,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.125,
               "active_sentiment": true,
@@ -14453,6 +14883,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -14491,6 +14927,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.125,
               "active_sentiment": true,
@@ -14527,6 +14969,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -15645,7 +16093,13 @@
                 "lemma": "ama",
                 "anchor_id": 6
               },
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "çok",
@@ -15676,7 +16130,13 @@
                 "lemma": "ama",
                 "anchor_id": 6
               },
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "güzel",
@@ -15720,7 +16180,13 @@
                 "lemma": "ama",
                 "anchor_id": 6
               },
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                6
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -15754,6 +16220,12 @@
                 "anchor_id": 6
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "neutral_lexicon_entry",
               "positive": 0.0,
               "negative": 0.0
@@ -15788,6 +16260,12 @@
                 "anchor_id": 6
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "neutral_lexicon_entry",
               "positive": 0.0,
               "negative": 0.0
@@ -15835,6 +16313,12 @@
                 "anchor_id": 6
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                6
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
               "negative": 0.0
@@ -15884,6 +16368,12 @@
                 "anchor_id": 6
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                6
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -15943,6 +16433,12 @@
                 "anchor_id": 6
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                6
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -16952,7 +17448,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "kötü",
@@ -16978,7 +17480,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -17007,6 +17515,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.0,
               "negative": 0.05
@@ -17036,6 +17550,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.0,
               "negative": 0.9
@@ -17067,6 +17587,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.05,
               "active_sentiment": true,
@@ -17103,6 +17629,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -17141,6 +17673,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.05,
               "active_sentiment": true,
@@ -17177,6 +17715,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -18034,7 +18578,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                1
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "güzel",
@@ -18060,7 +18610,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -18089,6 +18645,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                1
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "neutral_lexicon_entry",
               "positive": 0.0,
               "negative": 0.0
@@ -18118,6 +18680,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
               "negative": 0.0
@@ -18149,6 +18717,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -18187,6 +18761,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -18966,7 +19546,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                1
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "çok",
@@ -18992,7 +19578,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "güzel",
@@ -19025,7 +19617,13 @@
               ],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -19054,6 +19652,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                1
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "neutral_lexicon_entry",
               "positive": 0.0,
               "negative": 0.0
@@ -19083,6 +19687,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "neutral_lexicon_entry",
               "positive": 0.0,
               "negative": 0.0
@@ -19119,6 +19729,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
               "negative": 0.0
@@ -19157,6 +19773,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -19204,6 +19826,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -20193,7 +20821,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "kötü",
@@ -20224,7 +20858,13 @@
                 "lemma": "ama",
                 "anchor_id": 4
               },
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -20253,6 +20893,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
               "negative": 0.0
@@ -20287,6 +20933,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.0,
               "negative": 0.9
@@ -20318,6 +20970,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -20359,6 +21017,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -20399,6 +21063,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -20440,6 +21110,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -21590,7 +22266,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "güzel",
@@ -21621,7 +22303,13 @@
                 "lemma": "ama",
                 "anchor_id": 4
               },
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -21650,6 +22338,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.0,
               "negative": 0.9
@@ -21684,6 +22378,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
               "negative": 0.0
@@ -21715,6 +22415,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -21756,6 +22462,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -21796,6 +22508,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -21837,6 +22555,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -22979,7 +23703,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "kötü",
@@ -23010,7 +23740,13 @@
                 "lemma": "fakat",
                 "anchor_id": 5
               },
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -23039,6 +23775,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
               "negative": 0.0
@@ -23073,6 +23815,12 @@
                 "anchor_id": 5
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.0,
               "negative": 0.9
@@ -23104,6 +23852,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -23145,6 +23899,12 @@
                 "anchor_id": 5
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -23185,6 +23945,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -23226,6 +23992,12 @@
                 "anchor_id": 5
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -24513,7 +25285,13 @@
                 "lemma": "ancak",
                 "anchor_id": 5
               },
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "güzel",
@@ -24544,7 +25322,13 @@
                 "lemma": "ancak",
                 "anchor_id": 5
               },
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -24578,6 +25362,12 @@
                 "anchor_id": 5
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.0,
               "negative": 0.9
@@ -24612,6 +25402,12 @@
                 "anchor_id": 5
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
               "negative": 0.0
@@ -24648,6 +25444,12 @@
                 "anchor_id": 5
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -24691,6 +25493,12 @@
                 "anchor_id": 5
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -24736,6 +25544,12 @@
                 "anchor_id": 5
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -24779,6 +25593,12 @@
                 "anchor_id": 5
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -26158,6 +26978,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_removed_by_scope"
             },
             {
@@ -26198,6 +27024,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest"
             }
           ],
@@ -26227,6 +27059,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_removed_by_scope",
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
@@ -26270,6 +27108,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest",
               "lexicon_status": "sentiment",
               "positive": 0.0,
@@ -26302,6 +27146,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_removed_by_scope",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -26352,6 +27202,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest",
               "positive": 0.0,
               "negative": 0.9,
@@ -26394,6 +27250,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_removed_by_scope",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -26444,6 +27306,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest",
               "positive": 0.0,
               "negative": 0.9,
@@ -27711,7 +28579,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "güzel",
@@ -27751,6 +28625,12 @@
                 "anchor_id": 5
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest"
             }
           ],
@@ -27780,6 +28660,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.0,
               "negative": 0.9
@@ -27822,6 +28708,12 @@
                 "anchor_id": 5
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest",
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
@@ -27854,6 +28746,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -27903,6 +28801,12 @@
                 "anchor_id": 5
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -27945,6 +28849,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -27994,6 +28904,12 @@
                 "anchor_id": 5
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -29351,7 +30267,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "pahalı",
@@ -29377,7 +30299,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "kaliteli",
@@ -29408,7 +30336,13 @@
                 "lemma": "ama",
                 "anchor_id": 6
               },
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                6
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -29437,6 +30371,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
               "negative": 0.0
@@ -29466,6 +30406,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.0,
               "negative": 0.25
@@ -29500,6 +30446,12 @@
                 "anchor_id": 6
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                6
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 1.0,
               "negative": 0.0
@@ -29531,6 +30483,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -29567,6 +30525,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.25,
               "active_sentiment": true,
@@ -29608,6 +30572,12 @@
                 "anchor_id": 6
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                6
+              ],
+              "original_anchor_text": null,
               "positive": 1.0,
               "negative": 0.0,
               "active_sentiment": true,
@@ -29648,6 +30618,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -29684,6 +30660,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.25,
               "active_sentiment": true,
@@ -29725,6 +30707,12 @@
                 "anchor_id": 6
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                6
+              ],
+              "original_anchor_text": null,
               "positive": 1.0,
               "negative": 0.0,
               "active_sentiment": true,
@@ -31103,7 +32091,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "kötü",
@@ -31138,6 +32132,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest"
             }
           ],
@@ -31167,6 +32167,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
               "negative": 0.0
@@ -31204,6 +32210,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "lexicon_status": "sentiment",
               "positive": 0.0,
@@ -31236,6 +32248,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -31280,6 +32298,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "positive": 0.0,
               "negative": 0.9,
@@ -31321,6 +32345,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.45454545454545453,
               "negative": 0.0,
               "active_sentiment": true,
@@ -31365,6 +32395,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "positive": 0.0,
               "negative": 0.9,
@@ -32589,7 +33625,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null
             },
             {
               "word": "güzel",
@@ -32624,6 +33666,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest"
             }
           ],
@@ -32653,6 +33701,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "sentiment",
               "positive": 0.0,
               "negative": 0.9
@@ -32690,6 +33744,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
@@ -32722,6 +33782,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -32766,6 +33832,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -32807,6 +33879,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "positive": 0.0,
               "negative": 0.9,
               "active_sentiment": true,
@@ -32851,6 +33929,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                5
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -34030,7 +35114,13 @@
               "modifiers": [],
               "negations": [],
               "contrast": null,
-              "alignment_status": "matched"
+              "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null
             }
           ],
           "candidate_diagnostics": [
@@ -34052,6 +35142,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                3
+              ],
+              "original_anchor_text": null,
               "lexicon_status": "neutral_lexicon_entry",
               "positive": 0.0,
               "negative": 0.0
@@ -34876,6 +35972,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination"
             },
             {
@@ -34904,6 +36006,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination"
             }
           ],
@@ -34941,6 +36049,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination",
               "lexicon_status": "sentiment",
               "positive": 0.6111111111111112,
@@ -34972,6 +36086,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination",
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
@@ -35012,6 +36132,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination",
               "positive": 0.6111111111111112,
               "negative": 0.0,
@@ -35052,6 +36178,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -35101,6 +36233,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination",
               "positive": 0.6111111111111112,
               "negative": 0.0,
@@ -35141,6 +36279,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -36309,6 +37453,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_removed_by_scope"
             },
             {
@@ -36349,6 +37499,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest"
             }
           ],
@@ -36378,6 +37534,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_removed_by_scope",
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
@@ -36421,6 +37583,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest",
               "lexicon_status": "sentiment",
               "positive": 0.6111111111111112,
@@ -36453,6 +37621,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_removed_by_scope",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -36503,6 +37677,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest",
               "positive": 0.6111111111111112,
               "negative": 0.0,
@@ -36545,6 +37725,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_removed_by_scope",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -36595,6 +37781,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest",
               "positive": 0.6111111111111112,
               "negative": 0.0,
@@ -37794,6 +38986,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination"
             },
             {
@@ -37822,6 +39020,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination"
             }
           ],
@@ -37859,6 +39063,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination",
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
@@ -37890,6 +39100,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination",
               "lexicon_status": "sentiment",
               "positive": 1.0,
@@ -37930,6 +39146,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -37970,6 +39192,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination",
               "positive": 1.0,
               "negative": 0.0,
@@ -38019,6 +39247,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -38059,6 +39293,12 @@
               ],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_preceding_segment_shared_coordination",
               "positive": 1.0,
               "negative": 0.0,
@@ -39227,6 +40467,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_removed_by_scope"
             },
             {
@@ -39267,6 +40513,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest"
             }
           ],
@@ -39296,6 +40548,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_removed_by_scope",
               "lexicon_status": "sentiment",
               "positive": 0.45454545454545453,
@@ -39339,6 +40597,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest",
               "lexicon_status": "sentiment",
               "positive": 1.0,
@@ -39371,6 +40635,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_removed_by_scope",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -39421,6 +40691,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest",
               "positive": 1.0,
               "negative": 0.0,
@@ -39463,6 +40739,12 @@
               "negations": [],
               "contrast": null,
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                2
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_removed_by_scope",
               "positive": 0.45454545454545453,
               "negative": 0.0,
@@ -39513,6 +40795,12 @@
                 "anchor_id": 4
               },
               "alignment_status": "matched",
+              "dependency_repaired": false,
+              "repair_strategy": null,
+              "fragment_token_ids": [
+                4
+              ],
+              "original_anchor_text": null,
               "negation_scope_strategy": "explicit_degil_post_contrast_nearest",
               "positive": 1.0,
               "negative": 0.0,

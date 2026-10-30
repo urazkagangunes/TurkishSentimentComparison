@@ -1,0 +1,275 @@
+D->H FRAGMENTATION DIAGNOSTIC
+========================================================================================================================
+
+========================================================================================================================
+sample_id=76
+Gold=negative | H=negative | H->D=negative | D->H=negative
+TEXT: çok kötü asla surulmuyor çok sert
+Recovered H->D fallback scopes: 1
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: sert | root=sert | strategy=fragmented_surface_2_cross_sentence_tokenizer_split | fragment_ids=[6, 7] | reconstructed=sert
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  sert | root=sert | POS=0.0 | NEG=0.3888888888888889
+D->H candidate match:
+  sert | root=sert | lexicon=sentiment | strategy=morphology_repaired:morphology_fragment_2_cross_sentence:descriptive_content_fallback
+D->H dependency-token reconstruction:
+  ids=[6, 7] | texts=['ser', 't'] | reconstructed=sert | sentence_indexes=[0, 1] | cross_sentence=True
+
+
+========================================================================================================================
+sample_id=91
+Gold=neutral | H=negative | H->D=negative | D->H=negative
+TEXT: Ürün fena değil ama beklentimin altında çünkü beklentim ışıltı verici bir ürün olmasıydı kapatıcılık hafif diyebilirim ışıltı hiç yok genel olarakta fena değil
+Recovered H->D fallback scopes: 1
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: verici | root=verici | strategy=fragmented_surface_2 | fragment_ids=[10, 11] | reconstructed=verici
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  verici | root=verici | POS=0.0625 | NEG=0.0
+D->H candidate match:
+  verici | root=verici | lexicon=sentiment | strategy=morphology_repaired:morphology_fragment_2:adjectival_modifier
+D->H dependency-token reconstruction:
+  ids=[10, 11] | texts=['ver', 'ici'] | reconstructed=verici | sentence_indexes=[0, 0] | cross_sentence=False
+
+
+========================================================================================================================
+sample_id=116
+Gold=neutral | H=positive | H->D=positive | D->H=positive
+TEXT: Güzel özenli paket
+Recovered H->D fallback scopes: 1
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: özenli | root=özenli | strategy=fragmented_surface_2 | fragment_ids=[2, 3] | reconstructed=özenli
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  özenli | root=özenli | POS=0.375 | NEG=0.0
+D->H candidate match:
+  özenli | root=özenli | lexicon=sentiment | strategy=morphology_repaired:morphology_fragment_2:adjectival_modifier
+D->H dependency-token reconstruction:
+  ids=[2, 3] | texts=['özen', 'li'] | reconstructed=özenli | sentence_indexes=[0, 0] | cross_sentence=False
+
+
+========================================================================================================================
+sample_id=134
+Gold=neutral | H=positive | H->D=positive | D->H=positive
+TEXT: Ürün ve paketlemesi gayet iyiydi memnun kaldım ama kargo tam bir felaket
+Recovered H->D fallback scopes: 1
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: felaket | root=felaket | strategy=fragmented_surface_2_cross_sentence_tokenizer_split | fragment_ids=[13, 14] | reconstructed=felaket
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  felaket | root=felaket | POS=0.0 | NEG=0.3333333333333333
+D->H candidate match:
+  felaket | root=felaket | lexicon=sentiment | strategy=morphology_repaired:morphology_fragment_2_cross_sentence:predicate_with_target
+D->H dependency-token reconstruction:
+  ids=[13, 14] | texts=['felake', 't'] | reconstructed=felaket | sentence_indexes=[0, 1] | cross_sentence=True
+
+
+========================================================================================================================
+sample_id=141
+Gold=positive | H=positive | H->D=positive | D->H=positive
+TEXT: Markete göre çok çok çok hesaplı
+Recovered H->D fallback scopes: 1
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: hesaplı | root=hesaplı | strategy=fragmented_surface_2 | fragment_ids=[6, 7] | reconstructed=hesaplı
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  hesaplı | root=hesaplı | POS=0.08333333333333333 | NEG=0.0
+D->H candidate match:
+  hesaplı | root=hesaplı | lexicon=sentiment | strategy=morphology_repaired:morphology_fragment_2:predicate_candidate
+D->H dependency-token reconstruction:
+  ids=[6, 7] | texts=['hesap', 'lı'] | reconstructed=hesaplı | sentence_indexes=[0, 0] | cross_sentence=False
+
+
+========================================================================================================================
+sample_id=168
+Gold=neutral | H=positive | H->D=positive | D->H=positive
+TEXT: Ürün boyutu çok küçük bir oje şişesi kadar ama kalitesi harika
+Recovered H->D fallback scopes: 1
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: harika | root=harika | strategy=fragmented_surface_2_cross_sentence_tokenizer_split | fragment_ids=[11, 12] | reconstructed=harika
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  harika | root=harika | POS=1.0 | NEG=0.0
+D->H candidate match:
+  harika | root=harika | lexicon=sentiment | strategy=morphology_repaired:morphology_fragment_2_cross_sentence:predicate_with_target
+D->H dependency-token reconstruction:
+  ids=[11, 12] | texts=['harik', 'a'] | reconstructed=harika | sentence_indexes=[0, 1] | cross_sentence=True
+
+
+========================================================================================================================
+sample_id=220
+Gold=positive | H=positive | H->D=positive | D->H=positive
+TEXT: Düzenli kullandığım ürün ortadan koyuya olan yüzde belli esmerler onu kullanabilir ama buğday tenli ıların rengi kesinlikle bu fondöten sürüp cildi nefessz bırakmaya gerek yok kapatıcılığı çok iyi
+Recovered H->D fallback scopes: 1
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: düzenli | root=düzenli | strategy=fragmented_surface_2 | fragment_ids=[1, 2] | reconstructed=düzenli
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  düzenli | root=düzenli | POS=0.125 | NEG=0.0
+D->H candidate match:
+  düzenli | root=düzenli | lexicon=sentiment | strategy=morphology_repaired:morphology_fragment_2:descriptive_content_fallback
+D->H dependency-token reconstruction:
+  ids=[1, 2] | texts=['Düzen', 'li'] | reconstructed=düzenli | sentence_indexes=[0, 0] | cross_sentence=False
+
+
+========================================================================================================================
+sample_id=238
+Gold=negative | H=positive | H->D=positive | D->H=positive
+TEXT: Boyu çok kısa sweat kısmı çok basit
+Recovered H->D fallback scopes: 1
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: basit | root=basit | strategy=fragmented_surface_2_cross_sentence_tokenizer_split | fragment_ids=[7, 8] | reconstructed=basit
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  basit | root=basit | POS=0.1 | NEG=0.0
+D->H candidate match:
+  basit | root=basit | lexicon=sentiment | strategy=morphology_repaired:morphology_fragment_2_cross_sentence:predicate_with_target
+D->H dependency-token reconstruction:
+  ids=[7, 8] | texts=['basi', 't'] | reconstructed=basit | sentence_indexes=[0, 1] | cross_sentence=True
+
+
+========================================================================================================================
+sample_id=275
+Gold=negative | H=negative | H->D=negative | D->H=negative
+TEXT: Çok dandik
+Recovered H->D fallback scopes: 1
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: dandik | root=dandik | strategy=fragmented_surface_2_cross_sentence_tokenizer_split | fragment_ids=[2, 3] | reconstructed=dandik
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  dandik | root=dandik | POS=0.0 | NEG=0.75
+D->H candidate match:
+  dandik | root=dandik | lexicon=sentiment | strategy=morphology_repaired:morphology_fragment_2_cross_sentence:predicate_candidate
+D->H dependency-token reconstruction:
+  ids=[2, 3] | texts=['dandi', 'k'] | reconstructed=dandik | sentence_indexes=[0, 1] | cross_sentence=True
+
+
+========================================================================================================================
+sample_id=333
+Gold=neutral | H=positive | H->D=positive | D->H=positive
+TEXT: Ebatı bayağı büyük ferahlatıyor ve nemlendiriyor sadece kapağı kırılmıştı özenli pakatleseniz iyi olur
+Recovered H->D fallback scopes: 1
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: özenli | root=özenli | strategy=fragmented_surface_2 | fragment_ids=[10, 11] | reconstructed=özenli
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  özenli | root=özenli | POS=0.375 | NEG=0.0
+D->H candidate match:
+  özenli | root=özenli | lexicon=sentiment | strategy=morphology_repaired:morphology_fragment_2:adjectival_modifier
+D->H dependency-token reconstruction:
+  ids=[10, 11] | texts=['özen', 'li'] | reconstructed=özenli | sentence_indexes=[0, 0] | cross_sentence=False
+
+
+========================================================================================================================
+sample_id=383
+Gold=negative | H=negative | H->D=negative | D->H=negative
+TEXT: Kötü ürün kalitesiz
+Recovered H->D fallback scopes: 1
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: kalitesiz | root=kalitesiz | strategy=fragmented_surface_2 | fragment_ids=[3, 4] | reconstructed=kalitesiz
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  kalitesiz | root=kalitesiz | POS=0.0 | NEG=0.25
+D->H candidate match:
+  kalitesiz | root=kalitesiz | lexicon=sentiment | strategy=morphology_repaired:morphology_fragment_2:predicate_candidate
+D->H dependency-token reconstruction:
+  ids=[3, 4] | texts=['kalitesi', 'z'] | reconstructed=kalitesiz | sentence_indexes=[0, 0] | cross_sentence=False
+
+
+========================================================================================================================
+sample_id=409
+Gold=negative | H=negative | H->D=negative | D->H=negative
+TEXT: 1 yıldız bile fazla kırmızısı boyuyor.penye kalitesi kötü.3×l aldım sanki L beden gibi.daracik.
+Recovered H->D fallback scopes: 1
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: kötü | root=kötü | strategy=decorated_surface_prefix | fragment_ids=[10] | reconstructed=None
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  kötü | root=kötü | POS=0.0 | NEG=0.9
+D->H candidate match:
+  kötü | root=kötü | lexicon=sentiment | strategy=morphology_repaired:morphology_edge_noise:shared_head_fallback
+
+
+========================================================================================================================
+sample_id=459
+Gold=positive | H=positive | H->D=positive | D->H=positive
+TEXT: bunu şiddetle tavsiye ederim yıllardır aradığım ürün bu imiş meğer harika
+Recovered H->D fallback scopes: 1
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: harika | root=harika | strategy=fragmented_surface_2_cross_sentence_tokenizer_split | fragment_ids=[12, 13] | reconstructed=harika
+D->H diagnosis: D_TO_H_FRAGMENTATION_MISS
+D->H dependency-token reconstruction:
+  ids=[12, 13] | texts=['harik', 'a'] | reconstructed=harika | sentence_indexes=[0, 1] | cross_sentence=True
+
+
+========================================================================================================================
+sample_id=469
+Gold=negative | H=positive | H->D=negative | D->H=negative
+TEXT: Ürün kaliteli değil kullanışsız
+Recovered H->D fallback scopes: 1
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: kullanışsız | root=kullanışsız | strategy=fragmented_surface_2_cross_sentence_tokenizer_split | fragment_ids=[4, 5] | reconstructed=kullanışsız
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  kullanışsız | root=kullanışsız | POS=0.0 | NEG=0.75
+D->H candidate match:
+  kullanışsız | root=kullanışsız | lexicon=sentiment | strategy=morphology_repaired:morphology_fragment_2_cross_sentence:predicate_with_target
+D->H dependency-token reconstruction:
+  ids=[4, 5] | texts=['kullanışsı', 'z'] | reconstructed=kullanışsız | sentence_indexes=[0, 1] | cross_sentence=True
+
+
+========================================================================================================================
+sample_id=479
+Gold=positive | H=positive | H->D=positive | D->H=positive
+TEXT: çok memnun kaldım ..yumuşak tertemiz bir cilt ..derinlemesine temizlik👍🏻👍🏻
+Recovered H->D fallback scopes: 2
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: yumuşak | root=yumuşak | strategy=edge_noise_surface | fragment_ids=[4] | reconstructed=None
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  yumuşak | root=yumuşak | POS=0.1111111111111111 | NEG=0.0
+D->H candidate match:
+  yumuşak | root=yumuşak | lexicon=sentiment | strategy=morphology_repaired:morphology_edge_noise:adjectival_modifier
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: temizlik | root=temizlik | strategy=edge_noise_surface | fragment_ids=[9] | reconstructed=None
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  temizlik | root=temizlik | POS=0.125 | NEG=0.0
+D->H candidate match:
+  temizlik | root=temizlik | lexicon=sentiment | strategy=morphology_repaired:morphology_edge_noise:predicate_candidate
+
+
+========================================================================================================================
+sample_id=485
+Gold=neutral | H=positive | H->D=positive | D->H=positive
+TEXT: Cidden dudağı çok yakıyor uygun fiyatlı olduğu için denenebilir
+Recovered H->D fallback scopes: 1
+
+----------------------------------------------------------------------------------------------------
+H->D RECOVERED: fiyatlı | root=fiyatlı | strategy=fragmented_surface_2 | fragment_ids=[6, 7] | reconstructed=fiyatlı
+D->H diagnosis: D_TO_H_FOUND_SENTIMENT
+D->H sentiment match:
+  fiyatlı | root=fiyatlı | POS=0.0 | NEG=0.125
+D->H candidate match:
+  fiyatlı | root=fiyatlı | lexicon=sentiment | strategy=morphology_repaired:morphology_fragment_2:descriptive_content_fallback
+D->H dependency-token reconstruction:
+  ids=[6, 7] | texts=['fiyat', 'lı'] | reconstructed=fiyatlı | sentence_indexes=[0, 0] | cross_sentence=False
+
+
