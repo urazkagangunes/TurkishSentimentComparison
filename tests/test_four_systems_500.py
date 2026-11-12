@@ -1,3 +1,4 @@
+import hashlib
 import json
 import os
 import time
@@ -15,6 +16,7 @@ from sklearn.metrics import (
 from src.evaluation.dataset_loader import (
     load_sentiment_dataset
 )
+from src.evaluation.run_identity import ensure_run_manifest, implementation_fingerprint
 
 from src.hisnet.hisnet_classifier import (
     HisNetClassifier
@@ -43,7 +45,7 @@ DATASET_PATH = Path(
 )
 
 OUTPUT_DIR = Path(
-    "results/trsav1_four_systems_500"
+    os.getenv("SENTIMENT_OUTPUT_DIR", "results/trsav1_four_systems_500")
 )
 
 OUTPUT_DIR.mkdir(
@@ -498,6 +500,25 @@ assert (
 #
 # If already completed, do not waste time rerunning Stanza.
 # ============================================================
+
+ensure_run_manifest(
+    OUTPUT_DIR / "run_manifest.json",
+    {
+        "implementation": implementation_fingerprint(),
+        "runner_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        "sample_sha256": hashlib.sha256(
+            sample[["sample_id", "text", "gold"]].to_json(orient="records", force_ascii=False).encode("utf-8")
+        ).hexdigest(),
+        "model": MODEL_NAME,
+        "batch_sizes": LLM_BATCH_SIZES,
+        "temperature": TEMPERATURE,
+        "top_p": TOP_P,
+        "num_ctx": NUM_CTX,
+        "seed": SEED,
+        "max_retries": MAX_RETRIES,
+    },
+    cached_paths=[CLASSICAL_FILE, *OUTPUT_DIR.glob("*predictions.csv")],
+)
 
 if CLASSICAL_FILE.exists():
 

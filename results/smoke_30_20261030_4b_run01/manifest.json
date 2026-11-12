@@ -1,0 +1,211 @@
+{
+  "fixture_sha256": "35193c77af02a1c57275f8bfcb7905ff48051dae2268dd879044d25d1ac9fc29",
+  "implementation": "2d12a97e7fb7e470d9905bd4bb2e5e3a1ffbbd46b4ade48f548ca1314835ae8b",
+  "model": {
+    "capabilities": [
+      "tools",
+      "thinking",
+      "completion"
+    ],
+    "details": {
+      "context_length": 262144,
+      "embedding_length": 2560,
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M",
+      "runner": "ggml"
+    },
+    "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+    "model": "qwen3:4b-instruct",
+    "modified_at": "2026-05-06T21:45:38.0341558+03:00",
+    "name": "qwen3:4b-instruct",
+    "size": 2497293803
+  },
+  "ordered_ids": [
+    "N10",
+    "N05",
+    "N01",
+    "U07",
+    "U03",
+    "P07",
+    "P06",
+    "N03",
+    "N02",
+    "N06",
+    "P10",
+    "U06",
+    "U10",
+    "U02",
+    "N07",
+    "U08",
+    "P02",
+    "N04",
+    "N09",
+    "P03",
+    "N08",
+    "U09",
+    "P05",
+    "U05",
+    "P08",
+    "P09",
+    "U04",
+    "P01",
+    "P04",
+    "U01"
+  ],
+  "resources": [
+    {
+      "bytes": 457371,
+      "path": "C:\\Users\\ASUS\\AppData\\Local\\StanfordNLP\\stanza\\Cache\\1.14.0\\resources\\resources.json",
+      "sha256": "4e41c1df152146fa26ed0c006a08feea7a60bb3414bb6d57dbda24ad2e3cb99c"
+    },
+    {
+      "bytes": 21608569,
+      "path": "C:\\Users\\ASUS\\AppData\\Local\\StanfordNLP\\stanza\\Cache\\1.14.0\\resources\\tr\\backward_charlm\\conll17.pt",
+      "sha256": "75edf73fee18c9e0cfbf3f9f8630aa5df5da2f2ce44f6e88b7e3fef6c83ae8cc"
+    },
+    {
+      "bytes": 131234178,
+      "path": "C:\\Users\\ASUS\\AppData\\Local\\StanfordNLP\\stanza\\Cache\\1.14.0\\resources\\tr\\depparse\\imst_charlm.pt",
+      "sha256": "89979d127fed29fd25558fbe36d6d74924176d701dc7f662a5b26f73c59f6818"
+    },
+    {
+      "bytes": 21608568,
+      "path": "C:\\Users\\ASUS\\AppData\\Local\\StanfordNLP\\stanza\\Cache\\1.14.0\\resources\\tr\\forward_charlm\\conll17.pt",
+      "sha256": "c20679a2bc639968120525a708255caf29b13d93d8310491da1a2602f2a3f0c8"
+    },
+    {
+      "bytes": 2123539,
+      "path": "C:\\Users\\ASUS\\AppData\\Local\\StanfordNLP\\stanza\\Cache\\1.14.0\\resources\\tr\\lemma\\imst_nocharlm.pt",
+      "sha256": "c57b2d205018fd5105a30d4078ad9b23edd6e7d5fa0bae421628864058b1270d"
+    },
+    {
+      "bytes": 611362,
+      "path": "C:\\Users\\ASUS\\AppData\\Local\\StanfordNLP\\stanza\\Cache\\1.14.0\\resources\\tr\\mwt\\imst.pt",
+      "sha256": "47072881dde81bc7d548b72522e5d651313ed55029e5ee1dc40a2dd15fb9018c"
+    },
+    {
+      "bytes": 52790051,
+      "path": "C:\\Users\\ASUS\\AppData\\Local\\StanfordNLP\\stanza\\Cache\\1.14.0\\resources\\tr\\ner\\starlang.pt",
+      "sha256": "e23bdd325e8afb487527e398b513334c059d4ac6e82eb94939754c1f8af696a6"
+    },
+    {
+      "bytes": 36226877,
+      "path": "C:\\Users\\ASUS\\AppData\\Local\\StanfordNLP\\stanza\\Cache\\1.14.0\\resources\\tr\\pos\\imst_charlm.pt",
+      "sha256": "b18321a16c8de4037f733ded987152c170a1912b359fff77830bb273870203e4"
+    },
+    {
+      "bytes": 107174929,
+      "path": "C:\\Users\\ASUS\\AppData\\Local\\StanfordNLP\\stanza\\Cache\\1.14.0\\resources\\tr\\pretrain\\conll17.pt",
+      "sha256": "b4b624484e7488d76357217f4dbea0d3cd2c214118ebd5034cc0272ea0a3622e"
+    },
+    {
+      "bytes": 631436,
+      "path": "C:\\Users\\ASUS\\AppData\\Local\\StanfordNLP\\stanza\\Cache\\1.14.0\\resources\\tr\\tokenize\\imst.pt",
+      "sha256": "cf40b90d1796281960359a9cfb007783155161e6125551611b2996f85296360b"
+    },
+    {
+      "bytes": 0,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\Dictionary\\data\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 217,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\Dictionary\\data\\__pycache__\\__init__.cpython-311.pyc",
+      "sha256": "d5a14c505b83925f742492b96077f5f6b333d6f9aa6c8edb2f5d227922008a9a"
+    },
+    {
+      "bytes": 1151659,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\Dictionary\\data\\turkish_dictionary.txt",
+      "sha256": "0b10fe3056d4be5909d83b1b54abc488a7af72931d4ad9598133f422d3accb38"
+    },
+    {
+      "bytes": 3539903,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\Dictionary\\data\\turkish_misspellings.txt",
+      "sha256": "67813a82f92b63566f1467c7f0ccc2a3f68476824f1818dca0db6b9d9735b514"
+    },
+    {
+      "bytes": 942528,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\Dictionary\\data\\turkish_morphological_lexicon.txt",
+      "sha256": "49f8e57715be4667aa09820bd2f6e30509b3f4112f151dcfc838e4f0f1541341"
+    },
+    {
+      "bytes": 0,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\MorphologicalAnalysis\\data\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 228,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\MorphologicalAnalysis\\data\\__pycache__\\__init__.cpython-311.pyc",
+      "sha256": "3d8b2c229717dcf2bf7347cd265b9100c298d8f211a70009f279fc6f561d455c"
+    },
+    {
+      "bytes": 7581,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\MorphologicalAnalysis\\data\\pronunciations.txt",
+      "sha256": "d2c61912e3a1798f81621ff4782c165ddb83943a756846df796b0df9c1bf0a80"
+    },
+    {
+      "bytes": 66815,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\MorphologicalAnalysis\\data\\suffixes.txt",
+      "sha256": "67e97f4974351d84013dacb62955cd8f37bb7981cf4846844f8ceaccb9b2a24f"
+    },
+    {
+      "bytes": 55840,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\MorphologicalAnalysis\\data\\turkish_finite_state_machine.xml",
+      "sha256": "b96a011c456ff74bf6e0ba28c9a83e48b743ba5832bf471031ac4200b00539ea"
+    },
+    {
+      "bytes": 0,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\MorphologicalDisambiguation\\data\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 234,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\MorphologicalDisambiguation\\data\\__pycache__\\__init__.cpython-311.pyc",
+      "sha256": "6456d1cb6888c8555c17988499484e1f25bd4b48f35fd3a3aaa7455f48f82e5c"
+    },
+    {
+      "bytes": 158263,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\MorphologicalDisambiguation\\data\\rootlist.txt",
+      "sha256": "f54d053c0a377b86c75c2674164a7e34771bd1a062aadbf1a65dddba57d8e96a"
+    },
+    {
+      "bytes": 0,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\SentiNet\\data\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 215,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\SentiNet\\data\\__pycache__\\__init__.cpython-311.pyc",
+      "sha256": "a9abcef2865ef28ebb018415a63f77c60935b9960a10abb50d057b7195bc627c"
+    },
+    {
+      "bytes": 6265782,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\SentiNet\\data\\turkish_sentiliteralnet.xml",
+      "sha256": "18724328474d98afb3b9065dcdd82c29c26f86e7172af6b862ffcd897cd3f9f4"
+    },
+    {
+      "bytes": 6152354,
+      "path": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\SentiNet\\data\\turkish_sentinet.xml",
+      "sha256": "85f378e2389139c5e715c31ee029b50382268a15be2e0979e5072494bea401d2"
+    }
+  ],
+  "runner_sha256": "2672cb3790bb2688575bb91f84736cec6653d2700d30be02bd335b4d60419428",
+  "server": {
+    "version": "0.40.11"
+  },
+  "settings": {
+    "batch_size": 3,
+    "max_retries": 1,
+    "num_ctx": 8192,
+    "seed": 42,
+    "temperature": 0.1,
+    "think": false,
+    "top_p": 1.0
+  }
+}

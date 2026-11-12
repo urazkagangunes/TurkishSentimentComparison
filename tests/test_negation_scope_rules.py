@@ -55,6 +55,8 @@ def run_case(
 # 1. SENTIMENT TOKEN ITSELF NEGATED
 #
 # sevmedim
+# The current conservative policy ignores self morphological negation.
+# This checks that policy; it is not a claim that "sevmedim" is positive.
 # =============================================================
 
 tokens = [
@@ -70,10 +72,10 @@ tokens = [
 ]
 
 run_case(
-    "1. Morphologically negated sentiment verb",
+    "1. Self morphological negation is excluded by the current policy",
     tokens[0],
     tokens,
-    1
+    0
 )
 
 

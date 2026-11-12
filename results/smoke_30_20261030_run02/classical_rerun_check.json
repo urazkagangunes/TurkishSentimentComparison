@@ -1,0 +1,38 @@
+﻿[
+    {
+        "System":  "hisnet",
+        "Rows":  30,
+        "ChangedResults":  [
+
+                           ],
+        "InvariantFailureRows":  0,
+        "RepeatFailures":  0
+    },
+    {
+        "System":  "dp_hisnet",
+        "Rows":  30,
+        "ChangedResults":  [
+
+                           ],
+        "InvariantFailureRows":  0,
+        "RepeatFailures":  0
+    },
+    {
+        "System":  "hisnet_dp",
+        "Rows":  30,
+        "ChangedResults":  [
+
+                           ],
+        "InvariantFailureRows":  0,
+        "RepeatFailures":  0
+    },
+    {
+        "System":  "lw_hisnet_dp",
+        "Rows":  30,
+        "ChangedResults":  [
+
+                           ],
+        "InvariantFailureRows":  0,
+        "RepeatFailures":  0
+    }
+]

@@ -1,0 +1,451 @@
+[
+  {
+    "row_id": 148,
+    "text": "İi değil iade edeceğim",
+    "token": {
+      "deprel": "obj",
+      "feats": "Case=Nom|Number=Sing|Person=3",
+      "head": 2,
+      "id": 3,
+      "lemma": "iade",
+      "text": "iade",
+      "upos": "NOUN",
+      "sentence_index": 0,
+      "local_id": 3,
+      "local_head": 2
+    },
+    "parent": {
+      "deprel": "root",
+      "feats": null,
+      "head": 0,
+      "id": 2,
+      "lemma": "değil",
+      "text": "değil",
+      "upos": "CCONJ",
+      "sentence_index": 0,
+      "local_id": 2,
+      "local_head": 0
+    },
+    "children": [
+      {
+        "deprel": "compound:lvc",
+        "feats": "Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Fut|VerbForm=Part",
+        "head": 3,
+        "id": 4,
+        "lemma": "et",
+        "text": "edeceği",
+        "upos": "VERB",
+        "sentence_index": 0,
+        "local_id": 4,
+        "local_head": 3
+      }
+    ],
+    "before_negations": [
+      {
+        "id": 2,
+        "word": "değil",
+        "lemma": "değil",
+        "deprel": "root",
+        "feats": null
+      }
+    ]
+  },
+  {
+    "row_id": 215,
+    "text": "sürekli kullandığım ürün fiyatta fena değildi",
+    "token": {
+      "deprel": "amod",
+      "feats": null,
+      "head": 6,
+      "id": 5,
+      "lemma": "fena",
+      "text": "fena",
+      "upos": "ADJ",
+      "sentence_index": 0,
+      "local_id": 5,
+      "local_head": 6
+    },
+    "parent": {
+      "deprel": "root",
+      "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past",
+      "head": 0,
+      "id": 6,
+      "lemma": "değil",
+      "text": "değildi",
+      "upos": "AUX",
+      "sentence_index": 0,
+      "local_id": 6,
+      "local_head": 0
+    },
+    "children": [
+      {
+        "deprel": "obl",
+        "feats": "Case=Loc|Number=Sing|Person=3",
+        "head": 5,
+        "id": 4,
+        "lemma": "fiyat",
+        "text": "fiyatta",
+        "upos": "NOUN",
+        "sentence_index": 0,
+        "local_id": 4,
+        "local_head": 5
+      }
+    ],
+    "before_negations": [
+      {
+        "id": 6,
+        "word": "değildi",
+        "lemma": "değil",
+        "deprel": "root",
+        "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past"
+      }
+    ]
+  },
+  {
+    "row_id": 295,
+    "text": "kenarları bir şekilde pirtlatıyor. kilo problemi olan biri de değilim modelinde bir gariplik var bence",
+    "token": {
+      "deprel": "nsubj",
+      "feats": "Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3|PronType=Ind",
+      "head": 11,
+      "id": 9,
+      "lemma": "biri",
+      "text": "biri",
+      "upos": "PRON",
+      "sentence_index": 1,
+      "local_id": 4,
+      "local_head": 6
+    },
+    "parent": {
+      "deprel": "root",
+      "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres",
+      "head": 0,
+      "id": 11,
+      "lemma": "değil",
+      "text": "değilim",
+      "upos": "VERB",
+      "sentence_index": 1,
+      "local_id": 6,
+      "local_head": 0
+    },
+    "children": [
+      {
+        "deprel": "acl",
+        "feats": "Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Part",
+        "head": 9,
+        "id": 8,
+        "lemma": "ol",
+        "text": "olan",
+        "upos": "VERB",
+        "sentence_index": 1,
+        "local_id": 3,
+        "local_head": 4
+      },
+      {
+        "deprel": "advmod:emph",
+        "feats": null,
+        "head": 9,
+        "id": 10,
+        "lemma": "de",
+        "text": "de",
+        "upos": "CCONJ",
+        "sentence_index": 1,
+        "local_id": 5,
+        "local_head": 4
+      }
+    ],
+    "before_negations": []
+  },
+  {
+    "row_id": 398,
+    "text": "Kargo firmasıyla ilgili sorunlar yaşadım ürünümü dağıtıma çıkarmadılar çıkardı gösterdiler vs kendim gidip aldım ptt kargoya şu pandemi sürecinde bu ürünü alabilmek için Sıra bekledim bayağı. Ürüne gelince yağlı bir cildim var sivilce tedavisi gördüm lekeler kalmıştı cildimde. Ürünü kullanmaya başladığım ilk 2 gün sorun yoktu sonrasında sivilcelerim çıkmaya başladı ve alnım çenem ve yanağımın çok az bir kısmında sivilceler çıktı alnımdaki sivilceler cidden moralimi çok bozdu çünkü çok sivilce vardı ve kızarık kızarıktı her neyse kremleri kullanmayı bırakmayı düşündüm eczane kremi almaya karar verdim araya bayram vs girdiği için eczane kremlerini alamadım ve bu kremleri gündüz gece yüzümü temizleyiciyle yıkadıktan sonra kullanmaya devam ettim ve yüzümdeki sivilceleri söndürdü yani çıkardığı yerlerdeki sivilceleri söndürdü. Sonra eczane kremlerini aldım ve bu kremleri kullanmayı bıraktım faydasını görürmüydüm bilemiyorum. Gece kremi kokusu dayanılmayacak kadar kötü değil yorumlarda abartılmış biraz gündüz kreminin yapısı gece kremine göre daha sert. Bu arada gece kremini elime ilk aldığımda bana biraz içi boş gibi geldi kremin yapısından mıdır bilmiyorum hafif ve boş geldi bana eğer kullanılmış ürünü gönderdilerse hakkımı helal etmem söyleyeceklerim bu kadar 🤚",
+    "token": {
+      "deprel": "obj",
+      "feats": null,
+      "head": 141,
+      "id": 140,
+      "lemma": "kötü",
+      "text": "kötü",
+      "upos": "ADJ",
+      "sentence_index": 4,
+      "local_id": 6,
+      "local_head": 7
+    },
+    "parent": {
+      "deprel": "root",
+      "feats": null,
+      "head": 0,
+      "id": 141,
+      "lemma": "değil",
+      "text": "değil",
+      "upos": "CCONJ",
+      "sentence_index": 4,
+      "local_id": 7,
+      "local_head": 0
+    },
+    "children": [
+      {
+        "deprel": "advcl",
+        "feats": "Aspect=Perf|Mood=Ind|Polarity=Neg|Tense=Fut|VerbForm=Part|Voice=Pass",
+        "head": 140,
+        "id": 138,
+        "lemma": "dayan",
+        "text": "dayanılmayacak",
+        "upos": "VERB",
+        "sentence_index": 4,
+        "local_id": 4,
+        "local_head": 6
+      }
+    ],
+    "before_negations": [
+      {
+        "id": 141,
+        "word": "değil",
+        "lemma": "değil",
+        "deprel": "root",
+        "feats": null
+      }
+    ]
+  },
+  {
+    "row_id": 398,
+    "text": "Kargo firmasıyla ilgili sorunlar yaşadım ürünümü dağıtıma çıkarmadılar çıkardı gösterdiler vs kendim gidip aldım ptt kargoya şu pandemi sürecinde bu ürünü alabilmek için Sıra bekledim bayağı. Ürüne gelince yağlı bir cildim var sivilce tedavisi gördüm lekeler kalmıştı cildimde. Ürünü kullanmaya başladığım ilk 2 gün sorun yoktu sonrasında sivilcelerim çıkmaya başladı ve alnım çenem ve yanağımın çok az bir kısmında sivilceler çıktı alnımdaki sivilceler cidden moralimi çok bozdu çünkü çok sivilce vardı ve kızarık kızarıktı her neyse kremleri kullanmayı bırakmayı düşündüm eczane kremi almaya karar verdim araya bayram vs girdiği için eczane kremlerini alamadım ve bu kremleri gündüz gece yüzümü temizleyiciyle yıkadıktan sonra kullanmaya devam ettim ve yüzümdeki sivilceleri söndürdü yani çıkardığı yerlerdeki sivilceleri söndürdü. Sonra eczane kremlerini aldım ve bu kremleri kullanmayı bıraktım faydasını görürmüydüm bilemiyorum. Gece kremi kokusu dayanılmayacak kadar kötü değil yorumlarda abartılmış biraz gündüz kreminin yapısı gece kremine göre daha sert. Bu arada gece kremini elime ilk aldığımda bana biraz içi boş gibi geldi kremin yapısından mıdır bilmiyorum hafif ve boş geldi bana eğer kullanılmış ürünü gönderdilerse hakkımı helal etmem söyleyeceklerim bu kadar 🤚",
+    "token": {
+      "deprel": "conj",
+      "feats": null,
+      "head": 141,
+      "id": 152,
+      "lemma": "sert",
+      "text": "sert",
+      "upos": "ADJ",
+      "sentence_index": 4,
+      "local_id": 18,
+      "local_head": 7
+    },
+    "parent": {
+      "deprel": "root",
+      "feats": null,
+      "head": 0,
+      "id": 141,
+      "lemma": "değil",
+      "text": "değil",
+      "upos": "CCONJ",
+      "sentence_index": 4,
+      "local_id": 7,
+      "local_head": 0
+    },
+    "children": [
+      {
+        "deprel": "nsubj",
+        "feats": "Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3",
+        "head": 152,
+        "id": 147,
+        "lemma": "yapı",
+        "text": "yapısı",
+        "upos": "NOUN",
+        "sentence_index": 4,
+        "local_id": 13,
+        "local_head": 18
+      },
+      {
+        "deprel": "obl",
+        "feats": "Case=Dat|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3",
+        "head": 152,
+        "id": 149,
+        "lemma": "krem",
+        "text": "kremine",
+        "upos": "NOUN",
+        "sentence_index": 4,
+        "local_id": 15,
+        "local_head": 18
+      },
+      {
+        "deprel": "advmod:emph",
+        "feats": null,
+        "head": 152,
+        "id": 151,
+        "lemma": "daha",
+        "text": "daha",
+        "upos": "ADV",
+        "sentence_index": 4,
+        "local_id": 17,
+        "local_head": 18
+      },
+      {
+        "deprel": "punct",
+        "feats": null,
+        "head": 152,
+        "id": 153,
+        "lemma": ".",
+        "text": ".",
+        "upos": "PUNCT",
+        "sentence_index": 4,
+        "local_id": 19,
+        "local_head": 18
+      }
+    ],
+    "before_negations": []
+  },
+  {
+    "row_id": 447,
+    "text": "Daha çnce kullandım böyle değildi sanki içine limon kolanyası basmışlar gibi bir ürün kesinlikle almanızı tavsiye etmem",
+    "token": {
+      "deprel": "conj",
+      "feats": "Case=Nom|Number=Sing|Person=3",
+      "head": 5,
+      "id": 16,
+      "lemma": "tavsiye",
+      "text": "tavsiye",
+      "upos": "NOUN",
+      "sentence_index": 0,
+      "local_id": 16,
+      "local_head": 5
+    },
+    "parent": {
+      "deprel": "root",
+      "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past",
+      "head": 0,
+      "id": 5,
+      "lemma": "değil",
+      "text": "değildi",
+      "upos": "AUX",
+      "sentence_index": 0,
+      "local_id": 5,
+      "local_head": 0
+    },
+    "children": [
+      {
+        "deprel": "advmod",
+        "feats": null,
+        "head": 16,
+        "id": 6,
+        "lemma": "sanki",
+        "text": "sanki",
+        "upos": "ADV",
+        "sentence_index": 0,
+        "local_id": 6,
+        "local_head": 16
+      },
+      {
+        "deprel": "advcl",
+        "feats": "Aspect=Perf|Evident=Nfh|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Past",
+        "head": 16,
+        "id": 10,
+        "lemma": "bas",
+        "text": "basmışlar",
+        "upos": "VERB",
+        "sentence_index": 0,
+        "local_id": 10,
+        "local_head": 16
+      },
+      {
+        "deprel": "obj",
+        "feats": "Aspect=Perf|Case=Acc|Mood=Ind|Number[psor]=Plur|Person[psor]=2|Polarity=Pos|Tense=Pres|VerbForm=Vnoun",
+        "head": 16,
+        "id": 15,
+        "lemma": "al",
+        "text": "almanızı",
+        "upos": "VERB",
+        "sentence_index": 0,
+        "local_id": 15,
+        "local_head": 16
+      },
+      {
+        "deprel": "compound:lvc",
+        "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres",
+        "head": 16,
+        "id": 17,
+        "lemma": "et",
+        "text": "etmem",
+        "upos": "VERB",
+        "sentence_index": 0,
+        "local_id": 17,
+        "local_head": 16
+      }
+    ],
+    "before_negations": [
+      {
+        "id": 17,
+        "word": "etmem",
+        "lemma": "et",
+        "deprel": "compound:lvc",
+        "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+      },
+      {
+        "id": 5,
+        "word": "değildi",
+        "lemma": "değil",
+        "deprel": "root",
+        "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past"
+      }
+    ]
+  },
+  {
+    "row_id": 469,
+    "text": "Ürün kaliteli değil kullanışsız",
+    "token": {
+      "deprel": "amod",
+      "feats": null,
+      "head": 3,
+      "id": 2,
+      "lemma": "kaliteli",
+      "text": "kaliteli",
+      "upos": "ADJ",
+      "sentence_index": 0,
+      "local_id": 2,
+      "local_head": 3
+    },
+    "parent": {
+      "deprel": "root",
+      "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres",
+      "head": 0,
+      "id": 3,
+      "lemma": "değil",
+      "text": "değil",
+      "upos": "AUX",
+      "sentence_index": 0,
+      "local_id": 3,
+      "local_head": 0
+    },
+    "children": [],
+    "before_negations": [
+      {
+        "id": 3,
+        "word": "değil",
+        "lemma": "değil",
+        "deprel": "root",
+        "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres"
+      }
+    ]
+  },
+  {
+    "row_id": 469,
+    "text": "Ürün kaliteli değil kullanışsız",
+    "token": {
+      "deprel": "conj",
+      "feats": "Case=Nom|Number=Sing|Person=3",
+      "head": 3,
+      "id": 4,
+      "lemma": "kullanışsı",
+      "text": "kullanışsı",
+      "upos": "NOUN",
+      "sentence_index": 0,
+      "local_id": 4,
+      "local_head": 3
+    },
+    "parent": {
+      "deprel": "root",
+      "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres",
+      "head": 0,
+      "id": 3,
+      "lemma": "değil",
+      "text": "değil",
+      "upos": "AUX",
+      "sentence_index": 0,
+      "local_id": 3,
+      "local_head": 0
+    },
+    "children": [],
+    "before_negations": []
+  }
+]

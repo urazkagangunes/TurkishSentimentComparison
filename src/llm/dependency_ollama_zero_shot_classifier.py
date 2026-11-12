@@ -27,7 +27,7 @@ class DependencyOllamaZeroShotSentimentClassifier(
 
     Experimental principle
     ----------------------
-    The ONLY intended difference between:
+    The intended difference between:
 
         LLM
 
@@ -35,7 +35,8 @@ class DependencyOllamaZeroShotSentimentClassifier(
 
         Dependency -> LLM
 
-    is the presence of dependency information in the prompt.
+    is dependency information plus instructions for interpreting that parse.
+    This comparison is not an ablation of parse data alone.
 
     Therefore this classifier deliberately does NOT use:
 
@@ -575,14 +576,31 @@ class DependencyOllamaZeroShotSentimentClassifier(
         # DEPENDENCY PARSE
         # =====================================================
 
-        (
-            parsed_reviews,
-            parse_seconds
-        ) = (
-            self._parse_batch(
-                texts
-            )
-        )
+        parse_start = time.perf_counter()
+        try:
+            parsed_reviews, parse_seconds = self._parse_batch(texts)
+        except (RuntimeError, ValueError, IndexError, OSError) as error:
+            # Keep the same failure contract as the LLM baseline so the
+            # inherited individual recovery pass can retry these reviews.
+            parse_seconds = time.perf_counter() - parse_start
+            self.total_dependency_parse_seconds += parse_seconds
+            self.total_failures += 1
+            return {
+                "predictions": [None] * len(texts),
+                "model": self.model,
+                "batch_size": len(texts),
+                "request_seconds": 0.0,
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "attempt": 0,
+                "status": "failed",
+                "error": f"Dependency parse {type(error).__name__}: {error}",
+                "raw_response": None,
+                "dependency_parses": [],
+                "dependency_serializations": [],
+                "dependency_parse_seconds": parse_seconds,
+                "total_pipeline_seconds": parse_seconds,
+            }
 
         # =====================================================
         # STEP 2

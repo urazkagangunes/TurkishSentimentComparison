@@ -1,0 +1,178 @@
+{
+  "hisnet": {
+    "completed": 30,
+    "correct": 20,
+    "correct_by_class": {
+      "negative": 6,
+      "neutral": 8,
+      "positive": 6
+    },
+    "invariant_failures": {},
+    "repeat_checks": {
+      "U06": true,
+      "N10": true,
+      "N03": true,
+      "P10": true,
+      "P01": true
+    },
+    "wrong_ids": [
+      "N05",
+      "P07",
+      "N03",
+      "N06",
+      "P02",
+      "N04",
+      "P03",
+      "U09",
+      "P05",
+      "U04"
+    ]
+  },
+  "dp_hisnet": {
+    "completed": 30,
+    "correct": 25,
+    "correct_by_class": {
+      "negative": 8,
+      "neutral": 9,
+      "positive": 8
+    },
+    "invariant_failures": {},
+    "repeat_checks": {
+      "U06": true,
+      "N10": true,
+      "N03": true,
+      "P10": true,
+      "P01": true
+    },
+    "wrong_ids": [
+      "N03",
+      "P02",
+      "N04",
+      "P03",
+      "U09"
+    ]
+  },
+  "hisnet_dp": {
+    "completed": 30,
+    "correct": 24,
+    "correct_by_class": {
+      "negative": 8,
+      "neutral": 8,
+      "positive": 8
+    },
+    "invariant_failures": {},
+    "repeat_checks": {
+      "U06": true,
+      "N10": true,
+      "N03": true,
+      "P10": true,
+      "P01": true
+    },
+    "wrong_ids": [
+      "N03",
+      "P02",
+      "N04",
+      "P03",
+      "U09",
+      "U04"
+    ]
+  },
+  "lw_hisnet_dp": {
+    "completed": 30,
+    "correct": 24,
+    "correct_by_class": {
+      "negative": 8,
+      "neutral": 8,
+      "positive": 8
+    },
+    "invariant_failures": {},
+    "repeat_checks": {
+      "U06": true,
+      "N10": true,
+      "N03": true,
+      "P10": true,
+      "P01": true
+    },
+    "wrong_ids": [
+      "N03",
+      "P02",
+      "N04",
+      "P03",
+      "U09",
+      "U04"
+    ]
+  },
+  "llm": {
+    "completed": 30,
+    "correct": 28,
+    "correct_by_class": {
+      "negative": 9,
+      "neutral": 10,
+      "positive": 9
+    },
+    "invariant_failures": {},
+    "repeat_checks": {},
+    "wrong_ids": [
+      "N08",
+      "P05"
+    ],
+    "runtime": {
+      "calls": 10,
+      "seconds": 827.466220600123,
+      "prompt_tokens": 1909,
+      "output_tokens": 502,
+      "min_prompt_tokens": 185,
+      "max_prompt_tokens": 199,
+      "call_errors": [],
+      "stop_reasons": [
+        "stop",
+        "stop",
+        "stop",
+        "stop",
+        "stop",
+        "stop",
+        "stop",
+        "stop",
+        "stop",
+        "stop"
+      ],
+      "dependency_parse_seconds": 0.0
+    }
+  },
+  "dp_llm": {
+    "completed": 30,
+    "correct": 29,
+    "correct_by_class": {
+      "negative": 9,
+      "neutral": 10,
+      "positive": 10
+    },
+    "invariant_failures": {},
+    "repeat_checks": {},
+    "wrong_ids": [
+      "N08"
+    ],
+    "runtime": {
+      "calls": 10,
+      "seconds": 657.0724014999578,
+      "prompt_tokens": 10616,
+      "output_tokens": 510,
+      "min_prompt_tokens": 918,
+      "max_prompt_tokens": 1214,
+      "call_errors": [],
+      "stop_reasons": [
+        "stop",
+        "stop",
+        "stop",
+        "stop",
+        "stop",
+        "stop",
+        "stop",
+        "stop",
+        "stop",
+        "stop"
+      ],
+      "dependency_parse_seconds": 6.550717899983283
+    }
+  }
+}

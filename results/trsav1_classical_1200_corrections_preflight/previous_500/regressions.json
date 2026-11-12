@@ -1,0 +1,1 @@
+{"baseline": {"errors": 0, "failures": 7, "passed": false, "tests": 7}, "baseline_sha256": "af9c7258fcbbf93770fc19a238150d51033924309d9889b90d2a3c9fd8f5bf8b", "candidate": {"errors": 0, "failures": 0, "passed": true, "tests": 26}, "candidate_sha256": "1059980b4ee87ab71dd2a53fd86dd59e85323431b68e6f9ac0f0c0f39e637e35"}

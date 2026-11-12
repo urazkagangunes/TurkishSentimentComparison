@@ -1,3 +1,5 @@
+import math
+
 from SentiNet.SentiLiteralNet import (
     SentiLiteralNet
 )
@@ -31,6 +33,11 @@ class HisNetClassifier:
             positive_score
             - negative_score
         )
+
+        # Floating-point subtraction can place an exact boundary just
+        # outside +/-0.05 (for example 0.20 - 0.15).
+        if math.isclose(abs(net_score), NEUTRAL_THRESHOLD, rel_tol=0.0, abs_tol=1e-12):
+            return "neutral"
 
         if net_score > NEUTRAL_THRESHOLD:
             return "positive"

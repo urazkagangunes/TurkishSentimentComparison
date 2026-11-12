@@ -29,6 +29,8 @@ Thumbs.db
 results/*.csv
 results/*.json
 results/*.xlsx
+results/**/progress.sqlite3*
+results/**/run.lock
 
 # Raw datasets
 data/raw/*

@@ -1,0 +1,50 @@
+﻿[
+    {
+        "entry":  "sev",
+        "found":  false,
+        "positive":  null,
+        "negative":  null
+    },
+    {
+        "entry":  "sevmek",
+        "found":  true,
+        "positive":  "0.6",
+        "negative":  "0.0"
+    },
+    {
+        "entry":  "beğen",
+        "found":  false,
+        "positive":  null,
+        "negative":  null
+    },
+    {
+        "entry":  "beğenmek",
+        "found":  true,
+        "positive":  "0.75",
+        "negative":  "0.0"
+    },
+    {
+        "entry":  "berbat",
+        "found":  true,
+        "positive":  "0.0",
+        "negative":  "0.0"
+    },
+    {
+        "entry":  "katı",
+        "found":  true,
+        "positive":  "0.0",
+        "negative":  "0.14285714285714285"
+    },
+    {
+        "entry":  "kat",
+        "found":  true,
+        "positive":  "0.0",
+        "negative":  "0.0"
+    },
+    {
+        "entry":  "model",
+        "found":  true,
+        "positive":  "0.1111111111111111",
+        "negative":  "0.0"
+    }
+]

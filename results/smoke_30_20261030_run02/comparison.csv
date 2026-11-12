@@ -1,0 +1,31 @@
+﻿id,text,gold,focus,hisnet,dp_hisnet,hisnet_dp,lw_hisnet_dp,llm,dp_llm
+N01,Film çok kötü.,negative,negative intensifier,negative,negative,negative,negative,negative,negative
+N02,Bu ürünü hiç beğenmedim.,negative,morphological negation,negative,negative,negative,negative,negative,negative
+N03,Bu filmi sevmedim.,negative,morphological negation pair,neutral,neutral,neutral,neutral,negative,negative
+N04,Hizmet berbattı.,negative,inflected negative predicate,neutral,neutral,neutral,neutral,negative,negative
+N05,Otel güzel değildi.,negative,explicit negation of positive opinion,positive,negative,negative,negative,negative,negative
+N06,Bu ürünü tavsiye etmem.,negative,negated light verb,positive,negative,negative,negative,negative,negative
+N07,Bu alışverişten pişman oldum.,negative,negative light verb,negative,negative,negative,negative,negative,negative
+N08,Otel güzel ama odalar çok kötü.,negative,contrast and intensifier,negative,negative,negative,negative,neutral,neutral
+N09,Ürün kullanışsız.,negative,derivational suffix,negative,negative,negative,negative,negative,negative
+N10,Kötü. Merkezi değil.,negative,negation across sentence boundary,negative,negative,negative,negative,negative,negative
+P01,Film çok güzel.,positive,intensifier,positive,positive,positive,positive,positive,positive
+P02,Bu ürünü çok beğendim.,positive,positive verb,neutral,neutral,neutral,neutral,positive,positive
+P03,Bu filmi sevdim.,positive,verb polarity pair,neutral,neutral,neutral,neutral,positive,positive
+P04,Hizmet mükemmeldi.,positive,inflected predicate,positive,positive,positive,positive,positive,positive
+P05,Otel kötü değildi.,positive,explicit negation of negative opinion,negative,positive,positive,positive,neutral,positive
+P06,Bu ürünü tavsiye ederim.,positive,light verb,positive,positive,positive,positive,positive,positive
+P07,Bu alışverişten pişman olmadım.,positive,negated light verb,negative,positive,positive,positive,positive,positive
+P08,Oda çok ama çok güzel.,positive,multiword modifier with ama,positive,positive,positive,positive,positive,positive
+P09,"İYİ BİR ÜRÜN, ÇOK MEMNUNUM.",positive,Turkish uppercase,positive,positive,positive,positive,positive,positive
+P10,Bu ürün harika🙂,positive,emoji token alignment,positive,positive,positive,positive,positive,positive
+U01,Ürün dün geldi.,neutral,factual statement,neutral,neutral,neutral,neutral,neutral,neutral
+U02,Kutuda üç kalem var.,neutral,count,neutral,neutral,neutral,neutral,neutral,neutral
+U03,Film iki saat sürüyor.,neutral,duration,neutral,neutral,neutral,neutral,neutral,neutral
+U04,Otelin beş katı var.,neutral,factual property,negative,neutral,negative,negative,neutral,neutral
+U05,Kargo salı günü teslim edildi.,neutral,passive factual statement,neutral,neutral,neutral,neutral,neutral,neutral
+U06,Bu kitabı bir yazar yazar.,neutral,repeated ambiguous surface,neutral,neutral,neutral,neutral,neutral,neutral
+U07,İSTANBUL'DA BİR OTEL VAR.,neutral,Turkish uppercase and apostrophe,neutral,neutral,neutral,neutral,neutral,neutral
+U08,Oda ikinci katta.,neutral,location,neutral,neutral,neutral,neutral,neutral,neutral
+U09,Ürünün modeli X200.,neutral,out-of-vocabulary model name,positive,positive,positive,positive,neutral,neutral
+U10,Paket masanın üzerinde.,neutral,factual position,neutral,neutral,neutral,neutral,neutral,neutral

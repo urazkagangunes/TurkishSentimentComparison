@@ -152,8 +152,10 @@ class MorphologicalRootExtractor:
                 )
             )
 
+            # LongestRootFirstDisambiguation mutates its input parse lists;
+            # the analyzer returns its cached object, so detach it first.
             return (
-                parses,
+                copy.deepcopy(parses),
                 False
             )
 
@@ -179,7 +181,7 @@ class MorphologicalRootExtractor:
                 )
 
                 return (
-                    parses,
+                    copy.deepcopy(parses),
                     True
                 )
 

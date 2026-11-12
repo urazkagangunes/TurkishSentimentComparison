@@ -1,0 +1,44 @@
+﻿[
+    {
+        "system":  "hisnet",
+        "completed":  30,
+        "correct":  20,
+        "accuracy":  0.6666666666666666,
+        "verified":  true
+    },
+    {
+        "system":  "dp_hisnet",
+        "completed":  30,
+        "correct":  25,
+        "accuracy":  0.8333333333333334,
+        "verified":  true
+    },
+    {
+        "system":  "hisnet_dp",
+        "completed":  30,
+        "correct":  24,
+        "accuracy":  0.8,
+        "verified":  true
+    },
+    {
+        "system":  "lw_hisnet_dp",
+        "completed":  30,
+        "correct":  24,
+        "accuracy":  0.8,
+        "verified":  true
+    },
+    {
+        "system":  "llm",
+        "completed":  30,
+        "correct":  28,
+        "accuracy":  0.9333333333333333,
+        "verified":  true
+    },
+    {
+        "system":  "dp_llm",
+        "completed":  30,
+        "correct":  29,
+        "accuracy":  0.9666666666666667,
+        "verified":  true
+    }
+]

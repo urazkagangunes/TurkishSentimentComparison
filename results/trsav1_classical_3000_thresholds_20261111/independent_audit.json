@@ -1,0 +1,23 @@
+﻿{
+    "Checks":  [
+                   {
+                       "Threshold":  0.07,
+                       "Predictions":  12000,
+                       "UniquePredictions":  12000,
+                       "SampleMatches":  true,
+                       "IndependentThresholdLabelsMatch":  true,
+                       "ConfusionMatricesMatch":  true
+                   },
+                   {
+                       "Threshold":  0.1,
+                       "Predictions":  12000,
+                       "UniquePredictions":  12000,
+                       "SampleMatches":  true,
+                       "IndependentThresholdLabelsMatch":  true,
+                       "ConfusionMatricesMatch":  true
+                   }
+               ],
+    "TotalVerified":  24000,
+    "Source":  "Independent PowerShell calculation from frozen comparison_3000.csv",
+    "FocusedUnitTestsPassed":  8
+}

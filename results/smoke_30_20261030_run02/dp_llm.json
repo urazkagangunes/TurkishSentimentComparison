@@ -1,0 +1,2156 @@
+{
+  "rows": {
+    "N10": {
+      "status": "success",
+      "prediction": "negative",
+      "error": null,
+      "recovered": false
+    },
+    "N05": {
+      "status": "success",
+      "prediction": "negative",
+      "error": null,
+      "recovered": false
+    },
+    "N01": {
+      "status": "success",
+      "prediction": "negative",
+      "error": null,
+      "recovered": false
+    },
+    "U07": {
+      "status": "success",
+      "prediction": "neutral",
+      "error": null,
+      "recovered": false
+    },
+    "U03": {
+      "status": "success",
+      "prediction": "neutral",
+      "error": null,
+      "recovered": false
+    },
+    "P07": {
+      "status": "success",
+      "prediction": "positive",
+      "error": null,
+      "recovered": false
+    },
+    "P06": {
+      "status": "success",
+      "prediction": "positive",
+      "error": null,
+      "recovered": false
+    },
+    "N03": {
+      "status": "success",
+      "prediction": "negative",
+      "error": null,
+      "recovered": false
+    },
+    "N02": {
+      "status": "success",
+      "prediction": "negative",
+      "error": null,
+      "recovered": false
+    },
+    "N06": {
+      "status": "success",
+      "prediction": "negative",
+      "error": null,
+      "recovered": false
+    },
+    "P10": {
+      "status": "success",
+      "prediction": "positive",
+      "error": null,
+      "recovered": false
+    },
+    "U06": {
+      "status": "success",
+      "prediction": "neutral",
+      "error": null,
+      "recovered": false
+    },
+    "U10": {
+      "status": "success",
+      "prediction": "neutral",
+      "error": null,
+      "recovered": false
+    },
+    "U02": {
+      "status": "success",
+      "prediction": "neutral",
+      "error": null,
+      "recovered": false
+    },
+    "N07": {
+      "status": "success",
+      "prediction": "negative",
+      "error": null,
+      "recovered": false
+    },
+    "U08": {
+      "status": "success",
+      "prediction": "neutral",
+      "error": null,
+      "recovered": false
+    },
+    "P02": {
+      "status": "success",
+      "prediction": "positive",
+      "error": null,
+      "recovered": false
+    },
+    "N04": {
+      "status": "success",
+      "prediction": "negative",
+      "error": null,
+      "recovered": false
+    },
+    "N09": {
+      "status": "success",
+      "prediction": "negative",
+      "error": null,
+      "recovered": false
+    },
+    "P03": {
+      "status": "success",
+      "prediction": "positive",
+      "error": null,
+      "recovered": false
+    },
+    "N08": {
+      "status": "success",
+      "prediction": "neutral",
+      "error": null,
+      "recovered": false
+    },
+    "U09": {
+      "status": "success",
+      "prediction": "neutral",
+      "error": null,
+      "recovered": false
+    },
+    "P05": {
+      "status": "success",
+      "prediction": "positive",
+      "error": null,
+      "recovered": false
+    },
+    "U05": {
+      "status": "success",
+      "prediction": "neutral",
+      "error": null,
+      "recovered": false
+    },
+    "P08": {
+      "status": "success",
+      "prediction": "positive",
+      "error": null,
+      "recovered": false
+    },
+    "P09": {
+      "status": "success",
+      "prediction": "positive",
+      "error": null,
+      "recovered": false
+    },
+    "U04": {
+      "status": "success",
+      "prediction": "neutral",
+      "error": null,
+      "recovered": false
+    },
+    "P01": {
+      "status": "success",
+      "prediction": "positive",
+      "error": null,
+      "recovered": false
+    },
+    "P04": {
+      "status": "success",
+      "prediction": "positive",
+      "error": null,
+      "recovered": false
+    },
+    "U01": {
+      "status": "success",
+      "prediction": "neutral",
+      "error": null,
+      "recovered": false
+    }
+  },
+  "batches": [
+    {
+      "ids": [
+        "N10",
+        "N05",
+        "N01"
+      ],
+      "result": {
+        "predictions": [
+          "negative",
+          "negative",
+          "negative"
+        ],
+        "model": "qwen3:32b",
+        "batch_size": 3,
+        "request_seconds": 85.84504380001454,
+        "prompt_tokens": 1005,
+        "output_tokens": 51,
+        "attempt": 1,
+        "status": "success",
+        "error": null,
+        "raw_response": "{ \"predictions\": [ { \"id\": 1, \"label\": \"negative\" }, { \"id\": 2, \"label\": \"negative\" }, { \"id\": 3, \"label\": \"negative\" } ] }",
+        "dependency_parses": [
+          [
+            {
+              "text": "Kötü.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Kötü",
+                  "lemma": "kötü",
+                  "upos": "ADJ",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": null
+                },
+                {
+                  "id": 2,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 1,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            },
+            {
+              "text": "Merkezi değil.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Merkezi",
+                  "lemma": "merkez",
+                  "upos": "NOUN",
+                  "head": 2,
+                  "deprel": "obj",
+                  "feats": "Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3"
+                },
+                {
+                  "id": 2,
+                  "text": "değil",
+                  "lemma": "değil",
+                  "upos": "AUX",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres"
+                },
+                {
+                  "id": 3,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 2,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Otel güzel değildi.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Otel",
+                  "lemma": "otel",
+                  "upos": "NOUN",
+                  "head": 2,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "güzel",
+                  "lemma": "güzel",
+                  "upos": "ADJ",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": null
+                },
+                {
+                  "id": 3,
+                  "text": "değildi",
+                  "lemma": "değil",
+                  "upos": "AUX",
+                  "head": 2,
+                  "deprel": "cop",
+                  "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past"
+                },
+                {
+                  "id": 4,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 2,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Film çok kötü.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Film",
+                  "lemma": "film",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "çok",
+                  "lemma": "çok",
+                  "upos": "ADV",
+                  "head": 3,
+                  "deprel": "advmod",
+                  "feats": null
+                },
+                {
+                  "id": 3,
+                  "text": "kötü",
+                  "lemma": "kötü",
+                  "upos": "ADJ",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": null
+                },
+                {
+                  "id": 4,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 3,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ]
+        ],
+        "dependency_serializations": [
+          "SENTENCE 1: Kötü.\nID=1 | FORM=Kötü | LEMMA=kötü | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=_\nID=2 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=1:Kötü | DEPREL=punct | FEATS=_\n\nSENTENCE 2: Merkezi değil.\nID=1 | FORM=Merkezi | LEMMA=merkez | UPOS=NOUN | HEAD=2:değil | DEPREL=obj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3\nID=2 | FORM=değil | LEMMA=değil | UPOS=AUX | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres\nID=3 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=2:değil | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Otel güzel değildi.\nID=1 | FORM=Otel | LEMMA=otel | UPOS=NOUN | HEAD=2:güzel | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=2 | FORM=güzel | LEMMA=güzel | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=_\nID=3 | FORM=değildi | LEMMA=değil | UPOS=AUX | HEAD=2:güzel | DEPREL=cop | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past\nID=4 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=2:güzel | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Film çok kötü.\nID=1 | FORM=Film | LEMMA=film | UPOS=NOUN | HEAD=3:kötü | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=2 | FORM=çok | LEMMA=çok | UPOS=ADV | HEAD=3:kötü | DEPREL=advmod | FEATS=_\nID=3 | FORM=kötü | LEMMA=kötü | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=_\nID=4 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=3:kötü | DEPREL=punct | FEATS=_"
+        ],
+        "dependency_parse_seconds": 0.6192409999785013,
+        "total_pipeline_seconds": 86.46428479999304
+      },
+      "calls": [
+        {
+          "prompt_utf8_bytes": 2741,
+          "prompt_sha256": "e6f8eb9ea14f829bd5dcaf90a96450c9da0f13add7490d996ab7b65390d5c1e9",
+          "prompt_eval_count": 1005,
+          "eval_count": 51,
+          "done_reason": "stop",
+          "total_duration": 83752055900,
+          "load_duration": 12659600,
+          "prompt_eval_duration": 35154347000,
+          "eval_duration": 48374693000,
+          "seconds": 85.84489739994751
+        }
+      ]
+    },
+    {
+      "ids": [
+        "U07",
+        "U03",
+        "P07"
+      ],
+      "result": {
+        "predictions": [
+          "neutral",
+          "neutral",
+          "positive"
+        ],
+        "model": "qwen3:32b",
+        "batch_size": 3,
+        "request_seconds": 64.33324690000154,
+        "prompt_tokens": 1119,
+        "output_tokens": 51,
+        "attempt": 1,
+        "status": "success",
+        "error": null,
+        "raw_response": "{ \"predictions\": [ { \"id\": 1, \"label\": \"neutral\" }, { \"id\": 2, \"label\": \"neutral\" }, { \"id\": 3, \"label\": \"positive\" } ] }",
+        "dependency_parses": [
+          [
+            {
+              "text": "İSTANBUL'DA BİR OTEL VAR.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "İSTANBUL'DA",
+                  "lemma": "İmvarbuL",
+                  "upos": "PROPN",
+                  "head": 4,
+                  "deprel": "obl",
+                  "feats": "Case=Loc|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "BİR",
+                  "lemma": "biR",
+                  "upos": "DET",
+                  "head": 3,
+                  "deprel": "det",
+                  "feats": null
+                },
+                {
+                  "id": 3,
+                  "text": "OTEL",
+                  "lemma": "OTEL",
+                  "upos": "NOUN",
+                  "head": 4,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 4,
+                  "text": "VAR",
+                  "lemma": "Var",
+                  "upos": "ADJ",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": null
+                },
+                {
+                  "id": 5,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 4,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Film iki saat sürüyor.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Film",
+                  "lemma": "film",
+                  "upos": "NOUN",
+                  "head": 4,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "iki",
+                  "lemma": "iki",
+                  "upos": "NUM",
+                  "head": 3,
+                  "deprel": "nummod",
+                  "feats": "NumType=Card"
+                },
+                {
+                  "id": 3,
+                  "text": "saat",
+                  "lemma": "saat",
+                  "upos": "NOUN",
+                  "head": 4,
+                  "deprel": "obl",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 4,
+                  "text": "sürüyor",
+                  "lemma": "sür",
+                  "upos": "VERB",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres"
+                },
+                {
+                  "id": 5,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 4,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Bu alışverişten pişman olmadım.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Bu",
+                  "lemma": "bu",
+                  "upos": "DET",
+                  "head": 2,
+                  "deprel": "det",
+                  "feats": null
+                },
+                {
+                  "id": 2,
+                  "text": "alışverişten",
+                  "lemma": "alışveriş",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "obj",
+                  "feats": "Case=Abl|Number=Sing|Person=3"
+                },
+                {
+                  "id": 3,
+                  "text": "pişman",
+                  "lemma": "pişman",
+                  "upos": "ADJ",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": null
+                },
+                {
+                  "id": 4,
+                  "text": "olmadım",
+                  "lemma": "ol",
+                  "upos": "VERB",
+                  "head": 3,
+                  "deprel": "compound:lvc",
+                  "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past"
+                },
+                {
+                  "id": 5,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 3,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ]
+        ],
+        "dependency_serializations": [
+          "SENTENCE 1: İSTANBUL'DA BİR OTEL VAR.\nID=1 | FORM=İSTANBUL'DA | LEMMA=İmvarbuL | UPOS=PROPN | HEAD=4:VAR | DEPREL=obl | FEATS=Case=Loc|Number=Sing|Person=3\nID=2 | FORM=BİR | LEMMA=biR | UPOS=DET | HEAD=3:OTEL | DEPREL=det | FEATS=_\nID=3 | FORM=OTEL | LEMMA=OTEL | UPOS=NOUN | HEAD=4:VAR | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=4 | FORM=VAR | LEMMA=Var | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=_\nID=5 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=4:VAR | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Film iki saat sürüyor.\nID=1 | FORM=Film | LEMMA=film | UPOS=NOUN | HEAD=4:sürüyor | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=2 | FORM=iki | LEMMA=iki | UPOS=NUM | HEAD=3:saat | DEPREL=nummod | FEATS=NumType=Card\nID=3 | FORM=saat | LEMMA=saat | UPOS=NOUN | HEAD=4:sürüyor | DEPREL=obl | FEATS=Case=Nom|Number=Sing|Person=3\nID=4 | FORM=sürüyor | LEMMA=sür | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres\nID=5 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=4:sürüyor | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Bu alışverişten pişman olmadım.\nID=1 | FORM=Bu | LEMMA=bu | UPOS=DET | HEAD=2:alışverişten | DEPREL=det | FEATS=_\nID=2 | FORM=alışverişten | LEMMA=alışveriş | UPOS=NOUN | HEAD=3:pişman | DEPREL=obj | FEATS=Case=Abl|Number=Sing|Person=3\nID=3 | FORM=pişman | LEMMA=pişman | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=_\nID=4 | FORM=olmadım | LEMMA=ol | UPOS=VERB | HEAD=3:pişman | DEPREL=compound:lvc | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past\nID=5 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=3:pişman | DEPREL=punct | FEATS=_"
+        ],
+        "dependency_parse_seconds": 0.7971641999902204,
+        "total_pipeline_seconds": 65.13041109999176
+      },
+      "calls": [
+        {
+          "prompt_utf8_bytes": 3020,
+          "prompt_sha256": "f5915fa91e31945eb3e6335931428369731980249584c6a264734bad10a5de5e",
+          "prompt_eval_count": 1119,
+          "eval_count": 51,
+          "done_reason": "stop",
+          "total_duration": 64290858400,
+          "load_duration": 57491800,
+          "prompt_eval_duration": 16864743999,
+          "eval_duration": 47146876000,
+          "seconds": 64.32754249998834
+        }
+      ]
+    },
+    {
+      "ids": [
+        "P06",
+        "N03",
+        "N02"
+      ],
+      "result": {
+        "predictions": [
+          "positive",
+          "negative",
+          "negative"
+        ],
+        "model": "qwen3:32b",
+        "batch_size": 3,
+        "request_seconds": 61.83622810000088,
+        "prompt_tokens": 1085,
+        "output_tokens": 51,
+        "attempt": 1,
+        "status": "success",
+        "error": null,
+        "raw_response": "{ \"predictions\": [ { \"id\": 1, \"label\": \"positive\" }, { \"id\": 2, \"label\": \"negative\" }, { \"id\": 3, \"label\": \"negative\" } ] }",
+        "dependency_parses": [
+          [
+            {
+              "text": "Bu ürünü tavsiye ederim.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Bu",
+                  "lemma": "bu",
+                  "upos": "DET",
+                  "head": 2,
+                  "deprel": "det",
+                  "feats": null
+                },
+                {
+                  "id": 2,
+                  "text": "ürünü",
+                  "lemma": "ürün",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "obj",
+                  "feats": "Case=Acc|Number=Sing|Person=3"
+                },
+                {
+                  "id": 3,
+                  "text": "tavsiye",
+                  "lemma": "tavsiye",
+                  "upos": "NOUN",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 4,
+                  "text": "ederim",
+                  "lemma": "et",
+                  "upos": "VERB",
+                  "head": 3,
+                  "deprel": "compound:lvc",
+                  "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Pres"
+                },
+                {
+                  "id": 5,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 3,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Bu filmi sevmedim.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Bu",
+                  "lemma": "bu",
+                  "upos": "DET",
+                  "head": 2,
+                  "deprel": "det",
+                  "feats": null
+                },
+                {
+                  "id": 2,
+                  "text": "filmi",
+                  "lemma": "film",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "obj",
+                  "feats": "Case=Acc|Number=Sing|Person=3"
+                },
+                {
+                  "id": 3,
+                  "text": "sevmedim",
+                  "lemma": "sev",
+                  "upos": "VERB",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past"
+                },
+                {
+                  "id": 4,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 3,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Bu ürünü hiç beğenmedim.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Bu",
+                  "lemma": "bu",
+                  "upos": "DET",
+                  "head": 2,
+                  "deprel": "det",
+                  "feats": null
+                },
+                {
+                  "id": 2,
+                  "text": "ürünü",
+                  "lemma": "ürün",
+                  "upos": "NOUN",
+                  "head": 4,
+                  "deprel": "obj",
+                  "feats": "Case=Acc|Number=Sing|Person=3"
+                },
+                {
+                  "id": 3,
+                  "text": "hiç",
+                  "lemma": "hiç",
+                  "upos": "ADV",
+                  "head": 4,
+                  "deprel": "advmod",
+                  "feats": null
+                },
+                {
+                  "id": 4,
+                  "text": "beğenmedim",
+                  "lemma": "beğen",
+                  "upos": "VERB",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past"
+                },
+                {
+                  "id": 5,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 4,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ]
+        ],
+        "dependency_serializations": [
+          "SENTENCE 1: Bu ürünü tavsiye ederim.\nID=1 | FORM=Bu | LEMMA=bu | UPOS=DET | HEAD=2:ürünü | DEPREL=det | FEATS=_\nID=2 | FORM=ürünü | LEMMA=ürün | UPOS=NOUN | HEAD=3:tavsiye | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Person=3\nID=3 | FORM=tavsiye | LEMMA=tavsiye | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3\nID=4 | FORM=ederim | LEMMA=et | UPOS=VERB | HEAD=3:tavsiye | DEPREL=compound:lvc | FEATS=Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Pres\nID=5 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=3:tavsiye | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Bu filmi sevmedim.\nID=1 | FORM=Bu | LEMMA=bu | UPOS=DET | HEAD=2:filmi | DEPREL=det | FEATS=_\nID=2 | FORM=filmi | LEMMA=film | UPOS=NOUN | HEAD=3:sevmedim | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Person=3\nID=3 | FORM=sevmedim | LEMMA=sev | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past\nID=4 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=3:sevmedim | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Bu ürünü hiç beğenmedim.\nID=1 | FORM=Bu | LEMMA=bu | UPOS=DET | HEAD=2:ürünü | DEPREL=det | FEATS=_\nID=2 | FORM=ürünü | LEMMA=ürün | UPOS=NOUN | HEAD=4:beğenmedim | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Person=3\nID=3 | FORM=hiç | LEMMA=hiç | UPOS=ADV | HEAD=4:beğenmedim | DEPREL=advmod | FEATS=_\nID=4 | FORM=beğenmedim | LEMMA=beğen | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past\nID=5 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=4:beğenmedim | DEPREL=punct | FEATS=_"
+        ],
+        "dependency_parse_seconds": 0.7907170000253245,
+        "total_pipeline_seconds": 62.626945100026205
+      },
+      "calls": [
+        {
+          "prompt_utf8_bytes": 2921,
+          "prompt_sha256": "71373d9a4bd96cd96c919bd326aba6ffaaf28ae3a69a9472a7337d34981fc489",
+          "prompt_eval_count": 1085,
+          "eval_count": 51,
+          "done_reason": "stop",
+          "total_duration": 61768511900,
+          "load_duration": 21998000,
+          "prompt_eval_duration": 16334653000,
+          "eval_duration": 44621135000,
+          "seconds": 61.828937400016
+        }
+      ]
+    },
+    {
+      "ids": [
+        "N06",
+        "P10",
+        "U06"
+      ],
+      "result": {
+        "predictions": [
+          "negative",
+          "positive",
+          "neutral"
+        ],
+        "model": "qwen3:32b",
+        "batch_size": 3,
+        "request_seconds": 61.47618959995452,
+        "prompt_tokens": 1062,
+        "output_tokens": 51,
+        "attempt": 1,
+        "status": "success",
+        "error": null,
+        "raw_response": "{ \"predictions\": [ { \"id\": 1, \"label\": \"negative\" }, { \"id\": 2, \"label\": \"positive\" }, { \"id\": 3, \"label\": \"neutral\" } ] }",
+        "dependency_parses": [
+          [
+            {
+              "text": "Bu ürünü tavsiye etmem.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Bu",
+                  "lemma": "bu",
+                  "upos": "DET",
+                  "head": 2,
+                  "deprel": "det",
+                  "feats": null
+                },
+                {
+                  "id": 2,
+                  "text": "ürünü",
+                  "lemma": "ürün",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "obj",
+                  "feats": "Case=Acc|Number=Sing|Person=3"
+                },
+                {
+                  "id": 3,
+                  "text": "tavsiye",
+                  "lemma": "tavsiye",
+                  "upos": "NOUN",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 4,
+                  "text": "etmem",
+                  "lemma": "et",
+                  "upos": "VERB",
+                  "head": 3,
+                  "deprel": "compound:lvc",
+                  "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+                },
+                {
+                  "id": 5,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 3,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Bu ürün harika🙂",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Bu",
+                  "lemma": "bu",
+                  "upos": "DET",
+                  "head": 2,
+                  "deprel": "det",
+                  "feats": null
+                },
+                {
+                  "id": 2,
+                  "text": "ürün",
+                  "lemma": "ürün",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 3,
+                  "text": "harika",
+                  "lemma": "harika",
+                  "upos": "ADJ",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": null
+                },
+                {
+                  "id": 4,
+                  "text": "🙂",
+                  "lemma": "🙂",
+                  "upos": "PUNCT",
+                  "head": 3,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Bu kitabı bir yazar yazar.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Bu",
+                  "lemma": "bu",
+                  "upos": "DET",
+                  "head": 2,
+                  "deprel": "det",
+                  "feats": null
+                },
+                {
+                  "id": 2,
+                  "text": "kitabı",
+                  "lemma": "kitap",
+                  "upos": "NOUN",
+                  "head": 5,
+                  "deprel": "obj",
+                  "feats": "Case=Acc|Number=Sing|Person=3"
+                },
+                {
+                  "id": 3,
+                  "text": "bir",
+                  "lemma": "bir",
+                  "upos": "DET",
+                  "head": 4,
+                  "deprel": "det",
+                  "feats": null
+                },
+                {
+                  "id": 4,
+                  "text": "yazar",
+                  "lemma": "yazar",
+                  "upos": "NOUN",
+                  "head": 5,
+                  "deprel": "nmod",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 5,
+                  "text": "yazar",
+                  "lemma": "yazar",
+                  "upos": "NOUN",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 6,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 5,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ]
+        ],
+        "dependency_serializations": [
+          "SENTENCE 1: Bu ürünü tavsiye etmem.\nID=1 | FORM=Bu | LEMMA=bu | UPOS=DET | HEAD=2:ürünü | DEPREL=det | FEATS=_\nID=2 | FORM=ürünü | LEMMA=ürün | UPOS=NOUN | HEAD=3:tavsiye | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Person=3\nID=3 | FORM=tavsiye | LEMMA=tavsiye | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3\nID=4 | FORM=etmem | LEMMA=et | UPOS=VERB | HEAD=3:tavsiye | DEPREL=compound:lvc | FEATS=Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres\nID=5 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=3:tavsiye | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Bu ürün harika🙂\nID=1 | FORM=Bu | LEMMA=bu | UPOS=DET | HEAD=2:ürün | DEPREL=det | FEATS=_\nID=2 | FORM=ürün | LEMMA=ürün | UPOS=NOUN | HEAD=3:harika | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=3 | FORM=harika | LEMMA=harika | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=_\nID=4 | FORM=🙂 | LEMMA=🙂 | UPOS=PUNCT | HEAD=3:harika | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Bu kitabı bir yazar yazar.\nID=1 | FORM=Bu | LEMMA=bu | UPOS=DET | HEAD=2:kitabı | DEPREL=det | FEATS=_\nID=2 | FORM=kitabı | LEMMA=kitap | UPOS=NOUN | HEAD=5:yazar | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Person=3\nID=3 | FORM=bir | LEMMA=bir | UPOS=DET | HEAD=4:yazar | DEPREL=det | FEATS=_\nID=4 | FORM=yazar | LEMMA=yazar | UPOS=NOUN | HEAD=5:yazar | DEPREL=nmod | FEATS=Case=Nom|Number=Sing|Person=3\nID=5 | FORM=yazar | LEMMA=yazar | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3\nID=6 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=5:yazar | DEPREL=punct | FEATS=_"
+        ],
+        "dependency_parse_seconds": 0.6656165000167675,
+        "total_pipeline_seconds": 62.14180609997129
+      },
+      "calls": [
+        {
+          "prompt_utf8_bytes": 2904,
+          "prompt_sha256": "4ddebdc814a0b3e3cfe1f4c71a17c1a4ca013684c7eec89b29624f7e040a792e",
+          "prompt_eval_count": 1062,
+          "eval_count": 51,
+          "done_reason": "stop",
+          "total_duration": 61466103200,
+          "load_duration": 13132100,
+          "prompt_eval_duration": 15765333000,
+          "eval_duration": 45432933000,
+          "seconds": 61.475345199985895
+        }
+      ]
+    },
+    {
+      "ids": [
+        "U10",
+        "U02",
+        "N07"
+      ],
+      "result": {
+        "predictions": [
+          "neutral",
+          "neutral",
+          "negative"
+        ],
+        "model": "qwen3:32b",
+        "batch_size": 3,
+        "request_seconds": 63.60037520003971,
+        "prompt_tokens": 1065,
+        "output_tokens": 51,
+        "attempt": 1,
+        "status": "success",
+        "error": null,
+        "raw_response": "{ \"predictions\": [ { \"id\": 1, \"label\": \"neutral\" }, { \"id\": 2, \"label\": \"neutral\" }, { \"id\": 3, \"label\": \"negative\" } ] }",
+        "dependency_parses": [
+          [
+            {
+              "text": "Paket masanın üzerinde.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Paket",
+                  "lemma": "paket",
+                  "upos": "NOUN",
+                  "head": 2,
+                  "deprel": "nmod:poss",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "masanın",
+                  "lemma": "masa",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "nmod:poss",
+                  "feats": "Case=Gen|Number=Sing|Person=3"
+                },
+                {
+                  "id": 3,
+                  "text": "üzerinde",
+                  "lemma": "üzer",
+                  "upos": "NOUN",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3"
+                },
+                {
+                  "id": 4,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 3,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Kutuda üç kalem var.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Kutuda",
+                  "lemma": "kutu",
+                  "upos": "NOUN",
+                  "head": 4,
+                  "deprel": "obl",
+                  "feats": "Case=Loc|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "üç",
+                  "lemma": "üç",
+                  "upos": "NUM",
+                  "head": 3,
+                  "deprel": "nummod",
+                  "feats": "NumType=Card"
+                },
+                {
+                  "id": 3,
+                  "text": "kalem",
+                  "lemma": "kalem",
+                  "upos": "NOUN",
+                  "head": 4,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 4,
+                  "text": "var",
+                  "lemma": "var",
+                  "upos": "ADJ",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": null
+                },
+                {
+                  "id": 5,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 4,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Bu alışverişten pişman oldum.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Bu",
+                  "lemma": "bu",
+                  "upos": "DET",
+                  "head": 2,
+                  "deprel": "det",
+                  "feats": null
+                },
+                {
+                  "id": 2,
+                  "text": "alışverişten",
+                  "lemma": "alışveriş",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "obl",
+                  "feats": "Case=Abl|Number=Sing|Person=3"
+                },
+                {
+                  "id": 3,
+                  "text": "pişman",
+                  "lemma": "pişman",
+                  "upos": "ADJ",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": null
+                },
+                {
+                  "id": 4,
+                  "text": "oldum",
+                  "lemma": "ol",
+                  "upos": "VERB",
+                  "head": 3,
+                  "deprel": "compound:lvc",
+                  "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past"
+                },
+                {
+                  "id": 5,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 3,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ]
+        ],
+        "dependency_serializations": [
+          "SENTENCE 1: Paket masanın üzerinde.\nID=1 | FORM=Paket | LEMMA=paket | UPOS=NOUN | HEAD=2:masanın | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3\nID=2 | FORM=masanın | LEMMA=masa | UPOS=NOUN | HEAD=3:üzerinde | DEPREL=nmod:poss | FEATS=Case=Gen|Number=Sing|Person=3\nID=3 | FORM=üzerinde | LEMMA=üzer | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Loc|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3\nID=4 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=3:üzerinde | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Kutuda üç kalem var.\nID=1 | FORM=Kutuda | LEMMA=kutu | UPOS=NOUN | HEAD=4:var | DEPREL=obl | FEATS=Case=Loc|Number=Sing|Person=3\nID=2 | FORM=üç | LEMMA=üç | UPOS=NUM | HEAD=3:kalem | DEPREL=nummod | FEATS=NumType=Card\nID=3 | FORM=kalem | LEMMA=kalem | UPOS=NOUN | HEAD=4:var | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=4 | FORM=var | LEMMA=var | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=_\nID=5 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=4:var | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Bu alışverişten pişman oldum.\nID=1 | FORM=Bu | LEMMA=bu | UPOS=DET | HEAD=2:alışverişten | DEPREL=det | FEATS=_\nID=2 | FORM=alışverişten | LEMMA=alışveriş | UPOS=NOUN | HEAD=3:pişman | DEPREL=obl | FEATS=Case=Abl|Number=Sing|Person=3\nID=3 | FORM=pişman | LEMMA=pişman | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=_\nID=4 | FORM=oldum | LEMMA=ol | UPOS=VERB | HEAD=3:pişman | DEPREL=compound:lvc | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past\nID=5 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=3:pişman | DEPREL=punct | FEATS=_"
+        ],
+        "dependency_parse_seconds": 0.45316999999340624,
+        "total_pipeline_seconds": 64.05354520003311
+      },
+      "calls": [
+        {
+          "prompt_utf8_bytes": 2920,
+          "prompt_sha256": "6f25de9553d6c57575d35f8c43128b087f6ae19fb37d5de7ab68d21bbe2f8d15",
+          "prompt_eval_count": 1065,
+          "eval_count": 51,
+          "done_reason": "stop",
+          "total_duration": 63586857000,
+          "load_duration": 6817500,
+          "prompt_eval_duration": 16405678000,
+          "eval_duration": 46932442000,
+          "seconds": 63.59921710001072
+        }
+      ]
+    },
+    {
+      "ids": [
+        "U08",
+        "P02",
+        "N04"
+      ],
+      "result": {
+        "predictions": [
+          "neutral",
+          "positive",
+          "negative"
+        ],
+        "model": "qwen3:32b",
+        "batch_size": 3,
+        "request_seconds": 60.92296019999776,
+        "prompt_tokens": 971,
+        "output_tokens": 51,
+        "attempt": 1,
+        "status": "success",
+        "error": null,
+        "raw_response": "{ \"predictions\": [ { \"id\": 1, \"label\": \"neutral\" }, { \"id\": 2, \"label\": \"positive\" }, { \"id\": 3, \"label\": \"negative\" } ] }",
+        "dependency_parses": [
+          [
+            {
+              "text": "Oda ikinci katta.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Oda",
+                  "lemma": "o",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "ikinci",
+                  "lemma": "ikinci",
+                  "upos": "ADJ",
+                  "head": 3,
+                  "deprel": "amod",
+                  "feats": null
+                },
+                {
+                  "id": 3,
+                  "text": "katta",
+                  "lemma": "kat",
+                  "upos": "NOUN",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Case=Loc|Number=Sing|Person=3"
+                },
+                {
+                  "id": 4,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 3,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Bu ürünü çok beğendim.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Bu",
+                  "lemma": "bu",
+                  "upos": "DET",
+                  "head": 2,
+                  "deprel": "det",
+                  "feats": null
+                },
+                {
+                  "id": 2,
+                  "text": "ürünü",
+                  "lemma": "ürün",
+                  "upos": "NOUN",
+                  "head": 4,
+                  "deprel": "obj",
+                  "feats": "Case=Acc|Number=Sing|Person=3"
+                },
+                {
+                  "id": 3,
+                  "text": "çok",
+                  "lemma": "çok",
+                  "upos": "ADV",
+                  "head": 4,
+                  "deprel": "advmod",
+                  "feats": null
+                },
+                {
+                  "id": 4,
+                  "text": "beğendim",
+                  "lemma": "beğen",
+                  "upos": "VERB",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past"
+                },
+                {
+                  "id": 5,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 4,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Hizmet berbattı.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Hizmet",
+                  "lemma": "hizmet",
+                  "upos": "NOUN",
+                  "head": 2,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "berbattı",
+                  "lemma": "berba",
+                  "upos": "VERB",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past"
+                },
+                {
+                  "id": 3,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 2,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ]
+        ],
+        "dependency_serializations": [
+          "SENTENCE 1: Oda ikinci katta.\nID=1 | FORM=Oda | LEMMA=o | UPOS=NOUN | HEAD=3:katta | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=2 | FORM=ikinci | LEMMA=ikinci | UPOS=ADJ | HEAD=3:katta | DEPREL=amod | FEATS=_\nID=3 | FORM=katta | LEMMA=kat | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Loc|Number=Sing|Person=3\nID=4 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=3:katta | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Bu ürünü çok beğendim.\nID=1 | FORM=Bu | LEMMA=bu | UPOS=DET | HEAD=2:ürünü | DEPREL=det | FEATS=_\nID=2 | FORM=ürünü | LEMMA=ürün | UPOS=NOUN | HEAD=4:beğendim | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Person=3\nID=3 | FORM=çok | LEMMA=çok | UPOS=ADV | HEAD=4:beğendim | DEPREL=advmod | FEATS=_\nID=4 | FORM=beğendim | LEMMA=beğen | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past\nID=5 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=4:beğendim | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Hizmet berbattı.\nID=1 | FORM=Hizmet | LEMMA=hizmet | UPOS=NOUN | HEAD=2:berbattı | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=2 | FORM=berbattı | LEMMA=berba | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past\nID=3 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=2:berbattı | DEPREL=punct | FEATS=_"
+        ],
+        "dependency_parse_seconds": 0.5684632999473251,
+        "total_pipeline_seconds": 61.491423499945085
+      },
+      "calls": [
+        {
+          "prompt_utf8_bytes": 2656,
+          "prompt_sha256": "ef07851266e27c1c262f02805a79b2858d98e86768777ff5a9834eccb31f66c9",
+          "prompt_eval_count": 971,
+          "eval_count": 51,
+          "done_reason": "stop",
+          "total_duration": 60914887700,
+          "load_duration": 15432900,
+          "prompt_eval_duration": 15152317000,
+          "eval_duration": 45557164000,
+          "seconds": 60.92214729997795
+        }
+      ]
+    },
+    {
+      "ids": [
+        "N09",
+        "P03",
+        "N08"
+      ],
+      "result": {
+        "predictions": [
+          "negative",
+          "positive",
+          "neutral"
+        ],
+        "model": "qwen3:32b",
+        "batch_size": 3,
+        "request_seconds": 63.22437089995947,
+        "prompt_tokens": 1016,
+        "output_tokens": 51,
+        "attempt": 1,
+        "status": "success",
+        "error": null,
+        "raw_response": "{ \"predictions\": [ { \"id\": 1, \"label\": \"negative\" }, { \"id\": 2, \"label\": \"positive\" }, { \"id\": 3, \"label\": \"neutral\" } ] }",
+        "dependency_parses": [
+          [
+            {
+              "text": "Ürün kullanışsız.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Ürün",
+                  "lemma": "ürün",
+                  "upos": "NOUN",
+                  "head": 2,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "kullanışsız",
+                  "lemma": "kullanışsız",
+                  "upos": "ADJ",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": null
+                },
+                {
+                  "id": 3,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 2,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Bu filmi sevdim.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Bu",
+                  "lemma": "bu",
+                  "upos": "DET",
+                  "head": 2,
+                  "deprel": "det",
+                  "feats": null
+                },
+                {
+                  "id": 2,
+                  "text": "filmi",
+                  "lemma": "film",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "obj",
+                  "feats": "Case=Acc|Number=Sing|Person=3"
+                },
+                {
+                  "id": 3,
+                  "text": "sevdim",
+                  "lemma": "sev",
+                  "upos": "VERB",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past"
+                },
+                {
+                  "id": 4,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 3,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Otel güzel ama odalar çok kötü.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Otel",
+                  "lemma": "otel",
+                  "upos": "NOUN",
+                  "head": 2,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "güzel",
+                  "lemma": "güzel",
+                  "upos": "ADJ",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": null
+                },
+                {
+                  "id": 3,
+                  "text": "ama",
+                  "lemma": "ama",
+                  "upos": "CCONJ",
+                  "head": 6,
+                  "deprel": "cc",
+                  "feats": null
+                },
+                {
+                  "id": 4,
+                  "text": "odalar",
+                  "lemma": "oda",
+                  "upos": "NOUN",
+                  "head": 6,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Plur|Person=3"
+                },
+                {
+                  "id": 5,
+                  "text": "çok",
+                  "lemma": "çok",
+                  "upos": "ADV",
+                  "head": 6,
+                  "deprel": "advmod",
+                  "feats": null
+                },
+                {
+                  "id": 6,
+                  "text": "kötü",
+                  "lemma": "kötü",
+                  "upos": "ADJ",
+                  "head": 2,
+                  "deprel": "conj",
+                  "feats": null
+                },
+                {
+                  "id": 7,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 6,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ]
+        ],
+        "dependency_serializations": [
+          "SENTENCE 1: Ürün kullanışsız.\nID=1 | FORM=Ürün | LEMMA=ürün | UPOS=NOUN | HEAD=2:kullanışsız | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=2 | FORM=kullanışsız | LEMMA=kullanışsız | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=_\nID=3 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=2:kullanışsız | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Bu filmi sevdim.\nID=1 | FORM=Bu | LEMMA=bu | UPOS=DET | HEAD=2:filmi | DEPREL=det | FEATS=_\nID=2 | FORM=filmi | LEMMA=film | UPOS=NOUN | HEAD=3:sevdim | DEPREL=obj | FEATS=Case=Acc|Number=Sing|Person=3\nID=3 | FORM=sevdim | LEMMA=sev | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past\nID=4 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=3:sevdim | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Otel güzel ama odalar çok kötü.\nID=1 | FORM=Otel | LEMMA=otel | UPOS=NOUN | HEAD=2:güzel | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=2 | FORM=güzel | LEMMA=güzel | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=_\nID=3 | FORM=ama | LEMMA=ama | UPOS=CCONJ | HEAD=6:kötü | DEPREL=cc | FEATS=_\nID=4 | FORM=odalar | LEMMA=oda | UPOS=NOUN | HEAD=6:kötü | DEPREL=nsubj | FEATS=Case=Nom|Number=Plur|Person=3\nID=5 | FORM=çok | LEMMA=çok | UPOS=ADV | HEAD=6:kötü | DEPREL=advmod | FEATS=_\nID=6 | FORM=kötü | LEMMA=kötü | UPOS=ADJ | HEAD=2:güzel | DEPREL=conj | FEATS=_\nID=7 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=6:kötü | DEPREL=punct | FEATS=_"
+        ],
+        "dependency_parse_seconds": 0.43393410003045574,
+        "total_pipeline_seconds": 63.65830499998992
+      },
+      "calls": [
+        {
+          "prompt_utf8_bytes": 2789,
+          "prompt_sha256": "6f0614be2f1a167e8cd98f2d1800704a1b41a02e911f309ed1bfe65754e2b6c5",
+          "prompt_eval_count": 1016,
+          "eval_count": 51,
+          "done_reason": "stop",
+          "total_duration": 63180867100,
+          "load_duration": 7492800,
+          "prompt_eval_duration": 15581825000,
+          "eval_duration": 46970908000,
+          "seconds": 63.22378940001363
+        }
+      ]
+    },
+    {
+      "ids": [
+        "U09",
+        "P05",
+        "U05"
+      ],
+      "result": {
+        "predictions": [
+          "neutral",
+          "positive",
+          "neutral"
+        ],
+        "model": "qwen3:32b",
+        "batch_size": 3,
+        "request_seconds": 65.32082200003788,
+        "prompt_tokens": 1161,
+        "output_tokens": 51,
+        "attempt": 1,
+        "status": "success",
+        "error": null,
+        "raw_response": "{ \"predictions\": [ { \"id\": 1, \"label\": \"neutral\" }, { \"id\": 2, \"label\": \"positive\" }, { \"id\": 3, \"label\": \"neutral\" } ] }",
+        "dependency_parses": [
+          [
+            {
+              "text": "Ürünün modeli X200.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Ürünün",
+                  "lemma": "ürü",
+                  "upos": "NOUN",
+                  "head": 2,
+                  "deprel": "nmod:poss",
+                  "feats": "Case=Gen|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "mode",
+                  "lemma": "mode",
+                  "upos": "NOUN",
+                  "head": 4,
+                  "deprel": "amod",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 3,
+                  "text": "li",
+                  "lemma": "li",
+                  "upos": "ADP",
+                  "head": 2,
+                  "deprel": "case",
+                  "feats": null
+                },
+                {
+                  "id": 4,
+                  "text": "X200",
+                  "lemma": "X200",
+                  "upos": "NOUN",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Abbr=Yes|Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 5,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 4,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Otel kötü değildi.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Otel",
+                  "lemma": "otel",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "kötü",
+                  "lemma": "kötü",
+                  "upos": "ADJ",
+                  "head": 3,
+                  "deprel": "obj",
+                  "feats": null
+                },
+                {
+                  "id": 3,
+                  "text": "değildi",
+                  "lemma": "değil",
+                  "upos": "AUX",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past"
+                },
+                {
+                  "id": 4,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 3,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Kargo salı günü teslim edildi.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Kargo",
+                  "lemma": "kargo",
+                  "upos": "NOUN",
+                  "head": 4,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "salı",
+                  "lemma": "salı",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "nmod:poss",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 3,
+                  "text": "günü",
+                  "lemma": "gün",
+                  "upos": "NOUN",
+                  "head": 4,
+                  "deprel": "nmod",
+                  "feats": "Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3"
+                },
+                {
+                  "id": 4,
+                  "text": "teslim",
+                  "lemma": "teslim",
+                  "upos": "NOUN",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 5,
+                  "text": "edildi",
+                  "lemma": "et",
+                  "upos": "VERB",
+                  "head": 4,
+                  "deprel": "compound:lvc",
+                  "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|Voice=Pass"
+                },
+                {
+                  "id": 6,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 4,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ]
+        ],
+        "dependency_serializations": [
+          "SENTENCE 1: Ürünün modeli X200.\nID=1 | FORM=Ürünün | LEMMA=ürü | UPOS=NOUN | HEAD=2:mode | DEPREL=nmod:poss | FEATS=Case=Gen|Number=Sing|Person=3\nID=2 | FORM=mode | LEMMA=mode | UPOS=NOUN | HEAD=4:X200 | DEPREL=amod | FEATS=Case=Nom|Number=Sing|Person=3\nID=3 | FORM=li | LEMMA=li | UPOS=ADP | HEAD=2:mode | DEPREL=case | FEATS=_\nID=4 | FORM=X200 | LEMMA=X200 | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Abbr=Yes|Case=Nom|Number=Sing|Person=3\nID=5 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=4:X200 | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Otel kötü değildi.\nID=1 | FORM=Otel | LEMMA=otel | UPOS=NOUN | HEAD=3:değildi | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=2 | FORM=kötü | LEMMA=kötü | UPOS=ADJ | HEAD=3:değildi | DEPREL=obj | FEATS=_\nID=3 | FORM=değildi | LEMMA=değil | UPOS=AUX | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past\nID=4 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=3:değildi | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Kargo salı günü teslim edildi.\nID=1 | FORM=Kargo | LEMMA=kargo | UPOS=NOUN | HEAD=4:teslim | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=2 | FORM=salı | LEMMA=salı | UPOS=NOUN | HEAD=3:günü | DEPREL=nmod:poss | FEATS=Case=Nom|Number=Sing|Person=3\nID=3 | FORM=günü | LEMMA=gün | UPOS=NOUN | HEAD=4:teslim | DEPREL=nmod | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3\nID=4 | FORM=teslim | LEMMA=teslim | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3\nID=5 | FORM=edildi | LEMMA=et | UPOS=VERB | HEAD=4:teslim | DEPREL=compound:lvc | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|Voice=Pass\nID=6 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=4:teslim | DEPREL=punct | FEATS=_"
+        ],
+        "dependency_parse_seconds": 0.8659548000432551,
+        "total_pipeline_seconds": 66.18677680008113
+      },
+      "calls": [
+        {
+          "prompt_utf8_bytes": 3101,
+          "prompt_sha256": "6f73f0c9527f88f7642010267deb40f4216489254c8f92bf5b51a8bd980127b6",
+          "prompt_eval_count": 1161,
+          "eval_count": 51,
+          "done_reason": "stop",
+          "total_duration": 65248512900,
+          "load_duration": 14535000,
+          "prompt_eval_duration": 17417879000,
+          "eval_duration": 47576026000,
+          "seconds": 65.31525330001023
+        }
+      ]
+    },
+    {
+      "ids": [
+        "P08",
+        "P09",
+        "U04"
+      ],
+      "result": {
+        "predictions": [
+          "positive",
+          "positive",
+          "neutral"
+        ],
+        "model": "qwen3:32b",
+        "batch_size": 3,
+        "request_seconds": 69.88830099999905,
+        "prompt_tokens": 1214,
+        "output_tokens": 51,
+        "attempt": 1,
+        "status": "success",
+        "error": null,
+        "raw_response": "{ \"predictions\": [ { \"id\": 1, \"label\": \"positive\" }, { \"id\": 2, \"label\": \"positive\" }, { \"id\": 3, \"label\": \"neutral\" } ] }",
+        "dependency_parses": [
+          [
+            {
+              "text": "Oda çok ama çok güzel.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Oda",
+                  "lemma": "o",
+                  "upos": "NOUN",
+                  "head": 5,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "çok",
+                  "lemma": "çok",
+                  "upos": "ADV",
+                  "head": 5,
+                  "deprel": "advmod",
+                  "feats": null
+                },
+                {
+                  "id": 3,
+                  "text": "ama",
+                  "lemma": "ama",
+                  "upos": "CCONJ",
+                  "head": 5,
+                  "deprel": "cc",
+                  "feats": null
+                },
+                {
+                  "id": 4,
+                  "text": "çok",
+                  "lemma": "çok",
+                  "upos": "ADV",
+                  "head": 5,
+                  "deprel": "advmod",
+                  "feats": null
+                },
+                {
+                  "id": 5,
+                  "text": "güzel",
+                  "lemma": "güzel",
+                  "upos": "ADJ",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": null
+                },
+                {
+                  "id": 6,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 5,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "İYİ BİR ÜRÜN, ÇOK MEMNUNUM.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "İYİ",
+                  "lemma": "iyİ",
+                  "upos": "ADJ",
+                  "head": 3,
+                  "deprel": "amod",
+                  "feats": null
+                },
+                {
+                  "id": 2,
+                  "text": "BİR",
+                  "lemma": "biR",
+                  "upos": "DET",
+                  "head": 3,
+                  "deprel": "det",
+                  "feats": null
+                },
+                {
+                  "id": 3,
+                  "text": "ÜRÜN",
+                  "lemma": "cun",
+                  "upos": "NOUN",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 4,
+                  "text": ",",
+                  "lemma": ",",
+                  "upos": "PUNCT",
+                  "head": 6,
+                  "deprel": "punct",
+                  "feats": null
+                },
+                {
+                  "id": 5,
+                  "text": "ÇOK",
+                  "lemma": "çok",
+                  "upos": "ADV",
+                  "head": 6,
+                  "deprel": "advmod",
+                  "feats": null
+                },
+                {
+                  "id": 6,
+                  "text": "MEMNUNUM",
+                  "lemma": "mehgun",
+                  "upos": "VERB",
+                  "head": 3,
+                  "deprel": "conj",
+                  "feats": "Aspect=Prog|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Polite=Infm|Tense=Pres"
+                },
+                {
+                  "id": 7,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 6,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Otelin beş katı var.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Otelin",
+                  "lemma": "otel",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "nmod:poss",
+                  "feats": "Case=Gen|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "beş",
+                  "lemma": "beş",
+                  "upos": "NUM",
+                  "head": 3,
+                  "deprel": "nummod",
+                  "feats": "NumType=Card"
+                },
+                {
+                  "id": 3,
+                  "text": "katı",
+                  "lemma": "katı",
+                  "upos": "NOUN",
+                  "head": 4,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3"
+                },
+                {
+                  "id": 4,
+                  "text": "var",
+                  "lemma": "var",
+                  "upos": "ADJ",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": null
+                },
+                {
+                  "id": 5,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 4,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ]
+        ],
+        "dependency_serializations": [
+          "SENTENCE 1: Oda çok ama çok güzel.\nID=1 | FORM=Oda | LEMMA=o | UPOS=NOUN | HEAD=5:güzel | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=2 | FORM=çok | LEMMA=çok | UPOS=ADV | HEAD=5:güzel | DEPREL=advmod | FEATS=_\nID=3 | FORM=ama | LEMMA=ama | UPOS=CCONJ | HEAD=5:güzel | DEPREL=cc | FEATS=_\nID=4 | FORM=çok | LEMMA=çok | UPOS=ADV | HEAD=5:güzel | DEPREL=advmod | FEATS=_\nID=5 | FORM=güzel | LEMMA=güzel | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=_\nID=6 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=5:güzel | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: İYİ BİR ÜRÜN, ÇOK MEMNUNUM.\nID=1 | FORM=İYİ | LEMMA=iyİ | UPOS=ADJ | HEAD=3:ÜRÜN | DEPREL=amod | FEATS=_\nID=2 | FORM=BİR | LEMMA=biR | UPOS=DET | HEAD=3:ÜRÜN | DEPREL=det | FEATS=_\nID=3 | FORM=ÜRÜN | LEMMA=cun | UPOS=NOUN | HEAD=0:ROOT | DEPREL=root | FEATS=Case=Nom|Number=Sing|Person=3\nID=4 | FORM=, | LEMMA=, | UPOS=PUNCT | HEAD=6:MEMNUNUM | DEPREL=punct | FEATS=_\nID=5 | FORM=ÇOK | LEMMA=çok | UPOS=ADV | HEAD=6:MEMNUNUM | DEPREL=advmod | FEATS=_\nID=6 | FORM=MEMNUNUM | LEMMA=mehgun | UPOS=VERB | HEAD=3:ÜRÜN | DEPREL=conj | FEATS=Aspect=Prog|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Polite=Infm|Tense=Pres\nID=7 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=6:MEMNUNUM | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Otelin beş katı var.\nID=1 | FORM=Otelin | LEMMA=otel | UPOS=NOUN | HEAD=3:katı | DEPREL=nmod:poss | FEATS=Case=Gen|Number=Sing|Person=3\nID=2 | FORM=beş | LEMMA=beş | UPOS=NUM | HEAD=3:katı | DEPREL=nummod | FEATS=NumType=Card\nID=3 | FORM=katı | LEMMA=katı | UPOS=NOUN | HEAD=4:var | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3\nID=4 | FORM=var | LEMMA=var | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=_\nID=5 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=4:var | DEPREL=punct | FEATS=_"
+        ],
+        "dependency_parse_seconds": 0.928446099977009,
+        "total_pipeline_seconds": 70.81674709997606
+      },
+      "calls": [
+        {
+          "prompt_utf8_bytes": 3152,
+          "prompt_sha256": "ec7ab83dc3d66a6d32870a0b8d1be4cf46a12e143624db0f2250700c97b2fc35",
+          "prompt_eval_count": 1214,
+          "eval_count": 51,
+          "done_reason": "stop",
+          "total_duration": 69847278200,
+          "load_duration": 26089600,
+          "prompt_eval_duration": 19173324000,
+          "eval_duration": 46197173000,
+          "seconds": 69.87880499998573
+        }
+      ]
+    },
+    {
+      "ids": [
+        "P01",
+        "P04",
+        "U01"
+      ],
+      "result": {
+        "predictions": [
+          "positive",
+          "positive",
+          "neutral"
+        ],
+        "model": "qwen3:32b",
+        "batch_size": 3,
+        "request_seconds": 60.65737200004514,
+        "prompt_tokens": 918,
+        "output_tokens": 51,
+        "attempt": 1,
+        "status": "success",
+        "error": null,
+        "raw_response": "{ \"predictions\": [ { \"id\": 1, \"label\": \"positive\" }, { \"id\": 2, \"label\": \"positive\" }, { \"id\": 3, \"label\": \"neutral\" } ] }",
+        "dependency_parses": [
+          [
+            {
+              "text": "Film çok güzel.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Film",
+                  "lemma": "film",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "çok",
+                  "lemma": "çok",
+                  "upos": "ADV",
+                  "head": 3,
+                  "deprel": "advmod",
+                  "feats": null
+                },
+                {
+                  "id": 3,
+                  "text": "güzel",
+                  "lemma": "güzel",
+                  "upos": "ADJ",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": null
+                },
+                {
+                  "id": 4,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 3,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Hizmet mükemmeldi.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Hizmet",
+                  "lemma": "hizmet",
+                  "upos": "NOUN",
+                  "head": 2,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "mükemmeldi",
+                  "lemma": "mük",
+                  "upos": "VERB",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pqp"
+                },
+                {
+                  "id": 3,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 2,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Ürün dün geldi.",
+              "tokens": [
+                {
+                  "id": 1,
+                  "text": "Ürün",
+                  "lemma": "ürün",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "nsubj",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 2,
+                  "text": "dün",
+                  "lemma": "dün",
+                  "upos": "NOUN",
+                  "head": 3,
+                  "deprel": "obl",
+                  "feats": "Case=Nom|Number=Sing|Person=3"
+                },
+                {
+                  "id": 3,
+                  "text": "geldi",
+                  "lemma": "gel",
+                  "upos": "VERB",
+                  "head": 0,
+                  "deprel": "root",
+                  "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past"
+                },
+                {
+                  "id": 4,
+                  "text": ".",
+                  "lemma": ".",
+                  "upos": "PUNCT",
+                  "head": 3,
+                  "deprel": "punct",
+                  "feats": null
+                }
+              ]
+            }
+          ]
+        ],
+        "dependency_serializations": [
+          "SENTENCE 1: Film çok güzel.\nID=1 | FORM=Film | LEMMA=film | UPOS=NOUN | HEAD=3:güzel | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=2 | FORM=çok | LEMMA=çok | UPOS=ADV | HEAD=3:güzel | DEPREL=advmod | FEATS=_\nID=3 | FORM=güzel | LEMMA=güzel | UPOS=ADJ | HEAD=0:ROOT | DEPREL=root | FEATS=_\nID=4 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=3:güzel | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Hizmet mükemmeldi.\nID=1 | FORM=Hizmet | LEMMA=hizmet | UPOS=NOUN | HEAD=2:mükemmeldi | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=2 | FORM=mükemmeldi | LEMMA=mük | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Pqp\nID=3 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=2:mükemmeldi | DEPREL=punct | FEATS=_",
+          "SENTENCE 1: Ürün dün geldi.\nID=1 | FORM=Ürün | LEMMA=ürün | UPOS=NOUN | HEAD=3:geldi | DEPREL=nsubj | FEATS=Case=Nom|Number=Sing|Person=3\nID=2 | FORM=dün | LEMMA=dün | UPOS=NOUN | HEAD=3:geldi | DEPREL=obl | FEATS=Case=Nom|Number=Sing|Person=3\nID=3 | FORM=geldi | LEMMA=gel | UPOS=VERB | HEAD=0:ROOT | DEPREL=root | FEATS=Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past\nID=4 | FORM=. | LEMMA=. | UPOS=PUNCT | HEAD=3:geldi | DEPREL=punct | FEATS=_"
+        ],
+        "dependency_parse_seconds": 0.42801089998101816,
+        "total_pipeline_seconds": 61.08538290002616
+      },
+      "calls": [
+        {
+          "prompt_utf8_bytes": 2555,
+          "prompt_sha256": "d4c7307b402d418d5c66b66addae68ef8f260aa43679b4749f6eb241d421e775",
+          "prompt_eval_count": 918,
+          "eval_count": 51,
+          "done_reason": "stop",
+          "total_duration": 60616126900,
+          "load_duration": 13665000,
+          "prompt_eval_duration": 15565039000,
+          "eval_duration": 44221849000,
+          "seconds": 60.65646690002177
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "model": "qwen3:32b",
+    "configured_batch_size": 3,
+    "temperature": 0.1,
+    "top_p": 1.0,
+    "num_ctx": 8192,
+    "seed": 42,
+    "max_retries": 1,
+    "total_requests": 10,
+    "total_reviews": 30,
+    "total_retries": 0,
+    "total_failures": 0,
+    "total_wall_seconds": 657.1049097000505,
+    "reviews_per_second": 0.04565481030067807,
+    "seconds_per_review": 21.90349699000168,
+    "total_prompt_tokens": 10616,
+    "total_output_tokens": 510,
+    "architecture": "dependency_to_llm",
+    "dependency_parser": "stanza_tr",
+    "dependency_parse_reviews": 30,
+    "dependency_parse_sentences": 31,
+    "dependency_parse_tokens": 141,
+    "dependency_parse_wall_seconds": 6.550717899983283,
+    "dependency_parse_seconds_per_review": 0.2183572633327761,
+    "total_pipeline_wall_seconds": 663.6556276000338
+  }
+}

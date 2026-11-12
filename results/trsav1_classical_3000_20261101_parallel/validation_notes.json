@@ -1,0 +1,13 @@
+{
+  "unique_offline_tests_passed": 78,
+  "runs": [
+    {"modules": ["test_disjoint_classical_sample", "test_cached_classical_experiment", "test_classical_1200_experiment", "test_finite_predicate_protection", "test_classical_scope_corrections", "test_explicit_negation_scope", "test_audit_regressions", "test_resumable_evaluation", "test_classical_analysis"], "tests": 76, "passed": true},
+    {"modules": ["test_finite_predicate_protection"], "tests": 7, "passed": true, "reason": "Rechecked after moving the saved ID333 example to a standalone fixture"},
+    {"modules": ["test_parallel_classical_experiment", "test_cached_classical_experiment"], "tests": 5, "new_unique_tests": 2, "passed": true},
+    {"modules": ["test_classical_analysis"], "tests": 3, "passed": true, "reason": "Report now distinguishes parallel compute sums from wall time"}
+  ],
+  "resolver_sha256": "dc37555f087cb5124f72c2a3897588a69e8cf7b1310fb82a5b725a0e3535a667",
+  "llm_tests_use_mocks_only": true,
+  "parallel_preflight": "parallel_preflight.json",
+  "final_independent_verification": "independent_verification.json"
+}

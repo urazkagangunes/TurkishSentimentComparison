@@ -1,0 +1,88 @@
+{
+  "method": "Frozen parse, morphology and lexicon replay; no end-to-end inference",
+  "cases": 500,
+  "source": "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\results\\trsav1_classical_500_20261031_run01",
+  "source_sha256": "20f49471d0c75e4a39b9a88cb341c017ddf545f473fa66ecb14208a70f5ef9d3",
+  "baseline_resolver_sha256": "af9c7258fcbbf93770fc19a238150d51033924309d9889b90d2a3c9fd8f5bf8b",
+  "current_resolver_sha256": "1d48e531a135410c446d6af2d049082696e8e46543a795edc4d478038d014453",
+  "source_unchanged": true,
+  "hisnet": {
+    "correct": 263,
+    "accuracy": 0.526,
+    "macro_f1": 0.5019971415320253
+  },
+  "systems": {
+    "dp_hisnet": {
+      "before": {
+        "correct": 262,
+        "accuracy": 0.524,
+        "macro_f1": 0.507435199088421
+      },
+      "after": {
+        "correct": 262,
+        "accuracy": 0.524,
+        "macro_f1": 0.507435199088421
+      },
+      "baseline_exact_replays": 500,
+      "changed_ids": [
+        447
+      ],
+      "corrected_ids": [],
+      "harmed_ids": [],
+      "label_changes": 0
+    },
+    "hisnet_dp": {
+      "before": {
+        "correct": 270,
+        "accuracy": 0.54,
+        "macro_f1": 0.5122559266920009
+      },
+      "after": {
+        "correct": 272,
+        "accuracy": 0.544,
+        "macro_f1": 0.5156005749437668
+      },
+      "baseline_exact_replays": 500,
+      "changed_ids": [
+        148,
+        447
+      ],
+      "corrected_ids": [
+        148,
+        447
+      ],
+      "harmed_ids": [],
+      "label_changes": 2
+    },
+    "lw_hisnet_dp": {
+      "before": {
+        "correct": 269,
+        "accuracy": 0.538,
+        "macro_f1": 0.5108556331366818
+      },
+      "after": {
+        "correct": 271,
+        "accuracy": 0.542,
+        "macro_f1": 0.5142108965464076
+      },
+      "baseline_exact_replays": 500,
+      "changed_ids": [
+        148,
+        447
+      ],
+      "corrected_ids": [
+        148,
+        447
+      ],
+      "harmed_ids": [],
+      "label_changes": 2
+    }
+  },
+  "parent_edge_count": 8,
+  "parent_edge_relations": {
+    "obj": 2,
+    "amod": 2,
+    "nsubj": 1,
+    "conj": 3
+  }
+}

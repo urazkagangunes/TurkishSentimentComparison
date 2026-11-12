@@ -1,0 +1,149 @@
+{
+    "row_id":  148,
+    "text":  "İi değil iade edeceğim",
+    "gold":  "negative",
+    "parsed_sentences":  [
+                             {
+                                 "text":  "İi değil iade edeceği",
+                                 "tokens":  [
+                                                {
+                                                    "deprel":  "case",
+                                                    "feats":  null,
+                                                    "head":  2,
+                                                    "id":  1,
+                                                    "lemma":  "İi",
+                                                    "text":  "İi",
+                                                    "upos":  "ADP"
+                                                },
+                                                {
+                                                    "deprel":  "root",
+                                                    "feats":  null,
+                                                    "head":  0,
+                                                    "id":  2,
+                                                    "lemma":  "değil",
+                                                    "text":  "değil",
+                                                    "upos":  "CCONJ"
+                                                },
+                                                {
+                                                    "deprel":  "obj",
+                                                    "feats":  "Case=Nom|Number=Sing|Person=3",
+                                                    "head":  2,
+                                                    "id":  3,
+                                                    "lemma":  "iade",
+                                                    "text":  "iade",
+                                                    "upos":  "NOUN"
+                                                },
+                                                {
+                                                    "deprel":  "compound:lvc",
+                                                    "feats":  "Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Fut|VerbForm=Part",
+                                                    "head":  3,
+                                                    "id":  4,
+                                                    "lemma":  "et",
+                                                    "text":  "edeceği",
+                                                    "upos":  "VERB"
+                                                }
+                                            ]
+                             },
+                             {
+                                 "text":  "m",
+                                 "tokens":  [
+                                                {
+                                                    "deprel":  "root",
+                                                    "feats":  "Case=Nom|Number=Sing|Person=3",
+                                                    "head":  0,
+                                                    "id":  1,
+                                                    "lemma":  "m",
+                                                    "text":  "m",
+                                                    "upos":  "NOUN"
+                                                }
+                                            ]
+                             }
+                         ],
+    "hisnet":  {
+                   "error":  null,
+                   "lexicon_coverage":  0.75,
+                   "matched_word_count":  3,
+                   "matched_words":  [
+                                         {
+                                             "analysis":  "değil+ADJ",
+                                             "negative":  0.0,
+                                             "positive":  0.0,
+                                             "root":  "değil",
+                                             "word":  "değil"
+                                         },
+                                         {
+                                             "analysis":  "iade+NOUN+A3SG+PNON+NOM",
+                                             "negative":  0.125,
+                                             "positive":  0.0,
+                                             "root":  "iade",
+                                             "word":  "iade"
+                                         },
+                                         {
+                                             "analysis":  "et+VERB+POS+FUT+A1SG",
+                                             "negative":  0.0,
+                                             "positive":  0.0,
+                                             "root":  "et",
+                                             "word":  "edeceğim"
+                                         }
+                                     ],
+                   "morphological_analyses":  [
+                                                  {
+                                                      "analysis":  "ii+NOUN+A3SG+PNON+NOM",
+                                                      "analysis_source":  "robust",
+                                                      "analyzer_reset":  false,
+                                                      "root":  "ii",
+                                                      "word":  "ii"
+                                                  },
+                                                  {
+                                                      "analysis":  "değil+ADJ",
+                                                      "analysis_source":  "normal",
+                                                      "analyzer_reset":  false,
+                                                      "root":  "değil",
+                                                      "word":  "değil"
+                                                  },
+                                                  {
+                                                      "analysis":  "iade+NOUN+A3SG+PNON+NOM",
+                                                      "analysis_source":  "normal",
+                                                      "analyzer_reset":  false,
+                                                      "root":  "iade",
+                                                      "word":  "iade"
+                                                  },
+                                                  {
+                                                      "analysis":  "et+VERB+POS+FUT+A1SG",
+                                                      "analysis_source":  "normal",
+                                                      "analyzer_reset":  false,
+                                                      "root":  "et",
+                                                      "word":  "edeceğim"
+                                                  }
+                                              ],
+                   "negative_score":  0.125,
+                   "net_score":  -0.125,
+                   "neutral_threshold":  0.05,
+                   "positive_score":  0.0,
+                   "prediction":  "negative",
+                   "predictions":  [
+                                       "negative"
+                                   ],
+                   "sentiment_coverage":  0.25,
+                   "sentiment_word_count":  1,
+                   "sentiment_words":  [
+                                           {
+                                               "analysis":  "iade+NOUN+A3SG+PNON+NOM",
+                                               "negative":  0.125,
+                                               "positive":  0.0,
+                                               "root":  "iade",
+                                               "word":  "iade"
+                                           }
+                                       ],
+                   "status":  "success",
+                   "text":  "İi değil iade edeceğim",
+                   "token_count":  4,
+                   "unmatched_words":  [
+                                           {
+                                               "analysis":  "ii+NOUN+A3SG+PNON+NOM",
+                                               "root":  "ii",
+                                               "word":  "ii"
+                                           }
+                                       ]
+               }
+}

@@ -1,0 +1,312 @@
+{
+  "offline": {
+    "unrelated_negation": {
+      "expected_negation_ids": [],
+      "observed_negation_ids": [
+        4
+      ],
+      "expected_negative_score": 1.0,
+      "observed_negative_score": 0.0,
+      "observed_positive_score": 1.0,
+      "tokens": [
+        {
+          "id": 1,
+          "text": "kötü",
+          "lemma": "kötü",
+          "head": 0,
+          "deprel": "root",
+          "upos": "ADJ",
+          "feats": null,
+          "sentence_index": 0
+        },
+        {
+          "id": 2,
+          "text": ",",
+          "lemma": ",",
+          "head": 1,
+          "deprel": "punct",
+          "upos": "PUNCT",
+          "feats": null,
+          "sentence_index": 0
+        },
+        {
+          "id": 3,
+          "text": "merkezi",
+          "lemma": "merkezi",
+          "head": 1,
+          "deprel": "conj",
+          "upos": "ADJ",
+          "feats": null,
+          "sentence_index": 0
+        },
+        {
+          "id": 4,
+          "text": "değil",
+          "lemma": "değil",
+          "head": 3,
+          "deprel": "cop",
+          "upos": "AUX",
+          "feats": null,
+          "sentence_index": 0
+        }
+      ],
+      "scope": {
+        "word": "kötü",
+        "root": "kötü",
+        "positive": 0.0,
+        "negative": 1.0,
+        "sentiment_token": {
+          "id": 1,
+          "word": "kötü",
+          "lemma": "kötü",
+          "upos": "ADJ",
+          "head": 0,
+          "deprel": "root",
+          "alignment_strategy": "exact_surface",
+          "fragment_token_ids": [
+            1
+          ],
+          "reconstructed_surface": null
+        },
+        "target": null,
+        "target_strategy": null,
+        "modifiers": [],
+        "negations": [
+          {
+            "id": 4,
+            "word": "değil",
+            "lemma": "değil",
+            "deprel": "cop",
+            "feats": null
+          }
+        ],
+        "contrast": null,
+        "alignment_status": "matched",
+        "alignment_strategy": "exact_surface",
+        "fragment_token_ids": [
+          1
+        ],
+        "reconstructed_surface": null,
+        "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
+        "active_sentiment": true,
+        "contextual_role": "opinion",
+        "suppression_reason": null,
+        "original_positive": 0.0,
+        "original_negative": 1.0,
+        "adjusted_positive": 1.0,
+        "adjusted_negative": 0.0,
+        "operations": [
+          "negation_flip"
+        ]
+      }
+    },
+    "sentiment_subset_occurrence": {
+      "expected_token_id": 2,
+      "observed_token_id": 1,
+      "morphology": [
+        {
+          "word": "yazar",
+          "root": "yazar",
+          "analysis": "yazar+NOUN+A3SG"
+        },
+        {
+          "word": "yazar",
+          "root": "yaz",
+          "analysis": "yaz+VERB+POS+AOR+A3SG"
+        }
+      ],
+      "tokens": [
+        {
+          "id": 1,
+          "text": "yazar",
+          "lemma": "yazar",
+          "head": 0,
+          "deprel": "root",
+          "upos": "NOUN",
+          "feats": null,
+          "sentence_index": 0
+        },
+        {
+          "id": 2,
+          "text": "yazar",
+          "lemma": "yazar",
+          "head": 0,
+          "deprel": "root",
+          "upos": "VERB",
+          "feats": null,
+          "sentence_index": 1
+        }
+      ]
+    },
+    "decorated_occurrence": {
+      "expected_roots": [
+        "yazar",
+        "yaz"
+      ],
+      "observed_roots": [
+        "yazar",
+        "yazar"
+      ],
+      "candidates": [
+        {
+          "word": "yazar",
+          "root": "yazar",
+          "sentiment_token": {
+            "id": 1,
+            "word": "yazar",
+            "lemma": "yazar",
+            "upos": "NOUN",
+            "head": 0,
+            "deprel": "root"
+          },
+          "candidate_strategy": "morphology_repaired:morphology_edge_noise:predicate_candidate",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": true,
+          "repair_strategy": "morphology_edge_noise",
+          "fragment_token_ids": [
+            1
+          ],
+          "original_anchor_text": "yazar🙂"
+        },
+        {
+          "word": "yazar",
+          "root": "yazar",
+          "sentiment_token": {
+            "id": 2,
+            "word": "yazar",
+            "lemma": "yazar",
+            "upos": "VERB",
+            "head": 0,
+            "deprel": "root"
+          },
+          "candidate_strategy": "predicate_candidate",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            2
+          ],
+          "original_anchor_text": null
+        }
+      ],
+      "morphology": [
+        {
+          "word": "yazar",
+          "root": "yazar",
+          "analysis": "yazar+NOUN+A3SG"
+        },
+        {
+          "word": "yazar",
+          "root": "yaz",
+          "analysis": "yaz+VERB+POS+AOR+A3SG"
+        }
+      ],
+      "tokens": [
+        {
+          "id": 1,
+          "text": "yazar🙂",
+          "lemma": "yazar🙂",
+          "head": 0,
+          "deprel": "root",
+          "upos": "NOUN",
+          "feats": null,
+          "sentence_index": 0
+        },
+        {
+          "id": 2,
+          "text": "yazar",
+          "lemma": "yazar",
+          "head": 0,
+          "deprel": "root",
+          "upos": "VERB",
+          "feats": null,
+          "sentence_index": 1
+        }
+      ]
+    },
+    "resume_skips_unrecovered_failure": {
+      "expected_recovered_ids": [
+        "A"
+      ],
+      "observed_failed_ids": [
+        "A"
+      ],
+      "calls": [
+        [
+          "second"
+        ]
+      ]
+    },
+    "default_client_timeout": {
+      "value": "Timeout(timeout=None)",
+      "scope": "default classifier, not smoke RecordingClient"
+    },
+    "legacy_resume_timing": {
+      "previously_completed_reviews": 1,
+      "new_inference_calls": 0,
+      "benchmark": {
+        "batch_size": 1,
+        "model": "fake",
+        "num_ctx": 8192,
+        "temperature": 0.1,
+        "top_p": 1.0,
+        "seed": 42,
+        "reviews": 1,
+        "initial_failed_reviews": 0,
+        "recovered_reviews": 0,
+        "unresolved_reviews": 0,
+        "first_pass_seconds": 2.800021320581436e-06,
+        "recovery_seconds": 0.0005717999883927405,
+        "total_seconds": 0.0005746000097133219,
+        "seconds_per_review": 0.0005746000097133219,
+        "reviews_per_second": 1740.3410774373597,
+        "total_requests": 0,
+        "total_retries": 0,
+        "total_failed_calls": 0,
+        "prompt_tokens": 0,
+        "output_tokens": 0,
+        "n": 1,
+        "accuracy": 1.0
+      },
+      "expected": "Retain previous timing or explicitly mark cached-run timing unavailable."
+    },
+    "syntax": {
+      "parsed_count": 73,
+      "all_passed": true
+    }
+  },
+  "datasets": {
+    "TRSAv1_fixed.csv": {
+      "sha256": "e7e980f0fcefd7658d4043e7e0e9dcd81cc93adcda8668619c88432120feadd4",
+      "loaded_rows": 125561,
+      "label_counts": {
+        "positive": 42027,
+        "negative": 41963,
+        "neutral": 41571
+      },
+      "conflicting_texts": 898,
+      "conflicting_rows": 1884
+    },
+    "beyazperde_sentiment.csv": {
+      "sha256": "8681e80a58f986057180efd40a95c6fe4d2fd84d5c91c02fd5af91afb711ad45",
+      "loaded_rows": 2654,
+      "label_counts": {
+        "positive": 1382,
+        "neutral": 937,
+        "negative": 335
+      },
+      "conflicting_texts": 5,
+      "conflicting_rows": 10
+    }
+  }
+}

@@ -1,0 +1,12 @@
+﻿{
+    "status":  "completed",
+    "started_utc":  "2026-10-30T19:33:39.6241794Z",
+    "model":  "qwen3:32b",
+    "reason":  "Previous run manifest rejected resume after Ollama server version changed from 0.40.11 to 0.40.13.",
+    "previous_run":  "smoke_30_20261030_run01",
+    "previous_run_reused_predictions":  0,
+    "source_changes":  "No classifier or runner changes for this rerun.",
+    "timing_note":  "Aggregate persisted attempt records; initialization and interrupted/unrecorded attempts are outside request totals.",
+    "verified_utc":  "2026-10-30T20:03:15.6841382Z",
+    "completion_note":  "All 180 predictions saved and verified against CSV, summary and analysis. Both LLM arms completed without retries or recovery. Report-script missing bracket fixed; classifier and runner unchanged."
+}

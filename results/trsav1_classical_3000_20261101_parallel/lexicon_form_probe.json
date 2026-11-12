@@ -1,0 +1,55 @@
+{
+    "source":  "C:\\Users\\ASUS\\PycharmProjects\\TurkishSentimentComparison\\.venv\\Lib\\site-packages\\SentiNet\\data\\turkish_sentiliteralnet.xml",
+    "sha256":  "18724328474d98afb3b9065dcdd82c29c26f86e7172af6b862ffcd897cd3f9f4",
+    "entries":  [
+                    {
+                        "form":  "beğen",
+                        "found":  false,
+                        "positive":  null,
+                        "negative":  null
+                    },
+                    {
+                        "form":  "beğenmek",
+                        "found":  true,
+                        "positive":  0.75,
+                        "negative":  0
+                    },
+                    {
+                        "form":  "sev",
+                        "found":  false,
+                        "positive":  null,
+                        "negative":  null
+                    },
+                    {
+                        "form":  "sevmek",
+                        "found":  true,
+                        "positive":  0.6,
+                        "negative":  0
+                    },
+                    {
+                        "form":  "bayıl",
+                        "found":  false,
+                        "positive":  null,
+                        "negative":  null
+                    },
+                    {
+                        "form":  "bayılmak",
+                        "found":  true,
+                        "positive":  0,
+                        "negative":  0.25
+                    },
+                    {
+                        "form":  "al",
+                        "found":  true,
+                        "positive":  0,
+                        "negative":  0.16666666666666666
+                    },
+                    {
+                        "form":  "almak",
+                        "found":  true,
+                        "positive":  0,
+                        "negative":  0.014285714285714285
+                    }
+                ],
+    "note":  "Read-only exact-form lookup. No mapping change was applied to the frozen experiment."
+}

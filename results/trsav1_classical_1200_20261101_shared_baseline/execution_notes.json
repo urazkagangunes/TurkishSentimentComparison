@@ -1,0 +1,15 @@
+{
+  "purpose": "Balanced development experiment before the final paper evaluation",
+  "systems": ["hisnet", "dp_hisnet", "hisnet_dp", "lw_hisnet_dp"],
+  "live_llm_calls": 0,
+  "sample": {"positive": 400, "negative": 400, "neutral": 400, "seed": 42},
+  "sampling": "Existing cleaned TRSAv1 loader, 400 per class, followed by seed-42 shuffle; labels unchanged",
+  "partial_independent_run": "../trsav1_classical_1200_20261101_baseline",
+  "imported_hisnet_successes": 616,
+  "migration_checks": {"same_dataset": true, "same_implementation": true, "same_resource_hashes": true},
+  "execution": "Shared immutable morphology and parsing; independent decision composition for the four conditions",
+  "timing": "HisNet includes morphology, dependency times are composition only, shared parse time is recorded separately",
+  "verification_selection": "First review of each gold class, four independent full pipelines; 12 comparisons after completion",
+  "pre_run_checks": {"offline_tests_passed": 54, "live_llm_calls_in_tests": 0},
+  "corrections": "Candidate resolver is kept outside src until the baseline and independent verification complete"
+}

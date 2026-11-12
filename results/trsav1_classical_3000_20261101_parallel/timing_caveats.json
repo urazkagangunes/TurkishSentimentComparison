@@ -1,0 +1,12 @@
+{
+  "valid_for_speed_benchmark": false,
+  "reason": "Long interruptions between 2026-11-01 and 2026-11-03 are included in per-worker perf_counter elapsed durations. These are not CPU times or uninterrupted inference times.",
+  "observed": {
+    "older_dispatch_utc": "2026-11-01T18:22:22.590362+00:00",
+    "later_dispatch_utc": "2026-11-03T09:23:54.132722+00:00",
+    "successful_reviews_at_observation": 871,
+    "summed_saved_hisnet_elapsed_seconds_including_imported_rows": 412612.7,
+    "worker_cpu_seconds_at_observation": {"6844": 887.859375, "38784": 890.078125, "40568": 893.71875}
+  },
+  "policy": "Preserve all raw timing values. Do not subtract estimated pauses or present this run as an independent speed benchmark. Accuracy and F1 are computed from complete predictions only; timing values do not enter the decisions."
+}

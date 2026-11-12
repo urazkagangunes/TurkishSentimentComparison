@@ -1,0 +1,9 @@
+﻿threshold,system,changed,corrected,harmed,neutral_gained,positive_lost,negative_lost,net_correct
+0.07,hisnet,27,2,19,2,4,15,-17
+0.07,dp_hisnet,28,6,20,6,5,15,-14
+0.07,hisnet_dp,25,4,16,4,4,12,-12
+0.07,lw_hisnet_dp,21,5,11,5,5,6,-6
+0.1,hisnet,85,17,44,17,18,26,-27
+0.1,dp_hisnet,79,19,41,19,21,20,-22
+0.1,hisnet_dp,85,18,42,18,18,24,-24
+0.1,lw_hisnet_dp,72,21,33,21,15,18,-12

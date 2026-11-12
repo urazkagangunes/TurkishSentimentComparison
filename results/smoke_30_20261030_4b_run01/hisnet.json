@@ -1,0 +1,1670 @@
+{
+  "rows": {
+    "N10": {
+      "status": "success",
+      "prediction": "negative",
+      "result": {
+        "text": "Kötü. Merkezi değil.",
+        "prediction": "negative",
+        "positive_score": 0.0,
+        "negative_score": 0.9,
+        "net_score": -0.9,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "kötü",
+            "root": "kötü",
+            "analysis": "kötü+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "merkezi",
+            "root": "merkezi",
+            "analysis": "merkezi+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "değil",
+            "root": "değil",
+            "analysis": "değil+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "kötü",
+            "root": "kötü",
+            "analysis": "kötü+ADJ",
+            "positive": 0.0,
+            "negative": 0.9
+          },
+          {
+            "word": "merkezi",
+            "root": "merkezi",
+            "analysis": "merkezi+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "değil",
+            "root": "değil",
+            "analysis": "değil+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [
+          {
+            "word": "kötü",
+            "root": "kötü",
+            "analysis": "kötü+ADJ",
+            "positive": 0.0,
+            "negative": 0.9
+          }
+        ],
+        "unmatched_words": [],
+        "token_count": 3,
+        "matched_word_count": 3,
+        "sentiment_word_count": 1,
+        "lexicon_coverage": 1.0,
+        "sentiment_coverage": 0.3333333333333333
+      },
+      "invariant_failures": [],
+      "seconds": 0.008020500012207776
+    },
+    "N05": {
+      "status": "success",
+      "prediction": "positive",
+      "result": {
+        "text": "Otel güzel değildi.",
+        "prediction": "positive",
+        "positive_score": 0.45454545454545453,
+        "negative_score": 0.0,
+        "net_score": 0.45454545454545453,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "otel",
+            "root": "otel",
+            "analysis": "otel+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "güzel",
+            "root": "güzel",
+            "analysis": "güzel+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "değildi",
+            "root": "değil",
+            "analysis": "değil+ADJ^DB+VERB+ZERO+PAST+A3SG",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "otel",
+            "root": "otel",
+            "analysis": "otel+NOUN+A3SG+PNON+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "güzel",
+            "root": "güzel",
+            "analysis": "güzel+ADJ",
+            "positive": 0.45454545454545453,
+            "negative": 0.0
+          },
+          {
+            "word": "değildi",
+            "root": "değil",
+            "analysis": "değil+ADJ^DB+VERB+ZERO+PAST+A3SG",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [
+          {
+            "word": "güzel",
+            "root": "güzel",
+            "analysis": "güzel+ADJ",
+            "positive": 0.45454545454545453,
+            "negative": 0.0
+          }
+        ],
+        "unmatched_words": [],
+        "token_count": 3,
+        "matched_word_count": 3,
+        "sentiment_word_count": 1,
+        "lexicon_coverage": 1.0,
+        "sentiment_coverage": 0.3333333333333333
+      },
+      "invariant_failures": [],
+      "seconds": 0.008549399964977056
+    },
+    "N01": {
+      "status": "success",
+      "prediction": "negative",
+      "result": {
+        "text": "Film çok kötü.",
+        "prediction": "negative",
+        "positive_score": 0.0,
+        "negative_score": 0.9,
+        "net_score": -0.9,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "film",
+            "root": "film",
+            "analysis": "film+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "çok",
+            "root": "çok",
+            "analysis": "çok+ADV",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "kötü",
+            "root": "kötü",
+            "analysis": "kötü+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "film",
+            "root": "film",
+            "analysis": "film+NOUN+A3SG+PNON+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "çok",
+            "root": "çok",
+            "analysis": "çok+ADV",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "kötü",
+            "root": "kötü",
+            "analysis": "kötü+ADJ",
+            "positive": 0.0,
+            "negative": 0.9
+          }
+        ],
+        "sentiment_words": [
+          {
+            "word": "kötü",
+            "root": "kötü",
+            "analysis": "kötü+ADJ",
+            "positive": 0.0,
+            "negative": 0.9
+          }
+        ],
+        "unmatched_words": [],
+        "token_count": 3,
+        "matched_word_count": 3,
+        "sentiment_word_count": 1,
+        "lexicon_coverage": 1.0,
+        "sentiment_coverage": 0.3333333333333333
+      },
+      "invariant_failures": [],
+      "seconds": 0.002743599994573742
+    },
+    "U07": {
+      "status": "success",
+      "prediction": "neutral",
+      "result": {
+        "text": "İSTANBUL'DA BİR OTEL VAR.",
+        "prediction": "neutral",
+        "positive_score": 0.0,
+        "negative_score": 0.0,
+        "net_score": 0.0,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "istanbul'da",
+            "root": "istanbul'da",
+            "analysis": "istanbul'da+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "robust",
+            "analyzer_reset": false
+          },
+          {
+            "word": "bir",
+            "root": "bir",
+            "analysis": "bir+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "otel",
+            "root": "otel",
+            "analysis": "otel+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "var",
+            "root": "var",
+            "analysis": "var+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "bir",
+            "root": "bir",
+            "analysis": "bir+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "otel",
+            "root": "otel",
+            "analysis": "otel+NOUN+A3SG+PNON+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "var",
+            "root": "var",
+            "analysis": "var+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [],
+        "unmatched_words": [
+          {
+            "word": "istanbul'da",
+            "root": "istanbul'da",
+            "analysis": "istanbul'da+NOUN+A3SG+PNON+NOM"
+          }
+        ],
+        "token_count": 4,
+        "matched_word_count": 3,
+        "sentiment_word_count": 0,
+        "lexicon_coverage": 0.75,
+        "sentiment_coverage": 0.0
+      },
+      "invariant_failures": [],
+      "seconds": 3.4518033000058495
+    },
+    "U03": {
+      "status": "success",
+      "prediction": "neutral",
+      "result": {
+        "text": "Film iki saat sürüyor.",
+        "prediction": "neutral",
+        "positive_score": 0.0,
+        "negative_score": 0.0,
+        "net_score": 0.0,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "film",
+            "root": "film",
+            "analysis": "film+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "iki",
+            "root": "iki",
+            "analysis": "iki+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "saat",
+            "root": "saat",
+            "analysis": "saat+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "sürüyor",
+            "root": "sür",
+            "analysis": "sür+VERB+POS+PROG1+A3SG",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "film",
+            "root": "film",
+            "analysis": "film+NOUN+A3SG+PNON+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "iki",
+            "root": "iki",
+            "analysis": "iki+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "saat",
+            "root": "saat",
+            "analysis": "saat+NOUN+A3SG+PNON+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [],
+        "unmatched_words": [
+          {
+            "word": "sürüyor",
+            "root": "sür",
+            "analysis": "sür+VERB+POS+PROG1+A3SG"
+          }
+        ],
+        "token_count": 4,
+        "matched_word_count": 3,
+        "sentiment_word_count": 0,
+        "lexicon_coverage": 0.75,
+        "sentiment_coverage": 0.0
+      },
+      "invariant_failures": [],
+      "seconds": 0.006459299998823553
+    },
+    "P07": {
+      "status": "success",
+      "prediction": "negative",
+      "result": {
+        "text": "Bu alışverişten pişman olmadım.",
+        "prediction": "negative",
+        "positive_score": 0.0,
+        "negative_score": 1.0,
+        "net_score": -1.0,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "alışverişten",
+            "root": "alışveriş",
+            "analysis": "alışveriş+NOUN+A3SG+PNON+ABL",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "pişman",
+            "root": "pişman",
+            "analysis": "pişman+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "olmadım",
+            "root": "ol",
+            "analysis": "ol+VERB+NEG+PAST+A1SG",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "alışverişten",
+            "root": "alışveriş",
+            "analysis": "alışveriş+NOUN+A3SG+PNON+ABL",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "pişman",
+            "root": "pişman",
+            "analysis": "pişman+ADJ",
+            "positive": 0.0,
+            "negative": 1.0
+          },
+          {
+            "word": "olmadım",
+            "root": "ol",
+            "analysis": "ol+VERB+NEG+PAST+A1SG",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [
+          {
+            "word": "pişman",
+            "root": "pişman",
+            "analysis": "pişman+ADJ",
+            "positive": 0.0,
+            "negative": 1.0
+          }
+        ],
+        "unmatched_words": [],
+        "token_count": 4,
+        "matched_word_count": 4,
+        "sentiment_word_count": 1,
+        "lexicon_coverage": 1.0,
+        "sentiment_coverage": 0.25
+      },
+      "invariant_failures": [],
+      "seconds": 0.01768719998653978
+    },
+    "P06": {
+      "status": "success",
+      "prediction": "positive",
+      "result": {
+        "text": "Bu ürünü tavsiye ederim.",
+        "prediction": "positive",
+        "positive_score": 0.125,
+        "negative_score": 0.0,
+        "net_score": 0.125,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "ürünü",
+            "root": "ürün",
+            "analysis": "ürün+NOUN+A3SG+P3SG+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "tavsiye",
+            "root": "tavsiye",
+            "analysis": "tavsiye+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "ederim",
+            "root": "et",
+            "analysis": "et+VERB+POS+AOR+A1SG",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "ürünü",
+            "root": "ürün",
+            "analysis": "ürün+NOUN+A3SG+P3SG+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "tavsiye",
+            "root": "tavsiye",
+            "analysis": "tavsiye+NOUN+A3SG+PNON+NOM",
+            "positive": 0.125,
+            "negative": 0.0
+          },
+          {
+            "word": "ederim",
+            "root": "et",
+            "analysis": "et+VERB+POS+AOR+A1SG",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [
+          {
+            "word": "tavsiye",
+            "root": "tavsiye",
+            "analysis": "tavsiye+NOUN+A3SG+PNON+NOM",
+            "positive": 0.125,
+            "negative": 0.0
+          }
+        ],
+        "unmatched_words": [],
+        "token_count": 4,
+        "matched_word_count": 4,
+        "sentiment_word_count": 1,
+        "lexicon_coverage": 1.0,
+        "sentiment_coverage": 0.25
+      },
+      "invariant_failures": [],
+      "seconds": 0.010664000001270324
+    },
+    "N03": {
+      "status": "success",
+      "prediction": "neutral",
+      "result": {
+        "text": "Bu filmi sevmedim.",
+        "prediction": "neutral",
+        "positive_score": 0.0,
+        "negative_score": 0.0,
+        "net_score": 0.0,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "filmi",
+            "root": "film",
+            "analysis": "film+NOUN+A3SG+P3SG+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "sevmedim",
+            "root": "sev",
+            "analysis": "sev+VERB+NEG+PAST+A1SG",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "filmi",
+            "root": "film",
+            "analysis": "film+NOUN+A3SG+P3SG+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [],
+        "unmatched_words": [
+          {
+            "word": "sevmedim",
+            "root": "sev",
+            "analysis": "sev+VERB+NEG+PAST+A1SG"
+          }
+        ],
+        "token_count": 3,
+        "matched_word_count": 2,
+        "sentiment_word_count": 0,
+        "lexicon_coverage": 0.6666666666666666,
+        "sentiment_coverage": 0.0
+      },
+      "invariant_failures": [],
+      "seconds": 0.00580350001109764
+    },
+    "N02": {
+      "status": "success",
+      "prediction": "negative",
+      "result": {
+        "text": "Bu ürünü hiç beğenmedim.",
+        "prediction": "negative",
+        "positive_score": 0.0,
+        "negative_score": 0.5,
+        "net_score": -0.5,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "ürünü",
+            "root": "ürün",
+            "analysis": "ürün+NOUN+A3SG+P3SG+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "hiç",
+            "root": "hiç",
+            "analysis": "hiç+ADV",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "beğenmedim",
+            "root": "beğen",
+            "analysis": "beğen+VERB+NEG+PAST+A1SG",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "ürünü",
+            "root": "ürün",
+            "analysis": "ürün+NOUN+A3SG+P3SG+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "hiç",
+            "root": "hiç",
+            "analysis": "hiç+ADV",
+            "positive": 0.0,
+            "negative": 0.5
+          }
+        ],
+        "sentiment_words": [
+          {
+            "word": "hiç",
+            "root": "hiç",
+            "analysis": "hiç+ADV",
+            "positive": 0.0,
+            "negative": 0.5
+          }
+        ],
+        "unmatched_words": [
+          {
+            "word": "beğenmedim",
+            "root": "beğen",
+            "analysis": "beğen+VERB+NEG+PAST+A1SG"
+          }
+        ],
+        "token_count": 4,
+        "matched_word_count": 3,
+        "sentiment_word_count": 1,
+        "lexicon_coverage": 0.75,
+        "sentiment_coverage": 0.25
+      },
+      "invariant_failures": [],
+      "seconds": 0.005606300022918731
+    },
+    "N06": {
+      "status": "success",
+      "prediction": "positive",
+      "result": {
+        "text": "Bu ürünü tavsiye etmem.",
+        "prediction": "positive",
+        "positive_score": 0.125,
+        "negative_score": 0.0,
+        "net_score": 0.125,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "ürünü",
+            "root": "ürün",
+            "analysis": "ürün+NOUN+A3SG+P3SG+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "tavsiye",
+            "root": "tavsiye",
+            "analysis": "tavsiye+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "etmem",
+            "root": "et",
+            "analysis": "et+VERB+NEG+AOR+A1SG",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "ürünü",
+            "root": "ürün",
+            "analysis": "ürün+NOUN+A3SG+P3SG+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "tavsiye",
+            "root": "tavsiye",
+            "analysis": "tavsiye+NOUN+A3SG+PNON+NOM",
+            "positive": 0.125,
+            "negative": 0.0
+          },
+          {
+            "word": "etmem",
+            "root": "et",
+            "analysis": "et+VERB+NEG+AOR+A1SG",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [
+          {
+            "word": "tavsiye",
+            "root": "tavsiye",
+            "analysis": "tavsiye+NOUN+A3SG+PNON+NOM",
+            "positive": 0.125,
+            "negative": 0.0
+          }
+        ],
+        "unmatched_words": [],
+        "token_count": 4,
+        "matched_word_count": 4,
+        "sentiment_word_count": 1,
+        "lexicon_coverage": 1.0,
+        "sentiment_coverage": 0.25
+      },
+      "invariant_failures": [],
+      "seconds": 0.005093299958389252
+    },
+    "P10": {
+      "status": "success",
+      "prediction": "positive",
+      "result": {
+        "text": "Bu ürün harika🙂",
+        "prediction": "positive",
+        "positive_score": 1.0,
+        "negative_score": 0.0,
+        "net_score": 1.0,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "ürün",
+            "root": "ürün",
+            "analysis": "ürün+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "harika",
+            "root": "harika",
+            "analysis": "harika+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "ürün",
+            "root": "ürün",
+            "analysis": "ürün+NOUN+A3SG+PNON+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "harika",
+            "root": "harika",
+            "analysis": "harika+ADJ",
+            "positive": 1.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [
+          {
+            "word": "harika",
+            "root": "harika",
+            "analysis": "harika+ADJ",
+            "positive": 1.0,
+            "negative": 0.0
+          }
+        ],
+        "unmatched_words": [],
+        "token_count": 3,
+        "matched_word_count": 3,
+        "sentiment_word_count": 1,
+        "lexicon_coverage": 1.0,
+        "sentiment_coverage": 0.3333333333333333
+      },
+      "invariant_failures": [],
+      "seconds": 0.004585899994708598
+    },
+    "U06": {
+      "status": "success",
+      "prediction": "neutral",
+      "result": {
+        "text": "Bu kitabı bir yazar yazar.",
+        "prediction": "neutral",
+        "positive_score": 0.0,
+        "negative_score": 0.0,
+        "net_score": 0.0,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "kitabı",
+            "root": "kitap",
+            "analysis": "kitap+NOUN+A3SG+P3SG+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "bir",
+            "root": "bir",
+            "analysis": "bir+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "yazar",
+            "root": "yazar",
+            "analysis": "yazar+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "yazar",
+            "root": "yazar",
+            "analysis": "yazar+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "kitabı",
+            "root": "kitap",
+            "analysis": "kitap+NOUN+A3SG+P3SG+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "bir",
+            "root": "bir",
+            "analysis": "bir+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "yazar",
+            "root": "yazar",
+            "analysis": "yazar+NOUN+A3SG+PNON+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "yazar",
+            "root": "yazar",
+            "analysis": "yazar+NOUN+A3SG+PNON+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [],
+        "unmatched_words": [],
+        "token_count": 5,
+        "matched_word_count": 5,
+        "sentiment_word_count": 0,
+        "lexicon_coverage": 1.0,
+        "sentiment_coverage": 0.0
+      },
+      "invariant_failures": [],
+      "seconds": 0.008115699980407953
+    },
+    "U10": {
+      "status": "success",
+      "prediction": "neutral",
+      "result": {
+        "text": "Paket masanın üzerinde.",
+        "prediction": "neutral",
+        "positive_score": 0.0,
+        "negative_score": 0.0,
+        "net_score": 0.0,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "paket",
+            "root": "paket",
+            "analysis": "paket+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "masanın",
+            "root": "masa",
+            "analysis": "masa+NOUN+A3SG+PNON+GEN",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "üzerinde",
+            "root": "üzeri",
+            "analysis": "üzeri+NOUN+A3SG+P2SG+LOC",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "paket",
+            "root": "paket",
+            "analysis": "paket+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "masanın",
+            "root": "masa",
+            "analysis": "masa+NOUN+A3SG+PNON+GEN",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "üzerinde",
+            "root": "üzeri",
+            "analysis": "üzeri+NOUN+A3SG+P2SG+LOC",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [],
+        "unmatched_words": [],
+        "token_count": 3,
+        "matched_word_count": 3,
+        "sentiment_word_count": 0,
+        "lexicon_coverage": 1.0,
+        "sentiment_coverage": 0.0
+      },
+      "invariant_failures": [],
+      "seconds": 0.00867029995424673
+    },
+    "U02": {
+      "status": "success",
+      "prediction": "neutral",
+      "result": {
+        "text": "Kutuda üç kalem var.",
+        "prediction": "neutral",
+        "positive_score": 0.0,
+        "negative_score": 0.0,
+        "net_score": 0.0,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "kutuda",
+            "root": "kutu",
+            "analysis": "kutu+NOUN+A3SG+PNON+LOC",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "üç",
+            "root": "üç",
+            "analysis": "üç+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "kalem",
+            "root": "kalem",
+            "analysis": "kalem+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "var",
+            "root": "var",
+            "analysis": "var+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "kutuda",
+            "root": "kutu",
+            "analysis": "kutu+NOUN+A3SG+PNON+LOC",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "üç",
+            "root": "üç",
+            "analysis": "üç+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "kalem",
+            "root": "kalem",
+            "analysis": "kalem+NOUN+A3SG+PNON+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "var",
+            "root": "var",
+            "analysis": "var+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [],
+        "unmatched_words": [],
+        "token_count": 4,
+        "matched_word_count": 4,
+        "sentiment_word_count": 0,
+        "lexicon_coverage": 1.0,
+        "sentiment_coverage": 0.0
+      },
+      "invariant_failures": [],
+      "seconds": 0.006384400010574609
+    },
+    "N07": {
+      "status": "success",
+      "prediction": "negative",
+      "result": {
+        "text": "Bu alışverişten pişman oldum.",
+        "prediction": "negative",
+        "positive_score": 0.0,
+        "negative_score": 1.0,
+        "net_score": -1.0,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "alışverişten",
+            "root": "alışveriş",
+            "analysis": "alışveriş+NOUN+A3SG+PNON+ABL",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "pişman",
+            "root": "pişman",
+            "analysis": "pişman+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "oldum",
+            "root": "ol",
+            "analysis": "ol+VERB+POS+PAST+A1SG",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "alışverişten",
+            "root": "alışveriş",
+            "analysis": "alışveriş+NOUN+A3SG+PNON+ABL",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "pişman",
+            "root": "pişman",
+            "analysis": "pişman+ADJ",
+            "positive": 0.0,
+            "negative": 1.0
+          },
+          {
+            "word": "oldum",
+            "root": "ol",
+            "analysis": "ol+VERB+POS+PAST+A1SG",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [
+          {
+            "word": "pişman",
+            "root": "pişman",
+            "analysis": "pişman+ADJ",
+            "positive": 0.0,
+            "negative": 1.0
+          }
+        ],
+        "unmatched_words": [],
+        "token_count": 4,
+        "matched_word_count": 4,
+        "sentiment_word_count": 1,
+        "lexicon_coverage": 1.0,
+        "sentiment_coverage": 0.25
+      },
+      "invariant_failures": [],
+      "seconds": 0.004473100008908659
+    },
+    "U08": {
+      "status": "success",
+      "prediction": "neutral",
+      "result": {
+        "text": "Oda ikinci katta.",
+        "prediction": "neutral",
+        "positive_score": 0.0,
+        "negative_score": 0.0,
+        "net_score": 0.0,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "oda",
+            "root": "oda",
+            "analysis": "oda+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "ikinci",
+            "root": "ikinci",
+            "analysis": "ikinci+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "katta",
+            "root": "kat",
+            "analysis": "kat+NOUN+A3SG+PNON+LOC",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "oda",
+            "root": "oda",
+            "analysis": "oda+NOUN+A3SG+PNON+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "ikinci",
+            "root": "ikinci",
+            "analysis": "ikinci+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "katta",
+            "root": "kat",
+            "analysis": "kat+NOUN+A3SG+PNON+LOC",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [],
+        "unmatched_words": [],
+        "token_count": 3,
+        "matched_word_count": 3,
+        "sentiment_word_count": 0,
+        "lexicon_coverage": 1.0,
+        "sentiment_coverage": 0.0
+      },
+      "invariant_failures": [],
+      "seconds": 0.007889900007285178
+    },
+    "P02": {
+      "status": "success",
+      "prediction": "neutral",
+      "result": {
+        "text": "Bu ürünü çok beğendim.",
+        "prediction": "neutral",
+        "positive_score": 0.0,
+        "negative_score": 0.0,
+        "net_score": 0.0,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "ürünü",
+            "root": "ürün",
+            "analysis": "ürün+NOUN+A3SG+P3SG+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "çok",
+            "root": "çok",
+            "analysis": "çok+ADV",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "beğendim",
+            "root": "beğen",
+            "analysis": "beğen+VERB+POS+PAST+A1SG",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "ürünü",
+            "root": "ürün",
+            "analysis": "ürün+NOUN+A3SG+P3SG+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "çok",
+            "root": "çok",
+            "analysis": "çok+ADV",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [],
+        "unmatched_words": [
+          {
+            "word": "beğendim",
+            "root": "beğen",
+            "analysis": "beğen+VERB+POS+PAST+A1SG"
+          }
+        ],
+        "token_count": 4,
+        "matched_word_count": 3,
+        "sentiment_word_count": 0,
+        "lexicon_coverage": 0.75,
+        "sentiment_coverage": 0.0
+      },
+      "invariant_failures": [],
+      "seconds": 0.0019097999902442098
+    },
+    "N04": {
+      "status": "success",
+      "prediction": "neutral",
+      "result": {
+        "text": "Hizmet berbattı.",
+        "prediction": "neutral",
+        "positive_score": 0.0,
+        "negative_score": 0.0,
+        "net_score": 0.0,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "hizmet",
+            "root": "hizmet",
+            "analysis": "hizmet+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "berbattı",
+            "root": "berbat",
+            "analysis": "berbat+ADJ^DB+VERB+ZERO+PAST+A3SG",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "hizmet",
+            "root": "hizmet",
+            "analysis": "hizmet+NOUN+A3SG+PNON+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "berbattı",
+            "root": "berbat",
+            "analysis": "berbat+ADJ^DB+VERB+ZERO+PAST+A3SG",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [],
+        "unmatched_words": [],
+        "token_count": 2,
+        "matched_word_count": 2,
+        "sentiment_word_count": 0,
+        "lexicon_coverage": 1.0,
+        "sentiment_coverage": 0.0
+      },
+      "invariant_failures": [],
+      "seconds": 0.0016117999912239611
+    },
+    "N09": {
+      "status": "success",
+      "prediction": "negative",
+      "result": {
+        "text": "Ürün kullanışsız.",
+        "prediction": "negative",
+        "positive_score": 0.0,
+        "negative_score": 0.75,
+        "net_score": -0.75,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "ürün",
+            "root": "ürün",
+            "analysis": "ürün+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "kullanışsız",
+            "root": "kullanışsız",
+            "analysis": "kullanışsız+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "ürün",
+            "root": "ürün",
+            "analysis": "ürün+NOUN+A3SG+PNON+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "kullanışsız",
+            "root": "kullanışsız",
+            "analysis": "kullanışsız+ADJ",
+            "positive": 0.0,
+            "negative": 0.75
+          }
+        ],
+        "sentiment_words": [
+          {
+            "word": "kullanışsız",
+            "root": "kullanışsız",
+            "analysis": "kullanışsız+ADJ",
+            "positive": 0.0,
+            "negative": 0.75
+          }
+        ],
+        "unmatched_words": [],
+        "token_count": 2,
+        "matched_word_count": 2,
+        "sentiment_word_count": 1,
+        "lexicon_coverage": 1.0,
+        "sentiment_coverage": 0.5
+      },
+      "invariant_failures": [],
+      "seconds": 0.00812080001924187
+    },
+    "P03": {
+      "status": "success",
+      "prediction": "neutral",
+      "result": {
+        "text": "Bu filmi sevdim.",
+        "prediction": "neutral",
+        "positive_score": 0.0,
+        "negative_score": 0.0,
+        "net_score": 0.0,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "filmi",
+            "root": "film",
+            "analysis": "film+NOUN+A3SG+P3SG+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "sevdim",
+            "root": "sev",
+            "analysis": "sev+VERB+POS+PAST+A1SG",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "bu",
+            "root": "bu",
+            "analysis": "bu+ADJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "filmi",
+            "root": "film",
+            "analysis": "film+NOUN+A3SG+P3SG+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          }
+        ],
+        "sentiment_words": [],
+        "unmatched_words": [
+          {
+            "word": "sevdim",
+            "root": "sev",
+            "analysis": "sev+VERB+POS+PAST+A1SG"
+          }
+        ],
+        "token_count": 3,
+        "matched_word_count": 2,
+        "sentiment_word_count": 0,
+        "lexicon_coverage": 0.6666666666666666,
+        "sentiment_coverage": 0.0
+      },
+      "invariant_failures": [],
+      "seconds": 0.0017359000048600137
+    },
+    "N08": {
+      "status": "success",
+      "prediction": "negative",
+      "result": {
+        "text": "Otel güzel ama odalar çok kötü.",
+        "prediction": "negative",
+        "positive_score": 0.45454545454545453,
+        "negative_score": 0.9,
+        "net_score": -0.4454545454545455,
+        "neutral_threshold": 0.05,
+        "morphological_analyses": [
+          {
+            "word": "otel",
+            "root": "otel",
+            "analysis": "otel+NOUN+A3SG+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "güzel",
+            "root": "güzel",
+            "analysis": "güzel+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "ama",
+            "root": "ama",
+            "analysis": "ama+CONJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "odalar",
+            "root": "oda",
+            "analysis": "oda+NOUN+A3PL+PNON+NOM",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "çok",
+            "root": "çok",
+            "analysis": "çok+ADV",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          },
+          {
+            "word": "kötü",
+            "root": "kötü",
+            "analysis": "kötü+ADJ",
+            "analysis_source": "normal",
+            "analyzer_reset": false
+          }
+        ],
+        "matched_words": [
+          {
+            "word": "otel",
+            "root": "otel",
+            "analysis": "otel+NOUN+A3SG+PNON+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "güzel",
+            "root": "güzel",
+            "analysis": "güzel+ADJ",
+            "positive": 0.45454545454545453,
+            "negative": 0.0
+          },
+          {
+            "word": "ama",
+            "root": "ama",
+            "analysis": "ama+CONJ",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "odalar",
+            "root": "oda",
+            "analysis": "oda+NOUN+A3PL+PNON+NOM",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "çok",
+            "root": "çok",
+            "analysis": "çok+ADV",
+            "positive": 0.0,
+            "negative": 0.0
+          },
+          {
+            "word": "kötü",
+            "root": "kötü",
+            "analysis": "kötü+ADJ",
+            "positive": 0.0,
+            "negative": 0.9
+          }
+        ],
+        "sentiment_words": [
+          {
+            "word": "güzel",
+            "root": "güzel",
+            "analysis": "güzel+ADJ",
+            "positive": 0.45454545454545453,
+            "negative": 0.0
+          },
+          {
+            "word": "kötü",
+            "root": "kötü",
+            "analysis": "kötü+ADJ",
+            "positive": 0.0,
+            "negative": 0.9
+          }
+        ],
+        "unmatched_words": [],
+        "token_count": 6,
+        "matched_word_count": 6,
+        "sentiment_word_count": 2,
+        "lexicon_coverage": 1.0,
+        "sentiment_coverage": 0.3333333333333333
+      },
+      "invariant_failures": [],
+      "seconds": 0.006916899990756065
+    }
+  },
+  "repeat_checks": {},
+  "initialization_seconds": 4.025935199984815
+}

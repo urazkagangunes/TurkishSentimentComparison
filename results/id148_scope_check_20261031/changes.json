@@ -1,0 +1,4201 @@
+[
+  {
+    "system": "dp_hisnet",
+    "row_id": 447,
+    "text": "Daha çnce kullandım böyle değildi sanki içine limon kolanyası basmışlar gibi bir ürün kesinlikle almanızı tavsiye etmem",
+    "gold": "negative",
+    "before": {
+      "prediction": "negative",
+      "positive_score": 0.0,
+      "negative_score": 0.29166666666666663,
+      "scopes": [
+        {
+          "word": "almanızı",
+          "root": "al",
+          "sentiment_token": {
+            "id": 15,
+            "word": "almanızı",
+            "lemma": "al",
+            "upos": "VERB",
+            "head": 16,
+            "deprel": "obj"
+          },
+          "candidate_strategy": "direct_target_relation",
+          "target": {
+            "id": 13,
+            "word": "ürün",
+            "lemma": "ürün",
+            "root": "ürün",
+            "upos": "NOUN",
+            "deprel": "obj"
+          },
+          "target_strategy": "direct_object",
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            15
+          ],
+          "original_anchor_text": null,
+          "positive": 0.0,
+          "negative": 0.16666666666666666,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.0,
+          "original_negative": 0.16666666666666666,
+          "adjusted_positive": 0.0,
+          "adjusted_negative": 0.16666666666666666,
+          "operations": []
+        },
+        {
+          "word": "tavsiye",
+          "root": "tavsiye",
+          "sentiment_token": {
+            "id": 16,
+            "word": "tavsiye",
+            "lemma": "tavsiye",
+            "upos": "NOUN",
+            "head": 5,
+            "deprel": "conj"
+          },
+          "candidate_strategy": "predicate_candidate",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [
+            {
+              "id": 6,
+              "word": "sanki",
+              "lemma": "sanki",
+              "deprel": "advmod"
+            }
+          ],
+          "negations": [
+            {
+              "id": 17,
+              "word": "etmem",
+              "lemma": "et",
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            16
+          ],
+          "original_anchor_text": null,
+          "negation_scope_strategy": "explicit_degil_removed_by_scope",
+          "positive": 0.125,
+          "negative": 0.0,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.125,
+          "original_negative": 0.0,
+          "adjusted_positive": 0.0,
+          "adjusted_negative": 0.125,
+          "operations": [
+            "negation_flip",
+            "modifier_detected"
+          ]
+        }
+      ],
+      "dependency_candidates": [
+        {
+          "word": "Daha",
+          "root": "daha",
+          "sentiment_token": {
+            "id": 1,
+            "word": "Daha",
+            "lemma": "daha",
+            "upos": "ADV",
+            "head": 2,
+            "deprel": "advmod:emph"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            1
+          ],
+          "original_anchor_text": null
+        },
+        {
+          "word": "çnce",
+          "root": "çnce",
+          "sentiment_token": {
+            "id": 2,
+            "word": "çnce",
+            "lemma": "çnce",
+            "upos": "ADV",
+            "head": 3,
+            "deprel": "advmod"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            2
+          ],
+          "original_anchor_text": null
+        },
+        {
+          "word": "böyle",
+          "root": "böyle",
+          "sentiment_token": {
+            "id": 4,
+            "word": "böyle",
+            "lemma": "böyle",
+            "upos": "ADV",
+            "head": 5,
+            "deprel": "advmod"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [
+            {
+              "id": 5,
+              "word": "değildi",
+              "lemma": "değil",
+              "deprel": "root",
+              "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past"
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            4
+          ],
+          "original_anchor_text": null,
+          "negation_scope_strategy": "explicit_degil_preceding_segment_nearest"
+        },
+        {
+          "word": "sanki",
+          "root": "sanki",
+          "sentiment_token": {
+            "id": 6,
+            "word": "sanki",
+            "lemma": "sanki",
+            "upos": "ADV",
+            "head": 16,
+            "deprel": "advmod"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            6
+          ],
+          "original_anchor_text": null
+        },
+        {
+          "word": "basmışlar",
+          "root": "bas",
+          "sentiment_token": {
+            "id": 10,
+            "word": "basmışlar",
+            "lemma": "bas",
+            "upos": "VERB",
+            "head": 16,
+            "deprel": "advcl"
+          },
+          "candidate_strategy": "direct_target_relation",
+          "target": {
+            "id": 9,
+            "word": "kolanyası",
+            "lemma": "kolanya",
+            "root": "kolanyası",
+            "upos": "NOUN",
+            "deprel": "nsubj"
+          },
+          "target_strategy": "direct_subject",
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            10
+          ],
+          "original_anchor_text": null
+        },
+        {
+          "word": "almanızı",
+          "root": "al",
+          "sentiment_token": {
+            "id": 15,
+            "word": "almanızı",
+            "lemma": "al",
+            "upos": "VERB",
+            "head": 16,
+            "deprel": "obj"
+          },
+          "candidate_strategy": "direct_target_relation",
+          "target": {
+            "id": 13,
+            "word": "ürün",
+            "lemma": "ürün",
+            "root": "ürün",
+            "upos": "NOUN",
+            "deprel": "obj"
+          },
+          "target_strategy": "direct_object",
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            15
+          ],
+          "original_anchor_text": null
+        },
+        {
+          "word": "tavsiye",
+          "root": "tavsiye",
+          "sentiment_token": {
+            "id": 16,
+            "word": "tavsiye",
+            "lemma": "tavsiye",
+            "upos": "NOUN",
+            "head": 5,
+            "deprel": "conj"
+          },
+          "candidate_strategy": "predicate_candidate",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [
+            {
+              "id": 6,
+              "word": "sanki",
+              "lemma": "sanki",
+              "deprel": "advmod"
+            }
+          ],
+          "negations": [
+            {
+              "id": 17,
+              "word": "etmem",
+              "lemma": "et",
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            16
+          ],
+          "original_anchor_text": null,
+          "negation_scope_strategy": "explicit_degil_removed_by_scope"
+        }
+      ],
+      "candidate_diagnostics": [
+        {
+          "word": "Daha",
+          "root": "daha",
+          "sentiment_token": {
+            "id": 1,
+            "word": "Daha",
+            "lemma": "daha",
+            "upos": "ADV",
+            "head": 2,
+            "deprel": "advmod:emph"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            1
+          ],
+          "original_anchor_text": null,
+          "lexicon_status": "neutral_lexicon_entry",
+          "positive": 0.0,
+          "negative": 0.0
+        },
+        {
+          "word": "çnce",
+          "root": "çnce",
+          "sentiment_token": {
+            "id": 2,
+            "word": "çnce",
+            "lemma": "çnce",
+            "upos": "ADV",
+            "head": 3,
+            "deprel": "advmod"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            2
+          ],
+          "original_anchor_text": null,
+          "lexicon_status": "not_found",
+          "positive": null,
+          "negative": null
+        },
+        {
+          "word": "böyle",
+          "root": "böyle",
+          "sentiment_token": {
+            "id": 4,
+            "word": "böyle",
+            "lemma": "böyle",
+            "upos": "ADV",
+            "head": 5,
+            "deprel": "advmod"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [
+            {
+              "id": 5,
+              "word": "değildi",
+              "lemma": "değil",
+              "deprel": "root",
+              "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past"
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            4
+          ],
+          "original_anchor_text": null,
+          "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
+          "lexicon_status": "neutral_lexicon_entry",
+          "positive": 0.0,
+          "negative": 0.0
+        },
+        {
+          "word": "sanki",
+          "root": "sanki",
+          "sentiment_token": {
+            "id": 6,
+            "word": "sanki",
+            "lemma": "sanki",
+            "upos": "ADV",
+            "head": 16,
+            "deprel": "advmod"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            6
+          ],
+          "original_anchor_text": null,
+          "lexicon_status": "neutral_lexicon_entry",
+          "positive": 0.0,
+          "negative": 0.0
+        },
+        {
+          "word": "basmışlar",
+          "root": "bas",
+          "sentiment_token": {
+            "id": 10,
+            "word": "basmışlar",
+            "lemma": "bas",
+            "upos": "VERB",
+            "head": 16,
+            "deprel": "advcl"
+          },
+          "candidate_strategy": "direct_target_relation",
+          "target": {
+            "id": 9,
+            "word": "kolanyası",
+            "lemma": "kolanya",
+            "root": "kolanyası",
+            "upos": "NOUN",
+            "deprel": "nsubj"
+          },
+          "target_strategy": "direct_subject",
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            10
+          ],
+          "original_anchor_text": null,
+          "lexicon_status": "neutral_lexicon_entry",
+          "positive": 0.0,
+          "negative": 0.0
+        },
+        {
+          "word": "almanızı",
+          "root": "al",
+          "sentiment_token": {
+            "id": 15,
+            "word": "almanızı",
+            "lemma": "al",
+            "upos": "VERB",
+            "head": 16,
+            "deprel": "obj"
+          },
+          "candidate_strategy": "direct_target_relation",
+          "target": {
+            "id": 13,
+            "word": "ürün",
+            "lemma": "ürün",
+            "root": "ürün",
+            "upos": "NOUN",
+            "deprel": "obj"
+          },
+          "target_strategy": "direct_object",
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            15
+          ],
+          "original_anchor_text": null,
+          "lexicon_status": "sentiment",
+          "positive": 0.0,
+          "negative": 0.16666666666666666
+        },
+        {
+          "word": "tavsiye",
+          "root": "tavsiye",
+          "sentiment_token": {
+            "id": 16,
+            "word": "tavsiye",
+            "lemma": "tavsiye",
+            "upos": "NOUN",
+            "head": 5,
+            "deprel": "conj"
+          },
+          "candidate_strategy": "predicate_candidate",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [
+            {
+              "id": 6,
+              "word": "sanki",
+              "lemma": "sanki",
+              "deprel": "advmod"
+            }
+          ],
+          "negations": [
+            {
+              "id": 17,
+              "word": "etmem",
+              "lemma": "et",
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            16
+          ],
+          "original_anchor_text": null,
+          "negation_scope_strategy": "explicit_degil_removed_by_scope",
+          "lexicon_status": "sentiment",
+          "positive": 0.125,
+          "negative": 0.0
+        }
+      ],
+      "dependency_tokens": [
+        {
+          "deprel": "advmod:emph",
+          "feats": null,
+          "head": 2,
+          "id": 1,
+          "lemma": "daha",
+          "text": "Daha",
+          "upos": "ADV",
+          "sentence_index": 0,
+          "local_id": 1,
+          "local_head": 2
+        },
+        {
+          "deprel": "advmod",
+          "feats": null,
+          "head": 3,
+          "id": 2,
+          "lemma": "çnce",
+          "text": "çnce",
+          "upos": "ADV",
+          "sentence_index": 0,
+          "local_id": 2,
+          "local_head": 3
+        },
+        {
+          "deprel": "csubj",
+          "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past",
+          "head": 5,
+          "id": 3,
+          "lemma": "kullan",
+          "text": "kullandım",
+          "upos": "VERB",
+          "sentence_index": 0,
+          "local_id": 3,
+          "local_head": 5
+        },
+        {
+          "deprel": "advmod",
+          "feats": null,
+          "head": 5,
+          "id": 4,
+          "lemma": "böyle",
+          "text": "böyle",
+          "upos": "ADV",
+          "sentence_index": 0,
+          "local_id": 4,
+          "local_head": 5
+        },
+        {
+          "deprel": "root",
+          "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past",
+          "head": 0,
+          "id": 5,
+          "lemma": "değil",
+          "text": "değildi",
+          "upos": "AUX",
+          "sentence_index": 0,
+          "local_id": 5,
+          "local_head": 0
+        },
+        {
+          "deprel": "advmod",
+          "feats": null,
+          "head": 16,
+          "id": 6,
+          "lemma": "sanki",
+          "text": "sanki",
+          "upos": "ADV",
+          "sentence_index": 0,
+          "local_id": 6,
+          "local_head": 16
+        },
+        {
+          "deprel": "nmod",
+          "feats": "Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3",
+          "head": 10,
+          "id": 7,
+          "lemma": "iç",
+          "text": "içine",
+          "upos": "ADJ",
+          "sentence_index": 0,
+          "local_id": 7,
+          "local_head": 10
+        },
+        {
+          "deprel": "nmod:poss",
+          "feats": "Case=Nom|Number=Sing|Person=3",
+          "head": 9,
+          "id": 8,
+          "lemma": "limon",
+          "text": "limon",
+          "upos": "NOUN",
+          "sentence_index": 0,
+          "local_id": 8,
+          "local_head": 9
+        },
+        {
+          "deprel": "nsubj",
+          "feats": "Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3",
+          "head": 10,
+          "id": 9,
+          "lemma": "kolanya",
+          "text": "kolanyası",
+          "upos": "NOUN",
+          "sentence_index": 0,
+          "local_id": 9,
+          "local_head": 10
+        },
+        {
+          "deprel": "advcl",
+          "feats": "Aspect=Perf|Evident=Nfh|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Past",
+          "head": 16,
+          "id": 10,
+          "lemma": "bas",
+          "text": "basmışlar",
+          "upos": "VERB",
+          "sentence_index": 0,
+          "local_id": 10,
+          "local_head": 16
+        },
+        {
+          "deprel": "case",
+          "feats": null,
+          "head": 10,
+          "id": 11,
+          "lemma": "gibi",
+          "text": "gibi",
+          "upos": "ADP",
+          "sentence_index": 0,
+          "local_id": 11,
+          "local_head": 10
+        },
+        {
+          "deprel": "det",
+          "feats": null,
+          "head": 13,
+          "id": 12,
+          "lemma": "bir",
+          "text": "bir",
+          "upos": "DET",
+          "sentence_index": 0,
+          "local_id": 12,
+          "local_head": 13
+        },
+        {
+          "deprel": "obj",
+          "feats": "Case=Nom|Number=Sing|Person=3",
+          "head": 15,
+          "id": 13,
+          "lemma": "ürün",
+          "text": "ürün",
+          "upos": "NOUN",
+          "sentence_index": 0,
+          "local_id": 13,
+          "local_head": 15
+        },
+        {
+          "deprel": "obl",
+          "feats": "Case=Ins|Number=Sing|Person=3",
+          "head": 15,
+          "id": 14,
+          "lemma": "kesinlik",
+          "text": "kesinlikle",
+          "upos": "NOUN",
+          "sentence_index": 0,
+          "local_id": 14,
+          "local_head": 15
+        },
+        {
+          "deprel": "obj",
+          "feats": "Aspect=Perf|Case=Acc|Mood=Ind|Number[psor]=Plur|Person[psor]=2|Polarity=Pos|Tense=Pres|VerbForm=Vnoun",
+          "head": 16,
+          "id": 15,
+          "lemma": "al",
+          "text": "almanızı",
+          "upos": "VERB",
+          "sentence_index": 0,
+          "local_id": 15,
+          "local_head": 16
+        },
+        {
+          "deprel": "conj",
+          "feats": "Case=Nom|Number=Sing|Person=3",
+          "head": 5,
+          "id": 16,
+          "lemma": "tavsiye",
+          "text": "tavsiye",
+          "upos": "NOUN",
+          "sentence_index": 0,
+          "local_id": 16,
+          "local_head": 5
+        },
+        {
+          "deprel": "compound:lvc",
+          "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres",
+          "head": 16,
+          "id": 17,
+          "lemma": "et",
+          "text": "etmem",
+          "upos": "VERB",
+          "sentence_index": 0,
+          "local_id": 17,
+          "local_head": 16
+        }
+      ]
+    },
+    "after": {
+      "prediction": "negative",
+      "positive_score": 0.0,
+      "negative_score": 0.29166666666666663,
+      "scopes": [
+        {
+          "word": "almanızı",
+          "root": "al",
+          "sentiment_token": {
+            "id": 15,
+            "word": "almanızı",
+            "lemma": "al",
+            "upos": "VERB",
+            "head": 16,
+            "deprel": "obj"
+          },
+          "candidate_strategy": "direct_target_relation",
+          "target": {
+            "id": 13,
+            "word": "ürün",
+            "lemma": "ürün",
+            "root": "ürün",
+            "upos": "NOUN",
+            "deprel": "obj"
+          },
+          "target_strategy": "direct_object",
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            15
+          ],
+          "original_anchor_text": null,
+          "positive": 0.0,
+          "negative": 0.16666666666666666,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.0,
+          "original_negative": 0.16666666666666666,
+          "adjusted_positive": 0.0,
+          "adjusted_negative": 0.16666666666666666,
+          "operations": []
+        },
+        {
+          "word": "tavsiye",
+          "root": "tavsiye",
+          "sentiment_token": {
+            "id": 16,
+            "word": "tavsiye",
+            "lemma": "tavsiye",
+            "upos": "NOUN",
+            "head": 5,
+            "deprel": "conj"
+          },
+          "candidate_strategy": "predicate_candidate",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [
+            {
+              "id": 6,
+              "word": "sanki",
+              "lemma": "sanki",
+              "deprel": "advmod"
+            }
+          ],
+          "negations": [
+            {
+              "id": 17,
+              "word": "etmem",
+              "lemma": "et",
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            16
+          ],
+          "original_anchor_text": null,
+          "positive": 0.125,
+          "negative": 0.0,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.125,
+          "original_negative": 0.0,
+          "adjusted_positive": 0.0,
+          "adjusted_negative": 0.125,
+          "operations": [
+            "negation_flip",
+            "modifier_detected"
+          ]
+        }
+      ],
+      "dependency_candidates": [
+        {
+          "word": "Daha",
+          "root": "daha",
+          "sentiment_token": {
+            "id": 1,
+            "word": "Daha",
+            "lemma": "daha",
+            "upos": "ADV",
+            "head": 2,
+            "deprel": "advmod:emph"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            1
+          ],
+          "original_anchor_text": null
+        },
+        {
+          "word": "çnce",
+          "root": "çnce",
+          "sentiment_token": {
+            "id": 2,
+            "word": "çnce",
+            "lemma": "çnce",
+            "upos": "ADV",
+            "head": 3,
+            "deprel": "advmod"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            2
+          ],
+          "original_anchor_text": null
+        },
+        {
+          "word": "böyle",
+          "root": "böyle",
+          "sentiment_token": {
+            "id": 4,
+            "word": "böyle",
+            "lemma": "böyle",
+            "upos": "ADV",
+            "head": 5,
+            "deprel": "advmod"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [
+            {
+              "id": 5,
+              "word": "değildi",
+              "lemma": "değil",
+              "deprel": "root",
+              "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past"
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            4
+          ],
+          "original_anchor_text": null,
+          "negation_scope_strategy": "explicit_degil_preceding_segment_nearest"
+        },
+        {
+          "word": "sanki",
+          "root": "sanki",
+          "sentiment_token": {
+            "id": 6,
+            "word": "sanki",
+            "lemma": "sanki",
+            "upos": "ADV",
+            "head": 16,
+            "deprel": "advmod"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            6
+          ],
+          "original_anchor_text": null
+        },
+        {
+          "word": "basmışlar",
+          "root": "bas",
+          "sentiment_token": {
+            "id": 10,
+            "word": "basmışlar",
+            "lemma": "bas",
+            "upos": "VERB",
+            "head": 16,
+            "deprel": "advcl"
+          },
+          "candidate_strategy": "direct_target_relation",
+          "target": {
+            "id": 9,
+            "word": "kolanyası",
+            "lemma": "kolanya",
+            "root": "kolanyası",
+            "upos": "NOUN",
+            "deprel": "nsubj"
+          },
+          "target_strategy": "direct_subject",
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            10
+          ],
+          "original_anchor_text": null
+        },
+        {
+          "word": "almanızı",
+          "root": "al",
+          "sentiment_token": {
+            "id": 15,
+            "word": "almanızı",
+            "lemma": "al",
+            "upos": "VERB",
+            "head": 16,
+            "deprel": "obj"
+          },
+          "candidate_strategy": "direct_target_relation",
+          "target": {
+            "id": 13,
+            "word": "ürün",
+            "lemma": "ürün",
+            "root": "ürün",
+            "upos": "NOUN",
+            "deprel": "obj"
+          },
+          "target_strategy": "direct_object",
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            15
+          ],
+          "original_anchor_text": null
+        },
+        {
+          "word": "tavsiye",
+          "root": "tavsiye",
+          "sentiment_token": {
+            "id": 16,
+            "word": "tavsiye",
+            "lemma": "tavsiye",
+            "upos": "NOUN",
+            "head": 5,
+            "deprel": "conj"
+          },
+          "candidate_strategy": "predicate_candidate",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [
+            {
+              "id": 6,
+              "word": "sanki",
+              "lemma": "sanki",
+              "deprel": "advmod"
+            }
+          ],
+          "negations": [
+            {
+              "id": 17,
+              "word": "etmem",
+              "lemma": "et",
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            16
+          ],
+          "original_anchor_text": null
+        }
+      ],
+      "candidate_diagnostics": [
+        {
+          "word": "Daha",
+          "root": "daha",
+          "sentiment_token": {
+            "id": 1,
+            "word": "Daha",
+            "lemma": "daha",
+            "upos": "ADV",
+            "head": 2,
+            "deprel": "advmod:emph"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            1
+          ],
+          "original_anchor_text": null,
+          "lexicon_status": "neutral_lexicon_entry",
+          "positive": 0.0,
+          "negative": 0.0
+        },
+        {
+          "word": "çnce",
+          "root": "çnce",
+          "sentiment_token": {
+            "id": 2,
+            "word": "çnce",
+            "lemma": "çnce",
+            "upos": "ADV",
+            "head": 3,
+            "deprel": "advmod"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            2
+          ],
+          "original_anchor_text": null,
+          "lexicon_status": "not_found",
+          "positive": null,
+          "negative": null
+        },
+        {
+          "word": "böyle",
+          "root": "böyle",
+          "sentiment_token": {
+            "id": 4,
+            "word": "böyle",
+            "lemma": "böyle",
+            "upos": "ADV",
+            "head": 5,
+            "deprel": "advmod"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [
+            {
+              "id": 5,
+              "word": "değildi",
+              "lemma": "değil",
+              "deprel": "root",
+              "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past"
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            4
+          ],
+          "original_anchor_text": null,
+          "negation_scope_strategy": "explicit_degil_preceding_segment_nearest",
+          "lexicon_status": "neutral_lexicon_entry",
+          "positive": 0.0,
+          "negative": 0.0
+        },
+        {
+          "word": "sanki",
+          "root": "sanki",
+          "sentiment_token": {
+            "id": 6,
+            "word": "sanki",
+            "lemma": "sanki",
+            "upos": "ADV",
+            "head": 16,
+            "deprel": "advmod"
+          },
+          "candidate_strategy": "descriptive_content_fallback",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            6
+          ],
+          "original_anchor_text": null,
+          "lexicon_status": "neutral_lexicon_entry",
+          "positive": 0.0,
+          "negative": 0.0
+        },
+        {
+          "word": "basmışlar",
+          "root": "bas",
+          "sentiment_token": {
+            "id": 10,
+            "word": "basmışlar",
+            "lemma": "bas",
+            "upos": "VERB",
+            "head": 16,
+            "deprel": "advcl"
+          },
+          "candidate_strategy": "direct_target_relation",
+          "target": {
+            "id": 9,
+            "word": "kolanyası",
+            "lemma": "kolanya",
+            "root": "kolanyası",
+            "upos": "NOUN",
+            "deprel": "nsubj"
+          },
+          "target_strategy": "direct_subject",
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            10
+          ],
+          "original_anchor_text": null,
+          "lexicon_status": "neutral_lexicon_entry",
+          "positive": 0.0,
+          "negative": 0.0
+        },
+        {
+          "word": "almanızı",
+          "root": "al",
+          "sentiment_token": {
+            "id": 15,
+            "word": "almanızı",
+            "lemma": "al",
+            "upos": "VERB",
+            "head": 16,
+            "deprel": "obj"
+          },
+          "candidate_strategy": "direct_target_relation",
+          "target": {
+            "id": 13,
+            "word": "ürün",
+            "lemma": "ürün",
+            "root": "ürün",
+            "upos": "NOUN",
+            "deprel": "obj"
+          },
+          "target_strategy": "direct_object",
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            15
+          ],
+          "original_anchor_text": null,
+          "lexicon_status": "sentiment",
+          "positive": 0.0,
+          "negative": 0.16666666666666666
+        },
+        {
+          "word": "tavsiye",
+          "root": "tavsiye",
+          "sentiment_token": {
+            "id": 16,
+            "word": "tavsiye",
+            "lemma": "tavsiye",
+            "upos": "NOUN",
+            "head": 5,
+            "deprel": "conj"
+          },
+          "candidate_strategy": "predicate_candidate",
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [
+            {
+              "id": 6,
+              "word": "sanki",
+              "lemma": "sanki",
+              "deprel": "advmod"
+            }
+          ],
+          "negations": [
+            {
+              "id": 17,
+              "word": "etmem",
+              "lemma": "et",
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "dependency_repaired": false,
+          "repair_strategy": null,
+          "fragment_token_ids": [
+            16
+          ],
+          "original_anchor_text": null,
+          "lexicon_status": "sentiment",
+          "positive": 0.125,
+          "negative": 0.0
+        }
+      ],
+      "dependency_tokens": [
+        {
+          "deprel": "advmod:emph",
+          "feats": null,
+          "head": 2,
+          "id": 1,
+          "lemma": "daha",
+          "text": "Daha",
+          "upos": "ADV",
+          "sentence_index": 0,
+          "local_id": 1,
+          "local_head": 2
+        },
+        {
+          "deprel": "advmod",
+          "feats": null,
+          "head": 3,
+          "id": 2,
+          "lemma": "çnce",
+          "text": "çnce",
+          "upos": "ADV",
+          "sentence_index": 0,
+          "local_id": 2,
+          "local_head": 3
+        },
+        {
+          "deprel": "csubj",
+          "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past",
+          "head": 5,
+          "id": 3,
+          "lemma": "kullan",
+          "text": "kullandım",
+          "upos": "VERB",
+          "sentence_index": 0,
+          "local_id": 3,
+          "local_head": 5
+        },
+        {
+          "deprel": "advmod",
+          "feats": null,
+          "head": 5,
+          "id": 4,
+          "lemma": "böyle",
+          "text": "böyle",
+          "upos": "ADV",
+          "sentence_index": 0,
+          "local_id": 4,
+          "local_head": 5
+        },
+        {
+          "deprel": "root",
+          "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past",
+          "head": 0,
+          "id": 5,
+          "lemma": "değil",
+          "text": "değildi",
+          "upos": "AUX",
+          "sentence_index": 0,
+          "local_id": 5,
+          "local_head": 0
+        },
+        {
+          "deprel": "advmod",
+          "feats": null,
+          "head": 16,
+          "id": 6,
+          "lemma": "sanki",
+          "text": "sanki",
+          "upos": "ADV",
+          "sentence_index": 0,
+          "local_id": 6,
+          "local_head": 16
+        },
+        {
+          "deprel": "nmod",
+          "feats": "Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3",
+          "head": 10,
+          "id": 7,
+          "lemma": "iç",
+          "text": "içine",
+          "upos": "ADJ",
+          "sentence_index": 0,
+          "local_id": 7,
+          "local_head": 10
+        },
+        {
+          "deprel": "nmod:poss",
+          "feats": "Case=Nom|Number=Sing|Person=3",
+          "head": 9,
+          "id": 8,
+          "lemma": "limon",
+          "text": "limon",
+          "upos": "NOUN",
+          "sentence_index": 0,
+          "local_id": 8,
+          "local_head": 9
+        },
+        {
+          "deprel": "nsubj",
+          "feats": "Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3",
+          "head": 10,
+          "id": 9,
+          "lemma": "kolanya",
+          "text": "kolanyası",
+          "upos": "NOUN",
+          "sentence_index": 0,
+          "local_id": 9,
+          "local_head": 10
+        },
+        {
+          "deprel": "advcl",
+          "feats": "Aspect=Perf|Evident=Nfh|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Past",
+          "head": 16,
+          "id": 10,
+          "lemma": "bas",
+          "text": "basmışlar",
+          "upos": "VERB",
+          "sentence_index": 0,
+          "local_id": 10,
+          "local_head": 16
+        },
+        {
+          "deprel": "case",
+          "feats": null,
+          "head": 10,
+          "id": 11,
+          "lemma": "gibi",
+          "text": "gibi",
+          "upos": "ADP",
+          "sentence_index": 0,
+          "local_id": 11,
+          "local_head": 10
+        },
+        {
+          "deprel": "det",
+          "feats": null,
+          "head": 13,
+          "id": 12,
+          "lemma": "bir",
+          "text": "bir",
+          "upos": "DET",
+          "sentence_index": 0,
+          "local_id": 12,
+          "local_head": 13
+        },
+        {
+          "deprel": "obj",
+          "feats": "Case=Nom|Number=Sing|Person=3",
+          "head": 15,
+          "id": 13,
+          "lemma": "ürün",
+          "text": "ürün",
+          "upos": "NOUN",
+          "sentence_index": 0,
+          "local_id": 13,
+          "local_head": 15
+        },
+        {
+          "deprel": "obl",
+          "feats": "Case=Ins|Number=Sing|Person=3",
+          "head": 15,
+          "id": 14,
+          "lemma": "kesinlik",
+          "text": "kesinlikle",
+          "upos": "NOUN",
+          "sentence_index": 0,
+          "local_id": 14,
+          "local_head": 15
+        },
+        {
+          "deprel": "obj",
+          "feats": "Aspect=Perf|Case=Acc|Mood=Ind|Number[psor]=Plur|Person[psor]=2|Polarity=Pos|Tense=Pres|VerbForm=Vnoun",
+          "head": 16,
+          "id": 15,
+          "lemma": "al",
+          "text": "almanızı",
+          "upos": "VERB",
+          "sentence_index": 0,
+          "local_id": 15,
+          "local_head": 16
+        },
+        {
+          "deprel": "conj",
+          "feats": "Case=Nom|Number=Sing|Person=3",
+          "head": 5,
+          "id": 16,
+          "lemma": "tavsiye",
+          "text": "tavsiye",
+          "upos": "NOUN",
+          "sentence_index": 0,
+          "local_id": 16,
+          "local_head": 5
+        },
+        {
+          "deprel": "compound:lvc",
+          "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres",
+          "head": 16,
+          "id": 17,
+          "lemma": "et",
+          "text": "etmem",
+          "upos": "VERB",
+          "sentence_index": 0,
+          "local_id": 17,
+          "local_head": 16
+        }
+      ]
+    }
+  },
+  {
+    "system": "hisnet_dp",
+    "row_id": 148,
+    "text": "İi değil iade edeceğim",
+    "gold": "negative",
+    "before": {
+      "prediction": "positive",
+      "positive_score": 0.125,
+      "negative_score": 0.0,
+      "scopes": [
+        {
+          "word": "iade",
+          "root": "iade",
+          "positive": 0.0,
+          "negative": 0.125,
+          "sentiment_token": {
+            "id": 3,
+            "word": "iade",
+            "lemma": "iade",
+            "upos": "NOUN",
+            "head": 2,
+            "deprel": "obj",
+            "alignment_strategy": "exact_surface",
+            "fragment_token_ids": [
+              3
+            ],
+            "reconstructed_surface": null
+          },
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [
+            {
+              "id": 2,
+              "word": "değil",
+              "lemma": "değil",
+              "deprel": "root",
+              "feats": null
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "alignment_strategy": "exact_surface",
+          "fragment_token_ids": [
+            3
+          ],
+          "reconstructed_surface": null,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.0,
+          "original_negative": 0.125,
+          "adjusted_positive": 0.125,
+          "adjusted_negative": 0.0,
+          "operations": [
+            "negation_flip"
+          ]
+        }
+      ],
+      "sentences": [
+        {
+          "sentence_index": 0,
+          "text": "İi değil iade edeceği",
+          "dependency_tokens": [
+            {
+              "deprel": "case",
+              "feats": null,
+              "head": 2,
+              "id": 1,
+              "lemma": "İi",
+              "text": "İi",
+              "upos": "ADP",
+              "sentence_index": 0,
+              "local_id": 1,
+              "local_head": 2
+            },
+            {
+              "deprel": "root",
+              "feats": null,
+              "head": 0,
+              "id": 2,
+              "lemma": "değil",
+              "text": "değil",
+              "upos": "CCONJ",
+              "sentence_index": 0,
+              "local_id": 2,
+              "local_head": 0
+            },
+            {
+              "deprel": "obj",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 2,
+              "id": 3,
+              "lemma": "iade",
+              "text": "iade",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 3,
+              "local_head": 2
+            },
+            {
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Fut|VerbForm=Part",
+              "head": 3,
+              "id": 4,
+              "lemma": "et",
+              "text": "edeceği",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 4,
+              "local_head": 3
+            }
+          ],
+          "scopes": [
+            {
+              "word": "iade",
+              "root": "iade",
+              "positive": 0.0,
+              "negative": 0.125,
+              "sentiment_token": {
+                "id": 3,
+                "word": "iade",
+                "lemma": "iade",
+                "upos": "NOUN",
+                "head": 2,
+                "deprel": "obj",
+                "alignment_strategy": "exact_surface",
+                "fragment_token_ids": [
+                  3
+                ],
+                "reconstructed_surface": null
+              },
+              "target": null,
+              "target_strategy": null,
+              "modifiers": [],
+              "negations": [
+                {
+                  "id": 2,
+                  "word": "değil",
+                  "lemma": "değil",
+                  "deprel": "root",
+                  "feats": null
+                }
+              ],
+              "contrast": null,
+              "alignment_status": "matched",
+              "alignment_strategy": "exact_surface",
+              "fragment_token_ids": [
+                3
+              ],
+              "reconstructed_surface": null,
+              "active_sentiment": true,
+              "contextual_role": "opinion",
+              "suppression_reason": null,
+              "original_positive": 0.0,
+              "original_negative": 0.125,
+              "adjusted_positive": 0.125,
+              "adjusted_negative": 0.0,
+              "operations": [
+                "negation_flip"
+              ]
+            }
+          ],
+          "hisnet_positive_score": 0.0,
+          "hisnet_negative_score": 0.125,
+          "hisnet_prediction": "negative",
+          "positive_score": 0.125,
+          "negative_score": 0.0,
+          "prediction": "positive"
+        },
+        {
+          "sentence_index": 1,
+          "text": "m",
+          "dependency_tokens": [
+            {
+              "deprel": "root",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 0,
+              "id": 5,
+              "lemma": "m",
+              "text": "m",
+              "upos": "NOUN",
+              "sentence_index": 1,
+              "local_id": 1,
+              "local_head": 0
+            }
+          ],
+          "scopes": [],
+          "hisnet_positive_score": 0,
+          "hisnet_negative_score": 0,
+          "hisnet_prediction": "neutral",
+          "positive_score": 0,
+          "negative_score": 0,
+          "prediction": "neutral"
+        }
+      ]
+    },
+    "after": {
+      "prediction": "negative",
+      "positive_score": 0.0,
+      "negative_score": 0.125,
+      "scopes": [
+        {
+          "word": "iade",
+          "root": "iade",
+          "positive": 0.0,
+          "negative": 0.125,
+          "sentiment_token": {
+            "id": 3,
+            "word": "iade",
+            "lemma": "iade",
+            "upos": "NOUN",
+            "head": 2,
+            "deprel": "obj",
+            "alignment_strategy": "exact_surface",
+            "fragment_token_ids": [
+              3
+            ],
+            "reconstructed_surface": null
+          },
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "alignment_strategy": "exact_surface",
+          "fragment_token_ids": [
+            3
+          ],
+          "reconstructed_surface": null,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.0,
+          "original_negative": 0.125,
+          "adjusted_positive": 0.0,
+          "adjusted_negative": 0.125,
+          "operations": []
+        }
+      ],
+      "sentences": [
+        {
+          "sentence_index": 0,
+          "text": "İi değil iade edeceği",
+          "dependency_tokens": [
+            {
+              "deprel": "case",
+              "feats": null,
+              "head": 2,
+              "id": 1,
+              "lemma": "İi",
+              "text": "İi",
+              "upos": "ADP",
+              "sentence_index": 0,
+              "local_id": 1,
+              "local_head": 2
+            },
+            {
+              "deprel": "root",
+              "feats": null,
+              "head": 0,
+              "id": 2,
+              "lemma": "değil",
+              "text": "değil",
+              "upos": "CCONJ",
+              "sentence_index": 0,
+              "local_id": 2,
+              "local_head": 0
+            },
+            {
+              "deprel": "obj",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 2,
+              "id": 3,
+              "lemma": "iade",
+              "text": "iade",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 3,
+              "local_head": 2
+            },
+            {
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Fut|VerbForm=Part",
+              "head": 3,
+              "id": 4,
+              "lemma": "et",
+              "text": "edeceği",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 4,
+              "local_head": 3
+            }
+          ],
+          "scopes": [
+            {
+              "word": "iade",
+              "root": "iade",
+              "positive": 0.0,
+              "negative": 0.125,
+              "sentiment_token": {
+                "id": 3,
+                "word": "iade",
+                "lemma": "iade",
+                "upos": "NOUN",
+                "head": 2,
+                "deprel": "obj",
+                "alignment_strategy": "exact_surface",
+                "fragment_token_ids": [
+                  3
+                ],
+                "reconstructed_surface": null
+              },
+              "target": null,
+              "target_strategy": null,
+              "modifiers": [],
+              "negations": [],
+              "contrast": null,
+              "alignment_status": "matched",
+              "alignment_strategy": "exact_surface",
+              "fragment_token_ids": [
+                3
+              ],
+              "reconstructed_surface": null,
+              "active_sentiment": true,
+              "contextual_role": "opinion",
+              "suppression_reason": null,
+              "original_positive": 0.0,
+              "original_negative": 0.125,
+              "adjusted_positive": 0.0,
+              "adjusted_negative": 0.125,
+              "operations": []
+            }
+          ],
+          "hisnet_positive_score": 0.0,
+          "hisnet_negative_score": 0.125,
+          "hisnet_prediction": "negative",
+          "positive_score": 0.0,
+          "negative_score": 0.125,
+          "prediction": "negative"
+        },
+        {
+          "sentence_index": 1,
+          "text": "m",
+          "dependency_tokens": [
+            {
+              "deprel": "root",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 0,
+              "id": 5,
+              "lemma": "m",
+              "text": "m",
+              "upos": "NOUN",
+              "sentence_index": 1,
+              "local_id": 1,
+              "local_head": 0
+            }
+          ],
+          "scopes": [],
+          "hisnet_positive_score": 0,
+          "hisnet_negative_score": 0,
+          "hisnet_prediction": "neutral",
+          "positive_score": 0,
+          "negative_score": 0,
+          "prediction": "neutral"
+        }
+      ]
+    }
+  },
+  {
+    "system": "hisnet_dp",
+    "row_id": 447,
+    "text": "Daha çnce kullandım böyle değildi sanki içine limon kolanyası basmışlar gibi bir ürün kesinlikle almanızı tavsiye etmem",
+    "gold": "negative",
+    "before": {
+      "prediction": "neutral",
+      "positive_score": 0.125,
+      "negative_score": 0.16666666666666666,
+      "scopes": [
+        {
+          "word": "almanızı",
+          "root": "al",
+          "positive": 0.0,
+          "negative": 0.16666666666666666,
+          "sentiment_token": {
+            "id": 15,
+            "word": "almanızı",
+            "lemma": "al",
+            "upos": "VERB",
+            "head": 16,
+            "deprel": "obj",
+            "alignment_strategy": "exact_surface",
+            "fragment_token_ids": [
+              15
+            ],
+            "reconstructed_surface": null
+          },
+          "target": {
+            "id": 13,
+            "word": "ürün",
+            "lemma": "ürün",
+            "root": "ürün",
+            "upos": "NOUN",
+            "deprel": "obj"
+          },
+          "target_strategy": "direct_object",
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "alignment_strategy": "exact_surface",
+          "fragment_token_ids": [
+            15
+          ],
+          "reconstructed_surface": null,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.0,
+          "original_negative": 0.16666666666666666,
+          "adjusted_positive": 0.0,
+          "adjusted_negative": 0.16666666666666666,
+          "operations": []
+        },
+        {
+          "word": "tavsiye",
+          "root": "tavsiye",
+          "positive": 0.125,
+          "negative": 0.0,
+          "sentiment_token": {
+            "id": 16,
+            "word": "tavsiye",
+            "lemma": "tavsiye",
+            "upos": "NOUN",
+            "head": 5,
+            "deprel": "conj",
+            "alignment_strategy": "exact_surface",
+            "fragment_token_ids": [
+              16
+            ],
+            "reconstructed_surface": null
+          },
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [
+            {
+              "id": 6,
+              "word": "sanki",
+              "lemma": "sanki",
+              "deprel": "advmod"
+            }
+          ],
+          "negations": [
+            {
+              "id": 17,
+              "word": "etmem",
+              "lemma": "et",
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+            },
+            {
+              "id": 5,
+              "word": "değildi",
+              "lemma": "değil",
+              "deprel": "root",
+              "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past"
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "alignment_strategy": "exact_surface",
+          "fragment_token_ids": [
+            16
+          ],
+          "reconstructed_surface": null,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.125,
+          "original_negative": 0.0,
+          "adjusted_positive": 0.125,
+          "adjusted_negative": 0.0,
+          "operations": [
+            "modifier_detected"
+          ]
+        }
+      ],
+      "sentences": [
+        {
+          "sentence_index": 0,
+          "text": "Daha çnce kullandım böyle değildi sanki içine limon kolanyası basmışlar gibi bir ürün kesinlikle almanızı tavsiye etmem",
+          "dependency_tokens": [
+            {
+              "deprel": "advmod:emph",
+              "feats": null,
+              "head": 2,
+              "id": 1,
+              "lemma": "daha",
+              "text": "Daha",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 1,
+              "local_head": 2
+            },
+            {
+              "deprel": "advmod",
+              "feats": null,
+              "head": 3,
+              "id": 2,
+              "lemma": "çnce",
+              "text": "çnce",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 2,
+              "local_head": 3
+            },
+            {
+              "deprel": "csubj",
+              "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past",
+              "head": 5,
+              "id": 3,
+              "lemma": "kullan",
+              "text": "kullandım",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 3,
+              "local_head": 5
+            },
+            {
+              "deprel": "advmod",
+              "feats": null,
+              "head": 5,
+              "id": 4,
+              "lemma": "böyle",
+              "text": "böyle",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 4,
+              "local_head": 5
+            },
+            {
+              "deprel": "root",
+              "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past",
+              "head": 0,
+              "id": 5,
+              "lemma": "değil",
+              "text": "değildi",
+              "upos": "AUX",
+              "sentence_index": 0,
+              "local_id": 5,
+              "local_head": 0
+            },
+            {
+              "deprel": "advmod",
+              "feats": null,
+              "head": 16,
+              "id": 6,
+              "lemma": "sanki",
+              "text": "sanki",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 6,
+              "local_head": 16
+            },
+            {
+              "deprel": "nmod",
+              "feats": "Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3",
+              "head": 10,
+              "id": 7,
+              "lemma": "iç",
+              "text": "içine",
+              "upos": "ADJ",
+              "sentence_index": 0,
+              "local_id": 7,
+              "local_head": 10
+            },
+            {
+              "deprel": "nmod:poss",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 9,
+              "id": 8,
+              "lemma": "limon",
+              "text": "limon",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 8,
+              "local_head": 9
+            },
+            {
+              "deprel": "nsubj",
+              "feats": "Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3",
+              "head": 10,
+              "id": 9,
+              "lemma": "kolanya",
+              "text": "kolanyası",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 9,
+              "local_head": 10
+            },
+            {
+              "deprel": "advcl",
+              "feats": "Aspect=Perf|Evident=Nfh|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Past",
+              "head": 16,
+              "id": 10,
+              "lemma": "bas",
+              "text": "basmışlar",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 10,
+              "local_head": 16
+            },
+            {
+              "deprel": "case",
+              "feats": null,
+              "head": 10,
+              "id": 11,
+              "lemma": "gibi",
+              "text": "gibi",
+              "upos": "ADP",
+              "sentence_index": 0,
+              "local_id": 11,
+              "local_head": 10
+            },
+            {
+              "deprel": "det",
+              "feats": null,
+              "head": 13,
+              "id": 12,
+              "lemma": "bir",
+              "text": "bir",
+              "upos": "DET",
+              "sentence_index": 0,
+              "local_id": 12,
+              "local_head": 13
+            },
+            {
+              "deprel": "obj",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 15,
+              "id": 13,
+              "lemma": "ürün",
+              "text": "ürün",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 13,
+              "local_head": 15
+            },
+            {
+              "deprel": "obl",
+              "feats": "Case=Ins|Number=Sing|Person=3",
+              "head": 15,
+              "id": 14,
+              "lemma": "kesinlik",
+              "text": "kesinlikle",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 14,
+              "local_head": 15
+            },
+            {
+              "deprel": "obj",
+              "feats": "Aspect=Perf|Case=Acc|Mood=Ind|Number[psor]=Plur|Person[psor]=2|Polarity=Pos|Tense=Pres|VerbForm=Vnoun",
+              "head": 16,
+              "id": 15,
+              "lemma": "al",
+              "text": "almanızı",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 15,
+              "local_head": 16
+            },
+            {
+              "deprel": "conj",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 5,
+              "id": 16,
+              "lemma": "tavsiye",
+              "text": "tavsiye",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 16,
+              "local_head": 5
+            },
+            {
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres",
+              "head": 16,
+              "id": 17,
+              "lemma": "et",
+              "text": "etmem",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 17,
+              "local_head": 16
+            }
+          ],
+          "scopes": [
+            {
+              "word": "almanızı",
+              "root": "al",
+              "positive": 0.0,
+              "negative": 0.16666666666666666,
+              "sentiment_token": {
+                "id": 15,
+                "word": "almanızı",
+                "lemma": "al",
+                "upos": "VERB",
+                "head": 16,
+                "deprel": "obj",
+                "alignment_strategy": "exact_surface",
+                "fragment_token_ids": [
+                  15
+                ],
+                "reconstructed_surface": null
+              },
+              "target": {
+                "id": 13,
+                "word": "ürün",
+                "lemma": "ürün",
+                "root": "ürün",
+                "upos": "NOUN",
+                "deprel": "obj"
+              },
+              "target_strategy": "direct_object",
+              "modifiers": [],
+              "negations": [],
+              "contrast": null,
+              "alignment_status": "matched",
+              "alignment_strategy": "exact_surface",
+              "fragment_token_ids": [
+                15
+              ],
+              "reconstructed_surface": null,
+              "active_sentiment": true,
+              "contextual_role": "opinion",
+              "suppression_reason": null,
+              "original_positive": 0.0,
+              "original_negative": 0.16666666666666666,
+              "adjusted_positive": 0.0,
+              "adjusted_negative": 0.16666666666666666,
+              "operations": []
+            },
+            {
+              "word": "tavsiye",
+              "root": "tavsiye",
+              "positive": 0.125,
+              "negative": 0.0,
+              "sentiment_token": {
+                "id": 16,
+                "word": "tavsiye",
+                "lemma": "tavsiye",
+                "upos": "NOUN",
+                "head": 5,
+                "deprel": "conj",
+                "alignment_strategy": "exact_surface",
+                "fragment_token_ids": [
+                  16
+                ],
+                "reconstructed_surface": null
+              },
+              "target": null,
+              "target_strategy": null,
+              "modifiers": [
+                {
+                  "id": 6,
+                  "word": "sanki",
+                  "lemma": "sanki",
+                  "deprel": "advmod"
+                }
+              ],
+              "negations": [
+                {
+                  "id": 17,
+                  "word": "etmem",
+                  "lemma": "et",
+                  "deprel": "compound:lvc",
+                  "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+                },
+                {
+                  "id": 5,
+                  "word": "değildi",
+                  "lemma": "değil",
+                  "deprel": "root",
+                  "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past"
+                }
+              ],
+              "contrast": null,
+              "alignment_status": "matched",
+              "alignment_strategy": "exact_surface",
+              "fragment_token_ids": [
+                16
+              ],
+              "reconstructed_surface": null,
+              "active_sentiment": true,
+              "contextual_role": "opinion",
+              "suppression_reason": null,
+              "original_positive": 0.125,
+              "original_negative": 0.0,
+              "adjusted_positive": 0.125,
+              "adjusted_negative": 0.0,
+              "operations": [
+                "modifier_detected"
+              ]
+            }
+          ],
+          "hisnet_positive_score": 0.125,
+          "hisnet_negative_score": 0.16666666666666666,
+          "hisnet_prediction": "neutral",
+          "positive_score": 0.125,
+          "negative_score": 0.16666666666666666,
+          "prediction": "neutral"
+        }
+      ]
+    },
+    "after": {
+      "prediction": "negative",
+      "positive_score": 0.0,
+      "negative_score": 0.29166666666666663,
+      "scopes": [
+        {
+          "word": "almanızı",
+          "root": "al",
+          "positive": 0.0,
+          "negative": 0.16666666666666666,
+          "sentiment_token": {
+            "id": 15,
+            "word": "almanızı",
+            "lemma": "al",
+            "upos": "VERB",
+            "head": 16,
+            "deprel": "obj",
+            "alignment_strategy": "exact_surface",
+            "fragment_token_ids": [
+              15
+            ],
+            "reconstructed_surface": null
+          },
+          "target": {
+            "id": 13,
+            "word": "ürün",
+            "lemma": "ürün",
+            "root": "ürün",
+            "upos": "NOUN",
+            "deprel": "obj"
+          },
+          "target_strategy": "direct_object",
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "alignment_strategy": "exact_surface",
+          "fragment_token_ids": [
+            15
+          ],
+          "reconstructed_surface": null,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.0,
+          "original_negative": 0.16666666666666666,
+          "adjusted_positive": 0.0,
+          "adjusted_negative": 0.16666666666666666,
+          "operations": []
+        },
+        {
+          "word": "tavsiye",
+          "root": "tavsiye",
+          "positive": 0.125,
+          "negative": 0.0,
+          "sentiment_token": {
+            "id": 16,
+            "word": "tavsiye",
+            "lemma": "tavsiye",
+            "upos": "NOUN",
+            "head": 5,
+            "deprel": "conj",
+            "alignment_strategy": "exact_surface",
+            "fragment_token_ids": [
+              16
+            ],
+            "reconstructed_surface": null
+          },
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [
+            {
+              "id": 6,
+              "word": "sanki",
+              "lemma": "sanki",
+              "deprel": "advmod"
+            }
+          ],
+          "negations": [
+            {
+              "id": 17,
+              "word": "etmem",
+              "lemma": "et",
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "alignment_strategy": "exact_surface",
+          "fragment_token_ids": [
+            16
+          ],
+          "reconstructed_surface": null,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.125,
+          "original_negative": 0.0,
+          "adjusted_positive": 0.0,
+          "adjusted_negative": 0.125,
+          "operations": [
+            "negation_flip",
+            "modifier_detected"
+          ]
+        }
+      ],
+      "sentences": [
+        {
+          "sentence_index": 0,
+          "text": "Daha çnce kullandım böyle değildi sanki içine limon kolanyası basmışlar gibi bir ürün kesinlikle almanızı tavsiye etmem",
+          "dependency_tokens": [
+            {
+              "deprel": "advmod:emph",
+              "feats": null,
+              "head": 2,
+              "id": 1,
+              "lemma": "daha",
+              "text": "Daha",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 1,
+              "local_head": 2
+            },
+            {
+              "deprel": "advmod",
+              "feats": null,
+              "head": 3,
+              "id": 2,
+              "lemma": "çnce",
+              "text": "çnce",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 2,
+              "local_head": 3
+            },
+            {
+              "deprel": "csubj",
+              "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past",
+              "head": 5,
+              "id": 3,
+              "lemma": "kullan",
+              "text": "kullandım",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 3,
+              "local_head": 5
+            },
+            {
+              "deprel": "advmod",
+              "feats": null,
+              "head": 5,
+              "id": 4,
+              "lemma": "böyle",
+              "text": "böyle",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 4,
+              "local_head": 5
+            },
+            {
+              "deprel": "root",
+              "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past",
+              "head": 0,
+              "id": 5,
+              "lemma": "değil",
+              "text": "değildi",
+              "upos": "AUX",
+              "sentence_index": 0,
+              "local_id": 5,
+              "local_head": 0
+            },
+            {
+              "deprel": "advmod",
+              "feats": null,
+              "head": 16,
+              "id": 6,
+              "lemma": "sanki",
+              "text": "sanki",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 6,
+              "local_head": 16
+            },
+            {
+              "deprel": "nmod",
+              "feats": "Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3",
+              "head": 10,
+              "id": 7,
+              "lemma": "iç",
+              "text": "içine",
+              "upos": "ADJ",
+              "sentence_index": 0,
+              "local_id": 7,
+              "local_head": 10
+            },
+            {
+              "deprel": "nmod:poss",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 9,
+              "id": 8,
+              "lemma": "limon",
+              "text": "limon",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 8,
+              "local_head": 9
+            },
+            {
+              "deprel": "nsubj",
+              "feats": "Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3",
+              "head": 10,
+              "id": 9,
+              "lemma": "kolanya",
+              "text": "kolanyası",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 9,
+              "local_head": 10
+            },
+            {
+              "deprel": "advcl",
+              "feats": "Aspect=Perf|Evident=Nfh|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Past",
+              "head": 16,
+              "id": 10,
+              "lemma": "bas",
+              "text": "basmışlar",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 10,
+              "local_head": 16
+            },
+            {
+              "deprel": "case",
+              "feats": null,
+              "head": 10,
+              "id": 11,
+              "lemma": "gibi",
+              "text": "gibi",
+              "upos": "ADP",
+              "sentence_index": 0,
+              "local_id": 11,
+              "local_head": 10
+            },
+            {
+              "deprel": "det",
+              "feats": null,
+              "head": 13,
+              "id": 12,
+              "lemma": "bir",
+              "text": "bir",
+              "upos": "DET",
+              "sentence_index": 0,
+              "local_id": 12,
+              "local_head": 13
+            },
+            {
+              "deprel": "obj",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 15,
+              "id": 13,
+              "lemma": "ürün",
+              "text": "ürün",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 13,
+              "local_head": 15
+            },
+            {
+              "deprel": "obl",
+              "feats": "Case=Ins|Number=Sing|Person=3",
+              "head": 15,
+              "id": 14,
+              "lemma": "kesinlik",
+              "text": "kesinlikle",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 14,
+              "local_head": 15
+            },
+            {
+              "deprel": "obj",
+              "feats": "Aspect=Perf|Case=Acc|Mood=Ind|Number[psor]=Plur|Person[psor]=2|Polarity=Pos|Tense=Pres|VerbForm=Vnoun",
+              "head": 16,
+              "id": 15,
+              "lemma": "al",
+              "text": "almanızı",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 15,
+              "local_head": 16
+            },
+            {
+              "deprel": "conj",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 5,
+              "id": 16,
+              "lemma": "tavsiye",
+              "text": "tavsiye",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 16,
+              "local_head": 5
+            },
+            {
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres",
+              "head": 16,
+              "id": 17,
+              "lemma": "et",
+              "text": "etmem",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 17,
+              "local_head": 16
+            }
+          ],
+          "scopes": [
+            {
+              "word": "almanızı",
+              "root": "al",
+              "positive": 0.0,
+              "negative": 0.16666666666666666,
+              "sentiment_token": {
+                "id": 15,
+                "word": "almanızı",
+                "lemma": "al",
+                "upos": "VERB",
+                "head": 16,
+                "deprel": "obj",
+                "alignment_strategy": "exact_surface",
+                "fragment_token_ids": [
+                  15
+                ],
+                "reconstructed_surface": null
+              },
+              "target": {
+                "id": 13,
+                "word": "ürün",
+                "lemma": "ürün",
+                "root": "ürün",
+                "upos": "NOUN",
+                "deprel": "obj"
+              },
+              "target_strategy": "direct_object",
+              "modifiers": [],
+              "negations": [],
+              "contrast": null,
+              "alignment_status": "matched",
+              "alignment_strategy": "exact_surface",
+              "fragment_token_ids": [
+                15
+              ],
+              "reconstructed_surface": null,
+              "active_sentiment": true,
+              "contextual_role": "opinion",
+              "suppression_reason": null,
+              "original_positive": 0.0,
+              "original_negative": 0.16666666666666666,
+              "adjusted_positive": 0.0,
+              "adjusted_negative": 0.16666666666666666,
+              "operations": []
+            },
+            {
+              "word": "tavsiye",
+              "root": "tavsiye",
+              "positive": 0.125,
+              "negative": 0.0,
+              "sentiment_token": {
+                "id": 16,
+                "word": "tavsiye",
+                "lemma": "tavsiye",
+                "upos": "NOUN",
+                "head": 5,
+                "deprel": "conj",
+                "alignment_strategy": "exact_surface",
+                "fragment_token_ids": [
+                  16
+                ],
+                "reconstructed_surface": null
+              },
+              "target": null,
+              "target_strategy": null,
+              "modifiers": [
+                {
+                  "id": 6,
+                  "word": "sanki",
+                  "lemma": "sanki",
+                  "deprel": "advmod"
+                }
+              ],
+              "negations": [
+                {
+                  "id": 17,
+                  "word": "etmem",
+                  "lemma": "et",
+                  "deprel": "compound:lvc",
+                  "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+                }
+              ],
+              "contrast": null,
+              "alignment_status": "matched",
+              "alignment_strategy": "exact_surface",
+              "fragment_token_ids": [
+                16
+              ],
+              "reconstructed_surface": null,
+              "active_sentiment": true,
+              "contextual_role": "opinion",
+              "suppression_reason": null,
+              "original_positive": 0.125,
+              "original_negative": 0.0,
+              "adjusted_positive": 0.0,
+              "adjusted_negative": 0.125,
+              "operations": [
+                "negation_flip",
+                "modifier_detected"
+              ]
+            }
+          ],
+          "hisnet_positive_score": 0.125,
+          "hisnet_negative_score": 0.16666666666666666,
+          "hisnet_prediction": "neutral",
+          "positive_score": 0.0,
+          "negative_score": 0.29166666666666663,
+          "prediction": "negative"
+        }
+      ]
+    }
+  },
+  {
+    "system": "lw_hisnet_dp",
+    "row_id": 148,
+    "text": "İi değil iade edeceğim",
+    "gold": "negative",
+    "before": {
+      "prediction": "positive",
+      "positive_score": 0.125,
+      "negative_score": 0.0,
+      "scopes": [
+        {
+          "word": "iade",
+          "root": "iade",
+          "positive": 0.0,
+          "negative": 0.125,
+          "sentiment_token": {
+            "id": 3,
+            "word": "iade",
+            "lemma": "iade",
+            "upos": "NOUN",
+            "head": 2,
+            "deprel": "obj",
+            "alignment_strategy": "exact_surface",
+            "fragment_token_ids": [
+              3
+            ],
+            "reconstructed_surface": null
+          },
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [
+            {
+              "id": 2,
+              "word": "değil",
+              "lemma": "değil",
+              "deprel": "root",
+              "feats": null
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "alignment_strategy": "exact_surface",
+          "fragment_token_ids": [
+            3
+          ],
+          "reconstructed_surface": null,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.0,
+          "original_negative": 0.125,
+          "adjusted_positive": 0.125,
+          "adjusted_negative": 0.0,
+          "operations": [
+            "negation_flip"
+          ],
+          "modifier_multiplier": 1.0,
+          "modifier_phrase": null,
+          "modifier_token_ids": [],
+          "modifier_strategy": null,
+          "dependency_adjusted_positive": 0.125,
+          "dependency_adjusted_negative": 0.0,
+          "contrast_multiplier": 1.0,
+          "contrast_role": null,
+          "contrast_marker": null,
+          "contrast_marker_id": null,
+          "contrast_strategy": null,
+          "literature_multiplier": 1.0,
+          "weighted_positive": 0.125,
+          "weighted_negative": 0.0
+        }
+      ],
+      "sentences": [
+        {
+          "sentence_index": 0,
+          "text": "İi değil iade edeceği",
+          "dependency_tokens": [
+            {
+              "deprel": "case",
+              "feats": null,
+              "head": 2,
+              "id": 1,
+              "lemma": "İi",
+              "text": "İi",
+              "upos": "ADP",
+              "sentence_index": 0,
+              "local_id": 1,
+              "local_head": 2
+            },
+            {
+              "deprel": "root",
+              "feats": null,
+              "head": 0,
+              "id": 2,
+              "lemma": "değil",
+              "text": "değil",
+              "upos": "CCONJ",
+              "sentence_index": 0,
+              "local_id": 2,
+              "local_head": 0
+            },
+            {
+              "deprel": "obj",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 2,
+              "id": 3,
+              "lemma": "iade",
+              "text": "iade",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 3,
+              "local_head": 2
+            },
+            {
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Fut|VerbForm=Part",
+              "head": 3,
+              "id": 4,
+              "lemma": "et",
+              "text": "edeceği",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 4,
+              "local_head": 3
+            }
+          ],
+          "scopes": [
+            {
+              "word": "iade",
+              "root": "iade",
+              "positive": 0.0,
+              "negative": 0.125,
+              "sentiment_token": {
+                "id": 3,
+                "word": "iade",
+                "lemma": "iade",
+                "upos": "NOUN",
+                "head": 2,
+                "deprel": "obj",
+                "alignment_strategy": "exact_surface",
+                "fragment_token_ids": [
+                  3
+                ],
+                "reconstructed_surface": null
+              },
+              "target": null,
+              "target_strategy": null,
+              "modifiers": [],
+              "negations": [
+                {
+                  "id": 2,
+                  "word": "değil",
+                  "lemma": "değil",
+                  "deprel": "root",
+                  "feats": null
+                }
+              ],
+              "contrast": null,
+              "alignment_status": "matched",
+              "alignment_strategy": "exact_surface",
+              "fragment_token_ids": [
+                3
+              ],
+              "reconstructed_surface": null,
+              "active_sentiment": true,
+              "contextual_role": "opinion",
+              "suppression_reason": null,
+              "original_positive": 0.0,
+              "original_negative": 0.125,
+              "adjusted_positive": 0.125,
+              "adjusted_negative": 0.0,
+              "operations": [
+                "negation_flip"
+              ],
+              "modifier_multiplier": 1.0,
+              "modifier_phrase": null,
+              "modifier_token_ids": [],
+              "modifier_strategy": null,
+              "dependency_adjusted_positive": 0.125,
+              "dependency_adjusted_negative": 0.0,
+              "contrast_multiplier": 1.0,
+              "contrast_role": null,
+              "contrast_marker": null,
+              "contrast_marker_id": null,
+              "contrast_strategy": null,
+              "literature_multiplier": 1.0,
+              "weighted_positive": 0.125,
+              "weighted_negative": 0.0
+            }
+          ],
+          "hisnet_positive_score": 0.0,
+          "hisnet_negative_score": 0.125,
+          "hisnet_prediction": "negative",
+          "positive_score": 0.125,
+          "negative_score": 0.0,
+          "prediction": "positive"
+        },
+        {
+          "sentence_index": 1,
+          "text": "m",
+          "dependency_tokens": [
+            {
+              "deprel": "root",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 0,
+              "id": 5,
+              "lemma": "m",
+              "text": "m",
+              "upos": "NOUN",
+              "sentence_index": 1,
+              "local_id": 1,
+              "local_head": 0
+            }
+          ],
+          "scopes": [],
+          "hisnet_positive_score": 0,
+          "hisnet_negative_score": 0,
+          "hisnet_prediction": "neutral",
+          "positive_score": 0,
+          "negative_score": 0,
+          "prediction": "neutral"
+        }
+      ],
+      "dependency_prediction": "positive",
+      "dependency_positive_score": 0.125,
+      "dependency_negative_score": 0.0
+    },
+    "after": {
+      "prediction": "negative",
+      "positive_score": 0.0,
+      "negative_score": 0.125,
+      "scopes": [
+        {
+          "word": "iade",
+          "root": "iade",
+          "positive": 0.0,
+          "negative": 0.125,
+          "sentiment_token": {
+            "id": 3,
+            "word": "iade",
+            "lemma": "iade",
+            "upos": "NOUN",
+            "head": 2,
+            "deprel": "obj",
+            "alignment_strategy": "exact_surface",
+            "fragment_token_ids": [
+              3
+            ],
+            "reconstructed_surface": null
+          },
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "alignment_strategy": "exact_surface",
+          "fragment_token_ids": [
+            3
+          ],
+          "reconstructed_surface": null,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.0,
+          "original_negative": 0.125,
+          "adjusted_positive": 0.0,
+          "adjusted_negative": 0.125,
+          "operations": [],
+          "modifier_multiplier": 1.0,
+          "modifier_phrase": null,
+          "modifier_token_ids": [],
+          "modifier_strategy": null,
+          "dependency_adjusted_positive": 0.0,
+          "dependency_adjusted_negative": 0.125,
+          "contrast_multiplier": 1.0,
+          "contrast_role": null,
+          "contrast_marker": null,
+          "contrast_marker_id": null,
+          "contrast_strategy": null,
+          "literature_multiplier": 1.0,
+          "weighted_positive": 0.0,
+          "weighted_negative": 0.125
+        }
+      ],
+      "sentences": [
+        {
+          "sentence_index": 0,
+          "text": "İi değil iade edeceği",
+          "dependency_tokens": [
+            {
+              "deprel": "case",
+              "feats": null,
+              "head": 2,
+              "id": 1,
+              "lemma": "İi",
+              "text": "İi",
+              "upos": "ADP",
+              "sentence_index": 0,
+              "local_id": 1,
+              "local_head": 2
+            },
+            {
+              "deprel": "root",
+              "feats": null,
+              "head": 0,
+              "id": 2,
+              "lemma": "değil",
+              "text": "değil",
+              "upos": "CCONJ",
+              "sentence_index": 0,
+              "local_id": 2,
+              "local_head": 0
+            },
+            {
+              "deprel": "obj",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 2,
+              "id": 3,
+              "lemma": "iade",
+              "text": "iade",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 3,
+              "local_head": 2
+            },
+            {
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Perf|Mood=Ind|Number[psor]=Sing|Person[psor]=3|Polarity=Pos|Tense=Fut|VerbForm=Part",
+              "head": 3,
+              "id": 4,
+              "lemma": "et",
+              "text": "edeceği",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 4,
+              "local_head": 3
+            }
+          ],
+          "scopes": [
+            {
+              "word": "iade",
+              "root": "iade",
+              "positive": 0.0,
+              "negative": 0.125,
+              "sentiment_token": {
+                "id": 3,
+                "word": "iade",
+                "lemma": "iade",
+                "upos": "NOUN",
+                "head": 2,
+                "deprel": "obj",
+                "alignment_strategy": "exact_surface",
+                "fragment_token_ids": [
+                  3
+                ],
+                "reconstructed_surface": null
+              },
+              "target": null,
+              "target_strategy": null,
+              "modifiers": [],
+              "negations": [],
+              "contrast": null,
+              "alignment_status": "matched",
+              "alignment_strategy": "exact_surface",
+              "fragment_token_ids": [
+                3
+              ],
+              "reconstructed_surface": null,
+              "active_sentiment": true,
+              "contextual_role": "opinion",
+              "suppression_reason": null,
+              "original_positive": 0.0,
+              "original_negative": 0.125,
+              "adjusted_positive": 0.0,
+              "adjusted_negative": 0.125,
+              "operations": [],
+              "modifier_multiplier": 1.0,
+              "modifier_phrase": null,
+              "modifier_token_ids": [],
+              "modifier_strategy": null,
+              "dependency_adjusted_positive": 0.0,
+              "dependency_adjusted_negative": 0.125,
+              "contrast_multiplier": 1.0,
+              "contrast_role": null,
+              "contrast_marker": null,
+              "contrast_marker_id": null,
+              "contrast_strategy": null,
+              "literature_multiplier": 1.0,
+              "weighted_positive": 0.0,
+              "weighted_negative": 0.125
+            }
+          ],
+          "hisnet_positive_score": 0.0,
+          "hisnet_negative_score": 0.125,
+          "hisnet_prediction": "negative",
+          "positive_score": 0.0,
+          "negative_score": 0.125,
+          "prediction": "negative"
+        },
+        {
+          "sentence_index": 1,
+          "text": "m",
+          "dependency_tokens": [
+            {
+              "deprel": "root",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 0,
+              "id": 5,
+              "lemma": "m",
+              "text": "m",
+              "upos": "NOUN",
+              "sentence_index": 1,
+              "local_id": 1,
+              "local_head": 0
+            }
+          ],
+          "scopes": [],
+          "hisnet_positive_score": 0,
+          "hisnet_negative_score": 0,
+          "hisnet_prediction": "neutral",
+          "positive_score": 0,
+          "negative_score": 0,
+          "prediction": "neutral"
+        }
+      ],
+      "dependency_prediction": "negative",
+      "dependency_positive_score": 0.0,
+      "dependency_negative_score": 0.125
+    }
+  },
+  {
+    "system": "lw_hisnet_dp",
+    "row_id": 447,
+    "text": "Daha çnce kullandım böyle değildi sanki içine limon kolanyası basmışlar gibi bir ürün kesinlikle almanızı tavsiye etmem",
+    "gold": "negative",
+    "before": {
+      "prediction": "neutral",
+      "positive_score": 0.125,
+      "negative_score": 0.16666666666666666,
+      "scopes": [
+        {
+          "word": "almanızı",
+          "root": "al",
+          "positive": 0.0,
+          "negative": 0.16666666666666666,
+          "sentiment_token": {
+            "id": 15,
+            "word": "almanızı",
+            "lemma": "al",
+            "upos": "VERB",
+            "head": 16,
+            "deprel": "obj",
+            "alignment_strategy": "exact_surface",
+            "fragment_token_ids": [
+              15
+            ],
+            "reconstructed_surface": null
+          },
+          "target": {
+            "id": 13,
+            "word": "ürün",
+            "lemma": "ürün",
+            "root": "ürün",
+            "upos": "NOUN",
+            "deprel": "obj"
+          },
+          "target_strategy": "direct_object",
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "alignment_strategy": "exact_surface",
+          "fragment_token_ids": [
+            15
+          ],
+          "reconstructed_surface": null,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.0,
+          "original_negative": 0.16666666666666666,
+          "adjusted_positive": 0.0,
+          "adjusted_negative": 0.16666666666666666,
+          "operations": [],
+          "modifier_multiplier": 1.0,
+          "modifier_phrase": null,
+          "modifier_token_ids": [],
+          "modifier_strategy": null,
+          "dependency_adjusted_positive": 0.0,
+          "dependency_adjusted_negative": 0.16666666666666666,
+          "contrast_multiplier": 1.0,
+          "contrast_role": null,
+          "contrast_marker": null,
+          "contrast_marker_id": null,
+          "contrast_strategy": null,
+          "literature_multiplier": 1.0,
+          "weighted_positive": 0.0,
+          "weighted_negative": 0.16666666666666666
+        },
+        {
+          "word": "tavsiye",
+          "root": "tavsiye",
+          "positive": 0.125,
+          "negative": 0.0,
+          "sentiment_token": {
+            "id": 16,
+            "word": "tavsiye",
+            "lemma": "tavsiye",
+            "upos": "NOUN",
+            "head": 5,
+            "deprel": "conj",
+            "alignment_strategy": "exact_surface",
+            "fragment_token_ids": [
+              16
+            ],
+            "reconstructed_surface": null
+          },
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [
+            {
+              "id": 6,
+              "word": "sanki",
+              "lemma": "sanki",
+              "deprel": "advmod"
+            }
+          ],
+          "negations": [
+            {
+              "id": 17,
+              "word": "etmem",
+              "lemma": "et",
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+            },
+            {
+              "id": 5,
+              "word": "değildi",
+              "lemma": "değil",
+              "deprel": "root",
+              "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past"
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "alignment_strategy": "exact_surface",
+          "fragment_token_ids": [
+            16
+          ],
+          "reconstructed_surface": null,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.125,
+          "original_negative": 0.0,
+          "adjusted_positive": 0.125,
+          "adjusted_negative": 0.0,
+          "operations": [
+            "modifier_detected"
+          ],
+          "modifier_multiplier": 1.0,
+          "modifier_phrase": null,
+          "modifier_token_ids": [],
+          "modifier_strategy": null,
+          "dependency_adjusted_positive": 0.125,
+          "dependency_adjusted_negative": 0.0,
+          "contrast_multiplier": 1.0,
+          "contrast_role": null,
+          "contrast_marker": null,
+          "contrast_marker_id": null,
+          "contrast_strategy": null,
+          "literature_multiplier": 1.0,
+          "weighted_positive": 0.125,
+          "weighted_negative": 0.0
+        }
+      ],
+      "sentences": [
+        {
+          "sentence_index": 0,
+          "text": "Daha çnce kullandım böyle değildi sanki içine limon kolanyası basmışlar gibi bir ürün kesinlikle almanızı tavsiye etmem",
+          "dependency_tokens": [
+            {
+              "deprel": "advmod:emph",
+              "feats": null,
+              "head": 2,
+              "id": 1,
+              "lemma": "daha",
+              "text": "Daha",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 1,
+              "local_head": 2
+            },
+            {
+              "deprel": "advmod",
+              "feats": null,
+              "head": 3,
+              "id": 2,
+              "lemma": "çnce",
+              "text": "çnce",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 2,
+              "local_head": 3
+            },
+            {
+              "deprel": "csubj",
+              "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past",
+              "head": 5,
+              "id": 3,
+              "lemma": "kullan",
+              "text": "kullandım",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 3,
+              "local_head": 5
+            },
+            {
+              "deprel": "advmod",
+              "feats": null,
+              "head": 5,
+              "id": 4,
+              "lemma": "böyle",
+              "text": "böyle",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 4,
+              "local_head": 5
+            },
+            {
+              "deprel": "root",
+              "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past",
+              "head": 0,
+              "id": 5,
+              "lemma": "değil",
+              "text": "değildi",
+              "upos": "AUX",
+              "sentence_index": 0,
+              "local_id": 5,
+              "local_head": 0
+            },
+            {
+              "deprel": "advmod",
+              "feats": null,
+              "head": 16,
+              "id": 6,
+              "lemma": "sanki",
+              "text": "sanki",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 6,
+              "local_head": 16
+            },
+            {
+              "deprel": "nmod",
+              "feats": "Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3",
+              "head": 10,
+              "id": 7,
+              "lemma": "iç",
+              "text": "içine",
+              "upos": "ADJ",
+              "sentence_index": 0,
+              "local_id": 7,
+              "local_head": 10
+            },
+            {
+              "deprel": "nmod:poss",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 9,
+              "id": 8,
+              "lemma": "limon",
+              "text": "limon",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 8,
+              "local_head": 9
+            },
+            {
+              "deprel": "nsubj",
+              "feats": "Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3",
+              "head": 10,
+              "id": 9,
+              "lemma": "kolanya",
+              "text": "kolanyası",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 9,
+              "local_head": 10
+            },
+            {
+              "deprel": "advcl",
+              "feats": "Aspect=Perf|Evident=Nfh|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Past",
+              "head": 16,
+              "id": 10,
+              "lemma": "bas",
+              "text": "basmışlar",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 10,
+              "local_head": 16
+            },
+            {
+              "deprel": "case",
+              "feats": null,
+              "head": 10,
+              "id": 11,
+              "lemma": "gibi",
+              "text": "gibi",
+              "upos": "ADP",
+              "sentence_index": 0,
+              "local_id": 11,
+              "local_head": 10
+            },
+            {
+              "deprel": "det",
+              "feats": null,
+              "head": 13,
+              "id": 12,
+              "lemma": "bir",
+              "text": "bir",
+              "upos": "DET",
+              "sentence_index": 0,
+              "local_id": 12,
+              "local_head": 13
+            },
+            {
+              "deprel": "obj",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 15,
+              "id": 13,
+              "lemma": "ürün",
+              "text": "ürün",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 13,
+              "local_head": 15
+            },
+            {
+              "deprel": "obl",
+              "feats": "Case=Ins|Number=Sing|Person=3",
+              "head": 15,
+              "id": 14,
+              "lemma": "kesinlik",
+              "text": "kesinlikle",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 14,
+              "local_head": 15
+            },
+            {
+              "deprel": "obj",
+              "feats": "Aspect=Perf|Case=Acc|Mood=Ind|Number[psor]=Plur|Person[psor]=2|Polarity=Pos|Tense=Pres|VerbForm=Vnoun",
+              "head": 16,
+              "id": 15,
+              "lemma": "al",
+              "text": "almanızı",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 15,
+              "local_head": 16
+            },
+            {
+              "deprel": "conj",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 5,
+              "id": 16,
+              "lemma": "tavsiye",
+              "text": "tavsiye",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 16,
+              "local_head": 5
+            },
+            {
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres",
+              "head": 16,
+              "id": 17,
+              "lemma": "et",
+              "text": "etmem",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 17,
+              "local_head": 16
+            }
+          ],
+          "scopes": [
+            {
+              "word": "almanızı",
+              "root": "al",
+              "positive": 0.0,
+              "negative": 0.16666666666666666,
+              "sentiment_token": {
+                "id": 15,
+                "word": "almanızı",
+                "lemma": "al",
+                "upos": "VERB",
+                "head": 16,
+                "deprel": "obj",
+                "alignment_strategy": "exact_surface",
+                "fragment_token_ids": [
+                  15
+                ],
+                "reconstructed_surface": null
+              },
+              "target": {
+                "id": 13,
+                "word": "ürün",
+                "lemma": "ürün",
+                "root": "ürün",
+                "upos": "NOUN",
+                "deprel": "obj"
+              },
+              "target_strategy": "direct_object",
+              "modifiers": [],
+              "negations": [],
+              "contrast": null,
+              "alignment_status": "matched",
+              "alignment_strategy": "exact_surface",
+              "fragment_token_ids": [
+                15
+              ],
+              "reconstructed_surface": null,
+              "active_sentiment": true,
+              "contextual_role": "opinion",
+              "suppression_reason": null,
+              "original_positive": 0.0,
+              "original_negative": 0.16666666666666666,
+              "adjusted_positive": 0.0,
+              "adjusted_negative": 0.16666666666666666,
+              "operations": [],
+              "modifier_multiplier": 1.0,
+              "modifier_phrase": null,
+              "modifier_token_ids": [],
+              "modifier_strategy": null,
+              "dependency_adjusted_positive": 0.0,
+              "dependency_adjusted_negative": 0.16666666666666666,
+              "contrast_multiplier": 1.0,
+              "contrast_role": null,
+              "contrast_marker": null,
+              "contrast_marker_id": null,
+              "contrast_strategy": null,
+              "literature_multiplier": 1.0,
+              "weighted_positive": 0.0,
+              "weighted_negative": 0.16666666666666666
+            },
+            {
+              "word": "tavsiye",
+              "root": "tavsiye",
+              "positive": 0.125,
+              "negative": 0.0,
+              "sentiment_token": {
+                "id": 16,
+                "word": "tavsiye",
+                "lemma": "tavsiye",
+                "upos": "NOUN",
+                "head": 5,
+                "deprel": "conj",
+                "alignment_strategy": "exact_surface",
+                "fragment_token_ids": [
+                  16
+                ],
+                "reconstructed_surface": null
+              },
+              "target": null,
+              "target_strategy": null,
+              "modifiers": [
+                {
+                  "id": 6,
+                  "word": "sanki",
+                  "lemma": "sanki",
+                  "deprel": "advmod"
+                }
+              ],
+              "negations": [
+                {
+                  "id": 17,
+                  "word": "etmem",
+                  "lemma": "et",
+                  "deprel": "compound:lvc",
+                  "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+                },
+                {
+                  "id": 5,
+                  "word": "değildi",
+                  "lemma": "değil",
+                  "deprel": "root",
+                  "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past"
+                }
+              ],
+              "contrast": null,
+              "alignment_status": "matched",
+              "alignment_strategy": "exact_surface",
+              "fragment_token_ids": [
+                16
+              ],
+              "reconstructed_surface": null,
+              "active_sentiment": true,
+              "contextual_role": "opinion",
+              "suppression_reason": null,
+              "original_positive": 0.125,
+              "original_negative": 0.0,
+              "adjusted_positive": 0.125,
+              "adjusted_negative": 0.0,
+              "operations": [
+                "modifier_detected"
+              ],
+              "modifier_multiplier": 1.0,
+              "modifier_phrase": null,
+              "modifier_token_ids": [],
+              "modifier_strategy": null,
+              "dependency_adjusted_positive": 0.125,
+              "dependency_adjusted_negative": 0.0,
+              "contrast_multiplier": 1.0,
+              "contrast_role": null,
+              "contrast_marker": null,
+              "contrast_marker_id": null,
+              "contrast_strategy": null,
+              "literature_multiplier": 1.0,
+              "weighted_positive": 0.125,
+              "weighted_negative": 0.0
+            }
+          ],
+          "hisnet_positive_score": 0.125,
+          "hisnet_negative_score": 0.16666666666666666,
+          "hisnet_prediction": "neutral",
+          "positive_score": 0.125,
+          "negative_score": 0.16666666666666666,
+          "prediction": "neutral"
+        }
+      ],
+      "dependency_prediction": "neutral",
+      "dependency_positive_score": 0.125,
+      "dependency_negative_score": 0.16666666666666666
+    },
+    "after": {
+      "prediction": "negative",
+      "positive_score": 0.0,
+      "negative_score": 0.29166666666666663,
+      "scopes": [
+        {
+          "word": "almanızı",
+          "root": "al",
+          "positive": 0.0,
+          "negative": 0.16666666666666666,
+          "sentiment_token": {
+            "id": 15,
+            "word": "almanızı",
+            "lemma": "al",
+            "upos": "VERB",
+            "head": 16,
+            "deprel": "obj",
+            "alignment_strategy": "exact_surface",
+            "fragment_token_ids": [
+              15
+            ],
+            "reconstructed_surface": null
+          },
+          "target": {
+            "id": 13,
+            "word": "ürün",
+            "lemma": "ürün",
+            "root": "ürün",
+            "upos": "NOUN",
+            "deprel": "obj"
+          },
+          "target_strategy": "direct_object",
+          "modifiers": [],
+          "negations": [],
+          "contrast": null,
+          "alignment_status": "matched",
+          "alignment_strategy": "exact_surface",
+          "fragment_token_ids": [
+            15
+          ],
+          "reconstructed_surface": null,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.0,
+          "original_negative": 0.16666666666666666,
+          "adjusted_positive": 0.0,
+          "adjusted_negative": 0.16666666666666666,
+          "operations": [],
+          "modifier_multiplier": 1.0,
+          "modifier_phrase": null,
+          "modifier_token_ids": [],
+          "modifier_strategy": null,
+          "dependency_adjusted_positive": 0.0,
+          "dependency_adjusted_negative": 0.16666666666666666,
+          "contrast_multiplier": 1.0,
+          "contrast_role": null,
+          "contrast_marker": null,
+          "contrast_marker_id": null,
+          "contrast_strategy": null,
+          "literature_multiplier": 1.0,
+          "weighted_positive": 0.0,
+          "weighted_negative": 0.16666666666666666
+        },
+        {
+          "word": "tavsiye",
+          "root": "tavsiye",
+          "positive": 0.125,
+          "negative": 0.0,
+          "sentiment_token": {
+            "id": 16,
+            "word": "tavsiye",
+            "lemma": "tavsiye",
+            "upos": "NOUN",
+            "head": 5,
+            "deprel": "conj",
+            "alignment_strategy": "exact_surface",
+            "fragment_token_ids": [
+              16
+            ],
+            "reconstructed_surface": null
+          },
+          "target": null,
+          "target_strategy": null,
+          "modifiers": [
+            {
+              "id": 6,
+              "word": "sanki",
+              "lemma": "sanki",
+              "deprel": "advmod"
+            }
+          ],
+          "negations": [
+            {
+              "id": 17,
+              "word": "etmem",
+              "lemma": "et",
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+            }
+          ],
+          "contrast": null,
+          "alignment_status": "matched",
+          "alignment_strategy": "exact_surface",
+          "fragment_token_ids": [
+            16
+          ],
+          "reconstructed_surface": null,
+          "active_sentiment": true,
+          "contextual_role": "opinion",
+          "suppression_reason": null,
+          "original_positive": 0.125,
+          "original_negative": 0.0,
+          "adjusted_positive": 0.0,
+          "adjusted_negative": 0.125,
+          "operations": [
+            "negation_flip",
+            "modifier_detected"
+          ],
+          "modifier_multiplier": 1.0,
+          "modifier_phrase": null,
+          "modifier_token_ids": [],
+          "modifier_strategy": null,
+          "dependency_adjusted_positive": 0.0,
+          "dependency_adjusted_negative": 0.125,
+          "contrast_multiplier": 1.0,
+          "contrast_role": null,
+          "contrast_marker": null,
+          "contrast_marker_id": null,
+          "contrast_strategy": null,
+          "literature_multiplier": 1.0,
+          "weighted_positive": 0.0,
+          "weighted_negative": 0.125
+        }
+      ],
+      "sentences": [
+        {
+          "sentence_index": 0,
+          "text": "Daha çnce kullandım böyle değildi sanki içine limon kolanyası basmışlar gibi bir ürün kesinlikle almanızı tavsiye etmem",
+          "dependency_tokens": [
+            {
+              "deprel": "advmod:emph",
+              "feats": null,
+              "head": 2,
+              "id": 1,
+              "lemma": "daha",
+              "text": "Daha",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 1,
+              "local_head": 2
+            },
+            {
+              "deprel": "advmod",
+              "feats": null,
+              "head": 3,
+              "id": 2,
+              "lemma": "çnce",
+              "text": "çnce",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 2,
+              "local_head": 3
+            },
+            {
+              "deprel": "csubj",
+              "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Polarity=Pos|Tense=Past",
+              "head": 5,
+              "id": 3,
+              "lemma": "kullan",
+              "text": "kullandım",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 3,
+              "local_head": 5
+            },
+            {
+              "deprel": "advmod",
+              "feats": null,
+              "head": 5,
+              "id": 4,
+              "lemma": "böyle",
+              "text": "böyle",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 4,
+              "local_head": 5
+            },
+            {
+              "deprel": "root",
+              "feats": "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past",
+              "head": 0,
+              "id": 5,
+              "lemma": "değil",
+              "text": "değildi",
+              "upos": "AUX",
+              "sentence_index": 0,
+              "local_id": 5,
+              "local_head": 0
+            },
+            {
+              "deprel": "advmod",
+              "feats": null,
+              "head": 16,
+              "id": 6,
+              "lemma": "sanki",
+              "text": "sanki",
+              "upos": "ADV",
+              "sentence_index": 0,
+              "local_id": 6,
+              "local_head": 16
+            },
+            {
+              "deprel": "nmod",
+              "feats": "Case=Dat|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3",
+              "head": 10,
+              "id": 7,
+              "lemma": "iç",
+              "text": "içine",
+              "upos": "ADJ",
+              "sentence_index": 0,
+              "local_id": 7,
+              "local_head": 10
+            },
+            {
+              "deprel": "nmod:poss",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 9,
+              "id": 8,
+              "lemma": "limon",
+              "text": "limon",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 8,
+              "local_head": 9
+            },
+            {
+              "deprel": "nsubj",
+              "feats": "Case=Nom|Number=Sing|Number[psor]=Sing|Person=3|Person[psor]=3",
+              "head": 10,
+              "id": 9,
+              "lemma": "kolanya",
+              "text": "kolanyası",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 9,
+              "local_head": 10
+            },
+            {
+              "deprel": "advcl",
+              "feats": "Aspect=Perf|Evident=Nfh|Mood=Ind|Number=Plur|Person=3|Polarity=Pos|Tense=Past",
+              "head": 16,
+              "id": 10,
+              "lemma": "bas",
+              "text": "basmışlar",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 10,
+              "local_head": 16
+            },
+            {
+              "deprel": "case",
+              "feats": null,
+              "head": 10,
+              "id": 11,
+              "lemma": "gibi",
+              "text": "gibi",
+              "upos": "ADP",
+              "sentence_index": 0,
+              "local_id": 11,
+              "local_head": 10
+            },
+            {
+              "deprel": "det",
+              "feats": null,
+              "head": 13,
+              "id": 12,
+              "lemma": "bir",
+              "text": "bir",
+              "upos": "DET",
+              "sentence_index": 0,
+              "local_id": 12,
+              "local_head": 13
+            },
+            {
+              "deprel": "obj",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 15,
+              "id": 13,
+              "lemma": "ürün",
+              "text": "ürün",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 13,
+              "local_head": 15
+            },
+            {
+              "deprel": "obl",
+              "feats": "Case=Ins|Number=Sing|Person=3",
+              "head": 15,
+              "id": 14,
+              "lemma": "kesinlik",
+              "text": "kesinlikle",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 14,
+              "local_head": 15
+            },
+            {
+              "deprel": "obj",
+              "feats": "Aspect=Perf|Case=Acc|Mood=Ind|Number[psor]=Plur|Person[psor]=2|Polarity=Pos|Tense=Pres|VerbForm=Vnoun",
+              "head": 16,
+              "id": 15,
+              "lemma": "al",
+              "text": "almanızı",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 15,
+              "local_head": 16
+            },
+            {
+              "deprel": "conj",
+              "feats": "Case=Nom|Number=Sing|Person=3",
+              "head": 5,
+              "id": 16,
+              "lemma": "tavsiye",
+              "text": "tavsiye",
+              "upos": "NOUN",
+              "sentence_index": 0,
+              "local_id": 16,
+              "local_head": 5
+            },
+            {
+              "deprel": "compound:lvc",
+              "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres",
+              "head": 16,
+              "id": 17,
+              "lemma": "et",
+              "text": "etmem",
+              "upos": "VERB",
+              "sentence_index": 0,
+              "local_id": 17,
+              "local_head": 16
+            }
+          ],
+          "scopes": [
+            {
+              "word": "almanızı",
+              "root": "al",
+              "positive": 0.0,
+              "negative": 0.16666666666666666,
+              "sentiment_token": {
+                "id": 15,
+                "word": "almanızı",
+                "lemma": "al",
+                "upos": "VERB",
+                "head": 16,
+                "deprel": "obj",
+                "alignment_strategy": "exact_surface",
+                "fragment_token_ids": [
+                  15
+                ],
+                "reconstructed_surface": null
+              },
+              "target": {
+                "id": 13,
+                "word": "ürün",
+                "lemma": "ürün",
+                "root": "ürün",
+                "upos": "NOUN",
+                "deprel": "obj"
+              },
+              "target_strategy": "direct_object",
+              "modifiers": [],
+              "negations": [],
+              "contrast": null,
+              "alignment_status": "matched",
+              "alignment_strategy": "exact_surface",
+              "fragment_token_ids": [
+                15
+              ],
+              "reconstructed_surface": null,
+              "active_sentiment": true,
+              "contextual_role": "opinion",
+              "suppression_reason": null,
+              "original_positive": 0.0,
+              "original_negative": 0.16666666666666666,
+              "adjusted_positive": 0.0,
+              "adjusted_negative": 0.16666666666666666,
+              "operations": [],
+              "modifier_multiplier": 1.0,
+              "modifier_phrase": null,
+              "modifier_token_ids": [],
+              "modifier_strategy": null,
+              "dependency_adjusted_positive": 0.0,
+              "dependency_adjusted_negative": 0.16666666666666666,
+              "contrast_multiplier": 1.0,
+              "contrast_role": null,
+              "contrast_marker": null,
+              "contrast_marker_id": null,
+              "contrast_strategy": null,
+              "literature_multiplier": 1.0,
+              "weighted_positive": 0.0,
+              "weighted_negative": 0.16666666666666666
+            },
+            {
+              "word": "tavsiye",
+              "root": "tavsiye",
+              "positive": 0.125,
+              "negative": 0.0,
+              "sentiment_token": {
+                "id": 16,
+                "word": "tavsiye",
+                "lemma": "tavsiye",
+                "upos": "NOUN",
+                "head": 5,
+                "deprel": "conj",
+                "alignment_strategy": "exact_surface",
+                "fragment_token_ids": [
+                  16
+                ],
+                "reconstructed_surface": null
+              },
+              "target": null,
+              "target_strategy": null,
+              "modifiers": [
+                {
+                  "id": 6,
+                  "word": "sanki",
+                  "lemma": "sanki",
+                  "deprel": "advmod"
+                }
+              ],
+              "negations": [
+                {
+                  "id": 17,
+                  "word": "etmem",
+                  "lemma": "et",
+                  "deprel": "compound:lvc",
+                  "feats": "Aspect=Hab|Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Pres"
+                }
+              ],
+              "contrast": null,
+              "alignment_status": "matched",
+              "alignment_strategy": "exact_surface",
+              "fragment_token_ids": [
+                16
+              ],
+              "reconstructed_surface": null,
+              "active_sentiment": true,
+              "contextual_role": "opinion",
+              "suppression_reason": null,
+              "original_positive": 0.125,
+              "original_negative": 0.0,
+              "adjusted_positive": 0.0,
+              "adjusted_negative": 0.125,
+              "operations": [
+                "negation_flip",
+                "modifier_detected"
+              ],
+              "modifier_multiplier": 1.0,
+              "modifier_phrase": null,
+              "modifier_token_ids": [],
+              "modifier_strategy": null,
+              "dependency_adjusted_positive": 0.0,
+              "dependency_adjusted_negative": 0.125,
+              "contrast_multiplier": 1.0,
+              "contrast_role": null,
+              "contrast_marker": null,
+              "contrast_marker_id": null,
+              "contrast_strategy": null,
+              "literature_multiplier": 1.0,
+              "weighted_positive": 0.0,
+              "weighted_negative": 0.125
+            }
+          ],
+          "hisnet_positive_score": 0.125,
+          "hisnet_negative_score": 0.16666666666666666,
+          "hisnet_prediction": "neutral",
+          "positive_score": 0.0,
+          "negative_score": 0.29166666666666663,
+          "prediction": "negative"
+        }
+      ],
+      "dependency_prediction": "negative",
+      "dependency_positive_score": 0.0,
+      "dependency_negative_score": 0.29166666666666663
+    }
+  }
+]

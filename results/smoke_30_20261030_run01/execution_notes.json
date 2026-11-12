@@ -1,0 +1,15 @@
+﻿{
+    "status":  "incomplete_preserved",
+    "resume_note":  "First batch was persisted before interruption. Resumed with the same model, source fingerprint, fixture and settings.",
+    "model":  "qwen3:32b",
+    "excluded_run":  "smoke_30_20261030_4b_run01: cancelled during classical phase; no 4B LLM predictions used.",
+    "timing_note":  "Use persisted attempt records across sessions, not only the final process-local get_stats counters.",
+    "resume_20261030":  {
+                            "started_utc":  "2026-10-30T19:31:11.0793272Z",
+                            "saved_llm_rows_before_resume":  27,
+                            "saved_dp_llm_rows_before_resume":  0,
+                            "command":  ".venv\\Scripts\\python.exe -u -m scripts.run_six_model_smoke --output results/smoke_30_20261030_run01 --model qwen3:32b",
+                            "note":  "Continue the same manifest-checked run; no classifier or runner source changes.",
+                            "outcome":  "Resume rejected by manifest validation before predictions. Ollama changed from 0.40.11 to 0.40.13; qwen3:32b model digest unchanged. Fresh full run started in smoke_30_20261030_run02; no old predictions copied."
+                        }
+}

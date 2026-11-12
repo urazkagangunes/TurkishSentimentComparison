@@ -1,0 +1,423 @@
+﻿threshold,system,row_id,text,gold,before,after,positive_score,negative_score,net_score
+0.07,hisnet,62,. Kaş üzerinde ayrı bir katman varmış gibi duruyor kuruduğu zaman .Tavsiye etmiyorum .,negative,negative,neutral,0.125,0.19230769230769232,-0.06730769230769232
+0.07,hisnet,75,cildi kurulara kesinlikle tavsiye etmiyorum makyaj pütür pütür duruyor,negative,negative,neutral,0.125,0.19230769230769232,-0.06730769230769232
+0.07,hisnet,79,Atopiğe eğilimli kızlarım için banyodan sonra kullanıyorum. Çok faydası oldu nemlendirmesi güzel ve kızımın artık eklem yerlerinde sırtın da filan alerjisi olmuyor,positive,negative,neutral,0.47017045454545453,0.5227272727272727,-0.05255681818181818
+0.07,hisnet,85,Kesinlikle hiçbir etkisi yok bayağı basit ! tavsiye etmem,negative,positive,neutral,0.275,0.21428571428571427,0.06071428571428575
+0.07,hisnet,102,Yeni doğan sipariş ettik normal ıslak mendil geldi ve fiyat farkı var arada bu kadarda olmaz yani yoksa stokta koymayın oraya 😡,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet,326,yuzumun derisini aldi tuyler yerinde duruyo,negative,positive,neutral,0.057291666666666664,0.0,0.057291666666666664
+0.07,hisnet,417,Üründen çok memnundum ancak kenarlarındaki plastik yüzey kırıldı.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet,495,Rengi çok doğal hiç belli olmuyor ama çok etkili değil. bir kaç saate bitiyor etkisi bidaha almayacağım sadece renk tonu güzel.,negative,negative,neutral,0.5974025974025974,0.6666666666666666,-0.06926406926406925
+0.07,hisnet,504,çok pisman oldum aldigima sacimin dipleri kizil oldu uclari hala koyu kahve rengi,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet,652,kullanmaya baslayali çok kisa bir zaman oldu ancak etkisini göstermeye basladi bile.,positive,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet,785,keçe kısmı kuruyor bir süre sonra. islak ve yeterince koyu değil.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet,1043,Çok fazla ince penyesi ona göre alın,negative,negative,neutral,0.1111111111111111,0.16666666666666666,-0.05555555555555555
+0.07,hisnet,1452,Sorunsuz bir şekilde teslim aldım şu süreçte gayet hızlı geldi bile diyebilirim. Bakalım sonuçları da güzel olur umarım,positive,negative,neutral,0.45454545454545453,0.5102272727272728,-0.05568181818181822
+0.07,hisnet,1481,RE ZA LET! Askının teki anyada diğeri konyada felan yani. O kadar kısa ve orantısız ki askıları aşağı inmedi bile.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet,1576,Kuru cildi olanlara tavsiye etmem,neutral,negative,neutral,0.125,0.19230769230769232,-0.06730769230769232
+0.07,hisnet,1627,Denemek icin aldim. Unibaby pamuk mendil kullanıyorum normalde boşuna almışım. Cildi çok ıslak bırakıyor ve silerken elde toplanıyor. Unibaby bu konuda çok çok daha iyi.,negative,negative,neutral,0.6111111111111112,0.6666666666666666,-0.05555555555555547
+0.07,hisnet,1864,Blistexi tek geçerim indirimdeyken yedekli alın derim mağazalarda fiyatı uçmuş,positive,positive,neutral,0.25,0.1875,0.0625
+0.07,hisnet,1943,görseldeki kadar yüksel bel değil renk koyu azıcıkta ama idare eder,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet,1973,Kuaförümün tavsiyesi üzerine aldım gerçekten çok etkili saçlarım uzun süredir hemen hemen aynı tonda kaldı. Boyutu küçük evet ancak haftada 1 kullanımla bayağı bir gidiyo :),positive,negative,neutral,0.175,0.22916666666666666,-0.05416666666666667
+0.07,hisnet,2120,Rengi çok koyu ve yüzü yağlandırıyor,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet,2160,Çok koyu rengi var.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet,2234,Ucu çok ince hiç kolay sürülmüyor,negative,negative,neutral,0.4444444444444444,0.5,-0.05555555555555558
+0.07,hisnet,2302,İndirimdeyken aldım ve bu üründen vazgeçmeyeceğimi söyleyebilirim. Hem nemlendirici hem de makyaj bazı olarak kullanabilirsiniz.,positive,positive,neutral,0.25,0.1875,0.0625
+0.07,hisnet,2419,çok güzel kullanisli bir ürün. fiyatına göre canavar gibi🙃,positive,positive,neutral,0.45454545454545453,0.4,0.05454545454545451
+0.07,hisnet,2480,güzel ürün ama biraz sert geliyor presicion clean başlığa göre,positive,positive,neutral,0.45454545454545453,0.3888888888888889,0.06565656565656564
+0.07,hisnet,2697,Böyle soft değil koyu olan renklerini yolladılar.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet,2953,Hızlı ve eksıksız gonderim👍🏻fakat ağdası dıger yorumlarda bahsedıldıgı gıbı Farklı gelıyor ve çekerken de kopuyor o yüzden ağda pek bekledıgım gıbı degıl😕,neutral,positive,neutral,0.125,0.07083333333333333,0.05416666666666667
+0.07,dp_hisnet,154,Ürün neredeyse bir ayda geldi.saçim çok koyu olmamasına rağmen rengi belli etmedi.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,dp_hisnet,208,kokusu hoş bir ürün. İşe yaradı mı pek emin değilim.,negative,negative,neutral,0.125,0.1875,-0.0625
+0.07,dp_hisnet,261,Biraz zor dağılıyor sanki ama rengi çok güzel tam yazın kullanılacak bir ürün hafif parlaklık da veriyor,neutral,positive,neutral,0.6628787878787878,0.6060606060606061,0.05681818181818177
+0.07,dp_hisnet,325,Iki tane ampulle birlikte geldi. Dermaroller ile birlikte kullandım. Fayda sağlayıp sağlamadığım konusunda bir fikrim yok devam etmedim. Tekrar tekrar almak istemedim eğer fayda sağlasın ve düzenli kullanayım diyorsanız bir kaç paket alın. Ama bu fiyata daha uygun ürünler de bulabilirsiniz,neutral,positive,neutral,0.625,0.5684523809523809,0.05654761904761907
+0.07,dp_hisnet,495,Rengi çok doğal hiç belli olmuyor ama çok etkili değil. bir kaç saate bitiyor etkisi bidaha almayacağım sadece renk tonu güzel.,negative,negative,neutral,0.5974025974025974,0.6666666666666666,-0.06926406926406925
+0.07,dp_hisnet,504,çok pisman oldum aldigima sacimin dipleri kizil oldu uclari hala koyu kahve rengi,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,dp_hisnet,602,Ürünü daha önce almıştım. Çok memnun kaldım fakat tekrar aldım inanılmaz kötü kokusu ile birlikte geldi dikişleri aynı değil. Memnun kalmadım.,negative,negative,neutral,1.0,1.0666666666666667,-0.06666666666666665
+0.07,dp_hisnet,724,Kılları biraz sert geldi ama güzel zamanla yumuşar diye düşünüyorum,neutral,positive,neutral,0.45454545454545453,0.3888888888888889,0.06565656565656564
+0.07,dp_hisnet,774,Tek yıkamada tüm rengi ve baskısı gitti..,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,dp_hisnet,785,keçe kısmı kuruyor bir süre sonra. islak ve yeterince koyu değil.,negative,positive,neutral,0.0625,0.0,0.0625
+0.07,dp_hisnet,1043,Çok fazla ince penyesi ona göre alın,negative,negative,neutral,0.1111111111111111,0.16666666666666666,-0.05555555555555555
+0.07,dp_hisnet,1137,120 numara ama tenime göre koyu sevmedim,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,dp_hisnet,1392,Paketleme oldukça iyi yapılmıştı.hiç dökülmeden kargolayan loreal ekibine ve kargomu hızlı şekilde bana ulaştıran güleryüzlü trendyolekspres kargo çalışanlarına sevgilerimi yolluyorum.çok küçüktu diye elestirenlere de zaten 200 ml oldugu belirtilmis normal sampuanlar 520 ml iken ne bekliyordunuz diye sormak istiyorum,positive,positive,neutral,0.6111111111111112,0.55,0.061111111111111116
+0.07,dp_hisnet,1417,görselde bariz pembe renkli duran hatta yorumlarda da pembe olduğu belirtilen bu allık çok koyu bronz kahve gibi bir renk olarak geldi bana. onun dışında görsel ile elime ulaşan ürünün kutusundaki herşey aynı. anlam veremedim. imkan olsa da görsel eklesem.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,dp_hisnet,1434,Yorumlara göre aldım fena değil ama beklentiniz çok yüksek tutmayın yenı oluşan lekeler için çözüm ama daha uzun vadede oluşmuş seyller için tavsiye etmem,neutral,positive,neutral,0.6527777777777778,0.5916666666666667,0.061111111111111116
+0.07,dp_hisnet,1481,RE ZA LET! Askının teki anyada diğeri konyada felan yani. O kadar kısa ve orantısız ki askıları aşağı inmedi bile.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,dp_hisnet,1864,Blistexi tek geçerim indirimdeyken yedekli alın derim mağazalarda fiyatı uçmuş,positive,positive,neutral,0.25,0.1875,0.0625
+0.07,dp_hisnet,1943,görseldeki kadar yüksel bel değil renk koyu azıcıkta ama idare eder,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,dp_hisnet,1971,Ürünün sürümü güzel ve kolay fakat ürünün kendi kabı yani eyeliner çok kötü kırılacakmış gibi açıp kapatırken gıcırtı çıkartıyor. Hediyelik de almıştım ama vermeye çekiniyorum çok basit bir plastik kabı var. Ayrıca 4-5 ürün aldım ve hiçbirşekilde hediye felan yok :) hediyesinde değiliz alırken bir ürünü fakat onca hediye yorumuna şaşırdım. Kolay gelsin.,neutral,positive,neutral,1.5128787878787877,1.4476190476190476,0.06525974025974013
+0.07,dp_hisnet,1993,Hızlı emiliyor ama makyaj altına kullanım için uygun değil aman aman bir nemlendirmesi yok bitsin diye kullanıyorum. Satıcı çok güzel paketlemişti hızla elime ulaştı,neutral,negative,neutral,0.7045454545454546,0.7642857142857143,-0.05974025974025976
+0.07,dp_hisnet,2120,Rengi çok koyu ve yüzü yağlandırıyor,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,dp_hisnet,2160,Çok koyu rengi var.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,dp_hisnet,2234,Ucu çok ince hiç kolay sürülmüyor,negative,negative,neutral,0.4444444444444444,0.5,-0.05555555555555558
+0.07,dp_hisnet,2306,Dermatoloğumun önerisiyle başladığım bir ürün. Yaklaşık 3 yıldır kullanıyorum. Cildim çok hassas olduğu için diğer ürünlerin yaptığı tahriş sorunuyla karşılaşmıyorum. Trendyolda sık sık indirime giriyor. Düşünmeden alın derim.,positive,positive,neutral,0.25,0.1875,0.0625
+0.07,dp_hisnet,2419,çok güzel kullanisli bir ürün. fiyatına göre canavar gibi🙃,positive,positive,neutral,0.45454545454545453,0.4,0.05454545454545451
+0.07,dp_hisnet,2447,çok eskiden almistim sacimdan cikmadi diye sinir olup cope atmistim ama bu sefer çok çok az uyguladin ve cikti insallah işe yarar,positive,negative,neutral,0.1875,0.25,-0.0625
+0.07,dp_hisnet,2480,güzel ürün ama biraz sert geliyor presicion clean başlığa göre,positive,positive,neutral,0.45454545454545453,0.3888888888888889,0.06565656565656564
+0.07,dp_hisnet,2697,Böyle soft değil koyu olan renklerini yolladılar.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet_dp,102,Yeni doğan sipariş ettik normal ıslak mendil geldi ve fiyat farkı var arada bu kadarda olmaz yani yoksa stokta koymayın oraya 😡,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet_dp,326,yuzumun derisini aldi tuyler yerinde duruyo,negative,positive,neutral,0.057291666666666664,0.0,0.057291666666666664
+0.07,hisnet_dp,417,Üründen çok memnundum ancak kenarlarındaki plastik yüzey kırıldı.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet_dp,495,Rengi çok doğal hiç belli olmuyor ama çok etkili değil. bir kaç saate bitiyor etkisi bidaha almayacağım sadece renk tonu güzel.,negative,negative,neutral,0.5974025974025974,0.6666666666666666,-0.06926406926406925
+0.07,hisnet_dp,504,çok pisman oldum aldigima sacimin dipleri kizil oldu uclari hala koyu kahve rengi,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet_dp,652,kullanmaya baslayali çok kisa bir zaman oldu ancak etkisini göstermeye basladi bile.,positive,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet_dp,724,Kılları biraz sert geldi ama güzel zamanla yumuşar diye düşünüyorum,neutral,positive,neutral,0.45454545454545453,0.3888888888888889,0.06565656565656564
+0.07,hisnet_dp,785,keçe kısmı kuruyor bir süre sonra. islak ve yeterince koyu değil.,negative,positive,neutral,0.0625,0.0,0.0625
+0.07,hisnet_dp,1043,Çok fazla ince penyesi ona göre alın,negative,negative,neutral,0.1111111111111111,0.16666666666666666,-0.05555555555555555
+0.07,hisnet_dp,1434,Yorumlara göre aldım fena değil ama beklentiniz çok yüksek tutmayın yenı oluşan lekeler için çözüm ama daha uzun vadede oluşmuş seyller için tavsiye etmem,neutral,positive,neutral,0.6527777777777778,0.5916666666666667,0.061111111111111116
+0.07,hisnet_dp,1452,Sorunsuz bir şekilde teslim aldım şu süreçte gayet hızlı geldi bile diyebilirim. Bakalım sonuçları da güzel olur umarım,positive,negative,neutral,0.45454545454545453,0.5102272727272728,-0.05568181818181822
+0.07,hisnet_dp,1481,RE ZA LET! Askının teki anyada diğeri konyada felan yani. O kadar kısa ve orantısız ki askıları aşağı inmedi bile.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet_dp,1627,Denemek icin aldim. Unibaby pamuk mendil kullanıyorum normalde boşuna almışım. Cildi çok ıslak bırakıyor ve silerken elde toplanıyor. Unibaby bu konuda çok çok daha iyi.,negative,negative,neutral,0.6111111111111112,0.6666666666666666,-0.05555555555555547
+0.07,hisnet_dp,1864,Blistexi tek geçerim indirimdeyken yedekli alın derim mağazalarda fiyatı uçmuş,positive,positive,neutral,0.25,0.1875,0.0625
+0.07,hisnet_dp,1943,görseldeki kadar yüksel bel değil renk koyu azıcıkta ama idare eder,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet_dp,1973,Kuaförümün tavsiyesi üzerine aldım gerçekten çok etkili saçlarım uzun süredir hemen hemen aynı tonda kaldı. Boyutu küçük evet ancak haftada 1 kullanımla bayağı bir gidiyo :),positive,negative,neutral,0.175,0.22916666666666666,-0.05416666666666667
+0.07,hisnet_dp,1993,Hızlı emiliyor ama makyaj altına kullanım için uygun değil aman aman bir nemlendirmesi yok bitsin diye kullanıyorum. Satıcı çok güzel paketlemişti hızla elime ulaştı,neutral,negative,neutral,0.7045454545454546,0.7642857142857143,-0.05974025974025976
+0.07,hisnet_dp,2120,Rengi çok koyu ve yüzü yağlandırıyor,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet_dp,2160,Çok koyu rengi var.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet_dp,2234,Ucu çok ince hiç kolay sürülmüyor,negative,negative,neutral,0.4444444444444444,0.5,-0.05555555555555558
+0.07,hisnet_dp,2302,İndirimdeyken aldım ve bu üründen vazgeçmeyeceğimi söyleyebilirim. Hem nemlendirici hem de makyaj bazı olarak kullanabilirsiniz.,positive,positive,neutral,0.25,0.1875,0.0625
+0.07,hisnet_dp,2419,çok güzel kullanisli bir ürün. fiyatına göre canavar gibi🙃,positive,positive,neutral,0.45454545454545453,0.4,0.05454545454545451
+0.07,hisnet_dp,2480,güzel ürün ama biraz sert geliyor presicion clean başlığa göre,positive,positive,neutral,0.45454545454545453,0.3888888888888889,0.06565656565656564
+0.07,hisnet_dp,2697,Böyle soft değil koyu olan renklerini yolladılar.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,hisnet_dp,2953,Hızlı ve eksıksız gonderim👍🏻fakat ağdası dıger yorumlarda bahsedıldıgı gıbı Farklı gelıyor ve çekerken de kopuyor o yüzden ağda pek bekledıgım gıbı degıl😕,neutral,positive,neutral,0.125,0.07083333333333333,0.05416666666666667
+0.07,lw_hisnet_dp,7,kargom çok hızlı geldi kokusunu pek beğenmedim üç kez kullandım idare eder,positive,positive,neutral,0.125,0.06,0.065
+0.07,lw_hisnet_dp,102,Yeni doğan sipariş ettik normal ıslak mendil geldi ve fiyat farkı var arada bu kadarda olmaz yani yoksa stokta koymayın oraya 😡,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,lw_hisnet_dp,154,Ürün neredeyse bir ayda geldi.saçim çok koyu olmamasına rağmen rengi belli etmedi.,negative,negative,neutral,0.0,0.06375,-0.06375
+0.07,lw_hisnet_dp,250,Ürün idare eder ama yüzde yağlılık hissi vermesini sevemedim,neutral,positive,neutral,0.06607142857142857,0.0,0.06607142857142857
+0.07,lw_hisnet_dp,326,yuzumun derisini aldi tuyler yerinde duruyo,negative,positive,neutral,0.057291666666666664,0.0,0.057291666666666664
+0.07,lw_hisnet_dp,342,Kaşıntı biraz azaldı. Fakat ürünün boyuna göre fiyatı çok yüksek.,neutral,negative,neutral,0.4316666666666667,0.5,-0.0683333333333333
+0.07,lw_hisnet_dp,504,çok pisman oldum aldigima sacimin dipleri kizil oldu uclari hala koyu kahve rengi,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,lw_hisnet_dp,785,keçe kısmı kuruyor bir süre sonra. islak ve yeterince koyu değil.,negative,positive,neutral,0.0625,0.0,0.0625
+0.07,lw_hisnet_dp,837,kaloteli ve uygun fiyatlı basta biraz sert gi geldi ama sonradan yumusadı,positive,positive,neutral,0.425,0.3706944444444445,0.054305555555555496
+0.07,lw_hisnet_dp,1452,Sorunsuz bir şekilde teslim aldım şu süreçte gayet hızlı geldi bile diyebilirim. Bakalım sonuçları da güzel olur umarım,positive,negative,neutral,0.45454545454545453,0.5102272727272728,-0.05568181818181822
+0.07,lw_hisnet_dp,1457,Ürün yapısı ve rengi çok güzel ama kalıcılık yok,neutral,positive,neutral,0.4636363636363636,0.3964285714285714,0.06720779220779222
+0.07,lw_hisnet_dp,1481,RE ZA LET! Askının teki anyada diğeri konyada felan yani. O kadar kısa ve orantısız ki askıları aşağı inmedi bile.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,lw_hisnet_dp,1627,Denemek icin aldim. Unibaby pamuk mendil kullanıyorum normalde boşuna almışım. Cildi çok ıslak bırakıyor ve silerken elde toplanıyor. Unibaby bu konuda çok çok daha iyi.,negative,negative,neutral,0.6111111111111112,0.6666666666666666,-0.05555555555555547
+0.07,lw_hisnet_dp,1864,Blistexi tek geçerim indirimdeyken yedekli alın derim mağazalarda fiyatı uçmuş,positive,positive,neutral,0.25,0.1875,0.0625
+0.07,lw_hisnet_dp,1884,ürün ıslanmış ve üstünde küfler vardı ama ıslak ve küflü olmasa cidden kumaşı ve kalitesi çok güzel ve kargo çok ama çok yavaş,negative,positive,neutral,1.3136363636363635,1.24375,0.06988636363636358
+0.07,lw_hisnet_dp,1973,Kuaförümün tavsiyesi üzerine aldım gerçekten çok etkili saçlarım uzun süredir hemen hemen aynı tonda kaldı. Boyutu küçük evet ancak haftada 1 kullanımla bayağı bir gidiyo :),positive,positive,neutral,0.21750000000000003,0.16666666666666666,0.05083333333333337
+0.07,lw_hisnet_dp,2302,İndirimdeyken aldım ve bu üründen vazgeçmeyeceğimi söyleyebilirim. Hem nemlendirici hem de makyaj bazı olarak kullanabilirsiniz.,positive,positive,neutral,0.25,0.1875,0.0625
+0.07,lw_hisnet_dp,2697,Böyle soft değil koyu olan renklerini yolladılar.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.07,lw_hisnet_dp,2717,Nemlendirme etkisi uzun süreli severek kullandığım bir ürün. Satıcı çok hızlı.,positive,negative,neutral,0.0,0.06,-0.06
+0.07,lw_hisnet_dp,2897,cildimi iyi nemlendiriyor fakat aydinlanma ve lekelere bir etkisi oldu diyemem 1 aydan fazladir kullaniyorum,neutral,negative,neutral,0.5194444444444445,0.5727083333333334,-0.05326388888888889
+0.07,lw_hisnet_dp,2953,Hızlı ve eksıksız gonderim👍🏻fakat ağdası dıger yorumlarda bahsedıldıgı gıbı Farklı gelıyor ve çekerken de kopuyor o yüzden ağda pek bekledıgım gıbı degıl😕,neutral,positive,neutral,0.125,0.07083333333333333,0.05416666666666667
+0.1,hisnet,7,kargom çok hızlı geldi kokusunu pek beğenmedim üç kez kullandım idare eder,positive,positive,neutral,0.125,0.05,0.075
+0.1,hisnet,17,Ben iade ettim bende kalibi olmadi omuzlari genis ve uzun boylu olanlara süper gider kumasina denecek söz yok,negative,positive,neutral,0.5,0.4101190476190476,0.0898809523809524
+0.1,hisnet,62,. Kaş üzerinde ayrı bir katman varmış gibi duruyor kuruduğu zaman .Tavsiye etmiyorum .,negative,negative,neutral,0.125,0.19230769230769232,-0.06730769230769232
+0.1,hisnet,75,cildi kurulara kesinlikle tavsiye etmiyorum makyaj pütür pütür duruyor,negative,negative,neutral,0.125,0.19230769230769232,-0.06730769230769232
+0.1,hisnet,79,Atopiğe eğilimli kızlarım için banyodan sonra kullanıyorum. Çok faydası oldu nemlendirmesi güzel ve kızımın artık eklem yerlerinde sırtın da filan alerjisi olmuyor,positive,negative,neutral,0.47017045454545453,0.5227272727272727,-0.05255681818181818
+0.1,hisnet,85,Kesinlikle hiçbir etkisi yok bayağı basit ! tavsiye etmem,negative,positive,neutral,0.275,0.21428571428571427,0.06071428571428575
+0.1,hisnet,102,Yeni doğan sipariş ettik normal ıslak mendil geldi ve fiyat farkı var arada bu kadarda olmaz yani yoksa stokta koymayın oraya 😡,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet,144,dermatologumun önerisiyle almıştım roactune tedavisinden sonra hep bunu kullanmıştım ve geri döndüm biodermaya karma veya yağlı bir cildiniz varsa alın aldırın ve nemlendirin efsane oluyor,positive,negative,neutral,0.4107142857142857,0.49242424242424243,-0.08170995670995673
+0.1,hisnet,176,Kış aylarımın vazgeçilmezi. Çok kuruyan ve çatlayan dudakları olanlar alabilirler. Çok güzel nemlendiriyor ve onarıyor.,positive,positive,neutral,0.45454545454545453,0.358974358974359,0.09557109557109555
+0.1,hisnet,273,basit kaldı begenmedım,negative,positive,neutral,0.1,0.0,0.1
+0.1,hisnet,326,yuzumun derisini aldi tuyler yerinde duruyo,negative,positive,neutral,0.057291666666666664,0.0,0.057291666666666664
+0.1,hisnet,398,Normalde bu ürün fondötenli bir ürün ama geldi normal beyaz bir krem önce kullandıklarımla hiç alakası yok tavsiye etmem,negative,negative,neutral,0.625,0.7142857142857143,-0.0892857142857143
+0.1,hisnet,417,Üründen çok memnundum ancak kenarlarındaki plastik yüzey kırıldı.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet,489,fiyat olarak pahali ve 50ml çok az yani ben gunes kremi çok kullanan biriyim ve cabuk bitecegi belli. ama kremsi yapışi çok güzel hemen emiliyor yagli bir his de birakmiyor ciltte beyazlama gorunumu de olusmuyor,positive,positive,neutral,0.45454545454545453,0.37499999999999994,0.07954545454545459
+0.1,hisnet,495,Rengi çok doğal hiç belli olmuyor ama çok etkili değil. bir kaç saate bitiyor etkisi bidaha almayacağım sadece renk tonu güzel.,negative,negative,neutral,0.5974025974025974,0.6666666666666666,-0.06926406926406925
+0.1,hisnet,504,çok pisman oldum aldigima sacimin dipleri kizil oldu uclari hala koyu kahve rengi,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet,510,Gayet güzel yüzünüzü pürüzsüz yapmasını beklemeyin ama işe yarıyor,positive,positive,neutral,0.5795454545454546,0.5,0.07954545454545459
+0.1,hisnet,591,Ürün güzel ama küçük başında biraz sıkıntılı o harici güzel,positive,negative,neutral,0.9090909090909091,1.0,-0.09090909090909094
+0.1,hisnet,601,Hiç güzel değil tavsiye etmiyorum kalotseiz,negative,positive,neutral,0.5795454545454546,0.5,0.07954545454545459
+0.1,hisnet,603,beğendim sürümü kolaylık sağlıyor,neutral,positive,neutral,0.08333333333333333,0.0,0.08333333333333333
+0.1,hisnet,649,elimdeki diger boyayla karıştırdıgım için çok anlayamadım,neutral,negative,neutral,0.0,0.1,-0.1
+0.1,hisnet,652,kullanmaya baslayali çok kisa bir zaman oldu ancak etkisini göstermeye basladi bile.,positive,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet,704,Fotoğraftaki ürün gelmedi.Bana gelen ürünün bel şeridi tam olarak 10 cm korse gibi görünüyor. Bacak boyuda dizimin 2 parmak üzerinde. Beğenmedim istediğim görüntüyü vermedi iade edeceğim.,negative,negative,neutral,0.20833333333333334,0.29166666666666663,-0.08333333333333329
+0.1,hisnet,761,Pahalı fondötenler almama rağmen vazgeçemiyorum senden ❣️ Yanında göndermiş olduğunuz sünger için teşekkürler 🧚🏻‍♀️,positive,positive,neutral,1.0,0.9166666666666666,0.08333333333333337
+0.1,hisnet,772,hızlı kargo ve güzel paketleme. ürünü kullanmaya henüz başladığım için ürün hakkında çok fazla bilgi yazamayacağım. tek kullanımda bile işe yaradı gibi geldi :),positive,negative,neutral,0.47954545454545455,0.55,-0.07045454545454549
+0.1,hisnet,785,keçe kısmı kuruyor bir süre sonra. islak ve yeterince koyu değil.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet,869,Çok beğendiğim bir ürün oldu. Saça gereken nemi ve bakımı sağlıyor,positive,negative,neutral,0.0,0.08333333333333333,-0.08333333333333333
+0.1,hisnet,899,Kurtarıcı aktivitemiz kızım eğlenerek oynuyor yalnız bir de boyama önlüğü şart👍,negative,negative,neutral,0.0,0.07083333333333333,-0.07083333333333333
+0.1,hisnet,1043,Çok fazla ince penyesi ona göre alın,negative,negative,neutral,0.1111111111111111,0.16666666666666666,-0.05555555555555555
+0.1,hisnet,1047,isterse harika ürün olsun paketleme çok kötüydü allık dağılmış halde geldi elime su günlerde evlerden cikamadigimiz için iade etmiyorum ama helalde etmiyorum aldığınız parayı,negative,negative,neutral,1.1875,1.2666666666666668,-0.07916666666666683
+0.1,hisnet,1123,Ürünün kumaşı iki kere yıkamadan sonra keperme yaptı. Giyilemez halde 😡😡,negative,negative,neutral,0.0,0.075,-0.075
+0.1,hisnet,1167,İnanilmaz bir ürün tirnak cevresindeki tum kalinlasmalari kusurlari yok ediyor ve çok çok uzun sure kullanilir bu yogunluktaki bir ürün herkese tavsiye ediyorum manikure gerek kalmiyor,positive,negative,neutral,0.125,0.21428571428571427,-0.08928571428571427
+0.1,hisnet,1222,ebatı aşırı küçük geldi belki de renkleri 5 6 kullanmaya hemen gidicek,negative,negative,neutral,0.0,0.07083333333333333,-0.07083333333333333
+0.1,hisnet,1344,ürün bekledigimden büyük geldi. bir damlası bile aşırı nemlendiriyor. kesinlikle tavsiye ediyorum.,positive,positive,neutral,0.125,0.05,0.075
+0.1,hisnet,1452,Sorunsuz bir şekilde teslim aldım şu süreçte gayet hızlı geldi bile diyebilirim. Bakalım sonuçları da güzel olur umarım,positive,negative,neutral,0.45454545454545453,0.5102272727272728,-0.05568181818181822
+0.1,hisnet,1455,aşırı büyük geniş kollar çok uzun,negative,negative,neutral,0.0,0.09166666666666667,-0.09166666666666667
+0.1,hisnet,1468,Sevmedim çok basit,negative,positive,neutral,0.1,0.0,0.1
+0.1,hisnet,1481,RE ZA LET! Askının teki anyada diğeri konyada felan yani. O kadar kısa ve orantısız ki askıları aşağı inmedi bile.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet,1576,Kuru cildi olanlara tavsiye etmem,neutral,negative,neutral,0.125,0.19230769230769232,-0.06730769230769232
+0.1,hisnet,1627,Denemek icin aldim. Unibaby pamuk mendil kullanıyorum normalde boşuna almışım. Cildi çok ıslak bırakıyor ve silerken elde toplanıyor. Unibaby bu konuda çok çok daha iyi.,negative,negative,neutral,0.6111111111111112,0.6666666666666666,-0.05555555555555547
+0.1,hisnet,1680,Fazla yapışkan bir wax. Ama yinede kullanışlı,neutral,negative,neutral,0.25,0.3333333333333333,-0.08333333333333331
+0.1,hisnet,1691,Gerçekten kokusu çok hoş bir ürün indirimdeyken aldım deneyeceğim. Basma yeri yani hortumu ayrı gönderiliyor boyu uzun kesilmesi gerekiyor,positive,positive,neutral,0.265625,0.16666666666666666,0.09895833333333334
+0.1,hisnet,1826,Pek bir işlevi yoktu,neutral,negative,neutral,0.125,0.21428571428571427,-0.08928571428571427
+0.1,hisnet,1829,Ürün güzel hızlı kargolamıyor ama hassa ciltlilere önermem çok tahriş oluyor,neutral,negative,neutral,0.45454545454545453,0.55,-0.09545454545454551
+0.1,hisnet,1864,Blistexi tek geçerim indirimdeyken yedekli alın derim mağazalarda fiyatı uçmuş,positive,positive,neutral,0.25,0.1875,0.0625
+0.1,hisnet,1943,görseldeki kadar yüksel bel değil renk koyu azıcıkta ama idare eder,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet,1973,Kuaförümün tavsiyesi üzerine aldım gerçekten çok etkili saçlarım uzun süredir hemen hemen aynı tonda kaldı. Boyutu küçük evet ancak haftada 1 kullanımla bayağı bir gidiyo :),positive,negative,neutral,0.175,0.22916666666666666,-0.05416666666666667
+0.1,hisnet,1978,Bir gün kullandım ve Bir sayfa boyama yaptık bazı renk boyalar bitti bile,negative,negative,neutral,0.0,0.1,-0.1
+0.1,hisnet,1987,Daha önce aynı ürünü kullanmıştım çok daha etkiliydi. Yeniden aldığım ürün aynı etkiyi yaratmıyor. Daha doğrusu 2 dakika sürüyor etkisi.,neutral,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,hisnet,2004,Ürün daha önce kullandığım bir ürün paketleme güzel ama 1 ay sonra geldiği için pek işime yaramadı kesinlikle bu firmadan birdaha alişveriş yapmam,negative,positive,neutral,0.5795454545454546,0.5,0.07954545454545459
+0.1,hisnet,2038,indirimdeyken aldım memnun kaldım türünculaşma azaldı bence,positive,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,hisnet,2048,Ürün kumaşı çok ince keten. Yazlık ama üst kısmı çok kısa. düğmeleri takılınca ağ kısmı yukarı çıkıyor ve çok çirkin bir görüntü oluşuyor. 👎,negative,negative,neutral,0.1611111111111111,0.23809523809523808,-0.07698412698412699
+0.1,hisnet,2062,yeni aldım çok kullanışlı bir üründeğil,neutral,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,hisnet,2084,Ürün küçük bir şey.fırça kısmının kullanışlı olduğunu düşünmüyorum ben silikon tarafı için almıştım.titreşimliler gibi temizliyor çok para vermeye gerek olmadığını düşünüyorum,neutral,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,hisnet,2120,Rengi çok koyu ve yüzü yağlandırıyor,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet,2141,Çok basit berbat,negative,positive,neutral,0.1,0.0,0.1
+0.1,hisnet,2160,Çok koyu rengi var.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet,2234,Ucu çok ince hiç kolay sürülmüyor,negative,negative,neutral,0.4444444444444444,0.5,-0.05555555555555558
+0.1,hisnet,2287,Burnunuzda siyah nokta yerine kocaman mor halka olsun istiyorsanız alın fiyatı uygun 🥺,negative,positive,neutral,0.515625,0.41666666666666663,0.09895833333333337
+0.1,hisnet,2302,İndirimdeyken aldım ve bu üründen vazgeçmeyeceğimi söyleyebilirim. Hem nemlendirici hem de makyaj bazı olarak kullanabilirsiniz.,positive,positive,neutral,0.25,0.1875,0.0625
+0.1,hisnet,2328,Saç boyamak için ideal çok kaliteli değil ama işimizi görüyoruz,neutral,negative,neutral,1.0,1.1,-0.10000000000000009
+0.1,hisnet,2339,kalın duvar kağıdını kesinlikle yapıştirmadi kalkan birleşim yerini,negative,negative,neutral,0.015625,0.1,-0.084375
+0.1,hisnet,2359,Güzel paketliydi ama küçük olan rolon çıkık geldi ama yapıştırdım iade ile uğraşamam şimdi,neutral,positive,neutral,0.45454545454545453,0.375,0.07954545454545453
+0.1,hisnet,2363,ciltte yokmuş hissi veriyot çok doğal,positive,negative,neutral,0.14285714285714285,0.21428571428571427,-0.07142857142857142
+0.1,hisnet,2382,Boyutu bayağı küçük ama iade etmeyeceğim.,neutral,negative,neutral,0.05,0.125,-0.075
+0.1,hisnet,2419,çok güzel kullanisli bir ürün. fiyatına göre canavar gibi🙃,positive,positive,neutral,0.45454545454545453,0.4,0.05454545454545451
+0.1,hisnet,2459,Kokusu biraz şekerli. Kalıcılığı orta. İndirimde alınabilir.,neutral,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,hisnet,2480,güzel ürün ama biraz sert geliyor presicion clean başlığa göre,positive,positive,neutral,0.45454545454545453,0.3888888888888889,0.06565656565656564
+0.1,hisnet,2517,Sadece nem sorununuz varsa denenebilir nem bakımından başarılı,neutral,positive,neutral,1.0,0.9166666666666667,0.08333333333333326
+0.1,hisnet,2613,Ürün çok basit bu paraya değmez,negative,positive,neutral,0.1,0.0,0.1
+0.1,hisnet,2653,Tütleri düzgün alamıyo hiç kullanışlı değil,negative,negative,neutral,0.4,0.5,-0.09999999999999998
+0.1,hisnet,2662,Göründüğü gibi değil leopar kısmı çok basit duruyo ve rengi daha cırt,negative,positive,neutral,0.1,0.0,0.1
+0.1,hisnet,2663,aşırı derece dokulmeye sebep oluyor kesinlikle tavsiye etmiyorum,negative,positive,neutral,0.125,0.05,0.075
+0.1,hisnet,2690,Efsane bir ürün bürün ameliyatı olup yağlanması olanlara öneririm makyaj yapmadan önce bununla yıkayıp makyaj yaparsanız fondöten burnunuzdan akmayacaktır,positive,positive,neutral,0.32142857142857145,0.25,0.07142857142857145
+0.1,hisnet,2697,Böyle soft değil koyu olan renklerini yolladılar.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet,2715,Severek kullandığım bir ürün. İndirimdeyken aldım.,positive,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,hisnet,2750,Daha önceden de kullandığım bir ürün. Kapatıcılığı gayet başarılı. Yağlı ciltte bir süre sonra büründa parlama yapabiliyor. İlaç kullandığım için cildim kuruyor ve kuru ciltte kullanmaktan pek hoşlanmıyorum.,positive,positive,neutral,1.2857142857142858,1.2131410256410255,0.07257326007326026
+0.1,hisnet,2850,İndirimde aldım memnunum,positive,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,hisnet,2855,ÇOK DA SİVİLCELERİM İÇİN FARK SAĞLAMADI AMA GENEL OLARAK İYİ TEMİZLENMİŞ HİSSİ VERİYOR,neutral,positive,neutral,0.6111111111111112,0.5227272727272727,0.08838383838383845
+0.1,hisnet,2877,Çok güzel etkisi müthiş,positive,positive,neutral,0.45454545454545453,0.375,0.07954545454545453
+0.1,hisnet,2928,çok hızlı geldi.24 saat geçmeden ürün geldi.daha kullanmadım.5 yıldız hızlı geldiği için verdim,positive,negative,neutral,0.0,0.1,-0.1
+0.1,hisnet,2942,Kalıp sabunla yıkamış gibi oluyor saçlar. Pek köpürmek gibi bir huyu yok.,neutral,negative,neutral,0.125,0.21428571428571427,-0.08928571428571427
+0.1,hisnet,2949,çok iyi.. yağlanma sivilce vs yapmıyor ve ciddi anlamda bağımlılık yapıyor.kendisinden sonra başka ürün kullanamaz oldum😊,positive,positive,neutral,0.6111111111111112,0.5277777777777778,0.08333333333333337
+0.1,hisnet,2953,Hızlı ve eksıksız gonderim👍🏻fakat ağdası dıger yorumlarda bahsedıldıgı gıbı Farklı gelıyor ve çekerken de kopuyor o yüzden ağda pek bekledıgım gıbı degıl😕,neutral,positive,neutral,0.125,0.07083333333333333,0.05416666666666667
+0.1,hisnet,2999,resmen naylon. goründügü gibi değil.yorumlara muhteşem yazanlara pes dogrusu.almayın katiyen,negative,positive,neutral,0.5,0.41666666666666663,0.08333333333333337
+0.1,dp_hisnet,7,kargom çok hızlı geldi kokusunu pek beğenmedim üç kez kullandım idare eder,positive,positive,neutral,0.125,0.05,0.075
+0.1,dp_hisnet,61,yorumlara guvenip aldim fakat o kadar basit ve agir geldi ki iade ettim,negative,positive,neutral,0.1,0.0,0.1
+0.1,dp_hisnet,121,Arkadaşlar ayarlı alın lütfen çok morartıyor,neutral,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,dp_hisnet,139,burdaki yorumlara bakarak aldım aynen yorumlarda anlatıldığı gibi arkadaşlar ilk kullanımda cildi pürüzsüz yumuş yumuş yapıyor çok memnun kaldım ısrarla tavsiye ederim🖒,positive,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,dp_hisnet,154,Ürün neredeyse bir ayda geldi.saçim çok koyu olmamasına rağmen rengi belli etmedi.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,dp_hisnet,176,Kış aylarımın vazgeçilmezi. Çok kuruyan ve çatlayan dudakları olanlar alabilirler. Çok güzel nemlendiriyor ve onarıyor.,positive,positive,neutral,0.45454545454545453,0.358974358974359,0.09557109557109555
+0.1,dp_hisnet,208,kokusu hoş bir ürün. İşe yaradı mı pek emin değilim.,negative,negative,neutral,0.125,0.1875,-0.0625
+0.1,dp_hisnet,256,Tam kullanamadım kokusu çok agır astımı olanlara tavsiye etmiyorum yine de saçım yumuşacık oldu,neutral,positive,neutral,0.20833333333333334,0.125,0.08333333333333334
+0.1,dp_hisnet,261,Biraz zor dağılıyor sanki ama rengi çok güzel tam yazın kullanılacak bir ürün hafif parlaklık da veriyor,neutral,positive,neutral,0.6628787878787878,0.6060606060606061,0.05681818181818177
+0.1,dp_hisnet,273,basit kaldı begenmedım,negative,positive,neutral,0.1,0.0,0.1
+0.1,dp_hisnet,325,Iki tane ampulle birlikte geldi. Dermaroller ile birlikte kullandım. Fayda sağlayıp sağlamadığım konusunda bir fikrim yok devam etmedim. Tekrar tekrar almak istemedim eğer fayda sağlasın ve düzenli kullanayım diyorsanız bir kaç paket alın. Ama bu fiyata daha uygun ürünler de bulabilirsiniz,neutral,positive,neutral,0.625,0.5684523809523809,0.05654761904761907
+0.1,dp_hisnet,327,Gayet başarılı memnun kaldım . Ama Şafaf ambalajda geldi iş yerine istemiştim o kötü oldu bilgilerinize,positive,positive,neutral,1.0,0.9,0.09999999999999998
+0.1,dp_hisnet,353,yağlı cilt yapısına sahibim kesinlikle sivilce yapmıyor sulu bir yapısı var. tavsiye ederim,positive,positive,neutral,0.1607142857142857,0.0625,0.0982142857142857
+0.1,dp_hisnet,428,1 aydır düzenli kullanıyorum hiçbir faydası yok milletin reklam yapmasına bakıp kanmayın.,negative,negative,neutral,0.125,0.21428571428571427,-0.08928571428571427
+0.1,dp_hisnet,495,Rengi çok doğal hiç belli olmuyor ama çok etkili değil. bir kaç saate bitiyor etkisi bidaha almayacağım sadece renk tonu güzel.,negative,negative,neutral,0.5974025974025974,0.6666666666666666,-0.06926406926406925
+0.1,dp_hisnet,504,çok pisman oldum aldigima sacimin dipleri kizil oldu uclari hala koyu kahve rengi,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,dp_hisnet,510,Gayet güzel yüzünüzü pürüzsüz yapmasını beklemeyin ama işe yarıyor,positive,positive,neutral,0.5795454545454546,0.5,0.07954545454545459
+0.1,dp_hisnet,591,Ürün güzel ama küçük başında biraz sıkıntılı o harici güzel,positive,negative,neutral,0.9090909090909091,1.0,-0.09090909090909094
+0.1,dp_hisnet,592,Bu modellerden en iyisi diyebilirim ben uzun süredir kullanıyorum çok memnunum şarjı hiç bitmiyor,positive,positive,neutral,0.6111111111111112,0.5208333333333334,0.09027777777777779
+0.1,dp_hisnet,602,Ürünü daha önce almıştım. Çok memnun kaldım fakat tekrar aldım inanılmaz kötü kokusu ile birlikte geldi dikişleri aynı değil. Memnun kalmadım.,negative,negative,neutral,1.0,1.0666666666666667,-0.06666666666666665
+0.1,dp_hisnet,704,Fotoğraftaki ürün gelmedi.Bana gelen ürünün bel şeridi tam olarak 10 cm korse gibi görünüyor. Bacak boyuda dizimin 2 parmak üzerinde. Beğenmedim istediğim görüntüyü vermedi iade edeceğim.,negative,positive,neutral,0.20833333333333334,0.125,0.08333333333333334
+0.1,dp_hisnet,705,Severek kullandığım ve müthiş bir ürün boyadan yıpranmış saçlarımı çok güzel besledi,positive,positive,neutral,0.45454545454545453,0.375,0.07954545454545453
+0.1,dp_hisnet,724,Kılları biraz sert geldi ama güzel zamanla yumuşar diye düşünüyorum,neutral,positive,neutral,0.45454545454545453,0.3888888888888889,0.06565656565656564
+0.1,dp_hisnet,774,Tek yıkamada tüm rengi ve baskısı gitti..,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,dp_hisnet,785,keçe kısmı kuruyor bir süre sonra. islak ve yeterince koyu değil.,negative,positive,neutral,0.0625,0.0,0.0625
+0.1,dp_hisnet,892,Yorumlarda 5 e kadar olan bütün numaraların çok açık olduğunu söylüyorlardi bende o yüzden 5 sipariş verdim ama bana koyu geldi. bence çok beyaz olanlar kesinlikle daha acik renklere baksin :( başkalarını dinlemeyin,neutral,positive,neutral,0.15625,0.0625,0.09375
+0.1,dp_hisnet,967,ürünü denemedim bile aşırı ince meme uçları belli olur kesinlikle bu yüzden geri iade edicem.,negative,negative,neutral,0.1111111111111111,0.2090909090909091,-0.097979797979798
+0.1,dp_hisnet,1003,Ürün yüzümü yakıyor ve sivilce yapıyor. Gerçek gül suyu değil.,negative,positive,neutral,0.08333333333333333,0.0,0.08333333333333333
+0.1,dp_hisnet,1043,Çok fazla ince penyesi ona göre alın,negative,negative,neutral,0.1111111111111111,0.16666666666666666,-0.05555555555555555
+0.1,dp_hisnet,1137,120 numara ama tenime göre koyu sevmedim,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,dp_hisnet,1167,İnanilmaz bir ürün tirnak cevresindeki tum kalinlasmalari kusurlari yok ediyor ve çok çok uzun sure kullanilir bu yogunluktaki bir ürün herkese tavsiye ediyorum manikure gerek kalmiyor,positive,negative,neutral,0.125,0.21428571428571427,-0.08928571428571427
+0.1,dp_hisnet,1344,ürün bekledigimden büyük geldi. bir damlası bile aşırı nemlendiriyor. kesinlikle tavsiye ediyorum.,positive,positive,neutral,0.125,0.05,0.075
+0.1,dp_hisnet,1392,Paketleme oldukça iyi yapılmıştı.hiç dökülmeden kargolayan loreal ekibine ve kargomu hızlı şekilde bana ulaştıran güleryüzlü trendyolekspres kargo çalışanlarına sevgilerimi yolluyorum.çok küçüktu diye elestirenlere de zaten 200 ml oldugu belirtilmis normal sampuanlar 520 ml iken ne bekliyordunuz diye sormak istiyorum,positive,positive,neutral,0.6111111111111112,0.55,0.061111111111111116
+0.1,dp_hisnet,1417,görselde bariz pembe renkli duran hatta yorumlarda da pembe olduğu belirtilen bu allık çok koyu bronz kahve gibi bir renk olarak geldi bana. onun dışında görsel ile elime ulaşan ürünün kutusundaki herşey aynı. anlam veremedim. imkan olsa da görsel eklesem.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,dp_hisnet,1434,Yorumlara göre aldım fena değil ama beklentiniz çok yüksek tutmayın yenı oluşan lekeler için çözüm ama daha uzun vadede oluşmuş seyller için tavsiye etmem,neutral,positive,neutral,0.6527777777777778,0.5916666666666667,0.061111111111111116
+0.1,dp_hisnet,1455,aşırı büyük geniş kollar çok uzun,negative,negative,neutral,0.0,0.09166666666666667,-0.09166666666666667
+0.1,dp_hisnet,1468,Sevmedim çok basit,negative,positive,neutral,0.1,0.0,0.1
+0.1,dp_hisnet,1476,indirimli almıştım. doku olarak güzel toparliyor .kalibi dar. bir beden büyük almama rağmen dar oldu . yinede iade etmedim,negative,negative,neutral,0.5795454545454546,0.6666666666666666,-0.08712121212121204
+0.1,dp_hisnet,1481,RE ZA LET! Askının teki anyada diğeri konyada felan yani. O kadar kısa ve orantısız ki askıları aşağı inmedi bile.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,dp_hisnet,1529,Fiyatına göre çok güzel bir ürün çok yağlı deil kuru bir cildiniz varsa öncesinden nemlendirici uygulamak gerekir.Yeni aldığım için lekelerim de azalma olup olmadığını kullandıkça görcem henüz bir değişiklik yok.,positive,negative,neutral,0.49025974025974023,0.5732600732600732,-0.083000333000333
+0.1,dp_hisnet,1591,Gayet başarılı ürün olarak gördüm saçlarımı ilk boyanmış halindeki sarılığı hissetim ☺️,positive,negative,neutral,1.0,1.075,-0.07499999999999996
+0.1,dp_hisnet,1634,Keratin biraz ağır kokuyor tıkanan Hastalara sağlık açısından pek önermem. Ben yaptım ama çok düz olmadı sadece birazcık kabarıklığı indi okadar.,neutral,negative,neutral,0.125,0.22058823529411764,-0.09558823529411764
+0.1,dp_hisnet,1680,Fazla yapışkan bir wax. Ama yinede kullanışlı,neutral,negative,neutral,0.25,0.3333333333333333,-0.08333333333333331
+0.1,dp_hisnet,1691,Gerçekten kokusu çok hoş bir ürün indirimdeyken aldım deneyeceğim. Basma yeri yani hortumu ayrı gönderiliyor boyu uzun kesilmesi gerekiyor,positive,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,dp_hisnet,1826,Pek bir işlevi yoktu,neutral,negative,neutral,0.125,0.21428571428571427,-0.08928571428571427
+0.1,dp_hisnet,1829,Ürün güzel hızlı kargolamıyor ama hassa ciltlilere önermem çok tahriş oluyor,neutral,negative,neutral,0.45454545454545453,0.55,-0.09545454545454551
+0.1,dp_hisnet,1864,Blistexi tek geçerim indirimdeyken yedekli alın derim mağazalarda fiyatı uçmuş,positive,positive,neutral,0.25,0.1875,0.0625
+0.1,dp_hisnet,1943,görseldeki kadar yüksel bel değil renk koyu azıcıkta ama idare eder,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,dp_hisnet,1971,Ürünün sürümü güzel ve kolay fakat ürünün kendi kabı yani eyeliner çok kötü kırılacakmış gibi açıp kapatırken gıcırtı çıkartıyor. Hediyelik de almıştım ama vermeye çekiniyorum çok basit bir plastik kabı var. Ayrıca 4-5 ürün aldım ve hiçbirşekilde hediye felan yok :) hediyesinde değiliz alırken bir ürünü fakat onca hediye yorumuna şaşırdım. Kolay gelsin.,neutral,positive,neutral,1.5128787878787877,1.4476190476190476,0.06525974025974013
+0.1,dp_hisnet,1987,Daha önce aynı ürünü kullanmıştım çok daha etkiliydi. Yeniden aldığım ürün aynı etkiyi yaratmıyor. Daha doğrusu 2 dakika sürüyor etkisi.,neutral,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,dp_hisnet,1993,Hızlı emiliyor ama makyaj altına kullanım için uygun değil aman aman bir nemlendirmesi yok bitsin diye kullanıyorum. Satıcı çok güzel paketlemişti hızla elime ulaştı,neutral,negative,neutral,0.7045454545454546,0.7642857142857143,-0.05974025974025976
+0.1,dp_hisnet,2004,Ürün daha önce kullandığım bir ürün paketleme güzel ama 1 ay sonra geldiği için pek işime yaramadı kesinlikle bu firmadan birdaha alişveriş yapmam,negative,positive,neutral,0.5795454545454546,0.5,0.07954545454545459
+0.1,dp_hisnet,2038,indirimdeyken aldım memnun kaldım türünculaşma azaldı bence,positive,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,dp_hisnet,2062,yeni aldım çok kullanışlı bir üründeğil,neutral,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,dp_hisnet,2074,Fiyatına göre performansı orta seviyede. Soyulabilir olması basit ama haftada 1 2 kullanımla belli sürede götürür gibi.,neutral,positive,neutral,0.1,0.0,0.1
+0.1,dp_hisnet,2084,Ürün küçük bir şey.fırça kısmının kullanışlı olduğunu düşünmüyorum ben silikon tarafı için almıştım.titreşimliler gibi temizliyor çok para vermeye gerek olmadığını düşünüyorum,neutral,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,dp_hisnet,2120,Rengi çok koyu ve yüzü yağlandırıyor,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,dp_hisnet,2137,Ürün geldi güzel ambalajlı fiyatına göre pek işe yaramadı ml olarak. Çok küçük geldi kullanınca etkisi hakkında bilgi vericem,negative,positive,neutral,0.5795454545454546,0.5,0.07954545454545459
+0.1,dp_hisnet,2141,Çok basit berbat,negative,positive,neutral,0.1,0.0,0.1
+0.1,dp_hisnet,2160,Çok koyu rengi var.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,dp_hisnet,2234,Ucu çok ince hiç kolay sürülmüyor,negative,negative,neutral,0.4444444444444444,0.5,-0.05555555555555558
+0.1,dp_hisnet,2302,İndirimdeyken aldım ve bu üründen vazgeçmeyeceğimi söyleyebilirim. Hem nemlendirici hem de makyaj bazı olarak kullanabilirsiniz.,positive,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,dp_hisnet,2306,Dermatoloğumun önerisiyle başladığım bir ürün. Yaklaşık 3 yıldır kullanıyorum. Cildim çok hassas olduğu için diğer ürünlerin yaptığı tahriş sorunuyla karşılaşmıyorum. Trendyolda sık sık indirime giriyor. Düşünmeden alın derim.,positive,positive,neutral,0.25,0.1875,0.0625
+0.1,dp_hisnet,2363,ciltte yokmuş hissi veriyot çok doğal,positive,negative,neutral,0.14285714285714285,0.21428571428571427,-0.07142857142857142
+0.1,dp_hisnet,2409,arkadaşımın önerisi uzerine indirimdeyken aldığım bir ürün.. tirnak bakımımda kullanıyorum ve etkisinden çok memnun kaldigim bir ürün oldu,positive,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,dp_hisnet,2419,çok güzel kullanisli bir ürün. fiyatına göre canavar gibi🙃,positive,positive,neutral,0.45454545454545453,0.4,0.05454545454545451
+0.1,dp_hisnet,2447,çok eskiden almistim sacimdan cikmadi diye sinir olup cope atmistim ama bu sefer çok çok az uyguladin ve cikti insallah işe yarar,positive,negative,neutral,0.1875,0.25,-0.0625
+0.1,dp_hisnet,2480,güzel ürün ama biraz sert geliyor presicion clean başlığa göre,positive,positive,neutral,0.45454545454545453,0.3888888888888889,0.06565656565656564
+0.1,dp_hisnet,2613,Ürün çok basit bu paraya değmez,negative,positive,neutral,0.1,0.0,0.1
+0.1,dp_hisnet,2618,markasi siyah inci değil. 40 derecede inanılmaz cekti.,negative,positive,neutral,0.08333333333333333,0.0,0.08333333333333333
+0.1,dp_hisnet,2653,Tütleri düzgün alamıyo hiç kullanışlı değil,negative,negative,neutral,0.4,0.5,-0.09999999999999998
+0.1,dp_hisnet,2662,Göründüğü gibi değil leopar kısmı çok basit duruyo ve rengi daha cırt,negative,positive,neutral,0.1,0.0,0.1
+0.1,dp_hisnet,2697,Böyle soft değil koyu olan renklerini yolladılar.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,dp_hisnet,2715,Severek kullandığım bir ürün. İndirimdeyken aldım.,positive,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,dp_hisnet,2840,Aşırı beğendiğim ve sürekli kullanacağım bir bakım yağı şiddetle tavsiye ederim 👍,positive,positive,neutral,0.125,0.05,0.075
+0.1,dp_hisnet,2877,Çok güzel etkisi müthiş,positive,positive,neutral,0.45454545454545453,0.375,0.07954545454545453
+0.1,dp_hisnet,2928,çok hızlı geldi.24 saat geçmeden ürün geldi.daha kullanmadım.5 yıldız hızlı geldiği için verdim,positive,negative,neutral,0.0,0.1,-0.1
+0.1,dp_hisnet,2942,Kalıp sabunla yıkamış gibi oluyor saçlar. Pek köpürmek gibi bir huyu yok.,neutral,negative,neutral,0.125,0.21428571428571427,-0.08928571428571427
+0.1,dp_hisnet,2953,Hızlı ve eksıksız gonderim👍🏻fakat ağdası dıger yorumlarda bahsedıldıgı gıbı Farklı gelıyor ve çekerken de kopuyor o yüzden ağda pek bekledıgım gıbı degıl😕,neutral,positive,neutral,0.125,0.05,0.075
+0.1,hisnet_dp,7,kargom çok hızlı geldi kokusunu pek beğenmedim üç kez kullandım idare eder,positive,positive,neutral,0.125,0.05,0.075
+0.1,hisnet_dp,61,yorumlara guvenip aldim fakat o kadar basit ve agir geldi ki iade ettim,negative,positive,neutral,0.1,0.0,0.1
+0.1,hisnet_dp,102,Yeni doğan sipariş ettik normal ıslak mendil geldi ve fiyat farkı var arada bu kadarda olmaz yani yoksa stokta koymayın oraya 😡,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet_dp,144,dermatologumun önerisiyle almıştım roactune tedavisinden sonra hep bunu kullanmıştım ve geri döndüm biodermaya karma veya yağlı bir cildiniz varsa alın aldırın ve nemlendirin efsane oluyor,positive,negative,neutral,0.4107142857142857,0.49242424242424243,-0.08170995670995673
+0.1,hisnet_dp,176,Kış aylarımın vazgeçilmezi. Çok kuruyan ve çatlayan dudakları olanlar alabilirler. Çok güzel nemlendiriyor ve onarıyor.,positive,positive,neutral,0.45454545454545453,0.358974358974359,0.09557109557109555
+0.1,hisnet_dp,273,basit kaldı begenmedım,negative,positive,neutral,0.1,0.0,0.1
+0.1,hisnet_dp,326,yuzumun derisini aldi tuyler yerinde duruyo,negative,positive,neutral,0.057291666666666664,0.0,0.057291666666666664
+0.1,hisnet_dp,411,mankende göründüğü gibi değil rengi daha koyu ve çok uzun boyum 170 anne elbisesi gibi geri iade,negative,positive,neutral,0.1590909090909091,0.0625,0.09659090909090909
+0.1,hisnet_dp,417,Üründen çok memnundum ancak kenarlarındaki plastik yüzey kırıldı.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet_dp,489,fiyat olarak pahali ve 50ml çok az yani ben gunes kremi çok kullanan biriyim ve cabuk bitecegi belli. ama kremsi yapışi çok güzel hemen emiliyor yagli bir his de birakmiyor ciltte beyazlama gorunumu de olusmuyor,positive,positive,neutral,0.45454545454545453,0.37499999999999994,0.07954545454545459
+0.1,hisnet_dp,495,Rengi çok doğal hiç belli olmuyor ama çok etkili değil. bir kaç saate bitiyor etkisi bidaha almayacağım sadece renk tonu güzel.,negative,negative,neutral,0.5974025974025974,0.6666666666666666,-0.06926406926406925
+0.1,hisnet_dp,504,çok pisman oldum aldigima sacimin dipleri kizil oldu uclari hala koyu kahve rengi,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet_dp,510,Gayet güzel yüzünüzü pürüzsüz yapmasını beklemeyin ama işe yarıyor,positive,positive,neutral,0.5795454545454546,0.5,0.07954545454545459
+0.1,hisnet_dp,591,Ürün güzel ama küçük başında biraz sıkıntılı o harici güzel,positive,negative,neutral,0.9090909090909091,1.0,-0.09090909090909094
+0.1,hisnet_dp,603,beğendim sürümü kolaylık sağlıyor,neutral,positive,neutral,0.08333333333333333,0.0,0.08333333333333333
+0.1,hisnet_dp,649,elimdeki diger boyayla karıştırdıgım için çok anlayamadım,neutral,negative,neutral,0.0,0.1,-0.1
+0.1,hisnet_dp,652,kullanmaya baslayali çok kisa bir zaman oldu ancak etkisini göstermeye basladi bile.,positive,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet_dp,704,Fotoğraftaki ürün gelmedi.Bana gelen ürünün bel şeridi tam olarak 10 cm korse gibi görünüyor. Bacak boyuda dizimin 2 parmak üzerinde. Beğenmedim istediğim görüntüyü vermedi iade edeceğim.,negative,positive,neutral,0.20833333333333334,0.125,0.08333333333333334
+0.1,hisnet_dp,724,Kılları biraz sert geldi ama güzel zamanla yumuşar diye düşünüyorum,neutral,positive,neutral,0.45454545454545453,0.3888888888888889,0.06565656565656564
+0.1,hisnet_dp,761,Pahalı fondötenler almama rağmen vazgeçemiyorum senden ❣️ Yanında göndermiş olduğunuz sünger için teşekkürler 🧚🏻‍♀️,positive,positive,neutral,1.0,0.9166666666666666,0.08333333333333337
+0.1,hisnet_dp,772,hızlı kargo ve güzel paketleme. ürünü kullanmaya henüz başladığım için ürün hakkında çok fazla bilgi yazamayacağım. tek kullanımda bile işe yaradı gibi geldi :),positive,negative,neutral,0.47954545454545455,0.55,-0.07045454545454549
+0.1,hisnet_dp,785,keçe kısmı kuruyor bir süre sonra. islak ve yeterince koyu değil.,negative,positive,neutral,0.0625,0.0,0.0625
+0.1,hisnet_dp,869,Çok beğendiğim bir ürün oldu. Saça gereken nemi ve bakımı sağlıyor,positive,negative,neutral,0.0,0.08333333333333333,-0.08333333333333333
+0.1,hisnet_dp,892,Yorumlarda 5 e kadar olan bütün numaraların çok açık olduğunu söylüyorlardi bende o yüzden 5 sipariş verdim ama bana koyu geldi. bence çok beyaz olanlar kesinlikle daha acik renklere baksin :( başkalarını dinlemeyin,neutral,positive,neutral,0.15625,0.0625,0.09375
+0.1,hisnet_dp,899,Kurtarıcı aktivitemiz kızım eğlenerek oynuyor yalnız bir de boyama önlüğü şart👍,negative,negative,neutral,0.0,0.07083333333333333,-0.07083333333333333
+0.1,hisnet_dp,967,ürünü denemedim bile aşırı ince meme uçları belli olur kesinlikle bu yüzden geri iade edicem.,negative,negative,neutral,0.1111111111111111,0.2090909090909091,-0.097979797979798
+0.1,hisnet_dp,1043,Çok fazla ince penyesi ona göre alın,negative,negative,neutral,0.1111111111111111,0.16666666666666666,-0.05555555555555555
+0.1,hisnet_dp,1077,İlk kullanımda aşağıdaki yorumu yapmıştım ama yanılmışım. Bir kutu bitti dökülme eskisi gibi ve kepek yaptı........Saç kremi kullanmadan asla yapamıyordum. Artık kullanmama gerek bile kalmadı. Yumuşacık yaptı saçlarımı. Dökülmesi de azaldı mevsimsel bir azalmamı ilk 3 kullanımda etki mi etti emin olamadım. Ama yumuşaklık ve dolgunluk verdiği kesin!,negative,negative,neutral,0.5,0.5875,-0.08750000000000002
+0.1,hisnet_dp,1123,Ürünün kumaşı iki kere yıkamadan sonra keperme yaptı. Giyilemez halde 😡😡,negative,negative,neutral,0.0,0.075,-0.075
+0.1,hisnet_dp,1167,İnanilmaz bir ürün tirnak cevresindeki tum kalinlasmalari kusurlari yok ediyor ve çok çok uzun sure kullanilir bu yogunluktaki bir ürün herkese tavsiye ediyorum manikure gerek kalmiyor,positive,negative,neutral,0.125,0.21428571428571427,-0.08928571428571427
+0.1,hisnet_dp,1222,ebatı aşırı küçük geldi belki de renkleri 5 6 kullanmaya hemen gidicek,negative,negative,neutral,0.0,0.07083333333333333,-0.07083333333333333
+0.1,hisnet_dp,1344,ürün bekledigimden büyük geldi. bir damlası bile aşırı nemlendiriyor. kesinlikle tavsiye ediyorum.,positive,positive,neutral,0.125,0.05,0.075
+0.1,hisnet_dp,1430,Yorumlarıa bakarak aldım ama hiç kalıcı değil kokusunu sevmedim,negative,positive,neutral,0.5,0.41666666666666663,0.08333333333333337
+0.1,hisnet_dp,1434,Yorumlara göre aldım fena değil ama beklentiniz çok yüksek tutmayın yenı oluşan lekeler için çözüm ama daha uzun vadede oluşmuş seyller için tavsiye etmem,neutral,positive,neutral,0.6527777777777778,0.5916666666666667,0.061111111111111116
+0.1,hisnet_dp,1452,Sorunsuz bir şekilde teslim aldım şu süreçte gayet hızlı geldi bile diyebilirim. Bakalım sonuçları da güzel olur umarım,positive,negative,neutral,0.45454545454545453,0.5102272727272728,-0.05568181818181822
+0.1,hisnet_dp,1455,aşırı büyük geniş kollar çok uzun,negative,negative,neutral,0.0,0.09166666666666667,-0.09166666666666667
+0.1,hisnet_dp,1468,Sevmedim çok basit,negative,positive,neutral,0.1,0.0,0.1
+0.1,hisnet_dp,1481,RE ZA LET! Askının teki anyada diğeri konyada felan yani. O kadar kısa ve orantısız ki askıları aşağı inmedi bile.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet_dp,1570,Yorumlara bakarak almıştım kokusu hoş ve kalıcı değil.,negative,negative,neutral,0.16666666666666666,0.25,-0.08333333333333334
+0.1,hisnet_dp,1591,Gayet başarılı ürün olarak gördüm saçlarımı ilk boyanmış halindeki sarılığı hissetim ☺️,positive,negative,neutral,1.0,1.075,-0.07499999999999996
+0.1,hisnet_dp,1627,Denemek icin aldim. Unibaby pamuk mendil kullanıyorum normalde boşuna almışım. Cildi çok ıslak bırakıyor ve silerken elde toplanıyor. Unibaby bu konuda çok çok daha iyi.,negative,negative,neutral,0.6111111111111112,0.6666666666666666,-0.05555555555555547
+0.1,hisnet_dp,1680,Fazla yapışkan bir wax. Ama yinede kullanışlı,neutral,negative,neutral,0.25,0.3333333333333333,-0.08333333333333331
+0.1,hisnet_dp,1691,Gerçekten kokusu çok hoş bir ürün indirimdeyken aldım deneyeceğim. Basma yeri yani hortumu ayrı gönderiliyor boyu uzun kesilmesi gerekiyor,positive,positive,neutral,0.265625,0.16666666666666666,0.09895833333333334
+0.1,hisnet_dp,1826,Pek bir işlevi yoktu,neutral,negative,neutral,0.125,0.21428571428571427,-0.08928571428571427
+0.1,hisnet_dp,1829,Ürün güzel hızlı kargolamıyor ama hassa ciltlilere önermem çok tahriş oluyor,neutral,negative,neutral,0.45454545454545453,0.55,-0.09545454545454551
+0.1,hisnet_dp,1842,Ürünün kalitesini beğenmediğimden dolayı ürünü eksiksiz ve aynı kargo poşetiyle ve faturasıyla beraber iade etmeme rağmen iadem red edildi.,negative,negative,neutral,0.6666666666666667,0.75,-0.08333333333333326
+0.1,hisnet_dp,1864,Blistexi tek geçerim indirimdeyken yedekli alın derim mağazalarda fiyatı uçmuş,positive,positive,neutral,0.25,0.1875,0.0625
+0.1,hisnet_dp,1943,görseldeki kadar yüksel bel değil renk koyu azıcıkta ama idare eder,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet_dp,1973,Kuaförümün tavsiyesi üzerine aldım gerçekten çok etkili saçlarım uzun süredir hemen hemen aynı tonda kaldı. Boyutu küçük evet ancak haftada 1 kullanımla bayağı bir gidiyo :),positive,negative,neutral,0.175,0.22916666666666666,-0.05416666666666667
+0.1,hisnet_dp,1978,Bir gün kullandım ve Bir sayfa boyama yaptık bazı renk boyalar bitti bile,negative,negative,neutral,0.0,0.1,-0.1
+0.1,hisnet_dp,1987,Daha önce aynı ürünü kullanmıştım çok daha etkiliydi. Yeniden aldığım ürün aynı etkiyi yaratmıyor. Daha doğrusu 2 dakika sürüyor etkisi.,neutral,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,hisnet_dp,1993,Hızlı emiliyor ama makyaj altına kullanım için uygun değil aman aman bir nemlendirmesi yok bitsin diye kullanıyorum. Satıcı çok güzel paketlemişti hızla elime ulaştı,neutral,negative,neutral,0.7045454545454546,0.7642857142857143,-0.05974025974025976
+0.1,hisnet_dp,2004,Ürün daha önce kullandığım bir ürün paketleme güzel ama 1 ay sonra geldiği için pek işime yaramadı kesinlikle bu firmadan birdaha alişveriş yapmam,negative,positive,neutral,0.5795454545454546,0.5,0.07954545454545459
+0.1,hisnet_dp,2038,indirimdeyken aldım memnun kaldım türünculaşma azaldı bence,positive,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,hisnet_dp,2048,Ürün kumaşı çok ince keten. Yazlık ama üst kısmı çok kısa. düğmeleri takılınca ağ kısmı yukarı çıkıyor ve çok çirkin bir görüntü oluşuyor. 👎,negative,negative,neutral,0.1611111111111111,0.23809523809523808,-0.07698412698412699
+0.1,hisnet_dp,2062,yeni aldım çok kullanışlı bir üründeğil,neutral,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,hisnet_dp,2084,Ürün küçük bir şey.fırça kısmının kullanışlı olduğunu düşünmüyorum ben silikon tarafı için almıştım.titreşimliler gibi temizliyor çok para vermeye gerek olmadığını düşünüyorum,neutral,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,hisnet_dp,2120,Rengi çok koyu ve yüzü yağlandırıyor,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet_dp,2141,Çok basit berbat,negative,positive,neutral,0.1,0.0,0.1
+0.1,hisnet_dp,2160,Çok koyu rengi var.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet_dp,2234,Ucu çok ince hiç kolay sürülmüyor,negative,negative,neutral,0.4444444444444444,0.5,-0.05555555555555558
+0.1,hisnet_dp,2287,Burnunuzda siyah nokta yerine kocaman mor halka olsun istiyorsanız alın fiyatı uygun 🥺,negative,positive,neutral,0.515625,0.41666666666666663,0.09895833333333337
+0.1,hisnet_dp,2302,İndirimdeyken aldım ve bu üründen vazgeçmeyeceğimi söyleyebilirim. Hem nemlendirici hem de makyaj bazı olarak kullanabilirsiniz.,positive,positive,neutral,0.25,0.1875,0.0625
+0.1,hisnet_dp,2339,kalın duvar kağıdını kesinlikle yapıştirmadi kalkan birleşim yerini,negative,negative,neutral,0.015625,0.1,-0.084375
+0.1,hisnet_dp,2359,Güzel paketliydi ama küçük olan rolon çıkık geldi ama yapıştırdım iade ile uğraşamam şimdi,neutral,positive,neutral,0.45454545454545453,0.375,0.07954545454545453
+0.1,hisnet_dp,2363,ciltte yokmuş hissi veriyot çok doğal,positive,negative,neutral,0.14285714285714285,0.21428571428571427,-0.07142857142857142
+0.1,hisnet_dp,2419,çok güzel kullanisli bir ürün. fiyatına göre canavar gibi🙃,positive,positive,neutral,0.45454545454545453,0.4,0.05454545454545451
+0.1,hisnet_dp,2459,Kokusu biraz şekerli. Kalıcılığı orta. İndirimde alınabilir.,neutral,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,hisnet_dp,2480,güzel ürün ama biraz sert geliyor presicion clean başlığa göre,positive,positive,neutral,0.45454545454545453,0.3888888888888889,0.06565656565656564
+0.1,hisnet_dp,2517,Sadece nem sorununuz varsa denenebilir nem bakımından başarılı,neutral,positive,neutral,1.0,0.9166666666666667,0.08333333333333326
+0.1,hisnet_dp,2613,Ürün çok basit bu paraya değmez,negative,positive,neutral,0.1,0.0,0.1
+0.1,hisnet_dp,2653,Tütleri düzgün alamıyo hiç kullanışlı değil,negative,negative,neutral,0.4,0.5,-0.09999999999999998
+0.1,hisnet_dp,2662,Göründüğü gibi değil leopar kısmı çok basit duruyo ve rengi daha cırt,negative,positive,neutral,0.1,0.0,0.1
+0.1,hisnet_dp,2690,Efsane bir ürün bürün ameliyatı olup yağlanması olanlara öneririm makyaj yapmadan önce bununla yıkayıp makyaj yaparsanız fondöten burnunuzdan akmayacaktır,positive,positive,neutral,0.32142857142857145,0.25,0.07142857142857145
+0.1,hisnet_dp,2697,Böyle soft değil koyu olan renklerini yolladılar.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,hisnet_dp,2715,Severek kullandığım bir ürün. İndirimdeyken aldım.,positive,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,hisnet_dp,2750,Daha önceden de kullandığım bir ürün. Kapatıcılığı gayet başarılı. Yağlı ciltte bir süre sonra büründa parlama yapabiliyor. İlaç kullandığım için cildim kuruyor ve kuru ciltte kullanmaktan pek hoşlanmıyorum.,positive,positive,neutral,1.2857142857142858,1.2131410256410255,0.07257326007326026
+0.1,hisnet_dp,2840,Aşırı beğendiğim ve sürekli kullanacağım bir bakım yağı şiddetle tavsiye ederim 👍,positive,negative,neutral,0.125,0.21666666666666667,-0.09166666666666667
+0.1,hisnet_dp,2850,İndirimde aldım memnunum,positive,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,hisnet_dp,2855,ÇOK DA SİVİLCELERİM İÇİN FARK SAĞLAMADI AMA GENEL OLARAK İYİ TEMİZLENMİŞ HİSSİ VERİYOR,neutral,positive,neutral,0.6111111111111112,0.5227272727272727,0.08838383838383845
+0.1,hisnet_dp,2877,Çok güzel etkisi müthiş,positive,positive,neutral,0.45454545454545453,0.375,0.07954545454545453
+0.1,hisnet_dp,2928,çok hızlı geldi.24 saat geçmeden ürün geldi.daha kullanmadım.5 yıldız hızlı geldiği için verdim,positive,negative,neutral,0.0,0.1,-0.1
+0.1,hisnet_dp,2942,Kalıp sabunla yıkamış gibi oluyor saçlar. Pek köpürmek gibi bir huyu yok.,neutral,negative,neutral,0.125,0.21428571428571427,-0.08928571428571427
+0.1,hisnet_dp,2949,çok iyi.. yağlanma sivilce vs yapmıyor ve ciddi anlamda bağımlılık yapıyor.kendisinden sonra başka ürün kullanamaz oldum😊,positive,positive,neutral,0.6111111111111112,0.5277777777777778,0.08333333333333337
+0.1,hisnet_dp,2953,Hızlı ve eksıksız gonderim👍🏻fakat ağdası dıger yorumlarda bahsedıldıgı gıbı Farklı gelıyor ve çekerken de kopuyor o yüzden ağda pek bekledıgım gıbı degıl😕,neutral,positive,neutral,0.125,0.07083333333333333,0.05416666666666667
+0.1,lw_hisnet_dp,7,kargom çok hızlı geldi kokusunu pek beğenmedim üç kez kullandım idare eder,positive,positive,neutral,0.125,0.06,0.065
+0.1,lw_hisnet_dp,102,Yeni doğan sipariş ettik normal ıslak mendil geldi ve fiyat farkı var arada bu kadarda olmaz yani yoksa stokta koymayın oraya 😡,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,lw_hisnet_dp,144,dermatologumun önerisiyle almıştım roactune tedavisinden sonra hep bunu kullanmıştım ve geri döndüm biodermaya karma veya yağlı bir cildiniz varsa alın aldırın ve nemlendirin efsane oluyor,positive,negative,neutral,0.4107142857142857,0.49242424242424243,-0.08170995670995673
+0.1,lw_hisnet_dp,154,Ürün neredeyse bir ayda geldi.saçim çok koyu olmamasına rağmen rengi belli etmedi.,negative,negative,neutral,0.0,0.06375,-0.06375
+0.1,lw_hisnet_dp,175,Şeffaf poşetle yollanmasa iyiymiş. Biraz pahalıya aldım ama şu zamanlarda kurtarıcı olduğu için yapacak birşey yok.,neutral,negative,neutral,0.6111111111111112,0.7080952380952381,-0.09698412698412695
+0.1,lw_hisnet_dp,189,Biraz özensizdi,neutral,negative,neutral,0.0,0.1,-0.1
+0.1,lw_hisnet_dp,210,Ürün çokkkk güzel özellikle saçlarını zda açıcı varsa yumuşacık oluyor çok iyi geliyor fakat kullandığı nız zmn işinize yarıyor kullanmadığınız zmn saçlar yine aynı.,positive,positive,neutral,1.0096969696969698,0.925,0.08469696969696972
+0.1,lw_hisnet_dp,250,Ürün idare eder ama yüzde yağlılık hissi vermesini sevemedim,neutral,positive,neutral,0.06607142857142857,0.0,0.06607142857142857
+0.1,lw_hisnet_dp,273,basit kaldı begenmedım,negative,positive,neutral,0.1,0.0,0.1
+0.1,lw_hisnet_dp,326,yuzumun derisini aldi tuyler yerinde duruyo,negative,positive,neutral,0.057291666666666664,0.0,0.057291666666666664
+0.1,lw_hisnet_dp,342,Kaşıntı biraz azaldı. Fakat ürünün boyuna göre fiyatı çok yüksek.,neutral,negative,neutral,0.4316666666666667,0.5,-0.0683333333333333
+0.1,lw_hisnet_dp,411,mankende göründüğü gibi değil rengi daha koyu ve çok uzun boyum 170 anne elbisesi gibi geri iade,negative,positive,neutral,0.1590909090909091,0.0625,0.09659090909090909
+0.1,lw_hisnet_dp,504,çok pisman oldum aldigima sacimin dipleri kizil oldu uclari hala koyu kahve rengi,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,lw_hisnet_dp,603,beğendim sürümü kolaylık sağlıyor,neutral,positive,neutral,0.08333333333333333,0.0,0.08333333333333333
+0.1,lw_hisnet_dp,649,elimdeki diger boyayla karıştırdıgım için çok anlayamadım,neutral,negative,neutral,0.0,0.1,-0.1
+0.1,lw_hisnet_dp,704,Fotoğraftaki ürün gelmedi.Bana gelen ürünün bel şeridi tam olarak 10 cm korse gibi görünüyor. Bacak boyuda dizimin 2 parmak üzerinde. Beğenmedim istediğim görüntüyü vermedi iade edeceğim.,negative,positive,neutral,0.20833333333333334,0.125,0.08333333333333334
+0.1,lw_hisnet_dp,772,hızlı kargo ve güzel paketleme. ürünü kullanmaya henüz başladığım için ürün hakkında çok fazla bilgi yazamayacağım. tek kullanımda bile işe yaradı gibi geldi :),positive,negative,neutral,0.47954545454545455,0.55,-0.07045454545454549
+0.1,lw_hisnet_dp,785,keçe kısmı kuruyor bir süre sonra. islak ve yeterince koyu değil.,negative,positive,neutral,0.0625,0.0,0.0625
+0.1,lw_hisnet_dp,837,kaloteli ve uygun fiyatlı basta biraz sert gi geldi ama sonradan yumusadı,positive,positive,neutral,0.425,0.3706944444444445,0.054305555555555496
+0.1,lw_hisnet_dp,869,Çok beğendiğim bir ürün oldu. Saça gereken nemi ve bakımı sağlıyor,positive,negative,neutral,0.0,0.08333333333333333,-0.08333333333333333
+0.1,lw_hisnet_dp,899,Kurtarıcı aktivitemiz kızım eğlenerek oynuyor yalnız bir de boyama önlüğü şart👍,negative,negative,neutral,0.0,0.07083333333333333,-0.07083333333333333
+0.1,lw_hisnet_dp,967,ürünü denemedim bile aşırı ince meme uçları belli olur kesinlikle bu yüzden geri iade edicem.,negative,negative,neutral,0.1111111111111111,0.2090909090909091,-0.097979797979798
+0.1,lw_hisnet_dp,1085,Krem rengi ile pembe arasi bir ürün. Hayalim daha açık bir renk ve aydinlatmaydi ama bunu da kullaniyorum.,neutral,positive,neutral,0.1328125,0.042045454545454546,0.09076704545454545
+0.1,lw_hisnet_dp,1123,Ürünün kumaşı iki kere yıkamadan sonra keperme yaptı. Giyilemez halde 😡😡,negative,negative,neutral,0.0,0.075,-0.075
+0.1,lw_hisnet_dp,1167,İnanilmaz bir ürün tirnak cevresindeki tum kalinlasmalari kusurlari yok ediyor ve çok çok uzun sure kullanilir bu yogunluktaki bir ürün herkese tavsiye ediyorum manikure gerek kalmiyor,positive,negative,neutral,0.125,0.21428571428571427,-0.08928571428571427
+0.1,lw_hisnet_dp,1222,ebatı aşırı küçük geldi belki de renkleri 5 6 kullanmaya hemen gidicek,negative,negative,neutral,0.0,0.07083333333333333,-0.07083333333333333
+0.1,lw_hisnet_dp,1344,ürün bekledigimden büyük geldi. bir damlası bile aşırı nemlendiriyor. kesinlikle tavsiye ediyorum.,positive,positive,neutral,0.125,0.05,0.075
+0.1,lw_hisnet_dp,1452,Sorunsuz bir şekilde teslim aldım şu süreçte gayet hızlı geldi bile diyebilirim. Bakalım sonuçları da güzel olur umarım,positive,negative,neutral,0.45454545454545453,0.5102272727272728,-0.05568181818181822
+0.1,lw_hisnet_dp,1455,aşırı büyük geniş kollar çok uzun,negative,negative,neutral,0.0,0.09166666666666667,-0.09166666666666667
+0.1,lw_hisnet_dp,1457,Ürün yapısı ve rengi çok güzel ama kalıcılık yok,neutral,positive,neutral,0.4636363636363636,0.3964285714285714,0.06720779220779222
+0.1,lw_hisnet_dp,1468,Sevmedim çok basit,negative,positive,neutral,0.1,0.0,0.1
+0.1,lw_hisnet_dp,1481,RE ZA LET! Askının teki anyada diğeri konyada felan yani. O kadar kısa ve orantısız ki askıları aşağı inmedi bile.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,lw_hisnet_dp,1570,Yorumlara bakarak almıştım kokusu hoş ve kalıcı değil.,negative,negative,neutral,0.16666666666666666,0.25,-0.08333333333333334
+0.1,lw_hisnet_dp,1591,Gayet başarılı ürün olarak gördüm saçlarımı ilk boyanmış halindeki sarılığı hissetim ☺️,positive,negative,neutral,1.0,1.075,-0.07499999999999996
+0.1,lw_hisnet_dp,1627,Denemek icin aldim. Unibaby pamuk mendil kullanıyorum normalde boşuna almışım. Cildi çok ıslak bırakıyor ve silerken elde toplanıyor. Unibaby bu konuda çok çok daha iyi.,negative,negative,neutral,0.6111111111111112,0.6666666666666666,-0.05555555555555547
+0.1,lw_hisnet_dp,1691,Gerçekten kokusu çok hoş bir ürün indirimdeyken aldım deneyeceğim. Basma yeri yani hortumu ayrı gönderiliyor boyu uzun kesilmesi gerekiyor,positive,positive,neutral,0.265625,0.16666666666666666,0.09895833333333334
+0.1,lw_hisnet_dp,1708,Kuru ciltler için uygun bir ürün mavi olanı karma ciltler için mavi Olan çok kurutmuştu bundan çok memnunum 3. Şişem.,positive,positive,neutral,0.5,0.42307692307692313,0.07692307692307687
+0.1,lw_hisnet_dp,1826,Pek bir işlevi yoktu,neutral,negative,neutral,0.125,0.21428571428571427,-0.08928571428571427
+0.1,lw_hisnet_dp,1864,Blistexi tek geçerim indirimdeyken yedekli alın derim mağazalarda fiyatı uçmuş,positive,positive,neutral,0.25,0.1875,0.0625
+0.1,lw_hisnet_dp,1872,İlk giymemde askısı koptu model güzel ama kalitesiz,negative,negative,neutral,0.38636363636363635,0.4625,-0.07613636363636367
+0.1,lw_hisnet_dp,1884,ürün ıslanmış ve üstünde küfler vardı ama ıslak ve küflü olmasa cidden kumaşı ve kalitesi çok güzel ve kargo çok ama çok yavaş,negative,positive,neutral,1.3136363636363635,1.24375,0.06988636363636358
+0.1,lw_hisnet_dp,1950,Nasıl güzel açıcı kullanılmış sarı saçlarım bile yumuşacık parlak ellerim takılmadan arasından geçiyo ama üçüncü kullanımda daha çok farkettim,positive,negative,neutral,0.7582386363636364,0.85,-0.09176136363636356
+0.1,lw_hisnet_dp,1973,Kuaförümün tavsiyesi üzerine aldım gerçekten çok etkili saçlarım uzun süredir hemen hemen aynı tonda kaldı. Boyutu küçük evet ancak haftada 1 kullanımla bayağı bir gidiyo :),positive,positive,neutral,0.21750000000000003,0.16666666666666666,0.05083333333333337
+0.1,lw_hisnet_dp,1978,Bir gün kullandım ve Bir sayfa boyama yaptık bazı renk boyalar bitti bile,negative,negative,neutral,0.0,0.1,-0.1
+0.1,lw_hisnet_dp,1987,Daha önce aynı ürünü kullanmıştım çok daha etkiliydi. Yeniden aldığım ürün aynı etkiyi yaratmıyor. Daha doğrusu 2 dakika sürüyor etkisi.,neutral,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,lw_hisnet_dp,2038,indirimdeyken aldım memnun kaldım türünculaşma azaldı bence,positive,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,lw_hisnet_dp,2084,Ürün küçük bir şey.fırça kısmının kullanışlı olduğunu düşünmüyorum ben silikon tarafı için almıştım.titreşimliler gibi temizliyor çok para vermeye gerek olmadığını düşünüyorum,neutral,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,lw_hisnet_dp,2120,Rengi çok koyu ve yüzü yağlandırıyor,negative,negative,neutral,0.0,0.075,-0.075
+0.1,lw_hisnet_dp,2160,Çok koyu rengi var.,negative,negative,neutral,0.0,0.075,-0.075
+0.1,lw_hisnet_dp,2267,Yağlı cilde bire bir kokusu çok güzel sivilceleri azaltıyor,positive,positive,neutral,0.5811688311688311,0.5,0.08116883116883111
+0.1,lw_hisnet_dp,2287,Burnunuzda siyah nokta yerine kocaman mor halka olsun istiyorsanız alın fiyatı uygun 🥺,negative,positive,neutral,0.515625,0.41666666666666663,0.09895833333333337
+0.1,lw_hisnet_dp,2302,İndirimdeyken aldım ve bu üründen vazgeçmeyeceğimi söyleyebilirim. Hem nemlendirici hem de makyaj bazı olarak kullanabilirsiniz.,positive,positive,neutral,0.25,0.1875,0.0625
+0.1,lw_hisnet_dp,2339,kalın duvar kağıdını kesinlikle yapıştirmadi kalkan birleşim yerini,negative,negative,neutral,0.015625,0.1,-0.084375
+0.1,lw_hisnet_dp,2434,Yumuşak ama dökülme devam,neutral,positive,neutral,0.09444444444444444,0.0,0.09444444444444444
+0.1,lw_hisnet_dp,2445,Yumuşak yapıyor saçları ama fiyat fazla,neutral,positive,neutral,0.09444444444444444,0.0,0.09444444444444444
+0.1,lw_hisnet_dp,2459,Kokusu biraz şekerli. Kalıcılığı orta. İndirimde alınabilir.,neutral,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,lw_hisnet_dp,2517,Sadece nem sorununuz varsa denenebilir nem bakımından başarılı,neutral,positive,neutral,1.0,0.9166666666666667,0.08333333333333326
+0.1,lw_hisnet_dp,2519,Büyük taraf zor dönüyor ama şu aşamada küçük taraf daha işe yarar oldu buzluktan alıp kullanıldığında daha da güzel,neutral,positive,neutral,0.7332386363636364,0.6568181818181817,0.07642045454545465
+0.1,lw_hisnet_dp,2578,çabuk kuruyor ama rahatından bir 3 kat sürmeniz lazım,neutral,positive,neutral,0.07708333333333334,0.0,0.07708333333333334
+0.1,lw_hisnet_dp,2653,Tütleri düzgün alamıyo hiç kullanışlı değil,negative,negative,neutral,0.4,0.5,-0.09999999999999998
+0.1,lw_hisnet_dp,2690,Efsane bir ürün bürün ameliyatı olup yağlanması olanlara öneririm makyaj yapmadan önce bununla yıkayıp makyaj yaparsanız fondöten burnunuzdan akmayacaktır,positive,positive,neutral,0.32142857142857145,0.25,0.07142857142857145
+0.1,lw_hisnet_dp,2697,Böyle soft değil koyu olan renklerini yolladılar.,negative,negative,neutral,0.0,0.0625,-0.0625
+0.1,lw_hisnet_dp,2711,çok güzel tüyleri çatur çutur alıyor biraz acıyor tabi 😊,positive,negative,neutral,0.5454545454545454,0.6238095238095238,-0.0783549783549784
+0.1,lw_hisnet_dp,2715,Severek kullandığım bir ürün. İndirimdeyken aldım.,positive,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,lw_hisnet_dp,2717,Nemlendirme etkisi uzun süreli severek kullandığım bir ürün. Satıcı çok hızlı.,positive,negative,neutral,0.0,0.06,-0.06
+0.1,lw_hisnet_dp,2750,Daha önceden de kullandığım bir ürün. Kapatıcılığı gayet başarılı. Yağlı ciltte bir süre sonra büründa parlama yapabiliyor. İlaç kullandığım için cildim kuruyor ve kuru ciltte kullanmaktan pek hoşlanmıyorum.,positive,positive,neutral,1.2857142857142858,1.2131410256410255,0.07257326007326026
+0.1,lw_hisnet_dp,2804,Çok kullanışlı değil yada ben kullanmadım toz aydınlatıcı candır,neutral,negative,neutral,0.2222222222222222,0.3,-0.07777777777777778
+0.1,lw_hisnet_dp,2840,Aşırı beğendiğim ve sürekli kullanacağım bir bakım yağı şiddetle tavsiye ederim 👍,positive,negative,neutral,0.125,0.21666666666666667,-0.09166666666666667
+0.1,lw_hisnet_dp,2850,İndirimde aldım memnunum,positive,positive,neutral,0.25,0.16666666666666666,0.08333333333333334
+0.1,lw_hisnet_dp,2897,cildimi iyi nemlendiriyor fakat aydinlanma ve lekelere bir etkisi oldu diyemem 1 aydan fazladir kullaniyorum,neutral,negative,neutral,0.5194444444444445,0.5727083333333334,-0.05326388888888889
+0.1,lw_hisnet_dp,2942,Kalıp sabunla yıkamış gibi oluyor saçlar. Pek köpürmek gibi bir huyu yok.,neutral,negative,neutral,0.125,0.21428571428571427,-0.08928571428571427
+0.1,lw_hisnet_dp,2953,Hızlı ve eksıksız gonderim👍🏻fakat ağdası dıger yorumlarda bahsedıldıgı gıbı Farklı gelıyor ve çekerken de kopuyor o yüzden ağda pek bekledıgım gıbı degıl😕,neutral,positive,neutral,0.125,0.07083333333333333,0.05416666666666667

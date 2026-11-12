@@ -1126,6 +1126,30 @@ class SentimentScopeResolver:
     # NEGATION RESOLUTION
     # =========================================================
 
+    @staticmethod
+    def _is_following_light_verb_predicate(sentiment_token, negation_token, children):
+        """Do not carry an earlier 'değil' into a later light-verb predicate.
+
+        A parser may attach 'iade edeceğim' or 'tavsiye etmem' to the
+        preceding değil. Their own compound:lvc verb supplies local predicate
+        evidence; inheriting değil would flip the first or double-flip the
+        second. Position alone is insufficient: inverted copular negation
+        ('değil kötü') and predicates before değil keep their existing scope.
+        """
+        sentiment_id = int(sentiment_token["id"])
+        negation_id = int(negation_token["id"])
+        sentence = sentiment_token.get("sentence_index")
+        if (sentiment_id <= negation_id
+                or sentence != negation_token.get("sentence_index")):
+            return False
+        return any(
+            child.get("deprel") == "compound:lvc"
+            and child.get("upos") in {"VERB", "AUX"}
+            and int(child["id"]) > negation_id
+            and child.get("sentence_index") == sentence
+            for child in children.get(sentiment_id, [])
+        )
+
     def _find_negations(
         self,
         sentiment_token,
@@ -1256,6 +1280,9 @@ class SentimentScopeResolver:
             explicit_degil_parent = (
                 self._is_explicit_degil(
                     head
+                )
+                and not self._is_following_light_verb_predicate(
+                    sentiment_token, head, children
                 )
             )
 
@@ -1457,11 +1484,76 @@ class SentimentScopeResolver:
                 ]
             )
 
+            # IDs are global across the document. Positional scope repair
+            # must stay in the negation's sentence, even if that sentence
+            # contains no lexicon sentiment candidates.
+            negation_sentence = negation_token.get("sentence_index")
+            sentence_scopes = [
+                scope for scope in aligned_scopes
+                if token_by_id[int(scope["sentiment_token"]["id"])].get(
+                    "sentence_index"
+                ) == negation_sentence
+            ]
+
+            # A copula attached to an unscored predicate still belongs to
+            # that predicate. Lexicon coverage must not move its negation to
+            # an unrelated nearby opinion. Coordinate predicates may share
+            # it, provided the connecting span contains no contrast marker.
+            owner = token_by_id.get(negation_token.get("head"))
+            if owner is not None and int(owner["id"]) > negation_id:
+                # A malformed copular edge can point forward into a second
+                # clause: "göründüğü gibi değil ... amblemi yok". If değil
+                # already governs a preceding predicate, keep that predicate
+                # as its owner instead of negating the following clause.
+                preceding_predicates = [t for t in dependency_tokens
+                    if t.get("sentence_index") == negation_sentence
+                    and t.get("head") == negation_id and int(t["id"]) < negation_id
+                    and t.get("deprel") in {"acl", "xcomp", "ccomp", "amod", "obj"}]
+                if preceding_predicates:
+                    owner = max(preceding_predicates, key=lambda t: int(t["id"]))
+            if (owner is not None and negation_token.get("deprel") in {"cop", "aux"}
+                    and owner.get("sentence_index") == negation_sentence):
+                component = {int(owner["id"])}
+                changed = True
+                while changed:
+                    changed = False
+                    for linked in dependency_tokens:
+                        if linked.get("sentence_index") != negation_sentence:
+                            continue
+                        child_id, parent_id = int(linked["id"]), int(linked.get("head") or 0)
+                        relation = linked.get("deprel")
+                        # Negating a nominal predicate can include its
+                        # descriptive dependents ("güzel bir ürün değil",
+                        # "tavsiye ettiğim ürün değil"), but not its subject
+                        # or an independent paratactic clause.
+                        connected = (relation == "conj" and bool(component.intersection({child_id, parent_id})))
+                        connected |= (parent_id in component and relation in
+                                      {"amod", "acl", "advmod", "compound", "compound:lvc"})
+                        if not connected:
+                            continue
+                        parent = token_by_id.get(parent_id)
+                        if parent is None or parent.get("sentence_index") != negation_sentence:
+                            continue
+                        if any(min(child_id, parent_id) < marker < max(child_id, parent_id)
+                               for marker in contrast_marker_ids):
+                            continue
+                        if not {child_id, parent_id} <= component:
+                            component.update({child_id, parent_id})
+                            changed = True
+                for scope in sentence_scopes:
+                    if int(scope["sentiment_token"]["id"]) not in component:
+                        previous = scope.get("negations", [])
+                        scope["negations"] = [n for n in previous if n.get("id") != negation_id]
+                        if len(previous) != len(scope["negations"]):
+                            scope["negation_scope_strategy"] = "explicit_degil_removed_unrelated_predicate"
+                sentence_scopes = [s for s in sentence_scopes
+                                   if int(s["sentiment_token"]["id"]) in component]
+
             preceding_scopes = [
                 scope
 
                 for scope
-                in aligned_scopes
+                in sentence_scopes
 
                 if int(
                     scope[
@@ -1951,6 +2043,48 @@ class SentimentScopeResolver:
     # SENTIMENT ROLE RESOLUTION
     # =========================================================
 
+    @staticmethod
+    def _is_finite_morphological_predicate(record):
+        """Require a normal, finite final VERB group, not a verbal noun.
+
+        This recovers predicate evidence lost when the parser splits a
+        personal ending or assigns a nominal subject/object relation.
+        No lexicon score, sentiment label or particular root is used.
+        """
+        if not record or record.get("analysis_source") not in {None, "normal"}:
+            return False
+        analysis = str(record.get("analysis") or "")
+        # Only adjective-derived copular predicates can override entity
+        # suppression/candidate filtering. Nominal possessives (e.g.
+        # sivilcelerim) can be misanalysed as NOUN -> VERB; ordinary lexical
+        # verbs must retain the dependency method's existing selection rules.
+        groups = analysis.split("^DB+")
+        if len(groups) < 2 or groups[-2].split("+")[-1] != "ADJ":
+            return False
+        group = analysis.rsplit("^DB+", 1)[-1] if "^DB+" in analysis else analysis.partition("+")[2]
+        tags = group.split("+")
+        finite = {"PRES", "PAST", "NARR", "FUT", "AOR", "PROG1", "PROG2", "COND", "NECES", "OPT", "IMP"}
+        agreement = {"A1SG", "A2SG", "A3SG", "A1PL", "A2PL", "A3PL"}
+        nonfinite = {"INF1", "INF2", "INF3", "PASTPART", "FUTPART", "PRESPART"}
+        return bool(tags and tags[0] == "VERB" and finite.intersection(tags)
+                    and agreement.intersection(tags) and not nonfinite.intersection(tags))
+
+    def _mark_finite_predicate_targets(self, results, morphological_analyses):
+        targets = {(r.get("target") or {}).get("id") for r in results}
+        for result in results:
+            token_id = (result.get("sentiment_token") or {}).get("id")
+            if token_id is None or token_id not in targets or result.get("target") is not None:
+                continue
+            surface = self._normalize_alignment_piece(result.get("word"))
+            root = self._turkish_lower(result.get("root"))
+            records = [r for r in morphological_analyses or []
+                       if self._normalize_alignment_piece(r.get("word")) == surface
+                       and self._turkish_lower(r.get("root")) == root]
+            # Ambiguous repeated analyses do not license an override.
+            if records and all(self._is_finite_morphological_predicate(r) for r in records):
+                result["target_protection"] = "finite_morphological_predicate"
+        return results
+
     def _resolve_sentiment_roles(
         self,
         results
@@ -2005,6 +2139,7 @@ class SentimentScopeResolver:
                 and result.get(
                     "target"
                 ) is None
+                and result.get("target_protection") != "finite_morphological_predicate"
             ):
 
                 result[
@@ -2031,14 +2166,23 @@ class SentimentScopeResolver:
     def _find_morphological_root(
         self,
         dependency_token,
-        morphological_analyses
+        morphological_analyses,
+        dependency_tokens=None
     ):
 
-        surface = self._turkish_lower(
+        surface = self._normalize_alignment_piece(
             dependency_token.get(
                 "text"
             )
         )
+
+        occurrence = 0
+        if dependency_tokens is not None:
+            occurrence = sum(
+                int(token["id"]) < int(dependency_token["id"])
+                and self._normalize_alignment_piece(token.get("text")) == surface
+                for token in dependency_tokens
+            )
 
         if morphological_analyses:
 
@@ -2047,7 +2191,7 @@ class SentimentScopeResolver:
             ):
 
                 analysis_surface = (
-                    self._turkish_lower(
+                    self._normalize_alignment_piece(
                         analysis.get(
                             "word"
                         )
@@ -2058,6 +2202,10 @@ class SentimentScopeResolver:
                     analysis_surface
                     == surface
                 ):
+
+                    if occurrence:
+                        occurrence -= 1
+                        continue
 
                     return (
                         self._turkish_lower(
@@ -2101,28 +2249,20 @@ class SentimentScopeResolver:
             or ""
         )
 
-        for pos in [
-            "ADJ",
-            "VERB",
-            "NOUN",
-            "ADV",
-            "INTJ",
-            "PROPN",
-            "PRON"
-        ]:
-
-            if (
-                    f"+{pos}"
-                    in analysis
-            ):
-                return pos
-
-        return None
+        # The last derivational group determines surface POS. Searching
+        # every tag can mistake a nominalized verb for a verb (or vice versa).
+        if "^DB+" in analysis:
+            final_group = analysis.rsplit("^DB+", 1)[1]
+        else:
+            final_group = analysis.partition("+")[2]
+        pos = final_group.split("+", 1)[0]
+        return pos if pos in {"ADJ", "VERB", "NOUN", "ADV", "INTJ", "PROPN", "PRON"} else None
 
     def _find_morphology_record_for_surface(
             self,
             surface,
-            morphological_analyses
+            morphological_analyses,
+            occurrence=0
     ):
         """
         Finds a Starlang morphology record using normalized surface.
@@ -2157,6 +2297,9 @@ class SentimentScopeResolver:
                     ==
                     normalized_surface
             ):
+                if occurrence:
+                    occurrence -= 1
+                    continue
                 return record
 
         return None
@@ -2623,16 +2766,32 @@ class SentimentScopeResolver:
                 token_id
             )
 
-        return (
-            repair_units,
-            consumed_ids
-        )
+        # Resolve occurrences over ALL units, including ordinary tokens.
+        # A repaired first occurrence must consume the same record as a
+        # plain first occurrence; otherwise later homographs borrow its root.
+        units = [t for t in tokens if int(t["id"]) not in consumed_ids] + repair_units
+        units.sort(key=lambda t: min(t.get("_fragment_token_ids", [int(t["id"])])))
+        occurrences = {}
+        for unit in units:
+            surface = self._normalize_alignment_piece(unit.get("text"))
+            occurrence = occurrences.get(surface, 0)
+            occurrences[surface] = occurrence + 1
+            if not unit.get("_dependency_repair"):
+                continue
+            record = self._find_morphology_record_for_surface(surface, morphology_records, occurrence)
+            if record is not None:
+                unit["_morphology_record"] = record
+                unit["lemma"] = record.get("root") or surface
+                unit["upos"] = self._morphology_pos(record) or unit.get("upos")
+
+        return repair_units, consumed_ids
 
     def _is_dependency_opinion_candidate(
         self,
         token,
         target,
-        target_strategy
+        target_strategy,
+        morphology_record=None
     ):
 
         if token is None:
@@ -2746,6 +2905,9 @@ class SentimentScopeResolver:
                 True,
                 "descriptive_content_fallback"
             )
+
+        if self._is_finite_morphological_predicate(morphology_record):
+            return True, "finite_morphological_predicate"
 
         return (
             False,
@@ -2881,7 +3043,12 @@ class SentimentScopeResolver:
                 self._is_dependency_opinion_candidate(
                     token,
                     target,
-                    target_strategy
+                    target_strategy,
+                    token.get("_morphology_record") or self._find_morphology_record_for_surface(
+                        token.get("text"), morphological_analyses,
+                        sum(int(t["id"]) < token_id
+                            and self._normalize_alignment_piece(t.get("text")) == self._normalize_alignment_piece(token.get("text"))
+                            for t in candidate_units))
                 )
             )
 
@@ -2944,7 +3111,8 @@ class SentimentScopeResolver:
                 root = (
                     self._find_morphological_root(
                         token,
-                        morphological_analyses
+                        morphological_analyses,
+                        candidate_units
                     )
                 )
 
@@ -2972,7 +3140,8 @@ class SentimentScopeResolver:
                     "root":
                         self._find_morphological_root(
                             target,
-                            morphological_analyses
+                            morphological_analyses,
+                            dependency_tokens
                         ),
 
                     "upos":
@@ -3104,6 +3273,7 @@ class SentimentScopeResolver:
                     )
             })
 
+        candidates = self._mark_finite_predicate_targets(candidates, morphological_analyses)
         return (
             self._disambiguate_shared_explicit_negations(
                 candidates,
@@ -3134,14 +3304,64 @@ class SentimentScopeResolver:
 
         used_token_ids = set()
 
+        # Bind repeated surfaces using the complete morphology sequence,
+        # before filtering down to sentiment-bearing entries. This preserves
+        # the occurrence of homographs even when an earlier root is unscored.
+        full_matches = {}
+        bound_candidates = {}
+        records = morphological_analyses or []
+        groups = {}
+        for record_index, record in enumerate(records):
+            surface = self._normalize_alignment_piece(record.get("word"))
+            groups.setdefault(surface, []).append(record_index)
+        repeated = {surface: indexes for surface, indexes in groups.items() if surface and len(indexes) > 1}
+        if repeated:
+            repairs, consumed = self._build_dependency_repair_units(dependency_tokens, records)
+            units = [t for t in dependency_tokens if int(t["id"]) not in consumed] + repairs
+            units.sort(key=lambda t: min(t.get("_fragment_token_ids", [int(t["id"])])))
+            for surface, indexes in repeated.items():
+                matching = [t for t in units if self._normalize_alignment_piece(t.get("text")) == surface]
+                for record_index, unit in zip(indexes, matching):
+                    fragment_ids = set(unit.get("_fragment_token_ids", [int(unit["id"])]))
+                    match = self._match_sentiment_token(records[record_index],
+                        [t for t in dependency_tokens if int(t["id"]) in fragment_ids], set())
+                    if match is not None:
+                        full_matches[record_index] = match
+                        used_token_ids.update(fragment_ids)
+            consumed_records = set()
+            for candidate_index, candidate in enumerate(sentiment_words):
+                surface = self._normalize_alignment_piece(candidate.get("word"))
+                for record_index in repeated.get(surface, []):
+                    record = records[record_index]
+                    if (record_index not in consumed_records
+                            and self._turkish_lower(record.get("root")) == self._turkish_lower(candidate.get("root"))
+                            and (not candidate.get("analysis") or record.get("analysis") == candidate["analysis"])):
+                        consumed_records.add(record_index)
+                        if record_index in full_matches:
+                            bound_candidates[candidate_index] = full_matches[record_index]
+                        break
+
+        # Reserve exact surface matches for every candidate before allowing
+        # root/lemma fallbacks to consume another candidate's token.
+        exact_matches = dict(bound_candidates)
+        for index, sentiment_word in enumerate(sentiment_words):
+            if index in exact_matches:
+                continue
+            surface = self._turkish_lower(sentiment_word["word"])
+            exact_tokens = [
+                token for token in dependency_tokens
+                if self._turkish_lower(token.get("text")) == surface
+            ]
+            match = self._match_sentiment_token(sentiment_word, exact_tokens, used_token_ids)
+            if match is not None:
+                exact_matches[index] = match
+
         results = []
 
-        for sentiment_word in (
-            sentiment_words
-        ):
+        for index, sentiment_word in enumerate(sentiment_words):
 
             sentiment_token = (
-                self._match_sentiment_token(
+                exact_matches.get(index) or self._match_sentiment_token(
                     sentiment_word,
                     dependency_tokens,
                     used_token_ids
@@ -3268,7 +3488,8 @@ class SentimentScopeResolver:
                     "root":
                         self._find_morphological_root(
                             target,
-                            morphological_analyses
+                            morphological_analyses,
+                            dependency_tokens
                         ),
 
                     "upos":
@@ -3407,6 +3628,7 @@ class SentimentScopeResolver:
             )
         )
 
+        results = self._mark_finite_predicate_targets(results, morphological_analyses)
         return (
             self._resolve_sentiment_roles(
                 results

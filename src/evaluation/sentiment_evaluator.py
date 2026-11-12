@@ -21,6 +21,8 @@ from src.hisnet.hisnet_dependency_classifier import (
     HisNetDependencyClassifier
 )
 
+from src.evaluation.run_identity import implementation_fingerprint
+
 
 LABELS = [
     "negative",
@@ -138,7 +140,8 @@ class SentimentEvaluator:
         dataset_name,
         dataset_fingerprint,
         total_examples,
-        rows
+        rows,
+        experiment_fingerprint=None
     ):
         """
         Atomically saves evaluation progress.
@@ -146,7 +149,10 @@ class SentimentEvaluator:
 
         checkpoint_data = {
             "checkpoint_version":
-                1,
+                2,
+
+            "implementation_fingerprint":
+                experiment_fingerprint or implementation_fingerprint(),
 
             "dataset":
                 dataset_name,
@@ -195,7 +201,8 @@ class SentimentEvaluator:
         checkpoint_path,
         dataset_name,
         dataset_fingerprint,
-        total_examples
+        total_examples,
+        experiment_fingerprint=None
     ):
         """
         Loads and validates an existing checkpoint.
@@ -217,11 +224,18 @@ class SentimentEvaluator:
             checkpoint.get(
                 "checkpoint_version"
             )
-            != 1
+            != 2
         ):
 
             raise ValueError(
-                "Unsupported checkpoint version."
+                "Unsupported checkpoint version; restart in a new output directory."
+            )
+
+        expected_implementation = experiment_fingerprint or implementation_fingerprint()
+        if checkpoint.get("implementation_fingerprint") != expected_implementation:
+            raise ValueError(
+                "Checkpoint code/package versions differ from this run. "
+                "Restart in a new output directory to avoid mixing predictions."
             )
 
         if (
@@ -692,6 +706,8 @@ class SentimentEvaluator:
             )
         )
 
+        experiment_fingerprint = implementation_fingerprint()
+
         rows = []
 
         # =====================================================
@@ -713,6 +729,7 @@ class SentimentEvaluator:
 
             rows = (
                 self._load_checkpoint(
+                    experiment_fingerprint=experiment_fingerprint,
                     checkpoint_path=
                         checkpoint_path,
 
@@ -1066,6 +1083,7 @@ class SentimentEvaluator:
 
                 # Save everything completed before error.
                 self._save_checkpoint(
+                    experiment_fingerprint=experiment_fingerprint,
                     checkpoint_path=
                         checkpoint_path,
 
@@ -1156,6 +1174,7 @@ class SentimentEvaluator:
             if should_save_checkpoint:
 
                 self._save_checkpoint(
+                    experiment_fingerprint=experiment_fingerprint,
                     checkpoint_path=
                         checkpoint_path,
 
@@ -1355,6 +1374,7 @@ class SentimentEvaluator:
         # =====================================================
 
         summary = {
+            "implementation_fingerprint": experiment_fingerprint,
             "dataset":
                 dataset_name,
 

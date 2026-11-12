@@ -1,0 +1,937 @@
+﻿row_id,text,gold,system,prediction,positive_score,negative_score,source_label_conflict
+0,paketlemisi gayet güzeldi fakat ilk yıkamada rengi soldu,negative,hisnet,positive,0.45454545454545453,0.0,False
+0,paketlemisi gayet güzeldi fakat ilk yıkamada rengi soldu,negative,dp_hisnet,positive,0.45454545454545453,0.0,False
+0,paketlemisi gayet güzeldi fakat ilk yıkamada rengi soldu,negative,hisnet_dp,positive,0.45454545454545453,0.0,False
+0,paketlemisi gayet güzeldi fakat ilk yıkamada rengi soldu,negative,lw_hisnet_dp,positive,0.38636363636363635,0.0,False
+2,Maviden kalan yeşiller vardı ve asla etki etmedi. Yorumlara bakarak aldım ümitliydim ama şu an hiçbir fark yok.,negative,dp_hisnet,positive,0.5,0.38095238095238093,False
+4,Güzeldi sadece tarağı biraz yamuktu,neutral,hisnet,positive,0.45454545454545453,0.3333333333333333,False
+4,Güzeldi sadece tarağı biraz yamuktu,neutral,dp_hisnet,positive,0.45454545454545453,0.3333333333333333,False
+4,Güzeldi sadece tarağı biraz yamuktu,neutral,hisnet_dp,positive,0.45454545454545453,0.3333333333333333,False
+4,Güzeldi sadece tarağı biraz yamuktu,neutral,lw_hisnet_dp,positive,0.45454545454545453,0.26666666666666666,False
+6,Gayet güzel ambalajlanıp gelmiş kırılma falan yoktu pigmentasyonu bir tık zayıf geldi,neutral,hisnet,negative,0.45454545454545453,0.5198412698412699,False
+6,Gayet güzel ambalajlanıp gelmiş kırılma falan yoktu pigmentasyonu bir tık zayıf geldi,neutral,dp_hisnet,negative,0.45454545454545453,0.5198412698412699,False
+6,Gayet güzel ambalajlanıp gelmiş kırılma falan yoktu pigmentasyonu bir tık zayıf geldi,neutral,hisnet_dp,negative,0.45454545454545453,0.5198412698412699,False
+6,Gayet güzel ambalajlanıp gelmiş kırılma falan yoktu pigmentasyonu bir tık zayıf geldi,neutral,lw_hisnet_dp,negative,0.45454545454545453,0.5198412698412699,False
+7,Memnun kalmadım kasıntı yaptı fakat arkadaşıma verdim o memnun kaldı sanırım benim cilt yapımdan kaynaklı,negative,hisnet,neutral,0.5,0.5,False
+7,Memnun kalmadım kasıntı yaptı fakat arkadaşıma verdim o memnun kaldı sanırım benim cilt yapımdan kaynaklı,negative,dp_hisnet,neutral,0.0,0.0,False
+7,Memnun kalmadım kasıntı yaptı fakat arkadaşıma verdim o memnun kaldı sanırım benim cilt yapımdan kaynaklı,negative,hisnet_dp,neutral,0.5,0.5,False
+7,Memnun kalmadım kasıntı yaptı fakat arkadaşıma verdim o memnun kaldı sanırım benim cilt yapımdan kaynaklı,negative,lw_hisnet_dp,positive,0.925,0.425,False
+9,Aşırı derecede cildimi kuruttu tavsiye etmem,negative,hisnet,positive,0.125,0.05,False
+10,durmuyor bile hemen düşüyor,negative,hisnet,neutral,0.0,0.0,False
+10,durmuyor bile hemen düşüyor,negative,dp_hisnet,neutral,0.0,0.0,False
+10,durmuyor bile hemen düşüyor,negative,hisnet_dp,neutral,0.0,0.0,False
+10,durmuyor bile hemen düşüyor,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+11,Yorumlarda ki övgülere bakıp aldım umdugumu bulamadım suyu kestiriyor bulaşık bezine sabun sürsen daha güzel temizler,negative,dp_hisnet,positive,0.45454545454545453,0.16666666666666666,False
+12,jel olması büyük rahatlık,neutral,hisnet,positive,0.125,0.0,False
+12,jel olması büyük rahatlık,neutral,dp_hisnet,positive,0.125,0.0,False
+12,jel olması büyük rahatlık,neutral,hisnet_dp,positive,0.125,0.0,False
+12,jel olması büyük rahatlık,neutral,lw_hisnet_dp,positive,0.125,0.0,False
+14,Ürünü senelerdir severek kullanıyorum fakat dikkat edin normal 400ml siseler gibi gozukse de ufak boy bu ürün ve 300ml.,neutral,hisnet,negative,0.0,0.08333333333333333,False
+14,Ürünü senelerdir severek kullanıyorum fakat dikkat edin normal 400ml siseler gibi gozukse de ufak boy bu ürün ve 300ml.,neutral,dp_hisnet,negative,0.0,0.0625,False
+14,Ürünü senelerdir severek kullanıyorum fakat dikkat edin normal 400ml siseler gibi gozukse de ufak boy bu ürün ve 300ml.,neutral,hisnet_dp,negative,0.0,0.08333333333333333,False
+14,Ürünü senelerdir severek kullanıyorum fakat dikkat edin normal 400ml siseler gibi gozukse de ufak boy bu ürün ve 300ml.,neutral,lw_hisnet_dp,negative,0.0,0.07083333333333333,False
+15,Öncelikle ürün sorunsuz iyi paketlenmiş şekilde geldi ve kokusu çok güzel yıkadıktan sonra cilde aydınlık veriyor ama bakalım uzun süre kullanıldığında istenen sonucu vericek mi,neutral,hisnet,positive,1.4656565656565657,0.25,False
+15,Öncelikle ürün sorunsuz iyi paketlenmiş şekilde geldi ve kokusu çok güzel yıkadıktan sonra cilde aydınlık veriyor ama bakalım uzun süre kullanıldığında istenen sonucu vericek mi,neutral,dp_hisnet,positive,1.0656565656565657,0.0,False
+15,Öncelikle ürün sorunsuz iyi paketlenmiş şekilde geldi ve kokusu çok güzel yıkadıktan sonra cilde aydınlık veriyor ama bakalım uzun süre kullanıldığında istenen sonucu vericek mi,neutral,hisnet_dp,positive,1.4656565656565657,0.25,False
+15,Öncelikle ürün sorunsuz iyi paketlenmiş şekilde geldi ve kokusu çok güzel yıkadıktan sonra cilde aydınlık veriyor ama bakalım uzun süre kullanıldığında istenen sonucu vericek mi,neutral,lw_hisnet_dp,positive,1.323080808080808,0.4625,False
+17,çizgi çizgi oluyor renk vermiyor.,negative,hisnet,neutral,0.0,0.0,False
+17,çizgi çizgi oluyor renk vermiyor.,negative,dp_hisnet,neutral,0.0,0.0,False
+17,çizgi çizgi oluyor renk vermiyor.,negative,hisnet_dp,neutral,0.0,0.0,False
+17,çizgi çizgi oluyor renk vermiyor.,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+19,Koku gerçekten leş gözlerim yandı resmen bence evde kendinizin yapabileceği ve sonuç alabileceğiniz bir ürün değil ya bir arkadaşınızdan yardım alın yada kuaförde yaptırın sonuç işe gerçekten kabarıklık yok sadece kurutunca düz oluyor,neutral,hisnet,negative,0.75,0.9226190476190476,False
+19,Koku gerçekten leş gözlerim yandı resmen bence evde kendinizin yapabileceği ve sonuç alabileceğiniz bir ürün değil ya bir arkadaşınızdan yardım alın yada kuaförde yaptırın sonuç işe gerçekten kabarıklık yok sadece kurutunca düz oluyor,neutral,dp_hisnet,negative,0.0,0.5476190476190476,False
+19,Koku gerçekten leş gözlerim yandı resmen bence evde kendinizin yapabileceği ve sonuç alabileceğiniz bir ürün değil ya bir arkadaşınızdan yardım alın yada kuaförde yaptırın sonuç işe gerçekten kabarıklık yok sadece kurutunca düz oluyor,neutral,hisnet_dp,negative,0.6666666666666666,0.7559523809523809,False
+19,Koku gerçekten leş gözlerim yandı resmen bence evde kendinizin yapabileceği ve sonuç alabileceğiniz bir ürün değil ya bir arkadaşınızdan yardım alın yada kuaförde yaptırın sonuç işe gerçekten kabarıklık yok sadece kurutunca düz oluyor,neutral,lw_hisnet_dp,negative,0.6666666666666666,0.7559523809523809,False
+21,dermorollerla kullanildiginda daha da etkili olan bir urün,positive,hisnet,neutral,0.0,0.022727272727272728,False
+21,dermorollerla kullanildiginda daha da etkili olan bir urün,positive,dp_hisnet,neutral,0.0,0.0,False
+21,dermorollerla kullanildiginda daha da etkili olan bir urün,positive,hisnet_dp,neutral,0.0,0.022727272727272728,False
+21,dermorollerla kullanildiginda daha da etkili olan bir urün,positive,lw_hisnet_dp,neutral,0.0,0.022727272727272728,False
+22,Zaten kullandığım ürün ben çok memnunum ürün anlatıldığı gibi etkili 👍,positive,hisnet,neutral,0.0,0.0,False
+22,Zaten kullandığım ürün ben çok memnunum ürün anlatıldığı gibi etkili 👍,positive,dp_hisnet,neutral,0.0,0.0,False
+22,Zaten kullandığım ürün ben çok memnunum ürün anlatıldığı gibi etkili 👍,positive,hisnet_dp,neutral,0.0,0.0,False
+22,Zaten kullandığım ürün ben çok memnunum ürün anlatıldığı gibi etkili 👍,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+24,Normalde pastel kullanıyorum onun kadar başarılı değil ne yazık ki,neutral,hisnet,positive,1.0,0.75,False
+24,Normalde pastel kullanıyorum onun kadar başarılı değil ne yazık ki,neutral,dp_hisnet,negative,0.0,1.75,False
+24,Normalde pastel kullanıyorum onun kadar başarılı değil ne yazık ki,neutral,hisnet_dp,negative,0.0,1.75,False
+24,Normalde pastel kullanıyorum onun kadar başarılı değil ne yazık ki,neutral,lw_hisnet_dp,negative,0.0,1.75,False
+25,elime ulaştı kargolamasi iyi kullanmadim şimdilik fakat kullanipta fayda görürsem bu yorumu kesinlikle güncellerim. 👍,neutral,hisnet,negative,0.6111111111111112,1.0,False
+25,elime ulaştı kargolamasi iyi kullanmadim şimdilik fakat kullanipta fayda görürsem bu yorumu kesinlikle güncellerim. 👍,neutral,dp_hisnet,negative,0.6111111111111112,1.0,False
+25,elime ulaştı kargolamasi iyi kullanmadim şimdilik fakat kullanipta fayda görürsem bu yorumu kesinlikle güncellerim. 👍,neutral,hisnet_dp,negative,0.6111111111111112,1.0,False
+25,elime ulaştı kargolamasi iyi kullanmadim şimdilik fakat kullanipta fayda görürsem bu yorumu kesinlikle güncellerim. 👍,neutral,lw_hisnet_dp,negative,0.5194444444444445,1.85,False
+27,Siyah noktaları akıp almadığını anlayamadım ama burnunuz yumuşak oluyor duştan sonra uyguladığınızda. Fakat nemlendirip yapmanızda fayda var kuru kuru yapılmıyor.,positive,hisnet,negative,0.43253968253968256,0.8012820512820512,False
+27,Siyah noktaları akıp almadığını anlayamadım ama burnunuz yumuşak oluyor duştan sonra uyguladığınızda. Fakat nemlendirip yapmanızda fayda var kuru kuru yapılmıyor.,positive,hisnet_dp,negative,0.43253968253968256,0.5512820512820513,False
+27,Siyah noktaları akıp almadığını anlayamadım ama burnunuz yumuşak oluyor duştan sonra uyguladığınızda. Fakat nemlendirip yapmanızda fayda var kuru kuru yapılmıyor.,positive,lw_hisnet_dp,negative,0.4787698412698413,0.8532051282051283,False
+28,Yeni başladım yakma hissi var ama dayanamayacak kadar değil,positive,hisnet,neutral,0.0,0.0,False
+28,Yeni başladım yakma hissi var ama dayanamayacak kadar değil,positive,dp_hisnet,neutral,0.0,0.0,False
+28,Yeni başladım yakma hissi var ama dayanamayacak kadar değil,positive,hisnet_dp,neutral,0.0,0.0,False
+28,Yeni başladım yakma hissi var ama dayanamayacak kadar değil,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+30,Beğendim fiyata göre çok iyi,neutral,hisnet,positive,0.6111111111111112,0.0,False
+30,Beğendim fiyata göre çok iyi,neutral,dp_hisnet,positive,0.6111111111111112,0.0,False
+30,Beğendim fiyata göre çok iyi,neutral,hisnet_dp,positive,0.6111111111111112,0.0,False
+30,Beğendim fiyata göre çok iyi,neutral,lw_hisnet_dp,positive,0.7333333333333334,0.0,False
+32,Ürünler çok iyi özellikle tonik çok güzel kokuyor,neutral,hisnet,positive,1.0656565656565657,0.0,False
+32,Ürünler çok iyi özellikle tonik çok güzel kokuyor,neutral,dp_hisnet,positive,1.0656565656565657,0.0,False
+32,Ürünler çok iyi özellikle tonik çok güzel kokuyor,neutral,hisnet_dp,positive,1.0656565656565657,0.0,False
+32,Ürünler çok iyi özellikle tonik çok güzel kokuyor,neutral,lw_hisnet_dp,positive,1.2787878787878788,0.0,False
+36,Ebati küçük fakat iş gorur,negative,hisnet,neutral,0.0,0.0,False
+36,Ebati küçük fakat iş gorur,negative,dp_hisnet,neutral,0.0,0.0,False
+36,Ebati küçük fakat iş gorur,negative,hisnet_dp,neutral,0.0,0.0,False
+36,Ebati küçük fakat iş gorur,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+37,Eğer hassas bir ciltiniz varsa kesinlikle toniği ve yıkama jelini yüzünüzü itişe edebilir içeriği de gerçekten çok temiz değil,negative,hisnet,positive,0.65,0.020833333333333332,False
+37,Eğer hassas bir ciltiniz varsa kesinlikle toniği ve yıkama jelini yüzünüzü itişe edebilir içeriği de gerçekten çok temiz değil,negative,dp_hisnet,positive,0.65,0.0,False
+37,Eğer hassas bir ciltiniz varsa kesinlikle toniği ve yıkama jelini yüzünüzü itişe edebilir içeriği de gerçekten çok temiz değil,negative,hisnet_dp,positive,0.65,0.020833333333333332,False
+37,Eğer hassas bir ciltiniz varsa kesinlikle toniği ve yıkama jelini yüzünüzü itişe edebilir içeriği de gerçekten çok temiz değil,negative,lw_hisnet_dp,positive,0.78,0.020833333333333332,False
+38,Kiko markasını yıllardır kullanıyorum alternatif olarak alınabilir.,neutral,hisnet,negative,0.0,0.16666666666666666,False
+38,Kiko markasını yıllardır kullanıyorum alternatif olarak alınabilir.,neutral,dp_hisnet,negative,0.0,0.16666666666666666,False
+38,Kiko markasını yıllardır kullanıyorum alternatif olarak alınabilir.,neutral,hisnet_dp,negative,0.0,0.16666666666666666,False
+38,Kiko markasını yıllardır kullanıyorum alternatif olarak alınabilir.,neutral,lw_hisnet_dp,negative,0.0,0.16666666666666666,False
+40,Biraz fazla can acıtsa da beklediğimden daha güzel alıyor tavsiye ederim,positive,hisnet,neutral,0.8017676767676767,0.7608225108225107,False
+40,Biraz fazla can acıtsa da beklediğimden daha güzel alıyor tavsiye ederim,positive,hisnet_dp,neutral,0.8017676767676767,0.7608225108225107,False
+40,Biraz fazla can acıtsa da beklediğimden daha güzel alıyor tavsiye ederim,positive,lw_hisnet_dp,neutral,0.8017676767676767,0.7608225108225107,False
+41,Kesinlikle göründüğü gibi değil sütyen kısmı berbat göğüslerinizi yapıştırıyor resmen,negative,hisnet,neutral,0.0,0.0,False
+41,Kesinlikle göründüğü gibi değil sütyen kısmı berbat göğüslerinizi yapıştırıyor resmen,negative,dp_hisnet,neutral,0.0,0.0,False
+41,Kesinlikle göründüğü gibi değil sütyen kısmı berbat göğüslerinizi yapıştırıyor resmen,negative,hisnet_dp,neutral,0.0,0.0,False
+41,Kesinlikle göründüğü gibi değil sütyen kısmı berbat göğüslerinizi yapıştırıyor resmen,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+42,fena değil işe yariyor sanirim 2 kez kullandik.,neutral,hisnet,negative,0.35,0.4583333333333333,False
+42,fena değil işe yariyor sanirim 2 kez kullandik.,neutral,dp_hisnet,positive,0.8083333333333333,0.0,False
+42,fena değil işe yariyor sanirim 2 kez kullandik.,neutral,hisnet_dp,positive,0.8083333333333333,0.0,False
+42,fena değil işe yariyor sanirim 2 kez kullandik.,neutral,lw_hisnet_dp,positive,0.8083333333333333,0.0,False
+43,Müthiş kesinlikle tavsiye ederim,positive,hisnet,negative,0.125,0.375,False
+43,Müthiş kesinlikle tavsiye ederim,positive,dp_hisnet,negative,0.125,0.375,False
+43,Müthiş kesinlikle tavsiye ederim,positive,hisnet_dp,negative,0.125,0.375,False
+43,Müthiş kesinlikle tavsiye ederim,positive,lw_hisnet_dp,negative,0.125,0.375,False
+44,Güzel ürün yeni başladım kullanmaya fakat içimde parfüm olması beni biraz üzdü açıkcası,neutral,hisnet,positive,0.5795454545454546,0.0,False
+44,Güzel ürün yeni başladım kullanmaya fakat içimde parfüm olması beni biraz üzdü açıkcası,neutral,dp_hisnet,positive,0.45454545454545453,0.0,False
+44,Güzel ürün yeni başladım kullanmaya fakat içimde parfüm olması beni biraz üzdü açıkcası,neutral,hisnet_dp,positive,0.5795454545454546,0.0,False
+44,Güzel ürün yeni başladım kullanmaya fakat içimde parfüm olması beni biraz üzdü açıkcası,neutral,lw_hisnet_dp,positive,0.6176136363636364,0.0,False
+45,parfüm kokusundan başı ağrıyanlar için pek uygun değil yani migreni olanlar için falan benim başımı ağrıtıyor ve midemi bulandırdı kokusu,neutral,hisnet,negative,0.75,2.0,False
+45,parfüm kokusundan başı ağrıyanlar için pek uygun değil yani migreni olanlar için falan benim başımı ağrıtıyor ve midemi bulandırdı kokusu,neutral,dp_hisnet,negative,0.125,1.5,False
+45,parfüm kokusundan başı ağrıyanlar için pek uygun değil yani migreni olanlar için falan benim başımı ağrıtıyor ve midemi bulandırdı kokusu,neutral,hisnet_dp,negative,0.25,2.5,False
+45,parfüm kokusundan başı ağrıyanlar için pek uygun değil yani migreni olanlar için falan benim başımı ağrıtıyor ve midemi bulandırdı kokusu,neutral,lw_hisnet_dp,negative,0.125,2.6,False
+46,yeni geldi el için ideal boyda firçası da yumuşak,neutral,hisnet,positive,0.1111111111111111,0.022727272727272728,False
+46,yeni geldi el için ideal boyda firçası da yumuşak,neutral,dp_hisnet,positive,0.1111111111111111,0.0,False
+46,yeni geldi el için ideal boyda firçası da yumuşak,neutral,hisnet_dp,positive,0.1111111111111111,0.022727272727272728,False
+46,yeni geldi el için ideal boyda firçası da yumuşak,neutral,lw_hisnet_dp,positive,0.1111111111111111,0.022727272727272728,False
+47,Benim cildime iyi gelmedi ama cildimden kaynaklı olduğunu düşünüyorum kızarıklık oldu :(,neutral,hisnet,positive,0.6111111111111112,0.0,False
+47,Benim cildime iyi gelmedi ama cildimden kaynaklı olduğunu düşünüyorum kızarıklık oldu :(,neutral,dp_hisnet,positive,0.6111111111111112,0.0,False
+47,Benim cildime iyi gelmedi ama cildimden kaynaklı olduğunu düşünüyorum kızarıklık oldu :(,neutral,hisnet_dp,positive,0.6111111111111112,0.0,False
+47,Benim cildime iyi gelmedi ama cildimden kaynaklı olduğunu düşünüyorum kızarıklık oldu :(,neutral,lw_hisnet_dp,positive,0.5194444444444445,0.0,False
+48,Kapatıcılığı çok iyi ama çok koyu halkalarınız varsa tek başına yeterli değil.,positive,lw_hisnet_dp,neutral,0.6233333333333334,0.6012500000000001,False
+50,Eczaneden aldığımın etkisi daha fazlaydı..,neutral,hisnet,negative,0.0,0.16666666666666666,False
+50,Eczaneden aldığımın etkisi daha fazlaydı..,neutral,hisnet_dp,negative,0.0,0.16666666666666666,False
+50,Eczaneden aldığımın etkisi daha fazlaydı..,neutral,lw_hisnet_dp,negative,0.0,0.16666666666666666,False
+52,Saçlarım kıvırcık çok zor açılıyor ama tararken dökülmesini biraz da olsa aza indirdi çok aman aman da bir fark olmadı 😐,neutral,hisnet,negative,0.25,1.1787878787878787,False
+52,Saçlarım kıvırcık çok zor açılıyor ama tararken dökülmesini biraz da olsa aza indirdi çok aman aman da bir fark olmadı 😐,neutral,dp_hisnet,negative,0.25,1.1333333333333333,False
+52,Saçlarım kıvırcık çok zor açılıyor ama tararken dökülmesini biraz da olsa aza indirdi çok aman aman da bir fark olmadı 😐,neutral,hisnet_dp,negative,0.25,1.1787878787878787,False
+52,Saçlarım kıvırcık çok zor açılıyor ama tararken dökülmesini biraz da olsa aza indirdi çok aman aman da bir fark olmadı 😐,neutral,lw_hisnet_dp,negative,0.23375,1.3738636363636363,False
+53,Kesinlikle 5 para etmez kaşındırma Yapıyor,negative,hisnet,neutral,0.0,0.0,False
+53,Kesinlikle 5 para etmez kaşındırma Yapıyor,negative,dp_hisnet,neutral,0.0,0.0,False
+53,Kesinlikle 5 para etmez kaşındırma Yapıyor,negative,hisnet_dp,neutral,0.0,0.0,False
+53,Kesinlikle 5 para etmez kaşındırma Yapıyor,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+56,En sevdiğim parfümüm ama kalitesi biraz bozulmuş gibi . İndirimdeyken aldım lakin orijinal gibi gelmiyor kullanıyorum ama kokusu uçuyor . Rengi de değişmiş .,negative,hisnet,positive,0.9375,0.1875,False
+56,En sevdiğim parfümüm ama kalitesi biraz bozulmuş gibi . İndirimdeyken aldım lakin orijinal gibi gelmiyor kullanıyorum ama kokusu uçuyor . Rengi de değişmiş .,negative,dp_hisnet,positive,0.8125,0.0,False
+56,En sevdiğim parfümüm ama kalitesi biraz bozulmuş gibi . İndirimdeyken aldım lakin orijinal gibi gelmiyor kullanıyorum ama kokusu uçuyor . Rengi de değişmiş .,negative,hisnet_dp,positive,0.9375,0.1875,False
+56,En sevdiğim parfümüm ama kalitesi biraz bozulmuş gibi . İndirimdeyken aldım lakin orijinal gibi gelmiyor kullanıyorum ama kokusu uçuyor . Rengi de değişmiş .,negative,lw_hisnet_dp,positive,1.296875,0.1625,False
+57,Elime çok hızlı ulaştı bakalım daha kullanmadım,neutral,hisnet,negative,0.0,0.3,False
+57,Elime çok hızlı ulaştı bakalım daha kullanmadım,neutral,hisnet_dp,negative,0.0,0.3,False
+57,Elime çok hızlı ulaştı bakalım daha kullanmadım,neutral,lw_hisnet_dp,negative,0.0,0.31,False
+65,Rengi çok mat değil ve fırçası küçük olduğundan kavramakta zorlanılıyor,negative,hisnet,neutral,0.0,0.0,False
+65,Rengi çok mat değil ve fırçası küçük olduğundan kavramakta zorlanılıyor,negative,dp_hisnet,neutral,0.0,0.0,False
+65,Rengi çok mat değil ve fırçası küçük olduğundan kavramakta zorlanılıyor,negative,hisnet_dp,neutral,0.0,0.0,False
+65,Rengi çok mat değil ve fırçası küçük olduğundan kavramakta zorlanılıyor,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+66,Askısı kopup geldi iade ettim,negative,dp_hisnet,neutral,0.0,0.0,False
+67,Kullanışlı gayet,neutral,hisnet,positive,0.25,0.0,False
+67,Kullanışlı gayet,neutral,dp_hisnet,positive,0.25,0.0,False
+67,Kullanışlı gayet,neutral,hisnet_dp,positive,0.25,0.0,False
+67,Kullanışlı gayet,neutral,lw_hisnet_dp,positive,0.25,0.0,False
+68,her kızın mutlaka kullandığı bilindik ama mütiş koku. Her zaman favori,positive,hisnet,neutral,0.0,0.0,False
+68,her kızın mutlaka kullandığı bilindik ama mütiş koku. Her zaman favori,positive,dp_hisnet,neutral,0.0,0.0,False
+68,her kızın mutlaka kullandığı bilindik ama mütiş koku. Her zaman favori,positive,hisnet_dp,neutral,0.0,0.0,False
+68,her kızın mutlaka kullandığı bilindik ama mütiş koku. Her zaman favori,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+69,Yüzüm yanmıştı Gece yatmadan önce sürdüm ve sabaha kizarikliklarim geçti Alabilirsiniz 👍,positive,hisnet,negative,0.0,0.16666666666666666,False
+69,Yüzüm yanmıştı Gece yatmadan önce sürdüm ve sabaha kizarikliklarim geçti Alabilirsiniz 👍,positive,dp_hisnet,negative,0.0,0.16666666666666666,False
+69,Yüzüm yanmıştı Gece yatmadan önce sürdüm ve sabaha kizarikliklarim geçti Alabilirsiniz 👍,positive,hisnet_dp,negative,0.0,0.16666666666666666,False
+69,Yüzüm yanmıştı Gece yatmadan önce sürdüm ve sabaha kizarikliklarim geçti Alabilirsiniz 👍,positive,lw_hisnet_dp,negative,0.0,0.16666666666666666,False
+70,Abartıldığı kadar yok bence,neutral,hisnet,negative,0.0,0.21428571428571427,False
+70,Abartıldığı kadar yok bence,neutral,dp_hisnet,negative,0.0,0.21428571428571427,False
+70,Abartıldığı kadar yok bence,neutral,hisnet_dp,negative,0.0,0.21428571428571427,False
+70,Abartıldığı kadar yok bence,neutral,lw_hisnet_dp,negative,0.0,0.21428571428571427,False
+72,Henüz kullanmadım ama iyiye benziyor,neutral,hisnet,positive,0.6111111111111112,0.0,False
+72,Henüz kullanmadım ama iyiye benziyor,neutral,dp_hisnet,positive,0.6111111111111112,0.0,False
+72,Henüz kullanmadım ama iyiye benziyor,neutral,hisnet_dp,positive,0.6111111111111112,0.0,False
+72,Henüz kullanmadım ama iyiye benziyor,neutral,lw_hisnet_dp,positive,1.1305555555555558,0.0,False
+73,Çok kullanmıyorum ama yumuşacık ve kaliteli bir kontür.,neutral,hisnet,positive,1.0,0.0,False
+73,Çok kullanmıyorum ama yumuşacık ve kaliteli bir kontür.,neutral,dp_hisnet,positive,1.0,0.0,False
+73,Çok kullanmıyorum ama yumuşacık ve kaliteli bir kontür.,neutral,hisnet_dp,positive,1.0,0.0,False
+73,Çok kullanmıyorum ama yumuşacık ve kaliteli bir kontür.,neutral,lw_hisnet_dp,positive,1.85,0.0,False
+74,Kalıcılığı uzun değil ama güzel bir koku 👍,neutral,hisnet,positive,0.45454545454545453,0.0,False
+74,Kalıcılığı uzun değil ama güzel bir koku 👍,neutral,dp_hisnet,positive,0.45454545454545453,0.0,False
+74,Kalıcılığı uzun değil ama güzel bir koku 👍,neutral,hisnet_dp,positive,0.45454545454545453,0.0,False
+74,Kalıcılığı uzun değil ama güzel bir koku 👍,neutral,lw_hisnet_dp,positive,0.8409090909090909,0.0,False
+77,indiirimde takrar stoklayacagim kalitesini çok beğendim,positive,dp_hisnet,neutral,0.0,0.0,False
+80,kutusu çatlamıştı ama cihaz sorunsuz çalışıyor rengi açık mavi geldi ilk kullanımda yüzde sivilce yapıyor ben yüz temizleme köpüğü ile kullanıyorum yumaşacık oluyır tek kullanmanızı önermem,neutral,hisnet,negative,0.28125,0.5,False
+80,kutusu çatlamıştı ama cihaz sorunsuz çalışıyor rengi açık mavi geldi ilk kullanımda yüzde sivilce yapıyor ben yüz temizleme köpüğü ile kullanıyorum yumaşacık oluyır tek kullanmanızı önermem,neutral,dp_hisnet,positive,0.15625,0.0,False
+80,kutusu çatlamıştı ama cihaz sorunsuz çalışıyor rengi açık mavi geldi ilk kullanımda yüzde sivilce yapıyor ben yüz temizleme köpüğü ile kullanıyorum yumaşacık oluyır tek kullanmanızı önermem,neutral,hisnet_dp,negative,0.28125,0.5,False
+81,Basarılı her zaman kullanıyorum,positive,hisnet,neutral,0.0,0.0,False
+81,Basarılı her zaman kullanıyorum,positive,dp_hisnet,neutral,0.0,0.0,False
+81,Basarılı her zaman kullanıyorum,positive,hisnet_dp,neutral,0.0,0.0,False
+81,Basarılı her zaman kullanıyorum,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+82,Deodorant parfümünden daha kalıcı bilginize parfümü kalıcı değil,neutral,hisnet,positive,0.25,0.0,False
+82,Deodorant parfümünden daha kalıcı bilginize parfümü kalıcı değil,neutral,hisnet_dp,positive,0.25,0.0,False
+82,Deodorant parfümünden daha kalıcı bilginize parfümü kalıcı değil,neutral,lw_hisnet_dp,positive,0.25,0.0,False
+85,Ürün ağda kalitesi oldukça iyi çok iyi alıyor yanlız yüzümde kızarıklıklar ve sivilceler oldu bugün 3. Gün bayağı geçti sayılırlar,neutral,hisnet,positive,1.7722222222222224,0.6666666666666666,False
+85,Ürün ağda kalitesi oldukça iyi çok iyi alıyor yanlız yüzümde kızarıklıklar ve sivilceler oldu bugün 3. Gün bayağı geçti sayılırlar,neutral,dp_hisnet,positive,1.2722222222222224,0.6666666666666666,False
+85,Ürün ağda kalitesi oldukça iyi çok iyi alıyor yanlız yüzümde kızarıklıklar ve sivilceler oldu bugün 3. Gün bayağı geçti sayılırlar,neutral,hisnet_dp,positive,1.2722222222222224,0.6666666666666666,False
+85,Ürün ağda kalitesi oldukça iyi çok iyi alıyor yanlız yüzümde kızarıklıklar ve sivilceler oldu bugün 3. Gün bayağı geçti sayılırlar,neutral,lw_hisnet_dp,positive,1.3944444444444446,0.6666666666666666,False
+90,Ürün paleti küçük ama renkler güzel paketlemese güzeldi,negative,hisnet,positive,0.9090909090909091,0.0,False
+90,Ürün paleti küçük ama renkler güzel paketlemese güzeldi,negative,dp_hisnet,positive,0.9090909090909091,0.0,False
+90,Ürün paleti küçük ama renkler güzel paketlemese güzeldi,negative,hisnet_dp,positive,0.9090909090909091,0.0,False
+90,Ürün paleti küçük ama renkler güzel paketlemese güzeldi,negative,lw_hisnet_dp,positive,1.6818181818181819,0.0,False
+91,Ürün fena değil ama beklentimin altında çünkü beklentim ışıltı verici bir ürün olmasıydı kapatıcılık hafif diyebilirim ışıltı hiç yok genel olarakta fena değil,neutral,hisnet,negative,0.0625,1.674512987012987,False
+91,Ürün fena değil ama beklentimin altında çünkü beklentim ışıltı verici bir ürün olmasıydı kapatıcılık hafif diyebilirim ışıltı hiç yok genel olarakta fena değil,neutral,dp_hisnet,negative,0.5208333333333333,1.2161796536796536,False
+91,Ürün fena değil ama beklentimin altında çünkü beklentim ışıltı verici bir ürün olmasıydı kapatıcılık hafif diyebilirim ışıltı hiç yok genel olarakta fena değil,neutral,hisnet_dp,negative,0.5208333333333333,1.2161796536796536,False
+91,Ürün fena değil ama beklentimin altında çünkü beklentim ışıltı verici bir ürün olmasıydı kapatıcılık hafif diyebilirim ışıltı hiç yok genel olarakta fena değil,neutral,lw_hisnet_dp,negative,0.44270833333333326,1.0337527056277056,False
+94,sivilce icin işe yaramadi,negative,dp_hisnet,neutral,0.0,0.0,False
+95,Yıldız kısmı oldukça kalın onu bilerek alın,neutral,hisnet,negative,0.0,0.16666666666666666,False
+95,Yıldız kısmı oldukça kalın onu bilerek alın,neutral,dp_hisnet,negative,0.0,0.16666666666666666,False
+95,Yıldız kısmı oldukça kalın onu bilerek alın,neutral,hisnet_dp,negative,0.0,0.16666666666666666,False
+95,Yıldız kısmı oldukça kalın onu bilerek alın,neutral,lw_hisnet_dp,negative,0.0,0.16666666666666666,False
+97,XXL sipariş verdim. O kadar küçük ki taytı giyemedim malesef iade,negative,dp_hisnet,neutral,0.0,0.0,False
+98,Rengi çok koyu 1 numara olmasına rağmen. Tavsiye edebileceğim gibi değil,negative,dp_hisnet,positive,0.125,0.0625,False
+98,Rengi çok koyu 1 numara olmasına rağmen. Tavsiye edebileceğim gibi değil,negative,lw_hisnet_dp,neutral,0.125,0.16999999999999998,False
+99,Çok kolay sürülüyor sadece kalıcı değil,neutral,hisnet,positive,0.3333333333333333,0.0,False
+99,Çok kolay sürülüyor sadece kalıcı değil,neutral,dp_hisnet,positive,0.3333333333333333,0.0,False
+99,Çok kolay sürülüyor sadece kalıcı değil,neutral,hisnet_dp,positive,0.3333333333333333,0.0,False
+99,Çok kolay sürülüyor sadece kalıcı değil,neutral,lw_hisnet_dp,positive,0.39999999999999997,0.0,False
+101,Uygun fiyata güzel bir ürün,neutral,hisnet,positive,0.9545454545454546,0.0,True
+101,Uygun fiyata güzel bir ürün,neutral,dp_hisnet,positive,0.9545454545454546,0.0,True
+101,Uygun fiyata güzel bir ürün,neutral,hisnet_dp,positive,0.9545454545454546,0.0,True
+101,Uygun fiyata güzel bir ürün,neutral,lw_hisnet_dp,positive,0.9545454545454546,0.0,True
+102,yanında hediye çorba gönderdiginiz icin tesekkürler 💕,positive,hisnet,negative,0.125,0.25,False
+102,yanında hediye çorba gönderdiginiz icin tesekkürler 💕,positive,dp_hisnet,neutral,0.0,0.0,False
+102,yanında hediye çorba gönderdiginiz icin tesekkürler 💕,positive,hisnet_dp,negative,0.125,0.25,False
+102,yanında hediye çorba gönderdiginiz icin tesekkürler 💕,positive,lw_hisnet_dp,negative,0.125,0.25,False
+106,Boyu çok küçük resimdeki gibi deyir ama güzel kalitesi,neutral,hisnet,positive,0.9545454545454546,0.0,False
+106,Boyu çok küçük resimdeki gibi deyir ama güzel kalitesi,neutral,dp_hisnet,positive,0.9545454545454546,0.0,False
+106,Boyu çok küçük resimdeki gibi deyir ama güzel kalitesi,neutral,hisnet_dp,positive,0.9545454545454546,0.0,False
+106,Boyu çok küçük resimdeki gibi deyir ama güzel kalitesi,neutral,lw_hisnet_dp,positive,1.765909090909091,0.0,False
+107,Rengini hiç beğenmedim ama kaliciligina diyecek lafım yok,neutral,hisnet,negative,0.0,0.8351190476190476,False
+107,Rengini hiç beğenmedim ama kaliciligina diyecek lafım yok,neutral,dp_hisnet,negative,0.0,0.7351190476190477,False
+107,Rengini hiç beğenmedim ama kaliciligina diyecek lafım yok,neutral,hisnet_dp,negative,0.0,0.7351190476190477,False
+107,Rengini hiç beğenmedim ama kaliciligina diyecek lafım yok,neutral,lw_hisnet_dp,negative,0.0,0.8599702380952381,False
+108,Yaklaşık olarak 3 haftadır düzenli bir şekilde kullandım ve sivilce izlerimi gözle görülür bir şekilde azalttı,positive,hisnet,negative,0.125,1.5,False
+108,Yaklaşık olarak 3 haftadır düzenli bir şekilde kullandım ve sivilce izlerimi gözle görülür bir şekilde azalttı,positive,dp_hisnet,negative,0.125,1.0,False
+108,Yaklaşık olarak 3 haftadır düzenli bir şekilde kullandım ve sivilce izlerimi gözle görülür bir şekilde azalttı,positive,hisnet_dp,negative,0.125,1.5,False
+108,Yaklaşık olarak 3 haftadır düzenli bir şekilde kullandım ve sivilce izlerimi gözle görülür bir şekilde azalttı,positive,lw_hisnet_dp,negative,0.125,1.5,False
+109,Küçük ama çok Tatlı bana yeter,neutral,hisnet,positive,0.5,0.0,False
+109,Küçük ama çok Tatlı bana yeter,neutral,dp_hisnet,positive,0.25,0.0,False
+109,Küçük ama çok Tatlı bana yeter,neutral,hisnet_dp,positive,0.5,0.0,False
+109,Küçük ama çok Tatlı bana yeter,neutral,lw_hisnet_dp,positive,1.0175,0.0,False
+111,İlk sürünce görüntü güzel ama çok kalıcı seğil yenilemek gerekli günde bir kaç kez,neutral,hisnet,positive,0.45454545454545453,0.1875,False
+111,İlk sürünce görüntü güzel ama çok kalıcı seğil yenilemek gerekli günde bir kaç kez,neutral,dp_hisnet,positive,0.45454545454545453,0.1875,False
+111,İlk sürünce görüntü güzel ama çok kalıcı seğil yenilemek gerekli günde bir kaç kez,neutral,hisnet_dp,positive,0.45454545454545453,0.1875,False
+111,İlk sürünce görüntü güzel ama çok kalıcı seğil yenilemek gerekli günde bir kaç kez,neutral,lw_hisnet_dp,positive,0.38636363636363635,0.159375,False
+112,Saçımın kıvırcıkları sönüyor ne zaman kullansam kıvırcık saça önermiyorum ama uzatma konusunda biraz daha hızlı uzatıyor,neutral,lw_hisnet_dp,negative,0.0,0.09250000000000001,False
+114,Sürdünüz aniden yıkamak lazım saçım bildiğiniz lila gri karışımı oldu dikkatli kullanın,neutral,hisnet,positive,0.125,0.0,False
+114,Sürdünüz aniden yıkamak lazım saçım bildiğiniz lila gri karışımı oldu dikkatli kullanın,neutral,dp_hisnet,positive,0.125,0.0,False
+114,Sürdünüz aniden yıkamak lazım saçım bildiğiniz lila gri karışımı oldu dikkatli kullanın,neutral,hisnet_dp,positive,0.125,0.0,False
+114,Sürdünüz aniden yıkamak lazım saçım bildiğiniz lila gri karışımı oldu dikkatli kullanın,neutral,lw_hisnet_dp,positive,0.125,0.0,False
+116,Güzel özenli paket,neutral,hisnet,positive,0.8295454545454546,0.0,False
+116,Güzel özenli paket,neutral,dp_hisnet,positive,0.8295454545454546,0.0,False
+116,Güzel özenli paket,neutral,hisnet_dp,positive,0.8295454545454546,0.0,False
+116,Güzel özenli paket,neutral,lw_hisnet_dp,positive,0.8295454545454546,0.0,False
+118,naylon kumaş güzel değil,negative,hisnet,positive,0.45454545454545453,0.25,False
+118,naylon kumaş güzel değil,negative,dp_hisnet,positive,0.45454545454545453,0.25,False
+118,naylon kumaş güzel değil,negative,hisnet_dp,positive,0.45454545454545453,0.25,False
+118,naylon kumaş güzel değil,negative,lw_hisnet_dp,positive,0.45454545454545453,0.25,False
+119,Kuru ciltler için uygun değil pul pul dökülüyor. Ama dokusu hafif yağlandırma yapmıyor,neutral,hisnet,positive,0.5,0.21503496503496505,False
+119,Kuru ciltler için uygun değil pul pul dökülüyor. Ama dokusu hafif yağlandırma yapmıyor,neutral,dp_hisnet,negative,0.0,0.715034965034965,False
+119,Kuru ciltler için uygun değil pul pul dökülüyor. Ama dokusu hafif yağlandırma yapmıyor,neutral,hisnet_dp,negative,0.0,0.715034965034965,False
+119,Kuru ciltler için uygun değil pul pul dökülüyor. Ama dokusu hafif yağlandırma yapmıyor,neutral,lw_hisnet_dp,negative,0.0,0.7343531468531468,False
+120,Abartıldığı kadar güzel değil bence,negative,hisnet,positive,0.45454545454545453,0.0,False
+121,canımı epey acıttı beklentim çok daha yüksekti ama yine de kötü ve işe yaramayan bir ürün olduğunu söyleyemem işe yarıyor sadece beklentiyi yüksek tutmayın bihar sonrası kullandım ardından temizleme jeli ve tonikle günlük rutin temizliği yaptım tüm aile bireylerim cildine ne yaptın bugün bir güzel gözüküyorsun dedi,neutral,hisnet,negative,1.5656565656565657,2.513095238095238,False
+121,canımı epey acıttı beklentim çok daha yüksekti ama yine de kötü ve işe yaramayan bir ürün olduğunu söyleyemem işe yarıyor sadece beklentiyi yüksek tutmayın bihar sonrası kullandım ardından temizleme jeli ve tonikle günlük rutin temizliği yaptım tüm aile bireylerim cildine ne yaptın bugün bir güzel gözüküyorsun dedi,neutral,dp_hisnet,negative,0.8434343434343434,1.9922619047619048,False
+121,canımı epey acıttı beklentim çok daha yüksekti ama yine de kötü ve işe yaramayan bir ürün olduğunu söyleyemem işe yarıyor sadece beklentiyi yüksek tutmayın bihar sonrası kullandım ardından temizleme jeli ve tonikle günlük rutin temizliği yaptım tüm aile bireylerim cildine ne yaptın bugün bir güzel gözüküyorsun dedi,neutral,hisnet_dp,negative,1.3434343434343434,2.513095238095238,False
+121,canımı epey acıttı beklentim çok daha yüksekti ama yine de kötü ve işe yaramayan bir ürün olduğunu söyleyemem işe yarıyor sadece beklentiyi yüksek tutmayın bihar sonrası kullandım ardından temizleme jeli ve tonikle günlük rutin temizliği yaptım tüm aile bireylerim cildine ne yaptın bugün bir güzel gözüküyorsun dedi,neutral,lw_hisnet_dp,negative,2.0964646464646464,2.156964285714286,False
+122,3 ay boyunca kullandım ama faydası olmadı,negative,hisnet,neutral,0.0,0.0,False
+122,3 ay boyunca kullandım ama faydası olmadı,negative,dp_hisnet,neutral,0.0,0.0,False
+122,3 ay boyunca kullandım ama faydası olmadı,negative,hisnet_dp,neutral,0.0,0.0,False
+122,3 ay boyunca kullandım ama faydası olmadı,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+123,Hiçbir işe yaramıyor sivilce yapıyor sakın almayın,negative,dp_hisnet,neutral,0.0,0.0,False
+124,Daha önce neredeydin dediğim tek ürün yüzüm için kullanıyorum ilk olarak yoğun ıslak gibi duruyor fakat hızla emiliyor ve çok naif bir kokusu var cilt nem dengesi için ideal bir ürün,positive,hisnet,negative,0.16666666666666666,0.28273809523809523,False
+124,Daha önce neredeydin dediğim tek ürün yüzüm için kullanıyorum ilk olarak yoğun ıslak gibi duruyor fakat hızla emiliyor ve çok naif bir kokusu var cilt nem dengesi için ideal bir ürün,positive,dp_hisnet,negative,0.125,0.19940476190476192,False
+124,Daha önce neredeydin dediğim tek ürün yüzüm için kullanıyorum ilk olarak yoğun ıslak gibi duruyor fakat hızla emiliyor ve çok naif bir kokusu var cilt nem dengesi için ideal bir ürün,positive,hisnet_dp,negative,0.16666666666666666,0.28273809523809523,False
+124,Daha önce neredeydin dediğim tek ürün yüzüm için kullanıyorum ilk olarak yoğun ıslak gibi duruyor fakat hızla emiliyor ve çok naif bir kokusu var cilt nem dengesi için ideal bir ürün,positive,lw_hisnet_dp,neutral,0.35458333333333336,0.3236607142857143,False
+129,Sanki kullandıktan belli bir süre sonra iğne dipleri paslandı o yüzden korkup kullanmayı bıraktım.,negative,hisnet,neutral,0.0,0.0,False
+129,Sanki kullandıktan belli bir süre sonra iğne dipleri paslandı o yüzden korkup kullanmayı bıraktım.,negative,dp_hisnet,neutral,0.0,0.0,False
+129,Sanki kullandıktan belli bir süre sonra iğne dipleri paslandı o yüzden korkup kullanmayı bıraktım.,negative,hisnet_dp,neutral,0.0,0.0,False
+129,Sanki kullandıktan belli bir süre sonra iğne dipleri paslandı o yüzden korkup kullanmayı bıraktım.,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+131,Gayet güzel bir fırça. Temizleme suyunndan sonra temizlediğini düşünenler bide fırçayla yıkayın göreceksiniz.,positive,hisnet,negative,0.5795454545454546,1.0,False
+131,Gayet güzel bir fırça. Temizleme suyunndan sonra temizlediğini düşünenler bide fırçayla yıkayın göreceksiniz.,positive,dp_hisnet,negative,0.45454545454545453,1.0,False
+131,Gayet güzel bir fırça. Temizleme suyunndan sonra temizlediğini düşünenler bide fırçayla yıkayın göreceksiniz.,positive,hisnet_dp,negative,0.5795454545454546,1.0,False
+131,Gayet güzel bir fırça. Temizleme suyunndan sonra temizlediğini düşünenler bide fırçayla yıkayın göreceksiniz.,positive,lw_hisnet_dp,negative,0.5795454545454546,1.0,False
+132,Ürünün fiyatı uygun ama kaliteli diyemicem o kadar çok ıslak bırakıyor ki sayfanın öbür tarafına taşıyor buna dikkat ederek kullanmanızı öneririm onun dışında renkleri güzel beğendim 👍,negative,hisnet,positive,1.9545454545454546,0.0,False
+132,Ürünün fiyatı uygun ama kaliteli diyemicem o kadar çok ıslak bırakıyor ki sayfanın öbür tarafına taşıyor buna dikkat ederek kullanmanızı öneririm onun dışında renkleri güzel beğendim 👍,negative,dp_hisnet,positive,1.9545454545454546,0.0,False
+132,Ürünün fiyatı uygun ama kaliteli diyemicem o kadar çok ıslak bırakıyor ki sayfanın öbür tarafına taşıyor buna dikkat ederek kullanmanızı öneririm onun dışında renkleri güzel beğendim 👍,negative,hisnet_dp,positive,1.9545454545454546,0.0,False
+132,Ürünün fiyatı uygun ama kaliteli diyemicem o kadar çok ıslak bırakıyor ki sayfanın öbür tarafına taşıyor buna dikkat ederek kullanmanızı öneririm onun dışında renkleri güzel beğendim 👍,negative,lw_hisnet_dp,positive,3.1159090909090907,0.0,False
+134,Ürün ve paketlemesi gayet iyiydi memnun kaldım ama kargo tam bir felaket,neutral,hisnet,positive,0.8194444444444445,0.3333333333333333,False
+134,Ürün ve paketlemesi gayet iyiydi memnun kaldım ama kargo tam bir felaket,neutral,dp_hisnet,positive,0.8194444444444445,0.3333333333333333,False
+134,Ürün ve paketlemesi gayet iyiydi memnun kaldım ama kargo tam bir felaket,neutral,hisnet_dp,positive,0.8194444444444445,0.3333333333333333,False
+134,Ürün ve paketlemesi gayet iyiydi memnun kaldım ama kargo tam bir felaket,neutral,lw_hisnet_dp,positive,0.9048611111111111,0.6166666666666667,False
+136,Güzel ama henüz kullanmadım.,neutral,hisnet,positive,0.45454545454545453,0.0,False
+136,Güzel ama henüz kullanmadım.,neutral,dp_hisnet,positive,0.45454545454545453,0.0,False
+136,Güzel ama henüz kullanmadım.,neutral,hisnet_dp,positive,0.45454545454545453,0.0,False
+136,Güzel ama henüz kullanmadım.,neutral,lw_hisnet_dp,positive,0.38636363636363635,0.0,False
+137,36 beden almama rağmen sütyen gibi kısacık durdu 1.66 boyunda 53 kiloyum .deseni asla göründüğü gibi değil,negative,dp_hisnet,neutral,0.0,0.0,False
+138,çokçok geç geldi ilk denemem de yumuşaklik hissettim küçük birşey bu arada yıkamak çok zor şarj yerine gtmesin diye cabaladim bayağı büyük beklentiniz olmasın ama yüz temizliyor yani,neutral,hisnet,negative,0.065625,0.8541666666666667,False
+138,çokçok geç geldi ilk denemem de yumuşaklik hissettim küçük birşey bu arada yıkamak çok zor şarj yerine gtmesin diye cabaladim bayağı büyük beklentiniz olmasın ama yüz temizliyor yani,neutral,dp_hisnet,negative,0.05,0.8333333333333334,False
+138,çokçok geç geldi ilk denemem de yumuşaklik hissettim küçük birşey bu arada yıkamak çok zor şarj yerine gtmesin diye cabaladim bayağı büyük beklentiniz olmasın ama yüz temizliyor yani,neutral,hisnet_dp,negative,0.065625,0.8541666666666667,False
+138,çokçok geç geldi ilk denemem de yumuşaklik hissettim küçük birşey bu arada yıkamak çok zor şarj yerine gtmesin diye cabaladim bayağı büyük beklentiniz olmasın ama yüz temizliyor yani,neutral,lw_hisnet_dp,negative,0.055781250000000004,0.8252083333333334,False
+144,sürekli kullandigim bir marka severek kullaniyorum,positive,hisnet,neutral,0.0,0.0,False
+144,sürekli kullandigim bir marka severek kullaniyorum,positive,dp_hisnet,neutral,0.0,0.0,False
+144,sürekli kullandigim bir marka severek kullaniyorum,positive,hisnet_dp,neutral,0.0,0.0,False
+144,sürekli kullandigim bir marka severek kullaniyorum,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+145,Kalite olarak çok çok iyi beklemeyin ama yine de iş görür.,neutral,hisnet,positive,1.1111111111111112,1.0208333333333333,False
+145,Kalite olarak çok çok iyi beklemeyin ama yine de iş görür.,neutral,dp_hisnet,negative,0.6111111111111112,1.0,False
+145,Kalite olarak çok çok iyi beklemeyin ama yine de iş görür.,neutral,hisnet_dp,positive,1.1111111111111112,1.0208333333333333,False
+145,Kalite olarak çok çok iyi beklemeyin ama yine de iş görür.,neutral,lw_hisnet_dp,negative,1.0483333333333333,1.8885416666666668,False
+147,Olumlu yorumlara dayanarak aldım umarım işe yarar,neutral,hisnet,positive,0.4375,0.16666666666666666,False
+147,Olumlu yorumlara dayanarak aldım umarım işe yarar,neutral,dp_hisnet,positive,0.25,0.16666666666666666,False
+147,Olumlu yorumlara dayanarak aldım umarım işe yarar,neutral,hisnet_dp,positive,0.4375,0.16666666666666666,False
+147,Olumlu yorumlara dayanarak aldım umarım işe yarar,neutral,lw_hisnet_dp,positive,0.4375,0.16666666666666666,False
+148,İi değil iade edeceğim,negative,dp_hisnet,neutral,0.0,0.0,False
+148,İi değil iade edeceğim,negative,hisnet_dp,positive,0.125,0.0,False
+148,İi değil iade edeceğim,negative,lw_hisnet_dp,positive,0.125,0.0,False
+149,Dermatoloğumun tavsiyesi üzerine aldım derinlemesine temizliyor farkı ilk kullanımda göreceksini,positive,hisnet,neutral,0.125,0.16666666666666666,False
+149,Dermatoloğumun tavsiyesi üzerine aldım derinlemesine temizliyor farkı ilk kullanımda göreceksini,positive,dp_hisnet,negative,0.0,0.16666666666666666,False
+149,Dermatoloğumun tavsiyesi üzerine aldım derinlemesine temizliyor farkı ilk kullanımda göreceksini,positive,hisnet_dp,neutral,0.125,0.16666666666666666,False
+149,Dermatoloğumun tavsiyesi üzerine aldım derinlemesine temizliyor farkı ilk kullanımda göreceksini,positive,lw_hisnet_dp,neutral,0.125,0.16666666666666666,False
+150,Kargo hızlı geldi kullanmadım henüz ama yorumları iyi umarım bende de işe yarar,neutral,hisnet,positive,0.7986111111111112,0.07083333333333333,False
+150,Kargo hızlı geldi kullanmadım henüz ama yorumları iyi umarım bende de işe yarar,neutral,dp_hisnet,positive,0.6111111111111112,0.05,False
+150,Kargo hızlı geldi kullanmadım henüz ama yorumları iyi umarım bende de işe yarar,neutral,hisnet_dp,positive,0.7986111111111112,0.07083333333333333,False
+150,Kargo hızlı geldi kullanmadım henüz ama yorumları iyi umarım bende de işe yarar,neutral,lw_hisnet_dp,positive,1.4774305555555558,0.08104166666666668,False
+151,Ürünü yeni aldım hızlıca kargo edildi ve paketlemesi güzeldi. Sürdükten sonra güneşe çıkmayın leke yapabiliyor c vitaminleri,positive,hisnet,neutral,0.45454545454545453,0.4666666666666667,False
+151,Ürünü yeni aldım hızlıca kargo edildi ve paketlemesi güzeldi. Sürdükten sonra güneşe çıkmayın leke yapabiliyor c vitaminleri,positive,hisnet_dp,neutral,0.45454545454545453,0.4666666666666667,False
+151,Ürünü yeni aldım hızlıca kargo edildi ve paketlemesi güzeldi. Sürdükten sonra güneşe çıkmayın leke yapabiliyor c vitaminleri,positive,lw_hisnet_dp,neutral,0.45454545454545453,0.4666666666666667,False
+154,ürünü kullanıp memnun kalmayan yoktur sanıırm,positive,hisnet,negative,0.0,0.21428571428571427,False
+154,ürünü kullanıp memnun kalmayan yoktur sanıırm,positive,dp_hisnet,negative,0.0,0.21428571428571427,False
+154,ürünü kullanıp memnun kalmayan yoktur sanıırm,positive,hisnet_dp,negative,0.0,0.21428571428571427,False
+154,ürünü kullanıp memnun kalmayan yoktur sanıırm,positive,lw_hisnet_dp,negative,0.0,0.21428571428571427,False
+155,Mükemmel bir ürün tek alıp da pişman olmadığım cilt bakımı ürünü,positive,hisnet,negative,1.0,1.1893939393939394,False
+157,Korkarak aldım ama zor ruj beğenen biri olarak favorim oldu 🥰,positive,hisnet,negative,0.0,0.8333333333333334,False
+157,Korkarak aldım ama zor ruj beğenen biri olarak favorim oldu 🥰,positive,dp_hisnet,negative,0.0,0.75,False
+157,Korkarak aldım ama zor ruj beğenen biri olarak favorim oldu 🥰,positive,hisnet_dp,negative,0.0,0.8333333333333334,False
+157,Korkarak aldım ama zor ruj beğenen biri olarak favorim oldu 🥰,positive,lw_hisnet_dp,negative,0.0,1.375,False
+161,yıllardir kullandigim mükemmel bir ürün,negative,hisnet,positive,1.0,0.0,False
+161,yıllardir kullandigim mükemmel bir ürün,negative,dp_hisnet,positive,1.0,0.0,False
+161,yıllardir kullandigim mükemmel bir ürün,negative,hisnet_dp,positive,1.0,0.0,False
+161,yıllardir kullandigim mükemmel bir ürün,negative,lw_hisnet_dp,positive,1.0,0.0,False
+162,dökülme durmadı ama fiyatına göre fena değil,neutral,hisnet,negative,0.0,0.4583333333333333,False
+162,dökülme durmadı ama fiyatına göre fena değil,neutral,dp_hisnet,negative,0.0,0.4583333333333333,False
+162,dökülme durmadı ama fiyatına göre fena değil,neutral,hisnet_dp,negative,0.0,0.4583333333333333,False
+162,dökülme durmadı ama fiyatına göre fena değil,neutral,lw_hisnet_dp,negative,0.0,0.8479166666666667,False
+164,Kumaşı harika duruşu mükemmel ama keske saglam bir sey yapsalardı ipleri lastik olmasi bu modellerde önemli oldugunu dusunerek aldim ama ipler giymeden yirtildi sonra diktim makineye attim yine yirtildi yani alicaginiz üründe mutlaka ipleri yırtılacak bunu bilerek alın,negative,hisnet,positive,2.111111111111111,0.35416666666666663,False
+164,Kumaşı harika duruşu mükemmel ama keske saglam bir sey yapsalardı ipleri lastik olmasi bu modellerde önemli oldugunu dusunerek aldim ama ipler giymeden yirtildi sonra diktim makineye attim yine yirtildi yani alicaginiz üründe mutlaka ipleri yırtılacak bunu bilerek alın,negative,dp_hisnet,positive,2.0,0.35416666666666663,False
+164,Kumaşı harika duruşu mükemmel ama keske saglam bir sey yapsalardı ipleri lastik olmasi bu modellerde önemli oldugunu dusunerek aldim ama ipler giymeden yirtildi sonra diktim makineye attim yine yirtildi yani alicaginiz üründe mutlaka ipleri yırtılacak bunu bilerek alın,negative,hisnet_dp,positive,2.111111111111111,0.35416666666666663,False
+164,Kumaşı harika duruşu mükemmel ama keske saglam bir sey yapsalardı ipleri lastik olmasi bu modellerde önemli oldugunu dusunerek aldim ama ipler giymeden yirtildi sonra diktim makineye attim yine yirtildi yani alicaginiz üründe mutlaka ipleri yırtılacak bunu bilerek alın,negative,lw_hisnet_dp,positive,1.7944444444444443,0.4885416666666667,False
+165,Güzel günlük kullanıma uygun beğendim,negative,hisnet,positive,0.9545454545454546,0.0,False
+165,Güzel günlük kullanıma uygun beğendim,negative,dp_hisnet,positive,0.9545454545454546,0.0,False
+165,Güzel günlük kullanıma uygun beğendim,negative,hisnet_dp,positive,0.9545454545454546,0.0,False
+165,Güzel günlük kullanıma uygun beğendim,negative,lw_hisnet_dp,positive,0.9545454545454546,0.0,False
+167,kargo başarılıydı daha önce de kullandigim bir ürün tavsiye ederim,neutral,hisnet,positive,1.125,0.020833333333333332,False
+167,kargo başarılıydı daha önce de kullandigim bir ürün tavsiye ederim,neutral,dp_hisnet,positive,1.125,0.0,False
+167,kargo başarılıydı daha önce de kullandigim bir ürün tavsiye ederim,neutral,hisnet_dp,positive,1.125,0.020833333333333332,False
+167,kargo başarılıydı daha önce de kullandigim bir ürün tavsiye ederim,neutral,lw_hisnet_dp,positive,1.125,0.020833333333333332,False
+168,Ürün boyutu çok küçük bir oje şişesi kadar ama kalitesi harika,neutral,hisnet,positive,1.5,0.0,False
+168,Ürün boyutu çok küçük bir oje şişesi kadar ama kalitesi harika,neutral,dp_hisnet,positive,1.0,0.0,False
+168,Ürün boyutu çok küçük bir oje şişesi kadar ama kalitesi harika,neutral,hisnet_dp,positive,1.0,0.0,False
+168,Ürün boyutu çok küçük bir oje şişesi kadar ama kalitesi harika,neutral,lw_hisnet_dp,positive,1.85,0.0,False
+171,kardeşim tavsiye etmişti iyiki de almışım indirimden yakaladım 😊,positive,dp_hisnet,neutral,0.125,0.16666666666666666,False
+172,yıllardır kullandigim parfüm indirimde bulmuşken kaçırmak istemedim pakette ozenliydi teşekürler.,positive,dp_hisnet,neutral,0.0,0.0,False
+174,faydası var,positive,hisnet,neutral,0.0,0.0,False
+174,faydası var,positive,dp_hisnet,neutral,0.0,0.0,False
+174,faydası var,positive,hisnet_dp,neutral,0.0,0.0,False
+174,faydası var,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+175,elimde olsa keske 0 verebilsem yüzüm kizardı ve ne yapicagimi bilmiyorum.,negative,hisnet,neutral,0.0,0.0,False
+175,elimde olsa keske 0 verebilsem yüzüm kizardı ve ne yapicagimi bilmiyorum.,negative,dp_hisnet,neutral,0.0,0.0,False
+175,elimde olsa keske 0 verebilsem yüzüm kizardı ve ne yapicagimi bilmiyorum.,negative,hisnet_dp,neutral,0.0,0.0,False
+175,elimde olsa keske 0 verebilsem yüzüm kizardı ve ne yapicagimi bilmiyorum.,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+178,Çok güzel ürün rengi kalıcılığı,neutral,hisnet,positive,0.45454545454545453,0.0,False
+178,Çok güzel ürün rengi kalıcılığı,neutral,dp_hisnet,positive,0.45454545454545453,0.0,False
+178,Çok güzel ürün rengi kalıcılığı,neutral,hisnet_dp,positive,0.45454545454545453,0.0,False
+178,Çok güzel ürün rengi kalıcılığı,neutral,lw_hisnet_dp,positive,0.5454545454545454,0.0,False
+181,Yorumlari okuyrak aldim ancak bu kadar ovulecek bir yanini goremedim. Ustelik denildigi gibi organik elma sirkesi ile kullaniyorum. Oyle yuzde nabiz hissi falan da olmadi bende. Sivilceli bir cildim var o konuda da bir fayda goremedim siradan bir kil iste bence. Abartmaya gerek yok,neutral,hisnet,negative,0.0,0.5722402597402597,False
+181,Yorumlari okuyrak aldim ancak bu kadar ovulecek bir yanini goremedim. Ustelik denildigi gibi organik elma sirkesi ile kullaniyorum. Oyle yuzde nabiz hissi falan da olmadi bende. Sivilceli bir cildim var o konuda da bir fayda goremedim siradan bir kil iste bence. Abartmaya gerek yok,neutral,dp_hisnet,negative,0.0,0.21428571428571427,False
+181,Yorumlari okuyrak aldim ancak bu kadar ovulecek bir yanini goremedim. Ustelik denildigi gibi organik elma sirkesi ile kullaniyorum. Oyle yuzde nabiz hissi falan da olmadi bende. Sivilceli bir cildim var o konuda da bir fayda goremedim siradan bir kil iste bence. Abartmaya gerek yok,neutral,hisnet_dp,negative,0.0,0.5722402597402597,False
+181,Yorumlari okuyrak aldim ancak bu kadar ovulecek bir yanini goremedim. Ustelik denildigi gibi organik elma sirkesi ile kullaniyorum. Oyle yuzde nabiz hissi falan da olmadi bende. Sivilceli bir cildim var o konuda da bir fayda goremedim siradan bir kil iste bence. Abartmaya gerek yok,neutral,lw_hisnet_dp,negative,0.0,0.5097402597402597,False
+182,Memnun kalmadım bir daha almayı düşünmüyorum,negative,dp_hisnet,neutral,0.0,0.0,False
+183,en dipten almıyor açıkçası ama idare eder,neutral,hisnet,negative,0.0,0.16666666666666666,False
+183,en dipten almıyor açıkçası ama idare eder,neutral,dp_hisnet,negative,0.0,0.16666666666666666,False
+183,en dipten almıyor açıkçası ama idare eder,neutral,hisnet_dp,negative,0.0,0.16666666666666666,False
+183,en dipten almıyor açıkçası ama idare eder,neutral,lw_hisnet_dp,negative,0.0,0.14166666666666666,False
+184,boyutu oldukça küçük ve renkleri belli etmiyo hiçbir sekilde,negative,hisnet,neutral,0.0,0.0,False
+184,boyutu oldukça küçük ve renkleri belli etmiyo hiçbir sekilde,negative,dp_hisnet,neutral,0.0,0.0,False
+184,boyutu oldukça küçük ve renkleri belli etmiyo hiçbir sekilde,negative,hisnet_dp,neutral,0.0,0.0,False
+184,boyutu oldukça küçük ve renkleri belli etmiyo hiçbir sekilde,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+185,Daha yeni geldi paketleme güzel umarım faydası olur😇,negative,hisnet,positive,0.45454545454545453,0.0,False
+185,Daha yeni geldi paketleme güzel umarım faydası olur😇,negative,dp_hisnet,positive,0.45454545454545453,0.0,False
+185,Daha yeni geldi paketleme güzel umarım faydası olur😇,negative,hisnet_dp,positive,0.45454545454545453,0.0,False
+185,Daha yeni geldi paketleme güzel umarım faydası olur😇,negative,lw_hisnet_dp,positive,0.45454545454545453,0.0,False
+193,Trendyola tesekkür ederim. Kozmetik firmasına da tesekkür ederim. EDT olmasına rağmen kokusu 2 gün boyunca gitmiyor. Gayet kalıcı 👍🏻,positive,hisnet,negative,0.0,0.5227272727272727,False
+193,Trendyola tesekkür ederim. Kozmetik firmasına da tesekkür ederim. EDT olmasına rağmen kokusu 2 gün boyunca gitmiyor. Gayet kalıcı 👍🏻,positive,dp_hisnet,neutral,0.0,0.0,False
+193,Trendyola tesekkür ederim. Kozmetik firmasına da tesekkür ederim. EDT olmasına rağmen kokusu 2 gün boyunca gitmiyor. Gayet kalıcı 👍🏻,positive,hisnet_dp,negative,0.0,0.5227272727272727,False
+193,Trendyola tesekkür ederim. Kozmetik firmasına da tesekkür ederim. EDT olmasına rağmen kokusu 2 gün boyunca gitmiyor. Gayet kalıcı 👍🏻,positive,lw_hisnet_dp,neutral,0.0,0.022727272727272728,False
+195,korkarak aldım ama çok kıl çıkartmadı,neutral,hisnet,negative,0.0,0.3666666666666667,False
+195,korkarak aldım ama çok kıl çıkartmadı,neutral,dp_hisnet,negative,0.0,0.3666666666666667,False
+195,korkarak aldım ama çok kıl çıkartmadı,neutral,hisnet_dp,negative,0.0,0.3666666666666667,False
+195,korkarak aldım ama çok kıl çıkartmadı,neutral,lw_hisnet_dp,negative,0.0,0.5856666666666668,False
+197,Kokusu güzel ama saçı sert yapıyor yıkarken,neutral,hisnet,positive,0.45454545454545453,0.3888888888888889,False
+197,Kokusu güzel ama saçı sert yapıyor yıkarken,neutral,dp_hisnet,positive,0.45454545454545453,0.3888888888888889,False
+197,Kokusu güzel ama saçı sert yapıyor yıkarken,neutral,hisnet_dp,positive,0.45454545454545453,0.3888888888888889,False
+197,Kokusu güzel ama saçı sert yapıyor yıkarken,neutral,lw_hisnet_dp,negative,0.38636363636363635,0.7194444444444444,False
+200,2 şişe bitirdim kesinlikle çok işe yarıyor denemelisiniz:),positive,hisnet,negative,0.0,0.5,False
+200,2 şişe bitirdim kesinlikle çok işe yarıyor denemelisiniz:),positive,dp_hisnet,neutral,0.0,0.0,False
+200,2 şişe bitirdim kesinlikle çok işe yarıyor denemelisiniz:),positive,hisnet_dp,negative,0.0,0.5,False
+200,2 şişe bitirdim kesinlikle çok işe yarıyor denemelisiniz:),positive,lw_hisnet_dp,negative,0.0,0.5,False
+201,paketlenmesi güzel saglam kirilmadan ulasti.Yorumlara bakarak sipariş verdim umarim işe yarar,neutral,hisnet,positive,0.6420454545454546,0.25,False
+201,paketlenmesi güzel saglam kirilmadan ulasti.Yorumlara bakarak sipariş verdim umarim işe yarar,neutral,dp_hisnet,positive,0.6420454545454546,0.0,False
+201,paketlenmesi güzel saglam kirilmadan ulasti.Yorumlara bakarak sipariş verdim umarim işe yarar,neutral,hisnet_dp,positive,0.6420454545454546,0.25,False
+201,paketlenmesi güzel saglam kirilmadan ulasti.Yorumlara bakarak sipariş verdim umarim işe yarar,neutral,lw_hisnet_dp,positive,0.6420454545454546,0.25,False
+202,Sivilceleri kurutuyor,neutral,hisnet,negative,0.0,0.6923076923076923,False
+202,Sivilceleri kurutuyor,neutral,dp_hisnet,negative,0.0,0.19230769230769232,False
+202,Sivilceleri kurutuyor,neutral,hisnet_dp,negative,0.0,0.19230769230769232,False
+202,Sivilceleri kurutuyor,neutral,lw_hisnet_dp,negative,0.0,0.19230769230769232,False
+203,Asla yumuşak değil.,negative,hisnet,positive,0.1111111111111111,0.0,False
+205,rengi hoş ama kalıcılığı az,neutral,hisnet,negative,0.0,0.25,False
+205,rengi hoş ama kalıcılığı az,neutral,dp_hisnet,negative,0.0,0.25,False
+205,rengi hoş ama kalıcılığı az,neutral,hisnet_dp,negative,0.0,0.25,False
+205,rengi hoş ama kalıcılığı az,neutral,lw_hisnet_dp,negative,0.0,0.4625,False
+207,İlk seferde nasıl bir sonuc olucagını bilemediğimden 1 dk beklettim. Saclarım acık sarı. Bir sonrakinde 1 bucuk 2 dk bekleteceğim,positive,hisnet,neutral,0.0,0.0,False
+207,İlk seferde nasıl bir sonuc olucagını bilemediğimden 1 dk beklettim. Saclarım acık sarı. Bir sonrakinde 1 bucuk 2 dk bekleteceğim,positive,dp_hisnet,neutral,0.0,0.0,False
+207,İlk seferde nasıl bir sonuc olucagını bilemediğimden 1 dk beklettim. Saclarım acık sarı. Bir sonrakinde 1 bucuk 2 dk bekleteceğim,positive,hisnet_dp,neutral,0.0,0.0,False
+207,İlk seferde nasıl bir sonuc olucagını bilemediğimden 1 dk beklettim. Saclarım acık sarı. Bir sonrakinde 1 bucuk 2 dk bekleteceğim,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+208,Yapısı çok güzel,negative,hisnet,positive,0.45454545454545453,0.0,True
+208,Yapısı çok güzel,negative,dp_hisnet,positive,0.45454545454545453,0.0,True
+208,Yapısı çok güzel,negative,hisnet_dp,positive,0.45454545454545453,0.0,True
+208,Yapısı çok güzel,negative,lw_hisnet_dp,positive,0.5454545454545454,0.0,True
+210,Tavsiye üzerine aldım. Yağlı bir his bırakmıyor kesinlikle kullanıp gorucez,positive,hisnet,neutral,0.1607142857142857,0.16666666666666666,False
+210,Tavsiye üzerine aldım. Yağlı bir his bırakmıyor kesinlikle kullanıp gorucez,positive,dp_hisnet,negative,0.03571428571428571,0.16666666666666666,False
+210,Tavsiye üzerine aldım. Yağlı bir his bırakmıyor kesinlikle kullanıp gorucez,positive,hisnet_dp,neutral,0.1607142857142857,0.16666666666666666,False
+210,Tavsiye üzerine aldım. Yağlı bir his bırakmıyor kesinlikle kullanıp gorucez,positive,lw_hisnet_dp,neutral,0.1607142857142857,0.16666666666666666,False
+211,beğenmedim güzel nemlendirmiyor,negative,hisnet,positive,0.45454545454545453,0.0,False
+211,beğenmedim güzel nemlendirmiyor,negative,dp_hisnet,positive,0.45454545454545453,0.0,False
+211,beğenmedim güzel nemlendirmiyor,negative,hisnet_dp,positive,0.45454545454545453,0.0,False
+211,beğenmedim güzel nemlendirmiyor,negative,lw_hisnet_dp,positive,0.45454545454545453,0.0,False
+212,Ürünün fiyatı sürekli değişip durdu bunu sevmedim hoş değildi onun dışında ürünü beğendim,positive,hisnet,neutral,0.0,0.0,False
+212,Ürünün fiyatı sürekli değişip durdu bunu sevmedim hoş değildi onun dışında ürünü beğendim,positive,dp_hisnet,neutral,0.0,0.0,False
+212,Ürünün fiyatı sürekli değişip durdu bunu sevmedim hoş değildi onun dışında ürünü beğendim,positive,hisnet_dp,neutral,0.0,0.0,False
+212,Ürünün fiyatı sürekli değişip durdu bunu sevmedim hoş değildi onun dışında ürünü beğendim,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+214,surekli kullaniyorum çok memnunum,positive,hisnet,neutral,0.0,0.0,False
+214,surekli kullaniyorum çok memnunum,positive,dp_hisnet,neutral,0.0,0.0,False
+214,surekli kullaniyorum çok memnunum,positive,hisnet_dp,neutral,0.0,0.0,False
+214,surekli kullaniyorum çok memnunum,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+215,sürekli kullandığım ürün fiyatta fena değildi,neutral,hisnet,negative,0.0,0.4583333333333333,False
+215,sürekli kullandığım ürün fiyatta fena değildi,neutral,dp_hisnet,positive,0.4583333333333333,0.0,False
+215,sürekli kullandığım ürün fiyatta fena değildi,neutral,hisnet_dp,positive,0.4583333333333333,0.0,False
+215,sürekli kullandığım ürün fiyatta fena değildi,neutral,lw_hisnet_dp,positive,0.4583333333333333,0.0,False
+218,Şeker peelingi hiçbir işe yaramıyor ayrıca içinde azıcık ürün var hiç bereketli bir ürün değil. Daha uygun fiyata daha etkili onlarca peeling seçeneği varken bunu bir daha asla almam. Maske hatrına 3 yıldız veriyorum peelinge puanım sıfır,neutral,dp_hisnet,negative,0.5,2.4666666666666663,False
+218,Şeker peelingi hiçbir işe yaramıyor ayrıca içinde azıcık ürün var hiç bereketli bir ürün değil. Daha uygun fiyata daha etkili onlarca peeling seçeneği varken bunu bir daha asla almam. Maske hatrına 3 yıldız veriyorum peelinge puanım sıfır,neutral,hisnet_dp,negative,0.65,2.6166666666666663,False
+218,Şeker peelingi hiçbir işe yaramıyor ayrıca içinde azıcık ürün var hiç bereketli bir ürün değil. Daha uygun fiyata daha etkili onlarca peeling seçeneği varken bunu bir daha asla almam. Maske hatrına 3 yıldız veriyorum peelinge puanım sıfır,neutral,lw_hisnet_dp,negative,0.65,2.6166666666666663,False
+219,Kesinlikle tavsiye ediyorum. Birkaç kere kullandığım halde etkisini fazlasıyla gördüm. Boyuta da yüz kullanımı için gayet güzel 👏,positive,hisnet,negative,0.5795454545454546,1.0977272727272727,False
+219,Kesinlikle tavsiye ediyorum. Birkaç kere kullandığım halde etkisini fazlasıyla gördüm. Boyuta da yüz kullanımı için gayet güzel 👏,positive,dp_hisnet,negative,0.5795454545454546,1.0,False
+219,Kesinlikle tavsiye ediyorum. Birkaç kere kullandığım halde etkisini fazlasıyla gördüm. Boyuta da yüz kullanımı için gayet güzel 👏,positive,hisnet_dp,negative,0.5795454545454546,1.0977272727272727,False
+219,Kesinlikle tavsiye ediyorum. Birkaç kere kullandığım halde etkisini fazlasıyla gördüm. Boyuta da yüz kullanımı için gayet güzel 👏,positive,lw_hisnet_dp,negative,0.5795454545454546,1.0977272727272727,False
+222,Acıtıyor ve yeteri kadar almıyor kalın tüyleri bunun yerine yüz ağdası aldım iki dakikada canım acımadan işim bitiyor biraz daha dayanıklı olanlar kullansın bunu.,neutral,dp_hisnet,negative,1.25,1.476190476190476,False
+222,Acıtıyor ve yeteri kadar almıyor kalın tüyleri bunun yerine yüz ağdası aldım iki dakikada canım acımadan işim bitiyor biraz daha dayanıklı olanlar kullansın bunu.,neutral,hisnet_dp,negative,1.265625,1.476190476190476,False
+222,Acıtıyor ve yeteri kadar almıyor kalın tüyleri bunun yerine yüz ağdası aldım iki dakikada canım acımadan işim bitiyor biraz daha dayanıklı olanlar kullansın bunu.,neutral,lw_hisnet_dp,negative,1.265625,1.476190476190476,False
+225,saçlarım acilma sonucu aşırı yıprandģi icin aldim henüz 1 defa denedim öyle mucizevi birşey olmadı. bir kaç yıkama sonrası tekrar paylaşım yaparım . umarım işe yarar.,neutral,hisnet,positive,1.1875,0.05,False
+225,saçlarım acilma sonucu aşırı yıprandģi icin aldim henüz 1 defa denedim öyle mucizevi birşey olmadı. bir kaç yıkama sonrası tekrar paylaşım yaparım . umarım işe yarar.,neutral,dp_hisnet,positive,1.0,0.05,False
+225,saçlarım acilma sonucu aşırı yıprandģi icin aldim henüz 1 defa denedim öyle mucizevi birşey olmadı. bir kaç yıkama sonrası tekrar paylaşım yaparım . umarım işe yarar.,neutral,hisnet_dp,positive,1.1875,0.05,False
+225,saçlarım acilma sonucu aşırı yıprandģi icin aldim henüz 1 defa denedim öyle mucizevi birşey olmadı. bir kaç yıkama sonrası tekrar paylaşım yaparım . umarım işe yarar.,neutral,lw_hisnet_dp,positive,1.1875,0.05,False
+227,Diplerimi açtı ama uçları açmadı maalesef,neutral,hisnet,negative,0.0,1.35,False
+227,Diplerimi açtı ama uçları açmadı maalesef,neutral,dp_hisnet,negative,0.0,1.35,False
+227,Diplerimi açtı ama uçları açmadı maalesef,neutral,hisnet_dp,negative,0.0,1.35,False
+227,Diplerimi açtı ama uçları açmadı maalesef,neutral,lw_hisnet_dp,negative,0.0,2.1975000000000002,False
+231,saç diplerime de sürdüm korkunç yanma ve kepeklenme yaptı,neutral,hisnet,negative,0.0,1.0208333333333333,False
+231,saç diplerime de sürdüm korkunç yanma ve kepeklenme yaptı,neutral,dp_hisnet,negative,0.0,1.0,False
+231,saç diplerime de sürdüm korkunç yanma ve kepeklenme yaptı,neutral,hisnet_dp,negative,0.0,1.0208333333333333,False
+231,saç diplerime de sürdüm korkunç yanma ve kepeklenme yaptı,neutral,lw_hisnet_dp,negative,0.0,1.0208333333333333,False
+232,aldim bozuldu almayın.,negative,dp_hisnet,neutral,0.0,0.0,False
+236,sevmedim yagli gibi,negative,hisnet,neutral,0.0,0.0,False
+236,sevmedim yagli gibi,negative,dp_hisnet,neutral,0.0,0.0,False
+236,sevmedim yagli gibi,negative,hisnet_dp,neutral,0.0,0.0,False
+236,sevmedim yagli gibi,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+238,Boyu çok kısa sweat kısmı çok basit,negative,hisnet,positive,0.1,0.0,False
+238,Boyu çok kısa sweat kısmı çok basit,negative,dp_hisnet,positive,0.1,0.0,False
+238,Boyu çok kısa sweat kısmı çok basit,negative,hisnet_dp,positive,0.1,0.0,False
+238,Boyu çok kısa sweat kısmı çok basit,negative,lw_hisnet_dp,positive,0.12,0.0,False
+239,Gayet memnunum,negative,hisnet,neutral,0.0,0.0,True
+239,Gayet memnunum,negative,dp_hisnet,neutral,0.0,0.0,True
+239,Gayet memnunum,negative,hisnet_dp,neutral,0.0,0.0,True
+239,Gayet memnunum,negative,lw_hisnet_dp,neutral,0.0,0.0,True
+240,büyük göğüsler almamalı iade etmedim ama 1 sefer kullanabildim,negative,dp_hisnet,positive,0.125,0.0,False
+240,büyük göğüsler almamalı iade etmedim ama 1 sefer kullanabildim,negative,hisnet_dp,neutral,0.125,0.16666666666666666,False
+240,büyük göğüsler almamalı iade etmedim ama 1 sefer kullanabildim,negative,lw_hisnet_dp,neutral,0.10625,0.14166666666666666,False
+242,igrenc bir ürün saclarimi kokunden döktü,negative,hisnet,neutral,0.0,0.0,False
+242,igrenc bir ürün saclarimi kokunden döktü,negative,dp_hisnet,neutral,0.0,0.0,False
+242,igrenc bir ürün saclarimi kokunden döktü,negative,hisnet_dp,neutral,0.0,0.0,False
+242,igrenc bir ürün saclarimi kokunden döktü,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+245,Paramparça geldiği için direk çöpe attım,negative,hisnet,neutral,0.0,0.0,False
+245,Paramparça geldiği için direk çöpe attım,negative,dp_hisnet,neutral,0.0,0.0,False
+245,Paramparça geldiği için direk çöpe attım,negative,hisnet_dp,neutral,0.0,0.0,False
+245,Paramparça geldiği için direk çöpe attım,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+246,çok olumlu yorum ve fazla sayıda kullanıcısı olduğu için kötü olamaz diye düşünerek aldım. bakalım şuan yeni başladım.duruma göre yorumumu güncelleyeceğim,positive,hisnet,negative,0.25,1.3166666666666667,False
+246,çok olumlu yorum ve fazla sayıda kullanıcısı olduğu için kötü olamaz diye düşünerek aldım. bakalım şuan yeni başladım.duruma göre yorumumu güncelleyeceğim,positive,dp_hisnet,negative,0.25,1.0666666666666667,False
+246,çok olumlu yorum ve fazla sayıda kullanıcısı olduğu için kötü olamaz diye düşünerek aldım. bakalım şuan yeni başladım.duruma göre yorumumu güncelleyeceğim,positive,hisnet_dp,negative,0.25,1.3166666666666667,False
+246,çok olumlu yorum ve fazla sayıda kullanıcısı olduğu için kötü olamaz diye düşünerek aldım. bakalım şuan yeni başladım.duruma göre yorumumu güncelleyeceğim,positive,lw_hisnet_dp,negative,0.3,1.3166666666666667,False
+247,Tam aksine yüzümü kuruttu. Pul pul oldu :(,negative,hisnet,positive,0.20833333333333334,0.0,False
+247,Tam aksine yüzümü kuruttu. Pul pul oldu :(,negative,dp_hisnet,positive,0.20833333333333334,0.0,False
+247,Tam aksine yüzümü kuruttu. Pul pul oldu :(,negative,hisnet_dp,positive,0.20833333333333334,0.0,False
+247,Tam aksine yüzümü kuruttu. Pul pul oldu :(,negative,lw_hisnet_dp,positive,0.20833333333333334,0.0,False
+248,Bende sivilce yaptı sevmedim,negative,dp_hisnet,neutral,0.0,0.0,False
+249,ürünü 2 gündür kullanıyorum c vitamini serumu da istedim beraber kullanıcam.ilk sürdüğümde parlaklık oldu cildim de ilerleyen zamanlarda etkisini detaylı sizinle paylaşıcam,neutral,hisnet,positive,0.16666666666666666,0.043560606060606064,False
+249,ürünü 2 gündür kullanıyorum c vitamini serumu da istedim beraber kullanıcam.ilk sürdüğümde parlaklık oldu cildim de ilerleyen zamanlarda etkisini detaylı sizinle paylaşıcam,neutral,hisnet_dp,positive,0.16666666666666666,0.043560606060606064,False
+249,ürünü 2 gündür kullanıyorum c vitamini serumu da istedim beraber kullanıcam.ilk sürdüğümde parlaklık oldu cildim de ilerleyen zamanlarda etkisini detaylı sizinle paylaşıcam,neutral,lw_hisnet_dp,positive,0.16666666666666666,0.043560606060606064,False
+250,Kesinlikle berbat yapış yapış,negative,hisnet,neutral,0.0,0.0,False
+250,Kesinlikle berbat yapış yapış,negative,dp_hisnet,neutral,0.0,0.0,False
+250,Kesinlikle berbat yapış yapış,negative,hisnet_dp,neutral,0.0,0.0,False
+250,Kesinlikle berbat yapış yapış,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+251,Muhteşem ötesi bebeksi bir cilt sivilceyi kurutuyor ten tonunu açıyor yumuşacık oluyor yüzünüz tavsiye ederim,positive,hisnet,negative,0.875,0.9923076923076923,False
+253,Çok kuruttu ve kepek yaptı :(,negative,hisnet,neutral,0.0,0.0,False
+253,Çok kuruttu ve kepek yaptı :(,negative,dp_hisnet,neutral,0.0,0.0,False
+253,Çok kuruttu ve kepek yaptı :(,negative,hisnet_dp,neutral,0.0,0.0,False
+253,Çok kuruttu ve kepek yaptı :(,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+255,Missha Essence severler için biraz koyu kıvamlı ve yağlı gelecektir. Yüze parlaklık veriyor. Sanki kış için daha uygun bir ürün gibi. (Cildim karma. ),neutral,hisnet,positive,0.7023809523809523,0.0625,False
+255,Missha Essence severler için biraz koyu kıvamlı ve yağlı gelecektir. Yüze parlaklık veriyor. Sanki kış için daha uygun bir ürün gibi. (Cildim karma. ),neutral,dp_hisnet,positive,0.5357142857142857,0.0625,False
+255,Missha Essence severler için biraz koyu kıvamlı ve yağlı gelecektir. Yüze parlaklık veriyor. Sanki kış için daha uygun bir ürün gibi. (Cildim karma. ),neutral,hisnet_dp,positive,0.7023809523809523,0.0625,False
+255,Missha Essence severler için biraz koyu kıvamlı ve yağlı gelecektir. Yüze parlaklık veriyor. Sanki kış için daha uygun bir ürün gibi. (Cildim karma. ),neutral,lw_hisnet_dp,positive,0.7023809523809523,0.05,False
+257,Ürün maalesefki beklentimi karşılamadı. Biraz daha salaş olmalı ve boyu tunik gibi oldu.,negative,hisnet,neutral,0.0,0.0,False
+257,Ürün maalesefki beklentimi karşılamadı. Biraz daha salaş olmalı ve boyu tunik gibi oldu.,negative,dp_hisnet,neutral,0.0,0.0,False
+257,Ürün maalesefki beklentimi karşılamadı. Biraz daha salaş olmalı ve boyu tunik gibi oldu.,negative,hisnet_dp,neutral,0.0,0.0,False
+257,Ürün maalesefki beklentimi karşılamadı. Biraz daha salaş olmalı ve boyu tunik gibi oldu.,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+258,Güzel ve ideal,neutral,hisnet,positive,0.45454545454545453,0.0,False
+258,Güzel ve ideal,neutral,dp_hisnet,positive,0.45454545454545453,0.0,False
+258,Güzel ve ideal,neutral,hisnet_dp,positive,0.45454545454545453,0.0,False
+258,Güzel ve ideal,neutral,lw_hisnet_dp,positive,0.45454545454545453,0.0,False
+259,Yeni kullanmaya başladım etkisini merak ediyorum.,neutral,hisnet,negative,0.0,0.375,False
+259,Yeni kullanmaya başladım etkisini merak ediyorum.,neutral,dp_hisnet,negative,0.0,0.375,False
+259,Yeni kullanmaya başladım etkisini merak ediyorum.,neutral,hisnet_dp,negative,0.0,0.375,False
+259,Yeni kullanmaya başladım etkisini merak ediyorum.,neutral,lw_hisnet_dp,negative,0.0,0.375,False
+263,ürün çok hızlı elime ulastı düzleştiriyor aynı zamanda saçımı güçlendiriyor güzel bakım yapıyor çok memnunum,neutral,hisnet,positive,0.45454545454545453,0.05,False
+263,ürün çok hızlı elime ulastı düzleştiriyor aynı zamanda saçımı güçlendiriyor güzel bakım yapıyor çok memnunum,neutral,dp_hisnet,positive,0.45454545454545453,0.05,False
+263,ürün çok hızlı elime ulastı düzleştiriyor aynı zamanda saçımı güçlendiriyor güzel bakım yapıyor çok memnunum,neutral,hisnet_dp,positive,0.45454545454545453,0.05,False
+263,ürün çok hızlı elime ulastı düzleştiriyor aynı zamanda saçımı güçlendiriyor güzel bakım yapıyor çok memnunum,neutral,lw_hisnet_dp,positive,0.45454545454545453,0.06,False
+265,Bu güne kadar bir çok krem denedim hiç biri sonuç vermedi ...Bioderma en iyisi yüzüm artık pul pul dökülmüyor... az miktarda sürmek yeterli oluyor....,positive,hisnet,neutral,0.8611111111111112,0.8333333333333334,False
+265,Bu güne kadar bir çok krem denedim hiç biri sonuç vermedi ...Bioderma en iyisi yüzüm artık pul pul dökülmüyor... az miktarda sürmek yeterli oluyor....,positive,hisnet_dp,neutral,0.8611111111111112,0.8333333333333334,False
+266,İlk günlerde severek kullandım sonradan yüzümde sivilcelenme yaptı,neutral,hisnet,negative,0.0,0.5,False
+266,İlk günlerde severek kullandım sonradan yüzümde sivilcelenme yaptı,neutral,hisnet_dp,negative,0.0,0.5,False
+266,İlk günlerde severek kullandım sonradan yüzümde sivilcelenme yaptı,neutral,lw_hisnet_dp,negative,0.0,0.5,False
+267,Yorumların aksine ben o kadar beğenmedim. yağlı bir saçım var her gün yıkamak durumundayım şampuanı kullandım 2 gün sonra bile hala yağlanmamıştı fakat saçımı çok sert bir hale getirdi sprey sıkılmış gibi yinede güzel kullanılır.,neutral,dp_hisnet,positive,0.49025974025974023,0.3888888888888889,False
+267,Yorumların aksine ben o kadar beğenmedim. yağlı bir saçım var her gün yıkamak durumundayım şampuanı kullandım 2 gün sonra bile hala yağlanmamıştı fakat saçımı çok sert bir hale getirdi sprey sıkılmış gibi yinede güzel kullanılır.,neutral,lw_hisnet_dp,negative,0.4167207792207792,1.0020833333333334,False
+268,Günlük kullanım için ideal tavsiye ederim.,neutral,hisnet,positive,0.125,0.0,False
+268,Günlük kullanım için ideal tavsiye ederim.,neutral,dp_hisnet,positive,0.125,0.0,False
+268,Günlük kullanım için ideal tavsiye ederim.,neutral,hisnet_dp,positive,0.125,0.0,False
+268,Günlük kullanım için ideal tavsiye ederim.,neutral,lw_hisnet_dp,positive,0.125,0.0,False
+269,Yağlı bir cildim var gözeneklerimi sıkılaştırdı ve fazla sebumu aldı haftada 2 kere uyguluyorum çok memnunun,positive,hisnet,negative,0.03571428571428571,0.16666666666666666,False
+269,Yağlı bir cildim var gözeneklerimi sıkılaştırdı ve fazla sebumu aldı haftada 2 kere uyguluyorum çok memnunun,positive,dp_hisnet,negative,0.03571428571428571,0.16666666666666666,False
+269,Yağlı bir cildim var gözeneklerimi sıkılaştırdı ve fazla sebumu aldı haftada 2 kere uyguluyorum çok memnunun,positive,hisnet_dp,negative,0.03571428571428571,0.16666666666666666,False
+269,Yağlı bir cildim var gözeneklerimi sıkılaştırdı ve fazla sebumu aldı haftada 2 kere uyguluyorum çok memnunun,positive,lw_hisnet_dp,negative,0.03571428571428571,0.16666666666666666,False
+270,Güzeldi iyi paketleme,neutral,hisnet,positive,1.0656565656565657,0.0,False
+270,Güzeldi iyi paketleme,neutral,dp_hisnet,positive,1.0656565656565657,0.0,False
+270,Güzeldi iyi paketleme,neutral,hisnet_dp,positive,1.0656565656565657,0.0,False
+270,Güzeldi iyi paketleme,neutral,lw_hisnet_dp,positive,1.0656565656565657,0.0,False
+272,Geç teslimat yapıldı çokta kaliteli bir ürün değilmiş beklediğime değmedi,negative,hisnet,positive,1.0,0.0,False
+277,Markasına güvenerek aldığım güzel bir ürün,neutral,hisnet,positive,0.45454545454545453,0.16666666666666666,False
+277,Markasına güvenerek aldığım güzel bir ürün,neutral,dp_hisnet,positive,0.45454545454545453,0.16666666666666666,False
+277,Markasına güvenerek aldığım güzel bir ürün,neutral,hisnet_dp,positive,0.45454545454545453,0.16666666666666666,False
+277,Markasına güvenerek aldığım güzel bir ürün,neutral,lw_hisnet_dp,positive,0.45454545454545453,0.16666666666666666,False
+278,Kargo bedava olsun diye aldım iyiydi,neutral,hisnet,positive,0.6111111111111112,0.16666666666666666,False
+278,Kargo bedava olsun diye aldım iyiydi,neutral,dp_hisnet,positive,0.6111111111111112,0.0,False
+278,Kargo bedava olsun diye aldım iyiydi,neutral,hisnet_dp,positive,0.6111111111111112,0.16666666666666666,False
+278,Kargo bedava olsun diye aldım iyiydi,neutral,lw_hisnet_dp,positive,0.6111111111111112,0.16666666666666666,False
+279,Ürünün kumaşı çok güzeldi sıcak tutar fakat kolları bedenine göre çok dar ve kısa. Ayrıca D toka bağlama kısmı da kaba duruyor. Beğenmedim iade edeceğim.,negative,dp_hisnet,positive,0.45454545454545453,0.375,False
+281,Çok keskin kokusu var.Profosyonellerin kullanması gereken bir ürün gibi.,negative,hisnet,neutral,0.0,0.041666666666666664,False
+281,Çok keskin kokusu var.Profosyonellerin kullanması gereken bir ürün gibi.,negative,dp_hisnet,neutral,0.0,0.041666666666666664,False
+281,Çok keskin kokusu var.Profosyonellerin kullanması gereken bir ürün gibi.,negative,hisnet_dp,neutral,0.0,0.041666666666666664,False
+281,Çok keskin kokusu var.Profosyonellerin kullanması gereken bir ürün gibi.,negative,lw_hisnet_dp,neutral,0.0,0.049999999999999996,False
+282,Ürün 3gün içinde elime ulaştı. Titreşiminin seviyesini artırıp azaltabiliyor olmak hoşuma gitti. Yüzümdeki hissi beğendim umarım uzun ömürlü olur,positive,hisnet,neutral,0.0,0.0,False
+282,Ürün 3gün içinde elime ulaştı. Titreşiminin seviyesini artırıp azaltabiliyor olmak hoşuma gitti. Yüzümdeki hissi beğendim umarım uzun ömürlü olur,positive,dp_hisnet,neutral,0.0,0.0,False
+282,Ürün 3gün içinde elime ulaştı. Titreşiminin seviyesini artırıp azaltabiliyor olmak hoşuma gitti. Yüzümdeki hissi beğendim umarım uzun ömürlü olur,positive,hisnet_dp,neutral,0.0,0.0,False
+282,Ürün 3gün içinde elime ulaştı. Titreşiminin seviyesini artırıp azaltabiliyor olmak hoşuma gitti. Yüzümdeki hissi beğendim umarım uzun ömürlü olur,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+283,ürünün orjinal olduğunu düşünmüyorum.,negative,hisnet,neutral,0.0,0.0,False
+283,ürünün orjinal olduğunu düşünmüyorum.,negative,dp_hisnet,neutral,0.0,0.0,False
+283,ürünün orjinal olduğunu düşünmüyorum.,negative,hisnet_dp,neutral,0.0,0.0,False
+283,ürünün orjinal olduğunu düşünmüyorum.,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+284,Çizgilere dolmuyor ıslak bir görüntüsü var ama kapatıcılık az,neutral,hisnet,negative,0.0,0.25,False
+284,Çizgilere dolmuyor ıslak bir görüntüsü var ama kapatıcılık az,neutral,dp_hisnet,negative,0.0,0.25,False
+284,Çizgilere dolmuyor ıslak bir görüntüsü var ama kapatıcılık az,neutral,hisnet_dp,negative,0.0,0.25,False
+284,Çizgilere dolmuyor ıslak bir görüntüsü var ama kapatıcılık az,neutral,lw_hisnet_dp,negative,0.0,0.4625,False
+288,cildimi inanılmaz kuruttu nem dengesini sağlayamadı yinede bitene kadar kullanacağım,neutral,hisnet,positive,1.0416666666666667,0.08333333333333333,False
+288,cildimi inanılmaz kuruttu nem dengesini sağlayamadı yinede bitene kadar kullanacağım,neutral,dp_hisnet,positive,1.0,0.0,False
+288,cildimi inanılmaz kuruttu nem dengesini sağlayamadı yinede bitene kadar kullanacağım,neutral,hisnet_dp,positive,1.0416666666666667,0.08333333333333333,False
+288,cildimi inanılmaz kuruttu nem dengesini sağlayamadı yinede bitene kadar kullanacağım,neutral,lw_hisnet_dp,positive,1.0416666666666667,0.08333333333333333,False
+290,En uygun fiyata almıştım indirimdeyken. Piyasa araştırması yapıp öyle satın alın. Kargo da hızlı geldi,neutral,hisnet,positive,0.75,0.406060606060606,False
+290,En uygun fiyata almıştım indirimdeyken. Piyasa araştırması yapıp öyle satın alın. Kargo da hızlı geldi,neutral,dp_hisnet,positive,0.75,0.21666666666666667,False
+290,En uygun fiyata almıştım indirimdeyken. Piyasa araştırması yapıp öyle satın alın. Kargo da hızlı geldi,neutral,hisnet_dp,positive,0.75,0.406060606060606,False
+290,En uygun fiyata almıştım indirimdeyken. Piyasa araştırması yapıp öyle satın alın. Kargo da hızlı geldi,neutral,lw_hisnet_dp,positive,0.85,0.406060606060606,False
+291,Uzun süre kullandım saçı yumuşatıyor ama beklediğim performansı alamadım,neutral,hisnet,negative,0.0,0.16666666666666666,False
+291,Uzun süre kullandım saçı yumuşatıyor ama beklediğim performansı alamadım,neutral,dp_hisnet,negative,0.0,0.16666666666666666,False
+291,Uzun süre kullandım saçı yumuşatıyor ama beklediğim performansı alamadım,neutral,hisnet_dp,negative,0.0,0.16666666666666666,False
+291,Uzun süre kullandım saçı yumuşatıyor ama beklediğim performansı alamadım,neutral,lw_hisnet_dp,negative,0.0,0.30833333333333335,False
+292,İndirimini bekledim ve aldım çok memnunum şimdilik 2. Kullanısım daha,positive,dp_hisnet,negative,0.0,0.16666666666666666,False
+292,İndirimini bekledim ve aldım çok memnunum şimdilik 2. Kullanısım daha,positive,hisnet_dp,negative,0.0,0.16666666666666666,False
+292,İndirimini bekledim ve aldım çok memnunum şimdilik 2. Kullanısım daha,positive,lw_hisnet_dp,negative,0.0,0.16666666666666666,False
+293,çok küçük verilen paraya deymez bence,negative,hisnet,neutral,0.0,0.0,False
+293,çok küçük verilen paraya deymez bence,negative,dp_hisnet,neutral,0.0,0.0,False
+293,çok küçük verilen paraya deymez bence,negative,hisnet_dp,neutral,0.0,0.0,False
+293,çok küçük verilen paraya deymez bence,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+294,Güzel bir ruj nemlendirici gibi,neutral,hisnet,positive,0.45454545454545453,0.0,False
+294,Güzel bir ruj nemlendirici gibi,neutral,dp_hisnet,positive,0.45454545454545453,0.0,False
+294,Güzel bir ruj nemlendirici gibi,neutral,hisnet_dp,positive,0.45454545454545453,0.0,False
+294,Güzel bir ruj nemlendirici gibi,neutral,lw_hisnet_dp,positive,0.45454545454545453,0.0,False
+295,kenarları bir şekilde pirtlatıyor. kilo problemi olan biri de değilim modelinde bir gariplik var bence,negative,dp_hisnet,neutral,0.0,0.0,False
+296,Ürünü 1 saat tutmama rağmen saçımın uçları yandı,neutral,hisnet,negative,0.0,0.5,False
+296,Ürünü 1 saat tutmama rağmen saçımın uçları yandı,neutral,hisnet_dp,negative,0.0,0.5,False
+297,İndirimden aldığım için mutluyum,positive,dp_hisnet,negative,0.0,0.16666666666666666,False
+298,Ortalama kalitede dokusu var. Fiyatı ucuz.,neutral,hisnet,positive,0.625,0.0,False
+298,Ortalama kalitede dokusu var. Fiyatı ucuz.,neutral,dp_hisnet,positive,0.125,0.0,False
+298,Ortalama kalitede dokusu var. Fiyatı ucuz.,neutral,hisnet_dp,positive,0.625,0.0,False
+298,Ortalama kalitede dokusu var. Fiyatı ucuz.,neutral,lw_hisnet_dp,positive,0.625,0.0,False
+300,Çok başarılı bir ürün. Yanma hissi de kişinin acı eşiğine bağlı bence beni çok rahatsız etmedi,positive,hisnet,negative,1.0,1.2589285714285714,False
+302,Aynı parfüm yıllardır gayetl,positive,dp_hisnet,neutral,0.0,0.0,False
+304,küçük ama renkler harika ve kaliteli gayet güzel,neutral,hisnet,positive,2.4545454545454546,0.0,False
+304,küçük ama renkler harika ve kaliteli gayet güzel,neutral,dp_hisnet,positive,2.4545454545454546,0.0,False
+304,küçük ama renkler harika ve kaliteli gayet güzel,neutral,hisnet_dp,positive,2.4545454545454546,0.0,False
+304,küçük ama renkler harika ve kaliteli gayet güzel,neutral,lw_hisnet_dp,positive,4.540909090909091,0.0,False
+306,Çok güzel bir fırça. Uzun yıllar kullanabileceğiniz bir ürün. Ancak fiyatı bana olduğundan çok pahalı geldi. Gittiğim mağazalarda topuz fırçası satılmadığından buradan aldım.,neutral,lw_hisnet_dp,negative,0.5454545454545454,0.7216666666666667,False
+308,hissiyatı güzel,neutral,hisnet,positive,0.45454545454545453,0.0,False
+308,hissiyatı güzel,neutral,dp_hisnet,positive,0.45454545454545453,0.0,False
+308,hissiyatı güzel,neutral,hisnet_dp,positive,0.45454545454545453,0.0,False
+308,hissiyatı güzel,neutral,lw_hisnet_dp,positive,0.45454545454545453,0.0,False
+309,Ben pek beğenmedim kullandığım için de iade edemedim,positive,hisnet,neutral,0.125,0.14583333333333334,False
+312,Kutu streçli fakat kapsülleri zorlanarak koparılmış olarak geldi ilk kez kullanıcam fiyat makul,neutral,hisnet,positive,0.375,0.0,False
+312,Kutu streçli fakat kapsülleri zorlanarak koparılmış olarak geldi ilk kez kullanıcam fiyat makul,neutral,dp_hisnet,positive,0.375,0.0,False
+312,Kutu streçli fakat kapsülleri zorlanarak koparılmış olarak geldi ilk kez kullanıcam fiyat makul,neutral,hisnet_dp,positive,0.375,0.0,False
+312,Kutu streçli fakat kapsülleri zorlanarak koparılmış olarak geldi ilk kez kullanıcam fiyat makul,neutral,lw_hisnet_dp,positive,0.6937500000000001,0.0,False
+317,Beklediğimden büyük ve uzun süre gidecek bir ürün,positive,hisnet,neutral,0.0,0.0,False
+317,Beklediğimden büyük ve uzun süre gidecek bir ürün,positive,dp_hisnet,neutral,0.0,0.0,False
+317,Beklediğimden büyük ve uzun süre gidecek bir ürün,positive,hisnet_dp,neutral,0.0,0.0,False
+317,Beklediğimden büyük ve uzun süre gidecek bir ürün,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+321,75b dolgusuzum aynı beden küçük geldi,negative,hisnet,neutral,0.0,0.0,False
+321,75b dolgusuzum aynı beden küçük geldi,negative,dp_hisnet,neutral,0.0,0.0,False
+321,75b dolgusuzum aynı beden küçük geldi,negative,hisnet_dp,neutral,0.0,0.0,False
+321,75b dolgusuzum aynı beden küçük geldi,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+323,Kesinlikle öneriyorum o meşhur markadan farkı yok boşuna para vermeyin,positive,hisnet,negative,0.0,0.7142857142857143,False
+323,Kesinlikle öneriyorum o meşhur markadan farkı yok boşuna para vermeyin,positive,dp_hisnet,negative,0.0,0.7142857142857143,False
+323,Kesinlikle öneriyorum o meşhur markadan farkı yok boşuna para vermeyin,positive,hisnet_dp,negative,0.0,0.7142857142857143,False
+323,Kesinlikle öneriyorum o meşhur markadan farkı yok boşuna para vermeyin,positive,lw_hisnet_dp,negative,0.0,0.7142857142857143,False
+324,Deli yakıyor ama işe yarıyor mu zaman göstercek. . Ama Kargo hızı ve paketlemeye bayıldım 😍,positive,hisnet,negative,0.0,0.6875,False
+324,Deli yakıyor ama işe yarıyor mu zaman göstercek. . Ama Kargo hızı ve paketlemeye bayıldım 😍,positive,dp_hisnet,negative,0.0,0.1875,False
+324,Deli yakıyor ama işe yarıyor mu zaman göstercek. . Ama Kargo hızı ve paketlemeye bayıldım 😍,positive,hisnet_dp,negative,0.0,0.6875,False
+324,Deli yakıyor ama işe yarıyor mu zaman göstercek. . Ama Kargo hızı ve paketlemeye bayıldım 😍,positive,lw_hisnet_dp,negative,0.0,1.084375,False
+330,Çok kaliteli sayılmaz ama fiyatına göre iyi,neutral,hisnet,positive,1.6111111111111112,0.0,False
+330,Çok kaliteli sayılmaz ama fiyatına göre iyi,neutral,dp_hisnet,positive,1.6111111111111112,0.0,False
+330,Çok kaliteli sayılmaz ama fiyatına göre iyi,neutral,hisnet_dp,positive,1.6111111111111112,0.0,False
+330,Çok kaliteli sayılmaz ama fiyatına göre iyi,neutral,lw_hisnet_dp,positive,2.150555555555556,0.0,False
+333,Ebatı bayağı büyük ferahlatıyor ve nemlendiriyor sadece kapağı kırılmıştı özenli pakatleseniz iyi olur,neutral,hisnet,positive,1.0361111111111112,0.0,False
+333,Ebatı bayağı büyük ferahlatıyor ve nemlendiriyor sadece kapağı kırılmıştı özenli pakatleseniz iyi olur,neutral,dp_hisnet,positive,1.0361111111111112,0.0,False
+333,Ebatı bayağı büyük ferahlatıyor ve nemlendiriyor sadece kapağı kırılmıştı özenli pakatleseniz iyi olur,neutral,hisnet_dp,positive,1.0361111111111112,0.0,False
+333,Ebatı bayağı büyük ferahlatıyor ve nemlendiriyor sadece kapağı kırılmıştı özenli pakatleseniz iyi olur,neutral,lw_hisnet_dp,positive,1.0361111111111112,0.0,False
+337,Kullandığım en iyi bazlardan,neutral,hisnet,positive,0.6111111111111112,0.0,False
+337,Kullandığım en iyi bazlardan,neutral,dp_hisnet,positive,0.6111111111111112,0.0,False
+337,Kullandığım en iyi bazlardan,neutral,hisnet_dp,positive,0.6111111111111112,0.0,False
+337,Kullandığım en iyi bazlardan,neutral,lw_hisnet_dp,positive,0.7333333333333334,0.0,False
+339,güzel ama sert biraz ve istediğim rengi gelemdi,neutral,hisnet,positive,0.45454545454545453,0.3888888888888889,False
+339,güzel ama sert biraz ve istediğim rengi gelemdi,neutral,dp_hisnet,positive,0.45454545454545453,0.3888888888888889,False
+339,güzel ama sert biraz ve istediğim rengi gelemdi,neutral,hisnet_dp,positive,0.45454545454545453,0.3888888888888889,False
+339,güzel ama sert biraz ve istediğim rengi gelemdi,neutral,lw_hisnet_dp,negative,0.38636363636363635,0.7194444444444444,False
+341,yaklasik iki aydir kullaniyorum büyük bir etki beklemeyin iyi nemlendiriyor ama söylendiği kadar leke onardigi renk esitledigine sahit olmadim,neutral,hisnet,positive,0.6111111111111112,0.3,False
+341,yaklasik iki aydir kullaniyorum büyük bir etki beklemeyin iyi nemlendiriyor ama söylendiği kadar leke onardigi renk esitledigine sahit olmadim,neutral,dp_hisnet,positive,0.6111111111111112,0.0,False
+341,yaklasik iki aydir kullaniyorum büyük bir etki beklemeyin iyi nemlendiriyor ama söylendiği kadar leke onardigi renk esitledigine sahit olmadim,neutral,hisnet_dp,positive,0.6111111111111112,0.3,False
+342,Ciltte kadifemsi bir yumuşaklık sağlıyor ancak üstüne bb krem sürdüğüm zaman pütür pütür toplanıyor,neutral,hisnet,positive,0.5,0.0625,False
+342,Ciltte kadifemsi bir yumuşaklık sağlıyor ancak üstüne bb krem sürdüğüm zaman pütür pütür toplanıyor,neutral,hisnet_dp,positive,0.5,0.0625,False
+342,Ciltte kadifemsi bir yumuşaklık sağlıyor ancak üstüne bb krem sürdüğüm zaman pütür pütür toplanıyor,neutral,lw_hisnet_dp,positive,0.425,0.0,False
+343,Müthiş bir ürün. Ben de yorumlara ve puanına bakarak aldım. Özellikle fiyat performans bakımından değerlendirdiğimde de harika bir ürün. İlk kullanımda verdiği aydınlık ve yatışmış cilt hissi beni şaşırttı. Bundan sonra sürekli kullanacağım bir ürün. Zatem c vitamini düzenli bir ihtiyaç cilt için. Kullanımdan sonraki görüntüyle bakılırsa bu ihtiyacı karşılıyor bu serum. Mutlak almalısınız.,positive,hisnet,negative,1.525,1.75,False
+343,Müthiş bir ürün. Ben de yorumlara ve puanına bakarak aldım. Özellikle fiyat performans bakımından değerlendirdiğimde de harika bir ürün. İlk kullanımda verdiği aydınlık ve yatışmış cilt hissi beni şaşırttı. Bundan sonra sürekli kullanacağım bir ürün. Zatem c vitamini düzenli bir ihtiyaç cilt için. Kullanımdan sonraki görüntüyle bakılırsa bu ihtiyacı karşılıyor bu serum. Mutlak almalısınız.,positive,hisnet_dp,negative,1.525,1.75,False
+343,Müthiş bir ürün. Ben de yorumlara ve puanına bakarak aldım. Özellikle fiyat performans bakımından değerlendirdiğimde de harika bir ürün. İlk kullanımda verdiği aydınlık ve yatışmış cilt hissi beni şaşırttı. Bundan sonra sürekli kullanacağım bir ürün. Zatem c vitamini düzenli bir ihtiyaç cilt için. Kullanımdan sonraki görüntüyle bakılırsa bu ihtiyacı karşılıyor bu serum. Mutlak almalısınız.,positive,lw_hisnet_dp,negative,1.525,1.75,False
+344,Güzel fakat bende fazla işe yaramadi,negative,hisnet,positive,0.45454545454545453,0.0,False
+344,Güzel fakat bende fazla işe yaramadi,negative,dp_hisnet,positive,0.45454545454545453,0.0,False
+344,Güzel fakat bende fazla işe yaramadi,negative,hisnet_dp,positive,0.45454545454545453,0.0,False
+344,Güzel fakat bende fazla işe yaramadi,negative,lw_hisnet_dp,positive,0.38636363636363635,0.0,False
+345,kokusu güzel kullanmadim daha,neutral,hisnet,positive,0.45454545454545453,0.0,False
+345,kokusu güzel kullanmadim daha,neutral,dp_hisnet,positive,0.45454545454545453,0.0,False
+345,kokusu güzel kullanmadim daha,neutral,hisnet_dp,positive,0.45454545454545453,0.0,False
+345,kokusu güzel kullanmadim daha,neutral,lw_hisnet_dp,positive,0.45454545454545453,0.0,False
+347,ürünü kullandım ama çamaşır suyu lekelerini çıkartmıyor arkadaşlar beğenmedim pek,negative,hisnet,positive,0.625,0.3,False
+347,ürünü kullandım ama çamaşır suyu lekelerini çıkartmıyor arkadaşlar beğenmedim pek,negative,dp_hisnet,positive,0.125,0.0,False
+353,Fiyatına göre bayağı güzel fakat suya girdiğinde pembe pembe akıyor,neutral,hisnet,positive,0.825974025974026,0.0,False
+353,Fiyatına göre bayağı güzel fakat suya girdiğinde pembe pembe akıyor,neutral,dp_hisnet,positive,0.825974025974026,0.0,False
+353,Fiyatına göre bayağı güzel fakat suya girdiğinde pembe pembe akıyor,neutral,hisnet_dp,positive,0.825974025974026,0.0,False
+353,Fiyatına göre bayağı güzel fakat suya girdiğinde pembe pembe akıyor,neutral,lw_hisnet_dp,positive,1.0235064935064937,0.0,False
+354,Zaten kullandığım bir ürün memnunum,positive,hisnet,neutral,0.0,0.0,False
+354,Zaten kullandığım bir ürün memnunum,positive,dp_hisnet,neutral,0.0,0.0,False
+354,Zaten kullandığım bir ürün memnunum,positive,hisnet_dp,neutral,0.0,0.0,False
+354,Zaten kullandığım bir ürün memnunum,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+355,Orta halli bir keratin şampunı kötü değil,neutral,hisnet,negative,0.0,0.975,False
+355,Orta halli bir keratin şampunı kötü değil,neutral,dp_hisnet,negative,0.0,0.975,False
+355,Orta halli bir keratin şampunı kötü değil,neutral,hisnet_dp,negative,0.0,0.975,False
+355,Orta halli bir keratin şampunı kötü değil,neutral,lw_hisnet_dp,negative,0.0,0.975,False
+357,Yüzü çok kurutuyor,neutral,hisnet,negative,0.0,0.19230769230769232,True
+357,Yüzü çok kurutuyor,neutral,dp_hisnet,negative,0.0,0.19230769230769232,True
+357,Yüzü çok kurutuyor,neutral,hisnet_dp,negative,0.0,0.19230769230769232,True
+357,Yüzü çok kurutuyor,neutral,lw_hisnet_dp,negative,0.0,0.23076923076923078,True
+358,İşe yaramaz paranıza yazık,negative,dp_hisnet,neutral,0.0,0.0,False
+359,Ürünü beğenmedim göründüğü kadar kaliteli değil,negative,hisnet,positive,1.0,0.0,False
+359,Ürünü beğenmedim göründüğü kadar kaliteli değil,negative,dp_hisnet,positive,1.0,0.0,False
+359,Ürünü beğenmedim göründüğü kadar kaliteli değil,negative,hisnet_dp,positive,1.0,0.0,False
+359,Ürünü beğenmedim göründüğü kadar kaliteli değil,negative,lw_hisnet_dp,positive,1.0,0.0,False
+363,Açıkcası çok beklentiniz olmasın. Fondöteni hemen tutuyor yani fondöteni dağıtırken pütür pütür oluyor. İyi mi kötü mü halâ emin değilim bu defa bir diğer örneğini sipariş ettim bakalım.,neutral,hisnet,negative,1.0069444444444444,1.15,False
+363,Açıkcası çok beklentiniz olmasın. Fondöteni hemen tutuyor yani fondöteni dağıtırken pütür pütür oluyor. İyi mi kötü mü halâ emin değilim bu defa bir diğer örneğini sipariş ettim bakalım.,neutral,dp_hisnet,negative,0.6111111111111112,1.3375,False
+363,Açıkcası çok beklentiniz olmasın. Fondöteni hemen tutuyor yani fondöteni dağıtırken pütür pütür oluyor. İyi mi kötü mü halâ emin değilim bu defa bir diğer örneğini sipariş ettim bakalım.,neutral,hisnet_dp,negative,0.6111111111111112,1.3375,False
+363,Açıkcası çok beklentiniz olmasın. Fondöteni hemen tutuyor yani fondöteni dağıtırken pütür pütür oluyor. İyi mi kötü mü halâ emin değilim bu defa bir diğer örneğini sipariş ettim bakalım.,neutral,lw_hisnet_dp,negative,0.6111111111111112,1.3375,False
+364,Küllü sarılarla karıştırıp boyadık güzel bir gri oldu 3 yıkamada saç çiğ sarıya döndü ama,neutral,hisnet,positive,0.45454545454545453,0.225,False
+364,Küllü sarılarla karıştırıp boyadık güzel bir gri oldu 3 yıkamada saç çiğ sarıya döndü ama,neutral,dp_hisnet,positive,0.45454545454545453,0.0,False
+364,Küllü sarılarla karıştırıp boyadık güzel bir gri oldu 3 yıkamada saç çiğ sarıya döndü ama,neutral,hisnet_dp,positive,0.45454545454545453,0.225,False
+364,Küllü sarılarla karıştırıp boyadık güzel bir gri oldu 3 yıkamada saç çiğ sarıya döndü ama,neutral,lw_hisnet_dp,positive,0.38636363636363635,0.31625000000000003,False
+366,bir aylık kullanıma göre tam olarak olmasa da dökülmeler azaldı,neutral,hisnet,positive,0.20833333333333334,0.022727272727272728,False
+366,bir aylık kullanıma göre tam olarak olmasa da dökülmeler azaldı,neutral,dp_hisnet,positive,0.20833333333333334,0.0,False
+366,bir aylık kullanıma göre tam olarak olmasa da dökülmeler azaldı,neutral,hisnet_dp,positive,0.20833333333333334,0.022727272727272728,False
+366,bir aylık kullanıma göre tam olarak olmasa da dökülmeler azaldı,neutral,lw_hisnet_dp,positive,0.20833333333333334,0.022727272727272728,False
+367,Kremini tercih ederim kesinlikle. Yapı bende sivilce yaptı kullanamadım,negative,dp_hisnet,neutral,0.0,0.0,False
+368,Kokusu kötü biraz ama etkisi güzel,neutral,hisnet,negative,0.45454545454545453,0.9,False
+368,Kokusu kötü biraz ama etkisi güzel,neutral,dp_hisnet,negative,0.45454545454545453,0.9,False
+368,Kokusu kötü biraz ama etkisi güzel,neutral,hisnet_dp,negative,0.45454545454545453,0.9,False
+368,Kokusu kötü biraz ama etkisi güzel,neutral,lw_hisnet_dp,positive,0.8409090909090909,0.765,False
+369,Ürünü tavsiye üzerine aldım boyut olarak büyük ve kullanalı 1 ay oldu saçlarım kendine geldi kırıklar gitti ve saç güçlendi ilk günden itibaren etkisini gösteriyor güvenle alabilirsiniz,positive,hisnet,negative,0.125,0.4696969696969696,False
+369,Ürünü tavsiye üzerine aldım boyut olarak büyük ve kullanalı 1 ay oldu saçlarım kendine geldi kırıklar gitti ve saç güçlendi ilk günden itibaren etkisini gösteriyor güvenle alabilirsiniz,positive,dp_hisnet,negative,0.125,0.3333333333333333,False
+369,Ürünü tavsiye üzerine aldım boyut olarak büyük ve kullanalı 1 ay oldu saçlarım kendine geldi kırıklar gitti ve saç güçlendi ilk günden itibaren etkisini gösteriyor güvenle alabilirsiniz,positive,hisnet_dp,negative,0.125,0.4696969696969696,False
+369,Ürünü tavsiye üzerine aldım boyut olarak büyük ve kullanalı 1 ay oldu saçlarım kendine geldi kırıklar gitti ve saç güçlendi ilk günden itibaren etkisini gösteriyor güvenle alabilirsiniz,positive,lw_hisnet_dp,negative,0.125,0.4696969696969696,False
+371,küçük geldi,negative,hisnet,neutral,0.0,0.0,True
+371,küçük geldi,negative,dp_hisnet,neutral,0.0,0.0,True
+371,küçük geldi,negative,hisnet_dp,neutral,0.0,0.0,True
+371,küçük geldi,negative,lw_hisnet_dp,neutral,0.0,0.0,True
+374,Şimdilik kullanmadım umarım faydasını görürüm,neutral,hisnet,negative,0.0,1.0,False
+374,Şimdilik kullanmadım umarım faydasını görürüm,neutral,dp_hisnet,negative,0.0,1.0,False
+374,Şimdilik kullanmadım umarım faydasını görürüm,neutral,hisnet_dp,negative,0.0,1.0,False
+374,Şimdilik kullanmadım umarım faydasını görürüm,neutral,lw_hisnet_dp,negative,0.0,1.0,False
+375,ürün bekledigimden küçük geldi ama renk tonlamalari güzel kolayca taşınabilir,neutral,hisnet,positive,0.5795454545454546,0.0,False
+375,ürün bekledigimden küçük geldi ama renk tonlamalari güzel kolayca taşınabilir,neutral,dp_hisnet,positive,0.5795454545454546,0.0,False
+375,ürün bekledigimden küçük geldi ama renk tonlamalari güzel kolayca taşınabilir,neutral,hisnet_dp,positive,0.5795454545454546,0.0,False
+375,ürün bekledigimden küçük geldi ama renk tonlamalari güzel kolayca taşınabilir,neutral,lw_hisnet_dp,positive,1.072159090909091,0.0,False
+378,Çok kötğydü hemen kurudu ve makyajı tam çıkarmıyor onun yerine normal ıslak mendil alın daha iyi en azından kurumuyor,negative,hisnet,neutral,0.8350694444444445,0.8012820512820513,False
+378,Çok kötğydü hemen kurudu ve makyajı tam çıkarmıyor onun yerine normal ıslak mendil alın daha iyi en azından kurumuyor,negative,dp_hisnet,neutral,0.8194444444444445,0.8012820512820513,False
+378,Çok kötğydü hemen kurudu ve makyajı tam çıkarmıyor onun yerine normal ıslak mendil alın daha iyi en azından kurumuyor,negative,hisnet_dp,neutral,0.8350694444444445,0.8012820512820513,False
+378,Çok kötğydü hemen kurudu ve makyajı tam çıkarmıyor onun yerine normal ıslak mendil alın daha iyi en azından kurumuyor,negative,lw_hisnet_dp,neutral,0.8350694444444445,0.8512820512820513,False
+379,Fena diğil,neutral,hisnet,negative,0.0,0.4583333333333333,False
+379,Fena diğil,neutral,dp_hisnet,negative,0.0,0.4583333333333333,False
+379,Fena diğil,neutral,hisnet_dp,negative,0.0,0.4583333333333333,False
+379,Fena diğil,neutral,lw_hisnet_dp,negative,0.0,0.4583333333333333,False
+380,2. Giymede demiri çıktı...,negative,hisnet,neutral,0.0,0.0,False
+380,2. Giymede demiri çıktı...,negative,dp_hisnet,neutral,0.0,0.0,False
+380,2. Giymede demiri çıktı...,negative,hisnet_dp,neutral,0.0,0.0,False
+380,2. Giymede demiri çıktı...,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+385,Hızlı kargosu ve ürünün büyüklüğü titreşim hızı güzel geldi. Henüz kullanmadım ama beklentimi karşılayacak gibi duruyor. Iki yıldızı kurmamın nedeni saklama kabı kırılmış paketlemeden memnun kalmadım daha dikkatli olmanızı istiyorum.,neutral,hisnet,positive,1.0795454545454546,0.55,False
+385,Hızlı kargosu ve ürünün büyüklüğü titreşim hızı güzel geldi. Henüz kullanmadım ama beklentimi karşılayacak gibi duruyor. Iki yıldızı kurmamın nedeni saklama kabı kırılmış paketlemeden memnun kalmadım daha dikkatli olmanızı istiyorum.,neutral,dp_hisnet,positive,1.0795454545454546,0.55,False
+385,Hızlı kargosu ve ürünün büyüklüğü titreşim hızı güzel geldi. Henüz kullanmadım ama beklentimi karşılayacak gibi duruyor. Iki yıldızı kurmamın nedeni saklama kabı kırılmış paketlemeden memnun kalmadım daha dikkatli olmanızı istiyorum.,neutral,hisnet_dp,positive,1.0795454545454546,0.55,False
+385,Hızlı kargosu ve ürünün büyüklüğü titreşim hızı güzel geldi. Henüz kullanmadım ama beklentimi karşılayacak gibi duruyor. Iki yıldızı kurmamın nedeni saklama kabı kırılmış paketlemeden memnun kalmadım daha dikkatli olmanızı istiyorum.,neutral,lw_hisnet_dp,positive,1.0795454545454546,0.55,False
+391,Çok beğendim saçlarımı hafifleştirdi ve yumuşacık oldu,positive,hisnet,neutral,0.0,0.0,False
+391,Çok beğendim saçlarımı hafifleştirdi ve yumuşacık oldu,positive,dp_hisnet,neutral,0.0,0.0,False
+391,Çok beğendim saçlarımı hafifleştirdi ve yumuşacık oldu,positive,hisnet_dp,neutral,0.0,0.0,False
+391,Çok beğendim saçlarımı hafifleştirdi ve yumuşacık oldu,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+392,Zaten ürünü uzun zamandır takip ediyordum. İndirime girince de kaçırmak istemedim ve direkt aldım.,positive,dp_hisnet,negative,0.0,0.16666666666666666,False
+395,Uzun yıllar depoda beklemiş ürünler sanırım,negative,hisnet,neutral,0.0,0.0,False
+395,Uzun yıllar depoda beklemiş ürünler sanırım,negative,dp_hisnet,neutral,0.0,0.0,False
+395,Uzun yıllar depoda beklemiş ürünler sanırım,negative,hisnet_dp,neutral,0.0,0.0,False
+395,Uzun yıllar depoda beklemiş ürünler sanırım,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+396,malesef cildimi morartmasına rağmen yeterli derece de temizlemedi,neutral,hisnet,negative,0.25,0.5208333333333334,False
+396,malesef cildimi morartmasına rağmen yeterli derece de temizlemedi,neutral,dp_hisnet,positive,0.25,0.0,False
+396,malesef cildimi morartmasına rağmen yeterli derece de temizlemedi,neutral,hisnet_dp,negative,0.25,0.5208333333333334,False
+396,malesef cildimi morartmasına rağmen yeterli derece de temizlemedi,neutral,lw_hisnet_dp,positive,0.4625,0.03854166666666667,False
+398,Kargo firmasıyla ilgili sorunlar yaşadım ürünümü dağıtıma çıkarmadılar çıkardı gösterdiler vs kendim gidip aldım ptt kargoya şu pandemi sürecinde bu ürünü alabilmek için Sıra bekledim bayağı. Ürüne gelince yağlı bir cildim var sivilce tedavisi gördüm lekeler kalmıştı cildimde. Ürünü kullanmaya başladığım ilk 2 gün sorun yoktu sonrasında sivilcelerim çıkmaya başladı ve alnım çenem ve yanağımın çok az bir kısmında sivilceler çıktı alnımdaki sivilceler cidden moralimi çok bozdu çünkü çok sivilce vardı ve kızarık kızarıktı her neyse kremleri kullanmayı bırakmayı düşündüm eczane kremi almaya karar verdim araya bayram vs girdiği için eczane kremlerini alamadım ve bu kremleri gündüz gece yüzümü temizleyiciyle yıkadıktan sonra kullanmaya devam ettim ve yüzümdeki sivilceleri söndürdü yani çıkardığı yerlerdeki sivilceleri söndürdü. Sonra eczane kremlerini aldım ve bu kremleri kullanmayı bıraktım faydasını görürmüydüm bilemiyorum. Gece kremi kokusu dayanılmayacak kadar kötü değil yorumlarda abartılmış biraz gündüz kreminin yapısı gece kremine göre daha sert. Bu arada gece kremini elime ilk aldığımda bana biraz içi boş gibi geldi kremin yapısından mıdır bilmiyorum hafif ve boş geldi bana eğer kullanılmış ürünü gönderdilerse hakkımı helal etmem söyleyeceklerim bu kadar 🤚,neutral,hisnet,negative,1.8721726190476193,10.775901875901875,False
+398,Kargo firmasıyla ilgili sorunlar yaşadım ürünümü dağıtıma çıkarmadılar çıkardı gösterdiler vs kendim gidip aldım ptt kargoya şu pandemi sürecinde bu ürünü alabilmek için Sıra bekledim bayağı. Ürüne gelince yağlı bir cildim var sivilce tedavisi gördüm lekeler kalmıştı cildimde. Ürünü kullanmaya başladığım ilk 2 gün sorun yoktu sonrasında sivilcelerim çıkmaya başladı ve alnım çenem ve yanağımın çok az bir kısmında sivilceler çıktı alnımdaki sivilceler cidden moralimi çok bozdu çünkü çok sivilce vardı ve kızarık kızarıktı her neyse kremleri kullanmayı bırakmayı düşündüm eczane kremi almaya karar verdim araya bayram vs girdiği için eczane kremlerini alamadım ve bu kremleri gündüz gece yüzümü temizleyiciyle yıkadıktan sonra kullanmaya devam ettim ve yüzümdeki sivilceleri söndürdü yani çıkardığı yerlerdeki sivilceleri söndürdü. Sonra eczane kremlerini aldım ve bu kremleri kullanmayı bıraktım faydasını görürmüydüm bilemiyorum. Gece kremi kokusu dayanılmayacak kadar kötü değil yorumlarda abartılmış biraz gündüz kreminin yapısı gece kremine göre daha sert. Bu arada gece kremini elime ilk aldığımda bana biraz içi boş gibi geldi kremin yapısından mıdır bilmiyorum hafif ve boş geldi bana eğer kullanılmış ürünü gönderdilerse hakkımı helal etmem söyleyeceklerim bu kadar 🤚,neutral,dp_hisnet,negative,2.0013392857142858,4.930068542568542,False
+398,Kargo firmasıyla ilgili sorunlar yaşadım ürünümü dağıtıma çıkarmadılar çıkardı gösterdiler vs kendim gidip aldım ptt kargoya şu pandemi sürecinde bu ürünü alabilmek için Sıra bekledim bayağı. Ürüne gelince yağlı bir cildim var sivilce tedavisi gördüm lekeler kalmıştı cildimde. Ürünü kullanmaya başladığım ilk 2 gün sorun yoktu sonrasında sivilcelerim çıkmaya başladı ve alnım çenem ve yanağımın çok az bir kısmında sivilceler çıktı alnımdaki sivilceler cidden moralimi çok bozdu çünkü çok sivilce vardı ve kızarık kızarıktı her neyse kremleri kullanmayı bırakmayı düşündüm eczane kremi almaya karar verdim araya bayram vs girdiği için eczane kremlerini alamadım ve bu kremleri gündüz gece yüzümü temizleyiciyle yıkadıktan sonra kullanmaya devam ettim ve yüzümdeki sivilceleri söndürdü yani çıkardığı yerlerdeki sivilceleri söndürdü. Sonra eczane kremlerini aldım ve bu kremleri kullanmayı bıraktım faydasını görürmüydüm bilemiyorum. Gece kremi kokusu dayanılmayacak kadar kötü değil yorumlarda abartılmış biraz gündüz kreminin yapısı gece kremine göre daha sert. Bu arada gece kremini elime ilk aldığımda bana biraz içi boş gibi geldi kremin yapısından mıdır bilmiyorum hafif ve boş geldi bana eğer kullanılmış ürünü gönderdilerse hakkımı helal etmem söyleyeceklerim bu kadar 🤚,neutral,hisnet_dp,negative,2.2096726190476192,8.063401875901878,False
+398,Kargo firmasıyla ilgili sorunlar yaşadım ürünümü dağıtıma çıkarmadılar çıkardı gösterdiler vs kendim gidip aldım ptt kargoya şu pandemi sürecinde bu ürünü alabilmek için Sıra bekledim bayağı. Ürüne gelince yağlı bir cildim var sivilce tedavisi gördüm lekeler kalmıştı cildimde. Ürünü kullanmaya başladığım ilk 2 gün sorun yoktu sonrasında sivilcelerim çıkmaya başladı ve alnım çenem ve yanağımın çok az bir kısmında sivilceler çıktı alnımdaki sivilceler cidden moralimi çok bozdu çünkü çok sivilce vardı ve kızarık kızarıktı her neyse kremleri kullanmayı bırakmayı düşündüm eczane kremi almaya karar verdim araya bayram vs girdiği için eczane kremlerini alamadım ve bu kremleri gündüz gece yüzümü temizleyiciyle yıkadıktan sonra kullanmaya devam ettim ve yüzümdeki sivilceleri söndürdü yani çıkardığı yerlerdeki sivilceleri söndürdü. Sonra eczane kremlerini aldım ve bu kremleri kullanmayı bıraktım faydasını görürmüydüm bilemiyorum. Gece kremi kokusu dayanılmayacak kadar kötü değil yorumlarda abartılmış biraz gündüz kreminin yapısı gece kremine göre daha sert. Bu arada gece kremini elime ilk aldığımda bana biraz içi boş gibi geldi kremin yapısından mıdır bilmiyorum hafif ve boş geldi bana eğer kullanılmış ürünü gönderdilerse hakkımı helal etmem söyleyeceklerim bu kadar 🤚,neutral,lw_hisnet_dp,negative,2.2096726190476192,8.113401875901879,False
+399,Başlayalım bakalım bitince haber veririm size,neutral,hisnet,negative,0.0,0.25,False
+399,Başlayalım bakalım bitince haber veririm size,neutral,hisnet_dp,negative,0.0,0.25,False
+399,Başlayalım bakalım bitince haber veririm size,neutral,lw_hisnet_dp,negative,0.0,0.25,False
+401,kargo ve paketleme gayet iyi kullandıktan sonra yorumu güncelleyeceğim,neutral,hisnet,positive,0.6111111111111112,0.0,False
+401,kargo ve paketleme gayet iyi kullandıktan sonra yorumu güncelleyeceğim,neutral,dp_hisnet,positive,0.6111111111111112,0.0,False
+401,kargo ve paketleme gayet iyi kullandıktan sonra yorumu güncelleyeceğim,neutral,hisnet_dp,positive,0.6111111111111112,0.0,False
+401,kargo ve paketleme gayet iyi kullandıktan sonra yorumu güncelleyeceğim,neutral,lw_hisnet_dp,positive,0.6111111111111112,0.0,False
+402,uygun fiyatlı ve güzel bir ürün. benim cildim bazen çooook yağlanır bazen de çok kurur sanırım sivilce ilaçları kullandığım için bu dengesizlik. yüzümün yağ dengesini ayarlayamadı cildim bu aralar fazla yağlanıyor engelleyemiyor malesef. başka bir marka daha deneyip kıyaslama yapabilirim.,neutral,hisnet,positive,1.1212121212121213,0.8881410256410257,False
+402,uygun fiyatlı ve güzel bir ürün. benim cildim bazen çooook yağlanır bazen de çok kurur sanırım sivilce ilaçları kullandığım için bu dengesizlik. yüzümün yağ dengesini ayarlayamadı cildim bu aralar fazla yağlanıyor engelleyemiyor malesef. başka bir marka daha deneyip kıyaslama yapabilirim.,neutral,dp_hisnet,positive,0.9545454545454546,0.3173076923076923,False
+402,uygun fiyatlı ve güzel bir ürün. benim cildim bazen çooook yağlanır bazen de çok kurur sanırım sivilce ilaçları kullandığım için bu dengesizlik. yüzümün yağ dengesini ayarlayamadı cildim bu aralar fazla yağlanıyor engelleyemiyor malesef. başka bir marka daha deneyip kıyaslama yapabilirim.,neutral,hisnet_dp,positive,1.1212121212121213,0.8881410256410257,False
+402,uygun fiyatlı ve güzel bir ürün. benim cildim bazen çooook yağlanır bazen de çok kurur sanırım sivilce ilaçları kullandığım için bu dengesizlik. yüzümün yağ dengesini ayarlayamadı cildim bu aralar fazla yağlanıyor engelleyemiyor malesef. başka bir marka daha deneyip kıyaslama yapabilirim.,neutral,lw_hisnet_dp,positive,1.1212121212121213,0.9266025641025641,False
+403,Severek kullandığım bir koku pişman olmazsınız,positive,hisnet,negative,0.0,1.125,False
+404,Şampuan saçı çok sert yapıyor ama krem sürünce yumuşuyor boyutları büyük,positive,hisnet,negative,0.0,0.5763888888888888,False
+404,Şampuan saçı çok sert yapıyor ama krem sürünce yumuşuyor boyutları büyük,positive,dp_hisnet,negative,0.0,0.5763888888888888,False
+404,Şampuan saçı çok sert yapıyor ama krem sürünce yumuşuyor boyutları büyük,positive,hisnet_dp,negative,0.0,0.5763888888888888,False
+404,Şampuan saçı çok sert yapıyor ama krem sürünce yumuşuyor boyutları büyük,positive,lw_hisnet_dp,negative,0.0,0.7435416666666668,False
+408,Ciltteki yağı dengeliyor kesinlikle başırılı bir ürün düzenli kullanımda etkisini gördüm cildimdeki pürüzler artık olmuyor yumuşacık yaptı,positive,hisnet,negative,0.125,1.3,False
+408,Ciltteki yağı dengeliyor kesinlikle başırılı bir ürün düzenli kullanımda etkisini gördüm cildimdeki pürüzler artık olmuyor yumuşacık yaptı,positive,dp_hisnet,negative,0.125,1.0,False
+408,Ciltteki yağı dengeliyor kesinlikle başırılı bir ürün düzenli kullanımda etkisini gördüm cildimdeki pürüzler artık olmuyor yumuşacık yaptı,positive,hisnet_dp,negative,0.125,1.3,False
+408,Ciltteki yağı dengeliyor kesinlikle başırılı bir ürün düzenli kullanımda etkisini gördüm cildimdeki pürüzler artık olmuyor yumuşacık yaptı,positive,lw_hisnet_dp,negative,0.125,1.3,False
+412,İş görür bu fiyata göre bir kaliteye sahip aşırı kaliteli bir şey beklemeyin,neutral,hisnet,positive,1.5,1.05,False
+412,İş görür bu fiyata göre bir kaliteye sahip aşırı kaliteli bir şey beklemeyin,neutral,hisnet_dp,positive,1.5,1.05,False
+412,İş görür bu fiyata göre bir kaliteye sahip aşırı kaliteli bir şey beklemeyin,neutral,lw_hisnet_dp,positive,1.5,1.05,False
+413,Fiyatına göre fena bir ürün sayılmaz,neutral,hisnet,negative,0.0,0.4583333333333333,False
+413,Fiyatına göre fena bir ürün sayılmaz,neutral,dp_hisnet,negative,0.0,0.4583333333333333,False
+413,Fiyatına göre fena bir ürün sayılmaz,neutral,hisnet_dp,negative,0.0,0.4583333333333333,False
+413,Fiyatına göre fena bir ürün sayılmaz,neutral,lw_hisnet_dp,negative,0.0,0.4583333333333333,False
+414,İnce çatlaklarımın gittiğini çok rahat gözlemliyorum,neutral,hisnet,positive,0.15277777777777776,0.0,False
+414,İnce çatlaklarımın gittiğini çok rahat gözlemliyorum,neutral,dp_hisnet,positive,0.15277777777777776,0.0,False
+414,İnce çatlaklarımın gittiğini çok rahat gözlemliyorum,neutral,hisnet_dp,positive,0.15277777777777776,0.0,False
+414,İnce çatlaklarımın gittiğini çok rahat gözlemliyorum,neutral,lw_hisnet_dp,positive,0.1611111111111111,0.0,False
+415,Çok belirgin bir dolgunlaştırıcı etkisini görmedim ve beklediğim kadar kalıcı değil ama parlatıcı gibi kullanıyorum,neutral,hisnet,negative,0.0,1.0,False
+415,Çok belirgin bir dolgunlaştırıcı etkisini görmedim ve beklediğim kadar kalıcı değil ama parlatıcı gibi kullanıyorum,neutral,dp_hisnet,positive,1.0,0.0,False
+415,Çok belirgin bir dolgunlaştırıcı etkisini görmedim ve beklediğim kadar kalıcı değil ama parlatıcı gibi kullanıyorum,neutral,hisnet_dp,positive,1.0,0.0,False
+415,Çok belirgin bir dolgunlaştırıcı etkisini görmedim ve beklediğim kadar kalıcı değil ama parlatıcı gibi kullanıyorum,neutral,lw_hisnet_dp,positive,0.85,0.0,False
+418,Saçımda kepek yaptı. Köpürmüyor ve sönük yapıyor saçı. Sadece kabarıklık yapmamasını beğendim,neutral,hisnet,negative,0.0,0.3333333333333333,False
+418,Saçımda kepek yaptı. Köpürmüyor ve sönük yapıyor saçı. Sadece kabarıklık yapmamasını beğendim,neutral,dp_hisnet,negative,0.0,0.3333333333333333,False
+418,Saçımda kepek yaptı. Köpürmüyor ve sönük yapıyor saçı. Sadece kabarıklık yapmamasını beğendim,neutral,hisnet_dp,negative,0.0,0.3333333333333333,False
+418,Saçımda kepek yaptı. Köpürmüyor ve sönük yapıyor saçı. Sadece kabarıklık yapmamasını beğendim,neutral,lw_hisnet_dp,negative,0.0,0.3333333333333333,False
+419,Ürün çok güzel ikisi de ama benim cildimde anlamadığım bir şekilde alerji yaptı. Kullandığım süre boyunca çok kırmızı oldu yüzüm,neutral,hisnet,negative,0.45454545454545453,0.5208333333333334,False
+419,Ürün çok güzel ikisi de ama benim cildimde anlamadığım bir şekilde alerji yaptı. Kullandığım süre boyunca çok kırmızı oldu yüzüm,neutral,dp_hisnet,positive,0.45454545454545453,0.0,False
+419,Ürün çok güzel ikisi de ama benim cildimde anlamadığım bir şekilde alerji yaptı. Kullandığım süre boyunca çok kırmızı oldu yüzüm,neutral,hisnet_dp,negative,0.45454545454545453,0.5208333333333334,False
+419,Ürün çok güzel ikisi de ama benim cildimde anlamadığım bir şekilde alerji yaptı. Kullandığım süre boyunca çok kırmızı oldu yüzüm,neutral,lw_hisnet_dp,negative,0.4636363636363636,0.9427083333333334,False
+420,Karma ciltliyim alerji yaptı.,neutral,hisnet,negative,0.0,0.5,False
+420,Karma ciltliyim alerji yaptı.,neutral,hisnet_dp,negative,0.0,0.5,False
+420,Karma ciltliyim alerji yaptı.,neutral,lw_hisnet_dp,negative,0.0,0.5,False
+422,Bunu kullanınca fondötene bile gerek kalmıyor bayıldım,positive,hisnet,neutral,0.0,0.0,False
+422,Bunu kullanınca fondötene bile gerek kalmıyor bayıldım,positive,dp_hisnet,neutral,0.0,0.0,False
+422,Bunu kullanınca fondötene bile gerek kalmıyor bayıldım,positive,hisnet_dp,neutral,0.0,0.0,False
+422,Bunu kullanınca fondötene bile gerek kalmıyor bayıldım,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+424,Henüz kullanmadım ama kokusu çok güzel kullanınca yararı olup olmadığını yazarım mutlaka,neutral,hisnet,positive,0.6420454545454546,0.0,False
+424,Henüz kullanmadım ama kokusu çok güzel kullanınca yararı olup olmadığını yazarım mutlaka,neutral,dp_hisnet,positive,0.6420454545454546,0.0,False
+424,Henüz kullanmadım ama kokusu çok güzel kullanınca yararı olup olmadığını yazarım mutlaka,neutral,hisnet_dp,positive,0.6420454545454546,0.0,False
+424,Henüz kullanmadım ama kokusu çok güzel kullanınca yararı olup olmadığını yazarım mutlaka,neutral,lw_hisnet_dp,positive,1.355965909090909,0.0,False
+426,Fiyatına göre iyi ama akma yapıyor,neutral,hisnet,positive,0.6111111111111112,0.5,False
+426,Fiyatına göre iyi ama akma yapıyor,neutral,dp_hisnet,positive,0.6111111111111112,0.0,False
+426,Fiyatına göre iyi ama akma yapıyor,neutral,hisnet_dp,positive,0.6111111111111112,0.0,False
+426,Fiyatına göre iyi ama akma yapıyor,neutral,lw_hisnet_dp,positive,0.5194444444444445,0.0,False
+427,oda spreyinden hallice. oyle kullaniyorum ben.,negative,hisnet,neutral,0.0,0.0,False
+427,oda spreyinden hallice. oyle kullaniyorum ben.,negative,dp_hisnet,neutral,0.0,0.0,False
+427,oda spreyinden hallice. oyle kullaniyorum ben.,negative,hisnet_dp,neutral,0.0,0.0,False
+427,oda spreyinden hallice. oyle kullaniyorum ben.,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+431,etkili bir sprey kullandıkça yüzü görülür bir renk tonu gözüküyor,positive,hisnet,negative,0.0,1.0,False
+431,etkili bir sprey kullandıkça yüzü görülür bir renk tonu gözüküyor,positive,dp_hisnet,neutral,0.0,0.0,False
+431,etkili bir sprey kullandıkça yüzü görülür bir renk tonu gözüküyor,positive,hisnet_dp,negative,0.0,1.0,False
+431,etkili bir sprey kullandıkça yüzü görülür bir renk tonu gözüküyor,positive,lw_hisnet_dp,negative,0.0,1.0,False
+432,bir gelişme görmedim ama ciltteki hücreleri uyandıracağını düşünüyorum fiyata göre iyi bir sonuç,neutral,hisnet,negative,0.6111111111111112,1.125,False
+432,bir gelişme görmedim ama ciltteki hücreleri uyandıracağını düşünüyorum fiyata göre iyi bir sonuç,neutral,dp_hisnet,negative,0.6111111111111112,1.0,False
+432,bir gelişme görmedim ama ciltteki hücreleri uyandıracağını düşünüyorum fiyata göre iyi bir sonuç,neutral,hisnet_dp,negative,0.6111111111111112,1.125,False
+432,bir gelişme görmedim ama ciltteki hücreleri uyandıracağını düşünüyorum fiyata göre iyi bir sonuç,neutral,lw_hisnet_dp,negative,0.5194444444444445,1.08125,False
+435,giymeden yıkadım ve sonuç hüsran...renginde solma ve kumaşında tiftiklenmeler olustu,negative,dp_hisnet,neutral,0.0,0.0,False
+436,Çok kötüüü. Kolonya ondan çok daha güzel kimse almasın. Parfüm satma trendyol. İade de biraz zorlandım ama personel çok yardımcı oldu. Hepinize teşekkürleeerrr...,negative,hisnet,positive,0.5795454545454546,0.31249999999999994,False
+436,Çok kötüüü. Kolonya ondan çok daha güzel kimse almasın. Parfüm satma trendyol. İade de biraz zorlandım ama personel çok yardımcı oldu. Hepinize teşekkürleeerrr...,negative,dp_hisnet,positive,0.45454545454545453,0.16666666666666666,False
+436,Çok kötüüü. Kolonya ondan çok daha güzel kimse almasın. Parfüm satma trendyol. İade de biraz zorlandım ama personel çok yardımcı oldu. Hepinize teşekkürleeerrr...,negative,hisnet_dp,positive,0.5795454545454546,0.31249999999999994,False
+436,Çok kötüüü. Kolonya ondan çok daha güzel kimse almasın. Parfüm satma trendyol. İade de biraz zorlandım ama personel çok yardımcı oldu. Hepinize teşekkürleeerrr...,negative,lw_hisnet_dp,positive,0.5795454545454546,0.29062499999999997,False
+439,blistex performansı olarak çok iyi ben roaccutane kullanıyorum yeterli geldi ama çok cabuk tükendi ve çok sert yani biraz sıcakta kalıp eriyince daha kolay sürülüyor o zaman da cabuk bitiyor :) daha uygun fiyatlı nemlendiriciler kesfettim,neutral,hisnet,positive,1.6944444444444444,0.5366161616161615,False
+439,blistex performansı olarak çok iyi ben roaccutane kullanıyorum yeterli geldi ama çok cabuk tükendi ve çok sert yani biraz sıcakta kalıp eriyince daha kolay sürülüyor o zaman da cabuk bitiyor :) daha uygun fiyatlı nemlendiriciler kesfettim,neutral,dp_hisnet,positive,1.6944444444444444,0.5138888888888888,False
+439,blistex performansı olarak çok iyi ben roaccutane kullanıyorum yeterli geldi ama çok cabuk tükendi ve çok sert yani biraz sıcakta kalıp eriyince daha kolay sürülüyor o zaman da cabuk bitiyor :) daha uygun fiyatlı nemlendiriciler kesfettim,neutral,hisnet_dp,positive,1.6944444444444444,0.5366161616161615,False
+439,blistex performansı olarak çok iyi ben roaccutane kullanıyorum yeterli geldi ama çok cabuk tükendi ve çok sert yani biraz sıcakta kalıp eriyince daha kolay sürülüyor o zaman da cabuk bitiyor :) daha uygun fiyatlı nemlendiriciler kesfettim,neutral,lw_hisnet_dp,positive,2.3775000000000004,1.136628787878788,False
+440,Ben çok beğeniyorum kullanmaya başladım herkesin övdüğü kadar var ❤️❤️,positive,hisnet,neutral,0.0,0.0,False
+440,Ben çok beğeniyorum kullanmaya başladım herkesin övdüğü kadar var ❤️❤️,positive,dp_hisnet,neutral,0.0,0.0,False
+440,Ben çok beğeniyorum kullanmaya başladım herkesin övdüğü kadar var ❤️❤️,positive,hisnet_dp,neutral,0.0,0.0,False
+440,Ben çok beğeniyorum kullanmaya başladım herkesin övdüğü kadar var ❤️❤️,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+441,Kapatıcılığı iyi sürekli kullandığım bir ürün,neutral,hisnet,positive,0.6111111111111112,0.0,False
+441,Kapatıcılığı iyi sürekli kullandığım bir ürün,neutral,dp_hisnet,positive,0.6111111111111112,0.0,False
+441,Kapatıcılığı iyi sürekli kullandığım bir ürün,neutral,hisnet_dp,positive,0.6111111111111112,0.0,False
+441,Kapatıcılığı iyi sürekli kullandığım bir ürün,neutral,lw_hisnet_dp,positive,0.6111111111111112,0.0,False
+444,Çok abartıldığı gibi bir etki görmedim saçım yağlı biraz söndürdü saçımı cansız gösterdi anlamadım . Ambalajı da fotoğrafa pek benzemiyor ya tereddüt ettim,neutral,hisnet,negative,0.1607142857142857,1.2227272727272727,False
+444,Çok abartıldığı gibi bir etki görmedim saçım yağlı biraz söndürdü saçımı cansız gösterdi anlamadım . Ambalajı da fotoğrafa pek benzemiyor ya tereddüt ettim,neutral,dp_hisnet,negative,0.1607142857142857,1.2,False
+444,Çok abartıldığı gibi bir etki görmedim saçım yağlı biraz söndürdü saçımı cansız gösterdi anlamadım . Ambalajı da fotoğrafa pek benzemiyor ya tereddüt ettim,neutral,hisnet_dp,negative,0.1607142857142857,1.2227272727272727,False
+444,Çok abartıldığı gibi bir etki görmedim saçım yağlı biraz söndürdü saçımı cansız gösterdi anlamadım . Ambalajı da fotoğrafa pek benzemiyor ya tereddüt ettim,neutral,lw_hisnet_dp,negative,0.1607142857142857,1.2227272727272727,False
+447,Daha çnce kullandım böyle değildi sanki içine limon kolanyası basmışlar gibi bir ürün kesinlikle almanızı tavsiye etmem,negative,hisnet,neutral,0.125,0.16666666666666666,False
+447,Daha çnce kullandım böyle değildi sanki içine limon kolanyası basmışlar gibi bir ürün kesinlikle almanızı tavsiye etmem,negative,hisnet_dp,neutral,0.125,0.16666666666666666,False
+447,Daha çnce kullandım böyle değildi sanki içine limon kolanyası basmışlar gibi bir ürün kesinlikle almanızı tavsiye etmem,negative,lw_hisnet_dp,neutral,0.125,0.16666666666666666,False
+448,Ben bir haftadır kullanıyorum ama saç dökülmemde veya saçımın herhangi bir bölümü için bir değişiklik yaptığını söylemem doğru olmaz. Biraz daha kullanıp mı fayda edecek bilemiyorum ama sarımsak kokar diye endişelenen olursa kokmuyor.,neutral,hisnet,positive,0.25,0.0,False
+448,Ben bir haftadır kullanıyorum ama saç dökülmemde veya saçımın herhangi bir bölümü için bir değişiklik yaptığını söylemem doğru olmaz. Biraz daha kullanıp mı fayda edecek bilemiyorum ama sarımsak kokar diye endişelenen olursa kokmuyor.,neutral,dp_hisnet,positive,0.25,0.0,False
+448,Ben bir haftadır kullanıyorum ama saç dökülmemde veya saçımın herhangi bir bölümü için bir değişiklik yaptığını söylemem doğru olmaz. Biraz daha kullanıp mı fayda edecek bilemiyorum ama sarımsak kokar diye endişelenen olursa kokmuyor.,neutral,hisnet_dp,positive,0.25,0.0,False
+448,Ben bir haftadır kullanıyorum ama saç dökülmemde veya saçımın herhangi bir bölümü için bir değişiklik yaptığını söylemem doğru olmaz. Biraz daha kullanıp mı fayda edecek bilemiyorum ama sarımsak kokar diye endişelenen olursa kokmuyor.,neutral,lw_hisnet_dp,positive,0.4625,0.0,False
+452,karma ciltliyim bira t bölgemi kuruttu ama nemlendirince hiçbir sorun kalmıyor makyajı bile çok güzel cıkarıyor tavsiye ederim,positive,hisnet,negative,0.5795454545454546,0.75,False
+452,karma ciltliyim bira t bölgemi kuruttu ama nemlendirince hiçbir sorun kalmıyor makyajı bile çok güzel cıkarıyor tavsiye ederim,positive,hisnet_dp,negative,0.5795454545454546,0.75,False
+452,karma ciltliyim bira t bölgemi kuruttu ama nemlendirince hiçbir sorun kalmıyor makyajı bile çok güzel cıkarıyor tavsiye ederim,positive,lw_hisnet_dp,negative,1.240340909090909,1.3875000000000002,False
+458,Kalıcılığı pek yok,neutral,hisnet,negative,0.125,0.21428571428571427,False
+458,Kalıcılığı pek yok,neutral,dp_hisnet,negative,0.125,0.21428571428571427,False
+458,Kalıcılığı pek yok,neutral,hisnet_dp,negative,0.125,0.21428571428571427,False
+458,Kalıcılığı pek yok,neutral,lw_hisnet_dp,negative,0.0,0.2571428571428571,False
+460,Cildi yağlandırıyor biraz yağlı ciltlere uygun değil gibi,neutral,hisnet,positive,0.5357142857142857,0.0,False
+460,Cildi yağlandırıyor biraz yağlı ciltlere uygun değil gibi,neutral,dp_hisnet,negative,0.03571428571428571,0.5,False
+460,Cildi yağlandırıyor biraz yağlı ciltlere uygun değil gibi,neutral,hisnet_dp,negative,0.03571428571428571,0.5,False
+460,Cildi yağlandırıyor biraz yağlı ciltlere uygun değil gibi,neutral,lw_hisnet_dp,negative,0.03571428571428571,0.5,False
+464,Çok kullanışlı deriye zararını görmedim fakat benimki bozuldu ara tıpası çıkmış sakın düşürmeyin,positive,hisnet,negative,0.2916666666666667,2.5,False
+464,Çok kullanışlı deriye zararını görmedim fakat benimki bozuldu ara tıpası çıkmış sakın düşürmeyin,positive,dp_hisnet,negative,0.25,1.0,False
+464,Çok kullanışlı deriye zararını görmedim fakat benimki bozuldu ara tıpası çıkmış sakın düşürmeyin,positive,hisnet_dp,negative,0.25,1.5,False
+464,Çok kullanışlı deriye zararını görmedim fakat benimki bozuldu ara tıpası çıkmış sakın düşürmeyin,positive,lw_hisnet_dp,negative,0.255,1.275,False
+465,bugün elime geçti gıcırdama falan yok demedim yüzünde çok hoş bir rahatlama oldu inşallah zamanla işe yarıyacak.,positive,hisnet,neutral,0.25,0.23511904761904762,False
+465,bugün elime geçti gıcırdama falan yok demedim yüzünde çok hoş bir rahatlama oldu inşallah zamanla işe yarıyacak.,positive,dp_hisnet,negative,0.0,0.23511904761904762,False
+465,bugün elime geçti gıcırdama falan yok demedim yüzünde çok hoş bir rahatlama oldu inşallah zamanla işe yarıyacak.,positive,hisnet_dp,negative,0.0,0.23511904761904762,False
+465,bugün elime geçti gıcırdama falan yok demedim yüzünde çok hoş bir rahatlama oldu inşallah zamanla işe yarıyacak.,positive,lw_hisnet_dp,negative,0.0,0.23511904761904762,False
+467,saclara çok güzel gelen bır ürün,neutral,hisnet,positive,0.45454545454545453,0.0,False
+467,saclara çok güzel gelen bır ürün,neutral,dp_hisnet,positive,0.45454545454545453,0.0,False
+467,saclara çok güzel gelen bır ürün,neutral,hisnet_dp,positive,0.45454545454545453,0.0,False
+467,saclara çok güzel gelen bır ürün,neutral,lw_hisnet_dp,positive,0.5454545454545454,0.0,False
+468,Ürünü alalı dört gün oldu henüz bir etki görmek için erken sanırım bakalm bekliyorum☺️,positive,hisnet,negative,0.0,1.0,False
+468,Ürünü alalı dört gün oldu henüz bir etki görmek için erken sanırım bakalm bekliyorum☺️,positive,dp_hisnet,negative,0.0,1.0,False
+468,Ürünü alalı dört gün oldu henüz bir etki görmek için erken sanırım bakalm bekliyorum☺️,positive,hisnet_dp,negative,0.0,1.0,False
+468,Ürünü alalı dört gün oldu henüz bir etki görmek için erken sanırım bakalm bekliyorum☺️,positive,lw_hisnet_dp,negative,0.0,1.0,False
+469,Ürün kaliteli değil kullanışsız,negative,hisnet,positive,1.0,0.75,False
+473,Güzel sayılır,neutral,hisnet,positive,0.45454545454545453,0.0,False
+473,Güzel sayılır,neutral,dp_hisnet,positive,0.45454545454545453,0.0,False
+473,Güzel sayılır,neutral,hisnet_dp,positive,0.45454545454545453,0.0,False
+473,Güzel sayılır,neutral,lw_hisnet_dp,positive,0.45454545454545453,0.0,False
+476,Düzenli kullanımda kedini gösteriyor,neutral,hisnet,positive,0.125,0.0,False
+476,Düzenli kullanımda kedini gösteriyor,neutral,dp_hisnet,positive,0.125,0.0,False
+476,Düzenli kullanımda kedini gösteriyor,neutral,hisnet_dp,positive,0.125,0.0,False
+476,Düzenli kullanımda kedini gösteriyor,neutral,lw_hisnet_dp,positive,0.125,0.0,False
+480,güzel ve kaliteli,neutral,hisnet,positive,1.4545454545454546,0.0,True
+480,güzel ve kaliteli,neutral,dp_hisnet,positive,1.4545454545454546,0.0,True
+480,güzel ve kaliteli,neutral,hisnet_dp,positive,1.4545454545454546,0.0,True
+480,güzel ve kaliteli,neutral,lw_hisnet_dp,positive,1.4545454545454546,0.0,True
+483,Yağlı ciltler için yapılan güneş kremlerinin genel sorunu yüzde beyaz beyaz kalıp yüzle bütünleşmemeleri. Bu kremde de o sorun var çok çok iyi dağıtmak gerekiyor. Koruması fena değil. Ellerime ve kollarımın açık yerlerine sürüyorum artık.,neutral,hisnet,negative,0.8187003968253969,1.9791666666666667,False
+483,Yağlı ciltler için yapılan güneş kremlerinin genel sorunu yüzde beyaz beyaz kalıp yüzle bütünleşmemeleri. Bu kremde de o sorun var çok çok iyi dağıtmak gerekiyor. Koruması fena değil. Ellerime ve kollarımın açık yerlerine sürüyorum artık.,neutral,dp_hisnet,positive,1.2614087301587302,0.0,False
+483,Yağlı ciltler için yapılan güneş kremlerinin genel sorunu yüzde beyaz beyaz kalıp yüzle bütünleşmemeleri. Bu kremde de o sorun var çok çok iyi dağıtmak gerekiyor. Koruması fena değil. Ellerime ve kollarımın açık yerlerine sürüyorum artık.,neutral,hisnet_dp,negative,1.2614087301587302,1.5208333333333335,False
+483,Yağlı ciltler için yapılan güneş kremlerinin genel sorunu yüzde beyaz beyaz kalıp yüzle bütünleşmemeleri. Bu kremde de o sorun var çok çok iyi dağıtmak gerekiyor. Koruması fena değil. Ellerime ve kollarımın açık yerlerine sürüyorum artık.,neutral,lw_hisnet_dp,negative,1.2614087301587302,1.5208333333333335,False
+484,Her yıkama sonrası kullanıyorum yumuşacık yapıyor,positive,hisnet,neutral,0.0,0.0,False
+484,Her yıkama sonrası kullanıyorum yumuşacık yapıyor,positive,dp_hisnet,neutral,0.0,0.0,False
+484,Her yıkama sonrası kullanıyorum yumuşacık yapıyor,positive,hisnet_dp,neutral,0.0,0.0,False
+484,Her yıkama sonrası kullanıyorum yumuşacık yapıyor,positive,lw_hisnet_dp,neutral,0.0,0.0,False
+485,Cidden dudağı çok yakıyor uygun fiyatlı olduğu için denenebilir,neutral,hisnet,positive,0.5,0.125,False
+485,Cidden dudağı çok yakıyor uygun fiyatlı olduğu için denenebilir,neutral,dp_hisnet,positive,0.5,0.0,False
+485,Cidden dudağı çok yakıyor uygun fiyatlı olduğu için denenebilir,neutral,hisnet_dp,positive,0.5,0.0,False
+485,Cidden dudağı çok yakıyor uygun fiyatlı olduğu için denenebilir,neutral,lw_hisnet_dp,positive,0.5,0.0,False
+486,3 gündür kullanıyorum yuzumde alerji vs yapmadi güzel sürülüyor,neutral,dp_hisnet,positive,0.45454545454545453,0.0,False
+487,üründen plastik kokusu geliyor prize takınca,negative,hisnet,neutral,0.0,0.0,False
+487,üründen plastik kokusu geliyor prize takınca,negative,dp_hisnet,neutral,0.0,0.0,False
+487,üründen plastik kokusu geliyor prize takınca,negative,hisnet_dp,neutral,0.0,0.0,False
+487,üründen plastik kokusu geliyor prize takınca,negative,lw_hisnet_dp,neutral,0.0,0.0,False
+489,iki tane aldık çok memnunuz,positive,hisnet,negative,0.0,0.16666666666666666,False
+489,iki tane aldık çok memnunuz,positive,dp_hisnet,negative,0.0,0.16666666666666666,False
+489,iki tane aldık çok memnunuz,positive,hisnet_dp,negative,0.0,0.16666666666666666,False
+489,iki tane aldık çok memnunuz,positive,lw_hisnet_dp,negative,0.0,0.16666666666666666,False
+490,1 haftadır kullanıyorum bayağı fark etti tırnak etlerimde düzelmelere oldu,positive,hisnet,neutral,0.05,0.0,False
+490,1 haftadır kullanıyorum bayağı fark etti tırnak etlerimde düzelmelere oldu,positive,dp_hisnet,neutral,0.05,0.0,False
+490,1 haftadır kullanıyorum bayağı fark etti tırnak etlerimde düzelmelere oldu,positive,hisnet_dp,neutral,0.05,0.0,False
+490,1 haftadır kullanıyorum bayağı fark etti tırnak etlerimde düzelmelere oldu,positive,lw_hisnet_dp,neutral,0.05,0.0,False
+491,Yüzdeki ödemi alan ferahlatan bir ürün buzdolabında bekletin mutlaka. Çok güzel.,positive,hisnet,neutral,0.45454545454545453,0.5,False
+491,Yüzdeki ödemi alan ferahlatan bir ürün buzdolabında bekletin mutlaka. Çok güzel.,positive,hisnet_dp,neutral,0.45454545454545453,0.5,False
+491,Yüzdeki ödemi alan ferahlatan bir ürün buzdolabında bekletin mutlaka. Çok güzel.,positive,lw_hisnet_dp,neutral,0.5454545454545454,0.5,False
+493,Fiyatı görünce aldım hemen. Henüz bı etkisini görmedim bakalım iyi gelir umarım,neutral,hisnet,negative,0.6111111111111112,2.416666666666667,False
+493,Fiyatı görünce aldım hemen. Henüz bı etkisini görmedim bakalım iyi gelir umarım,neutral,dp_hisnet,negative,0.6111111111111112,2.416666666666667,False
+493,Fiyatı görünce aldım hemen. Henüz bı etkisini görmedim bakalım iyi gelir umarım,neutral,hisnet_dp,negative,0.6111111111111112,2.416666666666667,False
+493,Fiyatı görünce aldım hemen. Henüz bı etkisini görmedim bakalım iyi gelir umarım,neutral,lw_hisnet_dp,negative,0.6111111111111112,2.416666666666667,False
+495,Dudak parlatıcısı fakat dolgunlastirma etkisi yok denecek kadar azzzzz bu fiyata değer mi değmez ama parlatıcı olarak kalıcı güzel.,neutral,hisnet,positive,0.45454545454545453,0.23511904761904762,False
+495,Dudak parlatıcısı fakat dolgunlastirma etkisi yok denecek kadar azzzzz bu fiyata değer mi değmez ama parlatıcı olarak kalıcı güzel.,neutral,dp_hisnet,positive,0.45454545454545453,0.23511904761904762,False
+495,Dudak parlatıcısı fakat dolgunlastirma etkisi yok denecek kadar azzzzz bu fiyata değer mi değmez ama parlatıcı olarak kalıcı güzel.,neutral,hisnet_dp,positive,0.45454545454545453,0.23511904761904762,False
+495,Dudak parlatıcısı fakat dolgunlastirma etkisi yok denecek kadar azzzzz bu fiyata değer mi değmez ama parlatıcı olarak kalıcı güzel.,neutral,lw_hisnet_dp,positive,0.8409090909090909,0.19985119047619046,False
+496,ben bir faydasını görmedim. ürünü 2 haftadır kullanıyorum. ıslakken yumuşatıyor fakat sonra bir değişiklik yok. kokusu güzel. paketlenmesi çok sıradan. üzerine etiket yapıştırılmış. hemen soyuldu.,neutral,hisnet,negative,0.6420454545454546,1.2142857142857142,False
+496,ben bir faydasını görmedim. ürünü 2 haftadır kullanıyorum. ıslakken yumuşatıyor fakat sonra bir değişiklik yok. kokusu güzel. paketlenmesi çok sıradan. üzerine etiket yapıştırılmış. hemen soyuldu.,neutral,dp_hisnet,negative,0.6420454545454546,1.2142857142857142,False
+496,ben bir faydasını görmedim. ürünü 2 haftadır kullanıyorum. ıslakken yumuşatıyor fakat sonra bir değişiklik yok. kokusu güzel. paketlenmesi çok sıradan. üzerine etiket yapıştırılmış. hemen soyuldu.,neutral,hisnet_dp,negative,0.6420454545454546,1.2142857142857142,False
+496,ben bir faydasını görmedim. ürünü 2 haftadır kullanıyorum. ıslakken yumuşatıyor fakat sonra bir değişiklik yok. kokusu güzel. paketlenmesi çok sıradan. üzerine etiket yapıştırılmış. hemen soyuldu.,neutral,lw_hisnet_dp,negative,0.6420454545454546,1.3964285714285714,False
+497,ilk kez denedim.yorumlara guvenip aldim.kokusu biraz orta yaş gibi ve agir.. ama tabi herkese hitap etmeyebiliyor kokular. bide şisesi küçük 😐,neutral,hisnet,negative,0.0,0.125,False
+497,ilk kez denedim.yorumlara guvenip aldim.kokusu biraz orta yaş gibi ve agir.. ama tabi herkese hitap etmeyebiliyor kokular. bide şisesi küçük 😐,neutral,dp_hisnet,negative,0.0,0.125,False
+497,ilk kez denedim.yorumlara guvenip aldim.kokusu biraz orta yaş gibi ve agir.. ama tabi herkese hitap etmeyebiliyor kokular. bide şisesi küçük 😐,neutral,hisnet_dp,negative,0.0,0.125,False
+497,ilk kez denedim.yorumlara guvenip aldim.kokusu biraz orta yaş gibi ve agir.. ama tabi herkese hitap etmeyebiliyor kokular. bide şisesi küçük 😐,neutral,lw_hisnet_dp,negative,0.0,0.125,False
+498,Yıllardır kullandığım kokusuna bayıldığım bir parfüm tek sıkıntısı çok kalıcı değil.,positive,hisnet,negative,0.125,0.625,False
+498,Yıllardır kullandığım kokusuna bayıldığım bir parfüm tek sıkıntısı çok kalıcı değil.,positive,dp_hisnet,neutral,0.0,0.0,False

@@ -1,4 +1,5 @@
 import json
+import math
 import os
 import time
 from typing import List, Optional
@@ -63,8 +64,19 @@ class OllamaZeroShotSentimentClassifier:
         num_ctx: int = 4096,
         keep_alive: str = "30m",
         max_retries: int = 2,
-        seed: int = 42
+        seed: int = 42,
+        request_timeout: float = 600.0
     ):
+
+        if type(batch_size) is not int or batch_size < 1:
+            raise ValueError("batch_size must be a positive integer.")
+        if type(max_retries) is not int or max_retries < 0:
+            raise ValueError("max_retries must be a nonnegative integer.")
+        if type(num_ctx) is not int or num_ctx < 1:
+            raise ValueError("num_ctx must be a positive integer.")
+        if (isinstance(request_timeout, bool) or not isinstance(request_timeout, (int, float))
+                or not math.isfinite(request_timeout) or request_timeout <= 0):
+            raise ValueError("request_timeout must be a positive finite number.")
 
         # =====================================================
         # MODEL
@@ -97,9 +109,11 @@ class OllamaZeroShotSentimentClassifier:
 
         # Fixed seed for experimental reproducibility.
         self.seed = seed
+        self.request_timeout = request_timeout
 
         self.client = ollama.Client(
-            host=host
+            host=host,
+            timeout=request_timeout
         )
 
         # =====================================================
@@ -211,7 +225,9 @@ class OllamaZeroShotSentimentClassifier:
 
                             "id": {
                                 "type":
-                                    "integer"
+                                    "integer",
+                                "minimum": 1,
+                                "maximum": batch_size
                             },
 
                             "label": {
@@ -314,6 +330,9 @@ class OllamaZeroShotSentimentClassifier:
                 .strip()
                 .lower()
             )
+
+            if type(prediction_id) is not int or not 1 <= prediction_id <= expected_count:
+                raise ValueError("Prediction ID must be an integer in 1..N.")
 
             if prediction_id in prediction_by_id:
 
@@ -443,9 +462,29 @@ class OllamaZeroShotSentimentClassifier:
             )
         )
 
+        # Conservative byte budget for the Qwen byte-level tokenizer, with
+        # room for the chat template and bounded JSON output. This is NOT an
+        # exact tokenizer count. Never silently cut review/parse text to fit.
+        output_budget = 128 + 64 * len(texts)
+        prompt_budget = len(prompt.encode("utf-8")) + 1024
+        if prompt_budget + output_budget > self.num_ctx:
+            self.total_failures += 1
+            return {
+                "predictions": [None] * len(texts), "model": self.model,
+                "batch_size": len(texts), "request_seconds": 0.0,
+                "prompt_tokens": 0, "output_tokens": 0, "attempt": 0,
+                "status": "failed", "error_code": "context_budget",
+                "error": (f"Conservative context budget exceeded: {prompt_budget} + "
+                          f"{output_budget} > {self.num_ctx}; retry individually or use a new run "
+                          "with a larger context. Input was not truncated."),
+                "raw_response": None,
+            }
+
         last_error = None
 
         failed_attempt_seconds = 0.0
+        batch_prompt_tokens = 0
+        batch_output_tokens = 0
 
         # =====================================================
         # FIRST ATTEMPT + RETRIES
@@ -525,6 +564,8 @@ class OllamaZeroShotSentimentClassifier:
                             "num_ctx":
                                 self.num_ctx,
 
+                            "num_predict": output_budget,
+
                             # Fixed seed for reproducibility.
                             "seed":
                                 self.seed
@@ -537,13 +578,29 @@ class OllamaZeroShotSentimentClassifier:
                     - start_time
                 )
 
+                # A malformed generated answer still consumes tokens.
+                prompt_eval_count = getattr(response, "prompt_eval_count", None) or 0
+                eval_count = getattr(response, "eval_count", None) or 0
+                self.total_prompt_tokens += prompt_eval_count
+                self.total_output_tokens += eval_count
+                batch_prompt_tokens += prompt_eval_count
+                batch_output_tokens += eval_count
+
+                if getattr(response, "done_reason", None) == "length":
+                    raise ValueError("LLM output stopped at a token/context limit.")
+                if prompt_eval_count + eval_count >= self.num_ctx:
+                    raise ValueError("LLM response reached the configured context limit.")
+
                 # =================================================
                 # RESPONSE CONTENT
                 # =================================================
 
                 content = (
-                    response.message.content
+                    getattr(getattr(response, "message", None), "content", None)
                 )
+
+                if not isinstance(content, str):
+                    raise ValueError("LLM response content must be a JSON string.")
 
                 # =================================================
                 # JSON PARSE
@@ -554,6 +611,9 @@ class OllamaZeroShotSentimentClassifier:
                         content
                     )
                 )
+
+                if not isinstance(parsed, dict):
+                    raise ValueError("LLM response must be a JSON object.")
 
                 # =================================================
                 # STRUCTURAL VALIDATION
@@ -571,45 +631,15 @@ class OllamaZeroShotSentimentClassifier:
                 )
 
                 # =================================================
-                # TOKEN DIAGNOSTICS
-                # =================================================
-
-                prompt_eval_count = (
-                    getattr(
-                        response,
-                        "prompt_eval_count",
-                        None
-                    )
-                    or 0
-                )
-
-                eval_count = (
-                    getattr(
-                        response,
-                        "eval_count",
-                        None
-                    )
-                    or 0
-                )
-
-                # =================================================
                 # RUNTIME STATISTICS
                 # =================================================
 
                 self.total_wall_seconds += (
-                    request_seconds
+                    failed_attempt_seconds + request_seconds
                 )
 
                 self.total_reviews += (
                     len(texts)
-                )
-
-                self.total_prompt_tokens += (
-                    prompt_eval_count
-                )
-
-                self.total_output_tokens += (
-                    eval_count
                 )
 
                 # =================================================
@@ -627,13 +657,13 @@ class OllamaZeroShotSentimentClassifier:
                         len(texts),
 
                     "request_seconds":
-                        request_seconds,
+                        failed_attempt_seconds + request_seconds,
 
                     "prompt_tokens":
-                        prompt_eval_count,
+                        batch_prompt_tokens,
 
                     "output_tokens":
-                        eval_count,
+                        batch_output_tokens,
 
                     "attempt":
                         attempt + 1,
@@ -753,10 +783,10 @@ class OllamaZeroShotSentimentClassifier:
                 failed_attempt_seconds,
 
             "prompt_tokens":
-                0,
+                batch_prompt_tokens,
 
             "output_tokens":
-                0,
+                batch_output_tokens,
 
             "attempt":
                 self.max_retries + 1,

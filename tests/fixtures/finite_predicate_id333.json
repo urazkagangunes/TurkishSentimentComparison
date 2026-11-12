@@ -1,0 +1,1925 @@
+{
+    "gold":  "negative",
+    "row_id":  333,
+    "systems":  {
+                    "dp_hisnet":  {
+                                      "candidate_diagnostics":  [
+                                                                    {
+                                                                        "alignment_status":  "matched",
+                                                                        "candidate_strategy":  "predicate_with_target",
+                                                                        "contrast":  null,
+                                                                        "dependency_repaired":  false,
+                                                                        "fragment_token_ids":  [
+                                                                                                   5
+                                                                                               ],
+                                                                        "lexicon_status":  "sentiment",
+                                                                        "modifiers":  [
+
+                                                                                      ],
+                                                                        "negations":  [
+
+                                                                                      ],
+                                                                        "negative":  0.0,
+                                                                        "original_anchor_text":  null,
+                                                                        "positive":  0.32142857142857145,
+                                                                        "repair_strategy":  null,
+                                                                        "root":  "ak",
+                                                                        "sentiment_token":  {
+                                                                                                "deprel":  "ccomp",
+                                                                                                "head":  6,
+                                                                                                "id":  5,
+                                                                                                "lemma":  "ak",
+                                                                                                "upos":  "VERB",
+                                                                                                "word":  "akıyor"
+                                                                                            },
+                                                                        "target":  {
+                                                                                       "deprel":  "nsubj",
+                                                                                       "id":  7,
+                                                                                       "lemma":  "pişman",
+                                                                                       "root":  "pişman",
+                                                                                       "upos":  "NOUN",
+                                                                                       "word":  "pişmanı"
+                                                                                   },
+                                                                        "target_strategy":  "head_subject",
+                                                                        "word":  "akıyor"
+                                                                    },
+                                                                    {
+                                                                        "alignment_status":  "matched",
+                                                                        "candidate_strategy":  "predicate_with_target",
+                                                                        "contrast":  null,
+                                                                        "dependency_repaired":  false,
+                                                                        "fragment_token_ids":  [
+                                                                                                   6
+                                                                                               ],
+                                                                        "lexicon_status":  "sentiment",
+                                                                        "modifiers":  [
+
+                                                                                      ],
+                                                                        "negations":  [
+
+                                                                                      ],
+                                                                        "negative":  0.16666666666666666,
+                                                                        "original_anchor_text":  null,
+                                                                        "positive":  0.0,
+                                                                        "repair_strategy":  null,
+                                                                        "root":  "al",
+                                                                        "sentiment_token":  {
+                                                                                                "deprel":  "root",
+                                                                                                "head":  0,
+                                                                                                "id":  6,
+                                                                                                "lemma":  "al",
+                                                                                                "upos":  "VERB",
+                                                                                                "word":  "aldığıma"
+                                                                                            },
+                                                                        "target":  {
+                                                                                       "deprel":  "nsubj",
+                                                                                       "id":  7,
+                                                                                       "lemma":  "pişman",
+                                                                                       "root":  "pişman",
+                                                                                       "upos":  "NOUN",
+                                                                                       "word":  "pişmanı"
+                                                                                   },
+                                                                        "target_strategy":  "direct_subject",
+                                                                        "word":  "aldığıma"
+                                                                    }
+                                                                ],
+                                      "candidate_lexicon_coverage":  1.0,
+                                      "dependency_candidate_count":  2,
+                                      "dependency_candidate_coverage":  0.2857142857142857,
+                                      "dependency_candidates":  [
+                                                                    {
+                                                                        "alignment_status":  "matched",
+                                                                        "candidate_strategy":  "predicate_with_target",
+                                                                        "contrast":  null,
+                                                                        "dependency_repaired":  false,
+                                                                        "fragment_token_ids":  [
+                                                                                                   5
+                                                                                               ],
+                                                                        "modifiers":  [
+
+                                                                                      ],
+                                                                        "negations":  [
+
+                                                                                      ],
+                                                                        "original_anchor_text":  null,
+                                                                        "repair_strategy":  null,
+                                                                        "root":  "ak",
+                                                                        "sentiment_token":  {
+                                                                                                "deprel":  "ccomp",
+                                                                                                "head":  6,
+                                                                                                "id":  5,
+                                                                                                "lemma":  "ak",
+                                                                                                "upos":  "VERB",
+                                                                                                "word":  "akıyor"
+                                                                                            },
+                                                                        "target":  {
+                                                                                       "deprel":  "nsubj",
+                                                                                       "id":  7,
+                                                                                       "lemma":  "pişman",
+                                                                                       "root":  "pişman",
+                                                                                       "upos":  "NOUN",
+                                                                                       "word":  "pişmanı"
+                                                                                   },
+                                                                        "target_strategy":  "head_subject",
+                                                                        "word":  "akıyor"
+                                                                    },
+                                                                    {
+                                                                        "alignment_status":  "matched",
+                                                                        "candidate_strategy":  "predicate_with_target",
+                                                                        "contrast":  null,
+                                                                        "dependency_repaired":  false,
+                                                                        "fragment_token_ids":  [
+                                                                                                   6
+                                                                                               ],
+                                                                        "modifiers":  [
+
+                                                                                      ],
+                                                                        "negations":  [
+
+                                                                                      ],
+                                                                        "original_anchor_text":  null,
+                                                                        "repair_strategy":  null,
+                                                                        "root":  "al",
+                                                                        "sentiment_token":  {
+                                                                                                "deprel":  "root",
+                                                                                                "head":  0,
+                                                                                                "id":  6,
+                                                                                                "lemma":  "al",
+                                                                                                "upos":  "VERB",
+                                                                                                "word":  "aldığıma"
+                                                                                            },
+                                                                        "target":  {
+                                                                                       "deprel":  "nsubj",
+                                                                                       "id":  7,
+                                                                                       "lemma":  "pişman",
+                                                                                       "root":  "pişman",
+                                                                                       "upos":  "NOUN",
+                                                                                       "word":  "pişmanı"
+                                                                                   },
+                                                                        "target_strategy":  "direct_subject",
+                                                                        "word":  "aldığıma"
+                                                                    }
+                                                                ],
+                                      "dependency_tokens":  [
+                                                                {
+                                                                    "deprel":  "advcl",
+                                                                    "feats":  "Aspect=Perf|Case=Abl|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Part",
+                                                                    "head":  5,
+                                                                    "id":  1,
+                                                                    "lemma":  "kullan",
+                                                                    "local_head":  5,
+                                                                    "local_id":  1,
+                                                                    "sentence_index":  0,
+                                                                    "text":  "kullandıktan",
+                                                                    "upos":  "VERB"
+                                                                },
+                                                                {
+                                                                    "deprel":  "nummod",
+                                                                    "feats":  "NumType=Card",
+                                                                    "head":  5,
+                                                                    "id":  2,
+                                                                    "lemma":  "beş",
+                                                                    "local_head":  5,
+                                                                    "local_id":  2,
+                                                                    "sentence_index":  0,
+                                                                    "text":  "beş",
+                                                                    "upos":  "NUM"
+                                                                },
+                                                                {
+                                                                    "deprel":  "flat",
+                                                                    "feats":  "Case=Nom|Number=Sing|Person=3",
+                                                                    "head":  2,
+                                                                    "id":  3,
+                                                                    "lemma":  "dakika",
+                                                                    "local_head":  2,
+                                                                    "local_id":  3,
+                                                                    "sentence_index":  0,
+                                                                    "text":  "dakika",
+                                                                    "upos":  "NOUN"
+                                                                },
+                                                                {
+                                                                    "deprel":  "flat",
+                                                                    "feats":  null,
+                                                                    "head":  2,
+                                                                    "id":  4,
+                                                                    "lemma":  "sonra",
+                                                                    "local_head":  2,
+                                                                    "local_id":  4,
+                                                                    "sentence_index":  0,
+                                                                    "text":  "sonra",
+                                                                    "upos":  "ADP"
+                                                                },
+                                                                {
+                                                                    "deprel":  "ccomp",
+                                                                    "feats":  "Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres",
+                                                                    "head":  6,
+                                                                    "id":  5,
+                                                                    "lemma":  "ak",
+                                                                    "local_head":  6,
+                                                                    "local_id":  5,
+                                                                    "sentence_index":  0,
+                                                                    "text":  "akıyor",
+                                                                    "upos":  "VERB"
+                                                                },
+                                                                {
+                                                                    "deprel":  "root",
+                                                                    "feats":  "Aspect=Perf|Case=Dat|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Pos|Tense=Past|VerbForm=Part",
+                                                                    "head":  0,
+                                                                    "id":  6,
+                                                                    "lemma":  "al",
+                                                                    "local_head":  0,
+                                                                    "local_id":  6,
+                                                                    "sentence_index":  0,
+                                                                    "text":  "aldığıma",
+                                                                    "upos":  "VERB"
+                                                                },
+                                                                {
+                                                                    "deprel":  "nsubj",
+                                                                    "feats":  "Case=Nom|Number=Sing|Person=3",
+                                                                    "head":  6,
+                                                                    "id":  7,
+                                                                    "lemma":  "pişman",
+                                                                    "local_head":  6,
+                                                                    "local_id":  7,
+                                                                    "sentence_index":  0,
+                                                                    "text":  "pişmanı",
+                                                                    "upos":  "NOUN"
+                                                                },
+                                                                {
+                                                                    "deprel":  "root",
+                                                                    "feats":  "Case=Nom|Number=Sing|Person=3",
+                                                                    "head":  0,
+                                                                    "id":  8,
+                                                                    "lemma":  "m",
+                                                                    "local_head":  0,
+                                                                    "local_id":  1,
+                                                                    "sentence_index":  1,
+                                                                    "text":  "m",
+                                                                    "upos":  "NOUN"
+                                                                }
+                                                            ],
+                                      "error":  null,
+                                      "lexicon_matched_candidate_count":  2,
+                                      "morphological_analyses":  [
+                                                                     {
+                                                                         "analysis":  "kullan+VERB+POS^DB+NOUN+PASTPART+A3SG+PNON+ABL",
+                                                                         "analysis_source":  "normal",
+                                                                         "analyzer_reset":  false,
+                                                                         "root":  "kullan",
+                                                                         "word":  "kullandıktan"
+                                                                     },
+                                                                     {
+                                                                         "analysis":  "beş+ADJ",
+                                                                         "analysis_source":  "normal",
+                                                                         "analyzer_reset":  false,
+                                                                         "root":  "beş",
+                                                                         "word":  "beş"
+                                                                     },
+                                                                     {
+                                                                         "analysis":  "dakika+NOUN+A3SG+PNON+NOM",
+                                                                         "analysis_source":  "normal",
+                                                                         "analyzer_reset":  false,
+                                                                         "root":  "dakika",
+                                                                         "word":  "dakika"
+                                                                     },
+                                                                     {
+                                                                         "analysis":  "sonra+ADV",
+                                                                         "analysis_source":  "normal",
+                                                                         "analyzer_reset":  false,
+                                                                         "root":  "sonra",
+                                                                         "word":  "sonra"
+                                                                     },
+                                                                     {
+                                                                         "analysis":  "ak+VERB+POS+PROG1+A3SG",
+                                                                         "analysis_source":  "normal",
+                                                                         "analyzer_reset":  false,
+                                                                         "root":  "ak",
+                                                                         "word":  "akıyor"
+                                                                     },
+                                                                     {
+                                                                         "analysis":  "al+VERB+POS^DB+NOUN+PASTPART+A3SG+P1SG+DAT",
+                                                                         "analysis_source":  "normal",
+                                                                         "analyzer_reset":  false,
+                                                                         "root":  "al",
+                                                                         "word":  "aldığıma"
+                                                                     },
+                                                                     {
+                                                                         "analysis":  "pişman+ADJ^DB+VERB+ZERO+PRES+A1SG",
+                                                                         "analysis_source":  "normal",
+                                                                         "analyzer_reset":  false,
+                                                                         "root":  "pişman",
+                                                                         "word":  "pişmanım"
+                                                                     }
+                                                                 ],
+                                      "negative_score":  0.16666666666666666,
+                                      "net_score":  0.1547619047619048,
+                                      "neutral_threshold":  0.05,
+                                      "operations":  [
+
+                                                     ],
+                                      "parsed_sentences":  [
+                                                               {
+                                                                   "text":  "kullandıktan beş dakika sonra akıyor aldığıma pişmanı",
+                                                                   "tokens":  [
+                                                                                  {
+                                                                                      "deprel":  "advcl",
+                                                                                      "feats":  "Aspect=Perf|Case=Abl|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Part",
+                                                                                      "head":  5,
+                                                                                      "id":  1,
+                                                                                      "lemma":  "kullan",
+                                                                                      "text":  "kullandıktan",
+                                                                                      "upos":  "VERB"
+                                                                                  },
+                                                                                  {
+                                                                                      "deprel":  "nummod",
+                                                                                      "feats":  "NumType=Card",
+                                                                                      "head":  5,
+                                                                                      "id":  2,
+                                                                                      "lemma":  "beş",
+                                                                                      "text":  "beş",
+                                                                                      "upos":  "NUM"
+                                                                                  },
+                                                                                  {
+                                                                                      "deprel":  "flat",
+                                                                                      "feats":  "Case=Nom|Number=Sing|Person=3",
+                                                                                      "head":  2,
+                                                                                      "id":  3,
+                                                                                      "lemma":  "dakika",
+                                                                                      "text":  "dakika",
+                                                                                      "upos":  "NOUN"
+                                                                                  },
+                                                                                  {
+                                                                                      "deprel":  "flat",
+                                                                                      "feats":  null,
+                                                                                      "head":  2,
+                                                                                      "id":  4,
+                                                                                      "lemma":  "sonra",
+                                                                                      "text":  "sonra",
+                                                                                      "upos":  "ADP"
+                                                                                  },
+                                                                                  {
+                                                                                      "deprel":  "ccomp",
+                                                                                      "feats":  "Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres",
+                                                                                      "head":  6,
+                                                                                      "id":  5,
+                                                                                      "lemma":  "ak",
+                                                                                      "text":  "akıyor",
+                                                                                      "upos":  "VERB"
+                                                                                  },
+                                                                                  {
+                                                                                      "deprel":  "root",
+                                                                                      "feats":  "Aspect=Perf|Case=Dat|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Pos|Tense=Past|VerbForm=Part",
+                                                                                      "head":  0,
+                                                                                      "id":  6,
+                                                                                      "lemma":  "al",
+                                                                                      "text":  "aldığıma",
+                                                                                      "upos":  "VERB"
+                                                                                  },
+                                                                                  {
+                                                                                      "deprel":  "nsubj",
+                                                                                      "feats":  "Case=Nom|Number=Sing|Person=3",
+                                                                                      "head":  6,
+                                                                                      "id":  7,
+                                                                                      "lemma":  "pişman",
+                                                                                      "text":  "pişmanı",
+                                                                                      "upos":  "NOUN"
+                                                                                  }
+                                                                              ]
+                                                               },
+                                                               {
+                                                                   "text":  "m",
+                                                                   "tokens":  [
+                                                                                  {
+                                                                                      "deprel":  "root",
+                                                                                      "feats":  "Case=Nom|Number=Sing|Person=3",
+                                                                                      "head":  0,
+                                                                                      "id":  1,
+                                                                                      "lemma":  "m",
+                                                                                      "text":  "m",
+                                                                                      "upos":  "NOUN"
+                                                                                  }
+                                                                              ]
+                                                               }
+                                                           ],
+                                      "positive_score":  0.32142857142857145,
+                                      "prediction":  "positive",
+                                      "predictions":  [
+                                                          "positive"
+                                                      ],
+                                      "scopes":  [
+                                                     {
+                                                         "active_sentiment":  true,
+                                                         "adjusted_negative":  0.0,
+                                                         "adjusted_positive":  0.32142857142857145,
+                                                         "alignment_status":  "matched",
+                                                         "candidate_strategy":  "predicate_with_target",
+                                                         "contextual_role":  "opinion",
+                                                         "contrast":  null,
+                                                         "dependency_repaired":  false,
+                                                         "fragment_token_ids":  [
+                                                                                    5
+                                                                                ],
+                                                         "modifiers":  [
+
+                                                                       ],
+                                                         "negations":  [
+
+                                                                       ],
+                                                         "negative":  0.0,
+                                                         "operations":  [
+
+                                                                        ],
+                                                         "original_anchor_text":  null,
+                                                         "original_negative":  0.0,
+                                                         "original_positive":  0.32142857142857145,
+                                                         "positive":  0.32142857142857145,
+                                                         "repair_strategy":  null,
+                                                         "root":  "ak",
+                                                         "sentiment_token":  {
+                                                                                 "deprel":  "ccomp",
+                                                                                 "head":  6,
+                                                                                 "id":  5,
+                                                                                 "lemma":  "ak",
+                                                                                 "upos":  "VERB",
+                                                                                 "word":  "akıyor"
+                                                                             },
+                                                         "suppression_reason":  null,
+                                                         "target":  {
+                                                                        "deprel":  "nsubj",
+                                                                        "id":  7,
+                                                                        "lemma":  "pişman",
+                                                                        "root":  "pişman",
+                                                                        "upos":  "NOUN",
+                                                                        "word":  "pişmanı"
+                                                                    },
+                                                         "target_strategy":  "head_subject",
+                                                         "word":  "akıyor"
+                                                     },
+                                                     {
+                                                         "active_sentiment":  true,
+                                                         "adjusted_negative":  0.16666666666666666,
+                                                         "adjusted_positive":  0.0,
+                                                         "alignment_status":  "matched",
+                                                         "candidate_strategy":  "predicate_with_target",
+                                                         "contextual_role":  "opinion",
+                                                         "contrast":  null,
+                                                         "dependency_repaired":  false,
+                                                         "fragment_token_ids":  [
+                                                                                    6
+                                                                                ],
+                                                         "modifiers":  [
+
+                                                                       ],
+                                                         "negations":  [
+
+                                                                       ],
+                                                         "negative":  0.16666666666666666,
+                                                         "operations":  [
+
+                                                                        ],
+                                                         "original_anchor_text":  null,
+                                                         "original_negative":  0.16666666666666666,
+                                                         "original_positive":  0.0,
+                                                         "positive":  0.0,
+                                                         "repair_strategy":  null,
+                                                         "root":  "al",
+                                                         "sentiment_token":  {
+                                                                                 "deprel":  "root",
+                                                                                 "head":  0,
+                                                                                 "id":  6,
+                                                                                 "lemma":  "al",
+                                                                                 "upos":  "VERB",
+                                                                                 "word":  "aldığıma"
+                                                                             },
+                                                         "suppression_reason":  null,
+                                                         "target":  {
+                                                                        "deprel":  "nsubj",
+                                                                        "id":  7,
+                                                                        "lemma":  "pişman",
+                                                                        "root":  "pişman",
+                                                                        "upos":  "NOUN",
+                                                                        "word":  "pişmanı"
+                                                                    },
+                                                         "target_strategy":  "direct_subject",
+                                                         "word":  "aldığıma"
+                                                     }
+                                                 ],
+                                      "sentiment_coverage":  0.2857142857142857,
+                                      "sentiment_word_count":  2,
+                                      "sentiment_words":  [
+                                                              {
+                                                                  "active_sentiment":  true,
+                                                                  "adjusted_negative":  0.0,
+                                                                  "adjusted_positive":  0.32142857142857145,
+                                                                  "alignment_status":  "matched",
+                                                                  "candidate_strategy":  "predicate_with_target",
+                                                                  "contextual_role":  "opinion",
+                                                                  "contrast":  null,
+                                                                  "dependency_repaired":  false,
+                                                                  "fragment_token_ids":  [
+                                                                                             5
+                                                                                         ],
+                                                                  "modifiers":  [
+
+                                                                                ],
+                                                                  "negations":  [
+
+                                                                                ],
+                                                                  "negative":  0.0,
+                                                                  "operations":  [
+
+                                                                                 ],
+                                                                  "original_anchor_text":  null,
+                                                                  "original_negative":  0.0,
+                                                                  "original_positive":  0.32142857142857145,
+                                                                  "positive":  0.32142857142857145,
+                                                                  "repair_strategy":  null,
+                                                                  "root":  "ak",
+                                                                  "sentiment_token":  {
+                                                                                          "deprel":  "ccomp",
+                                                                                          "head":  6,
+                                                                                          "id":  5,
+                                                                                          "lemma":  "ak",
+                                                                                          "upos":  "VERB",
+                                                                                          "word":  "akıyor"
+                                                                                      },
+                                                                  "suppression_reason":  null,
+                                                                  "target":  {
+                                                                                 "deprel":  "nsubj",
+                                                                                 "id":  7,
+                                                                                 "lemma":  "pişman",
+                                                                                 "root":  "pişman",
+                                                                                 "upos":  "NOUN",
+                                                                                 "word":  "pişmanı"
+                                                                             },
+                                                                  "target_strategy":  "head_subject",
+                                                                  "word":  "akıyor"
+                                                              },
+                                                              {
+                                                                  "active_sentiment":  true,
+                                                                  "adjusted_negative":  0.16666666666666666,
+                                                                  "adjusted_positive":  0.0,
+                                                                  "alignment_status":  "matched",
+                                                                  "candidate_strategy":  "predicate_with_target",
+                                                                  "contextual_role":  "opinion",
+                                                                  "contrast":  null,
+                                                                  "dependency_repaired":  false,
+                                                                  "fragment_token_ids":  [
+                                                                                             6
+                                                                                         ],
+                                                                  "modifiers":  [
+
+                                                                                ],
+                                                                  "negations":  [
+
+                                                                                ],
+                                                                  "negative":  0.16666666666666666,
+                                                                  "operations":  [
+
+                                                                                 ],
+                                                                  "original_anchor_text":  null,
+                                                                  "original_negative":  0.16666666666666666,
+                                                                  "original_positive":  0.0,
+                                                                  "positive":  0.0,
+                                                                  "repair_strategy":  null,
+                                                                  "root":  "al",
+                                                                  "sentiment_token":  {
+                                                                                          "deprel":  "root",
+                                                                                          "head":  0,
+                                                                                          "id":  6,
+                                                                                          "lemma":  "al",
+                                                                                          "upos":  "VERB",
+                                                                                          "word":  "aldığıma"
+                                                                                      },
+                                                                  "suppression_reason":  null,
+                                                                  "target":  {
+                                                                                 "deprel":  "nsubj",
+                                                                                 "id":  7,
+                                                                                 "lemma":  "pişman",
+                                                                                 "root":  "pişman",
+                                                                                 "upos":  "NOUN",
+                                                                                 "word":  "pişmanı"
+                                                                             },
+                                                                  "target_strategy":  "direct_subject",
+                                                                  "word":  "aldığıma"
+                                                              }
+                                                          ],
+                                      "status":  "success",
+                                      "text":  "kullandıktan beş dakika sonra akıyor aldığıma pişmanım",
+                                      "token_count":  7
+                                  },
+                    "hisnet":  {
+                                   "error":  null,
+                                   "imported_from_checkpoint":  true,
+                                   "lexicon_coverage":  0.8571428571428571,
+                                   "matched_word_count":  6,
+                                   "matched_words":  [
+                                                         {
+                                                             "analysis":  "beş+ADJ",
+                                                             "negative":  0.0,
+                                                             "positive":  0.0,
+                                                             "root":  "beş",
+                                                             "word":  "beş"
+                                                         },
+                                                         {
+                                                             "analysis":  "dakika+NOUN+A3SG+PNON+NOM",
+                                                             "negative":  0.0,
+                                                             "positive":  0.0,
+                                                             "root":  "dakika",
+                                                             "word":  "dakika"
+                                                         },
+                                                         {
+                                                             "analysis":  "sonra+ADV",
+                                                             "negative":  0.0,
+                                                             "positive":  0.0,
+                                                             "root":  "sonra",
+                                                             "word":  "sonra"
+                                                         },
+                                                         {
+                                                             "analysis":  "ak+VERB+POS+PROG1+A3SG",
+                                                             "negative":  0.0,
+                                                             "positive":  0.32142857142857145,
+                                                             "root":  "ak",
+                                                             "word":  "akıyor"
+                                                         },
+                                                         {
+                                                             "analysis":  "al+VERB+POS^DB+NOUN+PASTPART+A3SG+P1SG+DAT",
+                                                             "negative":  0.16666666666666666,
+                                                             "positive":  0.0,
+                                                             "root":  "al",
+                                                             "word":  "aldığıma"
+                                                         },
+                                                         {
+                                                             "analysis":  "pişman+ADJ^DB+VERB+ZERO+PRES+A1SG",
+                                                             "negative":  1.0,
+                                                             "positive":  0.0,
+                                                             "root":  "pişman",
+                                                             "word":  "pişmanım"
+                                                         }
+                                                     ],
+                                   "morphological_analyses":  [
+                                                                  {
+                                                                      "analysis":  "kullan+VERB+POS^DB+NOUN+PASTPART+A3SG+PNON+ABL",
+                                                                      "analysis_source":  "normal",
+                                                                      "analyzer_reset":  false,
+                                                                      "root":  "kullan",
+                                                                      "word":  "kullandıktan"
+                                                                  },
+                                                                  {
+                                                                      "analysis":  "beş+ADJ",
+                                                                      "analysis_source":  "normal",
+                                                                      "analyzer_reset":  false,
+                                                                      "root":  "beş",
+                                                                      "word":  "beş"
+                                                                  },
+                                                                  {
+                                                                      "analysis":  "dakika+NOUN+A3SG+PNON+NOM",
+                                                                      "analysis_source":  "normal",
+                                                                      "analyzer_reset":  false,
+                                                                      "root":  "dakika",
+                                                                      "word":  "dakika"
+                                                                  },
+                                                                  {
+                                                                      "analysis":  "sonra+ADV",
+                                                                      "analysis_source":  "normal",
+                                                                      "analyzer_reset":  false,
+                                                                      "root":  "sonra",
+                                                                      "word":  "sonra"
+                                                                  },
+                                                                  {
+                                                                      "analysis":  "ak+VERB+POS+PROG1+A3SG",
+                                                                      "analysis_source":  "normal",
+                                                                      "analyzer_reset":  false,
+                                                                      "root":  "ak",
+                                                                      "word":  "akıyor"
+                                                                  },
+                                                                  {
+                                                                      "analysis":  "al+VERB+POS^DB+NOUN+PASTPART+A3SG+P1SG+DAT",
+                                                                      "analysis_source":  "normal",
+                                                                      "analyzer_reset":  false,
+                                                                      "root":  "al",
+                                                                      "word":  "aldığıma"
+                                                                  },
+                                                                  {
+                                                                      "analysis":  "pişman+ADJ^DB+VERB+ZERO+PRES+A1SG",
+                                                                      "analysis_source":  "normal",
+                                                                      "analyzer_reset":  false,
+                                                                      "root":  "pişman",
+                                                                      "word":  "pişmanım"
+                                                                  }
+                                                              ],
+                                   "negative_score":  1.1666666666666667,
+                                   "net_score":  -0.8452380952380953,
+                                   "neutral_threshold":  0.05,
+                                   "positive_score":  0.32142857142857145,
+                                   "prediction":  "negative",
+                                   "predictions":  [
+                                                       "negative"
+                                                   ],
+                                   "sentiment_coverage":  0.42857142857142855,
+                                   "sentiment_word_count":  3,
+                                   "sentiment_words":  [
+                                                           {
+                                                               "analysis":  "ak+VERB+POS+PROG1+A3SG",
+                                                               "negative":  0.0,
+                                                               "positive":  0.32142857142857145,
+                                                               "root":  "ak",
+                                                               "word":  "akıyor"
+                                                           },
+                                                           {
+                                                               "analysis":  "al+VERB+POS^DB+NOUN+PASTPART+A3SG+P1SG+DAT",
+                                                               "negative":  0.16666666666666666,
+                                                               "positive":  0.0,
+                                                               "root":  "al",
+                                                               "word":  "aldığıma"
+                                                           },
+                                                           {
+                                                               "analysis":  "pişman+ADJ^DB+VERB+ZERO+PRES+A1SG",
+                                                               "negative":  1.0,
+                                                               "positive":  0.0,
+                                                               "root":  "pişman",
+                                                               "word":  "pişmanım"
+                                                           }
+                                                       ],
+                                   "status":  "success",
+                                   "text":  "kullandıktan beş dakika sonra akıyor aldığıma pişmanım",
+                                   "token_count":  7,
+                                   "unmatched_words":  [
+                                                           {
+                                                               "analysis":  "kullan+VERB+POS^DB+NOUN+PASTPART+A3SG+PNON+ABL",
+                                                               "root":  "kullan",
+                                                               "word":  "kullandıktan"
+                                                           }
+                                                       ]
+                               },
+                    "hisnet_dp":  {
+                                      "baseline_negative_score":  1.1666666666666667,
+                                      "baseline_positive_score":  0.32142857142857145,
+                                      "baseline_reused":  true,
+                                      "error":  null,
+                                      "hisnet_negative_score":  1.1666666666666667,
+                                      "hisnet_positive_score":  0.32142857142857145,
+                                      "hisnet_prediction":  "negative",
+                                      "lexicon_coverage":  0.8571428571428571,
+                                      "morphological_analyses":  [
+                                                                     {
+                                                                         "analysis":  "kullan+VERB+POS^DB+NOUN+PASTPART+A3SG+PNON+ABL",
+                                                                         "analysis_source":  "normal",
+                                                                         "analyzer_reset":  false,
+                                                                         "root":  "kullan",
+                                                                         "word":  "kullandıktan"
+                                                                     },
+                                                                     {
+                                                                         "analysis":  "beş+ADJ",
+                                                                         "analysis_source":  "normal",
+                                                                         "analyzer_reset":  false,
+                                                                         "root":  "beş",
+                                                                         "word":  "beş"
+                                                                     },
+                                                                     {
+                                                                         "analysis":  "dakika+NOUN+A3SG+PNON+NOM",
+                                                                         "analysis_source":  "normal",
+                                                                         "analyzer_reset":  false,
+                                                                         "root":  "dakika",
+                                                                         "word":  "dakika"
+                                                                     },
+                                                                     {
+                                                                         "analysis":  "sonra+ADV",
+                                                                         "analysis_source":  "normal",
+                                                                         "analyzer_reset":  false,
+                                                                         "root":  "sonra",
+                                                                         "word":  "sonra"
+                                                                     },
+                                                                     {
+                                                                         "analysis":  "ak+VERB+POS+PROG1+A3SG",
+                                                                         "analysis_source":  "normal",
+                                                                         "analyzer_reset":  false,
+                                                                         "root":  "ak",
+                                                                         "word":  "akıyor"
+                                                                     },
+                                                                     {
+                                                                         "analysis":  "al+VERB+POS^DB+NOUN+PASTPART+A3SG+P1SG+DAT",
+                                                                         "analysis_source":  "normal",
+                                                                         "analyzer_reset":  false,
+                                                                         "root":  "al",
+                                                                         "word":  "aldığıma"
+                                                                     },
+                                                                     {
+                                                                         "analysis":  "pişman+ADJ^DB+VERB+ZERO+PRES+A1SG",
+                                                                         "analysis_source":  "normal",
+                                                                         "analyzer_reset":  false,
+                                                                         "root":  "pişman",
+                                                                         "word":  "pişmanım"
+                                                                     }
+                                                                 ],
+                                      "negative_score":  0.16666666666666666,
+                                      "positive_score":  0.32142857142857145,
+                                      "prediction":  "positive",
+                                      "predictions":  [
+                                                          "positive"
+                                                      ],
+                                      "scopes":  [
+                                                     {
+                                                         "active_sentiment":  true,
+                                                         "adjusted_negative":  0.0,
+                                                         "adjusted_positive":  0.32142857142857145,
+                                                         "alignment_status":  "matched",
+                                                         "alignment_strategy":  "exact_surface",
+                                                         "contextual_role":  "opinion",
+                                                         "contrast":  null,
+                                                         "fragment_token_ids":  [
+                                                                                    5
+                                                                                ],
+                                                         "modifiers":  [
+
+                                                                       ],
+                                                         "negations":  [
+
+                                                                       ],
+                                                         "negative":  0.0,
+                                                         "operations":  [
+
+                                                                        ],
+                                                         "original_negative":  0.0,
+                                                         "original_positive":  0.32142857142857145,
+                                                         "positive":  0.32142857142857145,
+                                                         "reconstructed_surface":  null,
+                                                         "root":  "ak",
+                                                         "sentiment_token":  {
+                                                                                 "alignment_strategy":  "exact_surface",
+                                                                                 "deprel":  "ccomp",
+                                                                                 "fragment_token_ids":  [
+                                                                                                            5
+                                                                                                        ],
+                                                                                 "head":  6,
+                                                                                 "id":  5,
+                                                                                 "lemma":  "ak",
+                                                                                 "reconstructed_surface":  null,
+                                                                                 "upos":  "VERB",
+                                                                                 "word":  "akıyor"
+                                                                             },
+                                                         "suppression_reason":  null,
+                                                         "target":  {
+                                                                        "deprel":  "nsubj",
+                                                                        "id":  7,
+                                                                        "lemma":  "pişman",
+                                                                        "root":  "pişman",
+                                                                        "upos":  "NOUN",
+                                                                        "word":  "pişmanı"
+                                                                    },
+                                                         "target_strategy":  "head_subject",
+                                                         "word":  "akıyor"
+                                                     },
+                                                     {
+                                                         "active_sentiment":  true,
+                                                         "adjusted_negative":  0.16666666666666666,
+                                                         "adjusted_positive":  0.0,
+                                                         "alignment_status":  "matched",
+                                                         "alignment_strategy":  "exact_surface",
+                                                         "contextual_role":  "opinion",
+                                                         "contrast":  null,
+                                                         "fragment_token_ids":  [
+                                                                                    6
+                                                                                ],
+                                                         "modifiers":  [
+
+                                                                       ],
+                                                         "negations":  [
+
+                                                                       ],
+                                                         "negative":  0.16666666666666666,
+                                                         "operations":  [
+
+                                                                        ],
+                                                         "original_negative":  0.16666666666666666,
+                                                         "original_positive":  0.0,
+                                                         "positive":  0.0,
+                                                         "reconstructed_surface":  null,
+                                                         "root":  "al",
+                                                         "sentiment_token":  {
+                                                                                 "alignment_strategy":  "exact_surface",
+                                                                                 "deprel":  "root",
+                                                                                 "fragment_token_ids":  [
+                                                                                                            6
+                                                                                                        ],
+                                                                                 "head":  0,
+                                                                                 "id":  6,
+                                                                                 "lemma":  "al",
+                                                                                 "reconstructed_surface":  null,
+                                                                                 "upos":  "VERB",
+                                                                                 "word":  "aldığıma"
+                                                                             },
+                                                         "suppression_reason":  null,
+                                                         "target":  {
+                                                                        "deprel":  "nsubj",
+                                                                        "id":  7,
+                                                                        "lemma":  "pişman",
+                                                                        "root":  "pişman",
+                                                                        "upos":  "NOUN",
+                                                                        "word":  "pişmanı"
+                                                                    },
+                                                         "target_strategy":  "direct_subject",
+                                                         "word":  "aldığıma"
+                                                     },
+                                                     {
+                                                         "active_sentiment":  false,
+                                                         "adjusted_negative":  0.0,
+                                                         "adjusted_positive":  0.0,
+                                                         "alignment_status":  "matched",
+                                                         "alignment_strategy":  "stanza_lemma_equals_root",
+                                                         "contextual_role":  "target",
+                                                         "contrast":  null,
+                                                         "fragment_token_ids":  [
+                                                                                    7
+                                                                                ],
+                                                         "modifiers":  [
+
+                                                                       ],
+                                                         "negations":  [
+
+                                                                       ],
+                                                         "negative":  1.0,
+                                                         "operations":  [
+                                                                            "suppressed_as_target"
+                                                                        ],
+                                                         "original_negative":  1.0,
+                                                         "original_positive":  0.0,
+                                                         "positive":  0.0,
+                                                         "reconstructed_surface":  null,
+                                                         "root":  "pişman",
+                                                         "sentiment_token":  {
+                                                                                 "alignment_strategy":  "stanza_lemma_equals_root",
+                                                                                 "deprel":  "nsubj",
+                                                                                 "fragment_token_ids":  [
+                                                                                                            7
+                                                                                                        ],
+                                                                                 "head":  6,
+                                                                                 "id":  7,
+                                                                                 "lemma":  "pişman",
+                                                                                 "reconstructed_surface":  null,
+                                                                                 "upos":  "NOUN",
+                                                                                 "word":  "pişmanı"
+                                                                             },
+                                                         "suppression_reason":  "used_as_target_of_another_sentiment",
+                                                         "target":  null,
+                                                         "target_strategy":  null,
+                                                         "word":  "pişmanım"
+                                                     }
+                                                 ],
+                                      "sentences":  [
+                                                        {
+                                                            "dependency_tokens":  [
+                                                                                      {
+                                                                                          "deprel":  "advcl",
+                                                                                          "feats":  "Aspect=Perf|Case=Abl|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Part",
+                                                                                          "head":  5,
+                                                                                          "id":  1,
+                                                                                          "lemma":  "kullan",
+                                                                                          "local_head":  5,
+                                                                                          "local_id":  1,
+                                                                                          "sentence_index":  0,
+                                                                                          "text":  "kullandıktan",
+                                                                                          "upos":  "VERB"
+                                                                                      },
+                                                                                      {
+                                                                                          "deprel":  "nummod",
+                                                                                          "feats":  "NumType=Card",
+                                                                                          "head":  5,
+                                                                                          "id":  2,
+                                                                                          "lemma":  "beş",
+                                                                                          "local_head":  5,
+                                                                                          "local_id":  2,
+                                                                                          "sentence_index":  0,
+                                                                                          "text":  "beş",
+                                                                                          "upos":  "NUM"
+                                                                                      },
+                                                                                      {
+                                                                                          "deprel":  "flat",
+                                                                                          "feats":  "Case=Nom|Number=Sing|Person=3",
+                                                                                          "head":  2,
+                                                                                          "id":  3,
+                                                                                          "lemma":  "dakika",
+                                                                                          "local_head":  2,
+                                                                                          "local_id":  3,
+                                                                                          "sentence_index":  0,
+                                                                                          "text":  "dakika",
+                                                                                          "upos":  "NOUN"
+                                                                                      },
+                                                                                      {
+                                                                                          "deprel":  "flat",
+                                                                                          "feats":  null,
+                                                                                          "head":  2,
+                                                                                          "id":  4,
+                                                                                          "lemma":  "sonra",
+                                                                                          "local_head":  2,
+                                                                                          "local_id":  4,
+                                                                                          "sentence_index":  0,
+                                                                                          "text":  "sonra",
+                                                                                          "upos":  "ADP"
+                                                                                      },
+                                                                                      {
+                                                                                          "deprel":  "ccomp",
+                                                                                          "feats":  "Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres",
+                                                                                          "head":  6,
+                                                                                          "id":  5,
+                                                                                          "lemma":  "ak",
+                                                                                          "local_head":  6,
+                                                                                          "local_id":  5,
+                                                                                          "sentence_index":  0,
+                                                                                          "text":  "akıyor",
+                                                                                          "upos":  "VERB"
+                                                                                      },
+                                                                                      {
+                                                                                          "deprel":  "root",
+                                                                                          "feats":  "Aspect=Perf|Case=Dat|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Pos|Tense=Past|VerbForm=Part",
+                                                                                          "head":  0,
+                                                                                          "id":  6,
+                                                                                          "lemma":  "al",
+                                                                                          "local_head":  0,
+                                                                                          "local_id":  6,
+                                                                                          "sentence_index":  0,
+                                                                                          "text":  "aldığıma",
+                                                                                          "upos":  "VERB"
+                                                                                      },
+                                                                                      {
+                                                                                          "deprel":  "nsubj",
+                                                                                          "feats":  "Case=Nom|Number=Sing|Person=3",
+                                                                                          "head":  6,
+                                                                                          "id":  7,
+                                                                                          "lemma":  "pişman",
+                                                                                          "local_head":  6,
+                                                                                          "local_id":  7,
+                                                                                          "sentence_index":  0,
+                                                                                          "text":  "pişmanı",
+                                                                                          "upos":  "NOUN"
+                                                                                      }
+                                                                                  ],
+                                                            "hisnet_negative_score":  1.1666666666666667,
+                                                            "hisnet_positive_score":  0.32142857142857145,
+                                                            "hisnet_prediction":  "negative",
+                                                            "negative_score":  0.16666666666666666,
+                                                            "positive_score":  0.32142857142857145,
+                                                            "prediction":  "positive",
+                                                            "scopes":  [
+                                                                           {
+                                                                               "active_sentiment":  true,
+                                                                               "adjusted_negative":  0.0,
+                                                                               "adjusted_positive":  0.32142857142857145,
+                                                                               "alignment_status":  "matched",
+                                                                               "alignment_strategy":  "exact_surface",
+                                                                               "contextual_role":  "opinion",
+                                                                               "contrast":  null,
+                                                                               "fragment_token_ids":  [
+                                                                                                          5
+                                                                                                      ],
+                                                                               "modifiers":  [
+
+                                                                                             ],
+                                                                               "negations":  [
+
+                                                                                             ],
+                                                                               "negative":  0.0,
+                                                                               "operations":  [
+
+                                                                                              ],
+                                                                               "original_negative":  0.0,
+                                                                               "original_positive":  0.32142857142857145,
+                                                                               "positive":  0.32142857142857145,
+                                                                               "reconstructed_surface":  null,
+                                                                               "root":  "ak",
+                                                                               "sentiment_token":  {
+                                                                                                       "alignment_strategy":  "exact_surface",
+                                                                                                       "deprel":  "ccomp",
+                                                                                                       "fragment_token_ids":  [
+                                                                                                                                  5
+                                                                                                                              ],
+                                                                                                       "head":  6,
+                                                                                                       "id":  5,
+                                                                                                       "lemma":  "ak",
+                                                                                                       "reconstructed_surface":  null,
+                                                                                                       "upos":  "VERB",
+                                                                                                       "word":  "akıyor"
+                                                                                                   },
+                                                                               "suppression_reason":  null,
+                                                                               "target":  {
+                                                                                              "deprel":  "nsubj",
+                                                                                              "id":  7,
+                                                                                              "lemma":  "pişman",
+                                                                                              "root":  "pişman",
+                                                                                              "upos":  "NOUN",
+                                                                                              "word":  "pişmanı"
+                                                                                          },
+                                                                               "target_strategy":  "head_subject",
+                                                                               "word":  "akıyor"
+                                                                           },
+                                                                           {
+                                                                               "active_sentiment":  true,
+                                                                               "adjusted_negative":  0.16666666666666666,
+                                                                               "adjusted_positive":  0.0,
+                                                                               "alignment_status":  "matched",
+                                                                               "alignment_strategy":  "exact_surface",
+                                                                               "contextual_role":  "opinion",
+                                                                               "contrast":  null,
+                                                                               "fragment_token_ids":  [
+                                                                                                          6
+                                                                                                      ],
+                                                                               "modifiers":  [
+
+                                                                                             ],
+                                                                               "negations":  [
+
+                                                                                             ],
+                                                                               "negative":  0.16666666666666666,
+                                                                               "operations":  [
+
+                                                                                              ],
+                                                                               "original_negative":  0.16666666666666666,
+                                                                               "original_positive":  0.0,
+                                                                               "positive":  0.0,
+                                                                               "reconstructed_surface":  null,
+                                                                               "root":  "al",
+                                                                               "sentiment_token":  {
+                                                                                                       "alignment_strategy":  "exact_surface",
+                                                                                                       "deprel":  "root",
+                                                                                                       "fragment_token_ids":  [
+                                                                                                                                  6
+                                                                                                                              ],
+                                                                                                       "head":  0,
+                                                                                                       "id":  6,
+                                                                                                       "lemma":  "al",
+                                                                                                       "reconstructed_surface":  null,
+                                                                                                       "upos":  "VERB",
+                                                                                                       "word":  "aldığıma"
+                                                                                                   },
+                                                                               "suppression_reason":  null,
+                                                                               "target":  {
+                                                                                              "deprel":  "nsubj",
+                                                                                              "id":  7,
+                                                                                              "lemma":  "pişman",
+                                                                                              "root":  "pişman",
+                                                                                              "upos":  "NOUN",
+                                                                                              "word":  "pişmanı"
+                                                                                          },
+                                                                               "target_strategy":  "direct_subject",
+                                                                               "word":  "aldığıma"
+                                                                           },
+                                                                           {
+                                                                               "active_sentiment":  false,
+                                                                               "adjusted_negative":  0.0,
+                                                                               "adjusted_positive":  0.0,
+                                                                               "alignment_status":  "matched",
+                                                                               "alignment_strategy":  "stanza_lemma_equals_root",
+                                                                               "contextual_role":  "target",
+                                                                               "contrast":  null,
+                                                                               "fragment_token_ids":  [
+                                                                                                          7
+                                                                                                      ],
+                                                                               "modifiers":  [
+
+                                                                                             ],
+                                                                               "negations":  [
+
+                                                                                             ],
+                                                                               "negative":  1.0,
+                                                                               "operations":  [
+                                                                                                  "suppressed_as_target"
+                                                                                              ],
+                                                                               "original_negative":  1.0,
+                                                                               "original_positive":  0.0,
+                                                                               "positive":  0.0,
+                                                                               "reconstructed_surface":  null,
+                                                                               "root":  "pişman",
+                                                                               "sentiment_token":  {
+                                                                                                       "alignment_strategy":  "stanza_lemma_equals_root",
+                                                                                                       "deprel":  "nsubj",
+                                                                                                       "fragment_token_ids":  [
+                                                                                                                                  7
+                                                                                                                              ],
+                                                                                                       "head":  6,
+                                                                                                       "id":  7,
+                                                                                                       "lemma":  "pişman",
+                                                                                                       "reconstructed_surface":  null,
+                                                                                                       "upos":  "NOUN",
+                                                                                                       "word":  "pişmanı"
+                                                                                                   },
+                                                                               "suppression_reason":  "used_as_target_of_another_sentiment",
+                                                                               "target":  null,
+                                                                               "target_strategy":  null,
+                                                                               "word":  "pişmanım"
+                                                                           }
+                                                                       ],
+                                                            "sentence_index":  0,
+                                                            "text":  "kullandıktan beş dakika sonra akıyor aldığıma pişmanı"
+                                                        },
+                                                        {
+                                                            "dependency_tokens":  [
+                                                                                      {
+                                                                                          "deprel":  "root",
+                                                                                          "feats":  "Case=Nom|Number=Sing|Person=3",
+                                                                                          "head":  0,
+                                                                                          "id":  8,
+                                                                                          "lemma":  "m",
+                                                                                          "local_head":  0,
+                                                                                          "local_id":  1,
+                                                                                          "sentence_index":  1,
+                                                                                          "text":  "m",
+                                                                                          "upos":  "NOUN"
+                                                                                      }
+                                                                                  ],
+                                                            "hisnet_negative_score":  0,
+                                                            "hisnet_positive_score":  0,
+                                                            "hisnet_prediction":  "neutral",
+                                                            "negative_score":  0,
+                                                            "positive_score":  0,
+                                                            "prediction":  "neutral",
+                                                            "scopes":  [
+
+                                                                       ],
+                                                            "sentence_index":  1,
+                                                            "text":  "m"
+                                                        }
+                                                    ],
+                                      "sentiment_coverage":  0.42857142857142855,
+                                      "sentiment_words":  [
+                                                              {
+                                                                  "analysis":  "ak+VERB+POS+PROG1+A3SG",
+                                                                  "negative":  0.0,
+                                                                  "positive":  0.32142857142857145,
+                                                                  "root":  "ak",
+                                                                  "word":  "akıyor"
+                                                              },
+                                                              {
+                                                                  "analysis":  "al+VERB+POS^DB+NOUN+PASTPART+A3SG+P1SG+DAT",
+                                                                  "negative":  0.16666666666666666,
+                                                                  "positive":  0.0,
+                                                                  "root":  "al",
+                                                                  "word":  "aldığıma"
+                                                              },
+                                                              {
+                                                                  "analysis":  "pişman+ADJ^DB+VERB+ZERO+PRES+A1SG",
+                                                                  "negative":  1.0,
+                                                                  "positive":  0.0,
+                                                                  "root":  "pişman",
+                                                                  "word":  "pişmanım"
+                                                              }
+                                                          ],
+                                      "status":  "success",
+                                      "text":  "kullandıktan beş dakika sonra akıyor aldığıma pişmanım",
+                                      "unmatched_scopes":  [
+
+                                                           ]
+                                  },
+                    "lw_hisnet_dp":  {
+                                         "architecture":  "hisnet_dependency_literature_weighted",
+                                         "baseline_negative_score":  1.1666666666666667,
+                                         "baseline_positive_score":  0.32142857142857145,
+                                         "baseline_reused":  true,
+                                         "contrast_marker_suppressed_scope_count":  0,
+                                         "contrast_relations":  {
+                                                                    "0":  [
+
+                                                                          ],
+                                                                    "1":  [
+
+                                                                          ]
+                                                                },
+                                         "contrast_weighted_scope_count":  0,
+                                         "dependency_negative_score":  0.16666666666666666,
+                                         "dependency_positive_score":  0.32142857142857145,
+                                         "dependency_prediction":  "positive",
+                                         "error":  null,
+                                         "excluded_modifier_contrast_marker_ids":  [
+
+                                                                                   ],
+                                         "hisnet_negative_score":  1.1666666666666667,
+                                         "hisnet_positive_score":  0.32142857142857145,
+                                         "hisnet_prediction":  "negative",
+                                         "lexicon_coverage":  0.8571428571428571,
+                                         "licensed_contrast_markers":  {
+                                                                           "0":  [
+
+                                                                                 ],
+                                                                           "1":  [
+
+                                                                                 ]
+                                                                       },
+                                         "literature_weighting":  {
+                                                                      "contrast_method":  "dependency-first; dependency-licensed positional fallback",
+                                                                      "contrast_post_weight":  1.85,
+                                                                      "contrast_pre_weight":  0.85,
+                                                                      "dataset_tuned":  false,
+                                                                      "decision_threshold":  0.05,
+                                                                      "modifier_method":  "fixed_literature_coefficients"
+                                                                  },
+                                         "modifier_component_ids":  [
+
+                                                                    ],
+                                         "modifier_component_suppressed_scope_count":  0,
+                                         "modifier_weighted_scope_count":  0,
+                                         "morphological_analyses":  [
+                                                                        {
+                                                                            "analysis":  "kullan+VERB+POS^DB+NOUN+PASTPART+A3SG+PNON+ABL",
+                                                                            "analysis_source":  "normal",
+                                                                            "analyzer_reset":  false,
+                                                                            "root":  "kullan",
+                                                                            "word":  "kullandıktan"
+                                                                        },
+                                                                        {
+                                                                            "analysis":  "beş+ADJ",
+                                                                            "analysis_source":  "normal",
+                                                                            "analyzer_reset":  false,
+                                                                            "root":  "beş",
+                                                                            "word":  "beş"
+                                                                        },
+                                                                        {
+                                                                            "analysis":  "dakika+NOUN+A3SG+PNON+NOM",
+                                                                            "analysis_source":  "normal",
+                                                                            "analyzer_reset":  false,
+                                                                            "root":  "dakika",
+                                                                            "word":  "dakika"
+                                                                        },
+                                                                        {
+                                                                            "analysis":  "sonra+ADV",
+                                                                            "analysis_source":  "normal",
+                                                                            "analyzer_reset":  false,
+                                                                            "root":  "sonra",
+                                                                            "word":  "sonra"
+                                                                        },
+                                                                        {
+                                                                            "analysis":  "ak+VERB+POS+PROG1+A3SG",
+                                                                            "analysis_source":  "normal",
+                                                                            "analyzer_reset":  false,
+                                                                            "root":  "ak",
+                                                                            "word":  "akıyor"
+                                                                        },
+                                                                        {
+                                                                            "analysis":  "al+VERB+POS^DB+NOUN+PASTPART+A3SG+P1SG+DAT",
+                                                                            "analysis_source":  "normal",
+                                                                            "analyzer_reset":  false,
+                                                                            "root":  "al",
+                                                                            "word":  "aldığıma"
+                                                                        },
+                                                                        {
+                                                                            "analysis":  "pişman+ADJ^DB+VERB+ZERO+PRES+A1SG",
+                                                                            "analysis_source":  "normal",
+                                                                            "analyzer_reset":  false,
+                                                                            "root":  "pişman",
+                                                                            "word":  "pişmanım"
+                                                                        }
+                                                                    ],
+                                         "negative_score":  0.16666666666666666,
+                                         "positive_score":  0.32142857142857145,
+                                         "prediction":  "positive",
+                                         "predictions":  [
+                                                             "positive"
+                                                         ],
+                                         "scopes":  [
+                                                        {
+                                                            "active_sentiment":  true,
+                                                            "adjusted_negative":  0.0,
+                                                            "adjusted_positive":  0.32142857142857145,
+                                                            "alignment_status":  "matched",
+                                                            "alignment_strategy":  "exact_surface",
+                                                            "contextual_role":  "opinion",
+                                                            "contrast":  null,
+                                                            "contrast_marker":  null,
+                                                            "contrast_marker_id":  null,
+                                                            "contrast_multiplier":  1.0,
+                                                            "contrast_role":  null,
+                                                            "contrast_strategy":  null,
+                                                            "dependency_adjusted_negative":  0.0,
+                                                            "dependency_adjusted_positive":  0.32142857142857145,
+                                                            "fragment_token_ids":  [
+                                                                                       5
+                                                                                   ],
+                                                            "literature_multiplier":  1.0,
+                                                            "modifier_multiplier":  1.0,
+                                                            "modifier_phrase":  null,
+                                                            "modifier_strategy":  null,
+                                                            "modifier_token_ids":  [
+
+                                                                                   ],
+                                                            "modifiers":  [
+
+                                                                          ],
+                                                            "negations":  [
+
+                                                                          ],
+                                                            "negative":  0.0,
+                                                            "operations":  [
+
+                                                                           ],
+                                                            "original_negative":  0.0,
+                                                            "original_positive":  0.32142857142857145,
+                                                            "positive":  0.32142857142857145,
+                                                            "reconstructed_surface":  null,
+                                                            "root":  "ak",
+                                                            "sentiment_token":  {
+                                                                                    "alignment_strategy":  "exact_surface",
+                                                                                    "deprel":  "ccomp",
+                                                                                    "fragment_token_ids":  [
+                                                                                                               5
+                                                                                                           ],
+                                                                                    "head":  6,
+                                                                                    "id":  5,
+                                                                                    "lemma":  "ak",
+                                                                                    "reconstructed_surface":  null,
+                                                                                    "upos":  "VERB",
+                                                                                    "word":  "akıyor"
+                                                                                },
+                                                            "suppression_reason":  null,
+                                                            "target":  {
+                                                                           "deprel":  "nsubj",
+                                                                           "id":  7,
+                                                                           "lemma":  "pişman",
+                                                                           "root":  "pişman",
+                                                                           "upos":  "NOUN",
+                                                                           "word":  "pişmanı"
+                                                                       },
+                                                            "target_strategy":  "head_subject",
+                                                            "weighted_negative":  0.0,
+                                                            "weighted_positive":  0.32142857142857145,
+                                                            "word":  "akıyor"
+                                                        },
+                                                        {
+                                                            "active_sentiment":  true,
+                                                            "adjusted_negative":  0.16666666666666666,
+                                                            "adjusted_positive":  0.0,
+                                                            "alignment_status":  "matched",
+                                                            "alignment_strategy":  "exact_surface",
+                                                            "contextual_role":  "opinion",
+                                                            "contrast":  null,
+                                                            "contrast_marker":  null,
+                                                            "contrast_marker_id":  null,
+                                                            "contrast_multiplier":  1.0,
+                                                            "contrast_role":  null,
+                                                            "contrast_strategy":  null,
+                                                            "dependency_adjusted_negative":  0.16666666666666666,
+                                                            "dependency_adjusted_positive":  0.0,
+                                                            "fragment_token_ids":  [
+                                                                                       6
+                                                                                   ],
+                                                            "literature_multiplier":  1.0,
+                                                            "modifier_multiplier":  1.0,
+                                                            "modifier_phrase":  null,
+                                                            "modifier_strategy":  null,
+                                                            "modifier_token_ids":  [
+
+                                                                                   ],
+                                                            "modifiers":  [
+
+                                                                          ],
+                                                            "negations":  [
+
+                                                                          ],
+                                                            "negative":  0.16666666666666666,
+                                                            "operations":  [
+
+                                                                           ],
+                                                            "original_negative":  0.16666666666666666,
+                                                            "original_positive":  0.0,
+                                                            "positive":  0.0,
+                                                            "reconstructed_surface":  null,
+                                                            "root":  "al",
+                                                            "sentiment_token":  {
+                                                                                    "alignment_strategy":  "exact_surface",
+                                                                                    "deprel":  "root",
+                                                                                    "fragment_token_ids":  [
+                                                                                                               6
+                                                                                                           ],
+                                                                                    "head":  0,
+                                                                                    "id":  6,
+                                                                                    "lemma":  "al",
+                                                                                    "reconstructed_surface":  null,
+                                                                                    "upos":  "VERB",
+                                                                                    "word":  "aldığıma"
+                                                                                },
+                                                            "suppression_reason":  null,
+                                                            "target":  {
+                                                                           "deprel":  "nsubj",
+                                                                           "id":  7,
+                                                                           "lemma":  "pişman",
+                                                                           "root":  "pişman",
+                                                                           "upos":  "NOUN",
+                                                                           "word":  "pişmanı"
+                                                                       },
+                                                            "target_strategy":  "direct_subject",
+                                                            "weighted_negative":  0.16666666666666666,
+                                                            "weighted_positive":  0.0,
+                                                            "word":  "aldığıma"
+                                                        },
+                                                        {
+                                                            "active_sentiment":  false,
+                                                            "adjusted_negative":  0.0,
+                                                            "adjusted_positive":  0.0,
+                                                            "alignment_status":  "matched",
+                                                            "alignment_strategy":  "stanza_lemma_equals_root",
+                                                            "contextual_role":  "target",
+                                                            "contrast":  null,
+                                                            "contrast_marker":  null,
+                                                            "contrast_marker_id":  null,
+                                                            "contrast_multiplier":  1.0,
+                                                            "contrast_role":  null,
+                                                            "contrast_strategy":  null,
+                                                            "dependency_adjusted_negative":  0.0,
+                                                            "dependency_adjusted_positive":  0.0,
+                                                            "fragment_token_ids":  [
+                                                                                       7
+                                                                                   ],
+                                                            "literature_multiplier":  1.0,
+                                                            "modifier_multiplier":  1.0,
+                                                            "modifier_phrase":  null,
+                                                            "modifier_strategy":  null,
+                                                            "modifier_token_ids":  [
+
+                                                                                   ],
+                                                            "modifiers":  [
+
+                                                                          ],
+                                                            "negations":  [
+
+                                                                          ],
+                                                            "negative":  1.0,
+                                                            "operations":  [
+                                                                               "suppressed_as_target"
+                                                                           ],
+                                                            "original_negative":  1.0,
+                                                            "original_positive":  0.0,
+                                                            "positive":  0.0,
+                                                            "reconstructed_surface":  null,
+                                                            "root":  "pişman",
+                                                            "sentiment_token":  {
+                                                                                    "alignment_strategy":  "stanza_lemma_equals_root",
+                                                                                    "deprel":  "nsubj",
+                                                                                    "fragment_token_ids":  [
+                                                                                                               7
+                                                                                                           ],
+                                                                                    "head":  6,
+                                                                                    "id":  7,
+                                                                                    "lemma":  "pişman",
+                                                                                    "reconstructed_surface":  null,
+                                                                                    "upos":  "NOUN",
+                                                                                    "word":  "pişmanı"
+                                                                                },
+                                                            "suppression_reason":  "used_as_target_of_another_sentiment",
+                                                            "target":  null,
+                                                            "target_strategy":  null,
+                                                            "weighted_negative":  0.0,
+                                                            "weighted_positive":  0.0,
+                                                            "word":  "pişmanım"
+                                                        }
+                                                    ],
+                                         "sentences":  [
+                                                           {
+                                                               "dependency_tokens":  [
+                                                                                         {
+                                                                                             "deprel":  "advcl",
+                                                                                             "feats":  "Aspect=Perf|Case=Abl|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Part",
+                                                                                             "head":  5,
+                                                                                             "id":  1,
+                                                                                             "lemma":  "kullan",
+                                                                                             "local_head":  5,
+                                                                                             "local_id":  1,
+                                                                                             "sentence_index":  0,
+                                                                                             "text":  "kullandıktan",
+                                                                                             "upos":  "VERB"
+                                                                                         },
+                                                                                         {
+                                                                                             "deprel":  "nummod",
+                                                                                             "feats":  "NumType=Card",
+                                                                                             "head":  5,
+                                                                                             "id":  2,
+                                                                                             "lemma":  "beş",
+                                                                                             "local_head":  5,
+                                                                                             "local_id":  2,
+                                                                                             "sentence_index":  0,
+                                                                                             "text":  "beş",
+                                                                                             "upos":  "NUM"
+                                                                                         },
+                                                                                         {
+                                                                                             "deprel":  "flat",
+                                                                                             "feats":  "Case=Nom|Number=Sing|Person=3",
+                                                                                             "head":  2,
+                                                                                             "id":  3,
+                                                                                             "lemma":  "dakika",
+                                                                                             "local_head":  2,
+                                                                                             "local_id":  3,
+                                                                                             "sentence_index":  0,
+                                                                                             "text":  "dakika",
+                                                                                             "upos":  "NOUN"
+                                                                                         },
+                                                                                         {
+                                                                                             "deprel":  "flat",
+                                                                                             "feats":  null,
+                                                                                             "head":  2,
+                                                                                             "id":  4,
+                                                                                             "lemma":  "sonra",
+                                                                                             "local_head":  2,
+                                                                                             "local_id":  4,
+                                                                                             "sentence_index":  0,
+                                                                                             "text":  "sonra",
+                                                                                             "upos":  "ADP"
+                                                                                         },
+                                                                                         {
+                                                                                             "deprel":  "ccomp",
+                                                                                             "feats":  "Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Polite=Infm|Tense=Pres",
+                                                                                             "head":  6,
+                                                                                             "id":  5,
+                                                                                             "lemma":  "ak",
+                                                                                             "local_head":  6,
+                                                                                             "local_id":  5,
+                                                                                             "sentence_index":  0,
+                                                                                             "text":  "akıyor",
+                                                                                             "upos":  "VERB"
+                                                                                         },
+                                                                                         {
+                                                                                             "deprel":  "root",
+                                                                                             "feats":  "Aspect=Perf|Case=Dat|Mood=Ind|Number[psor]=Sing|Person[psor]=1|Polarity=Pos|Tense=Past|VerbForm=Part",
+                                                                                             "head":  0,
+                                                                                             "id":  6,
+                                                                                             "lemma":  "al",
+                                                                                             "local_head":  0,
+                                                                                             "local_id":  6,
+                                                                                             "sentence_index":  0,
+                                                                                             "text":  "aldığıma",
+                                                                                             "upos":  "VERB"
+                                                                                         },
+                                                                                         {
+                                                                                             "deprel":  "nsubj",
+                                                                                             "feats":  "Case=Nom|Number=Sing|Person=3",
+                                                                                             "head":  6,
+                                                                                             "id":  7,
+                                                                                             "lemma":  "pişman",
+                                                                                             "local_head":  6,
+                                                                                             "local_id":  7,
+                                                                                             "sentence_index":  0,
+                                                                                             "text":  "pişmanı",
+                                                                                             "upos":  "NOUN"
+                                                                                         }
+                                                                                     ],
+                                                               "hisnet_negative_score":  1.1666666666666667,
+                                                               "hisnet_positive_score":  0.32142857142857145,
+                                                               "hisnet_prediction":  "negative",
+                                                               "negative_score":  0.16666666666666666,
+                                                               "positive_score":  0.32142857142857145,
+                                                               "prediction":  "positive",
+                                                               "scopes":  [
+                                                                              {
+                                                                                  "active_sentiment":  true,
+                                                                                  "adjusted_negative":  0.0,
+                                                                                  "adjusted_positive":  0.32142857142857145,
+                                                                                  "alignment_status":  "matched",
+                                                                                  "alignment_strategy":  "exact_surface",
+                                                                                  "contextual_role":  "opinion",
+                                                                                  "contrast":  null,
+                                                                                  "contrast_marker":  null,
+                                                                                  "contrast_marker_id":  null,
+                                                                                  "contrast_multiplier":  1.0,
+                                                                                  "contrast_role":  null,
+                                                                                  "contrast_strategy":  null,
+                                                                                  "dependency_adjusted_negative":  0.0,
+                                                                                  "dependency_adjusted_positive":  0.32142857142857145,
+                                                                                  "fragment_token_ids":  [
+                                                                                                             5
+                                                                                                         ],
+                                                                                  "literature_multiplier":  1.0,
+                                                                                  "modifier_multiplier":  1.0,
+                                                                                  "modifier_phrase":  null,
+                                                                                  "modifier_strategy":  null,
+                                                                                  "modifier_token_ids":  [
+
+                                                                                                         ],
+                                                                                  "modifiers":  [
+
+                                                                                                ],
+                                                                                  "negations":  [
+
+                                                                                                ],
+                                                                                  "negative":  0.0,
+                                                                                  "operations":  [
+
+                                                                                                 ],
+                                                                                  "original_negative":  0.0,
+                                                                                  "original_positive":  0.32142857142857145,
+                                                                                  "positive":  0.32142857142857145,
+                                                                                  "reconstructed_surface":  null,
+                                                                                  "root":  "ak",
+                                                                                  "sentiment_token":  {
+                                                                                                          "alignment_strategy":  "exact_surface",
+                                                                                                          "deprel":  "ccomp",
+                                                                                                          "fragment_token_ids":  [
+                                                                                                                                     5
+                                                                                                                                 ],
+                                                                                                          "head":  6,
+                                                                                                          "id":  5,
+                                                                                                          "lemma":  "ak",
+                                                                                                          "reconstructed_surface":  null,
+                                                                                                          "upos":  "VERB",
+                                                                                                          "word":  "akıyor"
+                                                                                                      },
+                                                                                  "suppression_reason":  null,
+                                                                                  "target":  {
+                                                                                                 "deprel":  "nsubj",
+                                                                                                 "id":  7,
+                                                                                                 "lemma":  "pişman",
+                                                                                                 "root":  "pişman",
+                                                                                                 "upos":  "NOUN",
+                                                                                                 "word":  "pişmanı"
+                                                                                             },
+                                                                                  "target_strategy":  "head_subject",
+                                                                                  "weighted_negative":  0.0,
+                                                                                  "weighted_positive":  0.32142857142857145,
+                                                                                  "word":  "akıyor"
+                                                                              },
+                                                                              {
+                                                                                  "active_sentiment":  true,
+                                                                                  "adjusted_negative":  0.16666666666666666,
+                                                                                  "adjusted_positive":  0.0,
+                                                                                  "alignment_status":  "matched",
+                                                                                  "alignment_strategy":  "exact_surface",
+                                                                                  "contextual_role":  "opinion",
+                                                                                  "contrast":  null,
+                                                                                  "contrast_marker":  null,
+                                                                                  "contrast_marker_id":  null,
+                                                                                  "contrast_multiplier":  1.0,
+                                                                                  "contrast_role":  null,
+                                                                                  "contrast_strategy":  null,
+                                                                                  "dependency_adjusted_negative":  0.16666666666666666,
+                                                                                  "dependency_adjusted_positive":  0.0,
+                                                                                  "fragment_token_ids":  [
+                                                                                                             6
+                                                                                                         ],
+                                                                                  "literature_multiplier":  1.0,
+                                                                                  "modifier_multiplier":  1.0,
+                                                                                  "modifier_phrase":  null,
+                                                                                  "modifier_strategy":  null,
+                                                                                  "modifier_token_ids":  [
+
+                                                                                                         ],
+                                                                                  "modifiers":  [
+
+                                                                                                ],
+                                                                                  "negations":  [
+
+                                                                                                ],
+                                                                                  "negative":  0.16666666666666666,
+                                                                                  "operations":  [
+
+                                                                                                 ],
+                                                                                  "original_negative":  0.16666666666666666,
+                                                                                  "original_positive":  0.0,
+                                                                                  "positive":  0.0,
+                                                                                  "reconstructed_surface":  null,
+                                                                                  "root":  "al",
+                                                                                  "sentiment_token":  {
+                                                                                                          "alignment_strategy":  "exact_surface",
+                                                                                                          "deprel":  "root",
+                                                                                                          "fragment_token_ids":  [
+                                                                                                                                     6
+                                                                                                                                 ],
+                                                                                                          "head":  0,
+                                                                                                          "id":  6,
+                                                                                                          "lemma":  "al",
+                                                                                                          "reconstructed_surface":  null,
+                                                                                                          "upos":  "VERB",
+                                                                                                          "word":  "aldığıma"
+                                                                                                      },
+                                                                                  "suppression_reason":  null,
+                                                                                  "target":  {
+                                                                                                 "deprel":  "nsubj",
+                                                                                                 "id":  7,
+                                                                                                 "lemma":  "pişman",
+                                                                                                 "root":  "pişman",
+                                                                                                 "upos":  "NOUN",
+                                                                                                 "word":  "pişmanı"
+                                                                                             },
+                                                                                  "target_strategy":  "direct_subject",
+                                                                                  "weighted_negative":  0.16666666666666666,
+                                                                                  "weighted_positive":  0.0,
+                                                                                  "word":  "aldığıma"
+                                                                              },
+                                                                              {
+                                                                                  "active_sentiment":  false,
+                                                                                  "adjusted_negative":  0.0,
+                                                                                  "adjusted_positive":  0.0,
+                                                                                  "alignment_status":  "matched",
+                                                                                  "alignment_strategy":  "stanza_lemma_equals_root",
+                                                                                  "contextual_role":  "target",
+                                                                                  "contrast":  null,
+                                                                                  "contrast_marker":  null,
+                                                                                  "contrast_marker_id":  null,
+                                                                                  "contrast_multiplier":  1.0,
+                                                                                  "contrast_role":  null,
+                                                                                  "contrast_strategy":  null,
+                                                                                  "dependency_adjusted_negative":  0.0,
+                                                                                  "dependency_adjusted_positive":  0.0,
+                                                                                  "fragment_token_ids":  [
+                                                                                                             7
+                                                                                                         ],
+                                                                                  "literature_multiplier":  1.0,
+                                                                                  "modifier_multiplier":  1.0,
+                                                                                  "modifier_phrase":  null,
+                                                                                  "modifier_strategy":  null,
+                                                                                  "modifier_token_ids":  [
+
+                                                                                                         ],
+                                                                                  "modifiers":  [
+
+                                                                                                ],
+                                                                                  "negations":  [
+
+                                                                                                ],
+                                                                                  "negative":  1.0,
+                                                                                  "operations":  [
+                                                                                                     "suppressed_as_target"
+                                                                                                 ],
+                                                                                  "original_negative":  1.0,
+                                                                                  "original_positive":  0.0,
+                                                                                  "positive":  0.0,
+                                                                                  "reconstructed_surface":  null,
+                                                                                  "root":  "pişman",
+                                                                                  "sentiment_token":  {
+                                                                                                          "alignment_strategy":  "stanza_lemma_equals_root",
+                                                                                                          "deprel":  "nsubj",
+                                                                                                          "fragment_token_ids":  [
+                                                                                                                                     7
+                                                                                                                                 ],
+                                                                                                          "head":  6,
+                                                                                                          "id":  7,
+                                                                                                          "lemma":  "pişman",
+                                                                                                          "reconstructed_surface":  null,
+                                                                                                          "upos":  "NOUN",
+                                                                                                          "word":  "pişmanı"
+                                                                                                      },
+                                                                                  "suppression_reason":  "used_as_target_of_another_sentiment",
+                                                                                  "target":  null,
+                                                                                  "target_strategy":  null,
+                                                                                  "weighted_negative":  0.0,
+                                                                                  "weighted_positive":  0.0,
+                                                                                  "word":  "pişmanım"
+                                                                              }
+                                                                          ],
+                                                               "sentence_index":  0,
+                                                               "text":  "kullandıktan beş dakika sonra akıyor aldığıma pişmanı"
+                                                           },
+                                                           {
+                                                               "dependency_tokens":  [
+                                                                                         {
+                                                                                             "deprel":  "root",
+                                                                                             "feats":  "Case=Nom|Number=Sing|Person=3",
+                                                                                             "head":  0,
+                                                                                             "id":  8,
+                                                                                             "lemma":  "m",
+                                                                                             "local_head":  0,
+                                                                                             "local_id":  1,
+                                                                                             "sentence_index":  1,
+                                                                                             "text":  "m",
+                                                                                             "upos":  "NOUN"
+                                                                                         }
+                                                                                     ],
+                                                               "hisnet_negative_score":  0,
+                                                               "hisnet_positive_score":  0,
+                                                               "hisnet_prediction":  "neutral",
+                                                               "negative_score":  0,
+                                                               "positive_score":  0,
+                                                               "prediction":  "neutral",
+                                                               "scopes":  [
+
+                                                                          ],
+                                                               "sentence_index":  1,
+                                                               "text":  "m"
+                                                           }
+                                                       ],
+                                         "sentiment_coverage":  0.42857142857142855,
+                                         "sentiment_words":  [
+                                                                 {
+                                                                     "analysis":  "ak+VERB+POS+PROG1+A3SG",
+                                                                     "negative":  0.0,
+                                                                     "positive":  0.32142857142857145,
+                                                                     "root":  "ak",
+                                                                     "word":  "akıyor"
+                                                                 },
+                                                                 {
+                                                                     "analysis":  "al+VERB+POS^DB+NOUN+PASTPART+A3SG+P1SG+DAT",
+                                                                     "negative":  0.16666666666666666,
+                                                                     "positive":  0.0,
+                                                                     "root":  "al",
+                                                                     "word":  "aldığıma"
+                                                                 },
+                                                                 {
+                                                                     "analysis":  "pişman+ADJ^DB+VERB+ZERO+PRES+A1SG",
+                                                                     "negative":  1.0,
+                                                                     "positive":  0.0,
+                                                                     "root":  "pişman",
+                                                                     "word":  "pişmanım"
+                                                                 }
+                                                             ],
+                                         "status":  "success",
+                                         "text":  "kullandıktan beş dakika sonra akıyor aldığıma pişmanım",
+                                         "unmatched_scopes":  [
+
+                                                              ]
+                                     }
+                },
+    "text":  "kullandıktan beş dakika sonra akıyor aldığıma pişmanım"
+}
