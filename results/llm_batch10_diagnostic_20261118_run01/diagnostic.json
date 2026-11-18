@@ -1,0 +1,365 @@
+{
+  "purpose": "Live 10-review batched LLM timeout diagnostic; not a benchmark",
+  "started": "2026-11-18T10:14:35.569387+00:00",
+  "dataset": "C:\\Users\\ukgunes\\PycharmProjects\\TurkishSentimentComparison\\datasets\\Modified\\sentence_sentiment\\beyazperde_sentiment.csv",
+  "dataset_sha256": "8681e80a58f986057180efd40a95c6fe4d2fd84d5c91c02fd5af91afb711ad45",
+  "settings": {
+    "model": "qwen3:32b",
+    "host": "http://localhost:11434",
+    "batch_size": 3,
+    "num_ctx": 8192,
+    "max_retries": 0,
+    "request_timeout": 180.0,
+    "temperature": 0.1,
+    "top_p": 1.0,
+    "seed": 42,
+    "think": false
+  },
+  "cases": [
+    {
+      "row_id": 0,
+      "text": "janiston nasıl böyle saçma bir sahneli film de rol aldı anlayamadım.",
+      "gold": "negative"
+    },
+    {
+      "row_id": 1,
+      "text": "5puan verdim o da anistonun güzel yüzünün hatırına.",
+      "gold": "negative"
+    },
+    {
+      "row_id": 2,
+      "text": "son derece sıkıcı bir filim olduğunu söyleyebilirim.",
+      "gold": "negative"
+    },
+    {
+      "row_id": 3,
+      "text": "..saçma bir konuyu nasılda filim yapmışlar maşallah",
+      "gold": "negative"
+    },
+    {
+      "row_id": 4,
+      "text": "bence hoş vakit geçirmek için seyredilebilir.",
+      "gold": "positive"
+    },
+    {
+      "row_id": 5,
+      "text": "hoş ve sevimli bir film.",
+      "gold": "positive"
+    },
+    {
+      "row_id": 6,
+      "text": "eşcinsellere pek sempati duymamakla beraber bu filmde sanki onları sevimli göstermeye çalışmışlar gibi geldi.",
+      "gold": "neutral"
+    },
+    {
+      "row_id": 7,
+      "text": "itici bir film değildi sonuçta.",
+      "gold": "neutral"
+    },
+    {
+      "row_id": 8,
+      "text": "seyrederken bu kadar sinirlendiğim film hatırlamıyorum.",
+      "gold": "negative"
+    },
+    {
+      "row_id": 9,
+      "text": "J.Aniston ın hiç mi umut yok diye sorduğu sahnede kıracaktım televizyonu!",
+      "gold": "neutral"
+    }
+  ],
+  "server_before": {
+    "version": {
+      "version": "0.40.16"
+    },
+    "ps": {
+      "models": [
+        {
+          "name": "qwen3:32b",
+          "model": "qwen3:32b",
+          "size": 22779611053,
+          "digest": "030ee887880fc378860c2dd35101da424377520441ae4bfe7be6deff8ade7840",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen3",
+            "families": [
+              "qwen3"
+            ],
+            "parameter_size": "32.8B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-11-18T13:42:19.8656293+03:00",
+          "size_vram": 0,
+          "context_length": 8192,
+          "runner": "llamacpp"
+        }
+      ]
+    }
+  },
+  "batches": [
+    {
+      "batch_number": 1,
+      "row_ids": [
+        0,
+        1,
+        2
+      ],
+      "started": "2026-11-18T10:17:41.069797+00:00",
+      "elapsed_seconds": 183.39370119999512,
+      "result": {
+        "predictions": [
+          null,
+          null,
+          null
+        ],
+        "model": "qwen3:32b",
+        "batch_size": 3,
+        "request_seconds": 183.25776909998967,
+        "prompt_tokens": 0,
+        "output_tokens": 0,
+        "attempt": 1,
+        "status": "failed",
+        "error": "ReadTimeout: timed out",
+        "raw_response": null
+      },
+      "server_after": {
+        "version": {
+          "version": "0.40.16"
+        },
+        "ps": {
+          "models": [
+            {
+              "name": "qwen3:32b",
+              "model": "qwen3:32b",
+              "size": 22779611053,
+              "digest": "030ee887880fc378860c2dd35101da424377520441ae4bfe7be6deff8ade7840",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "qwen3",
+                "families": [
+                  "qwen3"
+                ],
+                "parameter_size": "32.8B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-11-18T13:47:40.6822628+03:00",
+              "size_vram": 0,
+              "context_length": 8192,
+              "runner": "llamacpp"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch_number": 2,
+      "row_ids": [
+        3,
+        4,
+        5
+      ],
+      "started": "2026-11-18T10:20:51.362539+00:00",
+      "elapsed_seconds": 185.18295529999887,
+      "result": {
+        "predictions": [
+          null,
+          null,
+          null
+        ],
+        "model": "qwen3:32b",
+        "batch_size": 3,
+        "request_seconds": 185.03763310000068,
+        "prompt_tokens": 0,
+        "output_tokens": 0,
+        "attempt": 1,
+        "status": "failed",
+        "error": "ReadTimeout: timed out",
+        "raw_response": null
+      },
+      "server_after": {
+        "version": {
+          "version": "0.40.16"
+        },
+        "ps": {
+          "models": [
+            {
+              "name": "qwen3:32b",
+              "model": "qwen3:32b",
+              "size": 22779611053,
+              "digest": "030ee887880fc378860c2dd35101da424377520441ae4bfe7be6deff8ade7840",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "qwen3",
+                "families": [
+                  "qwen3"
+                ],
+                "parameter_size": "32.8B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-11-18T13:50:51.3599944+03:00",
+              "size_vram": 0,
+              "context_length": 8192,
+              "runner": "llamacpp"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch_number": 3,
+      "row_ids": [
+        6,
+        7,
+        8
+      ],
+      "started": "2026-11-18T10:23:56.063768+00:00",
+      "elapsed_seconds": 182.46891470000264,
+      "result": {
+        "predictions": [
+          null,
+          null,
+          null
+        ],
+        "model": "qwen3:32b",
+        "batch_size": 3,
+        "request_seconds": 182.4486193000048,
+        "prompt_tokens": 0,
+        "output_tokens": 0,
+        "attempt": 1,
+        "status": "failed",
+        "error": "ReadTimeout: timed out",
+        "raw_response": null
+      },
+      "server_after": {
+        "version": {
+          "version": "0.40.16"
+        },
+        "ps": {
+          "models": [
+            {
+              "name": "qwen3:32b",
+              "model": "qwen3:32b",
+              "size": 22779611053,
+              "digest": "030ee887880fc378860c2dd35101da424377520441ae4bfe7be6deff8ade7840",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "qwen3",
+                "families": [
+                  "qwen3"
+                ],
+                "parameter_size": "32.8B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-11-18T13:53:55.9981612+03:00",
+              "size_vram": 0,
+              "context_length": 8192,
+              "runner": "llamacpp"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch_number": 4,
+      "row_ids": [
+        9
+      ],
+      "started": "2026-11-18T10:27:00.721239+00:00",
+      "elapsed_seconds": 182.20515349999187,
+      "result": {
+        "predictions": [
+          null
+        ],
+        "model": "qwen3:32b",
+        "batch_size": 1,
+        "request_seconds": 182.1945556999999,
+        "prompt_tokens": 0,
+        "output_tokens": 0,
+        "attempt": 1,
+        "status": "failed",
+        "error": "ReadTimeout: timed out",
+        "raw_response": null
+      },
+      "server_after": {
+        "version": {
+          "version": "0.40.16"
+        },
+        "ps": {
+          "models": [
+            {
+              "name": "qwen3:32b",
+              "model": "qwen3:32b",
+              "size": 22779611053,
+              "digest": "030ee887880fc378860c2dd35101da424377520441ae4bfe7be6deff8ade7840",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "qwen3",
+                "families": [
+                  "qwen3"
+                ],
+                "parameter_size": "32.8B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-11-18T13:57:00.7193561+03:00",
+              "size_vram": 0,
+              "context_length": 8192,
+              "runner": "llamacpp"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "classifier_stats": {
+    "model": "qwen3:32b",
+    "configured_batch_size": 3,
+    "temperature": 0.1,
+    "top_p": 1.0,
+    "num_ctx": 8192,
+    "seed": 42,
+    "max_retries": 0,
+    "total_requests": 4,
+    "total_reviews": 0,
+    "total_retries": 0,
+    "total_failures": 4,
+    "total_wall_seconds": 732.938577199995,
+    "reviews_per_second": 0.0,
+    "seconds_per_review": 0.0,
+    "total_prompt_tokens": 0,
+    "total_output_tokens": 0
+  },
+  "finished": "2026-11-18T10:27:03.148182+00:00",
+  "server_final": {
+    "version": {
+      "version": "0.40.16"
+    },
+    "ps": {
+      "models": [
+        {
+          "name": "qwen3:32b",
+          "model": "qwen3:32b",
+          "size": 22779611053,
+          "digest": "030ee887880fc378860c2dd35101da424377520441ae4bfe7be6deff8ade7840",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen3",
+            "families": [
+              "qwen3"
+            ],
+            "parameter_size": "32.8B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-11-18T13:57:00.7193561+03:00",
+          "size_vram": 0,
+          "context_length": 8192,
+          "runner": "llamacpp"
+        }
+      ]
+    }
+  }
+}

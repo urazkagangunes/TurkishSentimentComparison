@@ -45,6 +45,20 @@ Processors:
 
 ## Resumable full-dataset runs
 
+Makale değerlendirmesi için [altı sistem ve tüm veri setleri koşusu](docs/paper_evaluation.md)
+`scripts.run_paper_suite` üzerinden kullanılabilir. Sınıf bazlı P/R/F1,
+DP kazanç–kayıp analizi, otomatik olumsuzluk dilimleri, güven aralıkları,
+canlı ilerleme ve %10 dönüm noktalarıyla kesintiden devam içerir:
+
+```powershell
+.venv\Scripts\python.exe -B -m scripts.run_paper_suite --inventory
+.venv\Scripts\python.exe -B -u -m scripts.run_paper_suite --output results/paper_full_new
+```
+
+İkinci komut canlı tam çıkarımı başlatır; yeni bir çıktı dizini ve hazır
+model kaynakları gerektirir. Envanterdeki doğrulanmamış etiketli kaynaklar
+belgelenmiş eşleme olmadan değerlendirmeye alınmaz.
+
 All six systems use a shared SQLite checkpoint through the new runner:
 
 ```powershell

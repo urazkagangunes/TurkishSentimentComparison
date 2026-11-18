@@ -186,7 +186,11 @@ def summarize_connection(connection):
                 SELECT c.gold,p.prediction,COUNT(*) FROM predictions p JOIN cases c USING(row_id)
                 WHERE p.system=? AND p.status='success' GROUP BY c.gold,p.prediction
                 """, (system,)):
+            # Inference-only paper datasets deliberately have no gold label.
+            if gold not in LABELS:
+                continue
             matrix[LABELS.index(gold)][LABELS.index(pred)] = count
+        evaluated = sum(map(sum, matrix))
         correct = sum(matrix[i][i] for i in range(len(LABELS)))
         f1 = []
         for i in range(len(LABELS)):
@@ -203,8 +207,8 @@ def summarize_connection(connection):
             usage["requests"] += result.get("attempt", 0)
         summary[system] = dict(total=total, success=success, failed=failed, pending=total-success-failed,
             complete=success == total, coverage=success / total if total else 0.0,
-            accuracy_on_successful=correct / success if success else None,
-            macro_f1_on_successful=sum(f1) / len(f1) if success else None,
+            accuracy_on_successful=correct / evaluated if evaluated else None,
+            macro_f1_on_successful=sum(f1) / len(f1) if evaluated else None,
             confusion_matrix_on_successful=matrix, label_order=LABELS, usage=usage)
     return summary
 
