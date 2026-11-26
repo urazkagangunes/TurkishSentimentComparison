@@ -124,6 +124,105 @@ büyük veride disk tüketimini artırır. Bu tercih koşu kimliğinin parçası
 Çıkış kodları: seçilen sistemler tam başarıysa 0, çözülmemiş hata varsa 2,
 Ctrl+C ile kesilirse 130. Genel hata veya kimlik uyuşmazlığı traceback ile sonlanır.
 
+## Yedinci sistem olarak Jev
+
+`--systems all` dört HisNet yöntemini, iki Ollama yöntemini ve TypeSafe Jev'i
+aynı örnekler üzerinde çalıştırır. Sistem seçimi verilmediğinde yerel altı
+yöntem kullanılır. Aşağıdaki komut sınıf başına 10 örnek seçer. Yalnız Jev'i
+bir pilot checkpoint'ine eklemek için aynı ayarlar ve çıktı diziniyle
+`--systems all` yerine `--systems jev` kullanılabilir.
+
+```powershell
+.venv\Scripts\python.exe -u -m scripts.run_six_systems --dataset trsav1 --sample-per-class 10 --seed 42 --model qwen3:4b-instruct --systems all --output results/trsav1_seven_typesafe
+```
+
+Jev, TypeSafe hesabının `TYPESAFE_API_KEY` ortam değişkeniyle çalışır.
+Her API isteği, tek bir yorum metnini ve `negative`, `neutral`, `positive`
+seçeneklerini tanımlayan sabit bir Türkçe Choice sorusunu gönderir. İstek
+etiketli örnek, doğru etiket veya bağımlılık ağacı içermez. Modelin seçtiği
+etiket, sınıf olasılıkları, güven skoru ve sağlayıcının bildirdiği token
+sayıları SQLite'a kaydedilir. Jev'in yanıtında bildirilen model sürümü
+istenen sürümle eşleşmelidir.
+[TypeSafe Choice](https://docs.typesafe.ai/primitives/choice) · [TypeSafe API](https://docs.typesafe.ai/api/system-one)
+
+`--jev-model` varsayılan olarak `jev-1.14.0` kullanır ve sürüm numarası ister.
+`--jev-timeout` varsayılan olarak 30 saniyedir. Uç nokta, sürüm, soru ve
+timeout `jev_identity.json` dosyasına ve SQLite'a kaydedilir. API anahtarı
+checkpoint'e yazılmaz. Ağ veya hesap hatasında koşu kaydedilen noktada
+durur. Rate limit ve overload yanıtlarında, bekleme aralığı uygunsa tek
+bir API tekrarı yapılır. Eksik satırlar aynı komutla sürdürülebilir.
+
+`summary.json` her sistemin doğruluğunu, macro-F1'ını, hata matrisini,
+kapsamını, süresini ve istek/token toplamlarını içerir. Nihai kıyas için
+yedi sistemde de aynı yorumların tamamlanmasını bekle. Pilotun 30 yorumu
+entegrasyonu kontrol etmek içindir. Nihai deneyde örneklemi ve model
+sürümlerini önceden sabitle. Jev süresi ağ ve sağlayıcı gecikmesini,
+Ollama süreleri yerel çalıştırmayı içerir.
+
+### OpenCode üzerinden ücretsiz Jev 1.13
+
+`--jev-provider opencode`, OpenCode'un System One uç noktasında
+`jev-1.13-free` modelini seçer. Anahtarsız istek çalışırsa
+`OPENCODE_API_KEY` gerekmez. Ortam değişkeni ayarlıysa istemci onu yalnız
+OpenCode'a gönderir. Sağlayıcı bu modeli sınırlı süreyle ücretsiz listeler.
+Çalıştırıcı her başarılı tahminin `billing_source=free` ve `cost=0`
+olduğunu doğrular. Bu alanlar yanıtta doğrulanamazsa koşu durur.
+[OpenCode Jev belgeleri](https://opencode.ai/docs/console/models/#jev)
+
+```powershell
+.venv\Scripts\python.exe -u -m scripts.run_six_systems --dataset trsav1 --sample-per-class 10 --seed 42 --model qwen3:4b-instruct --systems jev --jev-provider opencode --output results/trsav1_jev_opencode_pilot_30
+```
+
+Bu komut OpenCode Jev 1.13 için ayrı bir checkpoint kullanır. Altı yerel
+sistemin önceki pilotuyla sıra ve etiket dahil örneklem hash'i aynıdır.
+Yeni bir yedi sistem koşusu için `--systems all` ve yeni bir çıktı dizini
+kullanılabilir. Sağlayıcı veya sürüm değişirse yeni bir çıktı dizini gerekir.
+
+## Ana makale koşusu
+
+`--paper` aşağıdaki altı dosyayı sırayla açar ve yedi sistemi aynı örnekler
+üzerinde çalıştırır. Jev için OpenCode `jev-1.13-free` ve iki Ollama kolu
+için `qwen3:32b` kullanılır. Seed 42, batch boyutu 3 ve Ollama bağlam sınırı
+8192 varsayılanları korunur.
+
+| Veri seti | Negatif | Nötr | Pozitif | Toplam |
+|---|---:|---:|---:|---:|
+| `beyazperde_sentiment` | 335 | 937 | 1.382 | 2.654 |
+| `HUMIRSentimentDatasets` | 32.295 | 0 | 32.148 | 64.443 |
+| `TRSAv1_fixed` | 41.963 | 41.571 | 42.027 | 125.561 |
+| `combined_sentiment` | 2.960 | 1.443 | 1.545 | 5.948 |
+| `tr_polarity_combined` | 5.316 | 0 | 5.323 | 10.639 |
+| `Turkish_twitter_combined` | 638 | 0 | 523 | 1.161 |
+| **Toplam** | **83.507** | **43.951** | **82.948** | **210.406** |
+
+`TRSAv1.csv`, `combined_dataset.csv` ve `reviews_combined.csv` makale
+profilinin dışında. Satır sayıları mevcut yükleyicinin boş değer temizliği ve aynı metin–etiket
+tekilleştirmesinden sonraki sayılardır. Etiketi çelişen tekrarlar
+mevcut yükleyici kuralıyla kalır. Veri setleri ayrı raporlanır.
+Örneğin Beyazperde ve HUMIR arasında 82 farklı tam metin iki dosyada da bulunur.
+
+```powershell
+.venv\Scripts\python.exe -u -m scripts.run_six_systems --paper --output results/paper_main_20261126 --prepare-only
+.venv\Scripts\python.exe -u -m scripts.run_six_systems --paper --output results/paper_main_20261126
+.venv\Scripts\python.exe -m scripts.run_six_systems --paper --output results/paper_main_20261126 --status
+```
+
+Tam kapsam 210.406 yorum–etiket çifti ve 1.472.842 sistem tahminidir.
+Her veri setinin kendi manifesti ve SQLite checkpoint'i vardır.
+`paper_summary.json` sistem bazında başarı, başarısızlık ve kapsamı,
+ayrıca yedi sistemin ortak başarılı satırlarındaki accuracy, Macro-F1
+ve hata matrisini kaydeder. İki etiketli setlerde Macro-F1 negatif ve pozitif
+sınıfları ortalar. Nötr tahmin hata sayılır ve hata matrisinin nötr sütununda
+görünür. Başarısız veya bekleyen satırlar kapsamda ayrıca gösterilir.
+8192 varsayılanıyla düz LLM'in tek yorumluk bağlam ön kontrolü HUMIR'deki
+21 örneği reddeder. DP → LLM için ayrıştırma içeriği de bütçeye dahil
+olur. Çalıştırıcı bu girdileri kesmeden başarısız olarak kaydeder.
+
+`--sample-per-class 1 --model qwen3:4b-instruct` ile ayrı bir çıktı dizininde
+küçük bir canlı doğrulama yapılabilir. Bu ayar her veri setinin mevcut
+etiketlerinden birer örnek seçer. Tam makale koşusunun checkpoint'inde
+örneklem ve model ayarları sabittir.
+
 ## Çevrimdışı doğrulama
 
 31 Ekim 2026 sonucu: yeni kayıt/devam paketinde **17/17**, mevcut regresyon

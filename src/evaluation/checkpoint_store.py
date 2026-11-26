@@ -1,4 +1,4 @@
-"""Transactional, bounded-memory progress storage for the six-system runner."""
+"""Transactional, bounded-memory progress storage for the evaluation runner."""
 import csv
 from contextlib import closing
 import hashlib
@@ -8,7 +8,8 @@ from pathlib import Path
 import sqlite3
 from datetime import datetime, timezone
 
-SYSTEMS = ("hisnet", "hisnet_dp", "dp_hisnet", "lw_hisnet_dp", "llm", "dp_llm")
+DEFAULT_SYSTEMS = ("hisnet", "hisnet_dp", "dp_hisnet", "lw_hisnet_dp", "llm", "dp_llm")
+SYSTEMS = (*DEFAULT_SYSTEMS, "jev")
 LABELS = ("negative", "neutral", "positive")
 
 
@@ -31,6 +32,18 @@ def atomic_json(path, value):
         stream.flush()
         os.fsync(stream.fileno())
     temporary.replace(path)
+
+
+def score_confusion(matrix, macro_labels=LABELS):
+    total = sum(map(sum, matrix))
+    if not total:
+        return None, None
+    f1 = []
+    for label in macro_labels:
+        i = LABELS.index(label)
+        denominator = sum(matrix[i]) + sum(row[i] for row in matrix)
+        f1.append(2 * matrix[i][i] / denominator if denominator else 0.0)
+    return sum(matrix[i][i] for i in range(len(LABELS))) / total, sum(f1) / len(f1)
 
 
 class CheckpointStore:
@@ -187,11 +200,7 @@ def summarize_connection(connection):
                 WHERE p.system=? AND p.status='success' GROUP BY c.gold,p.prediction
                 """, (system,)):
             matrix[LABELS.index(gold)][LABELS.index(pred)] = count
-        correct = sum(matrix[i][i] for i in range(len(LABELS)))
-        f1 = []
-        for i in range(len(LABELS)):
-            denominator = sum(matrix[i]) + sum(row[i] for row in matrix)
-            f1.append(2 * matrix[i][i] / denominator if denominator else 0.0)
+        accuracy, macro_f1 = score_confusion(matrix)
         usage = dict(seconds=0.0, prompt_tokens=0, output_tokens=0, requests=0, interrupted_attempts=0)
         for status, seconds, payload in connection.execute(
                 "SELECT status,seconds,result FROM attempts WHERE system=?", (system,)):
@@ -203,8 +212,7 @@ def summarize_connection(connection):
             usage["requests"] += result.get("attempt", 0)
         summary[system] = dict(total=total, success=success, failed=failed, pending=total-success-failed,
             complete=success == total, coverage=success / total if total else 0.0,
-            accuracy_on_successful=correct / success if success else None,
-            macro_f1_on_successful=sum(f1) / len(f1) if success else None,
+            accuracy_on_successful=accuracy, macro_f1_on_successful=macro_f1,
             confusion_matrix_on_successful=matrix, label_order=LABELS, usage=usage)
     return summary
 

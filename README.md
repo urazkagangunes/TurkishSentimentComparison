@@ -1,7 +1,7 @@
 # Turkish Sentiment Comparison
 
-Comparative evaluation of lexicon-based, dependency-aware,
-and LLM-based sentiment analysis approaches for Turkish.
+Comparative evaluation of lexicon-based, dependency-aware, LLM-based,
+and decision-model approaches to Turkish sentiment analysis.
 
 The [31 October 2026 paper-readiness review](docs/paper_readiness_2026-10-31.md)
 records the remaining scope/alignment issues and the context/data protocol
@@ -9,7 +9,7 @@ decisions to resolve before a final experiment.
 
 ## Experimental Settings
 
-The project evaluates six configurations:
+The project evaluates seven configurations.
 
 1. HisNet
 2. HisNet → Dependency Parsing
@@ -17,6 +17,7 @@ The project evaluates six configurations:
 4. Literature-weighted HisNet → Dependency Parsing
 5. LLM
 6. Dependency Parsing → LLM
+7. Jev (TypeSafe System One, zero-shot)
 
 Stanford Stanza is used to obtain Turkish dependency parses.
 
@@ -43,9 +44,25 @@ Processors:
 - Lemmatization
 - Dependency parsing
 
-## Resumable full-dataset runs
+## Resumable runs
 
-All six systems use a shared SQLite checkpoint through the new runner:
+The main paper profile uses all seven systems and the six datasets listed in
+the [paper protocol](docs/resumable_evaluation.md#ana-makale-koşusu).
+It defaults to `qwen3:32b` for both Ollama conditions and OpenCode
+`jev-1.13-free` for Jev.
+
+```powershell
+.venv\Scripts\python.exe -u -m scripts.run_six_systems --paper --output results/paper_main_20261126
+```
+
+Use `--prepare-only` to freeze the selected rows and configuration without
+inference, or `--status` to inspect the current checkpoints. The paper summary
+reports each dataset separately and scores the rows completed by all seven
+systems.
+
+### Single-dataset runs
+
+The six local systems use a shared SQLite checkpoint by default.
 
 ```powershell
 .venv\Scripts\python.exe -u -m scripts.run_six_systems --dataset trsav1 --output results/trsav1_six_v1
@@ -64,11 +81,24 @@ Inspect progress without loading or calling a model:
 .venv\Scripts\python.exe -m scripts.run_six_systems --output results/trsav1_six_v1 --status
 ```
 
-See [the Turkish usage and validation notes](docs/resumable_evaluation.md) for
-custom datasets, system selection, file formats and resume constraints. Existing
-diagnostic scripts retain their own workflows; use this runner for six-system
-full-dataset checkpoints. No full dataset or live LLM rerun was started as part
-of implementing this feature.
+Add hosted Jev explicitly with `--systems all`. For a balanced TRSAv1 pilot
+with 10 reviews from each class, run the following after setting
+`TYPESAFE_API_KEY` in the environment.
+
+```powershell
+.venv\Scripts\python.exe -u -m scripts.run_six_systems --dataset trsav1 --sample-per-class 10 --seed 42 --model qwen3:4b-instruct --systems all --output results/trsav1_seven_typesafe
+```
+
+Use `--systems jev` with the same data, Ollama settings and output directory to
+add Jev to an existing compatible checkpoint. Only the selected review text
+and a fixed three-class rubric are sent to the TypeSafe API. The default
+`jev-1.14.0` is pinned for reproducibility. See [the Turkish usage and validation notes](docs/resumable_evaluation.md)
+for model settings, output files and comparison rules.
+
+Use `--jev-provider opencode` for OpenCode's `jev-1.13-free` endpoint. The
+runner can send anonymous requests and records the billing source and cost
+from successful responses. Use an output directory for this provider and
+version. [OpenCode instructions](docs/resumable_evaluation.md#opencode-üzerinden-ücretsiz-jev-113)
 
 ## Frozen 500-review classical diagnostic
 

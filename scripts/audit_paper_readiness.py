@@ -72,12 +72,13 @@ def dataset_history():
                         "beyazperde/beyazperde_full_predictions.csv"],
     }
     result = {}
-    for name, (filename, text_column, label_column) in PRESETS.items():
+    for name, historical_paths in histories.items():
+        filename, text_column, label_column = PRESETS[name]
         source = ROOT / "datasets/Modified/sentence_sentiment" / filename
         frame = load_sentiment_dataset(source, text_column, label_column)
         source_texts = set(frame.text)
         seen, files = set(), []
-        for relative in histories[name]:
+        for relative in historical_paths:
             path = ROOT / "results" / relative
             if not path.exists():
                 files.append(dict(path=relative, missing=True))
