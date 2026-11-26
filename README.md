@@ -46,18 +46,19 @@ Processors:
 
 ## Resumable runs
 
-Ana makale koşusu altı veri setinde yedi sistemi karşılaştırır. Ollama kolları
-`qwen3:32b`, Jev kolu OpenCode `jev-1.13-free` kullanır. Çalıştırıcı sınıf
-bazında P/R/F1, eşleştirilmiş farklar, güven aralıkları, canlı ilerleme ve
-SQLite üzerinden devam desteği sağlar. [Makale protokolü](docs/paper_evaluation.md)
+Ana makale koşusu aynı altı veri setini iki ayrı test grubuyla çalıştırır.
+`test_paper_evaluation_classical` dört HisNet yöntemini ve OpenCode
+`jev-1.13-free` modelini çalıştırır. `test_paper_evaluation_llm` ise
+`qwen3:32b` ile LLM ve DP→LLM koşullarını çalıştırır.
+[Makale protokolü](docs/paper_evaluation.md)
 
 ```powershell
-.venv\Scripts\python.exe -B -m scripts.run_paper_suite --inventory
-.venv\Scripts\python.exe -B -u -m scripts.run_paper_suite --output results/paper_suite_jev_v1 --prepare-only
+.venv\Scripts\python.exe -B -u -m tests.test_paper_evaluation_classical --live --output results/paper_classical_jev_v1
+.venv\Scripts\python.exe -B -u -m tests.test_paper_evaluation_llm --live --output results/paper_llm_v1
 ```
 
-Hazırlık komutu model çağırmadan örnekleri ve ayarları kaydeder. Canlı
-çıkarım için aynı komutu `--prepare-only` seçeneği olmadan çalıştır.
+Her komuta `--prepare-only` ekleyerek model çağırmadan örnekleri ve ayarları
+kaydedebilirsin. Kesintiden sonra aynı komut ve çıktı diziniyle devam edilir.
 
 ### Single-dataset runs
 

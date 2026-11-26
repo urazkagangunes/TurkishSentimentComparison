@@ -1,8 +1,9 @@
 # Yedi sistem için tam makale koşusu
 
-Giriş noktası `scripts/run_paper_suite.py`. HisNet, HisNet→DP, DP→HisNet,
-LW, LLM, DP→LLM ve Jev aynı veri setinin tüm uygun yorumlarında ayrı ayrı çalışır.
-Veri setleri ve sistemler sırayla yürütülür; eğitim veya eşik seçimi yapılmaz.
+Makale koşusu iki mevcut test girişini kullanır. `test_paper_evaluation_classical`
+HisNet, HisNet→DP, DP→HisNet, Weighted HisNet→DP ve Jev'i çalıştırır.
+`test_paper_evaluation_llm` LLM ve DP→LLM'yi ayrı bir çıktı dizininde çalıştırır.
+İki giriş de `scripts/run_paper_suite.py` üzerinden aynı veri kaynaklarını yükler.
 Ana ölçüt Macro-F1, üç sınıfın yakalama oranı ise sınıf bazlı recall'dır.
 
 Onaylanan kapsam: genel/sınıf metrikleri, karışıklık matrisleri, eşleştirilmiş
@@ -53,13 +54,15 @@ Yeni koşuda daha önce kullanılmamış bir çıktı dizini seçin. Aşağıdak
 
 ```powershell
 # Veriyi ve manifestleri hazırla; model çıkarımı yapma.
-.venv\Scripts\python.exe -B -u -m scripts.run_paper_suite --output results/paper_suite_jev_v1 --prepare-only
+.venv\Scripts\python.exe -B -u -m tests.test_paper_evaluation_classical --live --output results/paper_classical_jev_v1 --prepare-only
+.venv\Scripts\python.exe -B -u -m tests.test_paper_evaluation_llm --live --output results/paper_llm_v1 --prepare-only
 
-# Altı makale veri setinde yedi sistemle canlı çıkarım.
-.venv\Scripts\python.exe -B -u -m scripts.run_paper_suite --output results/paper_suite_jev_v1
+# İki ayrı test grubunda canlı çıkarım.
+.venv\Scripts\python.exe -B -u -m tests.test_paper_evaluation_classical --live --output results/paper_classical_jev_v1
+.venv\Scripts\python.exe -B -u -m tests.test_paper_evaluation_llm --live --output results/paper_llm_v1
 
 # Yalnız belirli veri setleri, ayrı çıktı dizini.
-.venv\Scripts\python.exe -B -u -m scripts.run_paper_suite --datasets trsav1 beyazperde --output results/paper_two_datasets_20261116_run01
+.venv\Scripts\python.exe -B -u -m tests.test_paper_evaluation_classical --live --datasets trsav1 beyazperde --output results/paper_classical_two_datasets_v1
 ```
 
 `--prepare-only` isteğe bağlıdır. Kullanılırsa çıkarım komutunda diğer bütün
@@ -69,10 +72,13 @@ salt okunur durum sorgusundan daha fazla iş yapar.
 Varsayılanlar: `qwen3:32b`, batch 3, context 8192, seed 42, temperature 0,1,
 top_p 1, timeout 600 saniye, max_retries 1, keep_alive `30m` ve `think=False`.
 Sınıflandırıcıların kendi kurucu varsayılanları yerine bu etkili ayarlar
-kullanılır. `--systems` ile alt küme seçilebilir. Makale karşılaştırması
-varsayılan olarak yedi sistemi içerir. Jev, OpenCode `jev-1.13-free` modeline
+kullanılır. Test girişleri kendi sistem listelerini kullanır. Jev, OpenCode `jev-1.13-free` modeline
 her istek için bir yorum ve üç sınıflı Türkçe Choice sorusu gönderir.
 Sağlayıcı, model ve soru suite manifestinde yer alır.
+
+Her grubun `suite_metrics.csv` dosyasındaki ortak kapsam, o gruptaki
+sistemler için hesaplanır. Yedi sistemin eşleştirilmiş kıyaslaması için iki
+grubun başarılı tahminleri veri seti ve satır kimliği üzerinden eşleştirilir.
 
 ## İlerleme ve kesintiden devam
 
@@ -113,10 +119,12 @@ Model yükleme hataları `runtime.csv` içinde görünür, satırlar bekleyen ka
 
 ```powershell
 # Canlı koşu sürerken de salt okunur durum sorgusu.
-.venv\Scripts\python.exe -B -m scripts.run_paper_suite --output results/paper_full_20261116_run01 --status
+.venv\Scripts\python.exe -B -m tests.test_paper_evaluation_classical --live --output results/paper_classical_jev_v1 --status
+.venv\Scripts\python.exe -B -m tests.test_paper_evaluation_llm --live --output results/paper_llm_v1 --status
 
 # Mevcut tahminlerden raporları yeniden üret; model çağırmaz.
-.venv\Scripts\python.exe -B -u -m scripts.run_paper_suite --output results/paper_full_20261116_run01 --analyze-only --bootstrap 2000 --seed 42
+.venv\Scripts\python.exe -B -u -m tests.test_paper_evaluation_classical --live --output results/paper_classical_jev_v1 --analyze-only --bootstrap 2000 --seed 42
+.venv\Scripts\python.exe -B -u -m tests.test_paper_evaluation_llm --live --output results/paper_llm_v1 --analyze-only --bootstrap 2000 --seed 42
 ```
 
 Analiz türetilmiş raporları yeniden yazar, tahminleri değiştirmez. Analiz için

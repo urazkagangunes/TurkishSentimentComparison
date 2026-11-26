@@ -178,12 +178,12 @@ sistemin önceki pilotuyla sıra ve etiket dahil örneklem hash'i aynıdır.
 Yeni bir yedi sistem koşusu için `--systems all` ve yeni bir çıktı dizini
 kullanılabilir. Sağlayıcı veya sürüm değişirse yeni bir çıktı dizini gerekir.
 
-## Ana makale koşusu
+## Önceki altı veri seti doğrulaması
 
-Makale koşusunun ayrıntılı çalıştırıcısı `scripts.run_paper_suite` ve
-[makale protokolü](paper_evaluation.md) üzerinden kullanılır.
-`scripts.run_six_systems --paper` aynı veri kaynaklarına sahip SQLite
-doğrulama profilidir.
+Ana makale koşusunun komutları mevcut iki test girişini kullanan
+[makale protokolünde](paper_evaluation.md) yer alır.
+`scripts.run_six_systems --paper` önceki canlı doğrulamalarda kullanılan
+SQLite profilidir.
 
 `--paper` aşağıdaki altı dosyayı sırayla açar ve yedi sistemi aynı örnekler
 üzerinde çalıştırır. Jev için OpenCode `jev-1.13-free` ve iki Ollama kolu
@@ -207,9 +207,8 @@ mevcut yükleyici kuralıyla kalır. Veri setleri ayrı raporlanır.
 Örneğin Beyazperde ve HUMIR arasında 82 farklı tam metin iki dosyada da bulunur.
 
 ```powershell
-.venv\Scripts\python.exe -u -m scripts.run_six_systems --paper --output results/paper_checkpoint_jev_v1 --prepare-only
-.venv\Scripts\python.exe -u -m scripts.run_six_systems --paper --output results/paper_checkpoint_jev_v1
 .venv\Scripts\python.exe -m scripts.run_six_systems --paper --output results/paper_main_20261126 --status
+.venv\Scripts\python.exe -m scripts.run_six_systems --paper --output results/paper_live_smoke_20261126 --status
 ```
 
 Tam kapsam 210.406 yorum–etiket çifti ve 1.472.842 sistem tahminidir.
