@@ -46,19 +46,18 @@ Processors:
 
 ## Resumable runs
 
-The main paper profile uses all seven systems and the six datasets listed in
-the [paper protocol](docs/resumable_evaluation.md#ana-makale-koşusu).
-It defaults to `qwen3:32b` for both Ollama conditions and OpenCode
-`jev-1.13-free` for Jev.
+Ana makale koşusu altı veri setinde yedi sistemi karşılaştırır. Ollama kolları
+`qwen3:32b`, Jev kolu OpenCode `jev-1.13-free` kullanır. Çalıştırıcı sınıf
+bazında P/R/F1, eşleştirilmiş farklar, güven aralıkları, canlı ilerleme ve
+SQLite üzerinden devam desteği sağlar. [Makale protokolü](docs/paper_evaluation.md)
 
 ```powershell
-.venv\Scripts\python.exe -u -m scripts.run_six_systems --paper --output results/paper_main_20261126
+.venv\Scripts\python.exe -B -m scripts.run_paper_suite --inventory
+.venv\Scripts\python.exe -B -u -m scripts.run_paper_suite --output results/paper_suite_jev_v1 --prepare-only
 ```
 
-Use `--prepare-only` to freeze the selected rows and configuration without
-inference, or `--status` to inspect the current checkpoints. The paper summary
-reports each dataset separately and scores the rows completed by all seven
-systems.
+Hazırlık komutu model çağırmadan örnekleri ve ayarları kaydeder. Canlı
+çıkarım için aynı komutu `--prepare-only` seçeneği olmadan çalıştır.
 
 ### Single-dataset runs
 

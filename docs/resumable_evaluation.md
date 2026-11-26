@@ -180,6 +180,11 @@ kullanılabilir. Sağlayıcı veya sürüm değişirse yeni bir çıktı dizini 
 
 ## Ana makale koşusu
 
+Makale koşusunun ayrıntılı çalıştırıcısı `scripts.run_paper_suite` ve
+[makale protokolü](paper_evaluation.md) üzerinden kullanılır.
+`scripts.run_six_systems --paper` aynı veri kaynaklarına sahip SQLite
+doğrulama profilidir.
+
 `--paper` aşağıdaki altı dosyayı sırayla açar ve yedi sistemi aynı örnekler
 üzerinde çalıştırır. Jev için OpenCode `jev-1.13-free` ve iki Ollama kolu
 için `qwen3:32b` kullanılır. Seed 42, batch boyutu 3 ve Ollama bağlam sınırı
@@ -202,8 +207,8 @@ mevcut yükleyici kuralıyla kalır. Veri setleri ayrı raporlanır.
 Örneğin Beyazperde ve HUMIR arasında 82 farklı tam metin iki dosyada da bulunur.
 
 ```powershell
-.venv\Scripts\python.exe -u -m scripts.run_six_systems --paper --output results/paper_main_20261126 --prepare-only
-.venv\Scripts\python.exe -u -m scripts.run_six_systems --paper --output results/paper_main_20261126
+.venv\Scripts\python.exe -u -m scripts.run_six_systems --paper --output results/paper_checkpoint_jev_v1 --prepare-only
+.venv\Scripts\python.exe -u -m scripts.run_six_systems --paper --output results/paper_checkpoint_jev_v1
 .venv\Scripts\python.exe -m scripts.run_six_systems --paper --output results/paper_main_20261126 --status
 ```
 

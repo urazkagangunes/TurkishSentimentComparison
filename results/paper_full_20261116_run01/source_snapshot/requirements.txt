@@ -1,0 +1,11 @@
+stanza
+pandas
+numpy
+scikit-learn
+scipy
+NlpToolkit-SentiNet
+NlpToolkit-MorphologicalAnalysis
+NlpToolkit-MorphologicalDisambiguation
+setuptools==80.9.0
+ollama
+httpx

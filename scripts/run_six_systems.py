@@ -182,7 +182,7 @@ def run_dataset(args, dataset, output, runtime_identity):
 
 
 def paper_status(output):
-    from src.evaluation.paper_metrics import read_paper_dataset
+    from src.evaluation.paper_checkpoint_metrics import read_paper_dataset
 
     return {name: read_paper_dataset(output / name) for name in PAPER_DATASETS}
 

@@ -200,7 +200,7 @@ os._exit(9)
         self.assertIsNone(args.sample_per_class)
 
     def test_paper_scores_only_common_rows_and_penalizes_neutral_on_binary_data(self):
-        from src.evaluation.paper_metrics import read_paper_dataset
+        from src.evaluation.paper_checkpoint_metrics import read_paper_dataset
 
         cases = [dict(text="kötü", gold="negative"), *CASES[:2]]
         with TemporaryDirectory() as directory, CheckpointStore(directory, {}, cases) as store:

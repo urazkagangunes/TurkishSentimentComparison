@@ -32,6 +32,22 @@ def make_classifier(system, settings):
     raise ValueError("Unknown system: " + system)
 
 
+def classify_result(classifier, system, texts):
+    if system in LLM_SYSTEMS:
+        result = classifier.classify_batch(texts)
+    else:
+        result = dict(classifier.classify(texts[0]))
+        result["predictions"] = [result["prediction"]]
+        result.setdefault("status", "success")
+        result.setdefault("error", None)
+    if (result.get("status") not in {"success", "failed"}
+            or len(result.get("predictions", [])) != len(texts)
+            or (result["status"] == "success" and any(p not in LABELS for p in result["predictions"]))
+            or (result["status"] == "failed" and any(p is not None for p in result["predictions"]))):
+        raise ValueError("Classifier returned an invalid result contract.")
+    return result
+
+
 def evaluate(cases, store, settings, systems=DEFAULT_SYSTEMS, factory=make_classifier,
              keep_details=False, progress_every=100):
     """Resume successes; retry failures once individually per invocation.
@@ -55,18 +71,7 @@ def evaluate(cases, store, settings, systems=DEFAULT_SYSTEMS, factory=make_class
             attempt_id = store.start(system, ids, recovery)
             start = time.perf_counter()
             try:
-                if system in LLM_SYSTEMS:
-                    result = classifier.classify_batch([cases[i]["text"] for i in ids])
-                else:
-                    result = dict(classifier.classify(cases[ids[0]]["text"]))
-                    result["predictions"] = [result["prediction"]]
-                    result.setdefault("status", "success")
-                    result.setdefault("error", None)
-                if (result.get("status") not in {"success", "failed"}
-                        or len(result.get("predictions", [])) != len(ids)
-                        or (result["status"] == "success" and any(p not in LABELS for p in result["predictions"]))
-                        or (result["status"] == "failed" and any(p is not None for p in result["predictions"]))):
-                    raise ValueError("Classifier returned an invalid result contract.")
+                result = classify_result(classifier, system, [cases[i]["text"] for i in ids])
             except Exception as error:
                 # Do not catch KeyboardInterrupt/SystemExit: the in-flight
                 # attempt stays pending rather than becoming a sentiment label.

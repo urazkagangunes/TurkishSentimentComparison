@@ -199,6 +199,9 @@ def summarize_connection(connection):
                 SELECT c.gold,p.prediction,COUNT(*) FROM predictions p JOIN cases c USING(row_id)
                 WHERE p.system=? AND p.status='success' GROUP BY c.gold,p.prediction
                 """, (system,)):
+            # Inference-only paper datasets deliberately have no gold label.
+            if gold not in LABELS:
+                continue
             matrix[LABELS.index(gold)][LABELS.index(pred)] = count
         accuracy, macro_f1 = score_confusion(matrix)
         usage = dict(seconds=0.0, prompt_tokens=0, output_tokens=0, requests=0, interrupted_attempts=0)
